@@ -1,0 +1,935 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:02.141569 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.BuildPlan 8043
+  interface hash: 382b89642fdc46aa26ad91d7bb57b26c
+  ABI hash: 640f8b05133cc6ade51cec17f387809a
+  export-list hash: 25942a3b82d30a6c32da2637f7ba4704
+  orphan hash: bfca03bde5c5600e036a9b8645118d1d
+  flag hash: c8d8f450ed10350d849cb7e71446cfa1
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Make.BuildPlan.collectErrors
+  Language.PureScript.Make.BuildPlan.collectResults
+  Language.PureScript.Make.BuildPlan.construct
+  Language.PureScript.Make.BuildPlan.getResult
+  Language.PureScript.Make.BuildPlan.markComplete
+  Language.PureScript.Make.BuildPlan.needsRebuild
+  Language.PureScript.Make.BuildPlan.BuildPlan
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Make.Actions Language.PureScript.Make.Monad
+                     Language.PureScript.Names Language.PureScript.Options
+                     Language.PureScript.PSString Language.PureScript.Parser
+                     Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4
+                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12
+                      monad-control-1.0.2.3 mtl-2.2.2 parallel-3.2.1.1 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 safe-0.3.17 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: colour-2.3.4:Data.Colour syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.3.1.1:Data.Aeson 108dfb08de41cf77aad4693ac1dc3d44
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:Data.Version 26b96b3dd83a23703e0b8110475fc04a
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.MVar 5887537e57bb20af86721190334ddceb
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  lifted-base-0.2.3.12:Control.Concurrent.Lifted 2f16a4f6aacf1afd0e80d872cbbdf622
+import  -/  lifted-base-0.2.3.12:Control.Concurrent.MVar.Lifted e3b39ade6c1fdc125d23c90bdb4874f2
+import  -/  monad-control-1.0.2.3:Control.Monad.Trans.Control 82c27f877a1c7cc212232dcea6f7b8e9
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  Module 7cf4b96f7d4b51b446726a099ab87bb6
+  getModuleName 578b1d81b22244b5aeca14680df8f57d
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors f5c9696f41d58d6dc3fa501d3874e5a8
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+import  -/  Language.PureScript.Externs 17598d5385c46f650a2a55de08912a53
+  exports: f9fc7fa26f69a655fd896d8cccd21570
+  ExternsFile b2e76f24ecba17bf3b946e078a8414b6
+  efVersion b2e76f24ecba17bf3b946e078a8414b6
+import  -/  Language.PureScript.Make.Actions e063664ba4322d93370f5867c4f87435
+  exports: d998e1a87fad141f5852b5461efef53d
+  Externs a2569f2ca1d89749337a0025ed19849d
+  MakeActions 0037ff7a939b4cb40b9ecea3cb8ef902
+  MakeActions 3d0bef297a2110ab738574f1f980a96f
+  RebuildNever 6d09577c081a9cde2328f20783c437dd
+  codegen 3d0bef297a2110ab738574f1f980a96f
+  ffiCodegen 3d0bef297a2110ab738574f1f980a96f
+  getInputTimestamp 3d0bef297a2110ab738574f1f980a96f
+  getOutputTimestamp 3d0bef297a2110ab738574f1f980a96f
+  progress 3d0bef297a2110ab738574f1f980a96f
+  readExterns 3d0bef297a2110ab738574f1f980a96f
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+import  -/  Paths_purescript a1929913cfb69ecc53654efc3b17c6b3
+  exports: 2c455cd4735d13a5fa8e95701f74bbba
+  version 36e47562f1510cc9eab6b4cc20db5d32
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+import  -/  time-1.8.0.2:Data.Time.Clock 38823c785626821df1f9ec84dba1c4d7
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536acb5e422cc
+1f747311bad1bc3e4b45615aa9edb311
+  $s$wsplit_$s$wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Language.PureScript.Names.ModuleName
+    -> a
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> Language.PureScript.Names.ModuleName
+    -> (# Data.Map.Internal.Map Language.PureScript.Names.ModuleName a,
+          Data.Map.Internal.Map Language.PureScript.Names.ModuleName a #)
+  {- Arity: 6, Strictness: <L,A><S,U><L,U><L,U><L,U><S,U> -}
+43b30a7d1d4303bf8111e27a2dc72480
+  $sinsertR_$sgo13 ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ModuleName
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+50aa59b481339d3e1fec52630d2a841b
+  $sinsert_$s$sgo13 ::
+    GHC.Prim.Int#
+    -> Language.PureScript.Names.ModuleName
+    -> a
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> a
+    -> Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+  {- Arity: 8,
+     Strictness: <L,U><S,U><L,U><L,U><L,U><L,U><S,1*U><L,U> -}
+51300da907146ba99deebbb0729fa885
+  $sinsert_$sgo13 ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ModuleName
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+32ba4539f8d0b9320d24a974bcab8130
+  $slookup1 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+ddf3f859aca538a236f9899fc987c673
+  $smember1 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+8b75d928636033ff9cb5c0b602a64665
+  $sunion ::
+    Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+509f0f6f676d52f63b4c0db86b40a135
+  $tc'BuildJob :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13576967324161994086##
+                   16401370920484309188##
+                   Language.PureScript.Make.BuildPlan.$trModule
+                   Language.PureScript.Make.BuildPlan.$tc'BuildJob2
+                   0#
+                   Language.PureScript.Make.BuildPlan.$tc'BuildJob1) -}
+4761e78b2405fc3ecd2711e4f8ebfcaa
+  $tc'BuildJob1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0990d6b3ad308878ffd37104e2840731
+  $tc'BuildJob2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$tc'BuildJob3) -}
+8673121cdae559bdc5a9634e216a7a49
+  $tc'BuildJob3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BuildJob"#) -}
+02c8dd3074a34439e263fd882ff8e4b2
+  $tc'BuildPlan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2956679729254469509##
+                   12484537796050005329##
+                   Language.PureScript.Make.BuildPlan.$trModule
+                   Language.PureScript.Make.BuildPlan.$tc'BuildPlan2
+                   0#
+                   Language.PureScript.Make.BuildPlan.$tc'BuildPlan1) -}
+879d3268a7c883efdaf453d667e67ca4
+  $tc'BuildPlan1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+8a7be06cc46d8ed0516bdad953d0cea6
+  $tc'BuildPlan2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$tc'BuildPlan3) -}
+8840a0f94228eab892983e19567f68a3
+  $tc'BuildPlan3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BuildPlan"#) -}
+72d43eb3be73000152a685883fd72b97
+  $tc'Prebuilt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16253903004113196119##
+                   5470429067639815220##
+                   Language.PureScript.Make.BuildPlan.$trModule
+                   Language.PureScript.Make.BuildPlan.$tc'Prebuilt2
+                   0#
+                   Language.PureScript.Make.BuildPlan.$tc'Prebuilt1) -}
+e80a51ac4e5a29d07941df1438102da5
+  $tc'Prebuilt1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+87ae3215bb59bf15dfd2062bffd842af
+  $tc'Prebuilt2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$tc'Prebuilt3) -}
+0730035133ccfead6dbd2e82c21152b6
+  $tc'Prebuilt3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Prebuilt"#) -}
+2bf5d57ac4885f86b17dfc2b13ce2445
+  $tcBuildJob :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5726231491521958302##
+                   7278230996558105101##
+                   Language.PureScript.Make.BuildPlan.$trModule
+                   Language.PureScript.Make.BuildPlan.$tcBuildJob1
+                   0#
+                   GHC.Types.krep$*) -}
+3dbc0fbe8630b37e07901da7a2f93347
+  $tcBuildJob1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$tcBuildJob2) -}
+ea898ccae18956d50769b2281dbf5402
+  $tcBuildJob2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BuildJob"#) -}
+26b26ae6ef41a046f48e6a62c9952f9b
+  $tcBuildPlan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5426325307243713051##
+                   14494079455422213537##
+                   Language.PureScript.Make.BuildPlan.$trModule
+                   Language.PureScript.Make.BuildPlan.$tcBuildPlan1
+                   0#
+                   GHC.Types.krep$*) -}
+f480d23055ab6608b0f111bf11571e57
+  $tcBuildPlan1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$tcBuildPlan2) -}
+15c52cfc75bc3224a4eaf178461f3371
+  $tcBuildPlan2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BuildPlan"#) -}
+0c719a1d5f40c75fb27e89b8e9415140
+  $tcPrebuilt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14070294443064896463##
+                   6858804907554537691##
+                   Language.PureScript.Make.BuildPlan.$trModule
+                   Language.PureScript.Make.BuildPlan.$tcPrebuilt1
+                   0#
+                   GHC.Types.krep$*) -}
+867dd9267929ace853ae40f2a47a2ac2
+  $tcPrebuilt1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$tcPrebuilt2) -}
+82bb7f7a1d85019a322241071de82bb5
+  $tcPrebuilt2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Prebuilt"#) -}
+50965c2c85d4c627ce3a1c291c32d358
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Make.BuildPlan.$trModule3
+                   Language.PureScript.Make.BuildPlan.$trModule1) -}
+c3347a0bd8d937c6e4ef22b39d0d3882
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$trModule2) -}
+6d2d31aa38cb4102ec494665b1344899
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Make.BuildPlan"#) -}
+c14c9c24a24d1ef6622529b7cb88ac8b
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.BuildPlan.$trModule4) -}
+a4b4257e491f93310f5199ada0590b51
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+74180056f1dc47e132d4a2b2f996b9e4
+  $wconstruct ::
+    (GHC.Base.Monad m,
+     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m) =>
+    (Language.PureScript.Names.ModuleName
+     -> m (Data.Either.Either
+             Language.PureScript.Make.Actions.RebuildPolicy
+             (GHC.Base.Maybe Data.Time.Clock.Internal.UTCTime.UTCTime)))
+    -> (Language.PureScript.Names.ModuleName
+        -> m (GHC.Base.Maybe Data.Time.Clock.Internal.UTCTime.UTCTime))
+    -> (Language.PureScript.Names.ModuleName
+        -> m (GHC.IO.FilePath, Language.PureScript.Make.Actions.Externs))
+    -> [Language.PureScript.AST.Declarations.Module]
+    -> [(Language.PureScript.Names.ModuleName,
+         [Language.PureScript.Names.ModuleName])]
+    -> m Language.PureScript.Make.BuildPlan.BuildPlan
+  {- Arity: 7,
+     Strictness: <L,1*U(1*U(1*U(C(C1(U)),A),C(U),A,A,A,A),A,A,A,A)><S(S(LLLS(LC(C(S))LLL)L)LL),1*U(1*U(A,1*U(1*U(1*C1(C1(U)),A),C(U),1*C1(C1(U)),A,A,A),A,1*U(A,C(C1(U)),A,U,A),C(U)),A,A)><L,C(U)><L,C(U)><L,C(U)><L,U><L,U>,
+     Inline: [0] -}
+de7b042d5c4f7973707fc2ac4d4ec021
+  $wgetResult ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    Data.Map.Internal.Map
+      Language.PureScript.Names.ModuleName
+      Language.PureScript.Make.BuildPlan.Prebuilt
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName
+         Language.PureScript.Make.BuildPlan.BuildJob
+    -> Language.PureScript.Names.ModuleName
+    -> m (GHC.Base.Maybe
+            (Language.PureScript.Errors.MultipleErrors,
+             Language.PureScript.Externs.ExternsFile))
+  {- Arity: 4,
+     Strictness: <S(SLL),1*U(1*U(A,1*U(A,1*C1(U),A,A,A,A),A,A,1*C1(U)),A,A)><S,1*U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ m :: * -> *
+                   (w :: Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m)
+                   (ww :: Data.Map.Internal.Map
+                            Language.PureScript.Names.ModuleName
+                            Language.PureScript.Make.BuildPlan.Prebuilt)
+                   (ww1 :: Data.Map.Internal.Map
+                             Language.PureScript.Names.ModuleName
+                             Language.PureScript.Make.BuildPlan.BuildJob)
+                   (w1 :: Language.PureScript.Names.ModuleName) ->
+                 case Language.PureScript.Make.BuildPlan.$slookup1
+                        @ Language.PureScript.Make.BuildPlan.Prebuilt
+                        w1
+                        ww of wild {
+                   GHC.Base.Nothing
+                   -> Control.Monad.Base.liftBase
+                        @ GHC.Types.IO
+                        @ m
+                        (Control.Monad.Trans.Control.$p1MonadBaseControl
+                           @ GHC.Types.IO
+                           @ m
+                           w)
+                        @ (GHC.Base.Maybe
+                             (Language.PureScript.Errors.MultipleErrors,
+                              Language.PureScript.Externs.ExternsFile))
+                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                         case Language.PureScript.Make.BuildPlan.$slookup1
+                                @ Language.PureScript.Make.BuildPlan.BuildJob
+                                w1
+                                ww1 of wild1 {
+                           GHC.Base.Nothing
+                           -> case Language.PureScript.Make.BuildPlan.getResult1
+                              ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                        GHC.Base.Maybe
+                                          (Language.PureScript.Errors.MultipleErrors,
+                                           Language.PureScript.Externs.ExternsFile) #)
+                              of {}
+                           GHC.Base.Just v
+                           -> case v of wild2 { Language.PureScript.Make.BuildPlan.BuildJob ds ds1 ->
+                              case ds of wild3 { GHC.MVar.MVar mvar# ->
+                              GHC.Prim.readMVar#
+                                @ GHC.Prim.RealWorld
+                                @ (GHC.Base.Maybe
+                                     (Language.PureScript.Errors.MultipleErrors,
+                                      Language.PureScript.Externs.ExternsFile))
+                                mvar#
+                                eta } } })
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0]
+                                  <GHC.Base.Maybe
+                                     (Language.PureScript.Errors.MultipleErrors,
+                                      Language.PureScript.Externs.ExternsFile)>_R))
+                   GHC.Base.Just es
+                   -> GHC.Base.pure
+                        @ m
+                        (Control.Monad.Base.$p2MonadBase
+                           @ GHC.Types.IO
+                           @ m
+                           (Control.Monad.Trans.Control.$p1MonadBaseControl
+                              @ GHC.Types.IO
+                              @ m
+                              w))
+                        @ (GHC.Base.Maybe
+                             (Language.PureScript.Errors.MultipleErrors,
+                              Language.PureScript.Externs.ExternsFile))
+                        (GHC.Base.Just
+                           @ (Language.PureScript.Errors.MultipleErrors,
+                              Language.PureScript.Externs.ExternsFile)
+                           ((GHC.Types.[] @ Language.PureScript.AST.Declarations.ErrorMessage)
+                              `cast`
+                            (Sym (Language.PureScript.Errors.N:MultipleErrors[0])),
+                            case es of wild1 { Language.PureScript.Make.BuildPlan.Prebuilt ds ds1 ->
+                            ds1 })) }) -}
+c9f1c0ff88e129da68eb40ff0b5b28de
+  $wpoly_go13 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> (# Data.Map.Internal.Map Language.PureScript.Names.ModuleName a,
+          Data.Map.Internal.Map Language.PureScript.Names.ModuleName a #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+70e83e040ee74bfa6fed274d545ea61e
+  data BuildJob
+    = BuildJob {bjResult :: GHC.MVar.MVar
+                              (GHC.Base.Maybe
+                                 (Language.PureScript.Errors.MultipleErrors,
+                                  Language.PureScript.Externs.ExternsFile)),
+                bjErrors :: GHC.MVar.MVar
+                              (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)}
+fd94fb7b1f46e222632dbdabb28778dc
+  data BuildPlan
+    = BuildPlan {bpPrebuilt :: Data.Map.Internal.Map
+                                 Language.PureScript.Names.ModuleName
+                                 Language.PureScript.Make.BuildPlan.Prebuilt,
+                 bpBuildJobs :: Data.Map.Internal.Map
+                                  Language.PureScript.Names.ModuleName
+                                  Language.PureScript.Make.BuildPlan.BuildJob}
+583f45c891ab2cdfe1dd161e7d82af01
+  data Prebuilt
+    = Prebuilt {pbModificationTime :: Data.Time.Clock.Internal.UTCTime.UTCTime,
+                pbExternsFile :: Language.PureScript.Externs.ExternsFile}
+70e83e040ee74bfa6fed274d545ea61e
+  bjErrors ::
+    Language.PureScript.Make.BuildPlan.BuildJob
+    -> GHC.MVar.MVar
+         (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)
+  RecSel Left Language.PureScript.Make.BuildPlan.BuildJob
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Make.BuildPlan.BuildJob) ->
+                 case ds of wild { Language.PureScript.Make.BuildPlan.BuildJob ds1 ds2 ->
+                 ds2 }) -}
+70e83e040ee74bfa6fed274d545ea61e
+  bjResult ::
+    Language.PureScript.Make.BuildPlan.BuildJob
+    -> GHC.MVar.MVar
+         (GHC.Base.Maybe
+            (Language.PureScript.Errors.MultipleErrors,
+             Language.PureScript.Externs.ExternsFile))
+  RecSel Left Language.PureScript.Make.BuildPlan.BuildJob
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Make.BuildPlan.BuildJob) ->
+                 case ds of wild { Language.PureScript.Make.BuildPlan.BuildJob ds1 ds2 ->
+                 ds1 }) -}
+fd94fb7b1f46e222632dbdabb28778dc
+  bpBuildJobs ::
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName
+         Language.PureScript.Make.BuildPlan.BuildJob
+  RecSel Left Language.PureScript.Make.BuildPlan.BuildPlan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Make.BuildPlan.BuildPlan) ->
+                 case ds of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds1 ds2 ->
+                 ds2 }) -}
+fd94fb7b1f46e222632dbdabb28778dc
+  bpPrebuilt ::
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName
+         Language.PureScript.Make.BuildPlan.Prebuilt
+  RecSel Left Language.PureScript.Make.BuildPlan.BuildPlan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Make.BuildPlan.BuildPlan) ->
+                 case ds of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds1 ds2 ->
+                 ds1 }) -}
+817ce435c9616b122d4040618d3493c7
+  collectErrors ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> m [Language.PureScript.Errors.MultipleErrors]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS(LC(C(S))LLL)L)LL),1*U(1*U(A,1*U(A,C(U),A,C(C1(C1(U))),A,A),A,1*U(A,1*C1(C1(U)),A,A,A),C(U)),A,A)><L,1*U(A,1*U)>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                            GHC.Types.IO m)
+                   (eta :: Language.PureScript.Make.BuildPlan.BuildPlan) ->
+                 let {
+                   $dMonadBase :: Control.Monad.Base.MonadBase GHC.Types.IO m
+                   = Control.Monad.Trans.Control.$p1MonadBaseControl
+                       @ GHC.Types.IO
+                       @ m
+                       $dMonadBaseControl
+                 } in
+                 let {
+                   $dApplicative :: GHC.Base.Applicative m
+                   = Control.Monad.Base.$p2MonadBase @ GHC.Types.IO @ m $dMonadBase
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   (Control.Monad.Base.$p4MonadBase @ GHC.Types.IO @ m $dMonadBase)
+                   @ [GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors]
+                   @ [Language.PureScript.Errors.MultipleErrors]
+                   (case eta of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds ds1 ->
+                    letrec {
+                      go2 :: m [GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors]
+                             -> Data.Map.Internal.Map
+                                  Language.PureScript.Names.ModuleName
+                                  Language.PureScript.Make.BuildPlan.BuildJob
+                             -> m [GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors]
+                        {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                      = \ (z' :: m [GHC.Base.Maybe
+                                      Language.PureScript.Errors.MultipleErrors])
+                          (ds2 :: Data.Map.Internal.Map
+                                    Language.PureScript.Names.ModuleName
+                                    Language.PureScript.Make.BuildPlan.BuildJob) ->
+                        case ds2 of wild1 {
+                          Data.Map.Internal.Bin dt kx x l r
+                          -> go2
+                               (GHC.Base.liftA2
+                                  @ m
+                                  $dApplicative
+                                  @ (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)
+                                  @ [GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors]
+                                  @ [GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors]
+                                  (GHC.Types.:
+                                     @ (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors))
+                                  (Control.Monad.Base.liftBase
+                                     @ GHC.Types.IO
+                                     @ m
+                                     $dMonadBase
+                                     @ (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)
+                                     (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                      case x of wild2 { Language.PureScript.Make.BuildPlan.BuildJob ds3 ds4 ->
+                                      case ds4 of wild3 { GHC.MVar.MVar mvar# ->
+                                      GHC.Prim.readMVar#
+                                        @ GHC.Prim.RealWorld
+                                        @ (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)
+                                        mvar#
+                                        eta1 } })
+                                       `cast`
+                                     (Sym (GHC.Types.N:IO[0]
+                                               <GHC.Base.Maybe
+                                                  Language.PureScript.Errors.MultipleErrors>_R)))
+                                  (go2 z' r))
+                               l
+                          Data.Map.Internal.Tip -> z' }
+                    } in
+                    go2
+                      (GHC.Base.pure
+                         @ m
+                         $dApplicative
+                         @ [GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors]
+                         (GHC.Types.[]
+                            @ (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)))
+                      ds1 })
+                   (\ (errors :: [GHC.Base.Maybe
+                                    Language.PureScript.Errors.MultipleErrors]) ->
+                    GHC.Base.pure
+                      @ m
+                      $dApplicative
+                      @ [Language.PureScript.Errors.MultipleErrors]
+                      (Data.Maybe.catMaybes1
+                         @ Language.PureScript.Errors.MultipleErrors
+                         errors))) -}
+72f9afc9f0ff26dd810052ba32dcbb24
+  collectResults ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> m (Data.Map.Internal.Map
+            Language.PureScript.Names.ModuleName
+            Language.PureScript.Externs.ExternsFile)
+  {- Arity: 2,
+     Strictness: <S(S(LLLS(LC(C(S))LLL)L)LL),1*U(1*U(A,1*U(1*U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),A,1*U(A,1*C1(C1(U)),A,A,A),C(U)),A,A)><L,U(1*U,1*U)> -}
+b2e95301d97ab6457e6c04f5f58db2fd
+  construct ::
+    (GHC.Base.Monad m,
+     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m) =>
+    Language.PureScript.Make.Actions.MakeActions m
+    -> ([Language.PureScript.AST.Declarations.Module],
+        [(Language.PureScript.Names.ModuleName,
+          [Language.PureScript.Names.ModuleName])])
+    -> m Language.PureScript.Make.BuildPlan.BuildPlan
+  {- Arity: 4,
+     Strictness: <L,1*U(1*U(1*U(C(C1(U)),A),C(U),A,A,A,A),A,A,A,A)><S(S(LLLS(LC(C(S))LLL)L)LL),1*U(1*U(A,1*U(1*U(1*C1(C1(U)),A),C(U),1*C1(C1(U)),A,A,A),A,1*U(A,C(C1(U)),A,U,A),C(U)),A,A)><S,1*U(C(U),C(U),C(U),A,A,A)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ m :: * -> *
+                   (w :: GHC.Base.Monad m)
+                   (w1 :: Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m)
+                   (w2 :: Language.PureScript.Make.Actions.MakeActions m)
+                   (w3 :: ([Language.PureScript.AST.Declarations.Module],
+                           [(Language.PureScript.Names.ModuleName,
+                             [Language.PureScript.Names.ModuleName])])) ->
+                 case w2 of ww { Language.PureScript.Make.Actions.MakeActions ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case w3 of ww7 { (,) ww8 ww9 ->
+                 Language.PureScript.Make.BuildPlan.$wconstruct
+                   @ m
+                   w
+                   w1
+                   ww1
+                   ww2
+                   ww3
+                   ww8
+                   ww9 } }) -}
+b2c7cafd88f8701474962d0c29420727
+  getResult ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> Language.PureScript.Names.ModuleName
+    -> m (GHC.Base.Maybe
+            (Language.PureScript.Errors.MultipleErrors,
+             Language.PureScript.Externs.ExternsFile))
+  {- Arity: 3,
+     Strictness: <S(SLL),1*U(1*U(A,1*U(A,1*C1(U),A,A,A,A),A,A,1*C1(U)),A,A)><S(SL),1*U(1*U,U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ m :: * -> *
+                   (w :: Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m)
+                   (w1 :: Language.PureScript.Make.BuildPlan.BuildPlan)
+                   (w2 :: Language.PureScript.Names.ModuleName) ->
+                 case w1 of ww { Language.PureScript.Make.BuildPlan.BuildPlan ww1 ww2 ->
+                 Language.PureScript.Make.BuildPlan.$wgetResult
+                   @ m
+                   w
+                   ww1
+                   ww2
+                   w2 }) -}
+12033c01a9164ab90f37028f6bf26e1d
+  getResult1 :: Language.PureScript.Make.BuildPlan.BuildJob
+  {- Strictness: x -}
+d90dc9d26f808c5d68f603ed65060e87
+  markComplete ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe
+         (Language.PureScript.Errors.MultipleErrors,
+          Language.PureScript.Externs.ExternsFile)
+    -> GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors
+    -> m ()
+  {- Arity: 5,
+     Strictness: <S(S(LLLS(LLC(C(S))LL)L)LL),1*U(1*U(A,A,A,1*U(A,A,1*C1(C1(U)),A,A),C(U)),A,A)><L,1*U(A,1*U)><L,1*U><L,U><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                            GHC.Types.IO m)
+                   (eta :: Language.PureScript.Make.BuildPlan.BuildPlan)
+                   (eta1 :: Language.PureScript.Names.ModuleName)
+                   (eta2 :: GHC.Base.Maybe
+                              (Language.PureScript.Errors.MultipleErrors,
+                               Language.PureScript.Externs.ExternsFile))
+                   (eta3 :: GHC.Base.Maybe
+                              Language.PureScript.Errors.MultipleErrors) ->
+                 let {
+                   $dMonadBase :: Control.Monad.Base.MonadBase GHC.Types.IO m
+                   = Control.Monad.Trans.Control.$p1MonadBaseControl
+                       @ GHC.Types.IO
+                       @ m
+                       $dMonadBaseControl
+                 } in
+                 let {
+                   ds :: Language.PureScript.Make.BuildPlan.BuildJob
+                   = case eta of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds1 ds2 ->
+                     case Language.PureScript.Make.BuildPlan.$slookup1
+                            @ Language.PureScript.Make.BuildPlan.BuildJob
+                            eta1
+                            ds2 of wild1 {
+                       GHC.Base.Nothing
+                       -> Language.PureScript.Make.BuildPlan.markComplete1
+                       GHC.Base.Just v -> v } }
+                 } in
+                 GHC.Base.>>
+                   @ m
+                   (Control.Monad.Base.$p4MonadBase @ GHC.Types.IO @ m $dMonadBase)
+                   @ ()
+                   @ ()
+                   (Control.Monad.Base.liftBase
+                      @ GHC.Types.IO
+                      @ m
+                      $dMonadBase
+                      @ ()
+                      (\ (eta4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       case ds of wild { Language.PureScript.Make.BuildPlan.BuildJob rVar eVar ->
+                       case rVar of wild1 { GHC.MVar.MVar mvar# ->
+                       case GHC.Prim.putMVar#
+                              @ GHC.Prim.RealWorld
+                              @ (GHC.Base.Maybe
+                                   (Language.PureScript.Errors.MultipleErrors,
+                                    Language.PureScript.Externs.ExternsFile))
+                              mvar#
+                              eta2
+                              eta4 of s2# { DEFAULT ->
+                       (# s2#, GHC.Tuple.() #) } } })
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)))
+                   (Control.Monad.Base.liftBase
+                      @ GHC.Types.IO
+                      @ m
+                      $dMonadBase
+                      @ ()
+                      (\ (eta4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       case ds of wild { Language.PureScript.Make.BuildPlan.BuildJob rVar eVar ->
+                       case eVar of wild1 { GHC.MVar.MVar mvar# ->
+                       case GHC.Prim.putMVar#
+                              @ GHC.Prim.RealWorld
+                              @ (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)
+                              mvar#
+                              eta3
+                              eta4 of s2# { DEFAULT ->
+                       (# s2#, GHC.Tuple.() #) } } })
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)))) -}
+09c4e35b2aad3e14d0bd9c63307c914d
+  markComplete1 :: Language.PureScript.Make.BuildPlan.BuildJob
+  {- Strictness: x -}
+0f2ee93a50bcc8bd0cbdda0c347acfb2
+  needsRebuild ::
+    Language.PureScript.Make.BuildPlan.BuildPlan
+    -> Language.PureScript.Names.ModuleName -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (bp :: Language.PureScript.Make.BuildPlan.BuildPlan)
+                   (moduleName :: Language.PureScript.Names.ModuleName) ->
+                 case bp of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds ds1 ->
+                 Language.PureScript.Make.BuildPlan.$smember1
+                   @ Language.PureScript.Make.BuildPlan.BuildJob
+                   moduleName
+                   ds1 }) -}
+583f45c891ab2cdfe1dd161e7d82af01
+  pbExternsFile ::
+    Language.PureScript.Make.BuildPlan.Prebuilt
+    -> Language.PureScript.Externs.ExternsFile
+  RecSel Left Language.PureScript.Make.BuildPlan.Prebuilt
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS),1*U(A,1*U(U,U,U,U,U,U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Make.BuildPlan.Prebuilt) ->
+                 case ds of wild { Language.PureScript.Make.BuildPlan.Prebuilt ds1 ds2 ->
+                 ds2 }) -}
+583f45c891ab2cdfe1dd161e7d82af01
+  pbModificationTime ::
+    Language.PureScript.Make.BuildPlan.Prebuilt
+    -> Data.Time.Clock.Internal.UTCTime.UTCTime
+  RecSel Left Language.PureScript.Make.BuildPlan.Prebuilt
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Make.BuildPlan.Prebuilt) ->
+                 case ds of wild { Language.PureScript.Make.BuildPlan.Prebuilt ds1 ds2 ->
+                 ds1 }) -}
+"SC:$sgo130" forall @ a
+                    (sc :: GHC.Prim.Int#)
+                    (sc1 :: Language.PureScript.Names.ModuleName)
+                    (sc2 :: a)
+                    (sc3 :: Data.Map.Internal.Map
+                              Language.PureScript.Names.ModuleName a)
+                    (sc4 :: Data.Map.Internal.Map
+                              Language.PureScript.Names.ModuleName a)
+                    (sc5 :: a)
+                    (sc6 :: Language.PureScript.Names.ModuleName)
+                    (sc7 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Make.BuildPlan.$sinsert_$sgo13 @ a
+                                                     sc7
+                                                     sc6
+                                                     sc5
+                                                     (Data.Map.Internal.Bin
+                                                        @ Language.PureScript.Names.ModuleName
+                                                        @ a
+                                                        sc
+                                                        sc1
+                                                        sc2
+                                                        sc3
+                                                        sc4)
+  = Language.PureScript.Make.BuildPlan.$sinsert_$s$sgo13
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      sc4
+      sc5
+      sc6
+      sc7
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: GHC.Prim.Int#)
+                             (sc1 :: Language.PureScript.Names.ModuleName)
+                             (sc2 :: a)
+                             (sc3 :: Data.Map.Internal.Map
+                                       Language.PureScript.Names.ModuleName a)
+                             (sc4 :: Data.Map.Internal.Map
+                                       Language.PureScript.Names.ModuleName a)
+                             (sc5 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Make.BuildPlan.$wpoly_go13 @ a
+                                                 sc5
+                                                 (Data.Map.Internal.Bin
+                                                    @ Language.PureScript.Names.ModuleName
+                                                    @ a
+                                                    sc
+                                                    sc1
+                                                    sc2
+                                                    sc3
+                                                    sc4)
+  = Language.PureScript.Make.BuildPlan.$s$wsplit_$s$wpoly_go13
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      sc4
+      sc5
+"SPEC/Language.PureScript.Make.BuildPlan union @ ModuleName _" [orphan] forall @ a
+                                                                               ($dOrd :: GHC.Classes.Ord
+                                                                                           Language.PureScript.Names.ModuleName)
+  Data.Map.Internal.union @ Language.PureScript.Names.ModuleName
+                          @ a
+                          $dOrd
+  = Language.PureScript.Make.BuildPlan.$sunion @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

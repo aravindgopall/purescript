@@ -1,0 +1,253 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:28:22.482182 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.RenderedCode 8043
+  interface hash: 3439516acf44455122aabf7a9d9a6241
+  ABI hash: c7a77d8f9da9461d9b7b1607c98cc98a
+  export-list hash: bdff998a873c7d4afd4c5b1970194d83
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 94f2816997904b752beedc19c412f025
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Docs.RenderedCode.RenderKind.renderKind
+  Language.PureScript.Docs.RenderedCode.RenderType.defaultRenderTypeOptions
+  Language.PureScript.Docs.RenderedCode.RenderType.renderRow
+  Language.PureScript.Docs.RenderedCode.RenderType.renderType
+  Language.PureScript.Docs.RenderedCode.RenderType.renderTypeAtom
+  Language.PureScript.Docs.RenderedCode.RenderType.renderTypeAtomWithOptions
+  Language.PureScript.Docs.RenderedCode.RenderType.renderTypeWithOptions
+  Language.PureScript.Docs.RenderedCode.Types.alias
+  Language.PureScript.Docs.RenderedCode.Types.aliasName
+  Language.PureScript.Docs.RenderedCode.Types.asContainingModule
+  Language.PureScript.Docs.RenderedCode.Types.asRenderedCode
+  Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement
+  Language.PureScript.Docs.RenderedCode.Types.containingModuleToMaybe
+  Language.PureScript.Docs.RenderedCode.Types.dataCtor
+  Language.PureScript.Docs.RenderedCode.Types.fromContainingModule
+  Language.PureScript.Docs.RenderedCode.Types.fromQualified
+  Language.PureScript.Docs.RenderedCode.Types.ident
+  Language.PureScript.Docs.RenderedCode.Types.keyword
+  Language.PureScript.Docs.RenderedCode.Types.keywordAs
+  Language.PureScript.Docs.RenderedCode.Types.keywordClass
+  Language.PureScript.Docs.RenderedCode.Types.keywordData
+  Language.PureScript.Docs.RenderedCode.Types.keywordFixity
+  Language.PureScript.Docs.RenderedCode.Types.keywordForall
+  Language.PureScript.Docs.RenderedCode.Types.keywordInstance
+  Language.PureScript.Docs.RenderedCode.Types.keywordKind
+  Language.PureScript.Docs.RenderedCode.Types.keywordNewtype
+  Language.PureScript.Docs.RenderedCode.Types.keywordType
+  Language.PureScript.Docs.RenderedCode.Types.keywordWhere
+  Language.PureScript.Docs.RenderedCode.Types.kind
+  Language.PureScript.Docs.RenderedCode.Types.maybeToContainingModule
+  Language.PureScript.Docs.RenderedCode.Types.outputWith
+  Language.PureScript.Docs.RenderedCode.Types.parens
+  Language.PureScript.Docs.RenderedCode.Types.sp
+  Language.PureScript.Docs.RenderedCode.Types.syntax
+  Language.PureScript.Docs.RenderedCode.Types.typeCtor
+  Language.PureScript.Docs.RenderedCode.Types.typeOp
+  Language.PureScript.Docs.RenderedCode.Types.typeVar
+  Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions{Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions currentModule prettyPrintObjects}
+  Language.PureScript.Docs.RenderedCode.Types.ContainingModule{Language.PureScript.Docs.RenderedCode.Types.OtherModule Language.PureScript.Docs.RenderedCode.Types.ThisModule}
+  Language.PureScript.Docs.RenderedCode.Types.FixityAlias
+  Language.PureScript.Docs.RenderedCode.Types.Link{Language.PureScript.Docs.RenderedCode.Types.Link Language.PureScript.Docs.RenderedCode.Types.NoLink}
+  Language.PureScript.Docs.RenderedCode.Types.Namespace{Language.PureScript.Docs.RenderedCode.Types.KindLevel Language.PureScript.Docs.RenderedCode.Types.TypeLevel Language.PureScript.Docs.RenderedCode.Types.ValueLevel}
+  Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement{Language.PureScript.Docs.RenderedCode.Types.Keyword Language.PureScript.Docs.RenderedCode.Types.Space Language.PureScript.Docs.RenderedCode.Types.Symbol Language.PureScript.Docs.RenderedCode.Types.Syntax}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash
+                     Language.PureScript.Docs.RenderedCode.RenderKind
+                     Language.PureScript.Docs.RenderedCode.RenderType
+                     Language.PureScript.Docs.RenderedCode.Types
+                     Language.PureScript.Docs.Utils.MonoidExtras
+                     Language.PureScript.Environment Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  Language.PureScript.Docs.RenderedCode.RenderKind 8156f1969bbab61cc7344dd771e31019
+  exports: d991cfdfa7bb017bbea97c5444046cee
+  renderKind 4a1e9450bfcb4916c80722a8487fe506
+import  -/  Language.PureScript.Docs.RenderedCode.RenderType ee492ed70af7249e37a3cfa564d45c3b
+  exports: 10d5ce0076f9c058b0fbcb0dd80aab5a
+  RenderTypeOptions 9c130d38a97c7a814d21e5f3eb388721
+  RenderTypeOptions af5ce77642123ce45827756ffe557961
+  currentModule af5ce77642123ce45827756ffe557961
+  defaultRenderTypeOptions 0b088e59ab488875ab6b93272da29b29
+  prettyPrintObjects af5ce77642123ce45827756ffe557961
+  renderRow 03cd7ed42b3013d47d807331fcab5a7e
+  renderType d15242a5702d7e00db5ad3f0ad414298
+  renderTypeAtom 30c961b6541e37a05a1ba8f6cef5467f
+  renderTypeAtomWithOptions e70a4f5e40bc1d1974592e0a416e7248
+  renderTypeWithOptions 7ad1e06d8cf3f0add25fe34aa00788aa
+import  -/  Language.PureScript.Docs.RenderedCode.Types 043476f1219ebaba7bef38f3035bc7df
+  exports: 5c846e39a8e35d0cd82e369fdbd93a5f
+  ContainingModule 7fd78b3d6be6c8453ba17c402b4bd2a1
+  FixityAlias 6f960a06e738e49e9ff5eee34182b501
+  Keyword 3e05053bbc8a936be5d536e066ea02ea
+  KindLevel 2453a59bc1de0fb5442465f2d5aee924
+  Link 57107cd3acce8260120bf5733b798156
+  Link 5e36da664b08e623162b4c76cb76fcf5
+  Namespace 0bf68f95cc438605559d4d420b903a78
+  NoLink 6e05dae2c23e6e40b2eaf5dd20fb7eb9
+  OtherModule 8891cdf64b29024772f3798468cceb1b
+  RenderedCode 4660ea0ffbba09617bc864a10b08d72f
+  RenderedCodeElement 171153e7e2ed40b7058dbb86502105f3
+  Space 0a63150921f42c5267754bbe069af2f0
+  Symbol ef806f3592ad9cbec9dba9fbd6790cc5
+  Syntax d01bc8fa1625de8d27bcfec317a31293
+  ThisModule 7ad026b0a3812c32f4042541707547a0
+  TypeLevel 0032ddd9162116de18c15ac50fdae6a1
+  ValueLevel ae131370711ae80779ba3e7032d01684
+  alias 264048896fdb8d7a984d226df5320be8
+  aliasName 93660e9a6a57956739cb37ae8fc4ef17
+  asContainingModule 7fd78b3d6be6c8453ba17c402b4bd2a1
+  asRenderedCode 6058947f1f23fe9eaa0cae5cad314873
+  asRenderedCodeElement 860c3bd007c3bc6e78d5490f530478fa
+  containingModuleToMaybe d4c018c41e49fa76958505ed2ca8a9d9
+  dataCtor 55d937c1ada98630a10a24c5fa4e6195
+  fromContainingModule 6c94d76ead6272f7111c45f99e1d1162
+  fromQualified e3078abbf028fac3bda9a6f35b357441
+  ident 1edc6188e1543cc534039e129ed205e2
+  keyword f1aae0f6ee3d35bf6919f5ba7223e983
+  keywordAs 07177d96fd9c86af218318beac9e40c6
+  keywordClass 6c863eaac5c66722ab79934c0ddff415
+  keywordData 64474e9d7dfd465954644b9df6a8feac
+  keywordFixity 2251146ecf774cfff36ec014a0b3f4e6
+  keywordForall a24777c5cd08c7ec239709f63a66077b
+  keywordInstance 8279dbfe041508986257a64136678e67
+  keywordKind f1d9e5d7c98c110289dfbd8b3eec8697
+  keywordNewtype b889adf6b92320ad56008a216cc6f2ee
+  keywordType 3f3ac34c1543fa96adcb27db726783b6
+  keywordWhere ebdeaf56a7806ca9667d2c92efa46d90
+  kind c8c3bb5f95f1f9a3537e6f9dde0cc09b
+  maybeToContainingModule dff6a7ebec2a311bffecb7ed7a9d97d0
+  outputWith 571a394cd6325194e6bd8112427d5a3e
+  parens f2e211d79a20aa037a181942905db0ee
+  sp 39b968598114288ef3f090bf19abc506
+  syntax 1dcaacc9dbea946d419bd10faec44aed
+  typeCtor 640b2fa6077da5d954e11bcf1438f389
+  typeOp bacc39255084273fa8fde2f03d488c74
+  typeVar 22b530447c9cd534f2f7d44d4bf20fb8
+937fdf237b00896a8f077fa637aae964
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Docs.RenderedCode.$trModule3
+                   Language.PureScript.Docs.RenderedCode.$trModule1) -}
+15f098f598aedfead2bb0096dcb50907
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.RenderedCode.$trModule2) -}
+a646bcb01a3e4778d98a116a92f354aa
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Docs.RenderedCode"#) -}
+9f6c5bf9a043d959bde9b4018caac420
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.RenderedCode.$trModule4) -}
+bcdbf818cc61bc116586704f53099e3b
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

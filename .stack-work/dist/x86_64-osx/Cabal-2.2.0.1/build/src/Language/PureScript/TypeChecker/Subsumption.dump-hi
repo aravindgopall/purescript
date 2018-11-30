@@ -1,0 +1,398 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:47:25.625048 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeChecker.Subsumption 8043
+  interface hash: 75c2e4ef9d195a27102930f835c11645
+  ABI hash: 32783e5a2ab496371fc65df0d10c4c0f
+  export-list hash: e74c627ee87f849c4b9c2a42e591b46e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a4c8bc1c4d029c92d48fc22335a3b645
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.TypeChecker.Subsumption.subsumes
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Ord 8579f16310a4ec69c00617051bb5c3d9
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  data-ordlist-0.4.7.0:Data.List.Ordered 19a3b0a0496face1cb5b22b672c1aabb
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  AdditionalProperty 92ad56b21da7218a29c9d508e9576e62
+  App 60282620a1433a146ffafd0d8773af87
+  ErrorInSubsumption dd3f47392501540365e39b4f0f23ab70
+  Expr b31d94d0c7b90700d40f9ba6ec420e41
+  PropertyIsMissing 237b3879f5f204ab58e49865a12e1003
+  TypeClassDictionary 9f4047c1c1ff9eeef0292c33d9ecb17c
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Environment 31667499b7017b19998bb405474fbe93
+  exports: 56b1ef0ac6132b4c113ce26a807dcfb6
+  tyFunction 9783ce0b37378c763c53f9a28f7311d6
+  tyRecord fcace11d48da9699cb692901edeeb943
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+  errorMessage 56e7aa221570d7d0bd9b4d606b8de7f2
+import  -/  Language.PureScript.TypeChecker.Monad 36a86b5cfef989dae17621bbace19db6
+  exports: 9d9d275b045efb93172c1bb44957da47
+  CheckState 5c23016b2e80baec4bdda0c92644cfa1
+  getHints 3553d6fedf4a25833cace1aa7ba0c6a9
+  getTypeClassDictionaries bc1a001f0bb244cf56f13be7208df516
+  withErrorMessageHint 2c6ffe4a4583e9fbcf6d82baf0863283
+import  -/  Language.PureScript.TypeChecker.Skolems f177d1401fc0e1a8b89ef83cdae40ba1
+  exports: 96cf1a567f2e8b0e83ff8cd880c3e6bb
+  newSkolemConstant 5b6080edfec8521657cf465342cd5618
+  skolemize de5aa18c557b3d076ec90257b3b337ae
+import  -/  Language.PureScript.TypeChecker.Unify 8691f08fe31a36c2d93443f4bddc13e8
+  exports: d8da060597f9e4fdf658eaa278b38c79
+  alignRowsWith e26de58e42f4398a4c4c55bc1e7bcc5b
+  replaceVarWithUnknown 2cf76a55e0a49af279a1ef36820dc9d1
+  unifyTypes b827ceec3d75557ebebfc302895f9c3b
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  exports: ae97bc75fcebc59f59c970736847a827
+  ConstrainedType c2b3670e25b3b510981414df0f340e0f
+  ForAll 8e5cfabdac15777ed3387d8a0029598b
+  KindedType 0c5178e2942b7d198426b0539b6f6442
+  REmpty 7b5d4ca839c026ea0c7f04daad457191
+  Type 93223f8afa90d0facc05a03f863dc72d
+  TypeApp 8aa2c93426facb8054d5caf77ff9d922
+  rowFromList 9f93289e7d64c25344406096f6428fc0
+0d02713eb67b49e962a5e07efb6459d2
+  $tc'Elaborate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14158829379430207016##
+                   17845658372952563448##
+                   Language.PureScript.TypeChecker.Subsumption.$trModule
+                   Language.PureScript.TypeChecker.Subsumption.$tc'Elaborate2
+                   0#
+                   Language.PureScript.TypeChecker.Subsumption.$tc'Elaborate1) -}
+0e73e2e66a066949e08a3382206bae2d
+  $tc'Elaborate1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+7480566bf9cde9b028d0391a65b83871
+  $tc'Elaborate2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$tc'Elaborate3) -}
+33fe629bdf4ed8d1dab8bf8519f2a9be
+  $tc'Elaborate3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Elaborate"#) -}
+165cfe5b60c4854d8332d9d7947d721b
+  $tc'NoElaborate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3525964156040096350##
+                   11629192792766271329##
+                   Language.PureScript.TypeChecker.Subsumption.$trModule
+                   Language.PureScript.TypeChecker.Subsumption.$tc'NoElaborate1
+                   0#
+                   Language.PureScript.TypeChecker.Subsumption.$tc'Elaborate1) -}
+5616086147b93571e7db15f5b47f38af
+  $tc'NoElaborate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$tc'NoElaborate2) -}
+2a428994e745291248eb2f0cc42d88ee
+  $tc'NoElaborate2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoElaborate"#) -}
+347b9f21362d06c0a346ee36be630be8
+  $tc'SElaborate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17110192236571205133##
+                   13675440831263563038##
+                   Language.PureScript.TypeChecker.Subsumption.$trModule
+                   Language.PureScript.TypeChecker.Subsumption.$tc'SElaborate2
+                   0#
+                   Language.PureScript.TypeChecker.Subsumption.$tc'SElaborate1) -}
+32653a7dd159cb02296a3d96c77165f8
+  $tc'SElaborate1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+a6305c496d5461e650e7a97bf2b3b25a
+  $tc'SElaborate2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$tc'SElaborate3) -}
+808f8cd52ae0b25f4c9de2b9806397fd
+  $tc'SElaborate3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SElaborate"#) -}
+f96e92a45b0dddc1d7c3ebb0d8583f3f
+  $tc'SNoElaborate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12723370835369003905##
+                   9360582341145893635##
+                   Language.PureScript.TypeChecker.Subsumption.$trModule
+                   Language.PureScript.TypeChecker.Subsumption.$tc'SNoElaborate2
+                   0#
+                   Language.PureScript.TypeChecker.Subsumption.$tc'SNoElaborate1) -}
+efb065fbb19056f888348de5b6d8926c
+  $tc'SNoElaborate1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d56e8c09557f53e24be92ca002d30023
+  $tc'SNoElaborate2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$tc'SNoElaborate3) -}
+4fcefafe711e88b12b6af152d22d51d1
+  $tc'SNoElaborate3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SNoElaborate"#) -}
+e710280a7029176674da233c60b518df
+  $tcMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8470577134464359277##
+                   16181778759031247991##
+                   Language.PureScript.TypeChecker.Subsumption.$trModule
+                   Language.PureScript.TypeChecker.Subsumption.$tcMode1
+                   0#
+                   GHC.Types.krep$*) -}
+c64fa01f9afe590f51a326954bc72c6d
+  $tcMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$tcMode2) -}
+377085cb07c50765a7910ef515d25feb
+  $tcMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Mode"#) -}
+d01749dbf02f01b4fd1b6c42cf42b3b4
+  $tcModeSing :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7900527866745165779##
+                   15092253273235490519##
+                   Language.PureScript.TypeChecker.Subsumption.$trModule
+                   Language.PureScript.TypeChecker.Subsumption.$tcModeSing2
+                   0#
+                   Language.PureScript.TypeChecker.Subsumption.$tcModeSing1) -}
+7d05e581964aaf818ba1c1749c81537b
+  $tcModeSing1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+63bd5112e6cf2024e7c10abc8a1e4270
+  $tcModeSing2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$tcModeSing3) -}
+3c05d2780f1a72f39c94532418029c22
+  $tcModeSing3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ModeSing"#) -}
+c4f9beb9efd634ff8fbf070c203ecbc2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.TypeChecker.Subsumption.$trModule3
+                   Language.PureScript.TypeChecker.Subsumption.$trModule1) -}
+5560c39b1514e06fd6a4f975edfe8a09
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$trModule2) -}
+b08f7c186d76919dd009c383d7b59972
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.TypeChecker.Subsumption"#) -}
+dba059df753dbd1238474e618f7661bb
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Subsumption.$trModule4) -}
+81ce71ef4a876599f3afb2f9892b2a68
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+1a91144f410c452762a4c89c6438ce03
+  type family Coercion (mode :: Language.PureScript.TypeChecker.Subsumption.Mode)
+              :: *
+    where
+        Coercion 'Language.PureScript.TypeChecker.Subsumption.Elaborate
+          = Language.PureScript.AST.Declarations.Expr
+            -> Language.PureScript.AST.Declarations.Expr
+        Coercion 'Language.PureScript.TypeChecker.Subsumption.NoElaborate
+          = ()
+      axiom Language.PureScript.TypeChecker.Subsumption.D:R:Coercion
+1a91144f410c452762a4c89c6438ce03
+  axiom Language.PureScript.TypeChecker.Subsumption.D:R:Coercion::
+      Language.PureScript.TypeChecker.Subsumption.Coercion
+        'Language.PureScript.TypeChecker.Subsumption.Elaborate
+        = Language.PureScript.AST.Declarations.Expr
+          -> Language.PureScript.AST.Declarations.Expr
+      Language.PureScript.TypeChecker.Subsumption.Coercion
+        'Language.PureScript.TypeChecker.Subsumption.NoElaborate
+        = ()
+f73f4ca8cf66d4e6e1b2a8974a113f71
+  data Mode = Elaborate | NoElaborate
+2e0ae62cc9625888946fc3e115d07f9b
+  type role ModeSing nominal
+  data ModeSing (mode :: Language.PureScript.TypeChecker.Subsumption.Mode) where
+    SElaborate :: ModeSing 'Language.PureScript.TypeChecker.Subsumption.Elaborate
+    SNoElaborate :: ModeSing 'Language.PureScript.TypeChecker.Subsumption.NoElaborate
+0e109a7eb67e5bf86f5c17cf2e9f77d7
+  subsumes ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.State.Class.MonadState
+       Language.PureScript.TypeChecker.Monad.CheckState m) =>
+    Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type
+    -> m (Language.PureScript.AST.Declarations.Expr
+          -> Language.PureScript.AST.Declarations.Expr)
+  {- Arity: 4,
+     Strictness: <L,U(U(U(U(C(C1(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),C(U),A),C(U),C(C1(U)))><S(S(LC(C(S))LLL)LLL),U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Errors.MultipleErrors m)
+                   ($dMonadState :: Control.Monad.State.Class.MonadState
+                                      Language.PureScript.TypeChecker.Monad.CheckState m)
+                   (ty1 :: Language.PureScript.Types.Type)
+                   (ty2 :: Language.PureScript.Types.Type) ->
+                 Language.PureScript.TypeChecker.Monad.withErrorMessageHint
+                   @ m
+                   @ (Language.PureScript.AST.Declarations.Expr
+                      -> Language.PureScript.AST.Declarations.Expr)
+                   $dMonadState
+                   $dMonadError
+                   (Language.PureScript.AST.Declarations.ErrorInSubsumption ty1 ty2)
+                   (Language.PureScript.TypeChecker.Subsumption.subsumes'
+                      @ m
+                      @ 'Language.PureScript.TypeChecker.Subsumption.Elaborate
+                      $dMonadError
+                      $dMonadState
+                      Language.PureScript.TypeChecker.Subsumption.$WSElaborate
+                      ty1
+                      ty2)
+                     `cast`
+                   (<m>_R (Language.PureScript.TypeChecker.Subsumption.D:R:Coercion[0]))) -}
+9635961f397a155ecc9e710bf91960f1
+  subsumes' ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.State.Class.MonadState
+       Language.PureScript.TypeChecker.Monad.CheckState m) =>
+    Language.PureScript.TypeChecker.Subsumption.ModeSing mode
+    -> Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type
+    -> m (Language.PureScript.TypeChecker.Subsumption.Coercion mode)
+  {- Arity: 3,
+     Strictness: <L,U(U(U(U(C(C1(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),C(U),A),C(U),C(C1(U)))><L,U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

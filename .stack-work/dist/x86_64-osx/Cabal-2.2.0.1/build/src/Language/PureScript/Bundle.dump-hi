@@ -1,0 +1,2409 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:41.778184 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Bundle 8043
+  interface hash: 0d0bc39820b82b88706312a0800d44b8
+  ABI hash: 850a0b3ac8794bcad3be1a1d23d53dc5
+  export-list hash: 436e6291784d08551205d74d8d15119b
+  orphan hash: 28b02359eccb9ff8970de6358332a185
+  flag hash: 2ae478d21823b7c739b1b08c46262eb0
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Bundle.bundle
+  Language.PureScript.Bundle.bundleSM
+  Language.PureScript.Bundle.getExportedIdentifiers
+  Language.PureScript.Bundle.guessModuleIdentifier
+  Language.PureScript.Bundle.moduleName
+  Language.PureScript.Bundle.printErrorMessage
+  Language.PureScript.Bundle.ErrorMessage{Language.PureScript.Bundle.ErrorInModule Language.PureScript.Bundle.InvalidTopLevel Language.PureScript.Bundle.MissingEntryPoint Language.PureScript.Bundle.MissingMainModule Language.PureScript.Bundle.UnableToParseModule Language.PureScript.Bundle.UnsupportedExport Language.PureScript.Bundle.UnsupportedModulePath}
+  Language.PureScript.Bundle.ModuleIdentifier{Language.PureScript.Bundle.ModuleIdentifier}
+  Language.PureScript.Bundle.ModuleType{Language.PureScript.Bundle.Foreign Language.PureScript.Bundle.Regular}
+module dependencies: Paths_purescript
+package dependencies: array-0.5.2.0 async-2.2.1 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      filepath-1.4.2 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 language-javascript-0.6.0.11 mtl-2.2.2
+                      protolude-0.2.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 text-1.2.3.0
+                      transformers-0.5.5.0 utf8-string-1.0.1.1
+orphans: stm-2.4.5.0:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Char 3e89818e2b8ef1a2cc5393163484da72
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:Data.Version 26b96b3dd83a23703e0b8110475fc04a
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Char df8a8e058e3141ae6822492094eb6689
+import  -/  base-4.11.1.0:GHC.Err 5e26aa744981f14e0f1e4d29c44ac52e
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Graph 62516cbabce0b5240500dc0da6a9b2cf
+import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
+import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
+import  -/  filepath-1.4.2:System.FilePath a538d436328dd004b88f7d29a8b244c0
+import  -/  filepath-1.4.2:System.FilePath.Posix c021b7a40cfcdd9b08724b5bb7566b59
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser fbf89a16f99af1afcc6e4509cec1cbf6
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser.AST 4b3343c84045afd7e43ca1ee2b8b52cf
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser.Parser 2d496c459b60c675679d78fbf6f9beaf
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser.SrcLocation 418ed7031887d6434f1bc05155aa7d7f
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser.Token e755d663d5c9fcb0657f39d170aea981
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Pretty.Printer 54d109e07d8edd0e986a1a420c8213f5
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  protolude-0.2.2:Protolude.List 3a80368167450d7a4360ebf1ea443345
+import  -/  Paths_purescript a1929913cfb69ecc53654efc3b17c6b3
+  exports: 2c455cd4735d13a5fa8e95701f74bbba
+  version 36e47562f1510cc9eab6b4cc20db5d32
+import  -/  sourcemap-0.1.6:SourceMap.Types b775770f549711c0150c5529f935d9d4
+import  -/  syb-0.7:Data.Generics 2ddc257f9ac35414fc37ff4d19b4d388
+import  -/  syb-0.7:Data.Generics.Aliases a5097c06261967df51d59247bf1d4958
+import  -/  syb-0.7:Data.Generics.Schemes 58bc96c8ed0bed4ad53424f237efe8b8
+b32003658f1251a3b15abbef2f9bd4ec
+  $fEqExportType ::
+    GHC.Classes.Eq Language.PureScript.Bundle.ExportType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ExportType
+                  Language.PureScript.Bundle.$fEqExportType_$c==
+                  Language.PureScript.Bundle.$fEqExportType_$c/= -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fEqExportType_$c/= ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Bundle.ExportType)
+                   (y :: Language.PureScript.Bundle.ExportType) ->
+                 case x of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case y of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.True }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case y of wild1 {
+                        Language.PureScript.Bundle.RegularExport ipv -> GHC.Types.True
+                        Language.PureScript.Bundle.ForeignReexport
+                        -> GHC.Types.False } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fEqExportType_$c== ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Bundle.ExportType)
+                   (ds1 :: Language.PureScript.Bundle.ExportType) ->
+                 case ds of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case ds1 of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> GHC.Base.eqString a1 b1
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.False }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case ds1 of wild1 {
+                        Language.PureScript.Bundle.RegularExport ipv -> GHC.Types.False
+                        Language.PureScript.Bundle.ForeignReexport
+                        -> GHC.Types.True } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fEqModuleIdentifier ::
+    GHC.Classes.Eq Language.PureScript.Bundle.ModuleIdentifier
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleIdentifier
+                  Language.PureScript.Bundle.$fEqModuleIdentifier_$c==
+                  Language.PureScript.Bundle.$fEqModuleIdentifier_$c/= -}
+e981f87cc836cb887046ac5528b06625
+  $fEqModuleIdentifier_$c/= ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (y :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case x of wild { Language.PureScript.Bundle.ModuleIdentifier a1 a2 ->
+                 case y of wild1 { Language.PureScript.Bundle.ModuleIdentifier b1 b2 ->
+                 case GHC.Base.eqString a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case a2 of wild3 {
+                        Language.PureScript.Bundle.Regular
+                        -> case b2 of wild4 {
+                             Language.PureScript.Bundle.Regular -> GHC.Types.False
+                             Language.PureScript.Bundle.Foreign -> GHC.Types.True }
+                        Language.PureScript.Bundle.Foreign
+                        -> case b2 of wild4 {
+                             Language.PureScript.Bundle.Regular -> GHC.Types.True
+                             Language.PureScript.Bundle.Foreign -> GHC.Types.False } } } } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fEqModuleIdentifier_$c== ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 Language.PureScript.Bundle.$w$c== ww1 ww2 ww4 ww5 } }) -}
+ed91338e448ef64811d383df18092892
+  $fEqModuleIdentifier_$c==1 ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Bundle.ModuleType)
+                   (ds1 :: Language.PureScript.Bundle.ModuleType) ->
+                 case ds of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case ds1 of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.True
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.False }
+                   Language.PureScript.Bundle.Foreign
+                   -> case ds1 of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.False
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.True } }) -}
+ed91338e448ef64811d383df18092892
+  $fEqModuleType ::
+    GHC.Classes.Eq Language.PureScript.Bundle.ModuleType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleType
+                  Language.PureScript.Bundle.$fEqModuleIdentifier_$c==1
+                  Language.PureScript.Bundle.$fEqModuleType_$c/= -}
+ed91338e448ef64811d383df18092892
+  $fEqModuleType_$c/= ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleType)
+                   (y :: Language.PureScript.Bundle.ModuleType) ->
+                 case x of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case y of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.False
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.True }
+                   Language.PureScript.Bundle.Foreign
+                   -> case y of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.True
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.False } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType ::
+    GHC.Classes.Ord Language.PureScript.Bundle.ExportType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ExportType
+                  Language.PureScript.Bundle.$fEqExportType
+                  Language.PureScript.Bundle.$fOrdExportType_$ccompare
+                  Language.PureScript.Bundle.$fOrdExportType_$c<
+                  Language.PureScript.Bundle.$fOrdExportType_$c<=
+                  Language.PureScript.Bundle.$fOrdExportType_$c>
+                  Language.PureScript.Bundle.$fOrdExportType_$c>=
+                  Language.PureScript.Bundle.$fOrdExportType_$cmax
+                  Language.PureScript.Bundle.$fOrdExportType_$cmin -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$c< ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Bundle.ExportType)
+                   (b :: Language.PureScript.Bundle.ExportType) ->
+                 case a of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> GHC.Classes.$fOrd[]_$s$c<1 a1 b1
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.True }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$c<= ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.Bundle.ExportType)
+                   (b :: Language.PureScript.Bundle.ExportType) ->
+                 case b of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case a of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.False }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$c> ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.Bundle.ExportType)
+                   (b :: Language.PureScript.Bundle.ExportType) ->
+                 Language.PureScript.Bundle.$fOrdExportType_$c< b a) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$c>= ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.Bundle.ExportType)
+                   (b :: Language.PureScript.Bundle.ExportType) ->
+                 case a of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.False }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$ccompare ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Bundle.ExportType)
+                   (b :: Language.PureScript.Bundle.ExportType) ->
+                 case a of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.LT }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.RegularExport ipv -> GHC.Types.GT
+                        Language.PureScript.Bundle.ForeignReexport -> GHC.Types.EQ } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$cmax ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.Bundle.ExportType)
+                   (y :: Language.PureScript.Bundle.ExportType) ->
+                 case y of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case x of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             DEFAULT -> wild GHC.Types.LT -> wild1 }
+                        Language.PureScript.Bundle.ForeignReexport
+                        -> Language.PureScript.Bundle.ForeignReexport }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> case x of wild1 { DEFAULT ->
+                      Language.PureScript.Bundle.ForeignReexport } }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fOrdExportType_$cmin ::
+    Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType
+    -> Language.PureScript.Bundle.ExportType
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Bundle.ExportType)
+                   (y :: Language.PureScript.Bundle.ExportType) ->
+                 case y of wild {
+                   Language.PureScript.Bundle.RegularExport a1
+                   -> case x of wild1 {
+                        Language.PureScript.Bundle.RegularExport b1
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             DEFAULT -> wild1 GHC.Types.LT -> wild }
+                        Language.PureScript.Bundle.ForeignReexport -> wild }
+                   Language.PureScript.Bundle.ForeignReexport -> x }) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier ::
+    GHC.Classes.Ord Language.PureScript.Bundle.ModuleIdentifier
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleIdentifier
+                  Language.PureScript.Bundle.$fEqModuleIdentifier
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$ccompare
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$c<
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$c<=
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$c>
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$c>=
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$cmax
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$cmin -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$c< ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 Language.PureScript.Bundle.$w$c< ww1 ww2 ww4 ww5 } }) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleIdentifier_$c<1 ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Bundle.ModuleType)
+                   (b :: Language.PureScript.Bundle.ModuleType) ->
+                 case a of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.False
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.True }
+                   Language.PureScript.Bundle.Foreign
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$c<= ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 Language.PureScript.Bundle.$w$c<= ww1 ww2 ww4 ww5 } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$c> ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (b :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 Language.PureScript.Bundle.$fOrdModuleIdentifier_$c< b a) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$c>= ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 Language.PureScript.Bundle.$w$c>= ww1 ww2 ww4 ww5 } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$ccompare ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 Language.PureScript.Bundle.$w$ccompare ww1 ww2 ww4 ww5 } }) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleIdentifier_$ccompare1 ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Bundle.ModuleType)
+                   (b :: Language.PureScript.Bundle.ModuleType) ->
+                 case a of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.EQ
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.LT }
+                   Language.PureScript.Bundle.Foreign
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.GT
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.EQ } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$cmax ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 case GHC.Classes.$fOrd[]_$s$ccompare1 ww4 ww1 of wild {
+                   GHC.Types.LT -> Language.PureScript.Bundle.ModuleIdentifier ww1 ww2
+                   GHC.Types.EQ
+                   -> case ww5 of wild1 {
+                        Language.PureScript.Bundle.Regular
+                        -> case ww2 of wild2 {
+                             Language.PureScript.Bundle.Regular
+                             -> Language.PureScript.Bundle.ModuleIdentifier
+                                  ww4
+                                  Language.PureScript.Bundle.Regular
+                             Language.PureScript.Bundle.Foreign
+                             -> Language.PureScript.Bundle.ModuleIdentifier
+                                  ww1
+                                  Language.PureScript.Bundle.Foreign }
+                        Language.PureScript.Bundle.Foreign
+                        -> case ww2 of wild2 { DEFAULT ->
+                           Language.PureScript.Bundle.ModuleIdentifier
+                             ww4
+                             Language.PureScript.Bundle.Foreign } }
+                   GHC.Types.GT
+                   -> Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 } } }) -}
+e981f87cc836cb887046ac5528b06625
+  $fOrdModuleIdentifier_$cmin ::
+    Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier
+    -> Language.PureScript.Bundle.ModuleIdentifier
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Bundle.ModuleIdentifier ww4 ww5 ->
+                 case GHC.Classes.$fOrd[]_$s$ccompare1 ww4 ww1 of wild {
+                   GHC.Types.LT -> Language.PureScript.Bundle.ModuleIdentifier ww4 ww5
+                   GHC.Types.EQ
+                   -> case ww5 of wild1 {
+                        Language.PureScript.Bundle.Regular
+                        -> case ww2 of wild2 {
+                             Language.PureScript.Bundle.Regular
+                             -> Language.PureScript.Bundle.ModuleIdentifier
+                                  ww1
+                                  Language.PureScript.Bundle.Regular
+                             Language.PureScript.Bundle.Foreign
+                             -> Language.PureScript.Bundle.ModuleIdentifier
+                                  ww4
+                                  Language.PureScript.Bundle.Regular }
+                        Language.PureScript.Bundle.Foreign
+                        -> case ww2 of wild2 { DEFAULT ->
+                           Language.PureScript.Bundle.ModuleIdentifier ww1 wild2 } }
+                   GHC.Types.GT
+                   -> Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 } } }) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleType ::
+    GHC.Classes.Ord Language.PureScript.Bundle.ModuleType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleType
+                  Language.PureScript.Bundle.$fEqModuleType
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$ccompare1
+                  Language.PureScript.Bundle.$fOrdModuleIdentifier_$c<1
+                  Language.PureScript.Bundle.$fOrdModuleType_$c<=
+                  Language.PureScript.Bundle.$fOrdModuleType_$c>
+                  Language.PureScript.Bundle.$fOrdModuleType_$c>=
+                  Language.PureScript.Bundle.$fOrdModuleType_$cmax
+                  Language.PureScript.Bundle.$fOrdModuleType_$cmin -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleType_$c<= ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Bundle.ModuleType)
+                   (b :: Language.PureScript.Bundle.ModuleType) ->
+                 case b of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case a of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.True
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.False }
+                   Language.PureScript.Bundle.Foreign
+                   -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleType_$c> ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.Bundle.ModuleType)
+                   (b :: Language.PureScript.Bundle.ModuleType) ->
+                 Language.PureScript.Bundle.$fOrdModuleIdentifier_$c<1 b a) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleType_$c>= ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Bundle.ModuleType)
+                   (b :: Language.PureScript.Bundle.ModuleType) ->
+                 case a of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case b of wild1 {
+                        Language.PureScript.Bundle.Regular -> GHC.Types.True
+                        Language.PureScript.Bundle.Foreign -> GHC.Types.False }
+                   Language.PureScript.Bundle.Foreign
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleType_$cmax ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleType)
+                   (y :: Language.PureScript.Bundle.ModuleType) ->
+                 case y of wild {
+                   Language.PureScript.Bundle.Regular -> x
+                   Language.PureScript.Bundle.Foreign
+                   -> case x of wild1 { DEFAULT ->
+                      Language.PureScript.Bundle.Foreign } }) -}
+ed91338e448ef64811d383df18092892
+  $fOrdModuleType_$cmin ::
+    Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType
+    -> Language.PureScript.Bundle.ModuleType
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleType)
+                   (y :: Language.PureScript.Bundle.ModuleType) ->
+                 case y of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> case x of wild1 { DEFAULT ->
+                      Language.PureScript.Bundle.Regular }
+                   Language.PureScript.Bundle.Foreign -> x }) -}
+b76460e7f9aa17db386324a975b25223
+  $fShowErrorMessage ::
+    GHC.Show.Show Language.PureScript.Bundle.ErrorMessage
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ErrorMessage
+                  Language.PureScript.Bundle.$fShowErrorMessage_$cshowsPrec
+                  Language.PureScript.Bundle.$fShowErrorMessage_$cshow
+                  Language.PureScript.Bundle.$fShowErrorMessage_$cshowList -}
+b76460e7f9aa17db386324a975b25223
+  $fShowErrorMessage1 ::
+    Language.PureScript.Bundle.ErrorMessage -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Language.PureScript.Bundle.$fShowErrorMessage_$cshowsPrec
+                   Language.PureScript.Bundle.$fShowErrorMessage2) -}
+0cbcdf6fb097d6d8ce8c3a44ebd74d74
+  $fShowErrorMessage2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+b76460e7f9aa17db386324a975b25223
+  $fShowErrorMessage_$cshow ::
+    Language.PureScript.Bundle.ErrorMessage -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Bundle.ErrorMessage) ->
+                 Language.PureScript.Bundle.$fShowErrorMessage_$s$cshowsPrec
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   x
+                   0#) -}
+b76460e7f9aa17db386324a975b25223
+  $fShowErrorMessage_$cshowList ::
+    [Language.PureScript.Bundle.ErrorMessage] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Bundle.ErrorMessage])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Bundle.ErrorMessage
+                   Language.PureScript.Bundle.$fShowErrorMessage1
+                   ls
+                   s) -}
+b76460e7f9aa17db386324a975b25223
+  $fShowErrorMessage_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Bundle.ErrorMessage -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+b76460e7f9aa17db386324a975b25223
+  $fShowErrorMessage_$s$cshowsPrec ::
+    [GHC.Types.Char]
+    -> Language.PureScript.Bundle.ErrorMessage
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U> -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fShowExportType ::
+    GHC.Show.Show Language.PureScript.Bundle.ExportType
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ExportType
+                  Language.PureScript.Bundle.$fShowExportType_$cshowsPrec
+                  Language.PureScript.Bundle.$fShowExportType_$cshow
+                  Language.PureScript.Bundle.$fShowExportType_$cshowList -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fShowExportType1 ::
+    Language.PureScript.Bundle.ExportType -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Language.PureScript.Bundle.$fShowExportType_$cshowsPrec
+                   Language.PureScript.Bundle.$fShowErrorMessage2) -}
+4ce27305937a608b6b23df167695714e
+  $fShowExportType2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Bundle.$fShowExportType3) -}
+2041ea6107bc5e95316164e071ab68f2
+  $fShowExportType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ForeignReexport"#) -}
+f731034b74e89a360057a5caccc2d4e5
+  $fShowExportType4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RegularExport "#) -}
+1c8ec9a40d5ce48ddca44690210692da
+  $fShowExportType5 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.$fShow(,)3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fShowExportType_$cshow ::
+    Language.PureScript.Bundle.ExportType -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.Bundle.ExportType) ->
+                 case x of wild {
+                   Language.PureScript.Bundle.RegularExport b1
+                   -> GHC.CString.unpackAppendCString#
+                        Language.PureScript.Bundle.$fShowExportType4
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)3
+                           (GHC.Show.showLitString
+                              b1
+                              Language.PureScript.Bundle.$fShowExportType5))
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> Language.PureScript.Bundle.$fShowExportType2 }) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fShowExportType_$cshowList ::
+    [Language.PureScript.Bundle.ExportType] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Bundle.ExportType])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Bundle.ExportType
+                   Language.PureScript.Bundle.$fShowExportType1
+                   ls
+                   s) -}
+b32003658f1251a3b15abbef2f9bd4ec
+  $fShowExportType_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Bundle.ExportType -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: Language.PureScript.Bundle.ExportType)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Language.PureScript.Bundle.RegularExport b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.>=# x 11# of lwild {
+                        DEFAULT
+                        -> GHC.CString.unpackAppendCString#
+                             Language.PureScript.Bundle.$fShowExportType4
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 eta)))
+                        1#
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Language.PureScript.Bundle.$fShowExportType4
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.$fShow(,)3
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)3
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            eta))))) } }
+                   Language.PureScript.Bundle.ForeignReexport
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Bundle.$fShowExportType2
+                        eta }) -}
+42ea3310526d5340a9c9399c890e9b15
+  $fShowModule :: GHC.Show.Show Language.PureScript.Bundle.Module
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.Module
+                  Language.PureScript.Bundle.$fShowModule_$cshowsPrec
+                  Language.PureScript.Bundle.$fShowModule_$cshow
+                  Language.PureScript.Bundle.$fShowModule_$cshowList -}
+42ea3310526d5340a9c9399c890e9b15
+  $fShowModule1 ::
+    Language.PureScript.Bundle.Module -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U(U(U,U),1*U,U)>,
+     Unfolding: (\ (w :: Language.PureScript.Bundle.Module) ->
+                 case w of ww { Language.PureScript.Bundle.Module ww1 ww2 ww3 ->
+                 Language.PureScript.Bundle.$w$cshowsPrec 0# ww1 ww2 ww3 }) -}
+b7f7c6178cf0514a546551791ef85f97
+  $fShowModule10 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+320edc87f73f19bff82bc4ea88d7c6af
+  $fShowModule2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Bundle.$fShowModule3) -}
+f737a157785a84f9656728e2cc31dae3
+  $fShowModule3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Module "#) -}
+c6c42c8d0c6b365d42d1afacff3673e8
+  $fShowModule4 ::
+    Language.PureScript.Bundle.ModuleElement -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (w :: Language.PureScript.Bundle.ModuleElement) ->
+                 Language.PureScript.Bundle.$w$cshowsPrec1 0# w) -}
+376d20aea0adfe3d00cb84a883f9dd0c
+  $fShowModule5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Bundle.$fShowModule6) -}
+1fd04a80d3dd92d633cff9fae61a56db
+  $fShowModule6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foreign"#) -}
+f7088db5c2d7c00987effaac1c37938e
+  $fShowModule7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Bundle.$fShowModule8) -}
+6e0152fee96c645b17986b28ffe51133
+  $fShowModule8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Regular"#) -}
+aebaa9449d5899e91f97ce5d6be1358c
+  $fShowModule9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ModuleIdentifier "#) -}
+c6c42c8d0c6b365d42d1afacff3673e8
+  $fShowModuleElement ::
+    GHC.Show.Show Language.PureScript.Bundle.ModuleElement
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleElement
+                  Language.PureScript.Bundle.$fShowModuleElement_$cshowsPrec
+                  Language.PureScript.Bundle.$fShowModuleElement_$cshow
+                  Language.PureScript.Bundle.$fShowModule_$cshowList1 -}
+c6c42c8d0c6b365d42d1afacff3673e8
+  $fShowModuleElement_$cshow ::
+    Language.PureScript.Bundle.ModuleElement -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleElement) ->
+                 Language.PureScript.Bundle.$fShowModuleElement_$cshowsPrec
+                   Language.PureScript.Bundle.$fShowErrorMessage2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c6c42c8d0c6b365d42d1afacff3673e8
+  $fShowModuleElement_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Bundle.ModuleElement -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Bundle.ModuleElement) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.Bundle.$w$cshowsPrec1 ww1 w1 }) -}
+e981f87cc836cb887046ac5528b06625
+  $fShowModuleIdentifier ::
+    GHC.Show.Show Language.PureScript.Bundle.ModuleIdentifier
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleIdentifier
+                  Language.PureScript.Bundle.$fShowModuleIdentifier_$cshowsPrec
+                  Language.PureScript.Bundle.$fShowModuleIdentifier_$cshow
+                  Language.PureScript.Bundle.$fShowModuleIdentifier_$cshowList -}
+e981f87cc836cb887046ac5528b06625
+  $fShowModuleIdentifier1 ::
+    Language.PureScript.Bundle.ModuleIdentifier -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U,1*U)><L,U>,
+     Unfolding: (\ (w :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Language.PureScript.Bundle.ModuleIdentifier ww1 ww2 ->
+                 Language.PureScript.Bundle.$w$cshowsPrec2 0# ww1 ww2 w1 }) -}
+e981f87cc836cb887046ac5528b06625
+  $fShowModuleIdentifier_$cshow ::
+    Language.PureScript.Bundle.ModuleIdentifier -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 Language.PureScript.Bundle.$fShowModuleIdentifier_$cshowsPrec
+                   Language.PureScript.Bundle.$fShowErrorMessage2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e981f87cc836cb887046ac5528b06625
+  $fShowModuleIdentifier_$cshowList ::
+    [Language.PureScript.Bundle.ModuleIdentifier] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Bundle.ModuleIdentifier])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Bundle.ModuleIdentifier
+                   Language.PureScript.Bundle.$fShowModuleIdentifier1
+                   ls
+                   s) -}
+e981f87cc836cb887046ac5528b06625
+  $fShowModuleIdentifier_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Bundle.ModuleIdentifier -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Bundle.ModuleIdentifier ww3 ww4 ->
+                 Language.PureScript.Bundle.$w$cshowsPrec2 ww1 ww3 ww4 w2 } }) -}
+ed91338e448ef64811d383df18092892
+  $fShowModuleType ::
+    GHC.Show.Show Language.PureScript.Bundle.ModuleType
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Bundle.ModuleType
+                  Language.PureScript.Bundle.$fShowModuleType_$cshowsPrec
+                  Language.PureScript.Bundle.$fShowModuleType_$cshow
+                  Language.PureScript.Bundle.$fShowModuleType_$cshowList -}
+ed91338e448ef64811d383df18092892
+  $fShowModuleType1 ::
+    Language.PureScript.Bundle.ModuleType -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Bundle.ModuleType)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Bundle.$fShowModule7)
+                        eta
+                   Language.PureScript.Bundle.Foreign
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Bundle.$fShowModule5)
+                        eta }) -}
+ed91338e448ef64811d383df18092892
+  $fShowModuleType_$cshow ::
+    Language.PureScript.Bundle.ModuleType -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Bundle.ModuleType) ->
+                 case x of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> Language.PureScript.Bundle.$fShowModule7
+                   Language.PureScript.Bundle.Foreign
+                   -> Language.PureScript.Bundle.$fShowModule5 }) -}
+ed91338e448ef64811d383df18092892
+  $fShowModuleType_$cshowList ::
+    [Language.PureScript.Bundle.ModuleType] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Bundle.ModuleType])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Bundle.ModuleType
+                   Language.PureScript.Bundle.$fShowModuleType1
+                   ls
+                   s) -}
+ed91338e448ef64811d383df18092892
+  $fShowModuleType_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Bundle.ModuleType -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Language.PureScript.Bundle.ModuleType)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild {
+                   Language.PureScript.Bundle.Regular
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Bundle.$fShowModule7)
+                        eta
+                   Language.PureScript.Bundle.Foreign
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Bundle.$fShowModule5)
+                        eta }) -}
+42ea3310526d5340a9c9399c890e9b15
+  $fShowModule_$cshow ::
+    Language.PureScript.Bundle.Module -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U(U,U),1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Bundle.Module) ->
+                 Language.PureScript.Bundle.$fShowModule_$cshowsPrec
+                   Language.PureScript.Bundle.$fShowErrorMessage2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+42ea3310526d5340a9c9399c890e9b15
+  $fShowModule_$cshowList ::
+    [Language.PureScript.Bundle.Module] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Bundle.Module])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Bundle.Module
+                   Language.PureScript.Bundle.$fShowModule1
+                   ls
+                   s) -}
+c6c42c8d0c6b365d42d1afacff3673e8
+  $fShowModule_$cshowList1 ::
+    [Language.PureScript.Bundle.ModuleElement] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Bundle.ModuleElement])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Bundle.ModuleElement
+                   Language.PureScript.Bundle.$fShowModule4
+                   ls
+                   s) -}
+42ea3310526d5340a9c9399c890e9b15
+  $fShowModule_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Bundle.Module -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U(U,U),1*U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Bundle.Module) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Bundle.Module ww3 ww4 ww5 ->
+                 Language.PureScript.Bundle.$w$cshowsPrec ww1 ww3 ww4 ww5 } }) -}
+21a9ab5116c95721143466f149b0bbff
+  $s$fData[] ::
+    Data.Data.Data [Language.JavaScript.Parser.AST.JSStatement]
+  {- Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [Language.JavaScript.Parser.AST.JSStatement]
+                  (Data.Typeable.Internal.mkTrApp
+                     @ *
+                     @ *
+                     @ []
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Data.Data.$fData[]3
+                     Language.JavaScript.Parser.AST.$fDataJSStatement3)
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <[Language.JavaScript.Parser.AST.JSStatement]>_N)
+                  (Data.Data.$fData[]_$cgfoldl
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgunfold
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (\ (ds :: [Language.JavaScript.Parser.AST.JSStatement]) ->
+                   case ds of wild {
+                     [] -> Data.Data.nilConstr : ds1 ds2 -> Data.Data.consConstr })
+                  (\ (ds :: [Language.JavaScript.Parser.AST.JSStatement]) ->
+                   Data.Data.listDataType)
+                  (Data.Data.$fData[]_$cdataCast1
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (\ @ t :: * -> * -> *
+                     @ c :: * -> *
+                     ($dTypeable :: Data.Typeable.Internal.Typeable t)
+                     (ds :: forall d e.
+                            (Data.Data.Data d, Data.Data.Data e) =>
+                            c (t d e)) ->
+                   GHC.Base.Nothing
+                     @ (c [Language.JavaScript.Parser.AST.JSStatement]))
+                  (Data.Data.$fData[]_$cgmapT
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapQl
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapQr
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapQ
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapQi
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapM
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapMp
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement)
+                  (Data.Data.$fData[]_$cgmapMo
+                     @ Language.JavaScript.Parser.AST.JSStatement
+                     Language.JavaScript.Parser.AST.$fDataJSStatement) -}
+fa715574557b180c528fa2e43d2dbed0
+  $s$fData[]7 ::
+    Data.Typeable.Internal.TypeRep
+      [Language.JavaScript.Parser.AST.JSStatement]
+  {- Unfolding: InlineRule (0, True, False)
+                (Data.Typeable.Internal.mkTrApp
+                   @ *
+                   @ *
+                   @ []
+                   @ Language.JavaScript.Parser.AST.JSStatement
+                   Data.Data.$fData[]3
+                   Language.JavaScript.Parser.AST.$fDataJSStatement3) -}
+1d027f313acc29a01fc9a692991c181a
+  $s$fEq(,) ::
+    GHC.Classes.Eq
+      (Language.PureScript.Bundle.ModuleIdentifier, [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.Bundle.ModuleIdentifier, [GHC.Types.Char])
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fEqModuleIdentifier
+                     GHC.Classes.$fEq[]_$s$fEq[]1)
+                  Language.PureScript.Bundle.$s$fEq(,)_$s$fEq(,)_$c/= -}
+ba208f301469a3cf79be33691ca4be18
+  $s$fEq(,)_$s$fEq(,)_$c/= ::
+    (Language.PureScript.Bundle.ModuleIdentifier, [GHC.Types.Char])
+    -> (Language.PureScript.Bundle.ModuleIdentifier, [GHC.Types.Char])
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SL)L),1*U(1*U(1*U,1*U),1*U)><S(S(SL)L),1*U(1*U(1*U,1*U),1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: (Language.PureScript.Bundle.ModuleIdentifier,
+                          [GHC.Types.Char]))
+                   (y :: (Language.PureScript.Bundle.ModuleIdentifier,
+                          [GHC.Types.Char])) ->
+                 case x of wild { (,) a1 a2 ->
+                 case y of wild1 { (,) b1 b2 ->
+                 case a1 of wild2 { Language.PureScript.Bundle.ModuleIdentifier a4 a5 ->
+                 case b1 of wild3 { Language.PureScript.Bundle.ModuleIdentifier b4 b5 ->
+                 case GHC.Base.eqString a4 b4 of wild4 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case a5 of wild5 {
+                        Language.PureScript.Bundle.Regular
+                        -> case b5 of wild6 {
+                             Language.PureScript.Bundle.Regular
+                             -> case GHC.Base.eqString a2 b2 of wild7 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True -> GHC.Types.False }
+                             Language.PureScript.Bundle.Foreign -> GHC.Types.True }
+                        Language.PureScript.Bundle.Foreign
+                        -> case b5 of wild6 {
+                             Language.PureScript.Bundle.Regular -> GHC.Types.True
+                             Language.PureScript.Bundle.Foreign
+                             -> case GHC.Base.eqString a2 b2 of wild7 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True -> GHC.Types.False } } } } } } } }) -}
+1e2870ee86b174861318498a00965cbd
+  $s$fOrd(,) ::
+    GHC.Classes.Ord
+      (Language.PureScript.Bundle.ModuleIdentifier, [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.Bundle.ModuleIdentifier, [GHC.Types.Char])
+                  Language.PureScript.Bundle.$s$fEq(,)
+                  (GHC.Classes.$fOrd(,)_$ccompare
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1)
+                  (GHC.Classes.$fOrd(,)_$c<
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1)
+                  (GHC.Classes.$fOrd(,)_$c<=
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1)
+                  (\ (a1 :: (Language.PureScript.Bundle.ModuleIdentifier,
+                             [GHC.Types.Char]))
+                     (b1 :: (Language.PureScript.Bundle.ModuleIdentifier,
+                             [GHC.Types.Char])) ->
+                   GHC.Classes.$fOrd(,)_$c<
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1
+                     b1
+                     a1)
+                  (GHC.Classes.$fOrd(,)_$c>=
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1)
+                  (GHC.Classes.$fOrd(,)_$cmax
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1)
+                  (GHC.Classes.$fOrd(,)_$cmin
+                     @ Language.PureScript.Bundle.ModuleIdentifier
+                     @ [GHC.Types.Char]
+                     Language.PureScript.Bundle.$fOrdModuleIdentifier
+                     GHC.Classes.$fOrd[]_$s$fOrd[]1) -}
+c7d77d3cce7143bf8dcf8b25af562b71
+  $sconcat :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (xs :: [[a]]) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ [a]
+                      @ b
+                      (\ (x :: [a]) (y :: b)[OneShot] -> GHC.Base.foldr @ a @ b c y x)
+                      n
+                      xs)) -}
+6ca139774e39ea211b1ec52fbb685df4
+  $sfromList ::
+    [GHC.Base.String] -> Data.Set.Internal.Set GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [GHC.Base.String]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Internal.Tip @ GHC.Base.String
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt22 { DEFAULT ->
+                           Data.Set.Internal.Bin
+                             @ GHC.Base.String
+                             1#
+                             dt22
+                             (Data.Set.Internal.Tip @ GHC.Base.String)
+                             (Data.Set.Internal.Tip @ GHC.Base.String) }
+                        : ipv ipv1
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 x ipv of wild2 {
+                             DEFAULT
+                             -> case x of dt22 { DEFAULT ->
+                                Language.PureScript.Bundle.$sfromList_$sgo4
+                                  ipv
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ GHC.Base.String
+                                     1#
+                                     dt22
+                                     (Data.Set.Internal.Tip @ GHC.Base.String)
+                                     (Data.Set.Internal.Tip @ GHC.Base.String)) }
+                             GHC.Types.LT
+                             -> case x of dt22 { DEFAULT ->
+                                Language.PureScript.Bundle.$sfromList_$s$wgo3
+                                  ipv
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ GHC.Base.String
+                                     1#
+                                     dt22
+                                     (Data.Set.Internal.Tip @ GHC.Base.String)
+                                     (Data.Set.Internal.Tip @ GHC.Base.String))
+                                  1# } } } }) -}
+e1d9d18e7796a1998ee280bfa20980b6
+  $sfromList1 ::
+    [Data.Graph.Vertex] -> Data.Set.Internal.Set Data.Graph.Vertex
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Data.Graph.Vertex]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Internal.Tip @ Data.Graph.Vertex
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt22 { GHC.Types.I# ipv ->
+                           Data.Set.Internal.Bin
+                             @ Data.Graph.Vertex
+                             1#
+                             dt22
+                             (Data.Set.Internal.Tip @ Data.Graph.Vertex)
+                             (Data.Set.Internal.Tip @ Data.Graph.Vertex) }
+                        : ipv ipv1
+                        -> case x of wild2 { GHC.Types.I# x1 ->
+                           case ipv of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.>=# x1 y of lwild {
+                             DEFAULT
+                             -> Language.PureScript.Bundle.$sfromList_$s$wgo1
+                                  y
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ Data.Graph.Vertex
+                                     1#
+                                     wild2
+                                     (Data.Set.Internal.Tip @ Data.Graph.Vertex)
+                                     (Data.Set.Internal.Tip @ Data.Graph.Vertex))
+                                  1#
+                             1#
+                             -> Language.PureScript.Bundle.$sfromList_$sgo1
+                                  y
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ Data.Graph.Vertex
+                                     1#
+                                     wild2
+                                     (Data.Set.Internal.Tip @ Data.Graph.Vertex)
+                                     (Data.Set.Internal.Tip @ Data.Graph.Vertex)) } } } } }) -}
+790322aceb8baee8e1281d1c7c588b92
+  $sfromList_$s$wgo1 ::
+    GHC.Prim.Int#
+    -> [GHC.Types.Int]
+    -> Data.Set.Internal.Set GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Data.Graph.Vertex
+  {- Arity: 4, Strictness: <S,U><S,1*U><S,1*U><L,U> -}
+776bdaaa95a41a65655718e7358da3ec
+  $sfromList_$s$wgo3 ::
+    [GHC.Types.Char]
+    -> [[GHC.Types.Char]]
+    -> Data.Set.Internal.Set [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><S,1*U><S,1*U><L,U> -}
+1934239226f2cae6fe5a72078b4e6624
+  $sfromList_$sgo1 ::
+    GHC.Prim.Int#
+    -> [GHC.Types.Int]
+    -> Data.Set.Internal.Set GHC.Types.Int
+    -> Data.Set.Internal.Set Data.Graph.Vertex
+  {- Arity: 3, Strictness: <S,U><S,1*U><S,1*U> -}
+f217b5ff478b04ddd69beec2b10ae628
+  $sfromList_$sgo4 ::
+    [GHC.Types.Char]
+    -> [[GHC.Types.Char]]
+    -> Data.Set.Internal.Set [GHC.Types.Char]
+    -> Data.Set.Internal.Set GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><S,1*U> -}
+cf430131ce4557bcb6714cdb066b050b
+  $sinsert_$sgo3 ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Set.Internal.Set GHC.Base.String
+    -> Data.Set.Internal.Set GHC.Base.String
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+768cd4ced4c68f217079e26d86075dd2
+  $smember_go1 ::
+    Data.Graph.Vertex
+    -> Data.Set.Internal.Set Data.Graph.Vertex -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.Graph.Vertex)
+                   (w1 :: Data.Set.Internal.Set Data.Graph.Vertex) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.Bundle.$wgo3 ww1 w1 }) -}
+1a2977b940e21d1dcf49630b8edd36be
+  $smember_go3 ::
+    [GHC.Types.Char]
+    -> Data.Set.Internal.Set [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+6ebd423838d127538806f6b4dc111d57
+  $tc'ErrorInModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14525385464471047331##
+                   507930710856297656##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'ErrorInModule2
+                   0#
+                   Language.PureScript.Bundle.$tc'ErrorInModule1) -}
+c299a2df2bf5aa37f072ea964d273e84
+  $tc'ErrorInModule1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ac2565dc2fdf5ba0d0abdea1ccbe8ffd
+  $tc'ErrorInModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'ErrorInModule3) -}
+574032f07aa3e95358e1e957bde6645f
+  $tc'ErrorInModule3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ErrorInModule"#) -}
+20db9461196f5609994a0ed14a03906b
+  $tc'ExportsList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4137908401645539150##
+                   13575348177508217514##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'ExportsList2
+                   0#
+                   Language.PureScript.Bundle.$tc'ExportsList1) -}
+2c00ab030b967b45248a18f0916ec4ab
+  $tc'ExportsList1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ae95b2c3f6221d40010b2e32b6c842e5
+  $tc'ExportsList2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'ExportsList3) -}
+3eeed17edc12ff09e5db9ad97a18ada4
+  $tc'ExportsList3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ExportsList"#) -}
+51d9336d4b3cf727c71a5d46cd2a1332
+  $tc'Foreign :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11110272792648408884##
+                   17004634901313040531##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Foreign2
+                   0#
+                   Language.PureScript.Bundle.$tc'Foreign1) -}
+157225328ef9a8e085b5efb3a93d740e
+  $tc'Foreign1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+2d03486fe03c1f0a7e40130f37af4124
+  $tc'Foreign2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Foreign3) -}
+0a35cbd43c6954139b993a9e312967c4
+  $tc'Foreign3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Foreign"#) -}
+1f49bd90e51af7c1563719a9e759858b
+  $tc'ForeignReexport :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8942598363512143766##
+                   10492899373875132267##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'ForeignReexport2
+                   0#
+                   Language.PureScript.Bundle.$tc'ForeignReexport1) -}
+66f88502440b2b7eb05e6720b7decbda
+  $tc'ForeignReexport1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+9cd279e72d53a7e1f01a6f68cff3b35e
+  $tc'ForeignReexport2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'ForeignReexport3) -}
+9c79a2a86d4cd3a171099a74c21666d0
+  $tc'ForeignReexport3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ForeignReexport"#) -}
+a5915e6f7727ae5d37b922fc89b1e291
+  $tc'InvalidTopLevel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6033708153715451951##
+                   7967413978940449191##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'InvalidTopLevel2
+                   0#
+                   Language.PureScript.Bundle.$tc'InvalidTopLevel1) -}
+71280672fa1eeb470c004a39738e4874
+  $tc'InvalidTopLevel1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+cbf0dd87a7f2a2d3e4aab1be77a5da36
+  $tc'InvalidTopLevel2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'InvalidTopLevel3) -}
+80a6d384078827e9dbf4438f2d445cae
+  $tc'InvalidTopLevel3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'InvalidTopLevel"#) -}
+b9e7ce868248889b4a835d968004f622
+  $tc'Member :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9775361973720080909##
+                   7787477108890574920##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Member2
+                   0#
+                   Language.PureScript.Bundle.$tc'Member1) -}
+5807e20619bd481200e498128e5f8f3e
+  $tc'Member1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3d7e34deb11a5b2dccc76d515513b001
+  $tc'Member2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Member3) -}
+a2face5a44e4cdc1159a5f81940c794d
+  $tc'Member3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Member"#) -}
+fcf4ae7a83e8a7ee1899b2b0a3b6db6d
+  $tc'MissingEntryPoint :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17779977003956662033##
+                   9824307911127726262##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'MissingEntryPoint2
+                   0#
+                   Language.PureScript.Bundle.$tc'MissingEntryPoint1) -}
+5d8a363f1e3e6a8ab4bb6c38b8585776
+  $tc'MissingEntryPoint1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3a0d65371958104eba907c62d8b44b11
+  $tc'MissingEntryPoint2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'MissingEntryPoint3) -}
+83ab246a53eb4e69f69c2e193f13f082
+  $tc'MissingEntryPoint3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MissingEntryPoint"#) -}
+fd06eb16d9d8944c1a4c270ee953ad2c
+  $tc'MissingMainModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17408294478997111698##
+                   4072248092040852799##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'MissingMainModule1
+                   0#
+                   Language.PureScript.Bundle.$tc'MissingEntryPoint1) -}
+4dfd56fd3a037c3f2b8658e2807b9ece
+  $tc'MissingMainModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'MissingMainModule2) -}
+c139b2f46ee55708f3d721195fb03c9b
+  $tc'MissingMainModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MissingMainModule"#) -}
+b0022624888282e8b6b72cca2ad1f143
+  $tc'Module :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9852506464917570642##
+                   4408643315981424228##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Module2
+                   0#
+                   Language.PureScript.Bundle.$tc'Module1) -}
+ebb66825e69bc89713ea408487cbfab7
+  $tc'Module1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+da401bf1d63ddf4072eb571715677ab6
+  $tc'Module2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Module3) -}
+4b0b1e917e5c8b3931b65982d307b85b
+  $tc'Module3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Module"#) -}
+7de9ffb7bae64e75d94dbd0f361c85e9
+  $tc'ModuleIdentifier :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14813775797902528701##
+                   4268481891467859596##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'ModuleIdentifier2
+                   0#
+                   Language.PureScript.Bundle.$tc'ModuleIdentifier1) -}
+ffe78558b58b4ce324d4e7cf77f5ca4b
+  $tc'ModuleIdentifier1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c91051ebd3b5de4811613e1530c67112
+  $tc'ModuleIdentifier2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'ModuleIdentifier3) -}
+3a3c1fe180414102f355f4d2c7f7bb0f
+  $tc'ModuleIdentifier3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ModuleIdentifier"#) -}
+186b3b52593adf2f6b2049fec532f0b0
+  $tc'Other :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13545339718808407256##
+                   8371608483995535219##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Other2
+                   0#
+                   Language.PureScript.Bundle.$tc'Other1) -}
+3cb56c0cfc908f3fdd20b9f5de063b02
+  $tc'Other1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e9449281e70cbd416e4f9eaee174a0ae
+  $tc'Other2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Other3) -}
+b5ce19c31fa70c8fd285647373ac540e
+  $tc'Other3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Other"#) -}
+6d97100e37fd35c0e15b2c78d534ad55
+  $tc'Regular :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4876057638525977013##
+                   4262090216598760939##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Regular1
+                   0#
+                   Language.PureScript.Bundle.$tc'Foreign1) -}
+24434a51c815d076b3ccd3afb3781c79
+  $tc'Regular1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Regular2) -}
+eabf00a83648dda7bb780ffc17a6a41e
+  $tc'Regular2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Regular"#) -}
+4c90beeec2e3d7a47698df8104c7b3ba
+  $tc'RegularExport :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10522874795365455138##
+                   9844790676045912674##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'RegularExport2
+                   0#
+                   Language.PureScript.Bundle.$tc'RegularExport1) -}
+930b938b877f5a3b95200da6cce2327c
+  $tc'RegularExport1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+19cd92e18933e7ddd1ebfaf838d09d47
+  $tc'RegularExport2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'RegularExport3) -}
+b49e3c6e3a0b0e4e282f7fd5c248cb55
+  $tc'RegularExport3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RegularExport"#) -}
+744e256940da4536f8b33df5f6ce07cd
+  $tc'Require :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9441154256662092590##
+                   11136505591490147409##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Require2
+                   0#
+                   Language.PureScript.Bundle.$tc'Require1) -}
+fc2577d4c2dbb8a97db15b9f14172881
+  $tc'Require1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c58db435c379449ef298bd7cb4f6f3d2
+  $tc'Require2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Require3) -}
+fe897c1efd89fa5942f1af704fbbd71c
+  $tc'Require3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Require"#) -}
+36b0866627f37ad28704cc26945897e0
+  $tc'Skip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15209919849526338729##
+                   14312539307442162969##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'Skip1
+                   0#
+                   Language.PureScript.Bundle.$tc'Other1) -}
+0c631f8c1d130f9f511e7038fc58f4c8
+  $tc'Skip1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'Skip2) -}
+ba983d9f5f8e905ff86344448b52ac3a
+  $tc'Skip2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Skip"#) -}
+5c973eb639edb91511bdc924fa76fd0a
+  $tc'UnableToParseModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10711904336117936576##
+                   11679670983070047537##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'UnableToParseModule1
+                   0#
+                   Language.PureScript.Bundle.$tc'MissingEntryPoint1) -}
+fb3d0c1793e56f447a87c12618ed0d41
+  $tc'UnableToParseModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'UnableToParseModule2) -}
+51eb40ece33d48418ebcd3978b664259
+  $tc'UnableToParseModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'UnableToParseModule"#) -}
+c3ce181bbd3567c86c7f65e40ea0ba29
+  $tc'UnsupportedExport :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17515676312489730389##
+                   16937369073773410198##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'UnsupportedExport1
+                   0#
+                   Language.PureScript.Bundle.$tc'InvalidTopLevel1) -}
+a092538be1b59d2902e0eec6f6c45953
+  $tc'UnsupportedExport1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'UnsupportedExport2) -}
+f192b228157cadc3bbdd9f1e48f78850
+  $tc'UnsupportedExport2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'UnsupportedExport"#) -}
+08e5bc00ea53f844614591c912680637
+  $tc'UnsupportedModulePath :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5235035633612243094##
+                   194345188658214254##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tc'UnsupportedModulePath1
+                   0#
+                   Language.PureScript.Bundle.$tc'MissingEntryPoint1) -}
+95e0095f21ff0bbf412ea0675022b4f6
+  $tc'UnsupportedModulePath1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tc'UnsupportedModulePath2) -}
+bc146318e52a154d3f4f19e90eed289d
+  $tc'UnsupportedModulePath2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'UnsupportedModulePath"#) -}
+5141d272a2f639c29692de310ab9dfbb
+  $tcErrorMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16112024166225419792##
+                   14748194182136612671##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tcErrorMessage1
+                   0#
+                   GHC.Types.krep$*) -}
+224eef7a83b4e0a8724d2a1c44a72a5d
+  $tcErrorMessage1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tcErrorMessage2) -}
+e9dfd74d1c81abc774f1b71dec8091cb
+  $tcErrorMessage2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ErrorMessage"#) -}
+e4ce1f6476bff6620280529fa729ebe2
+  $tcExportType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1510514652530492239##
+                   5654917530645498243##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tcExportType1
+                   0#
+                   GHC.Types.krep$*) -}
+3642412c10392c563ccc884a31ae5798
+  $tcExportType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tcExportType2) -}
+73c60f79c54c64cf0cee02f391e3fa09
+  $tcExportType2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ExportType"#) -}
+d4944068787588fc2c0b86a38440b5c1
+  $tcModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   595431375177325247##
+                   12796680353108772108##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tcModule1
+                   0#
+                   GHC.Types.krep$*) -}
+77e8f329f243cdb484ac5b63688793b3
+  $tcModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tcModule2) -}
+387041a14bb6d299c15c3b3ae4839d6b
+  $tcModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Module"#) -}
+f7f6f06d617e2f7aa222ff0375e3d4ea
+  $tcModuleElement :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13227336414016737452##
+                   10359862072185578514##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tcModuleElement1
+                   0#
+                   GHC.Types.krep$*) -}
+f7ad68aa6c5a435cccf6173a4068c885
+  $tcModuleElement1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tcModuleElement2) -}
+ad6a050dfe1a634bee2911992a9c63b7
+  $tcModuleElement2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ModuleElement"#) -}
+ffcf7b14aa26f08276341e355b20ea49
+  $tcModuleIdentifier :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5956769968164235022##
+                   5310441968472232785##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tcModuleIdentifier1
+                   0#
+                   GHC.Types.krep$*) -}
+67688423f93506a24ef21540ff9dfad4
+  $tcModuleIdentifier1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tcModuleIdentifier2) -}
+f4de2a1af6c5ae3a4572d2e0882d5380
+  $tcModuleIdentifier2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ModuleIdentifier"#) -}
+212ae65e998dbde99502d14719b2da12
+  $tcModuleType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3232653298177190445##
+                   13427536315024345063##
+                   Language.PureScript.Bundle.$trModule
+                   Language.PureScript.Bundle.$tcModuleType1
+                   0#
+                   GHC.Types.krep$*) -}
+44e2838649a7faa809b06de524774dab
+  $tcModuleType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$tcModuleType2) -}
+83eb26f0cb84e521dc3ced8a1697d779
+  $tcModuleType2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ModuleType"#) -}
+2cc4bf0a4c63f6d34495cc26009af315
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Bundle.$trModule3
+                   Language.PureScript.Bundle.$trModule1) -}
+cf98dafd6b311670aa6449cd31af55e2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$trModule2) -}
+a2ac66d58d2358e63769b2f99a592af3
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Bundle"#) -}
+9ade467058ea402db167d3a5ecf0f0fb
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Bundle.$trModule4) -}
+fe7a133e58650c1647f19c0446650f8c
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+e26c6987e5921885634f7f890c2d8a4a
+  $w$c< ::
+    GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.Bundle.ModuleType)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: Language.PureScript.Bundle.ModuleType) ->
+                 case GHC.Classes.$fOrd[]_$s$ccompare1 ww ww2 of wild {
+                   GHC.Types.LT -> GHC.Types.True
+                   GHC.Types.EQ
+                   -> Language.PureScript.Bundle.$fOrdModuleIdentifier_$c<1 ww1 ww3
+                   GHC.Types.GT -> GHC.Types.False }) -}
+d060ff7806e573d6d3cf94ca40034562
+  $w$c<= ::
+    GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.Bundle.ModuleType)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: Language.PureScript.Bundle.ModuleType) ->
+                 case GHC.Classes.$fOrd[]_$s$ccompare1 ww2 ww of wild {
+                   GHC.Types.LT -> GHC.Types.False
+                   GHC.Types.EQ
+                   -> case ww3 of wild1 {
+                        Language.PureScript.Bundle.Regular
+                        -> case ww1 of wild2 {
+                             Language.PureScript.Bundle.Regular -> GHC.Types.True
+                             Language.PureScript.Bundle.Foreign -> GHC.Types.False }
+                        Language.PureScript.Bundle.Foreign
+                        -> case ww1 of wild2 { DEFAULT -> GHC.Types.True } }
+                   GHC.Types.GT -> GHC.Types.True }) -}
+3e48d7474f934e3713ec1e2be0bad6dd
+  $w$c== ::
+    GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.Bundle.ModuleType)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: Language.PureScript.Bundle.ModuleType) ->
+                 case GHC.Base.eqString ww ww2 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> Language.PureScript.Bundle.$fEqModuleIdentifier_$c==1
+                        ww1
+                        ww3 }) -}
+c2c9007aad6ca7d8710991604bdfb788
+  $w$c>= ::
+    GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.Bundle.ModuleType)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: Language.PureScript.Bundle.ModuleType) ->
+                 case GHC.Classes.$fOrd[]_$s$ccompare1 ww ww2 of wild {
+                   GHC.Types.LT -> GHC.Types.False
+                   GHC.Types.EQ
+                   -> case ww1 of wild1 {
+                        Language.PureScript.Bundle.Regular
+                        -> case ww3 of wild2 {
+                             Language.PureScript.Bundle.Regular -> GHC.Types.True
+                             Language.PureScript.Bundle.Foreign -> GHC.Types.False }
+                        Language.PureScript.Bundle.Foreign
+                        -> case ww3 of wild2 { DEFAULT -> GHC.Types.True } }
+                   GHC.Types.GT -> GHC.Types.True }) -}
+303c65b796f99bce0830b934b6d78604
+  $w$ccompare ::
+    GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.Bundle.ModuleType)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: Language.PureScript.Bundle.ModuleType) ->
+                 case GHC.Classes.$fOrd[]_$s$ccompare1 ww ww2 of wild {
+                   GHC.Types.LT -> GHC.Types.LT
+                   GHC.Types.EQ
+                   -> Language.PureScript.Bundle.$fOrdModuleIdentifier_$ccompare1
+                        ww1
+                        ww3
+                   GHC.Types.GT -> GHC.Types.GT }) -}
+ace3637021ec222777749cda6a3b9e79
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.PureScript.Bundle.ModuleIdentifier
+    -> GHC.Base.Maybe GHC.IO.FilePath
+    -> [Language.PureScript.Bundle.ModuleElement]
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <S,U><L,U(U,U)><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Language.PureScript.Bundle.ModuleIdentifier)
+                   (ww2 :: GHC.Base.Maybe GHC.IO.FilePath)
+                   (ww3 :: [Language.PureScript.Bundle.ModuleElement]) ->
+                 let {
+                   f6 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.$fShowMaybe_$cshowsPrec
+                       @ [GHC.Types.Char]
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       Language.PureScript.Bundle.$fShowModule10
+                       ww2
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     case ww1 of ww4 { Language.PureScript.Bundle.ModuleIdentifier ww5 ww6 ->
+                     Language.PureScript.Bundle.$w$cshowsPrec2
+                       11#
+                       ww5
+                       ww6
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.showSpace1
+                          (f6
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.showSpace1
+                                (Language.PureScript.Bundle.$fShowModule_$cshowList1 ww3 x)))) }
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Bundle.$fShowModule2
+                        (g x)
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Language.PureScript.Bundle.$fShowModule2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }) -}
+c6c42c8d0c6b365d42d1afacff3673e8
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Language.PureScript.Bundle.ModuleElement -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0] -}
+49a3bc1ae2ea1bee416d4eeaa7862260
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> Language.PureScript.Bundle.ModuleType
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Base.String)
+                   (ww2 :: Language.PureScript.Bundle.ModuleType)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.CString.unpackAppendCString#
+                       Language.PureScript.Bundle.$fShowModule9
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.$fShow(,)3
+                          (GHC.Show.showLitString
+                             ww1
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showSpace1
+                                   (case ww2 of wild {
+                                      Language.PureScript.Bundle.Regular
+                                      -> GHC.Base.++
+                                           @ GHC.Types.Char
+                                           Language.PureScript.Bundle.$fShowModule7
+                                           x
+                                      Language.PureScript.Bundle.Foreign
+                                      -> GHC.Base.++
+                                           @ GHC.Types.Char
+                                           Language.PureScript.Bundle.$fShowModule5
+                                           x })))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p w
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)) }) -}
+7561e5ea75418a027354f5ed2ad7f4d3
+  $w$sgo3 ::
+    Data.Graph.Vertex
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Data.Graph.Vertex
+    -> Data.Set.Internal.Set Data.Graph.Vertex
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+dc44277f96e1e6122c532d1965423c9a
+  $wgo3 ::
+    GHC.Prim.Int#
+    -> Data.Set.Internal.Set Data.Graph.Vertex -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+335387630d40a36081f743451a3f57bc
+  $wprintErrorMessage ::
+    Language.PureScript.Bundle.ErrorMessage
+    -> (# GHC.Base.String, [GHC.Base.String] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+b76460e7f9aa17db386324a975b25223
+  data ErrorMessage
+    = UnsupportedModulePath GHC.Base.String
+    | InvalidTopLevel
+    | UnableToParseModule GHC.Base.String
+    | UnsupportedExport
+    | ErrorInModule Language.PureScript.Bundle.ModuleIdentifier
+                    Language.PureScript.Bundle.ErrorMessage
+    | MissingEntryPoint GHC.Base.String
+    | MissingMainModule GHC.Base.String
+b32003658f1251a3b15abbef2f9bd4ec
+  data ExportType = RegularExport GHC.Base.String | ForeignReexport
+86ca3d5f00ca758607cf95a485aa1998
+  type Key =
+    (Language.PureScript.Bundle.ModuleIdentifier, GHC.Base.String)
+42ea3310526d5340a9c9399c890e9b15
+  data Module
+    = Module Language.PureScript.Bundle.ModuleIdentifier
+             (GHC.Base.Maybe GHC.IO.FilePath)
+             [Language.PureScript.Bundle.ModuleElement]
+c6c42c8d0c6b365d42d1afacff3673e8
+  data ModuleElement
+    = Require Language.JavaScript.Parser.AST.JSStatement
+              GHC.Base.String
+              (Data.Either.Either
+                 GHC.Base.String Language.PureScript.Bundle.ModuleIdentifier)
+    | Member Language.JavaScript.Parser.AST.JSStatement
+             GHC.Types.Bool
+             GHC.Base.String
+             Language.JavaScript.Parser.AST.JSExpression
+             [Language.PureScript.Bundle.Key]
+    | ExportsList [(Language.PureScript.Bundle.ExportType,
+                    GHC.Base.String, Language.JavaScript.Parser.AST.JSExpression,
+                    [Language.PureScript.Bundle.Key])]
+    | Other Language.JavaScript.Parser.AST.JSStatement
+    | Skip Language.JavaScript.Parser.AST.JSStatement
+e981f87cc836cb887046ac5528b06625
+  data ModuleIdentifier
+    = ModuleIdentifier GHC.Base.String
+                       Language.PureScript.Bundle.ModuleType
+ed91338e448ef64811d383df18092892
+  data ModuleType = Regular | Foreign
+d6c89b3803127019ed39906ef7034eba
+  bundle ::
+    Control.Monad.Error.Class.MonadError
+      Language.PureScript.Bundle.ErrorMessage m =>
+    [(Language.PureScript.Bundle.ModuleIdentifier, GHC.Base.String)]
+    -> [Language.PureScript.Bundle.ModuleIdentifier]
+    -> GHC.Base.Maybe GHC.Base.String
+    -> GHC.Base.String
+    -> m GHC.Base.String
+  {- Arity: 5,
+     Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LL),U(U(U(U(C(C(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),C(C1(U)),C(U),A),C(U),A)><L,1*U><L,U><L,U><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Bundle.ErrorMessage m)
+                   (eta :: [(Language.PureScript.Bundle.ModuleIdentifier,
+                             GHC.Base.String)])
+                   (eta1 :: [Language.PureScript.Bundle.ModuleIdentifier])
+                   (eta2 :: GHC.Base.Maybe GHC.Base.String)
+                   (eta3 :: GHC.Base.String) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.Error.Class.$p1MonadError
+                            @ Language.PureScript.Bundle.ErrorMessage
+                            @ m
+                            $dMonadError)))
+                   @ (GHC.Base.Maybe SourceMap.Types.SourceMapping, GHC.Base.String)
+                   @ GHC.Base.String
+                   (Data.Tuple.snd
+                      @ (GHC.Base.Maybe SourceMap.Types.SourceMapping)
+                      @ GHC.Base.String)
+                   (Language.PureScript.Bundle.bundleSM
+                      @ m
+                      $dMonadError
+                      (GHC.Base.map
+                         @ (Language.PureScript.Bundle.ModuleIdentifier, GHC.Base.String)
+                         @ (Language.PureScript.Bundle.ModuleIdentifier,
+                            GHC.Base.Maybe GHC.IO.FilePath, GHC.Base.String)
+                         Language.PureScript.Bundle.bundle1
+                         eta)
+                      eta1
+                      eta2
+                      eta3
+                      (GHC.Base.Nothing @ GHC.IO.FilePath))) -}
+fb66fe01286f25959f77d33b218deb6c
+  bundle1 ::
+    (Language.PureScript.Bundle.ModuleIdentifier, GHC.Base.String)
+    -> (Language.PureScript.Bundle.ModuleIdentifier,
+        GHC.Base.Maybe GHC.IO.FilePath, GHC.Base.String)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Language.PureScript.Bundle.ModuleIdentifier,
+                           GHC.Base.String)) ->
+                 case ds of wild { (,) a b ->
+                 (a, GHC.Base.Nothing @ GHC.IO.FilePath, b) }) -}
+3f35ee01a7fc04e5dd7f48ee9edc609d
+  bundleSM ::
+    Control.Monad.Error.Class.MonadError
+      Language.PureScript.Bundle.ErrorMessage m =>
+    [(Language.PureScript.Bundle.ModuleIdentifier,
+      GHC.Base.Maybe GHC.IO.FilePath, GHC.Base.String)]
+    -> [Language.PureScript.Bundle.ModuleIdentifier]
+    -> GHC.Base.Maybe GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.Maybe GHC.IO.FilePath
+    -> m (GHC.Base.Maybe SourceMap.Types.SourceMapping,
+          GHC.Base.String)
+  {- Arity: 6,
+     Strictness: <S(S(LLC(C(S))LL)LL),U(1*U(1*U(U(C(C(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),C(C1(U)),C(U),A),C(U),A)><L,U><L,U><L,U><L,U><L,U> -}
+86ea982b532c60635d5b5d7c7120c3ce
+  getExportedIdentifiers ::
+    Control.Monad.Error.Class.MonadError
+      Language.PureScript.Bundle.ErrorMessage m =>
+    GHC.Base.String
+    -> Language.JavaScript.Parser.AST.JSAST -> m [GHC.Base.String]
+  {- Arity: 3,
+     Strictness: <S,U(1*U(1*U(1*U(1*C1(C1(U)),A),C(U),A,C(C1(C1(U))),A,A),A,A,A,A),1*C1(U),A)><L,U><S,1*U> -}
+72d824f21b4990b4ea0cb7bd026c573a
+  guessModuleIdentifier ::
+    Control.Monad.Error.Class.MonadError
+      Language.PureScript.Bundle.ErrorMessage m =>
+    GHC.IO.FilePath -> m Language.PureScript.Bundle.ModuleIdentifier
+  {- Arity: 2,
+     Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LL),U(U(U(1*U(1*C1(C1(U)),A),1*C1(U),A,A,A,A),A,A,A,A),1*C1(U),A)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Bundle.ErrorMessage m)
+                   (eta :: GHC.IO.FilePath) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.Error.Class.$p1MonadError
+                            @ Language.PureScript.Bundle.ErrorMessage
+                            @ m
+                            $dMonadError)))
+                   @ Language.PureScript.Bundle.ModuleType
+                   @ Language.PureScript.Bundle.ModuleIdentifier
+                   (Language.PureScript.Bundle.ModuleIdentifier
+                      (case System.FilePath.Posix.$wsplitFileName_
+                              (System.FilePath.Posix.takeDirectory eta) of ww { (#,#) ww1 ww2 ->
+                       ww2 }))
+                   (case System.FilePath.Posix.$wsplitFileName_
+                           eta of ww { (#,#) ww1 ww2 ->
+                    case GHC.Base.eqString
+                           ww2
+                           Language.PureScript.Bundle.guessModuleIdentifier3 of wild {
+                      GHC.Types.False
+                      -> case GHC.Base.eqString
+                                ww2
+                                Language.PureScript.Bundle.guessModuleIdentifier1 of wild1 {
+                           GHC.Types.False
+                           -> Control.Monad.Error.Class.throwError
+                                @ Language.PureScript.Bundle.ErrorMessage
+                                @ m
+                                $dMonadError
+                                @ Language.PureScript.Bundle.ModuleType
+                                (Language.PureScript.Bundle.UnsupportedModulePath ww2)
+                           GHC.Types.True
+                           -> GHC.Base.pure
+                                @ m
+                                (GHC.Base.$p1Monad
+                                   @ m
+                                   (Control.Monad.Error.Class.$p1MonadError
+                                      @ Language.PureScript.Bundle.ErrorMessage
+                                      @ m
+                                      $dMonadError))
+                                @ Language.PureScript.Bundle.ModuleType
+                                Language.PureScript.Bundle.Regular }
+                      GHC.Types.True
+                      -> GHC.Base.pure
+                           @ m
+                           (GHC.Base.$p1Monad
+                              @ m
+                              (Control.Monad.Error.Class.$p1MonadError
+                                 @ Language.PureScript.Bundle.ErrorMessage
+                                 @ m
+                                 $dMonadError))
+                           @ Language.PureScript.Bundle.ModuleType
+                           Language.PureScript.Bundle.Foreign } })) -}
+0709e8094cdb994caba1c51a39f0cd9a
+  guessModuleIdentifier1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Bundle.guessModuleIdentifier2) -}
+d12923f9c37c792e99aec476230c71ec
+  guessModuleIdentifier2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("index.js"#) -}
+6f3401aa0b961fac0bb7d22de4c6656d
+  guessModuleIdentifier3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Bundle.guessModuleIdentifier4) -}
+fa68d263a305e48b013c7ef11c0fc2b6
+  guessModuleIdentifier4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("foreign.js"#) -}
+fcfe2763bd3a32cb87fd02f13df38e91
+  moduleName ::
+    Language.PureScript.Bundle.ModuleIdentifier -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Bundle.ModuleIdentifier) ->
+                 case ds of wild { Language.PureScript.Bundle.ModuleIdentifier name ds1 ->
+                 name }) -}
+b2aa4b138819780530762eb4c8f5b82d
+  printErrorMessage ::
+    Language.PureScript.Bundle.ErrorMessage -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Bundle.ErrorMessage) ->
+                 case Language.PureScript.Bundle.$wprintErrorMessage
+                        w of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Base.String ww1 ww2 }) -}
+instance GHC.Classes.Eq [Language.PureScript.Bundle.ExportType]
+  = Language.PureScript.Bundle.$fEqExportType
+instance GHC.Classes.Eq [Language.PureScript.Bundle.ModuleIdentifier]
+  = Language.PureScript.Bundle.$fEqModuleIdentifier
+instance GHC.Classes.Eq [Language.PureScript.Bundle.ModuleType]
+  = Language.PureScript.Bundle.$fEqModuleType
+instance GHC.Classes.Ord [Language.PureScript.Bundle.ExportType]
+  = Language.PureScript.Bundle.$fOrdExportType
+instance GHC.Classes.Ord [Language.PureScript.Bundle.ModuleIdentifier]
+  = Language.PureScript.Bundle.$fOrdModuleIdentifier
+instance GHC.Classes.Ord [Language.PureScript.Bundle.ModuleType]
+  = Language.PureScript.Bundle.$fOrdModuleType
+instance GHC.Show.Show [Language.PureScript.Bundle.ErrorMessage]
+  = Language.PureScript.Bundle.$fShowErrorMessage
+instance GHC.Show.Show [Language.PureScript.Bundle.ExportType]
+  = Language.PureScript.Bundle.$fShowExportType
+instance GHC.Show.Show [Language.PureScript.Bundle.Module]
+  = Language.PureScript.Bundle.$fShowModule
+instance GHC.Show.Show [Language.PureScript.Bundle.ModuleElement]
+  = Language.PureScript.Bundle.$fShowModuleElement
+instance GHC.Show.Show [Language.PureScript.Bundle.ModuleIdentifier]
+  = Language.PureScript.Bundle.$fShowModuleIdentifier
+instance GHC.Show.Show [Language.PureScript.Bundle.ModuleType]
+  = Language.PureScript.Bundle.$fShowModuleType
+"SC:$cshowsPrec0" forall (sc :: [GHC.Types.Char])
+                         (sc1 :: Language.PureScript.Bundle.ErrorMessage)
+                         (sc2 :: GHC.Prim.Int#)
+  Language.PureScript.Bundle.$fShowErrorMessage_$cshowsPrec (GHC.Types.I#
+                                                               sc2)
+                                                            sc1
+                                                            sc
+  = Language.PureScript.Bundle.$fShowErrorMessage_$s$cshowsPrec
+      sc
+      sc1
+      sc2
+"SPEC/Language.PureScript.Bundle $fData[] @ JSStatement" [orphan] forall (v :: Data.Data.Data
+                                                                                 Language.JavaScript.Parser.AST.JSStatement)
+  Data.Data.$fData[] @ Language.JavaScript.Parser.AST.JSStatement v
+  = Language.PureScript.Bundle.$s$fData[]
+"SPEC/Language.PureScript.Bundle $fData[]7 @ JSStatement" [orphan] forall ($dData :: Data.Data.Data
+                                                                                       Language.JavaScript.Parser.AST.JSStatement)
+  Data.Data.$fData[]7 @ Language.JavaScript.Parser.AST.JSStatement
+                      $dData
+  = Language.PureScript.Bundle.$s$fData[]7
+"SPEC/Language.PureScript.Bundle $fEq(,) @ ModuleIdentifier @ [Char]" forall (v1 :: GHC.Classes.Eq
+                                                                                      [GHC.Types.Char])
+                                                                             (v :: GHC.Classes.Eq
+                                                                                     Language.PureScript.Bundle.ModuleIdentifier)
+  GHC.Classes.$fEq(,) @ Language.PureScript.Bundle.ModuleIdentifier
+                      @ [GHC.Types.Char]
+                      v
+                      v1
+  = Language.PureScript.Bundle.$s$fEq(,)
+"SPEC/Language.PureScript.Bundle $fEq(,)_$c/= @ ModuleIdentifier @ [Char]" forall ($dEq1 :: GHC.Classes.Eq
+                                                                                              [GHC.Types.Char])
+                                                                                  ($dEq :: GHC.Classes.Eq
+                                                                                             Language.PureScript.Bundle.ModuleIdentifier)
+  GHC.Classes.$fEq(,)_$c/= @ Language.PureScript.Bundle.ModuleIdentifier
+                           @ [GHC.Types.Char]
+                           $dEq
+                           $dEq1
+  = Language.PureScript.Bundle.$s$fEq(,)_$s$fEq(,)_$c/=
+"SPEC/Language.PureScript.Bundle $fOrd(,) @ ModuleIdentifier @ [Char]" forall (v1 :: GHC.Classes.Ord
+                                                                                       [GHC.Types.Char])
+                                                                              (v :: GHC.Classes.Ord
+                                                                                      Language.PureScript.Bundle.ModuleIdentifier)
+  GHC.Classes.$fOrd(,) @ Language.PureScript.Bundle.ModuleIdentifier
+                       @ [GHC.Types.Char]
+                       v
+                       v1
+  = Language.PureScript.Bundle.$s$fOrd(,)
+"SPEC/Language.PureScript.Bundle concat @ [] _" [orphan] forall @ a
+                                                                ($dFoldable :: Data.Foldable.Foldable
+                                                                                 [])
+  Data.Foldable.concat @ [] @ a $dFoldable
+  = Language.PureScript.Bundle.$sconcat @ a
+"SPEC/Language.PureScript.Bundle fromList @ String" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                                GHC.Base.String)
+  Data.Set.Internal.fromList @ [GHC.Types.Char] $dOrd
+  = Language.PureScript.Bundle.$sfromList
+"SPEC/Language.PureScript.Bundle fromList @ Vertex" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                                Data.Graph.Vertex)
+  Data.Set.Internal.fromList @ GHC.Types.Int $dOrd
+  = Language.PureScript.Bundle.$sfromList1
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,2045 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:28:22.889782 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreImp.AST 8043
+  interface hash: 70fb28fee904093b585f3b3ee0899c5a
+  ABI hash: 66108f8b83c9a1c508a34f2e6114094e
+  export-list hash: 1da27be6d04935ab665d52ac441d8230
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 63844ea6b80cf0d4d69dc86afbf79aa6
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.CoreImp.AST.everything
+  Language.PureScript.CoreImp.AST.everywhere
+  Language.PureScript.CoreImp.AST.everywhereTopDown
+  Language.PureScript.CoreImp.AST.everywhereTopDownM
+  Language.PureScript.CoreImp.AST.getSourceSpan
+  Language.PureScript.CoreImp.AST.withSourceSpan
+  Language.PureScript.CoreImp.AST.AST{Language.PureScript.CoreImp.AST.App Language.PureScript.CoreImp.AST.ArrayLiteral Language.PureScript.CoreImp.AST.Assignment Language.PureScript.CoreImp.AST.Binary Language.PureScript.CoreImp.AST.Block Language.PureScript.CoreImp.AST.BooleanLiteral Language.PureScript.CoreImp.AST.Comment Language.PureScript.CoreImp.AST.For Language.PureScript.CoreImp.AST.ForIn Language.PureScript.CoreImp.AST.Function Language.PureScript.CoreImp.AST.IfElse Language.PureScript.CoreImp.AST.Indexer Language.PureScript.CoreImp.AST.InstanceOf Language.PureScript.CoreImp.AST.NumericLiteral Language.PureScript.CoreImp.AST.ObjectLiteral Language.PureScript.CoreImp.AST.Return Language.PureScript.CoreImp.AST.ReturnNoResult Language.PureScript.CoreImp.AST.StringLiteral Language.PureScript.CoreImp.AST.Throw Language.PureScript.CoreImp.AST.Unary Language.PureScript.CoreImp.AST.Var Language.PureScript.CoreImp.AST.VariableIntroduction Language.PureScript.CoreImp.AST.While}
+  Language.PureScript.CoreImp.AST.BinaryOperator{Language.PureScript.CoreImp.AST.Add Language.PureScript.CoreImp.AST.And Language.PureScript.CoreImp.AST.BitwiseAnd Language.PureScript.CoreImp.AST.BitwiseOr Language.PureScript.CoreImp.AST.BitwiseXor Language.PureScript.CoreImp.AST.Divide Language.PureScript.CoreImp.AST.EqualTo Language.PureScript.CoreImp.AST.GreaterThan Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo Language.PureScript.CoreImp.AST.LessThan Language.PureScript.CoreImp.AST.LessThanOrEqualTo Language.PureScript.CoreImp.AST.Modulus Language.PureScript.CoreImp.AST.Multiply Language.PureScript.CoreImp.AST.NotEqualTo Language.PureScript.CoreImp.AST.Or Language.PureScript.CoreImp.AST.ShiftLeft Language.PureScript.CoreImp.AST.ShiftRight Language.PureScript.CoreImp.AST.Subtract Language.PureScript.CoreImp.AST.ZeroFillShiftRight}
+  Language.PureScript.CoreImp.AST.UnaryOperator{Language.PureScript.CoreImp.AST.BitwiseNot Language.PureScript.CoreImp.AST.Negate Language.PureScript.CoreImp.AST.New Language.PureScript.CoreImp.AST.Not Language.PureScript.CoreImp.AST.Positive}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Names Language.PureScript.PSString
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Functor.Identity 9430dcaadd71c129eeb5ca7b963c9b54
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type f3d5169c3d3830854b19f6565b265403
+import  -/  mtl-2.2.2:Control.Monad.Identity ca9e9b9bfa404d3d70994a432bbadd6d
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Comments f344ceddf328cf61908be13dd1f90917
+  exports: b1904caad26a3e7c6a77f0a1156c2d62
+  Comment 23fbbb637db19d35ca8339b51dc9ecf5
+import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
+  exports: 41608caf7cc5b51f34de641c9952ab6d
+  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+import  -/  Language.PureScript.Traversals 0b1167883a6d6cc72496ff4af9cd7535
+  exports: ff3aac3cd7b378c02751a42ba037de7e
+  sndM f92d028593bfff03fd7f7a06605574ae
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+2d7016401e08dc68af93e9a4339f76ff
+  $fEqAST :: GHC.Classes.Eq Language.PureScript.CoreImp.AST.AST
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreImp.AST.AST
+                  Language.PureScript.CoreImp.AST.$fEqAST_$c==
+                  Language.PureScript.CoreImp.AST.$fEqAST_$c/= -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fEqAST_$c/= ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.CoreImp.AST.AST)
+                   (y :: Language.PureScript.CoreImp.AST.AST) ->
+                 case Language.PureScript.CoreImp.AST.$fEqAST_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fEqAST_$c== ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fEqBinaryOperator ::
+    GHC.Classes.Eq Language.PureScript.CoreImp.AST.BinaryOperator
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreImp.AST.BinaryOperator
+                  Language.PureScript.CoreImp.AST.$fEqBinaryOperator_$c==
+                  Language.PureScript.CoreImp.AST.$fEqBinaryOperator_$c/= -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fEqBinaryOperator_$c/= ::
+    Language.PureScript.CoreImp.AST.BinaryOperator
+    -> Language.PureScript.CoreImp.AST.BinaryOperator -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.CoreImp.AST.BinaryOperator)
+                   (y :: Language.PureScript.CoreImp.AST.BinaryOperator) ->
+                 case x of x1 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Language.PureScript.CoreImp.AST.BinaryOperator
+                        x1 of a# { DEFAULT ->
+                 case y of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Language.PureScript.CoreImp.AST.BinaryOperator
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.==# a# b# of lwild {
+                   DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } } } }) -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fEqBinaryOperator_$c== ::
+    Language.PureScript.CoreImp.AST.BinaryOperator
+    -> Language.PureScript.CoreImp.AST.BinaryOperator -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.CoreImp.AST.BinaryOperator)
+                   (b :: Language.PureScript.CoreImp.AST.BinaryOperator) ->
+                 case a of x1 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Language.PureScript.CoreImp.AST.BinaryOperator
+                        x1 of a# { DEFAULT ->
+                 case b of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Language.PureScript.CoreImp.AST.BinaryOperator
+                        x2 of b# { DEFAULT ->
+                 GHC.Prim.tagToEnum#
+                   @ GHC.Types.Bool
+                   (GHC.Prim.==# a# b#) } } } }) -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fEqUnaryOperator ::
+    GHC.Classes.Eq Language.PureScript.CoreImp.AST.UnaryOperator
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreImp.AST.UnaryOperator
+                  Language.PureScript.CoreImp.AST.$fEqUnaryOperator_$c==
+                  Language.PureScript.CoreImp.AST.$fEqUnaryOperator_$c/= -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fEqUnaryOperator_$c/= ::
+    Language.PureScript.CoreImp.AST.UnaryOperator
+    -> Language.PureScript.CoreImp.AST.UnaryOperator -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.CoreImp.AST.UnaryOperator)
+                   (y :: Language.PureScript.CoreImp.AST.UnaryOperator) ->
+                 case x of wild {
+                   Language.PureScript.CoreImp.AST.Negate
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.CoreImp.AST.Negate -> GHC.Types.False }
+                   Language.PureScript.CoreImp.AST.Not
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.CoreImp.AST.Not -> GHC.Types.False }
+                   Language.PureScript.CoreImp.AST.BitwiseNot
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.CoreImp.AST.BitwiseNot -> GHC.Types.False }
+                   Language.PureScript.CoreImp.AST.Positive
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.CoreImp.AST.Positive -> GHC.Types.False }
+                   Language.PureScript.CoreImp.AST.New
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.CoreImp.AST.New -> GHC.Types.False } }) -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fEqUnaryOperator_$c== ::
+    Language.PureScript.CoreImp.AST.UnaryOperator
+    -> Language.PureScript.CoreImp.AST.UnaryOperator -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Language.PureScript.CoreImp.AST.UnaryOperator)
+                   (ds1 :: Language.PureScript.CoreImp.AST.UnaryOperator) ->
+                 case ds of wild {
+                   Language.PureScript.CoreImp.AST.Negate
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.CoreImp.AST.Negate -> GHC.Types.True }
+                   Language.PureScript.CoreImp.AST.Not
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.CoreImp.AST.Not -> GHC.Types.True }
+                   Language.PureScript.CoreImp.AST.BitwiseNot
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.CoreImp.AST.BitwiseNot -> GHC.Types.True }
+                   Language.PureScript.CoreImp.AST.Positive
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.CoreImp.AST.Positive -> GHC.Types.True }
+                   Language.PureScript.CoreImp.AST.New
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.CoreImp.AST.New -> GHC.Types.True } }) -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fShowAST :: GHC.Show.Show Language.PureScript.CoreImp.AST.AST
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreImp.AST.AST
+                  Language.PureScript.CoreImp.AST.$fShowAST_$cshowsPrec
+                  Language.PureScript.CoreImp.AST.$fShowAST_$cshow
+                  Language.PureScript.CoreImp.AST.$fShowAST_$cshowList -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fShowAST1 :: Language.PureScript.CoreImp.AST.AST -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (w :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.$w$cshowsPrec 0# w) -}
+0a5568792c8a27b0a89f91005c95d1df
+  $fShowAST2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fShowAST_$cshow ::
+    Language.PureScript.CoreImp.AST.AST -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.$fShowAST_$cshowsPrec
+                   Language.PureScript.CoreImp.AST.$fShowAST2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fShowAST_$cshowList ::
+    [Language.PureScript.CoreImp.AST.AST] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.CoreImp.AST.AST])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.CoreImp.AST.AST
+                   Language.PureScript.CoreImp.AST.$fShowAST1
+                   ls
+                   s) -}
+2d7016401e08dc68af93e9a4339f76ff
+  $fShowAST_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.CoreImp.AST.AST) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.CoreImp.AST.$w$cshowsPrec ww1 w1 }) -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fShowBinaryOperator ::
+    GHC.Show.Show Language.PureScript.CoreImp.AST.BinaryOperator
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreImp.AST.BinaryOperator
+                  Language.PureScript.CoreImp.AST.$fShowBinaryOperator_$cshowsPrec
+                  Language.PureScript.CoreImp.AST.$fShowBinaryOperator_$cshow
+                  Language.PureScript.CoreImp.AST.$fShowBinaryOperator_$cshowList -}
+a8939858053e94b9b25f5ade295543b1
+  $fShowBinaryOperator1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator2) -}
+277513f6543fbd03c70664ee74da8546
+  $fShowBinaryOperator10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BitwiseOr"#) -}
+7df5d3487b9dcda5118a9732c11a8848
+  $fShowBinaryOperator11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator12) -}
+135f42799508b95458e2751ffd84dfaf
+  $fShowBinaryOperator12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BitwiseAnd"#) -}
+17eb63d5878dcb23b72afad112c97bf7
+  $fShowBinaryOperator13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator14) -}
+3fac42bbf784cc4aacbc46e9bb9fe7ea
+  $fShowBinaryOperator14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Or"#) -}
+160175a056f992b352c253ebb5c19257
+  $fShowBinaryOperator15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator16) -}
+4711edc36e87e6ae058955bd2432813d
+  $fShowBinaryOperator16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("And"#) -}
+d5d7d42635ede54298ca4a750707cc05
+  $fShowBinaryOperator17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator18) -}
+6b1e165197eb3f6f133a559b29b93118
+  $fShowBinaryOperator18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GreaterThanOrEqualTo"#) -}
+4f6f61e31a3a9461735239a142b12717
+  $fShowBinaryOperator19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator20) -}
+d251f245131871d24a468a220ef40b63
+  $fShowBinaryOperator2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ZeroFillShiftRight"#) -}
+edaac269aec2f190cccda5dbc59cf1ed
+  $fShowBinaryOperator20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GreaterThan"#) -}
+0464808db8bac300a6c50957afd75cb8
+  $fShowBinaryOperator21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator22) -}
+7cce4657b7ad5a13cff1f91d8af44c67
+  $fShowBinaryOperator22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LessThanOrEqualTo"#) -}
+53361c4709b8b5de7bc279cf6faab713
+  $fShowBinaryOperator23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator24) -}
+2905f9f61823d2adc38075390967f594
+  $fShowBinaryOperator24 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LessThan"#) -}
+4835daf668e6c10fde433399cde661f4
+  $fShowBinaryOperator25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator26) -}
+22007a1d0ce729e0e383e2fad28ee96a
+  $fShowBinaryOperator26 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NotEqualTo"#) -}
+a402e62e3b3df578dffe4c4259bea15a
+  $fShowBinaryOperator27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator28) -}
+0a6b80ed0e612a7e29a82bc14f7f2c96
+  $fShowBinaryOperator28 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("EqualTo"#) -}
+683d1e0627a82078d67d8b76a1bb60cf
+  $fShowBinaryOperator29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator30) -}
+10667d99ad3f70d2aa477a82ca375061
+  $fShowBinaryOperator3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator4) -}
+7a9fdc6393e539e7a95467aa99e16e32
+  $fShowBinaryOperator30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Modulus"#) -}
+8639128560f8fae6e7e8141aa74483db
+  $fShowBinaryOperator31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator32) -}
+61c052a903dfd440c5320df515a8dddd
+  $fShowBinaryOperator32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Divide"#) -}
+414615a90994539e8096dc270242b8ba
+  $fShowBinaryOperator33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator34) -}
+980cb7c7e45b9c05c640aa72907e0250
+  $fShowBinaryOperator34 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Multiply"#) -}
+85275bbcd1441247b14daa93e761e413
+  $fShowBinaryOperator35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator36) -}
+97a8e10425641224e4748e4e857e0304
+  $fShowBinaryOperator36 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Subtract"#) -}
+c8a0897c2c5b38b82d8a8dbde664d98e
+  $fShowBinaryOperator37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator38) -}
+ec72ce2e28989ff9057ad58d524afbce
+  $fShowBinaryOperator38 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Add"#) -}
+9beaaf5bc55d08ca111bc2bd21a0fc84
+  $fShowBinaryOperator4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ShiftRight"#) -}
+6ad87108bb0f05647ffb55f653a70ecd
+  $fShowBinaryOperator5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator6) -}
+7d2c740fe851d453520d7d5245922b59
+  $fShowBinaryOperator6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ShiftLeft"#) -}
+203eb8efa3aa75f6cd32ecbe32b87280
+  $fShowBinaryOperator7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator8) -}
+c02e2a99c9ac9e860f05d934a1b048a1
+  $fShowBinaryOperator8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BitwiseXor"#) -}
+01553fd21adcfd11ef03a5031562d228
+  $fShowBinaryOperator9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowBinaryOperator10) -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fShowBinaryOperator_$cshow ::
+    Language.PureScript.CoreImp.AST.BinaryOperator -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.CoreImp.AST.BinaryOperator) ->
+                 case x of wild {
+                   Language.PureScript.CoreImp.AST.Add
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator37
+                   Language.PureScript.CoreImp.AST.Subtract
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator35
+                   Language.PureScript.CoreImp.AST.Multiply
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator33
+                   Language.PureScript.CoreImp.AST.Divide
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator31
+                   Language.PureScript.CoreImp.AST.Modulus
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator29
+                   Language.PureScript.CoreImp.AST.EqualTo
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator27
+                   Language.PureScript.CoreImp.AST.NotEqualTo
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator25
+                   Language.PureScript.CoreImp.AST.LessThan
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator23
+                   Language.PureScript.CoreImp.AST.LessThanOrEqualTo
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator21
+                   Language.PureScript.CoreImp.AST.GreaterThan
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator19
+                   Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator17
+                   Language.PureScript.CoreImp.AST.And
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator15
+                   Language.PureScript.CoreImp.AST.Or
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator13
+                   Language.PureScript.CoreImp.AST.BitwiseAnd
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator11
+                   Language.PureScript.CoreImp.AST.BitwiseOr
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator9
+                   Language.PureScript.CoreImp.AST.BitwiseXor
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator7
+                   Language.PureScript.CoreImp.AST.ShiftLeft
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator5
+                   Language.PureScript.CoreImp.AST.ShiftRight
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator3
+                   Language.PureScript.CoreImp.AST.ZeroFillShiftRight
+                   -> Language.PureScript.CoreImp.AST.$fShowBinaryOperator1 }) -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fShowBinaryOperator_$cshowList ::
+    [Language.PureScript.CoreImp.AST.BinaryOperator] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.CoreImp.AST.BinaryOperator])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.CoreImp.AST.BinaryOperator
+                   Language.PureScript.CoreImp.AST.$w$cshowsPrec1
+                   ls
+                   s) -}
+18df6e381ca5d528fdf9b14543c09e16
+  $fShowBinaryOperator_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.CoreImp.AST.BinaryOperator -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.CoreImp.AST.BinaryOperator)
+                   (w2 :: GHC.Base.String) ->
+                 Language.PureScript.CoreImp.AST.$w$cshowsPrec1 w1 w2) -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fShowUnaryOperator ::
+    GHC.Show.Show Language.PureScript.CoreImp.AST.UnaryOperator
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreImp.AST.UnaryOperator
+                  Language.PureScript.CoreImp.AST.$fShowUnaryOperator_$cshowsPrec
+                  Language.PureScript.CoreImp.AST.$fShowUnaryOperator_$cshow
+                  Language.PureScript.CoreImp.AST.$fShowUnaryOperator_$cshowList -}
+a0aa8d4bade2de8b3b16cbce44dc813e
+  $fShowUnaryOperator1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowUnaryOperator2) -}
+6e4e7f065617f11426a10c087900c229
+  $fShowUnaryOperator10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Negate"#) -}
+a359c21ca00f80664063c4648a387056
+  $fShowUnaryOperator2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("New"#) -}
+1e9293817c06d524d34ef3657238ffe6
+  $fShowUnaryOperator3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowUnaryOperator4) -}
+4fb9c9ae5032d492b00b5cab0c968df1
+  $fShowUnaryOperator4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Positive"#) -}
+9394c32194452885030415441ced958f
+  $fShowUnaryOperator5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowUnaryOperator6) -}
+a8174c0ac611c3570466623c0fdc23f0
+  $fShowUnaryOperator6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BitwiseNot"#) -}
+2c5e114d29e61d4efa097c823e3c17a5
+  $fShowUnaryOperator7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowUnaryOperator8) -}
+64aac63f5298b52f099553d593b55188
+  $fShowUnaryOperator8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Not"#) -}
+7df655022e26edef9634fb346d82fc83
+  $fShowUnaryOperator9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.CoreImp.AST.$fShowUnaryOperator10) -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fShowUnaryOperator_$cshow ::
+    Language.PureScript.CoreImp.AST.UnaryOperator -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.CoreImp.AST.UnaryOperator) ->
+                 case x of wild {
+                   Language.PureScript.CoreImp.AST.Negate
+                   -> Language.PureScript.CoreImp.AST.$fShowUnaryOperator9
+                   Language.PureScript.CoreImp.AST.Not
+                   -> Language.PureScript.CoreImp.AST.$fShowUnaryOperator7
+                   Language.PureScript.CoreImp.AST.BitwiseNot
+                   -> Language.PureScript.CoreImp.AST.$fShowUnaryOperator5
+                   Language.PureScript.CoreImp.AST.Positive
+                   -> Language.PureScript.CoreImp.AST.$fShowUnaryOperator3
+                   Language.PureScript.CoreImp.AST.New
+                   -> Language.PureScript.CoreImp.AST.$fShowUnaryOperator1 }) -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fShowUnaryOperator_$cshowList ::
+    [Language.PureScript.CoreImp.AST.UnaryOperator] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.CoreImp.AST.UnaryOperator])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.CoreImp.AST.UnaryOperator
+                   Language.PureScript.CoreImp.AST.$w$cshowsPrec2
+                   ls
+                   s) -}
+279962a5f124fddd93c8f8b35bde7cce
+  $fShowUnaryOperator_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.CoreImp.AST.UnaryOperator -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.CoreImp.AST.UnaryOperator)
+                   (w2 :: GHC.Base.String) ->
+                 Language.PureScript.CoreImp.AST.$w$cshowsPrec2 w1 w2) -}
+d5675abf09176fadc140b4b3ef80b712
+  $tc'Add :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2868113983905885092##
+                   5260130492286833557##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Add2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+46cc3d720f875f9e4ab19741e38cc613
+  $tc'Add1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+f7cb41e24b3daa1f39374ee5edfdfce4
+  $tc'Add2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Add3) -}
+8a9b9168e6cacf5868adcaaa51ebe8b6
+  $tc'Add3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Add"#) -}
+c3aae9faaf3f0b34f6c22bea57a1d2d8
+  $tc'And :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4693361243281436145##
+                   3472500904225968101##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'And1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+4b7389376889b1e02ef444a544921d21
+  $tc'And1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'And2) -}
+a8363c9946446744d243ff4050adb6ee
+  $tc'And2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'And"#) -}
+2fe768b34d239afb9e3ad04c665a35af
+  $tc'App :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7522191650273593957##
+                   11952037968548785214##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'App2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'App1) -}
+aed47ec939608d1c4a4252b0ed53a4a8
+  $tc'App1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3cdd9fa9763379ae72dd8fb1a4744c91
+  $tc'App2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'App3) -}
+0cafea22c3d29640934f295d59e703c3
+  $tc'App3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'App"#) -}
+51132b3e21c551660a8263903f62ed2c
+  $tc'ArrayLiteral :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   943095693879888041##
+                   12036115844796183903##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ArrayLiteral2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'ArrayLiteral1) -}
+7c239fa293e9e712eaa47c6464aa5561
+  $tc'ArrayLiteral1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c13f08dcdf8619f6658a05ab2b59fe07
+  $tc'ArrayLiteral2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ArrayLiteral3) -}
+574c8ce07b56fcbc1b88f2bb4d640386
+  $tc'ArrayLiteral3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArrayLiteral"#) -}
+09d41a4a466507d62191351c2b0966ce
+  $tc'Assignment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16743021371094432405##
+                   17171248373528938178##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Assignment2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Assignment1) -}
+8b85d6b323a95f14a35525205bda1204
+  $tc'Assignment1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+045703a26f1091f3150207b083a32ef2
+  $tc'Assignment2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Assignment3) -}
+61c87c0a31435932580ba4209009652a
+  $tc'Assignment3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Assignment"#) -}
+0dea52c328e7c8467ffa26b00832f669
+  $tc'Binary :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11775884629513893030##
+                   16717240630328759440##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Binary2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Binary1) -}
+0d5cb0a29f8db4688a9994872990a61a
+  $tc'Binary1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+05652cae78d4218bc27718790dd44a28
+  $tc'Binary2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Binary3) -}
+23c9cf70e81449191f901d7952399a07
+  $tc'Binary3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Binary"#) -}
+343054819af74cf829daac6690348b30
+  $tc'BitwiseAnd :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9368664950830949774##
+                   4391297130315092465##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseAnd1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+b7aab08660fce2e526f9221543501fea
+  $tc'BitwiseAnd1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseAnd2) -}
+f50ceaab71eab9d9062a4df2b26720fa
+  $tc'BitwiseAnd2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BitwiseAnd"#) -}
+4806c5b0d480444450531f68b105a4ff
+  $tc'BitwiseNot :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13507863374414867281##
+                   15167331143738638622##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot1) -}
+e79758e86c115de23097a97a1486d600
+  $tc'BitwiseNot1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+08ad7d35f4a33365f276eb85af00e7df
+  $tc'BitwiseNot2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot3) -}
+6e5536b4ec132e06b540b47e217edd68
+  $tc'BitwiseNot3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BitwiseNot"#) -}
+70ea695feacfe01a1c2eba2a8ac8130b
+  $tc'BitwiseOr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10871921275300645363##
+                   7311690431346595896##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseOr1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+902e9e0d0e00079d1697c0766a07316f
+  $tc'BitwiseOr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseOr2) -}
+244b7e39871a0a349cf3149ef0a6e048
+  $tc'BitwiseOr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BitwiseOr"#) -}
+8d1b9b0370e3e85918a952c6c60554e8
+  $tc'BitwiseXor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3994186913601753528##
+                   5586571064803463756##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseXor1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+c4fb90d8d2b0c6ef93e34356697340e4
+  $tc'BitwiseXor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseXor2) -}
+7111805b066842a4fc8e99910125eadb
+  $tc'BitwiseXor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BitwiseXor"#) -}
+18a89e049b58aa235a2efdedd2eb3fd4
+  $tc'Block :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   184152446800182773##
+                   98459850502364507##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Block1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'ArrayLiteral1) -}
+a9b829d682717462175fe6cef6354043
+  $tc'Block1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Block2) -}
+ccf2440876311b3eb2bbb9de1090e7c1
+  $tc'Block2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Block"#) -}
+702b9a09ef064f7cfc0c76e3d4596219
+  $tc'BooleanLiteral :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11364810288266281529##
+                   4383938494716155673##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'BooleanLiteral2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'BooleanLiteral1) -}
+0406ddae4e237db6e4175661c49597ca
+  $tc'BooleanLiteral1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7fb172ccd6d04e7df2417990fa1cef23
+  $tc'BooleanLiteral2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'BooleanLiteral3) -}
+bc7367057508a05a6fb37aa3dc7b943b
+  $tc'BooleanLiteral3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BooleanLiteral"#) -}
+76552a6f3feb5759b294e6e32507def9
+  $tc'Comment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16377876613488353013##
+                   14284123814309351765##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Comment2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Comment1) -}
+ab87f64485be1fffadb2ccacbddf1b5a
+  $tc'Comment1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+29abbefe8fa12f28fb85acaf0bfedeaa
+  $tc'Comment2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Comment3) -}
+43977ab2677248eb78777654e9d25e09
+  $tc'Comment3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Comment"#) -}
+b1917b4377de70c4086e0b67b0db4022
+  $tc'Divide :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13051133061054824399##
+                   17757348898494997871##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Divide1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+9efd9e45952f69b121abf73282f07019
+  $tc'Divide1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Divide2) -}
+bb8a7216e1e25907bc5ff39548027a25
+  $tc'Divide2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Divide"#) -}
+e637d3e6d9504fcb7cd93cd3acdcc383
+  $tc'EqualTo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6133349333103567227##
+                   11713079863883319792##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'EqualTo1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+9fa2ec4090c1b975ffcf1e245136762f
+  $tc'EqualTo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'EqualTo2) -}
+a45488cb3d9e99320b584c1a617b763e
+  $tc'EqualTo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EqualTo"#) -}
+68aa40aa78f2cc13a7d381578a042c00
+  $tc'For :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11907047381928422818##
+                   1990764927976260672##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'For2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'For1) -}
+882efd0b8a7364deb5b3af48bdaa63c4
+  $tc'For1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fe4f76b4733d16b2d37de32179d5413e
+  $tc'For2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'For3) -}
+024f1662c2521d4061b7825212e9c322
+  $tc'For3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'For"#) -}
+4e9713466837a281dfc3765bc4fa0e18
+  $tc'ForIn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5603338616085157135##
+                   12948680567327764589##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ForIn2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'ForIn1) -}
+a299518c4648cbf1a892def96a0a2a50
+  $tc'ForIn1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+acf8110faac473785a201320946ec3bf
+  $tc'ForIn2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ForIn3) -}
+1708380a7cef179bdc0690a5c342bb85
+  $tc'ForIn3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ForIn"#) -}
+09897a61549bda651f3d34af732c9713
+  $tc'Function :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8888541843161596259##
+                   18320207831530239659##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Function2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Function1) -}
+2bf0d157f0cf0af8e74d5bc4d3e8b97a
+  $tc'Function1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1ebc4b8081623db602341b7ba86b2c01
+  $tc'Function2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Function3) -}
+def5c08b4df211a57882588ec422f227
+  $tc'Function3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Function"#) -}
+9d0ff0579420064540fecc86493a00c3
+  $tc'GreaterThan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8446834166371018566##
+                   18161256937587214884##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'GreaterThan1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+a02da2418ad4f012f32d41a891def71d
+  $tc'GreaterThan1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'GreaterThan2) -}
+6f3798f2c6f0b5002238e5c666502d13
+  $tc'GreaterThan2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GreaterThan"#) -}
+fe7b527822c91318d6be13a3a039f863
+  $tc'GreaterThanOrEqualTo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1140756100470591843##
+                   10533093356023814399##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'GreaterThanOrEqualTo1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+42171e638a867787b5e11668518a73d2
+  $tc'GreaterThanOrEqualTo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'GreaterThanOrEqualTo2) -}
+0ba79884adedd114e5181bb6d577fc7f
+  $tc'GreaterThanOrEqualTo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GreaterThanOrEqualTo"#) -}
+5679d4f1814019c1763cca6b69cd22ed
+  $tc'IfElse :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3201673665784674900##
+                   1257027122341234304##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'IfElse2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'IfElse1) -}
+c501a06a1795bafaa9504718eebf4723
+  $tc'IfElse1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6648d7ed2a38b545721c92f3b7ddbfb5
+  $tc'IfElse2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'IfElse3) -}
+f352630c89149ee9e4284f38ad61f75c
+  $tc'IfElse3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IfElse"#) -}
+6473681ab2c3a760fdf1edaf6ea1a0c6
+  $tc'Indexer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16159301994864126870##
+                   9986713023703030040##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Indexer1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Assignment1) -}
+d0b3fecb399eb0e0d0322903e4639c27
+  $tc'Indexer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Indexer2) -}
+5b0bd052fcb065025431dc88b1bbe04d
+  $tc'Indexer2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Indexer"#) -}
+9b040e44e4b61ce101d91dec178fd904
+  $tc'InstanceOf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11545646409463048192##
+                   7572855785048241954##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'InstanceOf1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Assignment1) -}
+f79309aa3481d32d64de07cbeef15cc2
+  $tc'InstanceOf1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'InstanceOf2) -}
+06ce798a9068b2e6a03098b88a84be55
+  $tc'InstanceOf2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'InstanceOf"#) -}
+084bf3b14471e672103fc49b7d665e07
+  $tc'LessThan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10588882077367115326##
+                   9780176012234918739##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'LessThan1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+cd6f6fc29bceec48074ca5db141e5883
+  $tc'LessThan1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'LessThan2) -}
+9e8e497d963c541c5476bfbcc2cbc00e
+  $tc'LessThan2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LessThan"#) -}
+3f8b8dd4305203f796db38882f560fc8
+  $tc'LessThanOrEqualTo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6474369357856721913##
+                   1204943667662712397##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'LessThanOrEqualTo1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+9633eade4b0a80269ca15cdf56701c3c
+  $tc'LessThanOrEqualTo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'LessThanOrEqualTo2) -}
+565c502677d291df97d93ab316c99963
+  $tc'LessThanOrEqualTo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LessThanOrEqualTo"#) -}
+bebb2ec78654a7a21b21915717e3b02c
+  $tc'Modulus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12765630252956028291##
+                   17282847236359393230##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Modulus1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+a8c61255a74ee3372fcdf60bcf83f09c
+  $tc'Modulus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Modulus2) -}
+900e5d4196cae71e375b267614db0b2d
+  $tc'Modulus2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Modulus"#) -}
+8023f34103eba8bbb29bde52d143a83c
+  $tc'Multiply :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17392933695836168924##
+                   8903319151254540694##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Multiply1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+5ab1b7ae22d2cdf9e8b9a7e521d929e9
+  $tc'Multiply1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Multiply2) -}
+268c6f413cfbd5805a503e3dcd937021
+  $tc'Multiply2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Multiply"#) -}
+e29144417e937a4cff694d544feef193
+  $tc'Negate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7643638600236954640##
+                   17634382817321935177##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Negate1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot1) -}
+d1c0f6e89179c00ef6ead5db84f30185
+  $tc'Negate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Negate2) -}
+a35348d8a6a15615e4f7fef50c13304c
+  $tc'Negate2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Negate"#) -}
+4d841b0026a575c0dd95baab68841830
+  $tc'New :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15943775471345286478##
+                   773482001481597093##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'New1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot1) -}
+6370f8ae1f088f149b5af240dc126a34
+  $tc'New1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'New2) -}
+1943fb6efcf85626f137e93afc356a34
+  $tc'New2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'New"#) -}
+0de7d6c31ab38056678cf4ceacb76a66
+  $tc'Not :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1505007101199771674##
+                   15771862241064697986##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Not1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot1) -}
+5a1107e5b351d39a0fd5aa6a72f4bb9a
+  $tc'Not1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Not2) -}
+f024990663d034388bd472fc4c1755aa
+  $tc'Not2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Not"#) -}
+9d914acf3e6c7b1c95b06f3e0aceb25c
+  $tc'NotEqualTo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   481790029493339716##
+                   2821208278943086711##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'NotEqualTo1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+9bdb93fbc898f3549369ac84e4f8cd3b
+  $tc'NotEqualTo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'NotEqualTo2) -}
+ae5141f12617221dcdd421def6487afe
+  $tc'NotEqualTo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NotEqualTo"#) -}
+fa0fd15aa827182c71b3ac53f34ba12a
+  $tc'NumericLiteral :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2605522988743673541##
+                   4576665285175638980##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'NumericLiteral2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'NumericLiteral1) -}
+aaf4fd396fc944c99e43c6d637373159
+  $tc'NumericLiteral1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+cb3eeec86b03cdb3f909bd79e623cdcd
+  $tc'NumericLiteral2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'NumericLiteral3) -}
+911f9137929f183d5410d9cd5f39ed36
+  $tc'NumericLiteral3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NumericLiteral"#) -}
+ad91744d6cbc6615a3e17cf78ce3fa34
+  $tc'ObjectLiteral :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10709776112876847903##
+                   14704305869584974415##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ObjectLiteral2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'ObjectLiteral1) -}
+074adeaf448279afda4f4015fd6e94c8
+  $tc'ObjectLiteral1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d3527b71b33727e95b3450bc1870af36
+  $tc'ObjectLiteral2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ObjectLiteral3) -}
+61f80db04044d6f80bad0e6e8e41b9c6
+  $tc'ObjectLiteral3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ObjectLiteral"#) -}
+02cf5e481dcb0add7f2231d6c1112417
+  $tc'Or :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15231641197427839925##
+                   6706438676092398736##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Or1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+8639256e6c5bc16b2b8c47f9800d0ae4
+  $tc'Or1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Or2) -}
+8240d3866587eea28393a1671bd574d4
+  $tc'Or2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Or"#) -}
+d334815edf7b8fa35ca5564f55f93f55
+  $tc'Positive :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7708566766222499430##
+                   16795599496464231571##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Positive1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'BitwiseNot1) -}
+126d0263a0382e8464e8a58f0f604406
+  $tc'Positive1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Positive2) -}
+096065560ee70c092f092818ca0f230f
+  $tc'Positive2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Positive"#) -}
+d97e958c5e59d3417d0b9d9ddd9dcaf3
+  $tc'Return :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14486993301438062874##
+                   9426121295767005509##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Return2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Return1) -}
+24635731b6a931c719fa6295bc62d8d6
+  $tc'Return1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7306ba4f09313fa5731e2c34709baf75
+  $tc'Return2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Return3) -}
+2a9a53ed5958d8037b49fdadfd478336
+  $tc'Return3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Return"#) -}
+bafa116a6ecb8b02a7e221d89f3fbdd6
+  $tc'ReturnNoResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13243906193276286032##
+                   10152244433646596362##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ReturnNoResult2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'ReturnNoResult1) -}
+fbfc2f8f54519138652a17b6672630fc
+  $tc'ReturnNoResult1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+db4b71af5a996518e2495f757782b47c
+  $tc'ReturnNoResult2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ReturnNoResult3) -}
+dfc6a5556077d08022b471383cd46c3e
+  $tc'ReturnNoResult3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ReturnNoResult"#) -}
+a5a0eaea72e40fac49450053d6e2a01f
+  $tc'ShiftLeft :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16188529797900276165##
+                   11850248304333933924##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ShiftLeft1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+66e7914ed441c432d3cb15948c93a317
+  $tc'ShiftLeft1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ShiftLeft2) -}
+5bd9fc31ff08208431d78872d87f5b55
+  $tc'ShiftLeft2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ShiftLeft"#) -}
+d6fb3ef2257a01ef35e236be76e3f73b
+  $tc'ShiftRight :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12565817458844051409##
+                   7375764634119145828##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ShiftRight1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+5802bd6b220dce97ce5b72d92796654f
+  $tc'ShiftRight1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ShiftRight2) -}
+60ec286ebbfbbcb4a7da0ef38d6d6b5c
+  $tc'ShiftRight2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ShiftRight"#) -}
+a36847545f9dfc4c880a0790d7c67c03
+  $tc'StringLiteral :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7019575957283985699##
+                   15458803334437547372##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'StringLiteral2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'StringLiteral1) -}
+150a31ac63fb2e6a99f5ced620ee0963
+  $tc'StringLiteral1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9bae0ab21514e9f285671cf1e8210de5
+  $tc'StringLiteral2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'StringLiteral3) -}
+2c5cc963cb5313926e378fdd434af359
+  $tc'StringLiteral3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'StringLiteral"#) -}
+5723bc04bb88aa2a875fb8ca363d9072
+  $tc'Subtract :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3906589864710146834##
+                   8995357068420043426##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Subtract1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+a4d580b5a374e17ff956bd9cb0ce2328
+  $tc'Subtract1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Subtract2) -}
+965591ebed5d12517de2a13806396ed9
+  $tc'Subtract2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Subtract"#) -}
+587e7ee55408da96e49759a4a38b0ece
+  $tc'Throw :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11663591565856809528##
+                   2365977454688412839##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Throw1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Return1) -}
+6b4b135586c23658968d6525474ef4a2
+  $tc'Throw1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Throw2) -}
+43b97a5d0a4ca3bba1a2c1f9381f8135
+  $tc'Throw2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Throw"#) -}
+c73e0186217f40112bc2b38733ac5485
+  $tc'Unary :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16895760544153212971##
+                   12522122311229202342##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Unary2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Unary1) -}
+feea151843b74248882db578d1933d0f
+  $tc'Unary1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+77f040f40d39302b2f087511d9adf4c2
+  $tc'Unary2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Unary3) -}
+2279036576dcf9786c8f6b861ed26dbe
+  $tc'Unary3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Unary"#) -}
+4c63d13fb5e9616006cb29d5f6d988f4
+  $tc'Var :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12845759218771954268##
+                   1631764194335763074##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'Var2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Var1) -}
+80ee377b48c535d1f070bcd3b3b4d2f2
+  $tc'Var1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+64b85bce3f0e5ced363fae5d2e7e17c5
+  $tc'Var2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'Var3) -}
+501675c0249dd6c7c73d749b78dcabe1
+  $tc'Var3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Var"#) -}
+4e87c595524bfbadc8a684c6cc461e50
+  $tc'VariableIntroduction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7885859604578337707##
+                   2190777164209502454##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'VariableIntroduction2
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'VariableIntroduction1) -}
+cb6679b60758cc1b94f9e40dc7cf1c88
+  $tc'VariableIntroduction1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6c0aafc42364d2bffc7a942a40b5065a
+  $tc'VariableIntroduction2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'VariableIntroduction3) -}
+d3d4422dc4b8552dd23409e71d94b93e
+  $tc'VariableIntroduction3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'VariableIntroduction"#) -}
+5353ea57036666ddd135ec66f5690803
+  $tc'While :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2985187899814358399##
+                   187555493103142578##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'While1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Assignment1) -}
+a2d44e3f4c5d4407bc0289340d40c4b4
+  $tc'While1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'While2) -}
+1efe18cd68c3ef172f113f7422c6e230
+  $tc'While2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'While"#) -}
+4d95cd4989f6917a8b54cc3be4ff2488
+  $tc'ZeroFillShiftRight :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17124075353516958894##
+                   1564945255336845977##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tc'ZeroFillShiftRight1
+                   0#
+                   Language.PureScript.CoreImp.AST.$tc'Add1) -}
+c50329983c107b6925f1dd6e3d1902b1
+  $tc'ZeroFillShiftRight1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tc'ZeroFillShiftRight2) -}
+9a591b27032b2f5defaffea898a00ad3
+  $tc'ZeroFillShiftRight2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ZeroFillShiftRight"#) -}
+d92fb4e335c497a97bd1b08837822495
+  $tcAST :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16074428276571788452##
+                   1501517826350811295##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tcAST1
+                   0#
+                   GHC.Types.krep$*) -}
+86746bdabf136d3116e70ecc619d2e16
+  $tcAST1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tcAST2) -}
+21b568a9b19b1ed00bf187b175ab9614
+  $tcAST2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AST"#) -}
+7418d7a33188744f31b1d2bd83ecfc2f
+  $tcBinaryOperator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10277432178527757196##
+                   7978222121752037298##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tcBinaryOperator1
+                   0#
+                   GHC.Types.krep$*) -}
+910b763ea9d295c6a2b2f068ec878285
+  $tcBinaryOperator1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tcBinaryOperator2) -}
+bcd8a4a89e6e5543f55fe95aa35f6031
+  $tcBinaryOperator2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BinaryOperator"#) -}
+28048faee3a81b4ecd44253ee1fba9f3
+  $tcUnaryOperator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2021916647511857960##
+                   17836120149264320048##
+                   Language.PureScript.CoreImp.AST.$trModule
+                   Language.PureScript.CoreImp.AST.$tcUnaryOperator1
+                   0#
+                   GHC.Types.krep$*) -}
+d85b6a095397a3c0bb094941fd6aed02
+  $tcUnaryOperator1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$tcUnaryOperator2) -}
+fd99662a23f892ffd9322f305aa37c2f
+  $tcUnaryOperator2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("UnaryOperator"#) -}
+a68a05ee624789db6301a65cac3a4d93
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.CoreImp.AST.$trModule3
+                   Language.PureScript.CoreImp.AST.$trModule1) -}
+ea0364a3e0e4b92323890c46559af404
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$trModule2) -}
+c4fd2d2a7fa868807c5fcfc951a63a86
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.CoreImp.AST"#) -}
+7e7282fb68dc67a749a6ae9a75b81595
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.AST.$trModule4) -}
+4dad9becec4b1b873bfd5ef93cfc82a1
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+2d7016401e08dc68af93e9a4339f76ff
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0] -}
+18df6e381ca5d528fdf9b14543c09e16
+  $w$cshowsPrec1 ::
+    Language.PureScript.CoreImp.AST.BinaryOperator
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+279962a5f124fddd93c8f8b35bde7cce
+  $w$cshowsPrec2 ::
+    Language.PureScript.CoreImp.AST.UnaryOperator
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.CoreImp.AST.UnaryOperator)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Language.PureScript.CoreImp.AST.Negate
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.CoreImp.AST.$fShowUnaryOperator9
+                        w1
+                   Language.PureScript.CoreImp.AST.Not
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.CoreImp.AST.$fShowUnaryOperator7
+                        w1
+                   Language.PureScript.CoreImp.AST.BitwiseNot
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.CoreImp.AST.$fShowUnaryOperator5
+                        w1
+                   Language.PureScript.CoreImp.AST.Positive
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.CoreImp.AST.$fShowUnaryOperator3
+                        w1
+                   Language.PureScript.CoreImp.AST.New
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.CoreImp.AST.$fShowUnaryOperator1
+                        w1 }) -}
+2d7016401e08dc68af93e9a4339f76ff
+  data AST
+    = NumericLiteral (GHC.Base.Maybe
+                        Language.PureScript.AST.SourcePos.SourceSpan)
+                     (Data.Either.Either GHC.Integer.Type.Integer GHC.Types.Double)
+    | StringLiteral (GHC.Base.Maybe
+                       Language.PureScript.AST.SourcePos.SourceSpan)
+                    Language.PureScript.PSString.PSString
+    | BooleanLiteral (GHC.Base.Maybe
+                        Language.PureScript.AST.SourcePos.SourceSpan)
+                     GHC.Types.Bool
+    | Unary (GHC.Base.Maybe
+               Language.PureScript.AST.SourcePos.SourceSpan)
+            Language.PureScript.CoreImp.AST.UnaryOperator
+            Language.PureScript.CoreImp.AST.AST
+    | Binary (GHC.Base.Maybe
+                Language.PureScript.AST.SourcePos.SourceSpan)
+             Language.PureScript.CoreImp.AST.BinaryOperator
+             Language.PureScript.CoreImp.AST.AST
+             Language.PureScript.CoreImp.AST.AST
+    | ArrayLiteral (GHC.Base.Maybe
+                      Language.PureScript.AST.SourcePos.SourceSpan)
+                   [Language.PureScript.CoreImp.AST.AST]
+    | Indexer (GHC.Base.Maybe
+                 Language.PureScript.AST.SourcePos.SourceSpan)
+              Language.PureScript.CoreImp.AST.AST
+              Language.PureScript.CoreImp.AST.AST
+    | ObjectLiteral (GHC.Base.Maybe
+                       Language.PureScript.AST.SourcePos.SourceSpan)
+                    [(Language.PureScript.PSString.PSString,
+                      Language.PureScript.CoreImp.AST.AST)]
+    | Function (GHC.Base.Maybe
+                  Language.PureScript.AST.SourcePos.SourceSpan)
+               (GHC.Base.Maybe Data.Text.Internal.Text)
+               [Data.Text.Internal.Text]
+               Language.PureScript.CoreImp.AST.AST
+    | App (GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
+          Language.PureScript.CoreImp.AST.AST
+          [Language.PureScript.CoreImp.AST.AST]
+    | Var (GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
+          Data.Text.Internal.Text
+    | Block (GHC.Base.Maybe
+               Language.PureScript.AST.SourcePos.SourceSpan)
+            [Language.PureScript.CoreImp.AST.AST]
+    | VariableIntroduction (GHC.Base.Maybe
+                              Language.PureScript.AST.SourcePos.SourceSpan)
+                           Data.Text.Internal.Text
+                           (GHC.Base.Maybe Language.PureScript.CoreImp.AST.AST)
+    | Assignment (GHC.Base.Maybe
+                    Language.PureScript.AST.SourcePos.SourceSpan)
+                 Language.PureScript.CoreImp.AST.AST
+                 Language.PureScript.CoreImp.AST.AST
+    | While (GHC.Base.Maybe
+               Language.PureScript.AST.SourcePos.SourceSpan)
+            Language.PureScript.CoreImp.AST.AST
+            Language.PureScript.CoreImp.AST.AST
+    | For (GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
+          Data.Text.Internal.Text
+          Language.PureScript.CoreImp.AST.AST
+          Language.PureScript.CoreImp.AST.AST
+          Language.PureScript.CoreImp.AST.AST
+    | ForIn (GHC.Base.Maybe
+               Language.PureScript.AST.SourcePos.SourceSpan)
+            Data.Text.Internal.Text
+            Language.PureScript.CoreImp.AST.AST
+            Language.PureScript.CoreImp.AST.AST
+    | IfElse (GHC.Base.Maybe
+                Language.PureScript.AST.SourcePos.SourceSpan)
+             Language.PureScript.CoreImp.AST.AST
+             Language.PureScript.CoreImp.AST.AST
+             (GHC.Base.Maybe Language.PureScript.CoreImp.AST.AST)
+    | Return (GHC.Base.Maybe
+                Language.PureScript.AST.SourcePos.SourceSpan)
+             Language.PureScript.CoreImp.AST.AST
+    | ReturnNoResult (GHC.Base.Maybe
+                        Language.PureScript.AST.SourcePos.SourceSpan)
+    | Throw (GHC.Base.Maybe
+               Language.PureScript.AST.SourcePos.SourceSpan)
+            Language.PureScript.CoreImp.AST.AST
+    | InstanceOf (GHC.Base.Maybe
+                    Language.PureScript.AST.SourcePos.SourceSpan)
+                 Language.PureScript.CoreImp.AST.AST
+                 Language.PureScript.CoreImp.AST.AST
+    | Comment (GHC.Base.Maybe
+                 Language.PureScript.AST.SourcePos.SourceSpan)
+              [Language.PureScript.Comments.Comment]
+              Language.PureScript.CoreImp.AST.AST
+18df6e381ca5d528fdf9b14543c09e16
+  data BinaryOperator
+    = Add
+    | Subtract
+    | Multiply
+    | Divide
+    | Modulus
+    | EqualTo
+    | NotEqualTo
+    | LessThan
+    | LessThanOrEqualTo
+    | GreaterThan
+    | GreaterThanOrEqualTo
+    | And
+    | Or
+    | BitwiseAnd
+    | BitwiseOr
+    | BitwiseXor
+    | ShiftLeft
+    | ShiftRight
+    | ZeroFillShiftRight
+279962a5f124fddd93c8f8b35bde7cce
+  data UnaryOperator = Negate | Not | BitwiseNot | Positive | New
+985b55d9675ee599ae2b170dd43f9772
+  everything ::
+    (r -> r -> r)
+    -> (Language.PureScript.CoreImp.AST.AST -> r)
+    -> Language.PureScript.CoreImp.AST.AST
+    -> r
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,C(U)><S,1*U> -}
+8ce9417ee75b74710133c4483c16425a
+  everywhere ::
+    (Language.PureScript.CoreImp.AST.AST
+     -> Language.PureScript.CoreImp.AST.AST)
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U)><S,1*U> -}
+9b50355bc857aa97a5e517d27220201c
+  everywhereTopDown ::
+    (Language.PureScript.CoreImp.AST.AST
+     -> Language.PureScript.CoreImp.AST.AST)
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.CoreImp.AST.everywhereTopDown1
+                  `cast`
+                (<Language.PureScript.CoreImp.AST.AST
+                  -> Language.PureScript.CoreImp.AST.AST>_R
+                 ->_R <Language.PureScript.CoreImp.AST.AST>_R
+                 ->_R Data.Functor.Identity.N:Identity[0]
+                          <Language.PureScript.CoreImp.AST.AST>_R) -}
+541e2d1668c4cc4904b1bc0b4302ceb4
+  everywhereTopDown1 ::
+    (Language.PureScript.CoreImp.AST.AST
+     -> Language.PureScript.CoreImp.AST.AST)
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Data.Functor.Identity.Identity
+         Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (f10 :: Language.PureScript.CoreImp.AST.AST
+                           -> Language.PureScript.CoreImp.AST.AST)
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.everywhereTopDown_$severywhereTopDownM
+                   (\ (x :: Language.PureScript.CoreImp.AST.AST) -> f10 x)
+                     `cast`
+                   (<Language.PureScript.CoreImp.AST.AST>_R
+                    ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                  <Language.PureScript.CoreImp.AST.AST>_R))
+                   eta) -}
+5f88f494ab702b2ebcab457ec4859609
+  everywhereTopDownM ::
+    GHC.Base.Monad m =>
+    (Language.PureScript.CoreImp.AST.AST
+     -> m Language.PureScript.CoreImp.AST.AST)
+    -> Language.PureScript.CoreImp.AST.AST
+    -> m Language.PureScript.CoreImp.AST.AST
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U(1*U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,C(U)><L,U> -}
+f8f53710f2092ae78d456362d9b3af2b
+  everywhereTopDown_$severywhereTopDownM ::
+    (Language.PureScript.CoreImp.AST.AST
+     -> Data.Functor.Identity.Identity
+          Language.PureScript.CoreImp.AST.AST)
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Data.Functor.Identity.Identity
+         Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U)><L,U> -}
+cec7100092bed6fb4b312b8f4de8b4ae
+  getSourceSpan ::
+    Language.PureScript.CoreImp.AST.AST
+    -> GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                 case ds of wild {
+                   Language.PureScript.CoreImp.AST.NumericLiteral ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.StringLiteral ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.BooleanLiteral ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.Unary ss ds1 ds2 -> ss
+                   Language.PureScript.CoreImp.AST.Binary ss ds1 ds2 ds3 -> ss
+                   Language.PureScript.CoreImp.AST.ArrayLiteral ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.Indexer ss ds1 ds2 -> ss
+                   Language.PureScript.CoreImp.AST.ObjectLiteral ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.Function ss ds1 ds2 ds3 -> ss
+                   Language.PureScript.CoreImp.AST.App ss ds1 ds2 -> ss
+                   Language.PureScript.CoreImp.AST.Var ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.Block ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.VariableIntroduction ss ds1 ds2
+                   -> ss
+                   Language.PureScript.CoreImp.AST.Assignment ss ds1 ds2 -> ss
+                   Language.PureScript.CoreImp.AST.While ss ds1 ds2 -> ss
+                   Language.PureScript.CoreImp.AST.For ss ds1 ds2 ds3 ds4 -> ss
+                   Language.PureScript.CoreImp.AST.ForIn ss ds1 ds2 ds3 -> ss
+                   Language.PureScript.CoreImp.AST.IfElse ss ds1 ds2 ds3 -> ss
+                   Language.PureScript.CoreImp.AST.Return ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.ReturnNoResult ss -> ss
+                   Language.PureScript.CoreImp.AST.Throw ss ds1 -> ss
+                   Language.PureScript.CoreImp.AST.InstanceOf ss ds1 ds2 -> ss
+                   Language.PureScript.CoreImp.AST.Comment ss ds1 ds2 -> ss }) -}
+3d2c50d623f8d95a5f10c524dffe5ce2
+  withSourceSpan ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (withSpan :: Language.PureScript.AST.SourcePos.SourceSpan)
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 case eta of wild {
+                   Language.PureScript.CoreImp.AST.NumericLiteral ds n
+                   -> Language.PureScript.CoreImp.AST.NumericLiteral
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        n
+                   Language.PureScript.CoreImp.AST.StringLiteral ds s
+                   -> Language.PureScript.CoreImp.AST.StringLiteral
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        s
+                   Language.PureScript.CoreImp.AST.BooleanLiteral ds b
+                   -> Language.PureScript.CoreImp.AST.BooleanLiteral
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        b
+                   Language.PureScript.CoreImp.AST.Unary ds op j
+                   -> Language.PureScript.CoreImp.AST.Unary
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        op
+                        j
+                   Language.PureScript.CoreImp.AST.Binary ds op j1 j2
+                   -> Language.PureScript.CoreImp.AST.Binary
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        op
+                        j1
+                        j2
+                   Language.PureScript.CoreImp.AST.ArrayLiteral ds js
+                   -> Language.PureScript.CoreImp.AST.ArrayLiteral
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        js
+                   Language.PureScript.CoreImp.AST.Indexer ds j1 j2
+                   -> Language.PureScript.CoreImp.AST.Indexer
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        j1
+                        j2
+                   Language.PureScript.CoreImp.AST.ObjectLiteral ds js
+                   -> Language.PureScript.CoreImp.AST.ObjectLiteral
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        js
+                   Language.PureScript.CoreImp.AST.Function ds name args j
+                   -> Language.PureScript.CoreImp.AST.Function
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        name
+                        args
+                        j
+                   Language.PureScript.CoreImp.AST.App ds j js
+                   -> Language.PureScript.CoreImp.AST.App
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        j
+                        js
+                   Language.PureScript.CoreImp.AST.Var ds s
+                   -> Language.PureScript.CoreImp.AST.Var
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        s
+                   Language.PureScript.CoreImp.AST.Block ds js
+                   -> Language.PureScript.CoreImp.AST.Block
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        js
+                   Language.PureScript.CoreImp.AST.VariableIntroduction ds name j
+                   -> Language.PureScript.CoreImp.AST.VariableIntroduction
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        name
+                        j
+                   Language.PureScript.CoreImp.AST.Assignment ds j1 j2
+                   -> Language.PureScript.CoreImp.AST.Assignment
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        j1
+                        j2
+                   Language.PureScript.CoreImp.AST.While ds j1 j2
+                   -> Language.PureScript.CoreImp.AST.While
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        j1
+                        j2
+                   Language.PureScript.CoreImp.AST.For ds name j1 j2 j3
+                   -> Language.PureScript.CoreImp.AST.For
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        name
+                        j1
+                        j2
+                        j3
+                   Language.PureScript.CoreImp.AST.ForIn ds name j1 j2
+                   -> Language.PureScript.CoreImp.AST.ForIn
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        name
+                        j1
+                        j2
+                   Language.PureScript.CoreImp.AST.IfElse ds j1 j2 j3
+                   -> Language.PureScript.CoreImp.AST.IfElse
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        j1
+                        j2
+                        j3
+                   Language.PureScript.CoreImp.AST.Return ds js
+                   -> Language.PureScript.CoreImp.AST.Return
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        js
+                   Language.PureScript.CoreImp.AST.ReturnNoResult ds
+                   -> Language.PureScript.CoreImp.AST.ReturnNoResult
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                   Language.PureScript.CoreImp.AST.Throw ds js
+                   -> Language.PureScript.CoreImp.AST.Throw
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        js
+                   Language.PureScript.CoreImp.AST.InstanceOf ds j1 j2
+                   -> Language.PureScript.CoreImp.AST.InstanceOf
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        j1
+                        j2
+                   Language.PureScript.CoreImp.AST.Comment ds com j
+                   -> Language.PureScript.CoreImp.AST.Comment
+                        (GHC.Base.Just
+                           @ Language.PureScript.AST.SourcePos.SourceSpan
+                           withSpan)
+                        com
+                        j }) -}
+instance GHC.Classes.Eq [Language.PureScript.CoreImp.AST.AST]
+  = Language.PureScript.CoreImp.AST.$fEqAST
+instance GHC.Classes.Eq [Language.PureScript.CoreImp.AST.BinaryOperator]
+  = Language.PureScript.CoreImp.AST.$fEqBinaryOperator
+instance GHC.Classes.Eq [Language.PureScript.CoreImp.AST.UnaryOperator]
+  = Language.PureScript.CoreImp.AST.$fEqUnaryOperator
+instance GHC.Show.Show [Language.PureScript.CoreImp.AST.AST]
+  = Language.PureScript.CoreImp.AST.$fShowAST
+instance GHC.Show.Show [Language.PureScript.CoreImp.AST.BinaryOperator]
+  = Language.PureScript.CoreImp.AST.$fShowBinaryOperator
+instance GHC.Show.Show [Language.PureScript.CoreImp.AST.UnaryOperator]
+  = Language.PureScript.CoreImp.AST.$fShowUnaryOperator
+"SPEC everywhereTopDownM @ Identity" forall ($dMonad :: GHC.Base.Monad
+                                                          Data.Functor.Identity.Identity)
+  Language.PureScript.CoreImp.AST.everywhereTopDownM @ Data.Functor.Identity.Identity
+                                                     $dMonad
+  = Language.PureScript.CoreImp.AST.everywhereTopDown_$severywhereTopDownM
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

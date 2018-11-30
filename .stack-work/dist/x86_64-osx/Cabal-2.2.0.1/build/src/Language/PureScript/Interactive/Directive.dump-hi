@@ -1,0 +1,1148 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:03.558253 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Interactive.Directive 8043
+  interface hash: 6fbf10146e434957934a441c4a64b12c
+  ABI hash: db12e918fb0cb1e9e071d5ffe955200a
+  export-list hash: bc9bf0665b5d50838e9e9b8e0bd63992
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6b91193d6f95e3c74259a28b4bb30bdf
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Interactive.Directive.directiveStrings
+  Language.PureScript.Interactive.Directive.directiveStrings'
+  Language.PureScript.Interactive.Directive.directiveStringsFor
+  Language.PureScript.Interactive.Directive.directives
+  Language.PureScript.Interactive.Directive.directivesFor
+  Language.PureScript.Interactive.Directive.directivesFor'
+  Language.PureScript.Interactive.Directive.hasArgument
+  Language.PureScript.Interactive.Directive.help
+  Language.PureScript.Interactive.Directive.parseDirective
+  Language.PureScript.Interactive.Directive.stringFor
+  Language.PureScript.Interactive.Directive.strings
+  Language.PureScript.Interactive.Directive.stringsFor
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Interactive.Types Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      directory-1.3.1.5 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      lifted-base-0.2.3.12 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 monad-control-1.0.2.3 mtl-2.2.2
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
+                      stm-2.4.5.0 syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM colour-2.3.4:Data.Colour
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  Language.PureScript.Interactive.Types 3ce82c8ef1b298c922daa3739e0e39a4
+  exports: 720882d0a070fd7ca0bf1b7bc77c153a
+  Browse d3b8549ef24bee7ebe65cb38eb17335e
+  Clear e274c554162f2ef6f066634a71bd1d97
+  Complete 964c91350f87833a8599e583f0e62e9a
+  Directive 6d04fdb5e26b466ffd22b01b64e3342d
+  Help a5c71dc8380390df3219d31bcea5b14d
+  Kind 6fe4acd55dfa7ab7ae53d80844953cb1
+  Paste 3c646746b17b57fc570accbea747151b
+  Quit a869b821d307a203043f2e3c54e94e87
+  Reload aadccc58414d5d1139bdb54e82c875f0
+  ReloadV 30214530475c56a615ce2651f66893d0
+  Show 712f875a45ac39da1020f17d29de0109
+  Type 4b419e10e321de3d96c8a0004a82d2f6
+482fa713ddc61404ece48a1528d4e7e4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Interactive.Directive.$trModule3
+                   Language.PureScript.Interactive.Directive.$trModule1) -}
+39e0e28658e6cb5392d8cfe1ee5c23ed
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Interactive.Directive.$trModule2) -}
+5e8e7ba72a8e960c09ebc92a3420c759
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Interactive.Directive"#) -}
+69b17b271b7ac66382d71adc1d502589
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Interactive.Directive.$trModule4) -}
+05e36e10f76dd8dd7d935e25549a2cd6
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+2cae91d95c4debe15c0378e28188f908
+  directiveStrings ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings51
+                   Language.PureScript.Interactive.Directive.directiveStrings1) -}
+7a6e763885f3050f0f7961ccb18f2f00
+  directiveStrings' ::
+    [(GHC.Base.String,
+      Language.PureScript.Interactive.Types.Directive)]
+  {- Unfolding: (Language.PureScript.Interactive.Directive.directiveStrings'_$sgo
+                   Language.PureScript.Interactive.Types.Help
+                   Language.PureScript.Interactive.Directive.directiveStrings52
+                   Language.PureScript.Interactive.Directive.directiveStrings1) -}
+d083964140719ec6e67264825d17dc19
+  directiveStrings'_$sgo ::
+    Language.PureScript.Interactive.Types.Directive
+    -> [[GHC.Types.Char]]
+    -> [(Language.PureScript.Interactive.Types.Directive,
+         [[GHC.Types.Char]])]
+    -> [(GHC.Base.String,
+         Language.PureScript.Interactive.Types.Directive)]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,1*U><L,1*U> -}
+5ff0f215340e437fa00939e21b79b9b2
+  directiveStrings1 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings47
+                   Language.PureScript.Interactive.Directive.directiveStrings2) -}
+3561dd5d42ae5e45d4fc3d369bc54659
+  directiveStrings10 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings11
+                   (GHC.Types.[]
+                      @ (Language.PureScript.Interactive.Types.Directive,
+                         [GHC.Base.String]))) -}
+df0de7f7a8ec82a2c50858e33ac58b51
+  directiveStrings11 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.ReloadV,
+                  Language.PureScript.Interactive.Directive.directiveStrings12)) -}
+1aca5cff177c48a5723dc3c4026d4e7d
+  directiveStrings12 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings13
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+8e7194ea93d57ae1e839020bf281bbea
+  directiveStrings13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings14) -}
+6b39b43be48d26409cf3ba9ca6f91d63
+  directiveStrings14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("reloadv"#) -}
+e36c5c532f1575bff1a5e621a2fdc1a1
+  directiveStrings15 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Complete,
+                  Language.PureScript.Interactive.Directive.directiveStrings16)) -}
+56853916251af073bdbe20f1e66cdb74
+  directiveStrings16 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings17
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+7c3bd2faa676f570f2f51bfaffdfa74f
+  directiveStrings17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings18) -}
+3c212ef6acce7b93ef77c49e2466925c
+  directiveStrings18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("complete"#) -}
+e636ee0e3cf0ed44b71aab2b33e54304
+  directiveStrings19 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Paste,
+                  Language.PureScript.Interactive.Directive.directiveStrings20)) -}
+1a9ddac8bec624680df9d94d1cac25c8
+  directiveStrings2 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings43
+                   Language.PureScript.Interactive.Directive.directiveStrings3) -}
+bda6ed6aaead18533e061a7564244cba
+  directiveStrings20 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings21
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+56282df486afa08b9ec8963edb9b0353
+  directiveStrings21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings22) -}
+e829be898711e4ceb969aa7bbd963bcc
+  directiveStrings22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("paste"#) -}
+72d93cbeb954fa95d8b0086380e51c66
+  directiveStrings23 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Show,
+                  Language.PureScript.Interactive.Directive.directiveStrings24)) -}
+9c74c80451cfc7f870824d9f93ead9e1
+  directiveStrings24 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings25
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+d4c438055987eb28aa9ee0cd9b96d4da
+  directiveStrings25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings26) -}
+a7410e9816350d861f812de9acce1d6e
+  directiveStrings26 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("show"#) -}
+dab7ee78b029c3c21fac5956906f9c70
+  directiveStrings27 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Kind,
+                  Language.PureScript.Interactive.Directive.directiveStrings28)) -}
+16d299dcf39ee1ab3b395fa122e40f75
+  directiveStrings28 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings29
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+9528cf76d2e3cf640b5e129699a8045d
+  directiveStrings29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings30) -}
+6849a04bad17da1ffca2ae39a517686a
+  directiveStrings3 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings39
+                   Language.PureScript.Interactive.Directive.directiveStrings4) -}
+7d8c483a1ad447afa504b6a338b938c0
+  directiveStrings30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("kind"#) -}
+d0f10548010c7fb3492258c26414549e
+  directiveStrings31 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Type,
+                  Language.PureScript.Interactive.Directive.directiveStrings32)) -}
+786438d3175c577549db65088a33d1fb
+  directiveStrings32 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings33
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+361f0955b5af00856784d3c2be4fa819
+  directiveStrings33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings34) -}
+95a1183ffcecb3d8e09d9b51b294ddc7
+  directiveStrings34 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("type"#) -}
+54f1f17267c3d3a1266801c2f3d27064
+  directiveStrings35 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Browse,
+                  Language.PureScript.Interactive.Directive.directiveStrings36)) -}
+08b1934d5d346c69ecce93aeacfb6209
+  directiveStrings36 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings37
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+57574148de108b9c126bb609cef9b5d0
+  directiveStrings37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings38) -}
+c23afb58469308afd10cf3486405564e
+  directiveStrings38 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("browse"#) -}
+209357322c600e70b007ce6bc002bdb3
+  directiveStrings39 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Clear,
+                  Language.PureScript.Interactive.Directive.directiveStrings40)) -}
+b06c8a7ff444c5a91f4fa3806d68828a
+  directiveStrings4 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings35
+                   Language.PureScript.Interactive.Directive.directiveStrings5) -}
+eddfe3c2e3220c85d5c3528f1ad40f13
+  directiveStrings40 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings41
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+0f8cc1f0fe317f09400293b7c5333b14
+  directiveStrings41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings42) -}
+9e1e4be3eb4df3c0aef14d2769717b3e
+  directiveStrings42 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("clear"#) -}
+6299e9b0955172077abfc152f227ec79
+  directiveStrings43 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Reload,
+                  Language.PureScript.Interactive.Directive.directiveStrings44)) -}
+0e94c3000ad703a01cabfed5843b031f
+  directiveStrings44 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings45
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+9f0b61fb6476636c6918a34d3eaf7398
+  directiveStrings45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings46) -}
+edd4780c0aefa12bb5642acc696d7c8c
+  directiveStrings46 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("reload"#) -}
+23d9b801a13e62f46ee3f22fe2bc0456
+  directiveStrings47 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Quit,
+                  Language.PureScript.Interactive.Directive.directiveStrings48)) -}
+af7c8fb85c3b2e4725c4a0deb6e20516
+  directiveStrings48 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings49
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+aa07d7090707f02beb80288762f66bb5
+  directiveStrings49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings50) -}
+1026fe61bd185b09d6d3a712528f2964
+  directiveStrings5 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings31
+                   Language.PureScript.Interactive.Directive.directiveStrings6) -}
+54803a2cc653a187f36eab5af4664eff
+  directiveStrings50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("quit"#) -}
+78674aab51704a3c27feded08eee18b8
+  directiveStrings51 ::
+    (Language.PureScript.Interactive.Types.Directive,
+     [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Help,
+                  Language.PureScript.Interactive.Directive.directiveStrings52)) -}
+628d89be8b6549675057c4f12a7e4fc1
+  directiveStrings52 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings56
+                   Language.PureScript.Interactive.Directive.directiveStrings53) -}
+160b12797252213b22ae3ddc699fc3ae
+  directiveStrings53 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Directive.directiveStrings54
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+6c96df38c65ad7c286c7dd8d9e31d1af
+  directiveStrings54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings55) -}
+c8c8ccb4241f90908bad5eec095405a2
+  directiveStrings55 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("help"#) -}
+3bd303a2039144325a0ba6a08b6070a9
+  directiveStrings56 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.directiveStrings57) -}
+9b6e9fecf534fe56f663ed365c9c4967
+  directiveStrings57 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("?"#) -}
+e328c4aa1162c679483ff92b6a09f6f7
+  directiveStrings6 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings27
+                   Language.PureScript.Interactive.Directive.directiveStrings7) -}
+f338dc3c229ca8dbfbfe75a70ca30088
+  directiveStrings7 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings23
+                   Language.PureScript.Interactive.Directive.directiveStrings8) -}
+690b8cd5a8ff84bccd501f67a2d70745
+  directiveStrings8 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings19
+                   Language.PureScript.Interactive.Directive.directiveStrings9) -}
+a5005c317b723f30d8225aa6967ac815
+  directiveStrings9 ::
+    [(Language.PureScript.Interactive.Types.Directive,
+      [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings15
+                   Language.PureScript.Interactive.Directive.directiveStrings10) -}
+f91cb195e50c767ebbd7c7367e47815c
+  directiveStringsFor :: GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Base.String) ->
+                 GHC.Base.build
+                   @ [GHC.Types.Char]
+                   (\ @ b1
+                      (c :: [GHC.Types.Char] -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ (Language.PureScript.Interactive.Types.Directive,
+                         GHC.Base.String)
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ [GHC.Types.Char]
+                         @ b1
+                         @ (Language.PureScript.Interactive.Types.Directive,
+                            GHC.Base.String)
+                         c
+                         (Data.Tuple.snd
+                            @ Language.PureScript.Interactive.Types.Directive
+                            @ GHC.Base.String))
+                      n
+                      (Language.PureScript.Interactive.Directive.directivesFor' x))) -}
+87a64164e77dc4653a852091fbb43744
+  directives :: [Language.PureScript.Interactive.Types.Directive]
+  {- Unfolding: (GHC.Base.map
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      [GHC.Base.String])
+                   @ Language.PureScript.Interactive.Types.Directive
+                   (Data.Tuple.fst
+                      @ Language.PureScript.Interactive.Types.Directive
+                      @ [GHC.Base.String])
+                   Language.PureScript.Interactive.Directive.directiveStrings) -}
+f5a1b40a50d445ddcc341c6bc6f74519
+  directivesFor ::
+    GHC.Base.String
+    -> [Language.PureScript.Interactive.Types.Directive]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Base.String) ->
+                 GHC.Base.build
+                   @ Language.PureScript.Interactive.Types.Directive
+                   (\ @ b1
+                      (c :: Language.PureScript.Interactive.Types.Directive
+                            -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ (Language.PureScript.Interactive.Types.Directive,
+                         GHC.Base.String)
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ Language.PureScript.Interactive.Types.Directive
+                         @ b1
+                         @ (Language.PureScript.Interactive.Types.Directive,
+                            GHC.Base.String)
+                         c
+                         (Data.Tuple.fst
+                            @ Language.PureScript.Interactive.Types.Directive
+                            @ GHC.Base.String))
+                      n
+                      (Language.PureScript.Interactive.Directive.directivesFor' x))) -}
+842f34a1a3c884990ea5f4570fea0149
+  directivesFor' ::
+    GHC.Base.String
+    -> [(Language.PureScript.Interactive.Types.Directive,
+         GHC.Base.String)]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (str :: GHC.Base.String) ->
+                 letrec {
+                   go2 :: [([GHC.Types.Char],
+                            Language.PureScript.Interactive.Types.Directive)]
+                          -> [(Language.PureScript.Interactive.Types.Directive,
+                               [GHC.Types.Char])]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [([GHC.Types.Char],
+                                Language.PureScript.Interactive.Types.Directive)]) ->
+                     case ds of wild {
+                       []
+                       -> GHC.Types.[]
+                            @ (Language.PureScript.Interactive.Types.Directive,
+                               [GHC.Types.Char])
+                       : y ys
+                       -> case Data.OldList.isPrefixOf
+                                 @ GHC.Types.Char
+                                 GHC.Classes.$fEqChar
+                                 str
+                                 (Data.Tuple.fst
+                                    @ [GHC.Types.Char]
+                                    @ Language.PureScript.Interactive.Types.Directive
+                                    y) of wild1 {
+                            GHC.Types.False -> go2 ys
+                            GHC.Types.True
+                            -> GHC.Types.:
+                                 @ (Language.PureScript.Interactive.Types.Directive,
+                                    [GHC.Types.Char])
+                                 (Data.Tuple.swap
+                                    @ [GHC.Types.Char]
+                                    @ Language.PureScript.Interactive.Types.Directive
+                                    y)
+                                 (go2 ys) } }
+                 } in
+                 go2 Language.PureScript.Interactive.Directive.directiveStrings') -}
+76a0962863fa49b54a54ee561c49f3d8
+  hasArgument ::
+    Language.PureScript.Interactive.Types.Directive -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Interactive.Types.Directive) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Types.True
+                   Language.PureScript.Interactive.Types.Help -> GHC.Types.False
+                   Language.PureScript.Interactive.Types.Quit -> GHC.Types.False
+                   Language.PureScript.Interactive.Types.Reload -> GHC.Types.False
+                   Language.PureScript.Interactive.Types.Clear -> GHC.Types.False
+                   Language.PureScript.Interactive.Types.Paste
+                   -> GHC.Types.False }) -}
+5f4a4a0becd597166bc1aea3f074b6ac
+  help ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help57
+                   Language.PureScript.Interactive.Directive.help1) -}
+b8a8443fab6218de5f3e66fb67955ece
+  help1 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help54
+                   Language.PureScript.Interactive.Directive.help2) -}
+4d24223ef68a73bb38fcf10232b87d70
+  help10 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help15
+                   Language.PureScript.Interactive.Directive.help11) -}
+89e7a586189d8caff02118331c326bd8
+  help11 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help12
+                   (GHC.Types.[]
+                      @ (Language.PureScript.Interactive.Types.Directive,
+                         GHC.Base.String, GHC.Base.String))) -}
+de66bc021ec57717e8b57fe6dbd09816
+  help12 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.ReloadV,
+                  Language.PureScript.Interactive.Directive.directiveStrings45,
+                  Language.PureScript.Interactive.Directive.help13)) -}
+c108329da7db907e0fac40931dc98cc2
+  help13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help14) -}
+c68a99fa518cd249ef94654885994e55
+  help14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("reloads the varaible"#) -}
+a257716dc0fb3f1a9d36291ef828697d
+  help15 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Complete,
+                  Language.PureScript.Interactive.Directive.help18,
+                  Language.PureScript.Interactive.Directive.help16)) -}
+90fec530dc47fbd1c8e225cf5ad1d750
+  help16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help17) -}
+01fc7818107239a0cd168330a29c0c68
+  help17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Show completions for <prefix> as if pressing tab"#) -}
+b23ebc7dfc873750121d7fdb0ec7a3db
+  help18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help19) -}
+f5fc1a82c942e9ede098b50f692cbcfc
+  help19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<prefix>"#) -}
+ccfdb92f760c5d207132cd70ad8a12d9
+  help2 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help51
+                   Language.PureScript.Interactive.Directive.help3) -}
+5142bae2f1919dcbb0b5535f9d0186e1
+  help20 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Paste,
+                  Language.PureScript.Interactive.Directive.directiveStrings21,
+                  Language.PureScript.Interactive.Directive.help21)) -}
+92db72f0f6e16ca3d9f360ca8b0b69a9
+  help21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help22) -}
+99388a16f1c1e82d4e94842830c90280
+  help22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Enter multiple lines, terminated by ^D"#) -}
+5b3b79edee1629ecaa7ecf151d47741c
+  help23 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Show,
+                  Language.PureScript.Interactive.Directive.help26,
+                  Language.PureScript.Interactive.Directive.help24)) -}
+74529943f1689d8b8c02ed921433ae53
+  help24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help25) -}
+dd6b25ff8ffbb3460600a7c149150278
+  help25 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Show all loaded modules"#) -}
+d9763a94b63083686b4e56c34fd48522
+  help26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help27) -}
+047bc83cc7f2b9fb861f28b6578fca09
+  help27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("loaded"#) -}
+4bc3134aac1c6cfff2f0e59ae6d3e5df
+  help28 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Show,
+                  Language.PureScript.Interactive.Directive.help31,
+                  Language.PureScript.Interactive.Directive.help29)) -}
+f3a3547259bbff1929e3a8686b0ab88c
+  help29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help30) -}
+05668e0dc1547ec461844242eafc35ea
+  help3 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help48
+                   Language.PureScript.Interactive.Directive.help4) -}
+f074018021e4bc24733af375af652255
+  help30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Show all imported modules"#) -}
+9982ba62a37749f63f4cc63e5bb94672
+  help31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help32) -}
+3186da26a1a2db81e18087186115798c
+  help32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("import"#) -}
+b00f4f896b4bff6b25c7af85f0f17e1f
+  help33 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Kind,
+                  Language.PureScript.Interactive.Directive.help36,
+                  Language.PureScript.Interactive.Directive.help34)) -}
+649824f5dd9d79c3252c82fb91b55e95
+  help34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help35) -}
+b86c7198f5e34ae210cdf3b601fb5e1a
+  help35 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Show the kind of <type>"#) -}
+bd1ae5ce5f29f20a010c5d3147eeb438
+  help36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help37) -}
+bac948fee1263951b13c028651b9312a
+  help37 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<type>"#) -}
+1a5ec190337718844f3828145636ca40
+  help38 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Type,
+                  Language.PureScript.Interactive.Directive.help41,
+                  Language.PureScript.Interactive.Directive.help39)) -}
+1aaa2fef509303b83fd3db4860c1b35f
+  help39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help40) -}
+77111604f67e68c0ae970b690862a6d4
+  help4 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help43
+                   Language.PureScript.Interactive.Directive.help5) -}
+a9fc8dcb9683047d190b5e151a93cdd4
+  help40 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Show the type of <expr>"#) -}
+6637bdb20d41f62a0e0524cb3735174d
+  help41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help42) -}
+f0b70c5555f097bdce852887c5093427
+  help42 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<expr>"#) -}
+372b75dd0f06047c27bda112439909e7
+  help43 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Browse,
+                  Language.PureScript.Interactive.Directive.help46,
+                  Language.PureScript.Interactive.Directive.help44)) -}
+79e1c39f412fa4d8f425c1f7e74d53db
+  help44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help45) -}
+44360e1cad34a4d7aa6aa5209d58b83a
+  help45 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("See all functions in <module>"#) -}
+efa43ba3a09c7c5a6d64ffb2412408d6
+  help46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help47) -}
+8366a952875cf8dc1d82b10cf6daabf9
+  help47 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<module>"#) -}
+217d8d4867abee765527caa36408d188
+  help48 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Clear,
+                  GHC.Types.[] @ GHC.Types.Char,
+                  Language.PureScript.Interactive.Directive.help49)) -}
+b58a2d2ce3805dbe1044e345f7ab87ef
+  help49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help50) -}
+025b11d7b7959f53f854c6d1f7a4c255
+  help5 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help38
+                   Language.PureScript.Interactive.Directive.help6) -}
+1c047b2d9dcb1d10647a15d09e6cfede
+  help50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Discard all imported modules and declared bindings"#) -}
+bb70f26b4d7348c46ffc5e49a86517e8
+  help51 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Reload,
+                  GHC.Types.[] @ GHC.Types.Char,
+                  Language.PureScript.Interactive.Directive.help52)) -}
+a68826b33e1d5e52934d8f72cb7eb550
+  help52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help53) -}
+63dc51b0e35dc8b89b1d449b91136134
+  help53 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Reload all imported modules while discarding bindings"#) -}
+0f6f232f2bb01c6eb27658526b25a9b4
+  help54 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Quit,
+                  GHC.Types.[] @ GHC.Types.Char,
+                  Language.PureScript.Interactive.Directive.help55)) -}
+452f952edd72e320e33d1beb3c490851
+  help55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help56) -}
+60f2683c0d0706e16f1eade2825597d4
+  help56 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Quit PSCi"#) -}
+93b506105d7272cd908bc30ca3adfb3e
+  help57 ::
+    (Language.PureScript.Interactive.Types.Directive, [GHC.Types.Char],
+     [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Interactive.Types.Help,
+                  GHC.Types.[] @ GHC.Types.Char,
+                  Language.PureScript.Interactive.Directive.help58)) -}
+69d598a07b8b0bca22b73e07cae21e23
+  help58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Directive.help59) -}
+e14b79a42837fb2a527394d8f2d6f4a6
+  help59 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Show this help menu"#) -}
+72591cce55b0aced0594688f325c72be
+  help6 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help33
+                   Language.PureScript.Interactive.Directive.help7) -}
+d64f6ba906dc9f7ebe3997e2f969bc93
+  help7 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help28
+                   Language.PureScript.Interactive.Directive.help8) -}
+47964bac6fd680748e3ae755f0f49bf5
+  help8 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help23
+                   Language.PureScript.Interactive.Directive.help9) -}
+2b96746449cf802f6a1d12cad782c59a
+  help9 ::
+    [(Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+      GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Language.PureScript.Interactive.Types.Directive,
+                      GHC.Base.String, GHC.Base.String)
+                   Language.PureScript.Interactive.Directive.help20
+                   Language.PureScript.Interactive.Directive.help10) -}
+3e198122dfc2257784f5cf5788e343a3
+  parseDirective ::
+    GHC.Base.String
+    -> GHC.Base.Maybe Language.PureScript.Interactive.Types.Directive
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Base.String) ->
+                 case Language.PureScript.Interactive.Directive.directivesFor'
+                        x of wild {
+                   []
+                   -> GHC.Base.Nothing
+                        @ Language.PureScript.Interactive.Types.Directive
+                   : y ys
+                   -> GHC.Base.Just
+                        @ Language.PureScript.Interactive.Types.Directive
+                        (Data.Tuple.fst
+                           @ Language.PureScript.Interactive.Types.Directive
+                           @ GHC.Base.String
+                           y) }) -}
+f31d21d7ab1a5d0c377afdc425ce68df
+  stringFor ::
+    Language.PureScript.Interactive.Types.Directive -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Interactive.Types.Directive) ->
+                 case GHC.List.lookup
+                        @ Language.PureScript.Interactive.Types.Directive
+                        @ [GHC.Base.String]
+                        Language.PureScript.Interactive.Types.$fEqDirective
+                        x
+                        Language.PureScript.Interactive.Directive.directiveStrings of wild {
+                   GHC.Base.Nothing
+                   -> case Data.Maybe.fromJust1 ret_ty GHC.Base.String of {}
+                   GHC.Base.Just x1 -> GHC.List.head @ GHC.Base.String x1 }) -}
+959c0e53531b6f936e7cdec4caae04f0
+  strings :: [GHC.Base.String]
+  {- Unfolding: (Language.PureScript.Interactive.Directive.strings_$sgo
+                   Language.PureScript.Interactive.Types.Help
+                   Language.PureScript.Interactive.Directive.directiveStrings52
+                   Language.PureScript.Interactive.Directive.directiveStrings1) -}
+f1a43e9daa09de5682cfd2c46ba698eb
+  stringsFor ::
+    Language.PureScript.Interactive.Types.Directive
+    -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (d :: Language.PureScript.Interactive.Types.Directive) ->
+                 case GHC.List.lookup
+                        @ Language.PureScript.Interactive.Types.Directive
+                        @ [GHC.Base.String]
+                        Language.PureScript.Interactive.Types.$fEqDirective
+                        d
+                        Language.PureScript.Interactive.Directive.directiveStrings of wild {
+                   GHC.Base.Nothing -> Data.Maybe.fromJust1 @ [GHC.Base.String]
+                   GHC.Base.Just x -> x }) -}
+b7e9c0261344026e6997dd6c8148a5d6
+  strings_$sgo ::
+    Language.PureScript.Interactive.Types.Directive
+    -> [[GHC.Types.Char]]
+    -> [(Language.PureScript.Interactive.Types.Directive,
+         [[GHC.Types.Char]])]
+    -> [[GHC.Types.Char]]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S,1*U><L,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

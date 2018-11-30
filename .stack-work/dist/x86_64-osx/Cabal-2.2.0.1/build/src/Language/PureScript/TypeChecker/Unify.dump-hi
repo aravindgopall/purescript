@@ -1,0 +1,786 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:47:25.24593 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeChecker.Unify 8043
+  interface hash: 72ba7b20929e4a544386e22d01f69659
+  ABI hash: 8691f08fe31a36c2d93443f4bddc13e8
+  export-list hash: d8da060597f9e4fdf658eaa278b38c79
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: afb16d9ab106d8a7ac575997bd317adb
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.TypeChecker.Unify.alignRowsWith
+  Language.PureScript.TypeChecker.Unify.freshType
+  Language.PureScript.TypeChecker.Unify.replaceTypeWildcards
+  Language.PureScript.TypeChecker.Unify.replaceVarWithUnknown
+  Language.PureScript.TypeChecker.Unify.solveType
+  Language.PureScript.TypeChecker.Unify.substituteType
+  Language.PureScript.TypeChecker.Unify.unifyRows
+  Language.PureScript.TypeChecker.Unify.unifyTypes
+  Language.PureScript.TypeChecker.Unify.unknownsInType
+  Language.PureScript.TypeChecker.Unify.varIfUnknown
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
+import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  protolude-0.2.2:Protolude.List 3a80368167450d7a4360ebf1ea443345
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  ConstrainedTypeUnified 943ab40382b61b5ceb1eb9c125dff42b
+  ErrorUnifyingTypes 2fd0706e76b416d4f08065799b10740f
+  InfiniteType 9b34f8dfe13790d8f0edf3d13c627296
+  TypesDoNotUnify 4a76f9bf2ffcba41714628ed0a8b3bf6
+  WildcardInferredType 3ad94b9b99330b1babbc72e2ccff856a
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+  errorMessage 56e7aa221570d7d0bd9b4d606b8de7f2
+  warnWithPosition f626dbbef53d3f006a3630d5b23307ee
+import  -/  Language.PureScript.Label ac3bc484eb8b3b2ccf228cc34cdb537c
+  exports: 62e65d694c1e96c81750d9cacc93e898
+  Label 61523a5f4fc28a2f2f6f00cce17ce1bb
+import  -/  Language.PureScript.TypeChecker.Monad 36a86b5cfef989dae17621bbace19db6
+  exports: 9d9d275b045efb93172c1bb44957da47
+  CheckState 5c23016b2e80baec4bdda0c92644cfa1
+  Substitution f41a5a409aa69b88b3ab5e8061db655f
+  checkNextType 5c23016b2e80baec4bdda0c92644cfa1
+  checkSubstitution 5c23016b2e80baec4bdda0c92644cfa1
+  getLocalContext fa3c1ee0d304f6b19e55a6257785e6f4
+  guardWith 16a54f43ede4af63e8b1bd5e1cb8169d
+  substType f41a5a409aa69b88b3ab5e8061db655f
+  withErrorMessageHint 2c6ffe4a4583e9fbcf6d82baf0863283
+import  -/  Language.PureScript.TypeChecker.Skolems f177d1401fc0e1a8b89ef83cdae40ba1
+  exports: 96cf1a567f2e8b0e83ff8cd880c3e6bb
+  newSkolemConstant 5b6080edfec8521657cf465342cd5618
+  skolemize de5aa18c557b3d076ec90257b3b337ae
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  exports: ae97bc75fcebc59f59c970736847a827
+  ConstrainedType c2b3670e25b3b510981414df0f340e0f
+  ForAll 8e5cfabdac15777ed3387d8a0029598b
+  KindedType 0c5178e2942b7d198426b0539b6f6442
+  RCons c8b1a363e575e040360112548c9c1bd6
+  REmpty 7b5d4ca839c026ea0c7f04daad457191
+  Skolem e2f87ac818d8dc245fc6ff263c6e89ee
+  TUnknown 39441d842668db3aca11ba64b9f08b2c
+  Type 93223f8afa90d0facc05a03f863dc72d
+  TypeApp 8aa2c93426facb8054d5caf77ff9d922
+  TypeConstructor 5e1c42d22ac701f08c049fde0171d9ac
+  TypeLevelString b529cbddb07085442fd8755c41cb42eb
+  TypeVar ac604589bba317f51f6e97fef0e84f86
+  TypeWildcard d993619c31ecd71f696448ee686f32f4
+  everythingOnTypes ba4f3716db899e239fbb16fb1fa82a8f
+  everywhereOnTypes fa3aa1a1c2e07faf6471b9f2771c8368
+  everywhereOnTypesM 46428778ed53c5878c6229be3528079b
+  mkForAll c91cfb43e2243a0255124c5f07310345
+  replaceTypeVars 8aa821bc3a9244ffb7cf21d6ffc31f22
+  rowFromList 9f93289e7d64c25344406096f6428fc0
+  rowToSortedList 83f7660bb0b5e2e8d22b23b4ddfa9bdb
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+67e6fd5ae3a5bf61a03a445884c2254f
+  $sinsert_$sgo13 ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+  {- Arity: 4, Strictness: <L,U><S(S),1*U(U)><L,U><S,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a1
+                   (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: a1)
+                   (w3 :: Data.Map.Internal.Map GHC.Types.Int a1) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.TypeChecker.Unify.$w$sgo13
+                   @ a1
+                   w
+                   ww1
+                   w2
+                   w3 }) -}
+660ec2a8041a4fb112d66c9e9e068fa5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.TypeChecker.Unify.$trModule3
+                   Language.PureScript.TypeChecker.Unify.$trModule1) -}
+95117e77b7b18f9349ea50ab5090d62f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Unify.$trModule2) -}
+a15e1450a50ea950d0911fb908afdf4d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.TypeChecker.Unify"#) -}
+9fb8c8c021a936e605a7151ad77be854
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.TypeChecker.Unify.$trModule4) -}
+bdbe55e974d798ac4481c68f13c9044a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+2561ec08d699b351b7ba54d5550bb0fd
+  $w$sgo13 ::
+    GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+00b9a9bafe635e5ea3abb3f8d595d0bc
+  $walignRowsWith ::
+    (Language.PureScript.Types.Type
+     -> Language.PureScript.Types.Type -> a)
+    -> Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type
+    -> (# [a],
+          (([(Language.PureScript.Label.Label,
+              Language.PureScript.Types.Type)],
+            Language.PureScript.Types.Type),
+           ([(Language.PureScript.Label.Label,
+              Language.PureScript.Types.Type)],
+            Language.PureScript.Types.Type)) #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><S,1*U><L,1*U>,
+     Inline: [0] -}
+440386c79e987e38ab7356768a63dd33
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> Data.Text.Internal.Fusion.Common.C [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+fab9125d77be5d1661c72aea3276458c
+  $wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Int a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+7aafe1127e907a9296e8ee5c3724b27a
+  $wtoName :: GHC.Prim.Int# -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Language.PureScript.TypeChecker.Unify.$wouter
+                           ipv1
+                           4#
+                           (Data.Text.Internal.Fusion.Common.C1
+                              @ [GHC.Types.Char]
+                              (GHC.Types.: @ GHC.Types.Char ww5 ww6))
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 } }) -}
+e26de58e42f4398a4c4c55bc1e7bcc5b
+  alignRowsWith ::
+    (Language.PureScript.Types.Type
+     -> Language.PureScript.Types.Type -> a)
+    -> Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type
+    -> ([a],
+        (([(Language.PureScript.Label.Label,
+            Language.PureScript.Types.Type)],
+          Language.PureScript.Types.Type),
+         ([(Language.PureScript.Label.Label,
+            Language.PureScript.Types.Type)],
+          Language.PureScript.Types.Type)))
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><S,1*U><L,1*U>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Language.PureScript.Types.Type
+                         -> Language.PureScript.Types.Type -> a)
+                   (w1 :: Language.PureScript.Types.Type)
+                   (w2 :: Language.PureScript.Types.Type) ->
+                 case Language.PureScript.TypeChecker.Unify.$walignRowsWith
+                        @ a
+                        w
+                        w1
+                        w2 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+a5c186ce5fbab18def6677e2fd12efbe
+  freshType ::
+    Control.Monad.State.Class.MonadState
+      Language.PureScript.TypeChecker.Monad.CheckState m =>
+    m Language.PureScript.Types.Type
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(LC(C(S))LLL)LLL),U(1*U(A,C(C1(U)),C(C1(U)),C(U),A),1*U,A,C(U))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadState :: Control.Monad.State.Class.MonadState
+                                      Language.PureScript.TypeChecker.Monad.CheckState m) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.State.Class.$p1MonadState
+                       @ Language.PureScript.TypeChecker.Monad.CheckState
+                       @ m
+                       $dMonadState
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ GHC.Types.Int
+                   @ Language.PureScript.Types.Type
+                   (GHC.Base.>>=
+                      @ m
+                      $dMonad
+                      @ Language.PureScript.TypeChecker.Monad.CheckState
+                      @ GHC.Types.Int
+                      (Control.Monad.State.Class.get
+                         @ Language.PureScript.TypeChecker.Monad.CheckState
+                         @ m
+                         $dMonadState)
+                      (\ (s1 :: Language.PureScript.TypeChecker.Monad.CheckState) ->
+                       GHC.Base.return
+                         @ m
+                         $dMonad
+                         @ GHC.Types.Int
+                         (case s1 of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                          ds2 })))
+                   (\ (t :: GHC.Types.Int) ->
+                    GHC.Base.>>
+                      @ m
+                      $dMonad
+                      @ ()
+                      @ Language.PureScript.Types.Type
+                      (let {
+                         lvl20 :: GHC.Types.Int
+                         = case t of wild { GHC.Types.I# x ->
+                           GHC.Types.I# (GHC.Prim.+# x 1#) }
+                       } in
+                       Control.Monad.State.Class.state
+                         @ Language.PureScript.TypeChecker.Monad.CheckState
+                         @ m
+                         $dMonadState
+                         @ ()
+                         (\ (s1 :: Language.PureScript.TypeChecker.Monad.CheckState) ->
+                          (GHC.Tuple.(),
+                           case s1 of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                           Language.PureScript.TypeChecker.Monad.CheckState
+                             ds
+                             lvl20
+                             ds2
+                             ds3
+                             ds4
+                             ds5
+                             ds6
+                             ds7 })))
+                      (GHC.Base.return
+                         @ m
+                         $dMonad
+                         @ Language.PureScript.Types.Type
+                         (Language.PureScript.Types.TUnknown t)))) -}
+48c0efd2edca8823a19bce3c75eab306
+  occursCheck ::
+    Control.Monad.Error.Class.MonadError
+      Language.PureScript.Errors.MultipleErrors m =>
+    GHC.Types.Int -> Language.PureScript.Types.Type -> m ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLL),U(1*U(U(U(C(C1(U)),1*C1(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,C(U),A),1*C1(U),A)><L,U(U)><S,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Errors.MultipleErrors m)
+                   (eta :: GHC.Types.Int)
+                   (eta1 :: Language.PureScript.Types.Type) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Error.Class.$p1MonadError
+                       @ Language.PureScript.Errors.MultipleErrors
+                       @ m
+                       $dMonadError
+                 } in
+                 case eta1 of wild {
+                   DEFAULT
+                   -> GHC.Base.<$
+                        @ m
+                        (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                        @ ()
+                        @ Language.PureScript.Types.Type
+                        GHC.Tuple.()
+                        (let {
+                           lvl20 :: m Language.PureScript.Types.Type
+                           = Control.Monad.Error.Class.throwError
+                               @ Language.PureScript.Errors.MultipleErrors
+                               @ m
+                               $dMonadError
+                               @ Language.PureScript.Types.Type
+                               (GHC.Types.:
+                                  @ Language.PureScript.AST.Declarations.ErrorMessage
+                                  (Language.PureScript.AST.Declarations.ErrorMessage
+                                     (GHC.Types.[]
+                                        @ Language.PureScript.AST.Declarations.ErrorMessageHint)
+                                     (Language.PureScript.AST.Declarations.InfiniteType wild))
+                                  (GHC.Types.[]
+                                     @ Language.PureScript.AST.Declarations.ErrorMessage))
+                                 `cast`
+                               (Sym (Language.PureScript.Errors.N:MultipleErrors[0]))
+                         } in
+                         Language.PureScript.Types.everywhereOnTypesM
+                           @ m
+                           $dMonad
+                           (\ (ds :: Language.PureScript.Types.Type) ->
+                            case ds of wild1 {
+                              DEFAULT
+                              -> GHC.Base.return
+                                   @ m
+                                   $dMonad
+                                   @ Language.PureScript.Types.Type
+                                   wild1
+                              Language.PureScript.Types.TUnknown u'
+                              -> case eta of wild2 { GHC.Types.I# x ->
+                                 case u' of wild3 { GHC.Types.I# y ->
+                                 case GHC.Prim.==# x y of lwild {
+                                   DEFAULT
+                                   -> GHC.Base.return
+                                        @ m
+                                        $dMonad
+                                        @ Language.PureScript.Types.Type
+                                        wild1
+                                   1# -> lvl20 } } } })
+                           wild)
+                   Language.PureScript.Types.TUnknown ds
+                   -> GHC.Base.return @ m $dMonad @ () GHC.Tuple.() }) -}
+39dae1f35751cd68b64a065a9bb27fd3
+  replaceTypeWildcards ::
+    (Control.Monad.Writer.Class.MonadWriter
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.State.Class.MonadState
+       Language.PureScript.TypeChecker.Monad.CheckState m) =>
+    Language.PureScript.Types.Type -> m Language.PureScript.Types.Type
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,U(1*U(1*U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,C(U),A),A,C(U),A,C(U))><L,U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><S,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadWriter :: Control.Monad.Writer.Class.MonadWriter
+                                       Language.PureScript.Errors.MultipleErrors m)
+                   ($dMonadState :: Control.Monad.State.Class.MonadState
+                                      Language.PureScript.TypeChecker.Monad.CheckState m)
+                   (eta :: Language.PureScript.Types.Type) ->
+                 let {
+                   lvl20 :: m Language.PureScript.Types.Type
+                   = Language.PureScript.TypeChecker.Unify.freshType @ m $dMonadState
+                 } in
+                 let {
+                   lvl21 :: m Language.PureScript.AST.Declarations.Context
+                   = Language.PureScript.TypeChecker.Monad.getLocalContext
+                       @ m
+                       $dMonadState
+                 } in
+                 Language.PureScript.Types.everywhereOnTypesM
+                   @ m
+                   (Control.Monad.Writer.Class.$p2MonadWriter
+                      @ Language.PureScript.Errors.MultipleErrors
+                      @ m
+                      $dMonadWriter)
+                   (let {
+                      $dMonad :: GHC.Base.Monad m
+                      = Control.Monad.State.Class.$p1MonadState
+                          @ Language.PureScript.TypeChecker.Monad.CheckState
+                          @ m
+                          $dMonadState
+                    } in
+                    \ (ds :: Language.PureScript.Types.Type) ->
+                    case ds of wild {
+                      DEFAULT
+                      -> GHC.Base.return
+                           @ m
+                           $dMonad
+                           @ Language.PureScript.Types.Type
+                           wild
+                      Language.PureScript.Types.TypeWildcard ss
+                      -> let {
+                           lvl22 :: Language.PureScript.AST.Declarations.ErrorMessage
+                                    -> Language.PureScript.AST.Declarations.ErrorMessage
+                             {- Arity: 1 -}
+                           = Language.PureScript.Errors.withPosition ss
+                         } in
+                         let {
+                           lvl23 :: [Language.PureScript.AST.Declarations.ErrorMessage]
+                                    -> [Language.PureScript.AST.Declarations.ErrorMessage]
+                             {- Arity: 1 -}
+                           = GHC.Base.map
+                               @ Language.PureScript.AST.Declarations.ErrorMessage
+                               @ Language.PureScript.AST.Declarations.ErrorMessage
+                               lvl22
+                         } in
+                         GHC.Base.>>=
+                           @ m
+                           $dMonad
+                           @ Language.PureScript.Types.Type
+                           @ Language.PureScript.Types.Type
+                           lvl20
+                           (\ (t :: Language.PureScript.Types.Type) ->
+                            let {
+                              lvl24 :: m Language.PureScript.Types.Type
+                              = GHC.Base.return @ m $dMonad @ Language.PureScript.Types.Type t
+                            } in
+                            GHC.Base.>>=
+                              @ m
+                              $dMonad
+                              @ Language.PureScript.AST.Declarations.Context
+                              @ Language.PureScript.Types.Type
+                              lvl21
+                              (\ (ctx :: Language.PureScript.AST.Declarations.Context) ->
+                               GHC.Base.>>
+                                 @ m
+                                 $dMonad
+                                 @ ()
+                                 @ Language.PureScript.Types.Type
+                                 (Control.Monad.Writer.Class.censor
+                                    @ Language.PureScript.Errors.MultipleErrors
+                                    @ m
+                                    @ ()
+                                    $dMonadWriter
+                                    lvl23
+                                      `cast`
+                                    (Sym (Language.PureScript.Errors.N:MultipleErrors[0])
+                                     ->_R Sym (Language.PureScript.Errors.N:MultipleErrors[0]))
+                                    (Control.Monad.Writer.Class.tell
+                                       @ Language.PureScript.Errors.MultipleErrors
+                                       @ m
+                                       $dMonadWriter
+                                       (GHC.Types.:
+                                          @ Language.PureScript.AST.Declarations.ErrorMessage
+                                          (Language.PureScript.AST.Declarations.ErrorMessage
+                                             (GHC.Types.[]
+                                                @ Language.PureScript.AST.Declarations.ErrorMessageHint)
+                                             (Language.PureScript.AST.Declarations.WildcardInferredType
+                                                t
+                                                ctx))
+                                          (GHC.Types.[]
+                                             @ Language.PureScript.AST.Declarations.ErrorMessage))
+                                         `cast`
+                                       (Sym (Language.PureScript.Errors.N:MultipleErrors[0]))))
+                                 lvl24)) })
+                   eta) -}
+2cf76a55e0a49af279a1ef36820dc9d1
+  replaceVarWithUnknown ::
+    Control.Monad.State.Class.MonadState
+      Language.PureScript.TypeChecker.Monad.CheckState m =>
+    Data.Text.Internal.Text
+    -> Language.PureScript.Types.Type
+    -> m Language.PureScript.Types.Type
+  {- Arity: 3,
+     Strictness: <S(S(LC(C(S))LLL)LLL),U(U(A,C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadState :: Control.Monad.State.Class.MonadState
+                                      Language.PureScript.TypeChecker.Monad.CheckState m)
+                   (eta :: Data.Text.Internal.Text)
+                   (eta1 :: Language.PureScript.Types.Type) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.State.Class.$p1MonadState
+                       @ Language.PureScript.TypeChecker.Monad.CheckState
+                       @ m
+                       $dMonadState
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ Language.PureScript.Types.Type
+                   @ Language.PureScript.Types.Type
+                   (Language.PureScript.TypeChecker.Unify.freshType @ m $dMonadState)
+                   (\ (tu :: Language.PureScript.Types.Type) ->
+                    GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ Language.PureScript.Types.Type
+                      (Language.PureScript.Types.replaceAllTypeVars_go
+                         (GHC.Types.[] @ Data.Text.Internal.Text)
+                         (GHC.Types.:
+                            @ (Data.Text.Internal.Text, Language.PureScript.Types.Type)
+                            (eta, tu)
+                            (GHC.Types.[]
+                               @ (Data.Text.Internal.Text, Language.PureScript.Types.Type)))
+                         eta1))) -}
+731b3be035341bb72e1541b3b8e0ef6c
+  solveType ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.State.Class.MonadState
+       Language.PureScript.TypeChecker.Monad.CheckState m) =>
+    GHC.Types.Int -> Language.PureScript.Types.Type -> m ()
+  {- Arity: 4,
+     Strictness: <S(S(LLC(C(S))LL)LL),U(U(U(U(C(C1(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),1*C1(C1(U)),C(U),A),C(U),A)><L,1*U(A,A,A,1*C1(U))><L,U(U)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Errors.MultipleErrors m)
+                   ($dMonadState :: Control.Monad.State.Class.MonadState
+                                      Language.PureScript.TypeChecker.Monad.CheckState m)
+                   (eta :: GHC.Types.Int)
+                   (eta1 :: Language.PureScript.Types.Type) ->
+                 GHC.Base.>>
+                   @ m
+                   (Control.Monad.Error.Class.$p1MonadError
+                      @ Language.PureScript.Errors.MultipleErrors
+                      @ m
+                      $dMonadError)
+                   @ ()
+                   @ ()
+                   (Language.PureScript.TypeChecker.Unify.occursCheck
+                      @ m
+                      $dMonadError
+                      eta
+                      eta1)
+                   (Control.Monad.State.Class.state
+                      @ Language.PureScript.TypeChecker.Monad.CheckState
+                      @ m
+                      $dMonadState
+                      @ ()
+                      (\ (s1 :: Language.PureScript.TypeChecker.Monad.CheckState) ->
+                       (GHC.Tuple.(),
+                        case s1 of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                        Language.PureScript.TypeChecker.Monad.CheckState
+                          ds
+                          ds1
+                          ds2
+                          ds3
+                          ds4
+                          ds5
+                          (case ds6 of wild1 { Language.PureScript.TypeChecker.Monad.Substitution ds8 ds9 ->
+                           Language.PureScript.TypeChecker.Monad.Substitution
+                             (Language.PureScript.TypeChecker.Unify.$sinsert_$sgo13
+                                @ Language.PureScript.Types.Type
+                                eta
+                                eta
+                                eta1
+                                ds8)
+                             ds9 })
+                          ds7 })))) -}
+790e5acc35abed1f12851a447c85f713
+  substituteType ::
+    Language.PureScript.TypeChecker.Monad.Substitution
+    -> Language.PureScript.Types.Type -> Language.PureScript.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,A)><S,1*U> -}
+0b6725b6b83aa9318b42ec57f8080178
+  unifyRows ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.State.Class.MonadState
+       Language.PureScript.TypeChecker.Monad.CheckState m) =>
+    Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type -> m ()
+  {- Arity: 4,
+     Strictness: <S(S(S(LLLLC(C(S))L)LLLL)LL),U(U(U(U(C(C1(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),C(U),A),C(U),C(C1(U)))><L,U(U(A,C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U><L,U> -}
+b827ceec3d75557ebebfc302895f9c3b
+  unifyTypes ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.State.Class.MonadState
+       Language.PureScript.TypeChecker.Monad.CheckState m) =>
+    Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type -> m ()
+  {- Arity: 4,
+     Strictness: <S(S(LC(C(S))LLL)LL),U(U(U(U(C(C1(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),C(U),A),C(U),C(C1(U)))><L,U(U(A,C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U><L,U> -}
+55141160ee0f2a83f6c77f006049f8a9
+  unknownsInType :: Language.PureScript.Types.Type -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (t :: Language.PureScript.Types.Type) ->
+                 Language.PureScript.Types.everythingOnTypes
+                   @ ([GHC.Types.Int] -> [GHC.Types.Int])
+                   (GHC.Base.. @ [GHC.Types.Int] @ [GHC.Types.Int] @ [GHC.Types.Int])
+                   Language.PureScript.TypeChecker.Unify.unknownsInType1
+                   t
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+5cd12de21b4a274b5d1050a0d544fe16
+  unknownsInType1 ::
+    Language.PureScript.Types.Type
+    -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Types.Type)
+                   (eta :: [GHC.Types.Int]) ->
+                 case ds of wild {
+                   DEFAULT -> eta
+                   Language.PureScript.Types.TUnknown u
+                   -> GHC.Types.: @ GHC.Types.Int u eta }) -}
+76982e918ed179c627090ab499d606a5
+  varIfUnknown ::
+    Language.PureScript.Types.Type -> Language.PureScript.Types.Type
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (ty :: Language.PureScript.Types.Type) ->
+                 Language.PureScript.TypeChecker.Unify.varIfUnknown_go9
+                   (Data.OldList.sortBy
+                      @ Data.Text.Internal.Text
+                      Data.Text.$fOrdText_$ccompare
+                      (GHC.Base.map
+                         @ GHC.Types.Int
+                         @ Data.Text.Internal.Text
+                         Language.PureScript.TypeChecker.Unify.varIfUnknown_toName
+                         (Protolude.List.ordNub
+                            @ GHC.Types.Int
+                            GHC.Classes.$fOrdInt
+                            (Language.PureScript.Types.everythingOnTypes
+                               @ ([GHC.Types.Int] -> [GHC.Types.Int])
+                               (GHC.Base.. @ [GHC.Types.Int] @ [GHC.Types.Int] @ [GHC.Types.Int])
+                               Language.PureScript.TypeChecker.Unify.unknownsInType1
+                               ty
+                               (GHC.Types.[] @ GHC.Types.Int)))))
+                   (Language.PureScript.Types.everywhereOnTypes
+                      Language.PureScript.TypeChecker.Unify.varIfUnknown1
+                      ty)) -}
+07ce938dee98990d2b34880cd64387e0
+  varIfUnknown1 ::
+    Language.PureScript.Types.Type -> Language.PureScript.Types.Type
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Types.Type) ->
+                 case ds of wild {
+                   DEFAULT -> wild
+                   Language.PureScript.Types.TUnknown u
+                   -> Language.PureScript.Types.TypeVar
+                        (Language.PureScript.TypeChecker.Unify.varIfUnknown_toName u) }) -}
+79dcb327f16135eb06823b491af55ff4
+  varIfUnknown_go9 ::
+    [Data.Text.Internal.Text]
+    -> Language.PureScript.Types.Type -> Language.PureScript.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+995118a10ab6ff8c66436a382a2779cd
+  varIfUnknown_toName :: GHC.Types.Int -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.TypeChecker.Unify.$wtoName ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

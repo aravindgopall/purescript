@@ -1,0 +1,518 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:06.185871 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Supply.Class 8043
+  interface hash: 8e6cb53d2dbdf6b99ee47b6ec9699216
+  ABI hash: a5ac88ebb2786fa0ca39c7248b7c5b8f
+  export-list hash: 91d489aaf16020272ece745e2b32bd17
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 42bf7a4f72bcf0a244dc3cf815e08f65
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Control.Monad.Supply.Class.freshName
+  Control.Monad.Supply.Class.MonadSupply{Control.Monad.Supply.Class.fresh Control.Monad.Supply.Class.peek}
+module dependencies: Control.Monad.Supply
+package dependencies: array-0.5.2.0 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 bytestring-0.10.8.2
+                      containers-0.5.11.0 deepseq-1.4.3.0 ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0 mtl-2.2.2 text-1.2.3.0 transformers-0.5.5.0
+orphans: transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         text-1.2.3.0:Data.Text
+import  -/  base-4.11.1.0:Data.Type.Equality 9bb29c7615a8eec000fd03d114737416
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type f3d5169c3d3830854b19f6565b265403
+import  -/  mtl-2.2.2:Control.Monad.State 1f28325cb5ef11b6b40ffadfe4bc2ca3
+import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
+import  -/  mtl-2.2.2:Control.Monad.Writer b86905dc6b5d4d3a09dfa93d3ac3bb98
+import  -/  Control.Monad.Supply a9e15eeca39e18ec2ace0537b1dcfc3b
+  exports: 33181f9f2f157b80f20fe5bc34a62230
+  SupplyT da97190fe8e245f04a0daae7a14c8e0a
+  SupplyT a33fc23ef2131a2ed4dfdd2f28dff7f5
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Class 352c7bdb1604d64f8f438c96bf57066a
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.State.Lazy bb07ba19cd14893d125b163b03c16c98
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Writer.Lazy 932eb57f5933138df24d28686f218b40
+24ea46573d95dc85e480ebbb5a2c5764
+  $dmfresh ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    forall (t :: (* -> *) -> * -> *) (n :: * -> *).
+    (Control.Monad.Trans.Class.MonadTrans t,
+     Control.Monad.Supply.Class.MonadSupply n,
+     (m :: (* -> *)) Data.Type.Equality.~ (t n :: (* -> *))) =>
+    m GHC.Integer.Type.Integer
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><C(C(S)),1*C1(C1(U))><L,U(1*U,1*U,A)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (0, True, False)
+                (\ @ m :: * -> *
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m)
+                   @ t :: (* -> *) -> * -> *
+                   @ n :: * -> *
+                   ($dMonadTrans :: Control.Monad.Trans.Class.MonadTrans t)
+                   ($dMonadSupply1 :: Control.Monad.Supply.Class.MonadSupply n)
+                   ($d~ :: (m :: (* -> *)) Data.Type.Equality.~ (t n :: (* -> *))) ->
+                 case GHC.Types.HEq_sc
+                        @ (* -> *)
+                        @ (* -> *)
+                        @ m
+                        @ (t n)
+                        $d~
+                          `cast`
+                        (Data.Type.Equality.N:~[0]
+                             <* -> *>_N <m>_N <t n>_N) of co { DEFAULT ->
+                 ($dMonadTrans
+                    `cast`
+                  (Control.Monad.Trans.Class.N:MonadTrans[0] <t>_N)
+                    @ n
+                    @ GHC.Integer.Type.Integer
+                    (Control.Monad.Supply.Class.$p1MonadSupply @ n $dMonadSupply1)
+                    (Control.Monad.Supply.Class.fresh @ n $dMonadSupply1))
+                   `cast`
+                 (Sub (Sym co) <GHC.Integer.Type.Integer>_N) }) -}
+8007ac3c5605b14eb062ad86ca035f3c
+  $dmpeek ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    forall (t :: (* -> *) -> * -> *) (n :: * -> *).
+    (Control.Monad.Trans.Class.MonadTrans t,
+     Control.Monad.Supply.Class.MonadSupply n,
+     (m :: (* -> *)) Data.Type.Equality.~ (t n :: (* -> *))) =>
+    m GHC.Integer.Type.Integer
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><C(C(S)),1*C1(C1(U))><L,U(1*U,A,1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (0, True, False)
+                (\ @ m :: * -> *
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m)
+                   @ t :: (* -> *) -> * -> *
+                   @ n :: * -> *
+                   ($dMonadTrans :: Control.Monad.Trans.Class.MonadTrans t)
+                   ($dMonadSupply1 :: Control.Monad.Supply.Class.MonadSupply n)
+                   ($d~ :: (m :: (* -> *)) Data.Type.Equality.~ (t n :: (* -> *))) ->
+                 case GHC.Types.HEq_sc
+                        @ (* -> *)
+                        @ (* -> *)
+                        @ m
+                        @ (t n)
+                        $d~
+                          `cast`
+                        (Data.Type.Equality.N:~[0]
+                             <* -> *>_N <m>_N <t n>_N) of co { DEFAULT ->
+                 ($dMonadTrans
+                    `cast`
+                  (Control.Monad.Trans.Class.N:MonadTrans[0] <t>_N)
+                    @ n
+                    @ GHC.Integer.Type.Integer
+                    (Control.Monad.Supply.Class.$p1MonadSupply @ n $dMonadSupply1)
+                    (Control.Monad.Supply.Class.peek @ n $dMonadSupply1))
+                   `cast`
+                 (Sub (Sym co) <GHC.Integer.Type.Integer>_N) }) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyStateT ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    Control.Monad.Supply.Class.MonadSupply
+      (Control.Monad.Trans.State.Lazy.StateT s m)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),C(U)),U,U)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ m :: * -> *
+                      @ s
+                      (v :: Control.Monad.Supply.Class.MonadSupply m).
+                  @ (Control.Monad.Trans.State.Lazy.StateT s m)
+                  (Control.Monad.Supply.Class.$fMonadSupplyStateT_$cp1MonadSupply
+                     @ m
+                     @ s
+                     v)
+                  (Control.Monad.Supply.Class.$fMonadSupplyStateT2 @ m @ s v)
+                    `cast`
+                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <s>_N <m>_R <GHC.Integer.Type.Integer>_N))
+                  (Control.Monad.Supply.Class.$fMonadSupplyStateT1 @ m @ s v)
+                    `cast`
+                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <s>_N <m>_R <GHC.Integer.Type.Integer>_N)) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyStateT1 ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    s -> m (GHC.Integer.Type.Integer, s)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LC(C(S))LLL)LL),U(1*U(A,1*C1(C1(U)),A,C(U),A),A,1*U)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   @ s
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m)
+                   (eta :: s) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ GHC.Integer.Type.Integer
+                   @ (GHC.Integer.Type.Integer, s)
+                   (Control.Monad.Supply.Class.peek @ m $dMonadSupply)
+                   (\ (a1 :: GHC.Integer.Type.Integer) ->
+                    GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ (GHC.Integer.Type.Integer, s)
+                      (a1, eta))) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyStateT2 ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    s -> m (GHC.Integer.Type.Integer, s)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LC(C(S))LLL)LL),U(1*U(A,1*C1(C1(U)),A,C(U),A),1*U,A)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   @ s
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m)
+                   (eta :: s) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ GHC.Integer.Type.Integer
+                   @ (GHC.Integer.Type.Integer, s)
+                   (Control.Monad.Supply.Class.fresh @ m $dMonadSupply)
+                   (\ (a1 :: GHC.Integer.Type.Integer) ->
+                    GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ (GHC.Integer.Type.Integer, s)
+                      (a1, eta))) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyStateT_$cp1MonadSupply ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    GHC.Base.Monad (Control.Monad.Trans.State.Lazy.StateT s m)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),C(U)),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   @ s
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m) ->
+                 Control.Monad.Trans.State.Lazy.$fMonadStateT
+                   @ m
+                   @ s
+                   (Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply)) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplySupplyT ::
+    GHC.Base.Monad m =>
+    Control.Monad.Supply.Class.MonadSupply
+      (Control.Monad.Supply.SupplyT m)
+  DFunId
+  {- Arity: 1,
+     Strictness: <L,U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),C(U))>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ m :: * -> * (v :: GHC.Base.Monad m).
+                  @ (Control.Monad.Supply.SupplyT m)
+                  (Control.Monad.Supply.$fMonadSupplyT @ m v)
+                  (Control.Monad.Supply.Class.$fMonadSupplySupplyT1 @ m v)
+                    `cast`
+                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Integer.Type.Integer>_N
+                            <m>_R
+                            <GHC.Integer.Type.Integer>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <m>_N <GHC.Integer.Type.Integer>_N)
+                  (Control.Monad.Trans.State.Lazy.get
+                     @ m
+                     @ GHC.Integer.Type.Integer
+                     v)
+                    `cast`
+                  (Sym (Control.Monad.Supply.N:SupplyT[0]) <m>_N <GHC.Integer.Type.Integer>_N) -}
+65fb37451349ab9b9ec0207cdc119203
+  $fMonadSupplySupplyT1 ::
+    GHC.Base.Monad m =>
+    GHC.Integer.Type.Integer
+    -> m (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Arity: 2,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: GHC.Integer.Type.Integer) ->
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   (GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                      (eta, eta))
+                   (\ (ds :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)) ->
+                    let {
+                      n :: GHC.Integer.Type.Integer = case ds of wild { (,) a1 s' -> a1 }
+                    } in
+                    GHC.Base.>>=
+                      @ m
+                      $dMonad
+                      @ ((), GHC.Integer.Type.Integer)
+                      @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                      (GHC.Base.return
+                         @ m
+                         $dMonad
+                         @ ((), GHC.Integer.Type.Integer)
+                         (GHC.Tuple.(),
+                          GHC.Integer.Type.plusInteger
+                            n
+                            Control.Monad.Supply.Class.$fMonadSupplySupplyT2))
+                      (\ (ds1 :: ((), GHC.Integer.Type.Integer)) ->
+                       GHC.Base.return
+                         @ m
+                         $dMonad
+                         @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                         (n, case ds1 of wild { (,) a1 s' -> s' })))) -}
+3fa92955f84237819567ae77607d0fb7
+  $fMonadSupplySupplyT2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyWriterT ::
+    (GHC.Base.Monoid w, Control.Monad.Supply.Class.MonadSupply m) =>
+    Control.Monad.Supply.Class.MonadSupply
+      (Control.Monad.Trans.Writer.Lazy.WriterT w m)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,U,C(C1(U)),A)><L,U(U(U(U(C(C(U)),A),C(U),A,C(C1(C1(U))),A,A),C(C1(U)),A,C(U),C(U)),U,U)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ w
+                      @ m :: * -> *
+                      (v :: GHC.Base.Monoid w)
+                      (v1 :: Control.Monad.Supply.Class.MonadSupply m).
+                  @ (Control.Monad.Trans.Writer.Lazy.WriterT w m)
+                  (Control.Monad.Supply.Class.$fMonadSupplyWriterT_$cp1MonadSupply
+                     @ w
+                     @ m
+                     v
+                     v1)
+                  (Control.Monad.Supply.Class.$fMonadSupplyWriterT_$cfresh
+                     @ w
+                     @ m
+                     v
+                     v1)
+                  (Control.Monad.Supply.Class.$fMonadSupplyWriterT_$cpeek
+                     @ w
+                     @ m
+                     v
+                     v1) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyWriterT_$cfresh ::
+    (GHC.Base.Monoid w, Control.Monad.Supply.Class.MonadSupply m) =>
+    Control.Monad.Trans.Writer.Lazy.WriterT
+      w m GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A,A)><S(S(LC(C(S))LLL)LL),U(1*U(A,1*C1(C1(U)),A,C(U),A),1*U,A)>,
+     Unfolding: (\ @ w
+                   @ m :: * -> *
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m) ->
+                 let {
+                   lvl2 :: w = GHC.Base.mempty @ w $dMonoid
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply
+                 } in
+                 (GHC.Base.>>=
+                    @ m
+                    $dMonad
+                    @ GHC.Integer.Type.Integer
+                    @ (GHC.Integer.Type.Integer, w)
+                    (Control.Monad.Supply.Class.fresh @ m $dMonadSupply)
+                    (\ (a1 :: GHC.Integer.Type.Integer) ->
+                     GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (GHC.Integer.Type.Integer, w)
+                       (a1, lvl2)))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                           <w>_N <m>_R <GHC.Integer.Type.Integer>_N))) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyWriterT_$cp1MonadSupply ::
+    (GHC.Base.Monoid w, Control.Monad.Supply.Class.MonadSupply m) =>
+    GHC.Base.Monad (Control.Monad.Trans.Writer.Lazy.WriterT w m)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,U,C(C1(U)),A)><L,1*U(1*U(U(U(C(C(U)),A),C(U),A,C(C1(C1(U))),A,A),C(C1(U)),A,C(U),C(U)),A,A)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ w
+                   @ m :: * -> *
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m) ->
+                 Control.Monad.Trans.Writer.Lazy.$fMonadWriterT
+                   @ w
+                   @ m
+                   $dMonoid
+                   (Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply)) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  $fMonadSupplyWriterT_$cpeek ::
+    (GHC.Base.Monoid w, Control.Monad.Supply.Class.MonadSupply m) =>
+    Control.Monad.Trans.Writer.Lazy.WriterT
+      w m GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A,A)><S(S(LC(C(S))LLL)LL),U(1*U(A,1*C1(C1(U)),A,C(U),A),A,1*U)>,
+     Unfolding: (\ @ w
+                   @ m :: * -> *
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m) ->
+                 let {
+                   lvl2 :: w = GHC.Base.mempty @ w $dMonoid
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply
+                 } in
+                 (GHC.Base.>>=
+                    @ m
+                    $dMonad
+                    @ GHC.Integer.Type.Integer
+                    @ (GHC.Integer.Type.Integer, w)
+                    (Control.Monad.Supply.Class.peek @ m $dMonadSupply)
+                    (\ (a1 :: GHC.Integer.Type.Integer) ->
+                     GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (GHC.Integer.Type.Integer, w)
+                       (a1, lvl2)))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                           <w>_N <m>_R <GHC.Integer.Type.Integer>_N))) -}
+98cddf58db55ed35c810a2d4223adf24
+  $tc'C:MonadSupply :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16613852833678402408##
+                   3950157079517248680##
+                   Control.Monad.Supply.Class.$trModule
+                   Control.Monad.Supply.Class.$tc'C:MonadSupply2
+                   1#
+                   Control.Monad.Supply.Class.$tc'C:MonadSupply1) -}
+5fd4b4dc3813065e5c61aea87f715bb4
+  $tc'C:MonadSupply1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+40a514d4121d3f88cefb3a7cfad65e93
+  $tc'C:MonadSupply2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Control.Monad.Supply.Class.$tc'C:MonadSupply3) -}
+aa0bef953f0a5b75836f818f998644ef
+  $tc'C:MonadSupply3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'C:MonadSupply"#) -}
+a75ac989e830c10b31354592cfe0721e
+  $tcMonadSupply :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17823129220795341501##
+                   9480696554692446878##
+                   Control.Monad.Supply.Class.$trModule
+                   Control.Monad.Supply.Class.$tcMonadSupply2
+                   0#
+                   Control.Monad.Supply.Class.$tcMonadSupply1) -}
+997a2f989603d17a710d1d44e28cc49a
+  $tcMonadSupply1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c070fff35129d7e634493a7ed662805c
+  $tcMonadSupply2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Control.Monad.Supply.Class.$tcMonadSupply3) -}
+7b4e0a8379684d41eb991abb5f146c0e
+  $tcMonadSupply3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MonadSupply"#) -}
+287261f0d160a4d16691b202022b8a35
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Control.Monad.Supply.Class.$trModule3
+                   Control.Monad.Supply.Class.$trModule1) -}
+b8f7bc931979fbea202409f1ff148463
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Control.Monad.Supply.Class.$trModule2) -}
+d60b31bf4f78c623a1a53b7022434a7b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Control.Monad.Supply.Class"#) -}
+90a3a3455e66c3c5e75032fbf68e2d57
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Control.Monad.Supply.Class.$trModule4) -}
+16c40d23d04e9e3ccd776fabb97887e7
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+6a9f80f28cc3fad47a987fee945f2fd2
+  class GHC.Base.Monad m => MonadSupply (m :: * -> *) where
+    fresh :: m GHC.Integer.Type.Integer
+    default fresh :: (Control.Monad.Trans.Class.MonadTrans t,
+                      Control.Monad.Supply.Class.MonadSupply n,
+                      (m :: (* -> *)) Data.Type.Equality.~ (t n :: (* -> *))) =>
+                     m GHC.Integer.Type.Integer
+    peek :: m GHC.Integer.Type.Integer
+    default peek :: (Control.Monad.Trans.Class.MonadTrans t,
+                     Control.Monad.Supply.Class.MonadSupply n,
+                     (m :: (* -> *)) Data.Type.Equality.~ (t n :: (* -> *))) =>
+                    m GHC.Integer.Type.Integer
+c7b156bc37f8ecaaa383d28184cd1960
+  freshName ::
+    Control.Monad.Supply.Class.MonadSupply m =>
+    m Data.Text.Internal.Text
+  {- Arity: 1,
+     Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LL),U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),A,A,A,A),1*U,A)>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadSupply :: Control.Monad.Supply.Class.MonadSupply m) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.Supply.Class.$p1MonadSupply @ m $dMonadSupply)))
+                   @ GHC.Integer.Type.Integer
+                   @ Data.Text.Internal.Text
+                   Control.Monad.Supply.Class.freshName1
+                   (Control.Monad.Supply.Class.fresh @ m $dMonadSupply)) -}
+a930e62fe255bef2f08d315b036a4f67
+  freshName1 :: GHC.Integer.Type.Integer -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,U> -}
+instance Control.Monad.Supply.Class.MonadSupply [Control.Monad.Trans.State.Lazy.StateT]
+  = Control.Monad.Supply.Class.$fMonadSupplyStateT
+instance Control.Monad.Supply.Class.MonadSupply [Control.Monad.Supply.SupplyT]
+  = Control.Monad.Supply.Class.$fMonadSupplySupplyT
+instance Control.Monad.Supply.Class.MonadSupply [Control.Monad.Trans.Writer.Lazy.WriterT]
+  = Control.Monad.Supply.Class.$fMonadSupplyWriterT
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

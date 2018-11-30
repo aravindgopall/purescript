@@ -1,0 +1,892 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:29:05.48582 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.Render 8043
+  interface hash: 65c0f750728e6b3c23dc2d73311d62a4
+  ABI hash: 3f6aa4f9c29883ff1fbb4ef80651b450
+  export-list hash: 3d1445f50d2b9141ec0d6a16f0361334
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 94f2816997904b752beedc19c412f025
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Docs.Render.dataCtor'
+  Language.PureScript.Docs.Render.ident'
+  Language.PureScript.Docs.Render.notQualified
+  Language.PureScript.Docs.Render.renderChildDeclaration
+  Language.PureScript.Docs.Render.renderChildDeclarationWithOptions
+  Language.PureScript.Docs.Render.renderConstraint
+  Language.PureScript.Docs.Render.renderConstraintWithOptions
+  Language.PureScript.Docs.Render.renderConstraints
+  Language.PureScript.Docs.Render.renderConstraintsWithOptions
+  Language.PureScript.Docs.Render.renderDeclaration
+  Language.PureScript.Docs.Render.renderDeclarationWithOptions
+  Language.PureScript.Docs.Render.toTypeVar
+  Language.PureScript.Docs.Render.typeApp
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Docs.RenderedCode
+                     Language.PureScript.Docs.RenderedCode.RenderKind
+                     Language.PureScript.Docs.RenderedCode.RenderType
+                     Language.PureScript.Docs.RenderedCode.Types
+                     Language.PureScript.Docs.Types
+                     Language.PureScript.Docs.Utils.MonoidExtras
+                     Language.PureScript.Environment Language.PureScript.Errors
+                     Language.PureScript.Externs Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bower-json-1.0.0.1 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      data-ordlist-0.4.7.0 deepseq-1.4.3.0 directory-1.3.1.5
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
+                      microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
+                      monad-control-1.0.2.3 mtl-2.2.2 parallel-3.2.1.1 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 safe-0.3.17 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         bower-json-1.0.0.1:Web.Bower.PackageMeta.Internal
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.AST.Operators be736e316462ef3abce53315e7361a17
+  Fixity b54dc78c2a40564b4aeb547cc4004cc2
+import  -/  Language.PureScript.Docs.RenderedCode c7a77d8f9da9461d9b7b1607c98cc98a
+  exports: bdff998a873c7d4afd4c5b1970194d83
+import  -/  Language.PureScript.Docs.RenderedCode.RenderKind 8156f1969bbab61cc7344dd771e31019
+  renderKind 4a1e9450bfcb4916c80722a8487fe506
+import  -/  Language.PureScript.Docs.RenderedCode.RenderType ee492ed70af7249e37a3cfa564d45c3b
+  RenderTypeOptions af5ce77642123ce45827756ffe557961
+  defaultRenderTypeOptions 0b088e59ab488875ab6b93272da29b29
+  renderTypeAtomWithOptions e70a4f5e40bc1d1974592e0a416e7248
+  renderTypeWithOptions 7ad1e06d8cf3f0add25fe34aa00788aa
+import  -/  Language.PureScript.Docs.RenderedCode.Types 043476f1219ebaba7bef38f3035bc7df
+  RenderedCode 4660ea0ffbba09617bc864a10b08d72f
+  alias 264048896fdb8d7a984d226df5320be8
+  aliasName 93660e9a6a57956739cb37ae8fc4ef17
+  dataCtor 55d937c1ada98630a10a24c5fa4e6195
+  ident 1edc6188e1543cc534039e129ed205e2
+  keyword f1aae0f6ee3d35bf6919f5ba7223e983
+  keywordAs 07177d96fd9c86af218318beac9e40c6
+  keywordClass 6c863eaac5c66722ab79934c0ddff415
+  keywordData 64474e9d7dfd465954644b9df6a8feac
+  keywordFixity 2251146ecf774cfff36ec014a0b3f4e6
+  keywordKind f1d9e5d7c98c110289dfbd8b3eec8697
+  keywordType 3f3ac34c1543fa96adcb27db726783b6
+  keywordWhere ebdeaf56a7806ca9667d2c92efa46d90
+  kind c8c3bb5f95f1f9a3537e6f9dde0cc09b
+  sp 39b968598114288ef3f090bf19abc506
+  syntax 1dcaacc9dbea946d419bd10faec44aed
+  typeVar 22b530447c9cd534f2f7d44d4bf20fb8
+import  -/  Language.PureScript.Docs.Types f3dabfa61d83d3270ed9cf5a3f1e8614
+  exports: 49d03c0d410b46f9a363053ec495bd39
+  AliasDeclaration c7a9d57639e01196f9266b24e32eaee6
+  ChildDataConstructor e3f74c1ce910ff9b2dadd1fd5417981d
+  ChildDeclaration 3938843d4a06107f367196729d2e760b
+  ChildDeclaration 8e63d40d255dc7777120ed694edffc05
+  ChildInstance 2767c57f9a4542cd3c0e3520d6721df9
+  ChildTypeClassMember d087ffdff794295523841c19891079d0
+  DataDeclaration d38363acd435b3305128509cc3454cc4
+  Declaration d9b6668cba3af1eb075a8829f69a1ca7
+  Declaration 8e63d40d255dc7777120ed694edffc05
+  ExternDataDeclaration 2e0b557a502cd0140e8157b76cb436c8
+  ExternKindDeclaration 2604dad9083556d33d0a40f9f602ffdb
+  TypeClassDeclaration 5be1953b7a35e4eb6770f63d0b96e2c9
+  TypeSynonymDeclaration 5c4c3012cf75505e91244a48a939003d
+  ValueDeclaration 70f66188eff92dc851761c2d85481b40
+  cdeclComments 8e63d40d255dc7777120ed694edffc05
+  cdeclInfo 8e63d40d255dc7777120ed694edffc05
+  cdeclSourceSpan 8e63d40d255dc7777120ed694edffc05
+  cdeclTitle 8e63d40d255dc7777120ed694edffc05
+  declChildren 8e63d40d255dc7777120ed694edffc05
+  declComments 8e63d40d255dc7777120ed694edffc05
+  declInfo 8e63d40d255dc7777120ed694edffc05
+  declSourceSpan 8e63d40d255dc7777120ed694edffc05
+  declTitle 8e63d40d255dc7777120ed694edffc05
+  isTypeClassMember 1bcfcf44aa5b069de1bd5012030786a2
+import  -/  Language.PureScript.Docs.Utils.MonoidExtras fab03ece467b2572dc93382b8e7b0f4a
+  exports: 778096aae4b05109766e2bc7cf102786
+  mintersperse 03c6af237ae975a2ba5389ef903b222e
+import  -/  Language.PureScript.Environment 31667499b7017b19998bb405474fbe93
+  showDataDeclType 48c211f66429380bb92dd8655ff634a6
+import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
+  Kind 3e1e213eb647453235d33b0d1b36ec59
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  Ident 0ccd7f2221de64569e50634367691253
+  ProperName 9eb330c84db102abf2d0f2652fe4a144
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified d600a7f01c8203cf5504999de99c923c
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  coerceProperName 9cce674374cd97d7385253445133e737
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  Constraint 07ef72cbe41926551b2da51008274cd5
+  Constraint 93223f8afa90d0facc05a03f863dc72d
+  KindedType 0c5178e2942b7d198426b0539b6f6442
+  Type 93223f8afa90d0facc05a03f863dc72d
+  TypeApp 8aa2c93426facb8054d5caf77ff9d922
+  TypeConstructor 5e1c42d22ac701f08c049fde0171d9ac
+  TypeVar ac604589bba317f51f6e97fef0e84f86
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+84ed50c021c8c4fb757b4e697af9ec4e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Docs.Render.$trModule3
+                   Language.PureScript.Docs.Render.$trModule1) -}
+265da9e85b525e68bd6d2b35f2222c69
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.Render.$trModule2) -}
+46548299379cae3ebce2f7368a7d75e3
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Docs.Render"#) -}
+f767f84da9a44c0bd08499f281e9c8d6
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.Render.$trModule4) -}
+660cb8f9c053f425f130cf12e63cc7c3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+f7a52861bb4d12351fd8e5b50837a2b1
+  $wrenderChildDeclarationWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> Data.Text.Internal.Text
+    -> Language.PureScript.Docs.Types.ChildDeclarationInfo
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 3, Strictness: <L,U(U,A)><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions)
+                   (ww :: Data.Text.Internal.Text)
+                   (ww1 :: Language.PureScript.Docs.Types.ChildDeclarationInfo) ->
+                 case ww1 of wild {
+                   Language.PureScript.Docs.Types.ChildInstance constraints ty
+                   -> let {
+                        arg :: Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                        = case (Language.PureScript.Docs.RenderedCode.RenderType.matchType
+                                  `cast`
+                                (Control.PatternArrows.N:Pattern[0]
+                                     <()>_N <Language.PureScript.Types.Type>_N <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                                                  <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                                     ()
+                                                                                                                                                     GHC.Base.Maybe>_R
+                                                                                                                                                  <Language.PureScript.Types.Type>_R
+                                                                                                                                                  <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)
+                                  (Language.PureScript.Docs.RenderedCode.RenderType.preprocessType
+                                     w
+                                     ty))
+                                 `cast`
+                               (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                    <()>_N
+                                    <GHC.Base.Maybe>_R
+                                    <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)
+                                 GHC.Tuple.() of wild1 {
+                            GHC.Base.Nothing
+                            -> Language.PureScript.Docs.RenderedCode.RenderType.renderRow_d
+                            GHC.Base.Just x1 -> case x1 of wild2 { (,) a1 ds1 -> a1 } }
+                      } in
+                      case Language.PureScript.Docs.Render.renderConstraintsWithOptions
+                             Language.PureScript.Docs.RenderedCode.RenderType.defaultRenderTypeOptions
+                             constraints of wild1 {
+                        GHC.Base.Nothing
+                        -> Language.PureScript.Docs.Utils.MonoidExtras.mintersperse_$smintersperse
+                             @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                             arg
+                             (GHC.Types.[]
+                                @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode)
+                             Language.PureScript.Docs.RenderedCode.Types.alias5
+                               `cast`
+                             (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                             Language.PureScript.Docs.RenderedCode.Types.$fMonoidRenderedCode
+                        GHC.Base.Just x
+                        -> Language.PureScript.Docs.Utils.MonoidExtras.mintersperse_$smintersperse
+                             @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                             x
+                             (GHC.Types.:
+                                @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                                arg
+                                (GHC.Types.[]
+                                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode))
+                             Language.PureScript.Docs.RenderedCode.Types.alias5
+                               `cast`
+                             (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                             Language.PureScript.Docs.RenderedCode.Types.$fMonoidRenderedCode }
+                   Language.PureScript.Docs.Types.ChildDataConstructor args
+                   -> Language.PureScript.Docs.Utils.MonoidExtras.mintersperse_$smintersperse
+                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                        (GHC.Types.:
+                           @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                           (Language.PureScript.Docs.RenderedCode.Types.Symbol
+                              Language.PureScript.Docs.RenderedCode.Types.ValueLevel
+                              ww
+                              Language.PureScript.Docs.Render.dataCtor'2)
+                           (GHC.Types.[]
+                              @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
+                          `cast`
+                        (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                        (GHC.Base.map
+                           @ Language.PureScript.Types.Type
+                           @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                           (Language.PureScript.Docs.RenderedCode.RenderType.renderTypeAtomWithOptions
+                              w)
+                           args)
+                        Language.PureScript.Docs.RenderedCode.Types.alias5
+                          `cast`
+                        (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                        Language.PureScript.Docs.RenderedCode.Types.$fMonoidRenderedCode
+                   Language.PureScript.Docs.Types.ChildTypeClassMember ty
+                   -> Language.PureScript.Docs.Utils.MonoidExtras.mintersperse_$smintersperse
+                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                        (GHC.Types.:
+                           @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                           (Language.PureScript.Docs.RenderedCode.Types.Symbol
+                              Language.PureScript.Docs.RenderedCode.Types.ValueLevel
+                              (Language.PureScript.Names.runIdent
+                                 (Language.PureScript.Names.Ident ww))
+                              Language.PureScript.Docs.Render.dataCtor'2)
+                           (GHC.Types.[]
+                              @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
+                          `cast`
+                        (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                        (GHC.Types.:
+                           @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                           Language.PureScript.Docs.Render.renderChildDeclaration1
+                             `cast`
+                           (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                           (GHC.Types.:
+                              @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                              (case (Language.PureScript.Docs.RenderedCode.RenderType.matchType
+                                       `cast`
+                                     (Control.PatternArrows.N:Pattern[0]
+                                          <()>_N <Language.PureScript.Types.Type>_N <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                                                       <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                                          ()
+                                                                                                                                                          GHC.Base.Maybe>_R
+                                                                                                                                                       <Language.PureScript.Types.Type>_R
+                                                                                                                                                       <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)
+                                       (Language.PureScript.Docs.RenderedCode.RenderType.preprocessType
+                                          w
+                                          ty))
+                                      `cast`
+                                    (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                         <()>_N
+                                         <GHC.Base.Maybe>_R
+                                         <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)
+                                      GHC.Tuple.() of wild1 {
+                                 GHC.Base.Nothing
+                                 -> Language.PureScript.Docs.RenderedCode.RenderType.renderRow_d
+                                 GHC.Base.Just x1 -> case x1 of wild2 { (,) a1 ds1 -> a1 } })
+                              (GHC.Types.[]
+                                 @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode)))
+                        Language.PureScript.Docs.RenderedCode.Types.alias5
+                          `cast`
+                        (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                        Language.PureScript.Docs.RenderedCode.Types.$fMonoidRenderedCode }) -}
+39ff7094745c3ac68a812d083d75ed96
+  $wrenderConstraintWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+    -> [Language.PureScript.Types.Type]
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 3, Strictness: <L,U(U,A)><L,1*U(U,U)><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions)
+                   (ww :: Language.PureScript.Names.Qualified
+                            (Language.PureScript.Names.ProperName
+                               'Language.PureScript.Names.ClassName))
+                   (ww1 :: [Language.PureScript.Types.Type]) ->
+                 case (Language.PureScript.Docs.RenderedCode.RenderType.matchType
+                         `cast`
+                       (Control.PatternArrows.N:Pattern[0]
+                            <()>_N <Language.PureScript.Types.Type>_N <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                                         <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                            ()
+                                                                                                                                            GHC.Base.Maybe>_R
+                                                                                                                                         <Language.PureScript.Types.Type>_R
+                                                                                                                                         <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)
+                         (Language.PureScript.Docs.RenderedCode.RenderType.preprocessType
+                            w
+                            (Language.PureScript.Docs.Render.renderConstraintWithOptions_go
+                               ww1
+                               (Language.PureScript.Types.TypeConstructor
+                                  (case ww of wild { Language.PureScript.Names.Qualified a1 a2 ->
+                                   Language.PureScript.Names.Qualified
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.TypeName)
+                                     a1
+                                     a2
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.ClassName>_P ; Sym (Language.PureScript.Names.N:ProperName[0]
+                                                                                              <'Language.PureScript.Names.TypeName>_P)) })))))
+                        `cast`
+                      (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                           <()>_N
+                           <GHC.Base.Maybe>_R
+                           <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)
+                        GHC.Tuple.() of wild {
+                   GHC.Base.Nothing
+                   -> Language.PureScript.Docs.RenderedCode.RenderType.renderRow_d
+                   GHC.Base.Just x1 -> case x1 of wild1 { (,) a1 ds1 -> a1 } }) -}
+2c9b4833821f9c26a32fbe7cd2083139
+  $wrenderDeclarationWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> Data.Text.Internal.Text
+    -> [Language.PureScript.Docs.Types.ChildDeclaration]
+    -> Language.PureScript.Docs.Types.DeclarationInfo
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 4, Strictness: <L,U(U,A)><L,U(U,U,U)><L,1*U><S,1*U>,
+     Inline: [0] -}
+3955d432900629c885175bf47274a044
+  dataCtor' ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Docs.Render.dataCtor'1
+                  `cast`
+                (<Data.Text.Internal.Text>_R
+                 ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
+239a74572e9c69a9c3915cd2ef5654f5
+  dataCtor'1 ::
+    Data.Text.Internal.Text
+    -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.Text.Internal.Text) ->
+                 GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   (Language.PureScript.Docs.RenderedCode.Types.Symbol
+                      Language.PureScript.Docs.RenderedCode.Types.ValueLevel
+                      x
+                      Language.PureScript.Docs.Render.dataCtor'2)
+                   (GHC.Types.[]
+                      @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
+7c902b6e35495a6c166cb027ecc58dbd
+  dataCtor'2 :: Language.PureScript.Docs.RenderedCode.Types.Link
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Link
+                   Language.PureScript.Docs.RenderedCode.Types.ThisModule) -}
+4a245a1dd8e64ff9a5b20e4e276e7a03
+  ident' ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 1, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Docs.Render.ident'1
+                  `cast`
+                (<Data.Text.Internal.Text>_R
+                 ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
+c241c6f1fba3cd70d4d17adbc77c2d97
+  ident'1 ::
+    Data.Text.Internal.Text
+    -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Arity: 1, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.Text.Internal.Text) ->
+                 GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   (Language.PureScript.Docs.RenderedCode.Types.Symbol
+                      Language.PureScript.Docs.RenderedCode.Types.ValueLevel
+                      (Language.PureScript.Names.runIdent
+                         (Language.PureScript.Names.Ident x))
+                      Language.PureScript.Docs.Render.dataCtor'2)
+                   (GHC.Types.[]
+                      @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
+307661da3d9b5d3cd84ee838a769de89
+  notQualified ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a :: Language.PureScript.Names.ProperNameType
+                   (x :: Data.Text.Internal.Text) ->
+                 Language.PureScript.Names.Qualified
+                   @ (Language.PureScript.Names.ProperName a)
+                   (GHC.Base.Nothing @ Language.PureScript.Names.ModuleName)
+                   x `cast`
+                   (Sym (Language.PureScript.Names.N:ProperName[0] <a>_P))) -}
+2ce4ad2228de5f2f98d66420f4b650c7
+  renderChildDeclaration ::
+    Language.PureScript.Docs.Types.ChildDeclaration
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 1, Strictness: <S(LLLS),1*U(U,A,A,1*U)>,
+     Unfolding: (\ (w :: Language.PureScript.Docs.Types.ChildDeclaration) ->
+                 case w of ww { Language.PureScript.Docs.Types.ChildDeclaration ww1 ww2 ww3 ww4 ->
+                 Language.PureScript.Docs.Render.$wrenderChildDeclarationWithOptions
+                   Language.PureScript.Docs.RenderedCode.RenderType.defaultRenderTypeOptions
+                   ww1
+                   ww4 }) -}
+ce350ed753612b54072c5a9641d17a85
+  renderChildDeclaration1 ::
+    [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   Language.PureScript.Docs.Render.renderChildDeclaration2
+                   (GHC.Types.[]
+                      @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
+18c32a5a838a96f7056ae3e4f8f9dac4
+  renderChildDeclaration2 ::
+    Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+  {- Strictness: m1,
+     Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
+                   Language.PureScript.Docs.Render.renderChildDeclaration3) -}
+8e251ccee24f2aaad611132bd6c311db
+  renderChildDeclaration3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Docs.Render.renderChildDeclaration4) -}
+6fb0dfb7d26889e4ebf4011d442fe630
+  renderChildDeclaration4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("::"#) -}
+414c54cef50445215a706e95e6f6b325
+  renderChildDeclarationWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> Language.PureScript.Docs.Types.ChildDeclaration
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 2, Strictness: <L,U(U,A)><S(LLLS),1*U(U,A,A,1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions)
+                   (w1 :: Language.PureScript.Docs.Types.ChildDeclaration) ->
+                 case w1 of ww { Language.PureScript.Docs.Types.ChildDeclaration ww1 ww2 ww3 ww4 ->
+                 Language.PureScript.Docs.Render.$wrenderChildDeclarationWithOptions
+                   w
+                   ww1
+                   ww4 }) -}
+1155644daa64d9a0c32c9eea4167528c
+  renderConstraint ::
+    Language.PureScript.Types.Constraint
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 1, Strictness: <S,1*U(1*U(U,U),1*U,A)>,
+     Unfolding: (\ (w :: Language.PureScript.Types.Constraint) ->
+                 case w of ww { Language.PureScript.Types.Constraint ww1 ww2 ww3 ->
+                 Language.PureScript.Docs.Render.$wrenderConstraintWithOptions
+                   Language.PureScript.Docs.RenderedCode.RenderType.defaultRenderTypeOptions
+                   ww1
+                   ww2 }) -}
+750813b741d41d6be7ad68dd6f4f372d
+  renderConstraintWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> Language.PureScript.Types.Constraint
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 2, Strictness: <L,U(U,A)><S,1*U(1*U(U,U),1*U,A)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions)
+                   (w1 :: Language.PureScript.Types.Constraint) ->
+                 case w1 of ww { Language.PureScript.Types.Constraint ww1 ww2 ww3 ->
+                 Language.PureScript.Docs.Render.$wrenderConstraintWithOptions
+                   w
+                   ww1
+                   ww2 }) -}
+a1d77a08bcf21a2dce573d5af786a5b5
+  renderConstraintWithOptions_go ::
+    [Language.PureScript.Types.Type]
+    -> Language.PureScript.Types.Type -> Language.PureScript.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+3cb1f750805631042753b570d4d58e16
+  renderConstraints ::
+    [Language.PureScript.Types.Constraint]
+    -> GHC.Base.Maybe
+         Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 1,
+     Unfolding: (Language.PureScript.Docs.Render.renderConstraintsWithOptions
+                   Language.PureScript.Docs.RenderedCode.RenderType.defaultRenderTypeOptions) -}
+1c2b730875a0d676733a02ed82b48c51
+  renderConstraintsWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> [Language.PureScript.Types.Constraint]
+    -> GHC.Base.Maybe
+         Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 2, Strictness: <L,U(U,A)><S,1*U>,
+     Unfolding: (\ (opts :: Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions)
+                   (constraints :: [Language.PureScript.Types.Constraint]) ->
+                 case constraints of wild {
+                   []
+                   -> GHC.Base.Nothing
+                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                   : ds1 ds2
+                   -> GHC.Base.Just
+                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                        (GHC.Types.:
+                           @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                           Language.PureScript.Docs.Render.renderConstraintsWithOptions14
+                           (case GHC.Base.map
+                                   @ Language.PureScript.Types.Constraint
+                                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                                   (Language.PureScript.Docs.Render.renderConstraintWithOptions
+                                      opts)
+                                   wild of wild1 {
+                              [] -> Language.PureScript.Docs.Render.renderConstraintsWithOptions5
+                              : x ds
+                              -> case ds of wild2 {
+                                   []
+                                   -> GHC.Base.++
+                                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                                        x `cast`
+                                        (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
+                                        Language.PureScript.Docs.Render.renderConstraintsWithOptions5
+                                   : ipv ipv1
+                                   -> GHC.Base.++
+                                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                                        x `cast`
+                                        (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
+                                        (GHC.Base.++_$s++
+                                           @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                                           (GHC.Base.++
+                                              @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                                              (Language.PureScript.Docs.Utils.MonoidExtras.mintersperse_$smintersperse
+                                                 @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+                                                 ipv
+                                                 ipv1
+                                                 Language.PureScript.Docs.Render.renderConstraintsWithOptions4
+                                                   `cast`
+                                                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]))
+                                                 Language.PureScript.Docs.RenderedCode.Types.$fMonoidRenderedCode)
+                                                `cast`
+                                              (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
+                                              Language.PureScript.Docs.Render.renderConstraintsWithOptions5)
+                                           Language.PureScript.Docs.Render.renderConstraintsWithOptions1
+                                           Language.PureScript.Docs.RenderedCode.Types.alias5) } }))
+                          `cast`
+                        (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
+50dd9339bf4c691adde14c9e728b3a77
+  renderConstraintsWithOptions1 ::
+    Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+  {- Strictness: m1,
+     Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions2) -}
+135c9e3c72b2841881cebc51d48e1094
+  renderConstraintsWithOptions10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("=>"#) -}
+aeb3c3b22bbebdb0bc7da19f59539921
+  renderConstraintsWithOptions11 ::
+    Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+  {- Strictness: m1,
+     Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions12) -}
+f4f23bbc322a0a36919b3e1fef5ef2a7
+  renderConstraintsWithOptions12 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions13) -}
+355f1405cb87dffd2bbf0b0c1ecc5ef7
+  renderConstraintsWithOptions13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (")"#) -}
+307d3fe01952f731b206c3bb66fbb690
+  renderConstraintsWithOptions14 ::
+    Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+  {- Strictness: m1,
+     Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions15) -}
+bb30b26e2c494fee7b19ab44e96c521b
+  renderConstraintsWithOptions15 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions16) -}
+eddc9ca1fc5c30c82e86d137a4a672b4
+  renderConstraintsWithOptions16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("("#) -}
+00ff4ce14ee66136618ad593d6d7c9fd
+  renderConstraintsWithOptions2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions3) -}
+b130d7b066eabf69a7bb5afca8455f63
+  renderConstraintsWithOptions3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (","#) -}
+c82915132a1b0d8506b8c59b08c790a2
+  renderConstraintsWithOptions4 ::
+    [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions1
+                   Language.PureScript.Docs.RenderedCode.Types.alias5) -}
+ed7fde4c48dede8eba87a7cdc1dd410c
+  renderConstraintsWithOptions5 ::
+    [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions11
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions6) -}
+d6a694301bc86079304216a1d3e23b86
+  renderConstraintsWithOptions6 ::
+    [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   Language.PureScript.Docs.RenderedCode.Types.Space
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions7) -}
+df1c001963b2725c4b7ba0c8baefbf06
+  renderConstraintsWithOptions7 ::
+    [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions8
+                   (GHC.Types.[]
+                      @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
+2f620b0e868456c909952ffc068bd868
+  renderConstraintsWithOptions8 ::
+    Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
+  {- Strictness: m1,
+     Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions9) -}
+99ae7ee8df3aec5188acfb8cd6250b76
+  renderConstraintsWithOptions9 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Docs.Render.renderConstraintsWithOptions10) -}
+cf88398420b4ca343495abf84f58a83f
+  renderDeclaration ::
+    Language.PureScript.Docs.Types.Declaration
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 1, Strictness: <S(LLLLS),1*U(U(U,U,U),A,A,1*U,1*U)>,
+     Unfolding: (\ (w :: Language.PureScript.Docs.Types.Declaration) ->
+                 case w of ww { Language.PureScript.Docs.Types.Declaration ww1 ww2 ww3 ww4 ww5 ->
+                 Language.PureScript.Docs.Render.$wrenderDeclarationWithOptions
+                   Language.PureScript.Docs.RenderedCode.RenderType.defaultRenderTypeOptions
+                   ww1
+                   ww4
+                   ww5 }) -}
+c0dc6af675f7c3d0a79b6bf41aced85c
+  renderDeclarationWithOptions ::
+    Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions
+    -> Language.PureScript.Docs.Types.Declaration
+    -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
+  {- Arity: 2,
+     Strictness: <L,U(U,A)><S(LLLLS),1*U(U(U,U,U),A,A,1*U,1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Docs.RenderedCode.RenderType.RenderTypeOptions)
+                   (w1 :: Language.PureScript.Docs.Types.Declaration) ->
+                 case w1 of ww { Language.PureScript.Docs.Types.Declaration ww1 ww2 ww3 ww4 ww5 ->
+                 Language.PureScript.Docs.Render.$wrenderDeclarationWithOptions
+                   w
+                   ww1
+                   ww4
+                   ww5 }) -}
+24e1ca5c32cfd02122ca6c62037ee81e
+  toTypeVar ::
+    (Data.Text.Internal.Text,
+     GHC.Base.Maybe Language.PureScript.Kinds.Kind)
+    -> Language.PureScript.Types.Type
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Data.Text.Internal.Text,
+                           GHC.Base.Maybe Language.PureScript.Kinds.Kind)) ->
+                 case ds of wild { (,) s ds1 ->
+                 case ds1 of wild1 {
+                   GHC.Base.Nothing -> Language.PureScript.Types.TypeVar s
+                   GHC.Base.Just k
+                   -> Language.PureScript.Types.KindedType
+                        (Language.PureScript.Types.TypeVar s)
+                        k } }) -}
+52e48a842559ef75869b8270e268a211
+  typeApp ::
+    Data.Text.Internal.Text
+    -> [(Data.Text.Internal.Text,
+         GHC.Base.Maybe Language.PureScript.Kinds.Kind)]
+    -> Language.PureScript.Types.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (title :: Data.Text.Internal.Text)
+                   (typeArgs :: [(Data.Text.Internal.Text,
+                                  GHC.Base.Maybe Language.PureScript.Kinds.Kind)]) ->
+                 letrec {
+                   go3 :: [(Data.Text.Internal.Text,
+                            GHC.Base.Maybe Language.PureScript.Kinds.Kind)]
+                          -> Language.PureScript.Types.Type -> Language.PureScript.Types.Type
+                     <join 2> {- Arity: 2 -}
+                   = \ (ds :: [(Data.Text.Internal.Text,
+                                GHC.Base.Maybe Language.PureScript.Kinds.Kind)])
+                       (eta :: Language.PureScript.Types.Type) ->
+                     case ds of wild {
+                       [] -> eta
+                       : y ys
+                       -> go3
+                            ys
+                            (Language.PureScript.Types.TypeApp
+                               eta
+                               (Language.PureScript.Docs.Render.toTypeVar y)) }
+                 } in
+                 go3
+                   typeArgs
+                   (Language.PureScript.Types.TypeConstructor
+                      (Language.PureScript.Names.Qualified
+                         @ (Language.PureScript.Names.ProperName
+                              'Language.PureScript.Names.TypeName)
+                         (GHC.Base.Nothing @ Language.PureScript.Names.ModuleName)
+                         title
+                           `cast`
+                         (Sym (Language.PureScript.Names.N:ProperName[0]
+                                   <'Language.PureScript.Names.TypeName>_P))))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,2312 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:22.774969 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Parser.Common 8043
+  interface hash: 7994514e27192fbe6aca6aed8ab8c6fd
+  ABI hash: cd9daf83419acf425eed3583730b480a
+  export-list hash: 46bd02a8c6d64be727c6d765fa3bb721
+  orphan hash: a60d10ff3e1e73da7b0d2b17a9f849f6
+  flag hash: af801e39deabea4814ba66209bc490c9
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Parser.Common.augment
+  Language.PureScript.Parser.Common.buildPostfixParser
+  Language.PureScript.Parser.Common.checkIndentation
+  Language.PureScript.Parser.Common.dataConstructorName
+  Language.PureScript.Parser.Common.fold
+  Language.PureScript.Parser.Common.indented
+  Language.PureScript.Parser.Common.kindName
+  Language.PureScript.Parser.Common.mark
+  Language.PureScript.Parser.Common.moduleName
+  Language.PureScript.Parser.Common.parseIdent
+  Language.PureScript.Parser.Common.parseLabel
+  Language.PureScript.Parser.Common.parseOperator
+  Language.PureScript.Parser.Common.parseQualified
+  Language.PureScript.Parser.Common.properName
+  Language.PureScript.Parser.Common.readComments
+  Language.PureScript.Parser.Common.runTokenParser
+  Language.PureScript.Parser.Common.same
+  Language.PureScript.Parser.Common.toSourcePos
+  Language.PureScript.Parser.Common.typeName
+  Language.PureScript.Parser.Common.withSourceAnnF
+  Language.PureScript.Parser.Common.withSourceSpan
+  Language.PureScript.Parser.Common.withSourceSpan'
+  Language.PureScript.Parser.Common.withSourceSpanF
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST.SourcePos
+                     Language.PureScript.Comments Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State
+package dependencies: aeson-1.3.1.1 array-0.5.2.0
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      mtl-2.2.2 parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0
+                      random-1.1 scientific-0.3.6.2 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 uuid-types-1.0.3 vector-0.12.0.1
+orphans: attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Applicative 55d9b3a7491623b0362290e162d67308
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  parsec-3.1.13.0:Text.Parsec 963cbe7b4116cef91451434dc005a011
+import  -/  parsec-3.1.13.0:Text.Parsec.Combinator 86d872425bd48a2d67c0d1ce1a8ccc8b
+import  -/  parsec-3.1.13.0:Text.Parsec.Error 5c35aa426bd1cd52bcab90d9a1e3ce4c
+import  -/  parsec-3.1.13.0:Text.Parsec.Pos 85d30a347a2120f1b5f286869826a471
+import  -/  parsec-3.1.13.0:Text.Parsec.Prim 4e0ad30f54008188b8c54f509e1a8ed9
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  exports: cd99f4b22e2d3cec892dcb31686df02f
+  SourceAnn cab2aecd85882b7f3973d54e49bcad4f
+  SourcePos b32bf71fd97066221fb5294f6129d546
+  SourcePos 73c071552214b3f18e94970349d3affc
+  SourceSpan 80f1a6322ef7d45c295094f0b69c34ea
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Comments f344ceddf328cf61908be13dd1f90917
+  exports: b1904caad26a3e7c6a77f0a1156c2d62
+  Comment 23fbbb637db19d35ca8339b51dc9ecf5
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
+  Ident 0ccd7f2221de64569e50634367691253
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  KindName 681d490d18bc7da009f3503010a994f8
+  ModuleName 0cb2c8b6c90c347a41315bf0e0fd925c
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  OpName 4117b59f1e3e7a358085069744f72313
+  OpName 1522672b880b192c6e05e6cf8a45712d
+  ProperName 9eb330c84db102abf2d0f2652fe4a144
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified d600a7f01c8203cf5504999de99c923c
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  TypeName da42c92f73f4f363c63ecaf77b6335b9
+import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
+  exports: 41608caf7cc5b51f34de641c9952ab6d
+  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+  mkString 59c5695c0c0978fcb9d0a00f0304b905
+import  -/  Language.PureScript.Parser.Lexer db153cafc807e1fa539fece18593da12
+  exports: 698a81285a16040f24e674c5083daf63
+  PositionedToken 015da505ab7d9bcbf17b066347ec1288
+  TokenParser 187b24d9915c74f6cd19336cd3ce961b
+  dconsname c62058e002a41518edc5eb7a4d74a0a4
+  identifier 71517dd1b5165f695e88eab2aaf7b72d
+  kiname b07c2a02fa459e73e061eb95704400ed
+  lname 6e1d4b4ef234a78f7b87fd5f992b70f0
+  mname 70083b67af3d0ef40a356c978f24a512
+  ptComments 015da505ab7d9bcbf17b066347ec1288
+  ptPrevEndPos 015da505ab7d9bcbf17b066347ec1288
+  qualifier 73e20023a6cb1181c833e27f5af4d00c
+  stringLiteral 5b013bddd8e088b3207ee7aa6d991705
+  symbol 7dd8c55c092324ed2efcd817d6c7248f
+  tyname 8d496fac787139075602f87ff093888b
+  uname e63804a86f0d5e1d671b1d3e63489e75
+import  -/  Language.PureScript.Parser.State fe9f4bd063cadaf6e6254f56db69a432
+  exports: d5f29085816fb1aaafdee8f3aac13901
+  ParseState d7215492860b72be92c0ba0d393262cb
+  ParseState 5abb98cffc35c1788f12e72c56b8d4dd
+  indentationLevel 5abb98cffc35c1788f12e72c56b8d4dd
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+6cdc75eb0ea38518dc716e1b9b026079
+  $s$fStream[]mtok ::
+    Text.Parsec.Prim.Stream [tok] Data.Functor.Identity.Identity tok
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ tok.
+                  @ [tok]
+                  @ Data.Functor.Identity.Identity
+                  @ tok
+                  Data.Functor.Identity.$fMonadIdentity
+                  (Language.PureScript.Parser.Common.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+                     @ tok) -}
+f21e559e2bdcc4c32690a33e41f53db8
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok (ds :: [tok]) ->
+                 case ds of wild {
+                   []
+                   -> (GHC.Base.Nothing @ (tok, [tok]))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R))
+                   : t ts
+                   -> (GHC.Base.Just @ (tok, [tok]) (t, ts))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R)) }) -}
+18a383041b622c3acd1b1654726cc2c7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Parser.Common.$trModule3
+                   Language.PureScript.Parser.Common.$trModule1) -}
+59be5b51cb8e5768a8ed8ce658e7edd9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Parser.Common.$trModule2) -}
+fd9142be8cd1834f822d5ebeb6f89c74
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Parser.Common"#) -}
+e6e308cf34506a05e294e84bd7e603bd
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Parser.Common.$trModule4) -}
+bb1b112c2fedde9ecb2c348ea6580592
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+54a711ea7855b0b8e26365479305f5cd
+  $waugment ::
+    Text.Parsec.Prim.ParsecT s u m a
+    -> Text.Parsec.Prim.ParsecT s u m b
+    -> (a -> b -> a)
+    -> forall b1.
+       Text.Parsec.Prim.State s u
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b1)
+       -> (Text.Parsec.Error.ParseError -> m b1)
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b1)
+       -> (Text.Parsec.Error.ParseError -> m b1)
+       -> m b1
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,C(C1(U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ s
+                   @ m :: * -> *
+                   @ t
+                   @ u
+                   @ a
+                   @ b
+                   (w :: Text.Parsec.Prim.ParsecT s u m a)
+                   (w1 :: Text.Parsec.Prim.ParsecT s u m b)
+                   (w2 :: a -> b -> a)
+                   @ b1
+                   (w3 :: Text.Parsec.Prim.State s u)
+                   (w4 :: a
+                          -> Text.Parsec.Prim.State s u
+                          -> Text.Parsec.Error.ParseError
+                          -> m b1)
+                   (w5 :: Text.Parsec.Error.ParseError -> m b1)
+                   (w6 :: a
+                          -> Text.Parsec.Prim.State s u
+                          -> Text.Parsec.Error.ParseError
+                          -> m b1)
+                   (w7 :: Text.Parsec.Error.ParseError -> m b1) ->
+                 let {
+                   f :: a -> GHC.Base.Maybe b -> a
+                     {- Arity: 2, Strictness: <L,U><S,1*U>,
+                        Unfolding: InlineRule (2, True, False)
+                                   (\ (x :: a) (y :: GHC.Base.Maybe b) ->
+                                    case y of wild {
+                                      GHC.Base.Nothing -> x GHC.Base.Just x1 -> w2 x x1 }) -}
+                   = \ (x :: a) (y :: GHC.Base.Maybe b) ->
+                     case y of wild {
+                       GHC.Base.Nothing -> x GHC.Base.Just x1 -> w2 x x1 }
+                 } in
+                 Text.Parsec.Prim.$fAlternativeParsecT2
+                   @ s
+                   @ u
+                   @ m
+                   @ (GHC.Base.Maybe b)
+                   @ a
+                   (\ @ b2
+                      (s1 :: Text.Parsec.Prim.State s u)[OneShot]
+                      (cok :: (GHC.Base.Maybe b -> a)
+                              -> Text.Parsec.Prim.State s u
+                              -> Text.Parsec.Error.ParseError
+                              -> m b2)[OneShot]
+                      (cerr :: Text.Parsec.Error.ParseError -> m b2)[OneShot]
+                      (eok :: (GHC.Base.Maybe b -> a)
+                              -> Text.Parsec.Prim.State s u
+                              -> Text.Parsec.Error.ParseError
+                              -> m b2)[OneShot]
+                      (eerr :: Text.Parsec.Error.ParseError -> m b2)[OneShot] ->
+                    w `cast` (Text.Parsec.Prim.N:ParsecT[0] <s>_R <u>_R <m>_R <a>_R)
+                      @ b2
+                      s1
+                      (\ (x :: a) -> cok (f x))
+                      cerr
+                      (\ (x :: a) -> eok (f x))
+                      eerr)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <s>_R <u>_R <m>_R <GHC.Base.Maybe b -> a>_R))
+                   (\ @ b2
+                      (w8 :: Text.Parsec.Prim.State s u)
+                      (w9 :: GHC.Base.Maybe b
+                             -> Text.Parsec.Prim.State s u
+                             -> Text.Parsec.Error.ParseError
+                             -> m b2)[OneShot]
+                      (w10 :: Text.Parsec.Error.ParseError -> m b2)[OneShot]
+                      (w11 :: GHC.Base.Maybe b
+                              -> Text.Parsec.Prim.State s u
+                              -> Text.Parsec.Error.ParseError
+                              -> m b2)[OneShot]
+                      (w12 :: Text.Parsec.Error.ParseError -> m b2)[OneShot] ->
+                    Text.Parsec.Combinator.$woptionMaybe
+                      @ s
+                      @ m
+                      @ t
+                      @ u
+                      @ b
+                      w1
+                      @ b2
+                      w8
+                      w9
+                      w10
+                      w11)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <s>_R <u>_R <m>_R <GHC.Base.Maybe b>_R))
+                   @ b1
+                   w3
+                   w4
+                   w5
+                   w6
+                   w7) -}
+c6398096303d5012fc62649b6d6525fa
+  $wbuildPostfixParser ::
+    [a -> Text.Parsec.Prim.ParsecT s u m a]
+    -> Text.Parsec.Prim.ParsecT s u m a
+    -> forall b.
+       Text.Parsec.Prim.State s u
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b)
+       -> (Text.Parsec.Error.ParseError -> m b)
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b)
+       -> (Text.Parsec.Error.ParseError -> m b)
+       -> m b
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,U><C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Inline: [0] -}
+b6d295bd54a7d12c61b1dd913a9a1d6a
+  $wcheckIndentation ::
+    (Text.Parsec.Pos.Column -> Data.Text.Internal.Text)
+    -> (Text.Parsec.Pos.Column
+        -> Text.Parsec.Pos.Column -> GHC.Types.Bool)
+    -> forall b.
+       Text.Parsec.Prim.State
+         s Language.PureScript.Parser.State.ParseState
+       -> (()
+           -> Text.Parsec.Prim.State
+                s Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,1*C1(U(U,U,U))><C(C(S)),1*C1(C1(U))><L,U(U,U(U,U,U),U(U))><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0] -}
+e25c379e2f2b425337c50beeb05bb472
+  $wdataConstructorName ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.ConstructorName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ b1
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.Names.ProperName
+                           'Language.PureScript.Names.ConstructorName
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Lexer.$wp1
+                   @ b1
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text)[OneShot] ->
+                    w x `cast`
+                      (Sym (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.ConstructorName>_P)))
+                   (\ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                    w1
+                      (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                       Text.Parsec.Prim.$wsetExpectErrors
+                         ww4
+                         ww5
+                         Language.PureScript.Parser.Lexer.dconsname2 }))) -}
+b413d9b1753c8a64cb6ac7eee9949681
+  $windented :: GHC.Prim.Int# -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+b4279128d0d3d534964a6bed4f446e85
+  $wkindName ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.KindName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ b1
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.Names.ProperName
+                           'Language.PureScript.Names.KindName
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Lexer.$wp1
+                   @ b1
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text)[OneShot] ->
+                    w x `cast`
+                      (Sym (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.KindName>_P)))
+                   (\ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                    w1
+                      (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                       Text.Parsec.Prim.$wsetExpectErrors
+                         ww4
+                         ww5
+                         Language.PureScript.Parser.Lexer.kiname2 }))) -}
+b4e156bfd545d8190110211809bb32a1
+  $wparseIdent ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.Ident
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ b1
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.Names.Ident
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Lexer.$wp3
+                   @ b1
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text)[OneShot] ->
+                    w (Language.PureScript.Names.Ident x))
+                   (\ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                    w1
+                      (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                       Text.Parsec.Prim.$wsetExpectErrors
+                         ww4
+                         ww5
+                         Language.PureScript.Parser.Lexer.identifier2 }))) -}
+a963946f45d24c98676fbc0944455240
+  $wparseLabel ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.PSString.PSString
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S,U><L,U><L,U><L,C(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ b
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.PSString.PSString
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 Language.PureScript.Parser.Lexer.$wp5
+                   @ b
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text)[OneShot] ->
+                    w (Language.PureScript.PSString.mkString1 x)
+                        `cast`
+                      (Sym (Language.PureScript.PSString.N:PSString[0])))
+                   (\ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                    Language.PureScript.Parser.Lexer.$wp10
+                      @ b
+                      ww
+                      ww1
+                      ww2
+                      w
+                      (\ (err1 :: Text.Parsec.Error.ParseError)[OneShot] ->
+                       w1
+                         (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                          case Text.Parsec.Prim.$wsetExpectErrors
+                                 ww4
+                                 ww5
+                                 Language.PureScript.Parser.Lexer.identifier2 of ww6 { Text.Parsec.Error.ParseError ww7 ww8 ->
+                          case ww7 of ww9 { Text.Parsec.Pos.SourcePos ww10 ww11 ww12 ->
+                          case err1 of ww13 { Text.Parsec.Error.ParseError ww14 ww15 ->
+                          case Text.Parsec.Prim.$wsetExpectErrors
+                                 ww14
+                                 ww15
+                                 Language.PureScript.Parser.Lexer.stringLiteral2 of ww16 { Text.Parsec.Error.ParseError ww17 ww18 ->
+                          case ww17 of ww19 { Text.Parsec.Pos.SourcePos ww20 ww21 ww22 ->
+                          case Text.Parsec.Error.$wmergeError
+                                 ww10
+                                 ww11
+                                 ww12
+                                 ww8
+                                 ww20
+                                 ww21
+                                 ww22
+                                 ww18 of ww23 { (#,#) ww24 ww25 ->
+                          Text.Parsec.Error.ParseError ww24 ww25 } } } } } } })))) -}
+9e84f33840e100baf6b61b37afc1ea9c
+  $wparseOperator ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.OpName a
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ a :: Language.PureScript.Names.OpNameType
+                   @ b1
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.Names.OpName a
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Lexer.$wp11
+                   @ b1
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text)[OneShot] ->
+                    w x `cast` (Sym (Language.PureScript.Names.N:OpName[0] <a>_P)))
+                   (\ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                    w1
+                      (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                       Text.Parsec.Prim.$wsetExpectErrors
+                         ww4
+                         ww5
+                         Language.PureScript.Parser.Lexer.symbol2 }))) -}
+da0d540fc15cc4c93554bcb877cfcf99
+  $wparseQualified ::
+    Language.PureScript.Parser.Lexer.TokenParser a
+    -> forall b.
+       [Language.PureScript.Parser.Lexer.PositionedToken]
+       -> Text.Parsec.Pos.SourcePos
+       -> Language.PureScript.Parser.State.ParseState
+       -> (Language.PureScript.Names.Qualified a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken]
+                Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Language.PureScript.Names.Qualified a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken]
+                Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 8,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><S,U><L,U><L,U><L,C(U)><L,C(U)><L,C(C1(C1(U)))><L,C(U)>,
+     Inline: [0] -}
+669251e646ab2d766218d9b3ded90598
+  $wpart ::
+    [Language.PureScript.Names.ProperName
+       'Language.PureScript.Names.Namespace]
+    -> forall b.
+       [Language.PureScript.Parser.Lexer.PositionedToken]
+       -> Text.Parsec.Pos.SourcePos
+       -> Language.PureScript.Parser.State.ParseState
+       -> (Language.PureScript.Names.ModuleName
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken]
+                Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 7,
+     Strictness: <L,U><S,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)><L,C(U)>,
+     Inline: [0] -}
+4ec21d59712716c7fc283118c33e722d
+  $wproperName ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName a
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Inline: [0],
+     Unfolding: (\ @ a :: Language.PureScript.Names.ProperNameType
+                   @ b1
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.Names.ProperName a
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Lexer.$wp12
+                   @ b1
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text) ->
+                    w x `cast` (Sym (Language.PureScript.Names.N:ProperName[0] <a>_P)))
+                   (\ (err :: Text.Parsec.Error.ParseError) ->
+                    w1
+                      (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                       Text.Parsec.Prim.$wsetExpectErrors
+                         ww4
+                         ww5
+                         Language.PureScript.Parser.Lexer.uname2 }))) -}
+4c2cb694259b18333fa2670838c2fdcb
+  $wsame :: GHC.Prim.Int# -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+b58769b248840d0e2fd56518df483385
+  $wtypeName ::
+    [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.TypeName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ b1
+                   (ww :: [Language.PureScript.Parser.Lexer.PositionedToken])
+                   (ww1 :: Text.Parsec.Pos.SourcePos)
+                   (ww2 :: Language.PureScript.Parser.State.ParseState)
+                   (w :: Language.PureScript.Names.ProperName
+                           'Language.PureScript.Names.TypeName
+                         -> Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken]
+                              Language.PureScript.Parser.State.ParseState
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Lexer.$wp1
+                   @ b1
+                   ww
+                   ww1
+                   ww2
+                   (\ (x :: Data.Text.Internal.Text)[OneShot] ->
+                    w x `cast`
+                      (Sym (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.TypeName>_P)))
+                   (\ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                    w1
+                      (case err of ww3 { Text.Parsec.Error.ParseError ww4 ww5 ->
+                       Text.Parsec.Prim.$wsetExpectErrors
+                         ww4
+                         ww5
+                         Language.PureScript.Parser.Lexer.tyname2 }))) -}
+e9f411f22e4ed15223df18eb1d48864e
+  augment ::
+    Text.Parsec.Prim.Stream s m t =>
+    Text.Parsec.Prim.ParsecT s u m a
+    -> Text.Parsec.Prim.ParsecT s u m b
+    -> (a -> b -> a)
+    -> Text.Parsec.Prim.ParsecT s u m a
+  {- Arity: 9, HasNoCafRefs,
+     Strictness: <L,A><C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,C(C1(U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.augment1
+                  `cast`
+                (forall (s :: <*>_N) (m :: <*
+                                            -> *>_N) (t :: <*>_N) (u :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Text.Parsec.Prim.Stream s m t>_R
+                 ->_R <Text.Parsec.Prim.ParsecT s u m a>_R
+                 ->_R <Text.Parsec.Prim.ParsecT s u m b>_R
+                 ->_R <a -> b -> a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <s>_R <u>_R <m>_R <a>_R)) -}
+e12f74a6a54bbb872ff56baa6943ee04
+  augment1 ::
+    Text.Parsec.Prim.Stream s m t =>
+    Text.Parsec.Prim.ParsecT s u m a
+    -> Text.Parsec.Prim.ParsecT s u m b
+    -> (a -> b -> a)
+    -> forall b1.
+       Text.Parsec.Prim.State s u
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b1)
+       -> (Text.Parsec.Error.ParseError -> m b1)
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b1)
+       -> (Text.Parsec.Error.ParseError -> m b1)
+       -> m b1
+  {- Arity: 9, HasNoCafRefs,
+     Strictness: <L,A><C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,C(C1(U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (9, True, True)
+                (\ @ s
+                   @ m :: * -> *
+                   @ t
+                   @ u
+                   @ a
+                   @ b
+                   (w :: Text.Parsec.Prim.Stream s m t)
+                   (w1 :: Text.Parsec.Prim.ParsecT s u m a)
+                   (w2 :: Text.Parsec.Prim.ParsecT s u m b)
+                   (w3 :: a -> b -> a)
+                   @ b1
+                   (w4 :: Text.Parsec.Prim.State s u)
+                   (w5 :: a
+                          -> Text.Parsec.Prim.State s u
+                          -> Text.Parsec.Error.ParseError
+                          -> m b1)
+                   (w6 :: Text.Parsec.Error.ParseError -> m b1)
+                   (w7 :: a
+                          -> Text.Parsec.Prim.State s u
+                          -> Text.Parsec.Error.ParseError
+                          -> m b1)
+                   (w8 :: Text.Parsec.Error.ParseError -> m b1) ->
+                 Language.PureScript.Parser.Common.$waugment
+                   @ s
+                   @ m
+                   @ t
+                   @ u
+                   @ a
+                   @ b
+                   w1
+                   w2
+                   w3
+                   @ b1
+                   w4
+                   w5
+                   w6
+                   w7
+                   w8) -}
+0bd2e87c8916f4bf57e37d9b9eed33c4
+  buildPostfixParser ::
+    Text.Parsec.Prim.Stream s m t =>
+    [a -> Text.Parsec.Prim.ParsecT s u m a]
+    -> Text.Parsec.Prim.ParsecT s u m a
+    -> Text.Parsec.Prim.ParsecT s u m a
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <L,A><L,U><C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.buildPostfixParser1
+                  `cast`
+                (forall (s :: <*>_N) (m :: <*
+                                            -> *>_N) (t :: <*>_N) (a :: <*>_N) (u :: <*>_N).
+                 <Text.Parsec.Prim.Stream s m t>_R
+                 ->_R <[a -> Text.Parsec.Prim.ParsecT s u m a]>_R
+                 ->_R <Text.Parsec.Prim.ParsecT s u m a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <s>_R <u>_R <m>_R <a>_R)) -}
+204ddbf69b5b1d3e361d083da90a659b
+  buildPostfixParser1 ::
+    Text.Parsec.Prim.Stream s m t =>
+    [a -> Text.Parsec.Prim.ParsecT s u m a]
+    -> Text.Parsec.Prim.ParsecT s u m a
+    -> forall b.
+       Text.Parsec.Prim.State s u
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b)
+       -> (Text.Parsec.Error.ParseError -> m b)
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b)
+       -> (Text.Parsec.Error.ParseError -> m b)
+       -> m b
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <L,A><L,U><C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (8, True, True)
+                (\ @ s
+                   @ m :: * -> *
+                   @ t
+                   @ a
+                   @ u
+                   (w :: Text.Parsec.Prim.Stream s m t)
+                   (w1 :: [a -> Text.Parsec.Prim.ParsecT s u m a])
+                   (w2 :: Text.Parsec.Prim.ParsecT s u m a)
+                   @ b
+                   (w3 :: Text.Parsec.Prim.State s u)
+                   (w4 :: a
+                          -> Text.Parsec.Prim.State s u
+                          -> Text.Parsec.Error.ParseError
+                          -> m b)
+                   (w5 :: Text.Parsec.Error.ParseError -> m b)
+                   (w6 :: a
+                          -> Text.Parsec.Prim.State s u
+                          -> Text.Parsec.Error.ParseError
+                          -> m b)
+                   (w7 :: Text.Parsec.Error.ParseError -> m b) ->
+                 Language.PureScript.Parser.Common.$wbuildPostfixParser
+                   @ s
+                   @ m
+                   @ t
+                   @ a
+                   @ u
+                   w1
+                   w2
+                   @ b
+                   w3
+                   w4
+                   w5
+                   w6
+                   w7) -}
+a29237dfc6479563d6167512c8403906
+  checkIndentation ::
+    (Text.Parsec.Pos.Column -> Data.Text.Internal.Text)
+    -> (Text.Parsec.Pos.Column
+        -> Text.Parsec.Pos.Column -> GHC.Types.Bool)
+    -> Text.Parsec.Prim.Parsec
+         s Language.PureScript.Parser.State.ParseState ()
+  {- Arity: 7,
+     Strictness: <L,1*C1(U(U,U,U))><C(C(S)),1*C1(C1(U))><L,U(U,U(U,U,U),U(U))><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.checkIndentation1
+                  `cast`
+                (forall (s :: <*>_N).
+                 <Text.Parsec.Pos.Column -> Data.Text.Internal.Text>_R
+                 ->_R <Text.Parsec.Pos.Column
+                       -> Text.Parsec.Pos.Column -> GHC.Types.Bool>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <s>_R
+                               <Language.PureScript.Parser.State.ParseState>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <()>_R)) -}
+d39eaebb4db0dba0dcbbf76084801779
+  checkIndentation1 ::
+    (Text.Parsec.Pos.Column -> Data.Text.Internal.Text)
+    -> (Text.Parsec.Pos.Column
+        -> Text.Parsec.Pos.Column -> GHC.Types.Bool)
+    -> forall b.
+       Text.Parsec.Prim.State
+         s Language.PureScript.Parser.State.ParseState
+       -> (()
+           -> Text.Parsec.Prim.State
+                s Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (()
+           -> Text.Parsec.Prim.State
+                s Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 7,
+     Strictness: <L,1*C1(U(U,U,U))><C(C(S)),1*C1(C1(U))><L,U(U,U(U,U,U),U(U))><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (7, True, True)
+                (\ @ s
+                   (w :: Text.Parsec.Pos.Column -> Data.Text.Internal.Text)
+                   (w1 :: Text.Parsec.Pos.Column
+                          -> Text.Parsec.Pos.Column -> GHC.Types.Bool)
+                   @ b
+                   (w2 :: Text.Parsec.Prim.State
+                            s Language.PureScript.Parser.State.ParseState)
+                   (w3 :: ()
+                          -> Text.Parsec.Prim.State
+                               s Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w5 :: ()
+                          -> Text.Parsec.Prim.State
+                               s Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w6 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 Language.PureScript.Parser.Common.$wcheckIndentation
+                   @ s
+                   w
+                   w1
+                   @ b
+                   w2
+                   w5
+                   w6) -}
+c673423726cdeac709a9b8a94b91d2d5
+  dataConstructorName ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      (Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ConstructorName)
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.dataConstructorName1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.ConstructorName>_R)) -}
+b9a065d987f8f1f4a75244ce818ce870
+  dataConstructorName1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.ConstructorName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.ConstructorName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.ConstructorName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.ConstructorName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wdataConstructorName
+                   @ b1
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+c86dc0abad51b21aee480b0569ce7c41
+  fold ::
+    Text.Parsec.Prim.ParsecT s u m a
+    -> Text.Parsec.Prim.ParsecT s u m b
+    -> (a -> b -> a)
+    -> Text.Parsec.Prim.ParsecT s u m a
+  {- Arity: 8,
+     Strictness: <C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,C(C1(U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.fold1
+                  `cast`
+                (forall (s :: <*>_N) (u :: <*>_N) (m :: <*
+                                                         -> *>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Text.Parsec.Prim.ParsecT s u m a>_R
+                 ->_R <Text.Parsec.Prim.ParsecT s u m b>_R
+                 ->_R <a -> b -> a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <s>_R <u>_R <m>_R <a>_R)) -}
+af253808922298661bf4e20f47f07c4a
+  fold1 ::
+    Text.Parsec.Prim.ParsecT s u m a
+    -> Text.Parsec.Prim.ParsecT s u m b
+    -> (a -> b -> a)
+    -> forall b1.
+       Text.Parsec.Prim.State s u
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b1)
+       -> (Text.Parsec.Error.ParseError -> m b1)
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> m b1)
+       -> (Text.Parsec.Error.ParseError -> m b1)
+       -> m b1
+  {- Arity: 8,
+     Strictness: <C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,C(C1(U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U> -}
+bc6c10485ef3bfbad029ca5a263a854b
+  indented ::
+    Text.Parsec.Prim.Parsec
+      s Language.PureScript.Parser.State.ParseState ()
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U(U))><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.indented1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <s>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <()>_R)) -}
+71f6befe3bd1beec379b9900d84b4c7e
+  indented1 ::
+    Text.Parsec.Prim.State
+      s Language.PureScript.Parser.State.ParseState
+    -> (()
+        -> Text.Parsec.Prim.State
+             s Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (()
+        -> Text.Parsec.Prim.State
+             s Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U(U))><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Unfolding: (\ @ s
+                   @ b
+                   (w :: Text.Parsec.Prim.State
+                           s Language.PureScript.Parser.State.ParseState)
+                   (w1 :: ()
+                          -> Text.Parsec.Prim.State
+                               s Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: ()
+                          -> Text.Parsec.Prim.State
+                               s Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 Language.PureScript.Parser.Common.$wcheckIndentation
+                   @ s
+                   Language.PureScript.Parser.Common.indented2
+                   GHC.Classes.gtInt
+                   @ b
+                   w
+                   w3
+                   w4) -}
+b1ead2d99bb54558577046a9f0a1a1f9
+  indented2 :: Text.Parsec.Pos.Column -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Text.Parsec.Pos.Column) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.Parser.Common.$windented ww1 }) -}
+85c59bdb688906d737599621e944754c
+  kindName ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      (Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.KindName)
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.kindName1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.KindName>_R)) -}
+3f3cff84c9d9f389a6e32672fda1a5c7
+  kindName1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.KindName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.KindName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.KindName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.KindName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wkindName
+                   @ b1
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+2ad046408a3c133048b49f3cd5cd27f0
+  mark ::
+    Text.Parsec.Prim.Parsec
+      s Language.PureScript.Parser.State.ParseState a
+    -> Text.Parsec.Prim.Parsec
+         s Language.PureScript.Parser.State.ParseState a
+  {- Arity: 6,
+     Strictness: <C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,U(U,U(U,U,U),U(1*U))><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.mark1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <Text.Parsec.Prim.Parsec
+                    s Language.PureScript.Parser.State.ParseState a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <s>_R
+                               <Language.PureScript.Parser.State.ParseState>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <a>_R)) -}
+a2d911f9c556dfbfee5b964a861ae02c
+  mark1 ::
+    Text.Parsec.Prim.Parsec
+      s Language.PureScript.Parser.State.ParseState a
+    -> forall b.
+       Text.Parsec.Prim.State
+         s Language.PureScript.Parser.State.ParseState
+       -> (a
+           -> Text.Parsec.Prim.State
+                s Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (a
+           -> Text.Parsec.Prim.State
+                s Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <C(C(C(C(C(S))))),1*C1(C1(C1(C1(C1(U)))))><L,U(U,U(U,U,U),U(1*U))><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+a4b3dc7f1f6a0f3f18a171cce5dad912
+  moduleName ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      Language.PureScript.Names.ModuleName
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(U,U,U)><L,C(C1(C1(U)))><L,C(U)><L,A><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.moduleName1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.ModuleName>_R)) -}
+9902c89f24724876197b274e5013f179
+  moduleName1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ModuleName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Language.PureScript.Names.ModuleName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(U,U,U)><L,C(C1(C1(U)))><L,C(U)><L,A><L,C(U)>,
+     Unfolding: (\ @ b
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.ModuleName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: Language.PureScript.Names.ModuleName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wpart
+                   (GHC.Types.[]
+                      @ (Language.PureScript.Names.ProperName
+                           'Language.PureScript.Names.Namespace))
+                   @ b
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w2
+                   w4 }) -}
+955eb3247a0ae016694c4b540be1ad3c
+  parseIdent ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      Language.PureScript.Names.Ident
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.parseIdent1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.Ident>_R)) -}
+d70c56512fc1e89934f990cae69f2496
+  parseIdent1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.Ident
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Language.PureScript.Names.Ident
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.Ident
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: Language.PureScript.Names.Ident
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wparseIdent
+                   @ b1
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+5d5f0c60f50fdd7734a4bd8d2727fe88
+  parseLabel ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      Language.PureScript.PSString.PSString
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(U,U,U)><L,C(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.parseLabel1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.PSString.PSString>_R)) -}
+58ee025b63fd8ee17f3ada1506520ede
+  parseLabel1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.PSString.PSString
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Language.PureScript.PSString.PSString
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(U,U,U)><L,C(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.PSString.PSString
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: Language.PureScript.PSString.PSString
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wparseLabel
+                   @ b
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+0f9ad6f2b0ed49a70d76eb8788742d31
+  parseOperator ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      (Language.PureScript.Names.OpName a)
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.parseOperator1
+                  `cast`
+                (forall (a :: <Language.PureScript.Names.OpNameType>_N).
+                 Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.OpName a>_R)) -}
+2e1e0abcfcfc2648a2f4f5519994918b
+  parseOperator1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.OpName a
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Language.PureScript.Names.OpName a
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a :: Language.PureScript.Names.OpNameType
+                   @ b1
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.OpName a
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: Language.PureScript.Names.OpName a
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wparseOperator
+                   @ a
+                   @ b1
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+ac9710478dd7246a70e7f3c6aa1c0eda
+  parseQualified ::
+    Language.PureScript.Parser.Lexer.TokenParser a
+    -> Language.PureScript.Parser.Lexer.TokenParser
+         (Language.PureScript.Names.Qualified a)
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><S(SSS),1*U(U,U,U)><L,C(U)><L,C(U)><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.parseQualified1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Language.PureScript.Parser.Lexer.TokenParser a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                               <Language.PureScript.Parser.State.ParseState>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <Language.PureScript.Names.Qualified a>_R)) -}
+4b76d3598d33329b8c64831dd7b18dde
+  parseQualified1 ::
+    Language.PureScript.Parser.Lexer.TokenParser a
+    -> forall b.
+       Text.Parsec.Prim.State
+         [Language.PureScript.Parser.Lexer.PositionedToken]
+         Language.PureScript.Parser.State.ParseState
+       -> (Language.PureScript.Names.Qualified a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken]
+                Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Language.PureScript.Names.Qualified a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken]
+                Language.PureScript.Parser.State.ParseState
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><S(SSS),1*U(U,U,U)><L,C(U)><L,C(U)><L,C(C1(C1(U)))><L,C(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   (w :: Language.PureScript.Parser.Lexer.TokenParser a)
+                   @ b
+                   (w1 :: Text.Parsec.Prim.State
+                            [Language.PureScript.Parser.Lexer.PositionedToken]
+                            Language.PureScript.Parser.State.ParseState)
+                   (w2 :: Language.PureScript.Names.Qualified a
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Language.PureScript.Names.Qualified a
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w5 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w1 of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wparseQualified
+                   @ a
+                   w
+                   @ b
+                   ww1
+                   ww2
+                   ww3
+                   w2
+                   w3
+                   w4
+                   w5 }) -}
+0e6e637731d45ae3c8a5e4efcad68e14
+  properName ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      (Language.PureScript.Names.ProperName a)
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,C(C1(C1(U)))><L,A><L,A><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.properName1
+                  `cast`
+                (forall (a :: <Language.PureScript.Names.ProperNameType>_N).
+                 Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.ProperName a>_R)) -}
+c0ae8e5b9dfdb59a76265051e91bc883
+  properName1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName a
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Language.PureScript.Names.ProperName a
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,C(C1(C1(U)))><L,A><L,A><L,C(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a :: Language.PureScript.Names.ProperNameType
+                   @ b1
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.ProperName a
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: Language.PureScript.Names.ProperName a
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wproperName
+                   @ a
+                   @ b1
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+4f4d95fb63de1698482287acd63d2ead
+  readComments ::
+    Text.Parsec.Prim.Parsec
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      u
+      [Language.PureScript.Comments.Comment]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.readComments1
+                  `cast`
+                (forall (u :: <*>_N).
+                 Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <u>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <[Language.PureScript.Comments.Comment]>_R)) -}
+dd80ea7a566fbcb9cdbe06f4a8cb3632
+  readComments1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken] u
+    -> ([Language.PureScript.Comments.Comment]
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken] u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ([Language.PureScript.Comments.Comment]
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken] u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ u
+                   @ b
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken] u)
+                   (w1 :: [Language.PureScript.Comments.Comment]
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken] u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: [Language.PureScript.Comments.Comment]
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken] u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 case ww1 of wild {
+                   []
+                   -> w4
+                        (Text.Parsec.Error.ParseError ww2 Text.Parsec.Combinator.anyToken2)
+                   : t ts
+                   -> w3
+                        (case t of wild1 { Language.PureScript.Parser.Lexer.PositionedToken ds1 ds2 ds3 ds4 ds5 ->
+                         ds5 })
+                        (Text.Parsec.Prim.State
+                           @ [Language.PureScript.Parser.Lexer.PositionedToken]
+                           @ u
+                           wild
+                           ww2
+                           ww3)
+                        (Text.Parsec.Error.ParseError
+                           ww2
+                           (GHC.Types.[] @ Text.Parsec.Error.Message)) } }) -}
+22c139ae6db58097fa5b3743e91aefec
+  runTokenParser ::
+    GHC.IO.FilePath
+    -> Language.PureScript.Parser.Lexer.TokenParser a
+    -> [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Data.Either.Either Text.Parsec.Error.ParseError a
+  {- Arity: 3, Strictness: <L,U><L,1*C1(C1(C1(C1(C1(U)))))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.runTokenParser1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.IO.FilePath>_R
+                 ->_R <Language.PureScript.Parser.Lexer.TokenParser a>_R
+                 ->_R <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                 ->_R Data.Functor.Identity.N:Identity[0]
+                          <Data.Either.Either Text.Parsec.Error.ParseError a>_R) -}
+06026e2307b1c9dd4a6079375b1fc924
+  runTokenParser1 ::
+    GHC.IO.FilePath
+    -> Language.PureScript.Parser.Lexer.TokenParser a
+    -> [Language.PureScript.Parser.Lexer.PositionedToken]
+    -> Data.Functor.Identity.Identity
+         (Data.Either.Either Text.Parsec.Error.ParseError a)
+  {- Arity: 3, Strictness: <L,U><L,1*C1(C1(C1(C1(C1(U)))))><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (filePath :: GHC.IO.FilePath)
+                   (p :: Language.PureScript.Parser.Lexer.TokenParser a)
+                   (eta :: [Language.PureScript.Parser.Lexer.PositionedToken]) ->
+                 Text.Parsec.Prim.runPT
+                   @ [Language.PureScript.Parser.Lexer.PositionedToken]
+                   @ Data.Functor.Identity.Identity
+                   @ Language.PureScript.Parser.Lexer.PositionedToken
+                   @ Language.PureScript.Parser.State.ParseState
+                   @ a
+                   (Language.PureScript.Parser.Common.$s$fStream[]mtok
+                      @ Language.PureScript.Parser.Lexer.PositionedToken)
+                   p
+                   Language.PureScript.Parser.Common.runTokenParser2
+                   filePath
+                   eta) -}
+efb53a8cdc757c459e1abc2addc83d50
+  runTokenParser2 :: Language.PureScript.Parser.State.ParseState
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.PureScript.Parser.State.ParseState
+                   Language.PureScript.Parser.Common.runTokenParser3) -}
+4c61016adf69090e827b44df804718b6
+  runTokenParser3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+f899cc54828f4d66d21063bc6fd9a8de
+  same ::
+    Text.Parsec.Prim.Parsec
+      s Language.PureScript.Parser.State.ParseState ()
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U(U))><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.same1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <s>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <()>_R)) -}
+944b0075faa1591e3388623515663780
+  same1 ::
+    Text.Parsec.Prim.State
+      s Language.PureScript.Parser.State.ParseState
+    -> (()
+        -> Text.Parsec.Prim.State
+             s Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (()
+        -> Text.Parsec.Prim.State
+             s Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U(U))><L,A><L,A><L,1*C1(C1(C1(U)))><L,1*C1(U)>,
+     Unfolding: (\ @ s
+                   @ b
+                   (w :: Text.Parsec.Prim.State
+                           s Language.PureScript.Parser.State.ParseState)
+                   (w1 :: ()
+                          -> Text.Parsec.Prim.State
+                               s Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: ()
+                          -> Text.Parsec.Prim.State
+                               s Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 Language.PureScript.Parser.Common.$wcheckIndentation
+                   @ s
+                   Language.PureScript.Parser.Common.same2
+                   GHC.Classes.eqInt
+                   @ b
+                   w
+                   w3
+                   w4) -}
+99407de4c6799b985b3479236cdf2254
+  same2 :: Text.Parsec.Pos.Column -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Text.Parsec.Pos.Column) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.Parser.Common.$wsame ww1 }) -}
+71cf21379f9fd1b46ee2659589f2b56e
+  toSourcePos ::
+    Text.Parsec.Pos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourcePos
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (pos :: Text.Parsec.Pos.SourcePos) ->
+                 Language.PureScript.AST.SourcePos.SourcePos
+                   (Text.Parsec.Pos.sourceLine pos)
+                   (Text.Parsec.Pos.sourceColumn pos)) -}
+ae3f3b3362cf8cb09f694b81d7def8b1
+  typeName ::
+    Language.PureScript.Parser.Lexer.TokenParser
+      (Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.TypeName)
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.typeName1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                          <Language.PureScript.Parser.State.ParseState>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.TypeName>_R)) -}
+7d294d098fefdf20b1c908a3f03f17fb
+  typeName1 ::
+    Text.Parsec.Prim.State
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      Language.PureScript.Parser.State.ParseState
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.TypeName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.TypeName
+        -> Text.Parsec.Prim.State
+             [Language.PureScript.Parser.Lexer.PositionedToken]
+             Language.PureScript.Parser.State.ParseState
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   (w :: Text.Parsec.Prim.State
+                           [Language.PureScript.Parser.Lexer.PositionedToken]
+                           Language.PureScript.Parser.State.ParseState)
+                   (w1 :: Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.TypeName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.TypeName
+                          -> Text.Parsec.Prim.State
+                               [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.State.ParseState
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Language.PureScript.Parser.Common.$wtypeName
+                   @ b1
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w4 }) -}
+84117a8980c6ce2bda979df2553ad121
+  withSourceAnnF ::
+    Text.Parsec.Prim.Parsec
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      u
+      (Language.PureScript.AST.SourcePos.SourceAnn -> a)
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u a
+  {- Arity: 6,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ u @ a ->
+                 Language.PureScript.Parser.Common.withSourceAnnF1 @ a @ u)
+                  `cast`
+                (forall (u :: <*>_N) (a :: <*>_N).
+                 <Text.Parsec.Prim.Parsec
+                    [Language.PureScript.Parser.Lexer.PositionedToken]
+                    u
+                    ((Language.PureScript.AST.SourcePos.SourceSpan,
+                      [Language.PureScript.Comments.Comment])
+                     -> a)>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                               <u>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <a>_R)) -}
+2883bce855c3b7ddcca5cdfcdadc7877
+  withSourceAnnF1 ::
+    Text.Parsec.Prim.Parsec
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      u
+      ((Language.PureScript.AST.SourcePos.SourceSpan,
+        [Language.PureScript.Comments.Comment])
+       -> a)
+    -> forall b.
+       Text.Parsec.Prim.State
+         [Language.PureScript.Parser.Lexer.PositionedToken] u
+       -> (a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Unfolding: (\ @ a @ u ->
+                 Language.PureScript.Parser.Common.withSourceAnnF3
+                   @ ((Language.PureScript.AST.SourcePos.SourceSpan,
+                       [Language.PureScript.Comments.Comment])
+                      -> a)
+                   @ a
+                   @ u
+                   (Language.PureScript.Parser.Common.withSourceAnnF2 @ a)) -}
+e0c423226a0cb858b595713daac48661
+  withSourceAnnF2 ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> [Language.PureScript.Comments.Comment]
+    -> ((Language.PureScript.AST.SourcePos.SourceSpan,
+         [Language.PureScript.Comments.Comment])
+        -> a)
+    -> a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (ss :: Language.PureScript.AST.SourcePos.SourceSpan)
+                   (com :: [Language.PureScript.Comments.Comment])
+                   (f :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                          [Language.PureScript.Comments.Comment])
+                         -> a) ->
+                 f (ss, com)) -}
+ee2dfaece87997bc2be7db8c92177eec
+  withSourceAnnF3 ::
+    (Language.PureScript.AST.SourcePos.SourceSpan
+     -> [Language.PureScript.Comments.Comment] -> a -> b)
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u a
+    -> forall b1.
+       Text.Parsec.Prim.State
+         [Language.PureScript.Parser.Lexer.PositionedToken] u
+       -> (b
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> (b
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> Data.Functor.Identity.Identity b1
+  {- Arity: 7,
+     Strictness: <L,C(C1(C1(U)))><L,1*C1(C1(C1(C1(C1(U)))))><S(SSS),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+c64753ccc1f09925712afdb91cea8bb9
+  withSourceSpan ::
+    (Language.PureScript.AST.SourcePos.SourceSpan
+     -> [Language.PureScript.Comments.Comment] -> a -> b)
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u a
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u b
+  {- Arity: 7,
+     Strictness: <L,C(C1(C1(U)))><L,1*C1(C1(C1(C1(C1(U)))))><S(SSS),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.withSourceAnnF3
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N) (u :: <*>_N).
+                 <Language.PureScript.AST.SourcePos.SourceSpan
+                  -> [Language.PureScript.Comments.Comment] -> a -> b>_R
+                 ->_R <Text.Parsec.Prim.Parsec
+                         [Language.PureScript.Parser.Lexer.PositionedToken] u a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                               <u>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <b>_R)) -}
+aa5f8079b29a1c75acc68e838ced81c3
+  withSourceSpan' ::
+    (Language.PureScript.AST.SourcePos.SourceSpan -> a -> b)
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u a
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u b
+  {- Arity: 7,
+     Strictness: <L,C(C1(U))><L,1*C1(C1(C1(C1(C1(U)))))><S(SSS),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Parser.Common.withSourceSpan'1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N) (u :: <*>_N).
+                 <Language.PureScript.AST.SourcePos.SourceSpan -> a -> b>_R
+                 ->_R <Text.Parsec.Prim.Parsec
+                         [Language.PureScript.Parser.Lexer.PositionedToken] u a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                               <u>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <b>_R)) -}
+c6aa9fd8b3ce66867f95e185c8f076da
+  withSourceSpan'1 ::
+    (Language.PureScript.AST.SourcePos.SourceSpan -> a -> b)
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u a
+    -> forall b1.
+       Text.Parsec.Prim.State
+         [Language.PureScript.Parser.Lexer.PositionedToken] u
+       -> (b
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> (b
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b1)
+       -> Data.Functor.Identity.Identity b1
+  {- Arity: 7,
+     Strictness: <L,C(C1(U))><L,1*C1(C1(C1(C1(C1(U)))))><S(SSS),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (7, True, False)
+                (\ @ a
+                   @ b
+                   @ u
+                   (f :: Language.PureScript.AST.SourcePos.SourceSpan -> a -> b)
+                   (eta :: Text.Parsec.Prim.Parsec
+                             [Language.PureScript.Parser.Lexer.PositionedToken] u a)
+                   @ b1
+                   (eta1 :: Text.Parsec.Prim.State
+                              [Language.PureScript.Parser.Lexer.PositionedToken] u)
+                   (eta2 :: b
+                            -> Text.Parsec.Prim.State
+                                 [Language.PureScript.Parser.Lexer.PositionedToken] u
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b1)
+                   (eta3 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b1)
+                   (eta4 :: b
+                            -> Text.Parsec.Prim.State
+                                 [Language.PureScript.Parser.Lexer.PositionedToken] u
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b1)
+                   (eta5 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b1) ->
+                 Language.PureScript.Parser.Common.withSourceAnnF3
+                   @ a
+                   @ b
+                   @ u
+                   (\ (ss :: Language.PureScript.AST.SourcePos.SourceSpan)
+                      (ds :: [Language.PureScript.Comments.Comment])[OneShot] ->
+                    f ss)
+                   eta
+                   @ b1
+                   eta1
+                   eta2
+                   eta3
+                   eta4
+                   eta5) -}
+b4f5349a85067feb202053d8eb0a2e4a
+  withSourceSpanF ::
+    Text.Parsec.Prim.Parsec
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      u
+      (Language.PureScript.AST.SourcePos.SourceSpan -> a)
+    -> Text.Parsec.Prim.Parsec
+         [Language.PureScript.Parser.Lexer.PositionedToken] u a
+  {- Arity: 6,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ u @ a ->
+                 Language.PureScript.Parser.Common.withSourceSpanF1 @ a @ u)
+                  `cast`
+                (forall (u :: <*>_N) (a :: <*>_N).
+                 <Text.Parsec.Prim.Parsec
+                    [Language.PureScript.Parser.Lexer.PositionedToken]
+                    u
+                    (Language.PureScript.AST.SourcePos.SourceSpan -> a)>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                               <u>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <a>_R)) -}
+a7137673c6849a2a872fc38a5081d7a9
+  withSourceSpanF1 ::
+    Text.Parsec.Prim.Parsec
+      [Language.PureScript.Parser.Lexer.PositionedToken]
+      u
+      (Language.PureScript.AST.SourcePos.SourceSpan -> a)
+    -> forall b.
+       Text.Parsec.Prim.State
+         [Language.PureScript.Parser.Lexer.PositionedToken] u
+       -> (a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (a
+           -> Text.Parsec.Prim.State
+                [Language.PureScript.Parser.Lexer.PositionedToken] u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Unfolding: (\ @ a @ u ->
+                 Language.PureScript.Parser.Common.withSourceAnnF3
+                   @ (Language.PureScript.AST.SourcePos.SourceSpan -> a)
+                   @ a
+                   @ u
+                   (Language.PureScript.Parser.Common.withSourceSpanF2 @ a)) -}
+f3a7b36fbb42b12401e83d49445d9b5c
+  withSourceSpanF2 ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> [Language.PureScript.Comments.Comment]
+    -> (Language.PureScript.AST.SourcePos.SourceSpan -> a)
+    -> a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (ss :: Language.PureScript.AST.SourcePos.SourceSpan)
+                   (ds :: [Language.PureScript.Comments.Comment])
+                   (f :: Language.PureScript.AST.SourcePos.SourceSpan -> a) ->
+                 f ss) -}
+"SPEC/Language.PureScript.Parser.Common $fStream[]mtok @ Identity _" [orphan] forall @ tok
+                                                                                     (v :: GHC.Base.Monad
+                                                                                             Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok @ Data.Functor.Identity.Identity
+                                  @ tok
+                                  v
+  = Language.PureScript.Parser.Common.$s$fStream[]mtok @ tok
+"SPEC/Language.PureScript.Parser.Common $fStream[]mtok_$cuncons @ Identity _" [orphan] forall @ tok
+                                                                                              ($dMonad :: GHC.Base.Monad
+                                                                                                            Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ Data.Functor.Identity.Identity
+                                           @ tok
+                                           $dMonad
+  = Language.PureScript.Parser.Common.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+      @ tok
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

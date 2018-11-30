@@ -1,0 +1,736 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:34.390339 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Filter 8043
+  interface hash: 7158505ea3e2151800242b2df28ac810
+  ABI hash: 50b2d29cb1abfaa784b156240c68fe4c
+  export-list hash: 637f60371a0d3b30fa27cd80b15c4708
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ba6250971b0b8cd51a39b9d35d979db4
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Ide.Filter.applyFilters
+  Language.PureScript.Ide.Filter.declarationTypeFilter
+  Language.PureScript.Ide.Filter.equalityFilter
+  Language.PureScript.Ide.Filter.moduleFilter
+  Language.PureScript.Ide.Filter.namespaceFilter
+  Language.PureScript.Ide.Filter.prefixFilter
+  Language.PureScript.Ide.Filter.Filter
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Errors.JSON
+                     Language.PureScript.Externs Language.PureScript.Ide.Error
+                     Language.PureScript.Ide.Filter.Declaration
+                     Language.PureScript.Ide.Logging Language.PureScript.Ide.Types
+                     Language.PureScript.Ide.Util Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript System.IO.UTF8
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      auto-update-0.1.4 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 clock-0.7.2
+                      colour-2.3.4 conduit-1.3.0.3 conduit-extra-1.3.0
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      directory-1.3.1.5 dlist-0.8.0.4 easy-file-0.2.2 exceptions-0.10.0
+                      fast-logger-2.4.11 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      lifted-base-0.2.3.12 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 monad-control-1.0.2.3 monad-logger-0.3.28.5
+                      monad-loops-0.4.3 mtl-2.2.2 old-locale-1.0.0.7 old-time-1.1.0.3
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      resourcet-1.2.1 safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 stm-chans-3.0.0.4 stringsearch-0.3.6.6
+                      syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 transformers-base-0.4.5.2 unix-2.7.2.2
+                      unix-time-0.3.8 unliftio-core-0.1.1.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: unix-time-0.3.8:Data.UnixTime.Diff
+         syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         clock-0.7.2:System.Clock
+                         conduit-1.3.0.3:Data.Conduit.Internal.Conduit
+                         conduit-1.3.0.3:Data.Conduit.Internal.Pipe
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         monad-logger-0.3.28.5:Control.Monad.Logger
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.3.1.1:Data.Aeson 108dfb08de41cf77aad4693ac1dc3d44
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.FromJSON 1ea0c919856f0d29f12e53cd074d532c
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List.NonEmpty 595ee3baddcadebc4831ea7541427984
+import  -/  base-4.11.1.0:Data.Semigroup.Internal 3e64145a879c21fc4c6fc83e5d8ca93b
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.Ide.Filter.Declaration 1e82d2968d3105ac24bedcc327dde437
+  exports: 68c18e384f0a304d31d00dbcbd8bdc24
+  IdeDeclaration 90301ca8642a583770d5c5ebccbc7cf7
+  typeDeclarationForDeclaration 92ebb84374814385c3284c39ad52a1b1
+import  -/  Language.PureScript.Ide.Types d9d9fd4c2b6a1fdeece731a5e8479937
+  exports: dd47afbd66baea5bbcdd5e2641556a91
+  IdeDeclaration 9a139a83eccdb4ce038336f38d1d61cf
+  IdeDeclarationAnn 9e61215f32f4caed313e4d158f96dea0
+  IdeNamespace bf12ce78c741411b8db21a537727174e
+import  -/  Language.PureScript.Ide.Util 28758b8888c6917067d0548bee7740c5
+  exports: 984706b8dc3d9ad9746cf1d4cf6cd995
+  discardAnn e44cc83d97b0cc6922e7f0b3fcd27b9e
+  identifierFromIdeDeclaration 587930a1f9803f80a2100aa4013f1b14
+  namespaceForDeclaration fb8520067cf09d3b9d73902667de2e29
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  moduleNameFromString 79d26c792a293f252a003f5d0f01ddc4
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+d16290b775e24aa2734913a868cf34af
+  $fFromJSONFilter ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      Language.PureScript.Ide.Filter.Filter
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Ide.Filter.Filter
+                  Language.PureScript.Ide.Filter.$fFromJSONFilter_$cparseJSON
+                  Language.PureScript.Ide.Filter.$fFromJSONFilter_$cparseJSONList -}
+8429873d968bfd76ac2def60f87df51f
+  $fFromJSONFilter1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (", encountered "#) -}
+1b7f7600bd494b03ca40270b9220e175
+  $fFromJSONFilter2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("[a]"#) -}
+1862119b50d56ef27c2a9bcc842c322b
+  $fFromJSONFilter3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("expected "#) -}
+d16290b775e24aa2734913a868cf34af
+  $fFromJSONFilter4 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.Ide.Filter.Filter
+  {- Arity: 1, Strictness: <L,U> -}
+47c5fa9fd5fe2a627fea1ef660bdc86c
+  $fFromJSONFilter5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Ide.Filter.$fFromJSONFilter6) -}
+e05f9bd19a240a0ca645ae8b74a1a970
+  $fFromJSONFilter6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("filter"#) -}
+d16290b775e24aa2734913a868cf34af
+  $fFromJSONFilter_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.Ide.Filter.Filter
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ Language.PureScript.Ide.Filter.Filter
+                   Language.PureScript.Ide.Filter.$fFromJSONFilter5
+                   Language.PureScript.Ide.Filter.$fFromJSONFilter4) -}
+d16290b775e24aa2734913a868cf34af
+  $fFromJSONFilter_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Ide.Filter.Filter]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> let {
+                        msg1 :: GHC.Base.String
+                        = GHC.CString.unpackAppendCString#
+                            Language.PureScript.Ide.Filter.$fFromJSONFilter3
+                            (GHC.CString.unpackAppendCString#
+                               Language.PureScript.Ide.Filter.$fFromJSONFilter2
+                               (GHC.CString.unpackAppendCString#
+                                  Language.PureScript.Ide.Filter.$fFromJSONFilter1
+                                  (case wild of wild1 {
+                                     Data.Aeson.Types.Internal.Object ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                     Data.Aeson.Types.Internal.String ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList8
+                                     Data.Aeson.Types.Internal.Number ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                     Data.Aeson.Types.Internal.Bool ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (_ks :: Data.Aeson.Types.Internal.Success
+                                   [Language.PureScript.Ide.Filter.Filter] f4 r) ->
+                       kf
+                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                         msg1)
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Language.PureScript.Ide.Filter.Filter]>_R))
+                   Data.Aeson.Types.Internal.Array a2
+                   -> case a2 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      letrec {
+                        $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) ->
+                          case GHC.Prim.>=# ww dt1 of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.indexArray#
+                                      @ Data.Aeson.Types.Internal.Value
+                                      dt2
+                                      (GHC.Prim.+# dt ww) of ds3 { Unit# ipv ->
+                               GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ipv
+                                 ($wgo (GHC.Prim.+# ww 1#)) }
+                            1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                      } in
+                      Language.PureScript.Ide.Filter.$fFromJSONFilter_go
+                        0#
+                        ($wgo 0#) } }) -}
+d16290b775e24aa2734913a868cf34af
+  $fFromJSONFilter_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Ide.Filter.Filter]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+d16290b775e24aa2734913a868cf34af
+  $fMonoidFilter ::
+    GHC.Base.Monoid Language.PureScript.Ide.Filter.Filter
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Ide.Filter.Filter
+                  Language.PureScript.Ide.Filter.$fSemigroupFilter
+                  (GHC.Base.id @ [Language.PureScript.Ide.Filter.Module])
+                    `cast`
+                  (Sym (Data.Semigroup.Internal.N:Endo[0]
+                            <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                  (GHC.Base..
+                     @ [Language.PureScript.Ide.Filter.Module]
+                     @ [Language.PureScript.Ide.Filter.Module]
+                     @ [Language.PureScript.Ide.Filter.Module])
+                    `cast`
+                  ((Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                   ->_R (Sym (Data.Semigroup.Internal.N:Endo[0]
+                                  <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                   ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                                 <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                  (Data.Semigroup.Internal.$fMonoidEndo1
+                     @ [Language.PureScript.Ide.Filter.Module])
+                    `cast`
+                  (([Sym (Language.PureScript.Ide.Filter.N:Filter[0])])_R
+                   ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                                 <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0])) -}
+d16290b775e24aa2734913a868cf34af
+  $fSemigroupFilter ::
+    GHC.Base.Semigroup Language.PureScript.Ide.Filter.Filter
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Ide.Filter.Filter
+                  (GHC.Base..
+                     @ [Language.PureScript.Ide.Filter.Module]
+                     @ [Language.PureScript.Ide.Filter.Module]
+                     @ [Language.PureScript.Ide.Filter.Module])
+                    `cast`
+                  ((Sym (Data.Semigroup.Internal.N:Endo[0]
+                             <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                   ->_R (Sym (Data.Semigroup.Internal.N:Endo[0]
+                                  <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                   ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                                 <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                  (Data.Semigroup.Internal.$fSemigroupEndo_$csconcat
+                     @ [Language.PureScript.Ide.Filter.Module])
+                    `cast`
+                  ((GHC.Base.NonEmpty
+                      (Sym (Language.PureScript.Ide.Filter.N:Filter[0])))_R
+                   ->_R Sym (Language.PureScript.Ide.Filter.N:Filter[0]))
+                  (Data.Semigroup.Internal.$fSemigroupEndo_$cstimes
+                     @ [Language.PureScript.Ide.Filter.Module])
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Real.Integral b>_R
+                   ->_R <b>_R
+                   ->_R Sym (Language.PureScript.Ide.Filter.N:Filter[0])
+                   ->_R Sym (Language.PureScript.Ide.Filter.N:Filter[0])) -}
+42340636ab97c76d52823a6d018e79a9
+  $tc'Filter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16331703433593243907##
+                   10509979824134144624##
+                   Language.PureScript.Ide.Filter.$trModule
+                   Language.PureScript.Ide.Filter.$tc'Filter2
+                   0#
+                   Language.PureScript.Ide.Filter.$tc'Filter1) -}
+6bae5c07d46ffc40a555d0bdac2c41b5
+  $tc'Filter1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c8eae18c1ddf3ef3965477ccb91a93ef
+  $tc'Filter2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Filter.$tc'Filter3) -}
+7e422bce34e8d98c1c042d21468f8718
+  $tc'Filter3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Filter"#) -}
+367f18709c5a39de95ce0c705fa5dc59
+  $tcFilter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11350998980601577996##
+                   248759935940344639##
+                   Language.PureScript.Ide.Filter.$trModule
+                   Language.PureScript.Ide.Filter.$tcFilter1
+                   0#
+                   GHC.Types.krep$*) -}
+0a3e873c2f4dba3752a7774daa55b949
+  $tcFilter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Filter.$tcFilter2) -}
+41f28ff9dff3747c907b66a9292b8842
+  $tcFilter2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Filter"#) -}
+0665ae086a6c0bb0a9e054f03e725699
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Ide.Filter.$trModule3
+                   Language.PureScript.Ide.Filter.$trModule1) -}
+a37d5e64a9f9cad5d2075e2223abc41b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Filter.$trModule2) -}
+2683578c24f8c0fd7dfdb8a6e5d587bb
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Ide.Filter"#) -}
+0072165dc255c3b06f1e45355e2259cd
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Filter.$trModule4) -}
+54326e4d3fd3009170267cc49209c085
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+cd3636f4f2fd20600df2609007187e6a
+  $wprefixFilter ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.PureScript.Ide.Filter.Filter
+  {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
+d16290b775e24aa2734913a868cf34af
+  newtype Filter
+    = Filter (Data.Semigroup.Internal.Endo
+                [Language.PureScript.Ide.Filter.Module])
+3d51b0da1a92751ff17c41ea76e583ab
+  type Module =
+    (Language.PureScript.Names.ModuleName,
+     [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+90db5f2c90ec17be4334327f7951c7f9
+  applyFilters ::
+    [Language.PureScript.Ide.Filter.Filter]
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (x :: [Language.PureScript.Ide.Filter.Filter]) ->
+                 Language.PureScript.Ide.Filter.applyFilters1 x) -}
+615da2cfe9d8aae5e43d2145db9f260c
+  applyFilters1 ::
+    [Language.PureScript.Ide.Filter.Filter]
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+90a61eae642ed2c76fc39402d8226d73
+  declarationTypeFilter ::
+    [Language.PureScript.Ide.Filter.Declaration.IdeDeclaration]
+    -> Language.PureScript.Ide.Filter.Filter
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Ide.Filter.declarationTypeFilter1
+                  `cast`
+                (<[Language.PureScript.Ide.Filter.Declaration.IdeDeclaration]>_R
+                 ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                               <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0])) -}
+81b67b6a2c4cdc5a97480a7c5988f96c
+  declarationTypeFilter1 ::
+    [Language.PureScript.Ide.Filter.Declaration.IdeDeclaration]
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: [Language.PureScript.Ide.Filter.Declaration.IdeDeclaration])
+                   (eta :: [Language.PureScript.Ide.Filter.Module]) ->
+                 case ds of wild {
+                   [] -> eta
+                   : ipv ipv1
+                   -> Language.PureScript.Ide.Filter.filterModuleDecls
+                        (\ (decl :: Language.PureScript.Ide.Types.IdeDeclaration) ->
+                         GHC.List.elem
+                           @ Language.PureScript.Ide.Filter.Declaration.IdeDeclaration
+                           Language.PureScript.Ide.Filter.Declaration.$fEqIdeDeclaration
+                           (case decl of wild1 {
+                              Language.PureScript.Ide.Types.IdeDeclValue ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.Value
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclType ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.Type
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclTypeSynonym ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.Synonym
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclDataConstructor ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.DataConstructor
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclTypeClass ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.TypeClass
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclValueOperator ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.ValueOperator
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclTypeOperator ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.TypeOperator
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0]))
+                              Language.PureScript.Ide.Types.IdeDeclKind ds1
+                              -> Language.PureScript.Ide.Filter.Declaration.Kind
+                                   `cast`
+                                 (Sym (Language.PureScript.Ide.Filter.Declaration.N:IdeDeclaration[0])) })
+                           wild)
+                        eta }) -}
+02055be79f512f544fd0364f8ac2fb3d
+  equalityFilter ::
+    Data.Text.Internal.Text -> Language.PureScript.Ide.Filter.Filter
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Ide.Filter.equalityFilter_g
+                  `cast`
+                (<Data.Text.Internal.Text>_R
+                 ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                               <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0])) -}
+ad520429a2c018d6e262e41df5c1e9bd
+  equalityFilter_g ::
+    Data.Text.Internal.Text
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,1*U>,
+     Unfolding: (\ (search :: Data.Text.Internal.Text)
+                   (eta :: [Language.PureScript.Ide.Filter.Module]) ->
+                 Language.PureScript.Ide.Filter.filterModuleDecls
+                   (\ (y :: Language.PureScript.Ide.Types.IdeDeclaration) ->
+                    case Language.PureScript.Ide.Util.identifierFromIdeDeclaration
+                           y of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                    case search of wild1 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                    case GHC.Prim.==# dt2 dt5 of lwild {
+                      DEFAULT -> GHC.Types.False
+                      1#
+                      -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
+                                                        -> GHC.Prim.Word#
+                                                        -> GHC.Prim.ByteArray#
+                                                        -> GHC.Prim.Word#
+                                                        -> GHC.Prim.Word#
+                                                        -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                        -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                              GHC.Prim.Int# #)}
+                                dt
+                                (GHC.Prim.int2Word# dt1)
+                                dt3
+                                (GHC.Prim.int2Word# dt4)
+                                (GHC.Prim.int2Word# dt2)
+                                GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                         case GHC.Prim.narrow32Int# ds3 of wild2 {
+                           DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } } })
+                   eta) -}
+9c3633e62fd270e9e00d2ce3e84ab662
+  filterModuleDecls ::
+    (Language.PureScript.Ide.Types.IdeDeclaration -> GHC.Types.Bool)
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ (predicate :: Language.PureScript.Ide.Types.IdeDeclaration
+                                 -> GHC.Types.Bool)
+                   (eta :: [(Language.PureScript.Names.ModuleName,
+                             [Language.PureScript.Ide.Types.IdeDeclarationAnn])]) ->
+                 let {
+                   lvl37 :: Language.PureScript.Ide.Types.IdeDeclarationAnn
+                            -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <L,1*U(A,1*U)>,
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ (x :: Language.PureScript.Ide.Types.IdeDeclarationAnn) ->
+                                    predicate (Language.PureScript.Ide.Util.discardAnn x)) -}
+                   = \ (x :: Language.PureScript.Ide.Types.IdeDeclarationAnn) ->
+                     predicate (Language.PureScript.Ide.Util.discardAnn x)
+                 } in
+                 letrec {
+                   go1 :: [(Language.PureScript.Names.ModuleName,
+                            [Language.PureScript.Ide.Types.IdeDeclarationAnn])]
+                          -> [(Language.PureScript.Names.ModuleName,
+                               [Language.PureScript.Ide.Types.IdeDeclarationAnn])]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [(Language.PureScript.Names.ModuleName,
+                                [Language.PureScript.Ide.Types.IdeDeclarationAnn])]) ->
+                     case ds of wild {
+                       []
+                       -> GHC.Types.[]
+                            @ (Language.PureScript.Names.ModuleName,
+                               [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                       : y ys
+                       -> case y of wild1 { (,) moduleIdent decls ->
+                          case GHC.List.filter
+                                 @ Language.PureScript.Ide.Types.IdeDeclarationAnn
+                                 lvl37
+                                 decls of wild2 {
+                            [] -> go1 ys
+                            : ds1 ds2
+                            -> GHC.Types.:
+                                 @ (Language.PureScript.Names.ModuleName,
+                                    [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                                 (moduleIdent, wild2)
+                                 (go1 ys) } } }
+                 } in
+                 go1 eta) -}
+e98835bb7ccccf75090e4cc3780fc942
+  moduleFilter ::
+    [Language.PureScript.Names.ModuleName]
+    -> Language.PureScript.Ide.Filter.Filter
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Ide.Filter.moduleFilter'
+                  `cast`
+                (<[Language.PureScript.Names.ModuleName]>_R
+                 ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                               <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0])) -}
+078757fa51b941a46db41ca77a05f65b
+  moduleFilter' ::
+    [Language.PureScript.Names.ModuleName]
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (moduleIdents :: [Language.PureScript.Names.ModuleName])
+                   (eta :: [(Language.PureScript.Names.ModuleName,
+                             [Language.PureScript.Ide.Types.IdeDeclarationAnn])]) ->
+                 GHC.Base.build
+                   @ (Language.PureScript.Names.ModuleName,
+                      [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                   (\ @ b
+                      (c :: (Language.PureScript.Names.ModuleName,
+                             [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                            -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ (Language.PureScript.Names.ModuleName,
+                         [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                      @ b
+                      (GHC.List.filterFB
+                         @ (Language.PureScript.Names.ModuleName,
+                            [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                         @ b
+                         c
+                         (\ (x :: (Language.PureScript.Names.ModuleName,
+                                   [Language.PureScript.Ide.Types.IdeDeclarationAnn])) ->
+                          GHC.List.elem
+                            @ Language.PureScript.Names.ModuleName
+                            Language.PureScript.Names.$fEqModuleName
+                            (case x of wild { (,) x1 ds1 -> x1 })
+                            moduleIdents))
+                      n
+                      eta)) -}
+f50e8eb8c22ee97b25509db1f492d544
+  namespaceFilter ::
+    GHC.Base.NonEmpty Language.PureScript.Ide.Types.IdeNamespace
+    -> Language.PureScript.Ide.Filter.Filter
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,U)><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Ide.Filter.namespaceFilter1
+                  `cast`
+                (<GHC.Base.NonEmpty Language.PureScript.Ide.Types.IdeNamespace>_R
+                 ->_R Sym (Data.Semigroup.Internal.N:Endo[0]
+                               <[Language.PureScript.Ide.Filter.Module]>_R) ; Sym (Language.PureScript.Ide.Filter.N:Filter[0])) -}
+5f932f7ffcaf7f63313adc93e67abb33
+  namespaceFilter1 ::
+    GHC.Base.NonEmpty Language.PureScript.Ide.Types.IdeNamespace
+    -> [Language.PureScript.Ide.Filter.Module]
+    -> [Language.PureScript.Ide.Filter.Module]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,U)><S,1*U> -}
+c21a49443e36ac8a2550458c3573cd2d
+  prefixFilter ::
+    Data.Text.Internal.Text -> Language.PureScript.Ide.Filter.Filter
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Language.PureScript.Ide.Filter.$wprefixFilter ww1 ww2 ww3 }) -}
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.Ide.Filter.Filter]
+  = Language.PureScript.Ide.Filter.$fFromJSONFilter
+instance GHC.Base.Monoid [Language.PureScript.Ide.Filter.Filter]
+  = Language.PureScript.Ide.Filter.$fMonoidFilter
+instance GHC.Base.Semigroup [Language.PureScript.Ide.Filter.Filter]
+  = Language.PureScript.Ide.Filter.$fSemigroupFilter
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

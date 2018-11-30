@@ -1,0 +1,1356 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:54.370881 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Pretty.Common 8043
+  interface hash: 6ec7165b0d69e6b6ef0a864e97b24cd3
+  ABI hash: 3b6e69c173d325d7c9be0bb0169f3188
+  export-list hash: 3b669d7e8560d3ed86c28ef1f72a89c4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 666d06750a83f48a27f6ce32fa845a6c
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Pretty.Common.addMapping'
+  Language.PureScript.Pretty.Common.addPos
+  Language.PureScript.Pretty.Common.before
+  Language.PureScript.Pretty.Common.beforeWithSpace
+  Language.PureScript.Pretty.Common.blockIndent
+  Language.PureScript.Pretty.Common.bumpPos
+  Language.PureScript.Pretty.Common.currentIndent
+  Language.PureScript.Pretty.Common.emptyPrinterState
+  Language.PureScript.Pretty.Common.endWith
+  Language.PureScript.Pretty.Common.intercalate
+  Language.PureScript.Pretty.Common.objectKeyRequiresQuoting
+  Language.PureScript.Pretty.Common.parens
+  Language.PureScript.Pretty.Common.parensPos
+  Language.PureScript.Pretty.Common.parensT
+  Language.PureScript.Pretty.Common.prettyPrintMany
+  Language.PureScript.Pretty.Common.runPlainString
+  Language.PureScript.Pretty.Common.withIndent
+  Language.PureScript.Pretty.Common.Emit{Language.PureScript.Pretty.Common.addMapping Language.PureScript.Pretty.Common.emit}
+  Language.PureScript.Pretty.Common.PlainString{Language.PureScript.Pretty.Common.PlainString}
+  Language.PureScript.Pretty.Common.PrinterState{Language.PureScript.Pretty.Common.PrinterState indent}
+  Language.PureScript.Pretty.Common.SMap{Language.PureScript.Pretty.Common.SMap}
+  Language.PureScript.Pretty.Common.StrPos{Language.PureScript.Pretty.Common.StrPos}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Names Language.PureScript.PSString
+                     Language.PureScript.Parser.Lexer Language.PureScript.Parser.State
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0
+                      syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Char 3e89818e2b8ef1a2cc5393163484da72
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Unicode 8234c40b59f035e845832a42e8725a00
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  boxes-0.1.5:Text.PrettyPrint.Boxes 49de0395c02f08dbf50ec04d019c04fb
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  mtl-2.2.2:Control.Monad.State 1f28325cb5ef11b6b40ffadfe4bc2ca3
+import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourcePos b32bf71fd97066221fb5294f6129d546
+  SourcePos 73c071552214b3f18e94970349d3affc
+  SourceSpan 80f1a6322ef7d45c295094f0b69c34ea
+  SourceSpan 73c071552214b3f18e94970349d3affc
+  sourcePosColumn 73c071552214b3f18e94970349d3affc
+  sourcePosLine 73c071552214b3f18e94970349d3affc
+  spanName 73c071552214b3f18e94970349d3affc
+  spanStart 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Parser.Lexer db153cafc807e1fa539fece18593da12
+  exports: 698a81285a16040f24e674c5083daf63
+  isUnquotedKey f245417816e78fa9b894878e6e53fb67
+  reservedPsNames 400d417738afd5ca45175466117bea63
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.State.Lazy bb07ba19cd14893d125b163b03c16c98
+214f60e6e958b4249cb17ce841bc25e3
+  $fEmitPlainString ::
+    Language.PureScript.Pretty.Common.Emit
+      Language.PureScript.Pretty.Common.PlainString
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Pretty.Common.PlainString
+                  Language.PureScript.Pretty.Common.$fMonoidPlainString
+                  (\ (v :: Data.Text.Internal.Text) -> v)
+                    `cast`
+                  (<Data.Text.Internal.Text>_R
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0]))
+                  Language.PureScript.Pretty.Common.$fEmitPlainString1
+                    `cast`
+                  (<Language.PureScript.AST.SourcePos.SourceSpan>_R
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0])) -}
+3124ae071752dc882db5e23536552cba
+  $fEmitPlainString1 ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 Data.Text.Internal.empty) -}
+214f60e6e958b4249cb17ce841bc25e3
+  $fEmitStrPos ::
+    Language.PureScript.Pretty.Common.Emit
+      Language.PureScript.Pretty.Common.StrPos
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Pretty.Common.StrPos
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos
+                  Language.PureScript.Pretty.Common.$fEmitStrPos_$cemit
+                  Language.PureScript.Pretty.Common.$fEmitStrPos_$caddMapping -}
+81ef89eb974715b208cc65f8df4b6919
+  $fEmitStrPos1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+f0a31ad79eed16370ed477fdfa14b665
+  $fEmitStrPos_$caddMapping ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 1, Strictness: <S,1*U(1*U,U,A)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 case w of ww { Language.PureScript.AST.SourcePos.SourceSpan ww1 ww2 ww3 ->
+                 (Language.PureScript.Pretty.Common.$fEmitStrPos_zeroPos,
+                  Data.Text.Internal.empty,
+                  GHC.Types.:
+                    @ Language.PureScript.Pretty.Common.SMap
+                    (Language.PureScript.Pretty.Common.SMap
+                       (case GHC.Magic.runRW#
+                               @ ('GHC.Types.TupleRep
+                                    '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                               @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                               (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                case GHC.Prim.newByteArray#
+                                       @ GHC.Prim.RealWorld
+                                       10#
+                                       s1 of ds1 { (#,#) ipv ipv1 ->
+                                Language.PureScript.Pretty.Common.$wouter
+                                  ipv1
+                                  4#
+                                  ww1
+                                  0#
+                                  ipv }) of ds1 { (#,#) ipv ipv1 ->
+                        ipv1 })
+                       ww2
+                       Language.PureScript.Pretty.Common.$fEmitStrPos_zeroPos)
+                    (GHC.Types.[] @ Language.PureScript.Pretty.Common.SMap))
+                   `cast`
+                 (Sym (Language.PureScript.Pretty.Common.N:StrPos[0])) }) -}
+3397e9111e0991ce3e3a27ff8ad309f6
+  $fEmitStrPos_$cemit ::
+    Data.Text.Internal.Text -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 1, Strictness: <L,U(U,U,U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case Language.PureScript.Pretty.Common.$w$cemit
+                        w of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3)
+                   `cast`
+                 (Sym (Language.PureScript.Pretty.Common.N:StrPos[0])) }) -}
+c7fc789e392e702cdbb6ee3cfaab8d7f
+  $fEmitStrPos_go ::
+    [GHC.Types.Char] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+47062a9b7319d843351d1340402795f1
+  $fEmitStrPos_zeroPos :: Language.PureScript.AST.SourcePos.SourcePos
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.PureScript.AST.SourcePos.SourcePos
+                   Language.PureScript.Pretty.Common.$fEmitStrPos1
+                   Language.PureScript.Pretty.Common.$fEmitStrPos1) -}
+2ee0137eac26422d398b71cdfa9b6933
+  $fMonoidPlainString ::
+    GHC.Base.Monoid Language.PureScript.Pretty.Common.PlainString
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Pretty.Common.PlainString
+                  Language.PureScript.Pretty.Common.$fSemigroupPlainString
+                  Data.Text.Internal.empty
+                    `cast`
+                  (Sym (Language.PureScript.Pretty.Common.N:PlainString[0]))
+                  Data.Text.append
+                    `cast`
+                  (Sym (Language.PureScript.Pretty.Common.N:PlainString[0])
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0])
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0]))
+                  Data.Text.concat
+                    `cast`
+                  (([Sym (Language.PureScript.Pretty.Common.N:PlainString[0])])_R
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0])) -}
+179531922507ec5df17840b4edeb8dbb
+  $fMonoidStrPos ::
+    GHC.Base.Monoid Language.PureScript.Pretty.Common.StrPos
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Pretty.Common.StrPos
+                  Language.PureScript.Pretty.Common.$fSemigroupStrPos
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos1
+                    `cast`
+                  (Sym (Language.PureScript.Pretty.Common.N:StrPos[0]))
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos_$c<>
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos_$cmconcat -}
+a8fc54f67abaecc47d5588422c7173bf
+  $fMonoidStrPos1 ::
+    (Language.PureScript.AST.SourcePos.SourcePos,
+     Data.Text.Internal.Text, [Language.PureScript.Pretty.Common.SMap])
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Pretty.Common.$fEmitStrPos_zeroPos,
+                  Data.Text.Internal.empty_,
+                  GHC.Types.[] @ Language.PureScript.Pretty.Common.SMap)) -}
+179531922507ec5df17840b4edeb8dbb
+  $fMonoidStrPos_$c<> ::
+    Language.PureScript.Pretty.Common.StrPos
+    -> Language.PureScript.Pretty.Common.StrPos
+    -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 2,
+     Strictness: <S,1*U(U(U(U),U(U)),1*U(U,U,1*U),1*U)><S,1*U(1*U(1*U(1*U),U(U)),1*U(U,U,U),1*U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Pretty.Common.StrPos)
+                   (w1 :: Language.PureScript.Pretty.Common.StrPos) ->
+                 case w `cast`
+                      (Language.PureScript.Pretty.Common.N:StrPos[0]) of ww { (,,) ww1 ww2 ww3 ->
+                 case w1
+                        `cast`
+                      (Language.PureScript.Pretty.Common.N:StrPos[0]) of ww4 { (,,) ww5 ww6 ww7 ->
+                 (Language.PureScript.Pretty.Common.addPos ww1 ww5,
+                  Data.Text.append ww2 ww6,
+                  GHC.Base.++
+                    @ Language.PureScript.Pretty.Common.SMap
+                    ww3
+                    (GHC.Base.map
+                       @ Language.PureScript.Pretty.Common.SMap
+                       @ Language.PureScript.Pretty.Common.SMap
+                       (Language.PureScript.Pretty.Common.bumpPos ww1)
+                       ww7))
+                   `cast`
+                 (Sym (Language.PureScript.Pretty.Common.N:StrPos[0])) } }) -}
+179531922507ec5df17840b4edeb8dbb
+  $fMonoidStrPos_$cmconcat ::
+    [Language.PureScript.Pretty.Common.StrPos]
+    -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 1, Strictness: <L,U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Language.PureScript.Pretty.Common.StrPos]) ->
+                 let {
+                   ds :: (Language.PureScript.AST.SourcePos.SourcePos,
+                          [[Language.PureScript.Pretty.Common.SMap]])
+                   = Language.PureScript.Pretty.Common.$wgo
+                       w
+                       Language.PureScript.Pretty.Common.$fEmitStrPos_zeroPos
+                       (GHC.Types.[] @ [Language.PureScript.Pretty.Common.SMap])
+                 } in
+                 (case ds of wild { (,) p maps -> p },
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos_go1 w,
+                  case ds of wild { (,) p maps ->
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos_go
+                    (GHC.List.reverse1
+                       @ [Language.PureScript.Pretty.Common.SMap]
+                       maps
+                       (GHC.Types.[] @ [Language.PureScript.Pretty.Common.SMap])) })
+                   `cast`
+                 (Sym (Language.PureScript.Pretty.Common.N:StrPos[0]))) -}
+6661494f2218b379ef4ae5f8cd47b4b0
+  $fMonoidStrPos_go ::
+    [[Language.PureScript.Pretty.Common.SMap]]
+    -> [Language.PureScript.Pretty.Common.SMap]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+179531922507ec5df17840b4edeb8dbb
+  $fMonoidStrPos_go1 ::
+    [Language.PureScript.Pretty.Common.StrPos]
+    -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,1*U> -}
+2ee0137eac26422d398b71cdfa9b6933
+  $fSemigroupPlainString ::
+    GHC.Base.Semigroup Language.PureScript.Pretty.Common.PlainString
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Pretty.Common.PlainString
+                  Data.Text.append
+                    `cast`
+                  (Sym (Language.PureScript.Pretty.Common.N:PlainString[0])
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0])
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0]))
+                  Data.Text.$fSemigroupText_$csconcat
+                    `cast`
+                  ((GHC.Base.NonEmpty
+                      (Sym (Language.PureScript.Pretty.Common.N:PlainString[0])))_R
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0]))
+                  Data.Text.$fSemigroupText_$cstimes
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Real.Integral b>_R
+                   ->_R <b>_R
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0])
+                   ->_R Sym (Language.PureScript.Pretty.Common.N:PlainString[0])) -}
+179531922507ec5df17840b4edeb8dbb
+  $fSemigroupStrPos ::
+    GHC.Base.Semigroup Language.PureScript.Pretty.Common.StrPos
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Pretty.Common.StrPos
+                  Language.PureScript.Pretty.Common.$fMonoidStrPos_$c<>
+                  Language.PureScript.Pretty.Common.$fSemigroupStrPos_$csconcat
+                  Language.PureScript.Pretty.Common.$fSemigroupStrPos_$cstimes -}
+179531922507ec5df17840b4edeb8dbb
+  $fSemigroupStrPos_$csconcat ::
+    GHC.Base.NonEmpty Language.PureScript.Pretty.Common.StrPos
+    -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 1,
+     Strictness: <S(SS),1*U(1*U(U(U(U),U(U)),U(U,U,U),U),1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Base.NonEmpty
+                            Language.PureScript.Pretty.Common.StrPos) ->
+                 case ds of wild { GHC.Base.:| a1 as ->
+                 Language.PureScript.Pretty.Common.$fSemigroupStrPos_go a1 as }) -}
+179531922507ec5df17840b4edeb8dbb
+  $fSemigroupStrPos_$cstimes ::
+    GHC.Real.Integral b =>
+    b
+    -> Language.PureScript.Pretty.Common.StrPos
+    -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 1, Strictness: <L,U> -}
+179531922507ec5df17840b4edeb8dbb
+  $fSemigroupStrPos_go ::
+    Language.PureScript.Pretty.Common.StrPos
+    -> [Language.PureScript.Pretty.Common.StrPos]
+    -> Language.PureScript.Pretty.Common.StrPos
+  {- Arity: 2, Strictness: <S,1*U(U(U(U),U(U)),U(U,U,U),U)><S,1*U>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Pretty.Common.StrPos)
+                   (w1 :: [Language.PureScript.Pretty.Common.StrPos]) ->
+                 case w `cast`
+                      (Language.PureScript.Pretty.Common.N:StrPos[0]) of ww { (,,) ww1 ww2 ww3 ->
+                 case Language.PureScript.Pretty.Common.$wgo1
+                        ww1
+                        ww2
+                        ww3
+                        w1 of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 (ww5, ww6, ww7)
+                   `cast`
+                 (Sym (Language.PureScript.Pretty.Common.N:StrPos[0])) } }) -}
+7212125f7e356530f2d149aa1c731915
+  $tc'C:Emit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12519535086590128686##
+                   4743601977434842563##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tc'C:Emit2
+                   1#
+                   Language.PureScript.Pretty.Common.$tc'C:Emit1) -}
+a0ed34e7f693f8278f2ab93714491c78
+  $tc'C:Emit1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+71988903cfba3b00852efc979e85814b
+  $tc'C:Emit2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tc'C:Emit3) -}
+ce09172fb621c562f3d136c7a47136cf
+  $tc'C:Emit3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'C:Emit"#) -}
+5a420becffc2773419a1a0d056ffc71f
+  $tc'PlainString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15204167561249485434##
+                   6638658636709415949##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tc'PlainString2
+                   0#
+                   Language.PureScript.Pretty.Common.$tc'PlainString1) -}
+cee7ca4f4210201c3193588b7985bd5a
+  $tc'PlainString1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+4a8ddf489f72ff8dc5a01af5e9587e27
+  $tc'PlainString2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tc'PlainString3) -}
+d98728292bfd32056f8b936148a9b4d2
+  $tc'PlainString3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PlainString"#) -}
+68888a941742b44a923e7968b029f44e
+  $tc'PrinterState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10543897619131260292##
+                   2408010192292986154##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tc'PrinterState2
+                   0#
+                   Language.PureScript.Pretty.Common.$tc'PrinterState1) -}
+02a9a8351482bfcd9f94c71144081a2d
+  $tc'PrinterState1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+57ebc435e6d030e8e4800e5d98d0dee6
+  $tc'PrinterState2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tc'PrinterState3) -}
+758194e56fab7a2bda4f70a4b7592aee
+  $tc'PrinterState3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PrinterState"#) -}
+150ce3f0957c773c6eac6c322b44603a
+  $tc'SMap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2166946581397140351##
+                   2172765579222861026##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tc'SMap2
+                   0#
+                   Language.PureScript.Pretty.Common.$tc'SMap1) -}
+afded43820963ca9610b01bf70396168
+  $tc'SMap1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+efd1917ca7f33c1b70b881672c5c3ae1
+  $tc'SMap2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tc'SMap3) -}
+32050d7d8de5686d982a2b20a051229e
+  $tc'SMap3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SMap"#) -}
+50c64121c6524f7969039e33e566e8c6
+  $tc'StrPos :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1214200393695454536##
+                   10490037828364861326##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tc'StrPos2
+                   0#
+                   Language.PureScript.Pretty.Common.$tc'StrPos1) -}
+260183460b183f9cf7394a2fbed42089
+  $tc'StrPos1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b88dc4e3db707e5374c4fc9923671f44
+  $tc'StrPos2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tc'StrPos3) -}
+66dff24308ef5941e5826a8c13475079
+  $tc'StrPos3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'StrPos"#) -}
+44be08282f2e648d00fd81a1550bb67a
+  $tcEmit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11619653596642394637##
+                   9251968699696426237##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tcEmit2
+                   0#
+                   Language.PureScript.Pretty.Common.$tcEmit1) -}
+bd050959ec7b76864e5c43cc6e0914f6
+  $tcEmit1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5a3fb01eb7a31e07aede345ab973f4e3
+  $tcEmit2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tcEmit3) -}
+56a57168705f6a8c7bb6a3d88435048d
+  $tcEmit3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Emit"#) -}
+4fb1a6282cc5435879838813b30be132
+  $tcPlainString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5420570748037687806##
+                   721334242666875650##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tcPlainString1
+                   0#
+                   GHC.Types.krep$*) -}
+264939899caa57c06a533a7b44780a2d
+  $tcPlainString1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tcPlainString2) -}
+ba50c98df32221f2c1729e1eeb0e7ba3
+  $tcPlainString2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PlainString"#) -}
+76322979adc1e5e3175f7544719e5a1e
+  $tcPrinterState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16307856830114672536##
+                   12196851637316424552##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tcPrinterState1
+                   0#
+                   GHC.Types.krep$*) -}
+b247e79fb745513f678a43b45783834f
+  $tcPrinterState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tcPrinterState2) -}
+2e208b44f101af434fa5bd2802760496
+  $tcPrinterState2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PrinterState"#) -}
+2e8f0e0c10ee2917c07c2aa86cb6151a
+  $tcSMap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11827344023383314117##
+                   13872592636629330215##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tcSMap1
+                   0#
+                   GHC.Types.krep$*) -}
+99c666e49d718b633e1243b6c6bcf5a0
+  $tcSMap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tcSMap2) -}
+1d8b9a55c7e409e6267c22da951ce42e
+  $tcSMap2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SMap"#) -}
+703f20cf8e6c25220ca1a3da1a064378
+  $tcStrPos :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13343626584357608424##
+                   1501746978985420235##
+                   Language.PureScript.Pretty.Common.$trModule
+                   Language.PureScript.Pretty.Common.$tcStrPos1
+                   0#
+                   GHC.Types.krep$*) -}
+223e7c022c1b0fc48a66edb9a3c78f34
+  $tcStrPos1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$tcStrPos2) -}
+e9f59bea0faade6e86651105d4f6c66f
+  $tcStrPos2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("StrPos"#) -}
+8da1cb0c183cb5d0e580adcd6d834a68
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Pretty.Common.$trModule3
+                   Language.PureScript.Pretty.Common.$trModule1) -}
+c14fc3ced055b46b82bd1f82fd112fc1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$trModule2) -}
+1adcfbaa7c8b77e36ab265d1bc9e1f28
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Pretty.Common"#) -}
+11341a002d06442e3be8589079427b24
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Common.$trModule4) -}
+268de096bc102d9de2439b03cc68f94d
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+0ee11450079ac47378b07732e84a9875
+  $w$cemit ::
+    Data.Text.Internal.Text
+    -> (# Language.PureScript.AST.SourcePos.SourcePos,
+          Data.Text.Internal.Text,
+          [Language.PureScript.Pretty.Common.SMap] #)
+  {- Arity: 1, Strictness: <L,U(U,U,U)>, Inline: [0],
+     Unfolding: (\ (w :: Data.Text.Internal.Text) ->
+                 let {
+                   newlines :: [GHC.Types.Int]
+                   = case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                     let {
+                       end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                     } in
+                     letrec {
+                       $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
+                         {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                       = \ (ww :: GHC.Prim.Int#) ->
+                         case GHC.Prim.>=# ww end of lwild {
+                           DEFAULT
+                           -> case GHC.Prim.indexWord16Array# dt ww of r# { DEFAULT ->
+                              case GHC.Prim.geWord# r# 55296## of lwild1 {
+                                DEFAULT
+                                -> GHC.Types.:
+                                     @ GHC.Types.Char
+                                     (GHC.Types.C# (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                     ($wunfold (GHC.Prim.+# ww 1#))
+                                1#
+                                -> case GHC.Prim.leWord# r# 56319## of lwild2 {
+                                     DEFAULT
+                                     -> GHC.Types.:
+                                          @ GHC.Types.Char
+                                          (GHC.Types.C# (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                          ($wunfold (GHC.Prim.+# ww 1#))
+                                     1#
+                                     -> case GHC.Prim.indexWord16Array#
+                                               dt
+                                               (GHC.Prim.+# ww 1#) of r#1 { DEFAULT ->
+                                        GHC.Types.:
+                                          @ GHC.Types.Char
+                                          (GHC.Types.C#
+                                             (GHC.Prim.chr#
+                                                (GHC.Prim.+#
+                                                   (GHC.Prim.+#
+                                                      (GHC.Prim.uncheckedIShiftL#
+                                                         (GHC.Prim.-#
+                                                            (GHC.Prim.word2Int# r#)
+                                                            55296#)
+                                                         10#)
+                                                      (GHC.Prim.-# (GHC.Prim.word2Int# r#1) 56320#))
+                                                   65536#)))
+                                          ($wunfold (GHC.Prim.+# ww 2#)) } } } }
+                           1# -> GHC.Types.[] @ GHC.Types.Char }
+                     } in
+                     Language.PureScript.Pretty.Common.$fEmitStrPos_go
+                       ($wunfold dt1)
+                       0# }
+                 } in
+                 (# Language.PureScript.AST.SourcePos.SourcePos
+                      (case GHC.List.$wlenAcc
+                              @ GHC.Types.Int
+                              newlines
+                              0# of ww2 { DEFAULT ->
+                       GHC.Types.I# ww2 })
+                      (case w of wild { Data.Text.Internal.Text dt dt1 dt2 ->
+                       let {
+                         end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                       } in
+                       let {
+                         $j1 :: GHC.Prim.Int# -> GHC.Types.Int
+                           <join 1> {- Arity: 1, Strictness: <S,U>m -}
+                         = \ (x :: GHC.Prim.Int#)[OneShot] ->
+                           case newlines of wild1 {
+                             [] -> GHC.Types.I# x
+                             : ds1 ds2
+                             -> let {
+                                  exit :: GHC.Types.Int -> GHC.Types.Int
+                                    <join 1> {- Arity: 1, Strictness: <S(S),1*U(U)>m -}
+                                  = \ (eta :: GHC.Types.Int)[OneShot] ->
+                                    case eta of wild2 { GHC.Types.I# x1 ->
+                                    GHC.Types.I# (GHC.Prim.-# x (GHC.Prim.+# x1 1#)) }
+                                } in
+                                letrec {
+                                  go :: [GHC.Types.Int] -> GHC.Types.Int -> GHC.Types.Int
+                                    <join 2> {- Arity: 2, Strictness: <S,1*U><L,1*U(U)>m -}
+                                  = \ (ds :: [GHC.Types.Int]) (eta :: GHC.Types.Int) ->
+                                    case ds of wild2 { [] -> exit eta : y ys -> go ys y }
+                                } in
+                                let {
+                                  $sgo :: GHC.Types.Int
+                                          -> GHC.Types.Int -> [GHC.Types.Int] -> GHC.Types.Int
+                                    <join 3> {- Arity: 3, Strictness: <L,A><L,1*U(U)><S,1*U>m -}
+                                  = \ (sc :: GHC.Types.Int)
+                                      (sc1 :: GHC.Types.Int)
+                                      (sc2 :: [GHC.Types.Int]) ->
+                                    go sc2 sc1
+                                } in
+                                $sgo (GHC.List.lastError @ GHC.Types.Int) ds1 ds2 }
+                       } in
+                       letrec {
+                         $wloop_length :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.Int
+                           <join 2> {- Arity: 2, Strictness: <S,U><S,U>m, Inline: [0] -}
+                         = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                           case GHC.Prim.>=# ww1 end of lwild {
+                             DEFAULT
+                             -> case GHC.Prim.indexWord16Array# dt ww1 of r# { DEFAULT ->
+                                case GHC.Prim.geWord# r# 55296## of lwild1 {
+                                  DEFAULT -> $wloop_length (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#)
+                                  1#
+                                  -> case GHC.Prim.leWord# r# 56319## of lwild2 {
+                                       DEFAULT
+                                       -> $wloop_length (GHC.Prim.+# ww 1#) (GHC.Prim.+# ww1 1#)
+                                       1#
+                                       -> $wloop_length
+                                            (GHC.Prim.+# ww 1#)
+                                            (GHC.Prim.+# ww1 2#) } } }
+                             1# -> $j1 ww }
+                       } in
+                       $wloop_length 0# dt1 }),
+                    w, GHC.Types.[] @ Language.PureScript.Pretty.Common.SMap #)) -}
+f8a72e66f0ddcceeb8c918df83607cb0
+  $wbefore ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> Text.PrettyPrint.Boxes.Content
+    -> Text.PrettyPrint.Boxes.Box
+    -> (# GHC.Types.Int, GHC.Types.Int,
+          Text.PrettyPrint.Boxes.Content #)
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: Text.PrettyPrint.Boxes.Content)
+                   (w :: Text.PrettyPrint.Boxes.Box) ->
+                 case GHC.Prim.># ww 1# of lwild {
+                   DEFAULT
+                   -> Text.PrettyPrint.Boxes.$w$shcat
+                        Text.PrettyPrint.Boxes.AlignFirst
+                        (GHC.Types.:
+                           @ Text.PrettyPrint.Boxes.Box
+                           (Text.PrettyPrint.Boxes.Box (GHC.Types.I# ww) ww1 ww2)
+                           (GHC.Types.:
+                              @ Text.PrettyPrint.Boxes.Box
+                              w
+                              (GHC.Types.[] @ Text.PrettyPrint.Boxes.Box)))
+                   1#
+                   -> Text.PrettyPrint.Boxes.$w$svcat
+                        Text.PrettyPrint.Boxes.AlignFirst
+                        (GHC.Types.:
+                           @ Text.PrettyPrint.Boxes.Box
+                           (Text.PrettyPrint.Boxes.Box (GHC.Types.I# ww) ww1 ww2)
+                           (GHC.Types.:
+                              @ Text.PrettyPrint.Boxes.Box
+                              w
+                              (GHC.Types.[] @ Text.PrettyPrint.Boxes.Box))) }) -}
+cf015debc41c72b10e536ccd057084c2
+  $wcurrentIndent ::
+    Language.PureScript.Pretty.Common.Emit gen =>
+    Language.PureScript.Pretty.Common.PrinterState
+    -> (# (gen, Language.PureScript.Pretty.Common.PrinterState) #)
+  {- Arity: 2, Strictness: <L,1*U(A,1*C1(U),A)><L,U(U(U))>,
+     Inline: [0] -}
+c653cbbd7f752a529ecd88b9224cc2fb
+  $wendWith ::
+    Text.PrettyPrint.Boxes.Box
+    -> Text.PrettyPrint.Boxes.Box
+    -> (# GHC.Types.Int, GHC.Types.Int,
+          Text.PrettyPrint.Boxes.Content #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U),U,U)><L,U(U,U(U),U)>, Inline: [0],
+     Unfolding: (\ (w :: Text.PrettyPrint.Boxes.Box)
+                   (w1 :: Text.PrettyPrint.Boxes.Box) ->
+                 Text.PrettyPrint.Boxes.$w$shcat
+                   Text.PrettyPrint.Boxes.AlignFirst
+                   (GHC.Types.:
+                      @ Text.PrettyPrint.Boxes.Box
+                      w
+                      (GHC.Types.:
+                         @ Text.PrettyPrint.Boxes.Box
+                         (case Text.PrettyPrint.Boxes.$w$svcat
+                                 Text.PrettyPrint.Boxes.AlignFirst
+                                 (GHC.Types.:
+                                    @ Text.PrettyPrint.Boxes.Box
+                                    (Text.PrettyPrint.Boxes.Box
+                                       (case w of wild { Text.PrettyPrint.Boxes.Box ds1 ds2 ds3 ->
+                                        case ds1 of wild1 { GHC.Types.I# x ->
+                                        GHC.Types.I# (GHC.Prim.-# x 1#) } })
+                                       (Text.PrettyPrint.Boxes.cols w1)
+                                       Text.PrettyPrint.Boxes.Blank)
+                                    (GHC.Types.:
+                                       @ Text.PrettyPrint.Boxes.Box
+                                       w1
+                                       (GHC.Types.[]
+                                          @ Text.PrettyPrint.Boxes.Box))) of ww { (#,,#) ww1 ww2 ww3 ->
+                          Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 })
+                         (GHC.Types.[] @ Text.PrettyPrint.Boxes.Box)))) -}
+179531922507ec5df17840b4edeb8dbb
+  $wgo ::
+    [Language.PureScript.Pretty.Common.StrPos]
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> [[Language.PureScript.Pretty.Common.SMap]]
+    -> (Language.PureScript.AST.SourcePos.SourcePos,
+        [[Language.PureScript.Pretty.Common.SMap]])
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,U(U(U),U(U))><L,U>m, Inline: [0] -}
+179531922507ec5df17840b4edeb8dbb
+  $wgo1 ::
+    Language.PureScript.AST.SourcePos.SourcePos
+    -> Data.Text.Internal.Text
+    -> [Language.PureScript.Pretty.Common.SMap]
+    -> [Language.PureScript.Pretty.Common.StrPos]
+    -> (# Language.PureScript.AST.SourcePos.SourcePos,
+          Data.Text.Internal.Text,
+          [Language.PureScript.Pretty.Common.SMap] #)
+  {- Arity: 4, Strictness: <L,U(U(U),U(U))><L,U(U,U,U)><L,U><S,1*U>,
+     Inline: [0] -}
+1a083e9f91f4140f663fff1b7121f00a
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+f407af9a0a953568acc2f9b1f6d7123a
+  $wparensT ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+  {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
+214f60e6e958b4249cb17ce841bc25e3
+  class GHC.Base.Monoid gen => Emit gen where
+    emit :: Data.Text.Internal.Text -> gen
+    addMapping :: Language.PureScript.AST.SourcePos.SourceSpan -> gen
+    {-# MINIMAL emit, addMapping #-}
+2ee0137eac26422d398b71cdfa9b6933
+  newtype PlainString = PlainString Data.Text.Internal.Text
+2f659d04e70f93379f1d98f6f6538e60
+  data PrinterState = PrinterState {indent :: GHC.Types.Int}
+8b815595ed734bd275a4b21776b41324
+  data SMap
+    = SMap Data.Text.Internal.Text
+           Language.PureScript.AST.SourcePos.SourcePos
+           Language.PureScript.AST.SourcePos.SourcePos
+179531922507ec5df17840b4edeb8dbb
+  newtype StrPos
+    = StrPos (Language.PureScript.AST.SourcePos.SourcePos,
+              Data.Text.Internal.Text, [Language.PureScript.Pretty.Common.SMap])
+6747ef57bc5461aabad3c6444a907493
+  addMapping' ::
+    Language.PureScript.Pretty.Common.Emit gen =>
+    GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan -> gen
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(A,1*U,A,A),A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ gen
+                   ($dEmit :: Language.PureScript.Pretty.Common.Emit gen)
+                   (eta :: GHC.Base.Maybe
+                             Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 case eta of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Base.mempty
+                        @ gen
+                        (Language.PureScript.Pretty.Common.$p1Emit @ gen $dEmit)
+                   GHC.Base.Just ss
+                   -> Language.PureScript.Pretty.Common.addMapping
+                        @ gen
+                        $dEmit
+                        ss }) -}
+7126c3c639fc29a5d211b26d0d84ffc4
+  addPos ::
+    Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourcePos
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(U(U),1*U(U))><S(S(S)L),1*U(1*U(1*U),U(U))>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.SourcePos.SourcePos)
+                   (w1 :: Language.PureScript.AST.SourcePos.SourcePos) ->
+                 case w of ww { Language.PureScript.AST.SourcePos.SourcePos ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.SourcePos.SourcePos ww4 ww5 ->
+                 case ww4 of ww6 { GHC.Types.I# ww7 ->
+                 case ww7 of ds {
+                   DEFAULT
+                   -> Language.PureScript.AST.SourcePos.SourcePos
+                        (case ww1 of wild { GHC.Types.I# x ->
+                         GHC.Types.I# (GHC.Prim.+# x ds) })
+                        ww5
+                   0#
+                   -> Language.PureScript.AST.SourcePos.SourcePos
+                        ww1
+                        (GHC.Num.$fNumInt_$c+ ww2 ww5) } } } }) -}
+3de30d3cfa61e8605407bcad8c583891
+  before ::
+    Text.PrettyPrint.Boxes.Box
+    -> Text.PrettyPrint.Boxes.Box -> Text.PrettyPrint.Boxes.Box
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LL),1*U(1*U(U),U,U)><L,U>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Text.PrettyPrint.Boxes.Box)
+                   (w1 :: Text.PrettyPrint.Boxes.Box) ->
+                 case w of ww { Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case Language.PureScript.Pretty.Common.$wbefore
+                        ww5
+                        ww2
+                        ww3
+                        w1 of ww6 { (#,,#) ww7 ww8 ww9 ->
+                 Text.PrettyPrint.Boxes.Box ww7 ww8 ww9 } } }) -}
+cf12847ec42610e404d7291de0625508
+  beforeWithSpace ::
+    Text.PrettyPrint.Boxes.Box
+    -> Text.PrettyPrint.Boxes.Box -> Text.PrettyPrint.Boxes.Box
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (b1 :: Text.PrettyPrint.Boxes.Box) ->
+                 Language.PureScript.Pretty.Common.before
+                   (case Text.PrettyPrint.Boxes.$w$shcat
+                           Text.PrettyPrint.Boxes.AlignFirst
+                           (GHC.Types.:
+                              @ Text.PrettyPrint.Boxes.Box
+                              b1
+                              Language.PureScript.Pretty.Common.beforeWithSpace1) of ww { (#,,#) ww1 ww2 ww3 ->
+                    Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 })) -}
+bd1184d6ca6a761f65eafbd91e2f8346
+  beforeWithSpace1 :: [Text.PrettyPrint.Boxes.Box]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.Boxes.Box
+                   Language.PureScript.Pretty.Common.beforeWithSpace2
+                   (GHC.Types.[] @ Text.PrettyPrint.Boxes.Box)) -}
+05ddbe0a9917fb643df5c677bc91ac08
+  beforeWithSpace2 :: Text.PrettyPrint.Boxes.Box
+  {- Strictness: m,
+     Unfolding: (Text.PrettyPrint.Boxes.Box
+                   Text.PrettyPrint.Boxes.text1
+                   Language.PureScript.Pretty.Common.beforeWithSpace5
+                   Language.PureScript.Pretty.Common.beforeWithSpace3) -}
+615dc8986f55c95a1269ca210dbe5843
+  beforeWithSpace3 :: Text.PrettyPrint.Boxes.Content
+  {- Strictness: m2,
+     Unfolding: (Text.PrettyPrint.Boxes.Text
+                   Language.PureScript.Pretty.Common.beforeWithSpace_t) -}
+26ccf9580bc765b4a70d3e23656022ca
+  beforeWithSpace4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" "#) -}
+bcd4c1e3058f9d26fd3f6f18a12609fc
+  beforeWithSpace5 :: GHC.Types.Int
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Language.PureScript.Pretty.Common.beforeWithSpace_t
+                        0# of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 }) -}
+1e971b5bbaf01832e01c9f3648f6249b
+  beforeWithSpace_t :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Pretty.Common.beforeWithSpace4) -}
+206c5aca448893910d2253d32dc79686
+  blockIndent :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+8b918b63847399e8d6759e3ea811e7cf
+  bumpPos ::
+    Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.Pretty.Common.SMap
+    -> Language.PureScript.Pretty.Common.SMap
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(U(U),1*U(U))><S,1*U(U,U,1*U(1*U(1*U),U(U)))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (p :: Language.PureScript.AST.SourcePos.SourcePos)
+                   (ds :: Language.PureScript.Pretty.Common.SMap) ->
+                 case ds of wild { Language.PureScript.Pretty.Common.SMap f s g ->
+                 Language.PureScript.Pretty.Common.SMap
+                   f
+                   s
+                   (Language.PureScript.Pretty.Common.addPos p g) }) -}
+137c0856a1c266fa2dbdace378822340
+  currentIndent ::
+    Language.PureScript.Pretty.Common.Emit gen =>
+    Control.Monad.Trans.State.Lazy.StateT
+      Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen
+  {- Arity: 2, Strictness: <L,1*U(A,1*C1(U),A)><L,U(U(U))>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Pretty.Common.currentIndent1
+                  `cast`
+                (forall (gen :: <*>_N).
+                 <Language.PureScript.Pretty.Common.Emit gen>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <Language.PureScript.Pretty.Common.PrinterState>_N
+                               <GHC.Base.Maybe>_R
+                               <gen>_N)) -}
+de38a8158bae713f8fa3a2cfe63e2c9f
+  currentIndent1 ::
+    Language.PureScript.Pretty.Common.Emit gen =>
+    Language.PureScript.Pretty.Common.PrinterState
+    -> GHC.Base.Maybe
+         (gen, Language.PureScript.Pretty.Common.PrinterState)
+  {- Arity: 2, Strictness: <L,1*U(A,1*C1(U),A)><L,U(U(U))>m2,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ gen
+                   (w :: Language.PureScript.Pretty.Common.Emit gen)
+                   (w1 :: Language.PureScript.Pretty.Common.PrinterState) ->
+                 case Language.PureScript.Pretty.Common.$wcurrentIndent
+                        @ gen
+                        w
+                        w1 of ww { Unit# ww1 ->
+                 GHC.Base.Just
+                   @ (gen, Language.PureScript.Pretty.Common.PrinterState)
+                   ww1 }) -}
+1026a7d6f31895ade16746e8e6586b12
+  emptyPrinterState :: Language.PureScript.Pretty.Common.PrinterState
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.PureScript.Pretty.Common.PrinterState
+                   Language.PureScript.Pretty.Common.$fEmitStrPos1) -}
+c024da0e558fab56fda4403ce0774be4
+  endWith ::
+    Text.PrettyPrint.Boxes.Box
+    -> Text.PrettyPrint.Boxes.Box -> Text.PrettyPrint.Boxes.Box
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U),U,U)><L,U(U,U(U),U)>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Text.PrettyPrint.Boxes.Box)
+                   (w1 :: Text.PrettyPrint.Boxes.Box) ->
+                 case Language.PureScript.Pretty.Common.$wendWith
+                        w
+                        w1 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 }) -}
+2f659d04e70f93379f1d98f6f6538e60
+  indent ::
+    Language.PureScript.Pretty.Common.PrinterState -> GHC.Types.Int
+  RecSel Left Language.PureScript.Pretty.Common.PrinterState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Pretty.Common.PrinterState) ->
+                 case ds of wild { Language.PureScript.Pretty.Common.PrinterState ds1 ->
+                 ds1 }) -}
+f491d1a8c0361e585562e40996f1912d
+  intercalate :: GHC.Base.Monoid m => m -> [m] -> m
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(S)),1*U(A,A,A,1*C1(U))><L,U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ m ($dMonoid :: GHC.Base.Monoid m) (x :: m) (xs :: [m]) ->
+                 GHC.Base.mconcat
+                   @ m
+                   $dMonoid
+                   (case xs of wild {
+                      [] -> GHC.Types.[] @ m
+                      : x1 xs1
+                      -> GHC.Types.: @ m x1 (Data.OldList.prependToAll @ m x xs1) })) -}
+ab6a45548ac547f1bf7aef65dc8ae414
+  objectKeyRequiresQuoting ::
+    Data.Text.Internal.Text -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,U(U,U,U)>,
+     Unfolding: (\ (s :: Data.Text.Internal.Text) ->
+                 case GHC.List.elem
+                        @ Data.Text.Internal.Text
+                        Data.Text.$fEqText
+                        s
+                        Language.PureScript.Parser.Lexer.reservedPsNames of wild {
+                   GHC.Types.False
+                   -> case s of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                      case Language.PureScript.Parser.Lexer.$wisUnquotedKey
+                             ww1
+                             ww2
+                             ww3 of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True
+                        -> case GHC.Prim.<=# ww3 0# of lwild {
+                             DEFAULT
+                             -> case GHC.Prim.indexWord16Array# ww1 ww2 of r# { DEFAULT ->
+                                case GHC.Prim.ltWord# r# 55296## of lwild1 {
+                                  DEFAULT
+                                  -> case GHC.Prim.gtWord# r# 56319## of lwild2 {
+                                       DEFAULT
+                                       -> case GHC.Prim.indexWord16Array#
+                                                 ww1
+                                                 (GHC.Prim.+# ww2 1#) of r#1 { DEFAULT ->
+                                          case {__pkg_ccall base-4.11.1.0 GHC.Prim.Int#
+                                                                          -> GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Int# #)}
+                                                 (GHC.Prim.+#
+                                                    (GHC.Prim.+#
+                                                       (GHC.Prim.uncheckedIShiftL#
+                                                          (GHC.Prim.-#
+                                                             (GHC.Prim.word2Int# r#)
+                                                             55296#)
+                                                          10#)
+                                                       (GHC.Prim.-#
+                                                          (GHC.Prim.word2Int# r#1)
+                                                          56320#))
+                                                    65536#)
+                                                 GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                          case ds1 of wild3 {
+                                            DEFAULT -> GHC.Types.True 0# -> GHC.Types.False } } }
+                                       1#
+                                       -> case {__pkg_ccall base-4.11.1.0 GHC.Prim.Int#
+                                                                          -> GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Int# #)}
+                                                 (GHC.Prim.word2Int# r#)
+                                                 GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                          case ds1 of wild3 {
+                                            DEFAULT -> GHC.Types.True 0# -> GHC.Types.False } } }
+                                  1#
+                                  -> case {__pkg_ccall base-4.11.1.0 GHC.Prim.Int#
+                                                                     -> GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld
+                                                                     -> (# GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld,
+                                                                           GHC.Prim.Int# #)}
+                                            (GHC.Prim.word2Int# r#)
+                                            GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                     case ds1 of wild3 {
+                                       DEFAULT -> GHC.Types.True 0# -> GHC.Types.False } } } }
+                             1# -> GHC.Types.False } } }
+                   GHC.Types.True -> GHC.Types.True }) -}
+14d965851374e226f75f04ff00ce6c5a
+  parens :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   Language.PureScript.Pretty.Common.parens2
+                   (GHC.Base.build
+                      @ GHC.Types.Char
+                      (\ @ b
+                         (c :: GHC.Types.Char -> b -> b)[OneShot]
+                         (n :: b)[OneShot] ->
+                       GHC.Base.foldr
+                         @ GHC.Types.Char
+                         @ b
+                         c
+                         (GHC.CString.unpackFoldrCString#
+                            @ b
+                            Language.PureScript.Pretty.Common.parens1
+                            c
+                            n)
+                         s))) -}
+e7fbf42a61bf568c10e5ba26fcfdd83d
+  parens1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (")"#) -}
+1bb31f155fdf3bfd60b5438e595de1b0
+  parens2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("("#) -}
+24cf65015b6153432f1b048d20f8f067
+  parensPos ::
+    Language.PureScript.Pretty.Common.Emit gen => gen -> gen
+  {- Arity: 2,
+     Strictness: <S(S(S(C(C(S))LL)LLL)LL),U(1*U(1*U(C(C1(U)),A,A),A,A,A),C(U),A)><L,U>,
+     Unfolding: (\ @ gen
+                   ($dEmit :: Language.PureScript.Pretty.Common.Emit gen)
+                   (eta :: gen) ->
+                 let {
+                   $dMonoid :: GHC.Base.Monoid gen
+                   = Language.PureScript.Pretty.Common.$p1Emit @ gen $dEmit
+                 } in
+                 let {
+                   $dSemigroup :: GHC.Base.Semigroup gen
+                   = GHC.Base.$p1Monoid @ gen $dMonoid
+                 } in
+                 GHC.Base.<>
+                   @ gen
+                   $dSemigroup
+                   (Language.PureScript.Pretty.Common.emit
+                      @ gen
+                      $dEmit
+                      Language.PureScript.Pretty.Common.parensPos2)
+                   (GHC.Base.<>
+                      @ gen
+                      $dSemigroup
+                      eta
+                      (Language.PureScript.Pretty.Common.emit
+                         @ gen
+                         $dEmit
+                         Language.PureScript.Pretty.Common.parensPos1))) -}
+d6730a248bddd72d6809a1868ad7519a
+  parensPos1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Pretty.Common.parens1) -}
+91186a763aa94cda851ad2c8444a8220
+  parensPos2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Pretty.Common.parens2) -}
+394c673b803366277f32caba16b1cf96
+  parensT :: Data.Text.Internal.Text -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Language.PureScript.Pretty.Common.$wparensT ww1 ww2 ww3 }) -}
+596704e254d65601410f2cc04d92a528
+  prettyPrintMany ::
+    Language.PureScript.Pretty.Common.Emit gen =>
+    (a
+     -> Control.Monad.Trans.State.Lazy.StateT
+          Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen)
+    -> [a]
+    -> Control.Monad.Trans.State.Lazy.StateT
+         Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen
+  {- Arity: 3,
+     Strictness: <L,U(1*U(A,A,C(C(U)),C(U)),C(U),A)><L,C(C(U))><L,1*U> -}
+f9b4e48ebcad6bc7924612e02d0b6564
+  runPlainString ::
+    Language.PureScript.Pretty.Common.PlainString
+    -> Data.Text.Internal.Text
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Pretty.Common.runPlainString1
+                  `cast`
+                (<Language.PureScript.Pretty.Common.PlainString>_R
+                 ->_R Language.PureScript.Pretty.Common.N:PlainString[0]) -}
+7ed63dcf4a4721b95844778b57cb6e9c
+  runPlainString1 ::
+    Language.PureScript.Pretty.Common.PlainString
+    -> Language.PureScript.Pretty.Common.PlainString
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.PureScript.Pretty.Common.PlainString) -> ds) -}
+0e477b3a5d3f9b8adc631063db90f735
+  withIndent ::
+    Control.Monad.Trans.State.Lazy.StateT
+      Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen
+    -> Control.Monad.Trans.State.Lazy.StateT
+         Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*U(1*U(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Pretty.Common.withIndent1
+                  `cast`
+                (forall (gen :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    Language.PureScript.Pretty.Common.PrinterState
+                    GHC.Base.Maybe
+                    gen>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <Language.PureScript.Pretty.Common.PrinterState>_N
+                               <GHC.Base.Maybe>_R
+                               <gen>_N)) -}
+d4ed9c921d93acca533f6e6a06b1baab
+  withIndent1 ::
+    Control.Monad.Trans.State.Lazy.StateT
+      Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen
+    -> Language.PureScript.Pretty.Common.PrinterState
+    -> GHC.Base.Maybe
+         (gen, Language.PureScript.Pretty.Common.PrinterState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*U(1*U(U))>,
+     Unfolding: (\ @ gen
+                   (action :: Control.Monad.Trans.State.Lazy.StateT
+                                Language.PureScript.Pretty.Common.PrinterState GHC.Base.Maybe gen)
+                   (eta :: Language.PureScript.Pretty.Common.PrinterState) ->
+                 case action
+                        `cast`
+                      (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                           <Language.PureScript.Pretty.Common.PrinterState>_N
+                           <GHC.Base.Maybe>_R
+                           <gen>_N)
+                        (case eta of wild { Language.PureScript.Pretty.Common.PrinterState ds ->
+                         Language.PureScript.Pretty.Common.PrinterState
+                           (case ds of wild1 { GHC.Types.I# x ->
+                            GHC.Types.I# (GHC.Prim.+# x 4#) }) }) of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Base.Nothing
+                        @ (gen, Language.PureScript.Pretty.Common.PrinterState)
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ (gen, Language.PureScript.Pretty.Common.PrinterState)
+                        (case x of wild1 { (,) a1 s' -> a1 },
+                         case x of wild1 { (,) a1 s' ->
+                         case s' of wild2 { Language.PureScript.Pretty.Common.PrinterState ds ->
+                         Language.PureScript.Pretty.Common.PrinterState
+                           (case ds of wild3 { GHC.Types.I# x1 ->
+                            GHC.Types.I# (GHC.Prim.-# x1 4#) }) } }) }) -}
+instance Language.PureScript.Pretty.Common.Emit [Language.PureScript.Pretty.Common.PlainString]
+  = Language.PureScript.Pretty.Common.$fEmitPlainString
+instance Language.PureScript.Pretty.Common.Emit [Language.PureScript.Pretty.Common.StrPos]
+  = Language.PureScript.Pretty.Common.$fEmitStrPos
+instance GHC.Base.Monoid [Language.PureScript.Pretty.Common.PlainString]
+  = Language.PureScript.Pretty.Common.$fMonoidPlainString
+instance GHC.Base.Monoid [Language.PureScript.Pretty.Common.StrPos]
+  = Language.PureScript.Pretty.Common.$fMonoidStrPos
+instance GHC.Base.Semigroup [Language.PureScript.Pretty.Common.PlainString]
+  = Language.PureScript.Pretty.Common.$fSemigroupPlainString
+instance GHC.Base.Semigroup [Language.PureScript.Pretty.Common.StrPos]
+  = Language.PureScript.Pretty.Common.$fSemigroupStrPos
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

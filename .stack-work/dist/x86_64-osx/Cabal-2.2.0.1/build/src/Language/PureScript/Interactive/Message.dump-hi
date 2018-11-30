@@ -1,0 +1,537 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:03.676556 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Interactive.Message 8043
+  interface hash: a2f7731dc7293afa2d5fffa24914f226
+  ABI hash: af2718e22728b0bf0a7787c91ae938ac
+  export-list hash: 92dad8b7d97db31bdc264a4ada103a4e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6b91193d6f95e3c74259a28b4bb30bdf
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Interactive.Message.guideURL
+  Language.PureScript.Interactive.Message.helpMessage
+  Language.PureScript.Interactive.Message.noInputMessage
+  Language.PureScript.Interactive.Message.prologueMessage
+  Language.PureScript.Interactive.Message.quitMessage
+  Language.PureScript.Interactive.Message.supportModuleMessage
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Interactive.Directive
+                     Language.PureScript.Interactive.Types Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      directory-1.3.1.5 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      lifted-base-0.2.3.12 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 monad-control-1.0.2.3 mtl-2.2.2
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
+                      stm-2.4.5.0 syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM colour-2.3.4:Data.Colour
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Version 26b96b3dd83a23703e0b8110475fc04a
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  Language.PureScript.Interactive.Directive db12e918fb0cb1e9e071d5ffe955200a
+  exports: bc9bf0665b5d50838e9e9b8e0bd63992
+  help 5f4a4a0becd597166bc1aea3f074b6ac
+  stringFor f31d21d7ab1a5d0c377afdc425ce68df
+import  -/  Language.PureScript.Interactive.Types 3ce82c8ef1b298c922daa3739e0e39a4
+  exports: 720882d0a070fd7ca0bf1b7bc77c153a
+  Directive 6d04fdb5e26b466ffd22b01b64e3342d
+import  -/  Paths_purescript a1929913cfb69ecc53654efc3b17c6b3
+  exports: 2c455cd4735d13a5fa8e95701f74bbba
+  version 36e47562f1510cc9eab6b4cc20db5d32
+ec66fed3665b32227dc1cb95877cdfe1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Interactive.Message.$trModule3
+                   Language.PureScript.Interactive.Message.$trModule1) -}
+390256fa8747fffa1bfa7489828463e7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Interactive.Message.$trModule2) -}
+0c5715ccbc846beb425b952d89bca3e1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Interactive.Message"#) -}
+c622b76d6950831397d3a6b3f969a14f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Interactive.Message.$trModule4) -}
+4fde8a944c129856c0290a1315516781
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+e72de33172938b88f8093fedd1227846
+  $wxs :: GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2, Inline: [0] -}
+49a1ca3b61d4144f7fd60de62c22ecc0
+  $wxs1 :: GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2, Inline: [0] -}
+5ca5724f502ab735d7257e2c9e61c2c7
+  guideURL :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.guideURL1) -}
+e1883c9d9c859a86b39de2e86af7ed5b
+  guideURL1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("https://github.com/purescript/documentation/blob/master/guides/PSCi.md"#) -}
+e03c864aab15d037bc36a7c1da197ea6
+  helpMessage :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.PureScript.Interactive.Message.helpMessage12
+                   Language.PureScript.Interactive.Message.helpMessage1) -}
+d7223672103ae3df5a8ad0ade97f0d96
+  helpMessage1 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Base.map
+                        @ (Language.PureScript.Interactive.Types.Directive,
+                           GHC.Base.String, GHC.Base.String)
+                        @ [GHC.Types.Char]
+                        Language.PureScript.Interactive.Message.helpMessage9
+                        Language.PureScript.Interactive.Directive.help of wild {
+                   [] -> Language.PureScript.Interactive.Message.helpMessage_n
+                   : x xs1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (Data.OldList.intercalate_$spoly_go
+                           @ GHC.Types.Char
+                           x
+                           (Data.OldList.prependToAll
+                              @ [GHC.Types.Char]
+                              Language.PureScript.Interactive.Message.helpMessage2
+                              xs1))
+                        Language.PureScript.Interactive.Message.helpMessage_n }) -}
+719198c0d1f049aa2070ed81f8303c61
+  helpMessage10 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ':'#) -}
+dd553a0d57eaa71e2cc01dc6650e57be
+  helpMessage11 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ' '#) -}
+b26c3236652684c3bd310ae55999072b
+  helpMessage12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("The following commands are available:\n\
+                 \\n\
+                 \    "#) -}
+c6bdf4295b8e8857017a2566a5bf39e2
+  helpMessage2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.helpMessage3) -}
+b3d5576f9afc33d2a774592ce4c36664
+  helpMessage3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\n\
+                 \    "#) -}
+a736f025397cbb55c401676d6949490b
+  helpMessage4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.PureScript.Interactive.Message.helpMessage7
+                   Language.PureScript.Interactive.Message.helpMessage5) -}
+cdb9b661e6218f47398a42b8360d7cf9
+  helpMessage5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.PureScript.Interactive.Message.helpMessage6
+                   Language.PureScript.Interactive.Message.guideURL) -}
+3add648af8d1566196f8f46fe8e30e78
+  helpMessage6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" --> "#) -}
+ac4572bf2915fda75cc0156bede89002
+  helpMessage7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Further information is available on the PureScript documentation repository:\n"#) -}
+eb20e4c57a93273e2f8af126062d718f
+  helpMessage8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\n\
+                 \\n"#) -}
+5059967b693dc6813e8c4163476b2e86
+  helpMessage9 ::
+    (Language.PureScript.Interactive.Types.Directive, GHC.Base.String,
+     GHC.Base.String)
+    -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U,1*U)>m2,
+     Unfolding: (\ (ds :: (Language.PureScript.Interactive.Types.Directive,
+                           GHC.Base.String, GHC.Base.String)) ->
+                 case ds of wild { (,,) dir arg desc ->
+                 let {
+                   cmd :: GHC.Base.String
+                   = case GHC.List.lookup
+                            @ Language.PureScript.Interactive.Types.Directive
+                            @ [GHC.Base.String]
+                            Language.PureScript.Interactive.Types.$fEqDirective
+                            dir
+                            Language.PureScript.Interactive.Directive.directiveStrings of wild1 {
+                       GHC.Base.Nothing
+                       -> case Data.Maybe.fromJust1 ret_ty GHC.Base.String of {}
+                       GHC.Base.Just x1
+                       -> case x1 of wild2 {
+                            [] -> GHC.List.badHead @ GHC.Base.String : x ds1 -> x } }
+                 } in
+                 GHC.Base.++_$s++
+                   @ GHC.Types.Char
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      Language.PureScript.Interactive.Message.helpMessage11
+                      (case GHC.List.$wlenAcc
+                              @ GHC.Types.Char
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 Language.PureScript.Interactive.Message.helpMessage10
+                                 cmd)
+                              0# of ww2 { DEFAULT ->
+                       let {
+                         y :: GHC.Prim.Int# = GHC.Prim.-# 11# ww2
+                       } in
+                       let {
+                         karg :: [GHC.Types.Char]
+                         = GHC.Base.++
+                             @ GHC.Types.Char
+                             arg
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                Language.PureScript.Interactive.Message.helpMessage11
+                                (case GHC.List.$wlenAcc @ GHC.Types.Char arg 0# of ww1 { DEFAULT ->
+                                 let {
+                                   y1 :: GHC.Prim.Int# = GHC.Prim.-# 11# ww1
+                                 } in
+                                 case GHC.Prim.<# 0# y1 of lwild {
+                                   DEFAULT
+                                   -> GHC.Base.++
+                                        @ GHC.Types.Char
+                                        (GHC.Types.[] @ GHC.Types.Char)
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           Language.PureScript.Interactive.Message.helpMessage11
+                                           (GHC.Base.++
+                                              @ GHC.Types.Char
+                                              desc
+                                              (GHC.Types.[] @ GHC.Types.Char)))
+                                   1#
+                                   -> GHC.Base.++
+                                        @ GHC.Types.Char
+                                        (Language.PureScript.Interactive.Message.$wxs1 y1)
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           Language.PureScript.Interactive.Message.helpMessage11
+                                           (GHC.Base.++
+                                              @ GHC.Types.Char
+                                              desc
+                                              (GHC.Types.[] @ GHC.Types.Char))) } }))
+                       } in
+                       case GHC.Prim.<# 0# y of lwild {
+                         DEFAULT
+                         -> GHC.Base.++
+                              @ GHC.Types.Char
+                              (GHC.Types.[] @ GHC.Types.Char)
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 Language.PureScript.Interactive.Message.helpMessage11
+                                 karg)
+                         1#
+                         -> GHC.Base.++
+                              @ GHC.Types.Char
+                              (Language.PureScript.Interactive.Message.$wxs y)
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 Language.PureScript.Interactive.Message.helpMessage11
+                                 karg) } }))
+                   Language.PureScript.Interactive.Message.helpMessage10
+                   cmd }) -}
+c8a516ca39a64e207d7b6349180a2c9f
+  helpMessage_n :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.PureScript.Interactive.Message.helpMessage8
+                   Language.PureScript.Interactive.Message.helpMessage4) -}
+7c411d65e31960a508af365159e58ec4
+  noInputMessage :: GHC.Base.String
+  {- Unfolding: (Data.OldList.unlines
+                   Language.PureScript.Interactive.Message.noInputMessage1) -}
+115387133687725392664a7bb2800234
+  noInputMessage1 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.noInputMessage8
+                   Language.PureScript.Interactive.Message.noInputMessage2) -}
+7544d665f71261f3db6112bc3e498453
+  noInputMessage2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.noInputMessage6
+                   Language.PureScript.Interactive.Message.noInputMessage3) -}
+3cbd75682107bd7429dadc9952032746
+  noInputMessage3 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.noInputMessage4
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+a8aa0efd01e6863d5487c1ed8b9f0d4d
+  noInputMessage4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.noInputMessage5) -}
+420a096ce77a3a59a33deed2ae24635c
+  noInputMessage5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Usage: For basic information, try the `--help' option."#) -}
+d3ee4bbc5189ca97a644e131489e2618
+  noInputMessage6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.PureScript.Interactive.Message.noInputMessage7
+                   Language.PureScript.Interactive.Message.guideURL) -}
+d3abd1c9176d7b3164792d75f8131c58
+  noInputMessage7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("For help getting started, visit "#) -}
+8b72962ac56503e53ff4e030da0e6684
+  noInputMessage8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.noInputMessage9) -}
+1353b3c3f8ce6fa77483bf2b7eee9d7f
+  noInputMessage9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purs repl: No input files; try running `pulp psci` instead."#) -}
+0113adebad879a8a183db22347966a45
+  prologueMessage :: GHC.Base.String
+  {- Unfolding: (Data.OldList.unlines
+                   Language.PureScript.Interactive.Message.prologueMessage1) -}
+75e9b5750323228ed8a68c37c025eb80
+  prologueMessage1 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.prologueMessage5
+                   Language.PureScript.Interactive.Message.prologueMessage2) -}
+2b4de688c1222e8360ed19c3e6c8367e
+  prologueMessage2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.prologueMessage3
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+9e122d8dd16179248b2b9c6fa11d6e3e
+  prologueMessage3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.prologueMessage4) -}
+5164e4eecb4e0cbe95a048fa0402af18
+  prologueMessage4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Type :? for help"#) -}
+db160ad3b3a052c6d3be50cdf972bab3
+  prologueMessage5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.PureScript.Interactive.Message.prologueMessage7
+                   Language.PureScript.Interactive.Message.prologueMessage6) -}
+e1f6bb14f4a94dab68e84127883de6a0
+  prologueMessage6 :: GHC.Base.String
+  {- Unfolding: (Data.Version.$wshowVersion
+                   Paths_purescript.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+9a05e9817124a999a4905ce23785603b
+  prologueMessage7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PSCi, version "#) -}
+65f2c9122b69f9cb38ba1535915c7e85
+  quitMessage :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.quitMessage1) -}
+8cc684caa164ccf6c7b6fcd51623d009
+  quitMessage1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("See ya!"#) -}
+eeaaedc0122d7a4f496a4bb4e056c644
+  supportModuleMessage :: GHC.Base.String
+  {- Unfolding: (Data.OldList.unlines
+                   Language.PureScript.Interactive.Message.supportModuleMessage1) -}
+48ffc44509998d506840a482e6f2c80b
+  supportModuleMessage1 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.supportModuleMessage3
+                   Language.PureScript.Interactive.Message.supportModuleMessage2) -}
+87b2b674479675eaf23a1a3b79256679
+  supportModuleMessage2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Interactive.Message.noInputMessage6
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+95b98390b70085666dd19807d4d45bf4
+  supportModuleMessage3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Interactive.Message.supportModuleMessage4) -}
+87192aa0b22cbcb6bbf5a5c852b58d2d
+  supportModuleMessage4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purs repl: PSCi requires the psci-support package."#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

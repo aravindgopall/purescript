@@ -1,0 +1,915 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:47:34.094667 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Sugar.Operators.Common 8043
+  interface hash: 05b60533441a9b52c36c486ab4c378b0
+  ABI hash: 33ce9b9de799c9a65f9a7c2299659f68
+  export-list hash: b673449456dc16f56b992f0f5f568eb9
+  orphan hash: a2157b1b4577a5b694652df8b10396e6
+  flag hash: 4d9d5651992e23893b931ac76ed000be
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Sugar.Operators.Common.matchOp
+  Language.PureScript.Sugar.Operators.Common.matchOperators
+  Language.PureScript.Sugar.Operators.Common.opTable
+  Language.PureScript.Sugar.Operators.Common.parseOp
+  Language.PureScript.Sugar.Operators.Common.parseValue
+  Language.PureScript.Sugar.Operators.Common.toAssoc
+  Language.PureScript.Sugar.Operators.Common.token
+  Language.PureScript.Sugar.Operators.Common.Chain
+  Language.PureScript.Sugar.Operators.Common.FromOp
+  Language.PureScript.Sugar.Operators.Common.Reapply
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM colour-2.3.4:Data.Colour
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Functor.Identity 9430dcaadd71c129eeb5ca7b963c9b54
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.List.NonEmpty 595ee3baddcadebc4831ea7541427984
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type f3d5169c3d3830854b19f6565b265403
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  mtl-2.2.2:Control.Monad.Except a6fe75d3c5548ea9e926864b8cbfe1ee
+import  -/  mtl-2.2.2:Control.Monad.State 1f28325cb5ef11b6b40ffadfe4bc2ca3
+import  -/  parsec-3.1.13.0:Text.Parsec 963cbe7b4116cef91451434dc005a011
+import  -/  parsec-3.1.13.0:Text.Parsec.Combinator 86d872425bd48a2d67c0d1ce1a8ccc8b
+import  -/  parsec-3.1.13.0:Text.Parsec.Expr 6898ea405cda9f4ced72197883fcde5c
+import  -/  parsec-3.1.13.0:Text.Parsec.Pos 85d30a347a2120f1b5f286869826a471
+import  -/  parsec-3.1.13.0:Text.Parsec.Prim 4e0ad30f54008188b8c54f509e1a8ed9
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  ErrorMessage bc889ae8d74a01dbbd95e220faa4631d
+  ErrorMessage cebd18718f7c34278cac50a2f0ab0386
+  MixedAssociativityError 0d6e29625cc0749462ef88e6a94a5f08
+  NonAssociativeError f1b45362b7b0e203d7fe62782d6f32b6
+  PositionedError 1a06bb4c398f7c5e8de6f5fb8fd37088
+  SimpleErrorMessage 33c1a345bb3f2be69a13531f80c78fbd
+import  -/  Language.PureScript.AST.Operators be736e316462ef3abce53315e7361a17
+  Associativity 17f2097426b72eb751701f86cd97792c
+  Infix 48da7304e58a5ef64ef55f219a639205
+  Infixl c355232652b8d07dc6f4cc3d968cd69f
+  Infixr e374de6c2504281f30a71346ea589bed
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors f5c9696f41d58d6dc3fa501d3874e5a8
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  OpName 1522672b880b192c6e05e6cf8a45712d
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  eraseOpName 8fbd69535ffc229c7c5e913872bf2854
+8c957c1e4a4c1e811e49bbd59f7f4a1c
+  $s$fStream[]mtok ::
+    Text.Parsec.Prim.Stream [tok] Data.Functor.Identity.Identity tok
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ tok.
+                  @ [tok]
+                  @ Data.Functor.Identity.Identity
+                  @ tok
+                  Data.Functor.Identity.$fMonadIdentity
+                  (Language.PureScript.Sugar.Operators.Common.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+                     @ tok) -}
+de9c90e82ec211d6288a098f2dea1709
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok (ds :: [tok]) ->
+                 case ds of wild {
+                   []
+                   -> (GHC.Base.Nothing @ (tok, [tok]))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R))
+                   : t ts
+                   -> (GHC.Base.Just @ (tok, [tok]) (t, ts))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R)) }) -}
+dfd9412ba8b96d12f44a3e6989b8d337
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Sugar.Operators.Common.$trModule3
+                   Language.PureScript.Sugar.Operators.Common.$trModule1) -}
+f8348f122dce3f915222309f63c55e83
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Sugar.Operators.Common.$trModule2) -}
+6d1e8ca1f851585033a2bd30366003c0
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Sugar.Operators.Common"#) -}
+4e89846d13054795ca191f8a6e09f228
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Sugar.Operators.Common.$trModule4) -}
+4462a7bb0f4551c99163b8dc0c7cdbdf
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+f2158ff1db9ce06ff212edebc903e5e7
+  type Chain a = [Data.Either.Either a a]
+b39c63b09d6ef3ed079abb642af9e270
+  type FromOp (nameType :: Language.PureScript.Names.OpNameType) a =
+    a
+    -> GHC.Base.Maybe
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.OpName nameType))
+d01c69927f65f049c8ded7195ec727cf
+  type Reapply (nameType :: Language.PureScript.Names.OpNameType) a =
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName nameType)
+    -> a
+    -> a
+    -> a
+675d7785e33d76ed7e489002a8381dfc
+  matchOp ::
+    Language.PureScript.Sugar.Operators.Common.FromOp nameType a
+    -> Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName nameType)
+    -> Text.Parsec.Prim.Parsec
+         (Language.PureScript.Sugar.Operators.Common.Chain a)
+         ()
+         Language.PureScript.AST.SourcePos.SourceSpan
+  {- Arity: 7,
+     Strictness: <L,1*C1(U)><L,U(U,U(U,U,U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Sugar.Operators.Common.matchOp1
+                  `cast`
+                (forall (nameType :: <Language.PureScript.Names.OpNameType>_N) (a :: <*>_N).
+                 <Language.PureScript.Sugar.Operators.Common.FromOp nameType a>_R
+                 ->_R <Language.PureScript.Names.Qualified
+                         (Language.PureScript.Names.OpName nameType)>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <[Data.Either.Either a a]>_R
+                               <()>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <Language.PureScript.AST.SourcePos.SourceSpan>_R)) -}
+cf827f388b0b800720440213d4f3b187
+  matchOp1 ::
+    Language.PureScript.Sugar.Operators.Common.FromOp nameType a
+    -> Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName nameType)
+    -> forall b.
+       Text.Parsec.Prim.State [Data.Either.Either a a] ()
+       -> (Language.PureScript.AST.SourcePos.SourceSpan
+           -> Text.Parsec.Prim.State [Data.Either.Either a a] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Language.PureScript.AST.SourcePos.SourceSpan
+           -> Text.Parsec.Prim.State [Data.Either.Either a a] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 7,
+     Strictness: <L,1*C1(U)><L,U(U,U(U,U,U))><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+08720a5d94c009968d91d5520265816e
+  matchOperators ::
+    (GHC.Show.Show a,
+     Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m) =>
+    (a -> GHC.Types.Bool)
+    -> (a -> GHC.Base.Maybe (a, a, a))
+    -> Language.PureScript.Sugar.Operators.Common.FromOp nameType a
+    -> Language.PureScript.Sugar.Operators.Common.Reapply nameType a
+    -> ([[Text.Parsec.Expr.Operator
+            (Language.PureScript.Sugar.Operators.Common.Chain a)
+            ()
+            Data.Functor.Identity.Identity
+            a]]
+        -> Text.Parsec.Expr.OperatorTable
+             (Language.PureScript.Sugar.Operators.Common.Chain a)
+             ()
+             Data.Functor.Identity.Identity
+             a)
+    -> [[(Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.OpName nameType),
+          Language.PureScript.AST.Operators.Associativity)]]
+    -> a
+    -> m a
+  {- Arity: 2,
+     Strictness: <L,U(C(C1(C(U))),A,A)><L,U(1*U(1*U(A,C(U),A,A,A,A),A,A,A,A),C(U),A)> -}
+c8709528dfe4294c4dded27a995bce68
+  opTable ::
+    [[(Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName nameType),
+       Language.PureScript.AST.Operators.Associativity)]]
+    -> Language.PureScript.Sugar.Operators.Common.FromOp nameType a
+    -> Language.PureScript.Sugar.Operators.Common.Reapply nameType a
+    -> [[Text.Parsec.Expr.Operator
+           (Language.PureScript.Sugar.Operators.Common.Chain a)
+           ()
+           Data.Functor.Identity.Identity
+           a]]
+  {- Arity: 3, Strictness: <S,1*U><L,C(U)><L,C(C1(U))>,
+     Unfolding: (\ @ nameType :: Language.PureScript.Names.OpNameType
+                   @ a
+                   (ops :: [[(Language.PureScript.Names.Qualified
+                                (Language.PureScript.Names.OpName nameType),
+                              Language.PureScript.AST.Operators.Associativity)]])
+                   (fromOp :: Language.PureScript.Sugar.Operators.Common.FromOp
+                                nameType a)
+                   (reapply :: Language.PureScript.Sugar.Operators.Common.Reapply
+                                 nameType a) ->
+                 GHC.Base.map
+                   @ [(Language.PureScript.Names.Qualified
+                         (Language.PureScript.Names.OpName nameType),
+                       Language.PureScript.AST.Operators.Associativity)]
+                   @ [Text.Parsec.Expr.Operator
+                        (Language.PureScript.Sugar.Operators.Common.Chain a)
+                        ()
+                        Data.Functor.Identity.Identity
+                        a]
+                   (GHC.Base.map
+                      @ (Language.PureScript.Names.Qualified
+                           (Language.PureScript.Names.OpName nameType),
+                         Language.PureScript.AST.Operators.Associativity)
+                      @ (Text.Parsec.Expr.Operator
+                           (Language.PureScript.Sugar.Operators.Common.Chain a)
+                           ()
+                           Data.Functor.Identity.Identity
+                           a)
+                      (\ (ds :: (Language.PureScript.Names.Qualified
+                                   (Language.PureScript.Names.OpName nameType),
+                                 Language.PureScript.AST.Operators.Associativity)) ->
+                       case ds of wild { (,) name a1 ->
+                       Text.Parsec.Expr.Infix
+                         @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                         @ ()
+                         @ Data.Functor.Identity.Identity
+                         @ a
+                         (\ @ b1
+                            (s1 :: Text.Parsec.Prim.State [Data.Either.Either a a] ())
+                            (cok :: (a -> a -> a)
+                                    -> Text.Parsec.Prim.State [Data.Either.Either a a] ()
+                                    -> Text.Parsec.Error.ParseError
+                                    -> Data.Functor.Identity.Identity b1)
+                            (cerr :: Text.Parsec.Error.ParseError
+                                     -> Data.Functor.Identity.Identity b1)
+                            (eok :: (a -> a -> a)
+                                    -> Text.Parsec.Prim.State [Data.Either.Either a a] ()
+                                    -> Text.Parsec.Error.ParseError
+                                    -> Data.Functor.Identity.Identity b1)
+                            (eerr :: Text.Parsec.Error.ParseError
+                                     -> Data.Functor.Identity.Identity b1) ->
+                          Language.PureScript.Sugar.Operators.Common.matchOp1
+                            @ nameType
+                            @ a
+                            fromOp
+                            name
+                            @ b1
+                            s1
+                            (\ (x :: Language.PureScript.AST.SourcePos.SourceSpan)
+                               (s2 :: Text.Parsec.Prim.State [Data.Either.Either a a] ())[OneShot]
+                               (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                             cok
+                               (reapply x name)
+                               s2
+                               (case s2 of wild1 { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                                case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                                case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                                case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                                case Text.Parsec.Error.$wmergeError
+                                       ww4
+                                       ww5
+                                       ww6
+                                       ww2
+                                       ww11
+                                       ww12
+                                       ww13
+                                       (GHC.Types.[]
+                                          @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                                Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                            eerr
+                            (\ (x :: Language.PureScript.AST.SourcePos.SourceSpan)
+                               (s2 :: Text.Parsec.Prim.State [Data.Either.Either a a] ())[OneShot]
+                               (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                             eok
+                               (reapply x name)
+                               s2
+                               (case s2 of wild1 { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                                case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                                case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                                case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                                case Text.Parsec.Error.$wmergeError
+                                       ww4
+                                       ww5
+                                       ww6
+                                       ww2
+                                       ww11
+                                       ww12
+                                       ww13
+                                       (GHC.Types.[]
+                                          @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                                Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                            eerr)
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <[Data.Either.Either a a]>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <a -> a -> a>_R))
+                         (Language.PureScript.Sugar.Operators.Common.toAssoc a1) }))
+                   ops) -}
+146348ca7c47757e02d0c7a184f2a96a
+  parseOp ::
+    Language.PureScript.Sugar.Operators.Common.FromOp nameType a
+    -> Text.Parsec.Prim.Parsec
+         (Language.PureScript.Sugar.Operators.Common.Chain a)
+         ()
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.OpName nameType))
+  {- Arity: 6,
+     Strictness: <L,1*C1(U)><L,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Sugar.Operators.Common.parseOp1
+                  `cast`
+                (forall (nameType :: <Language.PureScript.Names.OpNameType>_N) (a :: <*>_N).
+                 <Language.PureScript.Sugar.Operators.Common.FromOp nameType a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <Language.PureScript.Sugar.Operators.Common.Chain a>_R
+                               <()>_R
+                               <Data.Functor.Identity.Identity>_R
+                               <(Language.PureScript.AST.SourcePos.SourceSpan,
+                                 Language.PureScript.Names.Qualified
+                                   (Language.PureScript.Names.OpName nameType))>_R)) -}
+186629f1060dab40905ba165ac6652a9
+  parseOp1 ::
+    Language.PureScript.Sugar.Operators.Common.FromOp nameType a
+    -> forall b.
+       Text.Parsec.Prim.State
+         (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+       -> ((Language.PureScript.AST.SourcePos.SourceSpan,
+            Language.PureScript.Names.Qualified
+              (Language.PureScript.Names.OpName nameType))
+           -> Text.Parsec.Prim.State
+                (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> ((Language.PureScript.AST.SourcePos.SourceSpan,
+            Language.PureScript.Names.Qualified
+              (Language.PureScript.Names.OpName nameType))
+           -> Text.Parsec.Prim.State
+                (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,1*C1(U)><L,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ nameType :: Language.PureScript.Names.OpNameType
+                   @ a
+                   (fromOp :: Language.PureScript.Sugar.Operators.Common.FromOp
+                                nameType a)
+                   @ b
+                   (eta :: Text.Parsec.Prim.State
+                             (Language.PureScript.Sugar.Operators.Common.Chain a) ())
+                   (eta1 :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                             Language.PureScript.Names.Qualified
+                               (Language.PureScript.Names.OpName nameType))
+                            -> Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta2 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta3 :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                             Language.PureScript.Names.Qualified
+                               (Language.PureScript.Names.OpName nameType))
+                            -> Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta4 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b) ->
+                 Text.Parsec.Prim.<?>2
+                   @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                      Language.PureScript.Names.Qualified
+                        (Language.PureScript.Names.OpName nameType))
+                   (\ @ b1
+                      (eta5 :: Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ())[OneShot]
+                      (eta6 :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                                Language.PureScript.Names.Qualified
+                                  (Language.PureScript.Names.OpName nameType))
+                               -> Text.Parsec.Prim.State
+                                    (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                               -> Text.Parsec.Error.ParseError
+                               -> Data.Functor.Identity.Identity b1)[OneShot]
+                      (eta7 :: Text.Parsec.Error.ParseError
+                               -> Data.Functor.Identity.Identity b1)[OneShot]
+                      (eta8 :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                                Language.PureScript.Names.Qualified
+                                  (Language.PureScript.Names.OpName nameType))
+                               -> Text.Parsec.Prim.State
+                                    (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                               -> Text.Parsec.Error.ParseError
+                               -> Data.Functor.Identity.Identity b1)[OneShot]
+                      (eta9 :: Text.Parsec.Error.ParseError
+                               -> Data.Functor.Identity.Identity b1)[OneShot] ->
+                    case eta5 of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                    case ww1 of wild {
+                      []
+                      -> eta9 (Text.Parsec.Error.ParseError ww2 Text.Parsec.Prim.token2)
+                      : t ts
+                      -> case t of wild1 {
+                           Data.Either.Left x
+                           -> eta9
+                                (Text.Parsec.Error.ParseError
+                                   ww2
+                                   Language.PureScript.Sugar.Operators.Common.parseOp5)
+                           Data.Either.Right y
+                           -> case fromOp y of wild2 {
+                                GHC.Base.Nothing
+                                -> eta9
+                                     (Text.Parsec.Error.ParseError
+                                        ww2
+                                        Language.PureScript.Sugar.Operators.Common.parseOp5)
+                                GHC.Base.Just x
+                                -> case ts of wild3 {
+                                     []
+                                     -> eta6
+                                          x
+                                          (Text.Parsec.Prim.State
+                                             @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                                             @ ()
+                                             (GHC.Types.[] @ (Data.Either.Either a a))
+                                             Language.PureScript.Sugar.Operators.Common.parseOp_x
+                                             ww3)
+                                          Language.PureScript.Sugar.Operators.Common.parseOp4
+                                     : t1 ts1
+                                     -> eta6
+                                          x
+                                          (Text.Parsec.Prim.State
+                                             @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                                             @ ()
+                                             wild3
+                                             Language.PureScript.Sugar.Operators.Common.parseOp_x
+                                             ww3)
+                                          Language.PureScript.Sugar.Operators.Common.parseOp4 } } } } })
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <Language.PureScript.Sugar.Operators.Common.Chain a>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <(Language.PureScript.AST.SourcePos.SourceSpan,
+                               Language.PureScript.Names.Qualified
+                                 (Language.PureScript.Names.OpName nameType))>_R))
+                   Language.PureScript.Sugar.Operators.Common.parseOp2
+                   @ b
+                   eta
+                   eta1
+                   eta2
+                   eta3
+                   eta4) -}
+10607889b9d99702592b91c7cdfbd9f1
+  parseOp2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Sugar.Operators.Common.parseOp_msg
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+4483476f3326380b4b32379d89a54cdc
+  parseOp3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("operator"#) -}
+ff3bf636c05942dead55b49735b06317
+  parseOp4 :: Text.Parsec.Error.ParseError
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Text.Parsec.Error.ParseError
+                   Language.PureScript.Sugar.Operators.Common.parseOp_x
+                   (GHC.Types.[] @ Text.Parsec.Error.Message)) -}
+0da872023981bcf7200681efccc92742
+  parseOp5 :: [Text.Parsec.Error.Message]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Parsec.Error.Message
+                   Language.PureScript.Sugar.Operators.Common.parseOp6
+                   (GHC.Types.[] @ Text.Parsec.Error.Message)) -}
+5257e8ec5d3e7e2329723d282aae204b
+  parseOp6 :: Text.Parsec.Error.Message
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Text.Parsec.Error.SysUnExpect
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+887686dd5bde4c88d28c287d1c452db8
+  parseOp_msg :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Sugar.Operators.Common.parseOp3) -}
+8555b747c45b79ff29d37841315522fa
+  parseOp_x :: Text.Parsec.Pos.SourcePos
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Text.Parsec.Pos.SourcePos
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   1#
+                   1#) -}
+8fc78798a4f8c1c4bb3f737cbb189ddd
+  parseValue ::
+    Text.Parsec.Prim.Parsec
+      (Language.PureScript.Sugar.Operators.Common.Chain a) () a
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Sugar.Operators.Common.parseValue1
+                  `cast`
+                (forall (a :: <*>_N).
+                 Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <Language.PureScript.Sugar.Operators.Common.Chain a>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <a>_R)) -}
+5cbfa8894344711b35f80722b8e1d2fe
+  parseValue1 ::
+    Text.Parsec.Prim.State
+      (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+    -> (a
+        -> Text.Parsec.Prim.State
+             (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (a
+        -> Text.Parsec.Prim.State
+             (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: Text.Parsec.Prim.State
+                             (Language.PureScript.Sugar.Operators.Common.Chain a) ())
+                   (eta1 :: a
+                            -> Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta2 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta3 :: a
+                            -> Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta4 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b) ->
+                 Text.Parsec.Prim.<?>2
+                   @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ a
+                   (Language.PureScript.Sugar.Operators.Common.parseValue4 @ a)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <Language.PureScript.Sugar.Operators.Common.Chain a>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <a>_R))
+                   Language.PureScript.Sugar.Operators.Common.parseValue2
+                   @ b
+                   eta
+                   eta1
+                   eta2
+                   eta3
+                   eta4) -}
+62ffd945cc3f1495029ac80cb8e27ff5
+  parseValue2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.PureScript.Sugar.Operators.Common.parseValue_msg
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+ae5dc73c09f9b05fb101a85741b00a71
+  parseValue3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("expression"#) -}
+7787c974ff434f25087671d7e1d54d90
+  parseValue4 ::
+    Text.Parsec.Prim.State
+      (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+    -> (a
+        -> Text.Parsec.Prim.State
+             (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (a
+        -> Text.Parsec.Prim.State
+             (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(1*U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(U)>,
+     Unfolding: (\ @ a
+                   @ b
+                   (eta :: Text.Parsec.Prim.State
+                             (Language.PureScript.Sugar.Operators.Common.Chain a) ())
+                   (eta1 :: a
+                            -> Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta2 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta3 :: a
+                            -> Text.Parsec.Prim.State
+                                 (Language.PureScript.Sugar.Operators.Common.Chain a) ()
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta4 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b) ->
+                 case eta of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 case ww1 of wild {
+                   []
+                   -> eta4 (Text.Parsec.Error.ParseError ww2 Text.Parsec.Prim.token2)
+                   : t ts
+                   -> case t of wild1 {
+                        Data.Either.Left x
+                        -> case ts of wild2 {
+                             []
+                             -> eta1
+                                  x
+                                  (Text.Parsec.Prim.State
+                                     @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                                     @ ()
+                                     (GHC.Types.[] @ (Data.Either.Either a a))
+                                     Language.PureScript.Sugar.Operators.Common.parseOp_x
+                                     ww3)
+                                  Language.PureScript.Sugar.Operators.Common.parseOp4
+                             : t1 ts1
+                             -> eta1
+                                  x
+                                  (Text.Parsec.Prim.State
+                                     @ (Language.PureScript.Sugar.Operators.Common.Chain a)
+                                     @ ()
+                                     wild2
+                                     Language.PureScript.Sugar.Operators.Common.parseOp_x
+                                     ww3)
+                                  Language.PureScript.Sugar.Operators.Common.parseOp4 }
+                        Data.Either.Right y
+                        -> eta4
+                             (Text.Parsec.Error.ParseError
+                                ww2
+                                Language.PureScript.Sugar.Operators.Common.parseOp5) } } }) -}
+4876e2f8ae0e89f44439b8ad4901130a
+  parseValue_msg :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Sugar.Operators.Common.parseValue3) -}
+0bd85e225ec6619a70badf31fc188a5d
+  toAssoc ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Text.Parsec.Expr.Assoc
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.AST.Operators.Associativity) ->
+                 case ds of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> Text.Parsec.Expr.AssocLeft
+                   Language.PureScript.AST.Operators.Infixr
+                   -> Text.Parsec.Expr.AssocRight
+                   Language.PureScript.AST.Operators.Infix
+                   -> Text.Parsec.Expr.AssocNone }) -}
+d92b178f3da8d39c229a465e829e6296
+  token ::
+    Text.Parsec.Prim.Stream s Data.Functor.Identity.Identity t =>
+    (t -> GHC.Base.Maybe a) -> Text.Parsec.Prim.Parsec s u a
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <S(S(LC(C(S))LLL)L),U(U(A,C(C1(U)),A,A,A),C(U))><L,C(U)><S(LSS),1*U(U,U,U)><L,C(C1(C1(U)))><L,A><L,A><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Sugar.Operators.Common.token1
+                  `cast`
+                (forall (s :: <*>_N) (t :: <*>_N) (a :: <*>_N) (u :: <*>_N).
+                 <Text.Parsec.Prim.Stream s Data.Functor.Identity.Identity t>_R
+                 ->_R <t -> GHC.Base.Maybe a>_R
+                 ->_R Sym (Text.Parsec.Prim.N:ParsecT[0]
+                               <s>_R <u>_R <Data.Functor.Identity.Identity>_R <a>_R)) -}
+d898272cfd04064a29be5c73bc4e4005
+  token1 ::
+    Text.Parsec.Prim.Stream s Data.Functor.Identity.Identity t =>
+    (t -> GHC.Base.Maybe a)
+    -> forall b.
+       Text.Parsec.Prim.State s u
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (a
+           -> Text.Parsec.Prim.State s u
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <S(S(LC(C(S))LLL)L),U(U(A,C(C1(U)),A,A,A),C(U))><L,C(U)><S(LSS),1*U(U,U,U)><L,C(C1(C1(U)))><L,A><L,A><L,C(U)>,
+     Unfolding: InlineRule (7, True, False)
+                (\ @ s
+                   @ t
+                   @ a
+                   @ u
+                   ($dStream :: Text.Parsec.Prim.Stream
+                                  s Data.Functor.Identity.Identity t)
+                   (eta :: t -> GHC.Base.Maybe a)
+                   @ b
+                   (eta1 :: Text.Parsec.Prim.State s u)
+                   (eta2 :: a
+                            -> Text.Parsec.Prim.State s u
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta3 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta4 :: a
+                            -> Text.Parsec.Prim.State s u
+                            -> Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b)
+                   (eta5 :: Text.Parsec.Error.ParseError
+                            -> Data.Functor.Identity.Identity b) ->
+                 case eta1 of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 Text.Parsec.Prim.$wtoken
+                   @ s
+                   @ t
+                   @ a
+                   @ u
+                   $dStream
+                   (Language.PureScript.Sugar.Operators.Common.token3 @ t)
+                   (Language.PureScript.Sugar.Operators.Common.token2 @ t)
+                   eta
+                   @ b
+                   ww1
+                   ww2
+                   ww3
+                   eta2
+                   eta5 }) -}
+5846b9677c9e844f3d599f331f7f2980
+  token2 :: t -> Text.Parsec.Pos.SourcePos
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t (ds :: t) ->
+                 Language.PureScript.Sugar.Operators.Common.parseOp_x) -}
+bbcae471f33c488c3f80a7e5dbfe137c
+  token3 :: t -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t (ds :: t) -> GHC.Types.[] @ GHC.Types.Char) -}
+"SPEC/Language.PureScript.Sugar.Operators.Common $fStream[]mtok @ Identity _" [orphan] forall @ tok
+                                                                                              (v :: GHC.Base.Monad
+                                                                                                      Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok @ Data.Functor.Identity.Identity
+                                  @ tok
+                                  v
+  = Language.PureScript.Sugar.Operators.Common.$s$fStream[]mtok @ tok
+"SPEC/Language.PureScript.Sugar.Operators.Common $fStream[]mtok_$cuncons @ Identity _" [orphan] forall @ tok
+                                                                                                       ($dMonad :: GHC.Base.Monad
+                                                                                                                     Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ Data.Functor.Identity.Identity
+                                           @ tok
+                                           $dMonad
+  = Language.PureScript.Sugar.Operators.Common.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+      @ tok
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

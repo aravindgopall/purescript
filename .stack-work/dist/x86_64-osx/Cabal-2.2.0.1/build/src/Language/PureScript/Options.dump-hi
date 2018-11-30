@@ -1,0 +1,753 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:14.448346 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Options 8043
+  interface hash: 1be952ed0c93378b202f29605ceb4076
+  ABI hash: 41178707a96359e93f10aa9345b25f64
+  export-list hash: 0c988ddc260707f6c03a83826c104ef5
+  orphan hash: d9c830c4009e8ced591d063fd04cab8c
+  flag hash: 2ae478d21823b7c739b1b08c46262eb0
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Options.codegenTargets
+  Language.PureScript.Options.defaultOptions
+  Language.PureScript.Options.CodegenTarget{Language.PureScript.Options.CoreFn Language.PureScript.Options.JS Language.PureScript.Options.JSSourceMap}
+  Language.PureScript.Options.Options{Language.PureScript.Options.Options optionsCodegenTargets optionsNoComments optionsVerboseErrors}
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.11.1.0
+                      base-compat-0.10.4* containers-0.5.11.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Set.Internal
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
+import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+febf126f9b77b511b07e580d530f9f19
+  $fEqCodegenTarget ::
+    GHC.Classes.Eq Language.PureScript.Options.CodegenTarget
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Options.CodegenTarget
+                  Language.PureScript.Options.$fEqCodegenTarget_$c==
+                  Language.PureScript.Options.$fEqCodegenTarget_$c/= -}
+febf126f9b77b511b07e580d530f9f19
+  $fEqCodegenTarget_$c/= ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Options.CodegenTarget)
+                   (y :: Language.PureScript.Options.CodegenTarget) ->
+                 case x of wild {
+                   Language.PureScript.Options.JS
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.Options.JS -> GHC.Types.False }
+                   Language.PureScript.Options.JSSourceMap
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.Options.JSSourceMap -> GHC.Types.False }
+                   Language.PureScript.Options.CoreFn
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.Options.CoreFn -> GHC.Types.False } }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fEqCodegenTarget_$c== ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Options.CodegenTarget)
+                   (ds1 :: Language.PureScript.Options.CodegenTarget) ->
+                 case ds of wild {
+                   Language.PureScript.Options.JS
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.Options.JS -> GHC.Types.True }
+                   Language.PureScript.Options.JSSourceMap
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.Options.JSSourceMap -> GHC.Types.True }
+                   Language.PureScript.Options.CoreFn
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.Options.CoreFn -> GHC.Types.True } }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget ::
+    GHC.Classes.Ord Language.PureScript.Options.CodegenTarget
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Options.CodegenTarget
+                  Language.PureScript.Options.$fEqCodegenTarget
+                  Language.PureScript.Options.$fOrdCodegenTarget_$ccompare
+                  Language.PureScript.Options.$fOrdCodegenTarget_$c<
+                  Language.PureScript.Options.$fOrdCodegenTarget_$c<=
+                  Language.PureScript.Options.$fOrdCodegenTarget_$c>
+                  Language.PureScript.Options.$fOrdCodegenTarget_$c>=
+                  Language.PureScript.Options.$fOrdCodegenTarget_$cmax
+                  Language.PureScript.Options.$fOrdCodegenTarget_$cmin -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$c< ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Options.CodegenTarget)
+                   (b :: Language.PureScript.Options.CodegenTarget) ->
+                 case a of wild {
+                   Language.PureScript.Options.JS
+                   -> case b of wild1 {
+                        Language.PureScript.Options.JS -> GHC.Types.False
+                        Language.PureScript.Options.JSSourceMap -> GHC.Types.True
+                        Language.PureScript.Options.CoreFn -> GHC.Types.True }
+                   Language.PureScript.Options.JSSourceMap
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.Options.CoreFn -> GHC.Types.True }
+                   Language.PureScript.Options.CoreFn
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$c<= ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.Options.CodegenTarget)
+                   (b :: Language.PureScript.Options.CodegenTarget) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a of wild {
+                       Language.PureScript.Options.JS
+                       -> case GHC.Prim.<# a# 0# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.Options.JSSourceMap
+                       -> case GHC.Prim.<# a# 1# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.Options.CoreFn
+                       -> case GHC.Prim.<# a# 2# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                 } in
+                 case b of wild {
+                   Language.PureScript.Options.JS -> $j 0#
+                   Language.PureScript.Options.JSSourceMap -> $j 1#
+                   Language.PureScript.Options.CoreFn -> $j 2# }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$c> ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.Options.CodegenTarget)
+                   (b :: Language.PureScript.Options.CodegenTarget) ->
+                 Language.PureScript.Options.$fOrdCodegenTarget_$c< b a) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$c>= ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.Options.CodegenTarget)
+                   (b :: Language.PureScript.Options.CodegenTarget) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       Language.PureScript.Options.JS
+                       -> case GHC.Prim.<# a# 0# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.Options.JSSourceMap
+                       -> case GHC.Prim.<# a# 1# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.Options.CoreFn
+                       -> case GHC.Prim.<# a# 2# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                 } in
+                 case a of wild {
+                   Language.PureScript.Options.JS -> $j 0#
+                   Language.PureScript.Options.JSSourceMap -> $j 1#
+                   Language.PureScript.Options.CoreFn -> $j 2# }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$ccompare ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.Options.CodegenTarget)
+                   (b :: Language.PureScript.Options.CodegenTarget) ->
+                 case a of wild {
+                   Language.PureScript.Options.JS
+                   -> case b of wild1 {
+                        Language.PureScript.Options.JS -> GHC.Types.EQ
+                        Language.PureScript.Options.JSSourceMap -> GHC.Types.LT
+                        Language.PureScript.Options.CoreFn -> GHC.Types.LT }
+                   Language.PureScript.Options.JSSourceMap
+                   -> case b of wild1 {
+                        Language.PureScript.Options.JS -> GHC.Types.GT
+                        Language.PureScript.Options.JSSourceMap -> GHC.Types.EQ
+                        Language.PureScript.Options.CoreFn -> GHC.Types.LT }
+                   Language.PureScript.Options.CoreFn
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Language.PureScript.Options.CoreFn -> GHC.Types.EQ } }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$cmax ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Options.CodegenTarget)
+                   (y :: Language.PureScript.Options.CodegenTarget) ->
+                 case Language.PureScript.Options.$fOrdCodegenTarget_$c<=
+                        x
+                        y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fOrdCodegenTarget_$cmin ::
+    Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget
+    -> Language.PureScript.Options.CodegenTarget
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Options.CodegenTarget)
+                   (y :: Language.PureScript.Options.CodegenTarget) ->
+                 case Language.PureScript.Options.$fOrdCodegenTarget_$c<=
+                        x
+                        y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fShowCodegenTarget ::
+    GHC.Show.Show Language.PureScript.Options.CodegenTarget
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Options.CodegenTarget
+                  Language.PureScript.Options.$fShowCodegenTarget_$cshowsPrec
+                  Language.PureScript.Options.$fShowCodegenTarget_$cshow
+                  Language.PureScript.Options.$fShowCodegenTarget_$cshowList -}
+9c3810feffd8782d2f929fc10ab48d43
+  $fShowCodegenTarget1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Options.$fShowCodegenTarget2) -}
+3bee00a6b6da62880fa00073b3636d5a
+  $fShowCodegenTarget2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CoreFn"#) -}
+bc33e0b136b41c949820f926e1f74a9b
+  $fShowCodegenTarget3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Options.$fShowCodegenTarget4) -}
+38abd6c82c9981a82417faad63f2a9d4
+  $fShowCodegenTarget4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JSSourceMap"#) -}
+606f9ea8720da6534d180e9c0c4c9529
+  $fShowCodegenTarget5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Options.$fShowCodegenTarget6) -}
+4cf0f5e2e966cb2c41e20dc8bc9d0981
+  $fShowCodegenTarget6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JS"#) -}
+febf126f9b77b511b07e580d530f9f19
+  $fShowCodegenTarget_$cshow ::
+    Language.PureScript.Options.CodegenTarget -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Options.CodegenTarget) ->
+                 case x of wild {
+                   Language.PureScript.Options.JS
+                   -> Language.PureScript.Options.$fShowCodegenTarget5
+                   Language.PureScript.Options.JSSourceMap
+                   -> Language.PureScript.Options.$fShowCodegenTarget3
+                   Language.PureScript.Options.CoreFn
+                   -> Language.PureScript.Options.$fShowCodegenTarget1 }) -}
+febf126f9b77b511b07e580d530f9f19
+  $fShowCodegenTarget_$cshowList ::
+    [Language.PureScript.Options.CodegenTarget] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Options.CodegenTarget])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Options.CodegenTarget
+                   Language.PureScript.Options.$w$cshowsPrec
+                   ls
+                   s) -}
+febf126f9b77b511b07e580d530f9f19
+  $fShowCodegenTarget_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Options.CodegenTarget -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Options.CodegenTarget)
+                   (w2 :: GHC.Base.String) ->
+                 Language.PureScript.Options.$w$cshowsPrec w1 w2) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  $fShowOptions :: GHC.Show.Show Language.PureScript.Options.Options
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Options.Options
+                  Language.PureScript.Options.$fShowOptions_$cshowsPrec
+                  Language.PureScript.Options.$fShowOptions_$cshow
+                  Language.PureScript.Options.$fShowOptions_$cshowList -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  $fShowOptions1 ::
+    Language.PureScript.Options.Options -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U(U,U,1*U)>,
+     Unfolding: (\ (w :: Language.PureScript.Options.Options) ->
+                 case w of ww { Language.PureScript.Options.Options ww1 ww2 ww3 ->
+                 Language.PureScript.Options.$w$cshowsPrec1 0# ww1 ww2 ww3 }) -}
+e2d31e85c17899f7162e18dcbde855a3
+  $fShowOptions2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  $fShowOptions_$cshow ::
+    Language.PureScript.Options.Options -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Options.Options) ->
+                 Language.PureScript.Options.$fShowOptions_$cshowsPrec
+                   Language.PureScript.Options.$fShowOptions2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  $fShowOptions_$cshowList ::
+    [Language.PureScript.Options.Options] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Options.Options])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Options.Options
+                   Language.PureScript.Options.$fShowOptions1
+                   ls
+                   s) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  $fShowOptions_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Options.Options -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U,U,1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Options.Options) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Options.Options ww3 ww4 ww5 ->
+                 Language.PureScript.Options.$w$cshowsPrec1 ww1 ww3 ww4 ww5 } }) -}
+a169bff0dc4438aa38d5aee24488504d
+  $sfromList ::
+    [(GHC.Base.String, a)] -> Data.Map.Internal.Map GHC.Base.String a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Base.String, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ GHC.Base.String @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ GHC.Base.String
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ GHC.Base.String @ a)
+                             (Data.Map.Internal.Tip @ GHC.Base.String @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Classes.$fOrd[]_$s$ccompare1 kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Options.$sfromList_$spoly_go14
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a)) }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Options.$sfromList_$s$wpoly_go13
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a))
+                                  1# } } } } } }) -}
+f72812c4bcb4d42d983dd09a3f6a8585
+  $sfromList_$s$wpoly_go13 ::
+    [GHC.Types.Char]
+    -> a
+    -> [([GHC.Types.Char], a)]
+    -> Data.Map.Internal.Map [GHC.Types.Char] a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Base.String a
+  {- Arity: 5, Strictness: <S,U><L,U><S,1*U><S,1*U><L,U> -}
+a17c770485303a9542f08a8e6fff1e10
+  $sfromList_$spoly_go14 ::
+    [GHC.Types.Char]
+    -> a
+    -> [([GHC.Types.Char], a)]
+    -> Data.Map.Internal.Map [GHC.Types.Char] a
+    -> Data.Map.Internal.Map GHC.Base.String a
+  {- Arity: 4, Strictness: <S,U><L,U><S,1*U><S,1*U> -}
+d0c32203bbb1a3c0647694187fda75fa
+  $sinsert_$sgo13 ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> a1
+    -> Data.Map.Internal.Map GHC.Base.String a1
+    -> Data.Map.Internal.Map GHC.Base.String a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+f9986ca06431abdd12e8a7a96d2e248e
+  $tc'CoreFn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9913782084395723194##
+                   726782822592939878##
+                   Language.PureScript.Options.$trModule
+                   Language.PureScript.Options.$tc'CoreFn2
+                   0#
+                   Language.PureScript.Options.$tc'CoreFn1) -}
+18cd8bfb29b138aabadeb3256380d437
+  $tc'CoreFn1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+9335e1f6190706978a90a6ba080cf96f
+  $tc'CoreFn2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$tc'CoreFn3) -}
+a5b12db67c42ad43fda09e45f14fb44d
+  $tc'CoreFn3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CoreFn"#) -}
+530b2c9b4681f3d55f2a99a4cd5309c2
+  $tc'JS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13447041234460935665##
+                   3912880015140989357##
+                   Language.PureScript.Options.$trModule
+                   Language.PureScript.Options.$tc'JS1
+                   0#
+                   Language.PureScript.Options.$tc'CoreFn1) -}
+9dd8d2a4e29d135aa2cdca20c95e8584
+  $tc'JS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$tc'JS2) -}
+9638e045baac7282be1a0677e0fa02c8
+  $tc'JS2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JS"#) -}
+70047447fd2f21a9436edb996387f74b
+  $tc'JSSourceMap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18085977844350534431##
+                   9082643952094576724##
+                   Language.PureScript.Options.$trModule
+                   Language.PureScript.Options.$tc'JSSourceMap1
+                   0#
+                   Language.PureScript.Options.$tc'CoreFn1) -}
+d747d14cff62c56fc94c9ea4b57827c8
+  $tc'JSSourceMap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$tc'JSSourceMap2) -}
+9ededb42b7614f488230e3558c65b119
+  $tc'JSSourceMap2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JSSourceMap"#) -}
+53ac5d662bc41a6ac4ce7ceebdc60819
+  $tc'Options :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5086163742005049035##
+                   4750905504617752403##
+                   Language.PureScript.Options.$trModule
+                   Language.PureScript.Options.$tc'Options2
+                   0#
+                   Language.PureScript.Options.$tc'Options1) -}
+ba5c118e62cecb974da6d40d392c4bf1
+  $tc'Options1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5e282e8bfe6682564e99358ea0cd3711
+  $tc'Options2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$tc'Options3) -}
+ddea697562c8b266150bca88de9afad1
+  $tc'Options3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Options"#) -}
+817d3e7e5526822a10331ea873b50695
+  $tcCodegenTarget :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3963127502677998495##
+                   8146699141384109513##
+                   Language.PureScript.Options.$trModule
+                   Language.PureScript.Options.$tcCodegenTarget1
+                   0#
+                   GHC.Types.krep$*) -}
+7cc2fe03b516fe85eae21ceb63ba8d62
+  $tcCodegenTarget1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$tcCodegenTarget2) -}
+7e93d819b5ee31904e91829aea7577f8
+  $tcCodegenTarget2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CodegenTarget"#) -}
+65347797819f3d81c86faa80c3f6a731
+  $tcOptions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4825207680976688586##
+                   16601970765660800971##
+                   Language.PureScript.Options.$trModule
+                   Language.PureScript.Options.$tcOptions1
+                   0#
+                   GHC.Types.krep$*) -}
+141f001e73e58ec681afa9cb8a129d11
+  $tcOptions1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$tcOptions2) -}
+1eb931b1f3c36111da6b5aeb6f1b911d
+  $tcOptions2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Options"#) -}
+470250e924a22e9e1b0a9fa3f6599f72
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Options.$trModule3
+                   Language.PureScript.Options.$trModule1) -}
+634dcfb5e359bb37d813213940abe972
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$trModule2) -}
+4d3fc1fb49774e0bcaa003b8509332a5
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Options"#) -}
+53f5c1aa2dae1aa1c57843adff05eb7a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Options.$trModule4) -}
+ff2e1d22957ec089ffaca77a25f1abfd
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+febf126f9b77b511b07e580d530f9f19
+  $w$cshowsPrec ::
+    Language.PureScript.Options.CodegenTarget
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.Options.CodegenTarget)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Language.PureScript.Options.JS
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Options.$fShowCodegenTarget5
+                        w1
+                   Language.PureScript.Options.JSSourceMap
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Options.$fShowCodegenTarget3
+                        w1
+                   Language.PureScript.Options.CoreFn
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Options.$fShowCodegenTarget1
+                        w1 }) -}
+14ec6b2711fb7bab739b6c0df5534719
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> Data.Set.Internal.Set Language.PureScript.Options.CodegenTarget
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <S,U><L,U><L,U><L,1*U>, Inline: [0] -}
+febf126f9b77b511b07e580d530f9f19
+  data CodegenTarget = JS | JSSourceMap | CoreFn
+3d4c612f0e93f04d7e7834ac0f92767f
+  data Options
+    = Options {optionsVerboseErrors :: GHC.Types.Bool,
+               optionsNoComments :: GHC.Types.Bool,
+               optionsCodegenTargets :: Data.Set.Internal.Set
+                                          Language.PureScript.Options.CodegenTarget}
+786aa3d64a9c5e711bcff6508d0806da
+  codegenTargets ::
+    Data.Map.Internal.Map
+      GHC.Base.String Language.PureScript.Options.CodegenTarget
+  {- Unfolding: (Language.PureScript.Options.$sfromList
+                   @ Language.PureScript.Options.CodegenTarget
+                   Language.PureScript.Options.codegenTargets1) -}
+2489eff74d0d29632660af8927ef2c77
+  codegenTargets1 ::
+    [(GHC.Base.String, Language.PureScript.Options.CodegenTarget)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, Language.PureScript.Options.CodegenTarget)
+                   Language.PureScript.Options.codegenTargets10
+                   Language.PureScript.Options.codegenTargets2) -}
+f3479d36d50bf250d5ea0fa8cb81079d
+  codegenTargets10 ::
+    ([GHC.Types.Char], Language.PureScript.Options.CodegenTarget)
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Options.codegenTargets11,
+                  Language.PureScript.Options.JS)) -}
+87ff6085466df69600a7bf28bf2fec0a
+  codegenTargets11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Options.codegenTargets12) -}
+8f0671edfc379bc6fded65f19aa7fc16
+  codegenTargets12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("js"#) -}
+73058dfcb3db33c40a92113d653689e6
+  codegenTargets2 ::
+    [(GHC.Base.String, Language.PureScript.Options.CodegenTarget)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, Language.PureScript.Options.CodegenTarget)
+                   Language.PureScript.Options.codegenTargets7
+                   Language.PureScript.Options.codegenTargets3) -}
+5281640a23317e5d7145d0626bcd7a18
+  codegenTargets3 ::
+    [(GHC.Base.String, Language.PureScript.Options.CodegenTarget)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, Language.PureScript.Options.CodegenTarget)
+                   Language.PureScript.Options.codegenTargets4
+                   (GHC.Types.[]
+                      @ (GHC.Base.String, Language.PureScript.Options.CodegenTarget))) -}
+ce4b7a3a9c4487323f60c83e53c3e2f8
+  codegenTargets4 ::
+    ([GHC.Types.Char], Language.PureScript.Options.CodegenTarget)
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Options.codegenTargets5,
+                  Language.PureScript.Options.CoreFn)) -}
+e380ec70a6c0c26e1baed799379d4feb
+  codegenTargets5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Options.codegenTargets6) -}
+cf4f1eda78609185a923f085b9500049
+  codegenTargets6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("corefn"#) -}
+09345599e69ac61cf4dd624e70787029
+  codegenTargets7 ::
+    ([GHC.Types.Char], Language.PureScript.Options.CodegenTarget)
+  {- Strictness: m,
+     Unfolding: ((Language.PureScript.Options.codegenTargets8,
+                  Language.PureScript.Options.JSSourceMap)) -}
+052da9d3b2ec838c93118d27f71d0ffe
+  codegenTargets8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Options.codegenTargets9) -}
+29c46410e5f556811daf730cc5f683e0
+  codegenTargets9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("sourcemaps"#) -}
+48c52e5e8f11e1286056b69e62c52460
+  defaultOptions :: Language.PureScript.Options.Options
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.PureScript.Options.Options
+                   GHC.Types.False
+                   GHC.Types.False
+                   Language.PureScript.Options.defaultOptions1) -}
+9ee2da131869a7cc51d20dcc618edcae
+  defaultOptions1 ::
+    Data.Set.Internal.Set Language.PureScript.Options.CodegenTarget
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Data.Set.Internal.Bin
+                   @ Language.PureScript.Options.CodegenTarget
+                   1#
+                   Language.PureScript.Options.JS
+                   (Data.Set.Internal.Tip @ Language.PureScript.Options.CodegenTarget)
+                   (Data.Set.Internal.Tip
+                      @ Language.PureScript.Options.CodegenTarget)) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  optionsCodegenTargets ::
+    Language.PureScript.Options.Options
+    -> Data.Set.Internal.Set Language.PureScript.Options.CodegenTarget
+  RecSel Left Language.PureScript.Options.Options
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Options.Options) ->
+                 case ds of wild { Language.PureScript.Options.Options ds1 ds2 ds3 ->
+                 ds3 }) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  optionsNoComments ::
+    Language.PureScript.Options.Options -> GHC.Types.Bool
+  RecSel Left Language.PureScript.Options.Options
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Options.Options) ->
+                 case ds of wild { Language.PureScript.Options.Options ds1 ds2 ds3 ->
+                 ds2 }) -}
+3d4c612f0e93f04d7e7834ac0f92767f
+  optionsVerboseErrors ::
+    Language.PureScript.Options.Options -> GHC.Types.Bool
+  RecSel Left Language.PureScript.Options.Options
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Options.Options) ->
+                 case ds of wild { Language.PureScript.Options.Options ds1 ds2 ds3 ->
+                 ds1 }) -}
+instance [safe] GHC.Classes.Eq [Language.PureScript.Options.CodegenTarget]
+  = Language.PureScript.Options.$fEqCodegenTarget
+instance [safe] GHC.Classes.Ord [Language.PureScript.Options.CodegenTarget]
+  = Language.PureScript.Options.$fOrdCodegenTarget
+instance [safe] GHC.Show.Show [Language.PureScript.Options.CodegenTarget]
+  = Language.PureScript.Options.$fShowCodegenTarget
+instance [safe] GHC.Show.Show [Language.PureScript.Options.Options]
+  = Language.PureScript.Options.$fShowOptions
+"SPEC/Language.PureScript.Options fromList @ String _" [orphan] forall @ a
+                                                                       ($dOrd :: GHC.Classes.Ord
+                                                                                   GHC.Base.String)
+  Data.Map.Internal.fromList @ [GHC.Types.Char] @ a $dOrd
+  = Language.PureScript.Options.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

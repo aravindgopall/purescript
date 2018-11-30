@@ -1,0 +1,2312 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:09.40963 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators [family instance module] 8043
+  interface hash: 3f86d69630f9ba80e97d7cc64098ee12
+  ABI hash: be736e316462ef3abce53315e7361a17
+  export-list hash: e51e64160c99c756a027910b5259d686
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c3db7f6c387ef27e8d7dd7e5d6bd8948
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.AST.Operators.readAssoc
+  Language.PureScript.AST.Operators.showAssoc
+  Language.PureScript.AST.Operators.Associativity{Language.PureScript.AST.Operators.Infix Language.PureScript.AST.Operators.Infixl Language.PureScript.AST.Operators.Infixr}
+  Language.PureScript.AST.Operators.Fixity{Language.PureScript.AST.Operators.Fixity}
+  Language.PureScript.AST.Operators.Precedence
+module dependencies: Language.PureScript.Crash
+package dependencies: aeson-1.3.1.1 array-0.5.2.0
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1 primitive-0.6.3.0
+                      random-1.1 scientific-0.3.6.2 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 uuid-types-1.0.3 vector-0.12.0.1
+orphans: attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.3.1.1:Data.Aeson 108dfb08de41cf77aad4693ac1dc3d44
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.FromJSON 1ea0c919856f0d29f12e53cd074d532c
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.Internal df76c21edff000f9355bfb6fb0dbf3e6
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.ToJSON 587c7d8b9444e85253d7faf5f824f568
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Generics 4d1469b3e29804a05a1be33d11accff6
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 171f1f567c47ef82860df4ad686d11b1
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type f3d5169c3d3830854b19f6565b265403
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+17f2097426b72eb751701f86cd97792c
+  $fEqAssociativity ::
+    GHC.Classes.Eq Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Associativity
+                  Language.PureScript.AST.Operators.$fEqAssociativity_$c==
+                  Language.PureScript.AST.Operators.$fEqAssociativity_$c/= -}
+17f2097426b72eb751701f86cd97792c
+  $fEqAssociativity_$c/= ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.AST.Operators.Associativity)
+                   (y :: Language.PureScript.AST.Operators.Associativity) ->
+                 case x of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.False }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.False }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.False } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fEqAssociativity_$c== ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.AST.Operators.Associativity)
+                   (ds1 :: Language.PureScript.AST.Operators.Associativity) ->
+                 case ds of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.True }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.True }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.True } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fEqFixity ::
+    GHC.Classes.Eq Language.PureScript.AST.Operators.Fixity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Fixity
+                  Language.PureScript.AST.Operators.$fEqFixity_$c==
+                  Language.PureScript.AST.Operators.$fEqFixity_$c/= -}
+17f2097426b72eb751701f86cd97792c
+  $fEqFixity_$c/= ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.AST.Operators.Fixity)
+                   (y :: Language.PureScript.AST.Operators.Fixity) ->
+                 case Language.PureScript.AST.Operators.$fEqFixity_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+17f2097426b72eb751701f86cd97792c
+  $fEqFixity_$c== ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 Language.PureScript.AST.Operators.$w$c== ww1 ww2 ww4 ww5 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fFromJSONAssociativity ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Associativity
+                  Language.PureScript.AST.Operators.$fFromJSONAssociativity_$cparseJSON
+                  Language.PureScript.AST.Operators.$fFromJSONAssociativity_$cparseJSONList -}
+31130024f36d6f860cc5fa08b3f09549
+  $fFromJSONAssociativity1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (", encountered "#) -}
+146a019c0bf91b2e55f59e36557b7818
+  $fFromJSONAssociativity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("[a]"#) -}
+d86d52cb3538bcefe92681cae4bfc0e5
+  $fFromJSONAssociativity3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("expected "#) -}
+35d6c3a1085159b55f68d4f02de31497
+  $fFromJSONAssociativity4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.$fFromJSONAssociativity5) -}
+88c166cc6d8eecae41beeb18fcf03a05
+  $fFromJSONAssociativity5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("String"#) -}
+17f2097426b72eb751701f86cd97792c
+  $fFromJSONAssociativity_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.AST.Operators.Associativity
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: Data.Aeson.Types.Internal.Value) ->
+                 let {
+                   m :: Data.Aeson.Types.Internal.Parser GHC.Base.String
+                   = case x of wild {
+                       DEFAULT
+                       -> let {
+                            msg19 :: GHC.Base.String
+                            = GHC.CString.unpackAppendCString#
+                                Data.Aeson.Types.FromJSON.typeMismatch4
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   Language.PureScript.AST.Operators.$fFromJSONAssociativity4
+                                   (GHC.CString.unpackAppendCString#
+                                      Data.Aeson.Types.FromJSON.typeMismatch3
+                                      (case wild of wild1 {
+                                         Data.Aeson.Types.Internal.Object ds
+                                         -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                         Data.Aeson.Types.Internal.Array ds
+                                         -> Data.Aeson.Types.FromJSON.typeMismatch1
+                                         Data.Aeson.Types.Internal.Number ds
+                                         -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                         Data.Aeson.Types.Internal.Bool ds
+                                         -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                         Data.Aeson.Types.Internal.Null
+                                         -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                          } in
+                          (\ @ f4 :: * -> *
+                             @ r
+                             (path :: Data.Aeson.Types.Internal.JSONPath)
+                             (kf :: Data.Aeson.Types.Internal.Failure f4 r)[OneShot]
+                             (_ks :: Data.Aeson.Types.Internal.Success
+                                       GHC.Base.String f4 r)[OneShot] ->
+                           kf
+                             (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                             msg19)
+                            `cast`
+                          (Sym (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Base.String>_R))
+                       Data.Aeson.Types.Internal.String txt
+                       -> case txt of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                          let {
+                            a2 :: GHC.Base.String
+                            = let {
+                                end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                              } in
+                              letrec {
+                                $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
+                                  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                                = \ (ww :: GHC.Prim.Int#) ->
+                                  case GHC.Prim.>=# ww end of lwild {
+                                    DEFAULT
+                                    -> case GHC.Prim.indexWord16Array# dt ww of r# { DEFAULT ->
+                                       case GHC.Prim.geWord# r# 55296## of lwild1 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ GHC.Types.Char
+                                              (GHC.Types.C# (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                              ($wunfold (GHC.Prim.+# ww 1#))
+                                         1#
+                                         -> case GHC.Prim.leWord# r# 56319## of lwild2 {
+                                              DEFAULT
+                                              -> GHC.Types.:
+                                                   @ GHC.Types.Char
+                                                   (GHC.Types.C#
+                                                      (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                                   ($wunfold (GHC.Prim.+# ww 1#))
+                                              1#
+                                              -> case GHC.Prim.indexWord16Array#
+                                                        dt
+                                                        (GHC.Prim.+# ww 1#) of r#1 { DEFAULT ->
+                                                 GHC.Types.:
+                                                   @ GHC.Types.Char
+                                                   (GHC.Types.C#
+                                                      (GHC.Prim.chr#
+                                                         (GHC.Prim.+#
+                                                            (GHC.Prim.+#
+                                                               (GHC.Prim.uncheckedIShiftL#
+                                                                  (GHC.Prim.-#
+                                                                     (GHC.Prim.word2Int# r#)
+                                                                     55296#)
+                                                                  10#)
+                                                               (GHC.Prim.-#
+                                                                  (GHC.Prim.word2Int# r#1)
+                                                                  56320#))
+                                                            65536#)))
+                                                   ($wunfold (GHC.Prim.+# ww 2#)) } } } }
+                                    1# -> GHC.Types.[] @ GHC.Types.Char }
+                              } in
+                              $wunfold dt1
+                          } in
+                          (\ @ f4 :: * -> *
+                             @ r
+                             (_path :: Data.Aeson.Types.Internal.JSONPath)
+                             (_kf :: Data.Aeson.Types.Internal.Failure f4 r)[OneShot]
+                             (ks :: Data.Aeson.Types.Internal.Success
+                                      GHC.Base.String f4 r)[OneShot] ->
+                           ks a2)
+                            `cast`
+                          (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                    <GHC.Base.String>_R)) } }
+                 } in
+                 (\ @ f5 :: * -> *
+                    @ r
+                    (path :: Data.Aeson.Types.Internal.JSONPath)
+                    (kf :: Data.Aeson.Types.Internal.Failure f5 r)
+                    (ks :: Data.Aeson.Types.Internal.Success
+                             Language.PureScript.AST.Operators.Associativity f5 r) ->
+                  m `cast`
+                  (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Base.String>_R)
+                    @ f5
+                    @ r
+                    path
+                    kf
+                    (\ (a1 :: GHC.Base.String) ->
+                     ks (Language.PureScript.AST.Operators.readAssoc a1)))
+                   `cast`
+                 (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                           <Language.PureScript.AST.Operators.Associativity>_R))) -}
+17f2097426b72eb751701f86cd97792c
+  $fFromJSONAssociativity_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.AST.Operators.Associativity]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> let {
+                        msg19 :: GHC.Base.String
+                        = GHC.CString.unpackAppendCString#
+                            Language.PureScript.AST.Operators.$fFromJSONAssociativity3
+                            (GHC.CString.unpackAppendCString#
+                               Language.PureScript.AST.Operators.$fFromJSONAssociativity2
+                               (GHC.CString.unpackAppendCString#
+                                  Language.PureScript.AST.Operators.$fFromJSONAssociativity1
+                                  (case wild of wild1 {
+                                     Data.Aeson.Types.Internal.Object ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                     Data.Aeson.Types.Internal.String ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList8
+                                     Data.Aeson.Types.Internal.Number ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                     Data.Aeson.Types.Internal.Bool ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (_ks :: Data.Aeson.Types.Internal.Success
+                                   [Language.PureScript.AST.Operators.Associativity] f4 r) ->
+                       kf
+                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                         msg19)
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Language.PureScript.AST.Operators.Associativity]>_R))
+                   Data.Aeson.Types.Internal.Array a2
+                   -> case a2 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      letrec {
+                        $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) ->
+                          case GHC.Prim.>=# ww dt1 of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.indexArray#
+                                      @ Data.Aeson.Types.Internal.Value
+                                      dt2
+                                      (GHC.Prim.+# dt ww) of ds3 { Unit# ipv ->
+                               GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ipv
+                                 ($wgo (GHC.Prim.+# ww 1#)) }
+                            1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                      } in
+                      Language.PureScript.AST.Operators.$fFromJSONAssociativity_go
+                        0#
+                        ($wgo 0#) } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fFromJSONAssociativity_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.AST.Operators.Associativity]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+17f2097426b72eb751701f86cd97792c
+  $fGenericAssociativity ::
+    GHC.Generics.Generic
+      Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Associativity
+                  Language.PureScript.AST.Operators.$fGenericAssociativity1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <Language.PureScript.AST.Operators.Associativity>_R
+                   ->_R (Sym (GHC.Generics.N:M1[0]
+                                  <*>_N
+                                  <GHC.Generics.D>_P
+                                  <'GHC.Generics.MetaData
+                                     "Associativity"
+                                     "Language.PureScript.AST.Operators"
+                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                     'GHC.Types.False>_P
+                                  <GHC.Generics.M1
+                                     GHC.Generics.C
+                                     ('GHC.Generics.MetaCons
+                                        "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                     GHC.Generics.U1
+                                   GHC.Generics.:+: (GHC.Generics.M1
+                                                       GHC.Generics.C
+                                                       ('GHC.Generics.MetaCons
+                                                          "Infixr"
+                                                          'GHC.Generics.PrefixI
+                                                          'GHC.Types.False)
+                                                       GHC.Generics.U1
+                                                     GHC.Generics.:+: GHC.Generics.M1
+                                                                        GHC.Generics.C
+                                                                        ('GHC.Generics.MetaCons
+                                                                           "Infix"
+                                                                           'GHC.Generics.PrefixI
+                                                                           'GHC.Types.False)
+                                                                        GHC.Generics.U1)>_R) ; Sub (Sym (Language.PureScript.AST.Operators.Rep_Associativity[0]))) <x>_N)
+                  Language.PureScript.AST.Operators.$fGenericAssociativity_$cto -}
+17f2097426b72eb751701f86cd97792c
+  $fGenericAssociativity1 ::
+    Language.PureScript.AST.Operators.Associativity
+    -> (GHC.Generics.:+:)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            GHC.Generics.U1)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            GHC.Generics.U1
+          GHC.Generics.:+: GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             GHC.Generics.U1)
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: Language.PureScript.AST.Operators.Associativity) ->
+                 case x1 of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> Language.PureScript.AST.Operators.$fGenericAssociativity6 @ x
+                   Language.PureScript.AST.Operators.Infixr
+                   -> Language.PureScript.AST.Operators.$fGenericAssociativity4 @ x
+                   Language.PureScript.AST.Operators.Infix
+                   -> Language.PureScript.AST.Operators.$fGenericAssociativity2
+                        @ x }) -}
+7cffd6dabf6ce448149b5f53a3c05eb9
+  $fGenericAssociativity2 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.R1
+                   @ *
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x
+                   (Language.PureScript.AST.Operators.$fGenericAssociativity3 @ x)) -}
+17c25493705b26624fced0fdbfa5300f
+  $fGenericAssociativity3 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.R1
+                   @ *
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x
+                   (GHC.Generics.U1 @ * @ x)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x>_N)) -}
+305d9de517d3521605a4ba81ba772099
+  $fGenericAssociativity4 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.R1
+                   @ *
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x
+                   (Language.PureScript.AST.Operators.$fGenericAssociativity5 @ x)) -}
+355cf39f1ac292e19e173b18faceb5bd
+  $fGenericAssociativity5 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.L1
+                   @ *
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x
+                   (GHC.Generics.U1 @ * @ x)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x>_N)) -}
+02112132390cd547c0c6e28285f15996
+  $fGenericAssociativity6 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x ->
+                 GHC.Generics.L1
+                   @ *
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x
+                   (GHC.Generics.U1 @ * @ x)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x>_N)) -}
+17f2097426b72eb751701f86cd97792c
+  $fGenericAssociativity_$cto ::
+    GHC.Generics.Rep Language.PureScript.AST.Operators.Associativity x
+    -> Language.PureScript.AST.Operators.Associativity
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x
+                   (ds :: GHC.Generics.Rep
+                            Language.PureScript.AST.Operators.Associativity x) ->
+                 case ds
+                        `cast`
+                      ((Sub (Language.PureScript.AST.Operators.Rep_Associativity[0]) ; GHC.Generics.N:M1[0]
+                                                                                           <*>_N
+                                                                                           <GHC.Generics.D>_P
+                                                                                           <'GHC.Generics.MetaData
+                                                                                              "Associativity"
+                                                                                              "Language.PureScript.AST.Operators"
+                                                                                              "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                              'GHC.Types.False>_P
+                                                                                           <GHC.Generics.M1
+                                                                                              GHC.Generics.C
+                                                                                              ('GHC.Generics.MetaCons
+                                                                                                 "Infixl"
+                                                                                                 'GHC.Generics.PrefixI
+                                                                                                 'GHC.Types.False)
+                                                                                              GHC.Generics.U1
+                                                                                            GHC.Generics.:+: (GHC.Generics.M1
+                                                                                                                GHC.Generics.C
+                                                                                                                ('GHC.Generics.MetaCons
+                                                                                                                   "Infixr"
+                                                                                                                   'GHC.Generics.PrefixI
+                                                                                                                   'GHC.Types.False)
+                                                                                                                GHC.Generics.U1
+                                                                                                              GHC.Generics.:+: GHC.Generics.M1
+                                                                                                                                 GHC.Generics.C
+                                                                                                                                 ('GHC.Generics.MetaCons
+                                                                                                                                    "Infix"
+                                                                                                                                    'GHC.Generics.PrefixI
+                                                                                                                                    'GHC.Types.False)
+                                                                                                                                 GHC.Generics.U1)>_R) <x>_N) of wild {
+                   GHC.Generics.L1 ds1
+                   -> case ds1
+                             `cast`
+                           (GHC.Generics.N:M1[0]
+                                <*>_N
+                                <GHC.Generics.C>_P
+                                <'GHC.Generics.MetaCons
+                                   "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                <GHC.Generics.U1>_R <x>_N) of wild1 { GHC.Generics.U1 ->
+                      Language.PureScript.AST.Operators.Infixl }
+                   GHC.Generics.R1 ds1
+                   -> case ds1 of wild1 {
+                        GHC.Generics.L1 ds2
+                        -> case ds2
+                                  `cast`
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.U1>_R <x>_N) of wild2 { GHC.Generics.U1 ->
+                           Language.PureScript.AST.Operators.Infixr }
+                        GHC.Generics.R1 ds2
+                        -> case ds2
+                                  `cast`
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.U1>_R <x>_N) of wild2 { GHC.Generics.U1 ->
+                           Language.PureScript.AST.Operators.Infix } } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fGenericFixity ::
+    GHC.Generics.Generic Language.PureScript.AST.Operators.Fixity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Fixity
+                  Language.PureScript.AST.Operators.$fGenericFixity1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <Language.PureScript.AST.Operators.Fixity>_R
+                   ->_R (Sym (GHC.Generics.N:M1[0]
+                                  <*>_N
+                                  <GHC.Generics.D>_P
+                                  <'GHC.Generics.MetaData
+                                     "Fixity"
+                                     "Language.PureScript.AST.Operators"
+                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                     'GHC.Types.False>_P
+                                  <GHC.Generics.M1
+                                     GHC.Generics.C
+                                     ('GHC.Generics.MetaCons
+                                        "Fixity" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                     (GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           'GHC.Base.Nothing
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1
+                                           GHC.Generics.R
+                                           Language.PureScript.AST.Operators.Associativity)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            'GHC.Base.Nothing
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            Language.PureScript.AST.Operators.Precedence))>_R) ; Sub (Sym (Language.PureScript.AST.Operators.Rep_Fixity[0]))) <x>_N)
+                  Language.PureScript.AST.Operators.$fGenericFixity_$cto -}
+17f2097426b72eb751701f86cd97792c
+  $fGenericFixity1 ::
+    Language.PureScript.AST.Operators.Fixity
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Fixity" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               'GHC.Base.Nothing
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1
+               GHC.Generics.R Language.PureScript.AST.Operators.Associativity)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                'GHC.Base.Nothing
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1
+                                GHC.Generics.R Language.PureScript.AST.Operators.Precedence))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case x1 of wild { Language.PureScript.AST.Operators.Fixity g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            'GHC.Base.Nothing
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1
+                            GHC.Generics.R Language.PureScript.AST.Operators.Associativity))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            'GHC.Base.Nothing
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1
+                            GHC.Generics.R Language.PureScript.AST.Operators.Precedence))
+                    @ x
+                    g1
+                      `cast`
+                    (Sym (GHC.Generics.N:K1[0]
+                              <*>_N
+                              <GHC.Generics.R>_P
+                              <Language.PureScript.AST.Operators.Associativity>_R
+                              <x>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                <*>_N
+                                                <GHC.Generics.S>_P
+                                                <'GHC.Generics.MetaSel
+                                                   'GHC.Base.Nothing
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy>_P
+                                                <GHC.Generics.K1
+                                                   GHC.Generics.R
+                                                   Language.PureScript.AST.Operators.Associativity>_R) <x>_N)
+                    g2
+                      `cast`
+                    (Sym (GHC.Generics.N:K1[0]
+                              <*>_N
+                              <GHC.Generics.R>_P
+                              <Language.PureScript.AST.Operators.Precedence>_R
+                              <x>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                <*>_N
+                                                <GHC.Generics.S>_P
+                                                <'GHC.Generics.MetaSel
+                                                   'GHC.Base.Nothing
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy>_P
+                                                <GHC.Generics.K1
+                                                   GHC.Generics.R
+                                                   Language.PureScript.AST.Operators.Precedence>_R) <x>_N))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "Fixity" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 'GHC.Base.Nothing
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1
+                                 GHC.Generics.R Language.PureScript.AST.Operators.Associativity)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  'GHC.Base.Nothing
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R
+                                                  Language.PureScript.AST.Operators.Precedence)>_R) <x>_N) }) -}
+17f2097426b72eb751701f86cd97792c
+  $fGenericFixity_$cto ::
+    GHC.Generics.Rep Language.PureScript.AST.Operators.Fixity x
+    -> Language.PureScript.AST.Operators.Fixity
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x
+                   (ds :: GHC.Generics.Rep
+                            Language.PureScript.AST.Operators.Fixity x) ->
+                 case ds
+                        `cast`
+                      ((Sub (Language.PureScript.AST.Operators.Rep_Fixity[0]) ; (GHC.Generics.N:M1[0]
+                                                                                     <*>_N
+                                                                                     <GHC.Generics.D>_P
+                                                                                     <'GHC.Generics.MetaData
+                                                                                        "Fixity"
+                                                                                        "Language.PureScript.AST.Operators"
+                                                                                        "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                        'GHC.Types.False>_P
+                                                                                     <GHC.Generics.M1
+                                                                                        GHC.Generics.C
+                                                                                        ('GHC.Generics.MetaCons
+                                                                                           "Fixity"
+                                                                                           'GHC.Generics.PrefixI
+                                                                                           'GHC.Types.False)
+                                                                                        (GHC.Generics.M1
+                                                                                           GHC.Generics.S
+                                                                                           ('GHC.Generics.MetaSel
+                                                                                              'GHC.Base.Nothing
+                                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                                              'GHC.Generics.NoSourceStrictness
+                                                                                              'GHC.Generics.DecidedLazy)
+                                                                                           (GHC.Generics.K1
+                                                                                              GHC.Generics.R
+                                                                                              Language.PureScript.AST.Operators.Associativity)
+                                                                                         GHC.Generics.:*: GHC.Generics.M1
+                                                                                                            GHC.Generics.S
+                                                                                                            ('GHC.Generics.MetaSel
+                                                                                                               'GHC.Base.Nothing
+                                                                                                               'GHC.Generics.NoSourceUnpackedness
+                                                                                                               'GHC.Generics.NoSourceStrictness
+                                                                                                               'GHC.Generics.DecidedLazy)
+                                                                                                            (GHC.Generics.K1
+                                                                                                               GHC.Generics.R
+                                                                                                               Language.PureScript.AST.Operators.Precedence))>_R ; GHC.Generics.N:M1[0]
+                                                                                                                                                                       <*>_N
+                                                                                                                                                                       <GHC.Generics.C>_P
+                                                                                                                                                                       <'GHC.Generics.MetaCons
+                                                                                                                                                                          "Fixity"
+                                                                                                                                                                          'GHC.Generics.PrefixI
+                                                                                                                                                                          'GHC.Types.False>_P
+                                                                                                                                                                       <GHC.Generics.M1
+                                                                                                                                                                          GHC.Generics.S
+                                                                                                                                                                          ('GHC.Generics.MetaSel
+                                                                                                                                                                             'GHC.Base.Nothing
+                                                                                                                                                                             'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                             'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                             'GHC.Generics.DecidedLazy)
+                                                                                                                                                                          (GHC.Generics.K1
+                                                                                                                                                                             GHC.Generics.R
+                                                                                                                                                                             Language.PureScript.AST.Operators.Associativity)
+                                                                                                                                                                        GHC.Generics.:*: GHC.Generics.M1
+                                                                                                                                                                                           GHC.Generics.S
+                                                                                                                                                                                           ('GHC.Generics.MetaSel
+                                                                                                                                                                                              'GHC.Base.Nothing
+                                                                                                                                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                              'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                              'GHC.Generics.DecidedLazy)
+                                                                                                                                                                                           (GHC.Generics.K1
+                                                                                                                                                                                              GHC.Generics.R
+                                                                                                                                                                                              Language.PureScript.AST.Operators.Precedence)>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 Language.PureScript.AST.Operators.Fixity
+                   ds1
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           'GHC.Base.Nothing
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R
+                           Language.PureScript.AST.Operators.Associativity>_R <x>_N ; GHC.Generics.N:K1[0]
+                                                                                          <*>_N
+                                                                                          <GHC.Generics.R>_P
+                                                                                          <Language.PureScript.AST.Operators.Associativity>_R
+                                                                                          <x>_P)
+                   ds2
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           'GHC.Base.Nothing
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R
+                           Language.PureScript.AST.Operators.Precedence>_R <x>_N ; GHC.Generics.N:K1[0]
+                                                                                       <*>_N
+                                                                                       <GHC.Generics.R>_P
+                                                                                       <Language.PureScript.AST.Operators.Precedence>_R
+                                                                                       <x>_P) }) -}
+17f2097426b72eb751701f86cd97792c
+  $fNFDataAssociativity ::
+    Control.DeepSeq.NFData
+      Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.PureScript.AST.Operators.$fNFDataAssociativity_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Language.PureScript.AST.Operators.Associativity>_N)) -}
+17f2097426b72eb751701f86cd97792c
+  $fNFDataAssociativity_$crnf ::
+    Language.PureScript.AST.Operators.Associativity -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.AST.Operators.Associativity) ->
+                 case x of wild { DEFAULT -> GHC.Tuple.() }) -}
+17f2097426b72eb751701f86cd97792c
+  $fNFDataFixity ::
+    Control.DeepSeq.NFData Language.PureScript.AST.Operators.Fixity
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.PureScript.AST.Operators.$fNFDataFixity_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Language.PureScript.AST.Operators.Fixity>_N)) -}
+17f2097426b72eb751701f86cd97792c
+  $fNFDataFixity_$crnf ::
+    Language.PureScript.AST.Operators.Fixity -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.AST.Operators.Fixity) ->
+                 case x of wild { Language.PureScript.AST.Operators.Fixity g1 g2 ->
+                 case g1 of wild1 { DEFAULT ->
+                 case g2 of ds1 { DEFAULT -> GHC.Tuple.() } } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity ::
+    GHC.Classes.Ord Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Associativity
+                  Language.PureScript.AST.Operators.$fEqAssociativity
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$ccompare
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$c<
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$c<=
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$c>
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$c>=
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$cmax
+                  Language.PureScript.AST.Operators.$fOrdAssociativity_$cmin -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$c< ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.AST.Operators.Associativity)
+                   (b :: Language.PureScript.AST.Operators.Associativity) ->
+                 case a of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.True }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.True }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$c<= ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Operators.Associativity)
+                   (b :: Language.PureScript.AST.Operators.Associativity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a of wild {
+                       Language.PureScript.AST.Operators.Infixl
+                       -> case GHC.Prim.<# a# 0# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.AST.Operators.Infixr
+                       -> case GHC.Prim.<# a# 1# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.AST.Operators.Infix
+                       -> case GHC.Prim.<# a# 2# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                 } in
+                 case b of wild {
+                   Language.PureScript.AST.Operators.Infixl -> $j 0#
+                   Language.PureScript.AST.Operators.Infixr -> $j 1#
+                   Language.PureScript.AST.Operators.Infix -> $j 2# }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$c> ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.AST.Operators.Associativity)
+                   (b :: Language.PureScript.AST.Operators.Associativity) ->
+                 Language.PureScript.AST.Operators.$fOrdAssociativity_$c< b a) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$c>= ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Operators.Associativity)
+                   (b :: Language.PureScript.AST.Operators.Associativity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       Language.PureScript.AST.Operators.Infixl
+                       -> case GHC.Prim.<# a# 0# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.AST.Operators.Infixr
+                       -> case GHC.Prim.<# a# 1# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       Language.PureScript.AST.Operators.Infix
+                       -> case GHC.Prim.<# a# 2# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                 } in
+                 case a of wild {
+                   Language.PureScript.AST.Operators.Infixl -> $j 0#
+                   Language.PureScript.AST.Operators.Infixr -> $j 1#
+                   Language.PureScript.AST.Operators.Infix -> $j 2# }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$ccompare ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Operators.Associativity)
+                   (b :: Language.PureScript.AST.Operators.Associativity) ->
+                 case a of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.EQ
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.LT
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.LT }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.GT
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.EQ
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.LT }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.EQ } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$cmax ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Operators.Associativity)
+                   (y :: Language.PureScript.AST.Operators.Associativity) ->
+                 case Language.PureScript.AST.Operators.$fOrdAssociativity_$c<=
+                        x
+                        y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdAssociativity_$cmin ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Associativity
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Operators.Associativity)
+                   (y :: Language.PureScript.AST.Operators.Associativity) ->
+                 case Language.PureScript.AST.Operators.$fOrdAssociativity_$c<=
+                        x
+                        y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity ::
+    GHC.Classes.Ord Language.PureScript.AST.Operators.Fixity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Fixity
+                  Language.PureScript.AST.Operators.$fEqFixity
+                  Language.PureScript.AST.Operators.$fOrdFixity_$ccompare
+                  Language.PureScript.AST.Operators.$fOrdFixity_$c<
+                  Language.PureScript.AST.Operators.$fOrdFixity_$c<=
+                  Language.PureScript.AST.Operators.$fOrdFixity_$c>
+                  Language.PureScript.AST.Operators.$fOrdFixity_$c>=
+                  Language.PureScript.AST.Operators.$fOrdFixity_$cmax
+                  Language.PureScript.AST.Operators.$fOrdFixity_$cmin -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$c< ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,U)><S(SL),1*U(1*U,U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 Language.PureScript.AST.Operators.$w$c< ww1 ww2 ww4 ww5 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$c<= ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,U)><S(SL),1*U(1*U,U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 Language.PureScript.AST.Operators.$w$c<= ww1 ww2 ww4 ww5 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$c> ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,U)><S(SL),1*U(1*U,U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.AST.Operators.Fixity)
+                   (b :: Language.PureScript.AST.Operators.Fixity) ->
+                 Language.PureScript.AST.Operators.$fOrdFixity_$c< b a) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$c>= ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,U)><S(SL),1*U(1*U,U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 Language.PureScript.AST.Operators.$w$c>= ww1 ww2 ww4 ww5 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$ccompare ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 Language.PureScript.AST.Operators.$w$ccompare
+                   ww1
+                   ww2
+                   ww4
+                   ww5 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$cmax ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,U)><S(SL),1*U(1*U,U)>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 case ww4 of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww1 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> case GHC.Integer.Type.ltInteger# ww5 ww2 of wild2 {
+                             DEFAULT
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixl
+                                  ww5
+                             1#
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixl
+                                  ww2 }
+                        Language.PureScript.AST.Operators.Infixr
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infixr
+                             ww2
+                        Language.PureScript.AST.Operators.Infix
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infix
+                             ww2 }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww1 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infixr
+                             ww5
+                        Language.PureScript.AST.Operators.Infixr
+                        -> case GHC.Integer.Type.ltInteger# ww5 ww2 of wild2 {
+                             DEFAULT
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixr
+                                  ww5
+                             1#
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixr
+                                  ww2 }
+                        Language.PureScript.AST.Operators.Infix
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infix
+                             ww2 }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww1 of wild1 {
+                        DEFAULT
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infix
+                             ww5
+                        Language.PureScript.AST.Operators.Infix
+                        -> case GHC.Integer.Type.ltInteger# ww5 ww2 of wild2 {
+                             DEFAULT
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infix
+                                  ww5
+                             1#
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infix
+                                  ww2 } } } } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fOrdFixity_$cmin ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity
+    -> Language.PureScript.AST.Operators.Fixity
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(1*U,U)>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.AST.Operators.Fixity ww4 ww5 ->
+                 case ww4 of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww1 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> case GHC.Integer.Type.ltInteger# ww5 ww2 of wild2 {
+                             DEFAULT
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixl
+                                  ww2
+                             1#
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixl
+                                  ww5 }
+                        Language.PureScript.AST.Operators.Infixr
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infixl
+                             ww5
+                        Language.PureScript.AST.Operators.Infix
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infixl
+                             ww5 }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww1 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infixl
+                             ww2
+                        Language.PureScript.AST.Operators.Infixr
+                        -> case GHC.Integer.Type.ltInteger# ww5 ww2 of wild2 {
+                             DEFAULT
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixr
+                                  ww2
+                             1#
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infixr
+                                  ww5 }
+                        Language.PureScript.AST.Operators.Infix
+                        -> Language.PureScript.AST.Operators.Fixity
+                             Language.PureScript.AST.Operators.Infixr
+                             ww5 }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww1 of wild1 {
+                        DEFAULT -> Language.PureScript.AST.Operators.Fixity wild1 ww2
+                        Language.PureScript.AST.Operators.Infix
+                        -> case GHC.Integer.Type.ltInteger# ww5 ww2 of wild2 {
+                             DEFAULT
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infix
+                                  ww2
+                             1#
+                             -> Language.PureScript.AST.Operators.Fixity
+                                  Language.PureScript.AST.Operators.Infix
+                                  ww5 } } } } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowAssociativity ::
+    GHC.Show.Show Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Associativity
+                  Language.PureScript.AST.Operators.$fShowAssociativity_$cshowsPrec
+                  Language.PureScript.AST.Operators.$fShowAssociativity_$cshow
+                  Language.PureScript.AST.Operators.$fShowAssociativity_$cshowList -}
+a7b235c97fbc949f73588d4363227dd3
+  $fShowAssociativity1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.$fShowAssociativity2) -}
+6d7dcbb82f46d6ed90e99b51f5c125c9
+  $fShowAssociativity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Infix"#) -}
+ad78580fc98d6f04c6fa8b8b6f5e7c85
+  $fShowAssociativity3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.$fShowAssociativity4) -}
+cf62864fa725d2776d10f2078266c702
+  $fShowAssociativity4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Infixr"#) -}
+7a977201270fe5a90114088fd74c006e
+  $fShowAssociativity5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.$fShowAssociativity6) -}
+570e1ebcd4016deb23f5c66bf2c4f16f
+  $fShowAssociativity6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Infixl"#) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowAssociativity_$cshow ::
+    Language.PureScript.AST.Operators.Associativity -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.AST.Operators.Associativity) ->
+                 case x of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> Language.PureScript.AST.Operators.$fShowAssociativity5
+                   Language.PureScript.AST.Operators.Infixr
+                   -> Language.PureScript.AST.Operators.$fShowAssociativity3
+                   Language.PureScript.AST.Operators.Infix
+                   -> Language.PureScript.AST.Operators.$fShowAssociativity1 }) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowAssociativity_$cshowList ::
+    [Language.PureScript.AST.Operators.Associativity] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.AST.Operators.Associativity])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.AST.Operators.Associativity
+                   Language.PureScript.AST.Operators.$w$cshowsPrec
+                   ls
+                   s) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowAssociativity_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.AST.Operators.Associativity
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.AST.Operators.Associativity)
+                   (w2 :: GHC.Base.String) ->
+                 Language.PureScript.AST.Operators.$w$cshowsPrec w1 w2) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowFixity ::
+    GHC.Show.Show Language.PureScript.AST.Operators.Fixity
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Fixity
+                  Language.PureScript.AST.Operators.$fShowFixity_$cshowsPrec
+                  Language.PureScript.AST.Operators.$fShowFixity_$cshow
+                  Language.PureScript.AST.Operators.$fShowFixity_$cshowList -}
+17f2097426b72eb751701f86cd97792c
+  $fShowFixity1 ::
+    Language.PureScript.AST.Operators.Fixity -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U,U)><L,U>,
+     Unfolding: (\ (w :: Language.PureScript.AST.Operators.Fixity)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 Language.PureScript.AST.Operators.$w$cshowsPrec1
+                   0#
+                   ww1
+                   ww2
+                   w1 }) -}
+23aa16039c0df194a0448b94cdc03e48
+  $fShowFixity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Fixity "#) -}
+a756777ddd26f8f94539669cf5244e77
+  $fShowFixity3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowFixity_$cshow ::
+    Language.PureScript.AST.Operators.Fixity -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.AST.Operators.Fixity) ->
+                 Language.PureScript.AST.Operators.$fShowFixity_$cshowsPrec
+                   Language.PureScript.AST.Operators.$fShowFixity3
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowFixity_$cshowList ::
+    [Language.PureScript.AST.Operators.Fixity] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.AST.Operators.Fixity])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.AST.Operators.Fixity
+                   Language.PureScript.AST.Operators.$fShowFixity1
+                   ls
+                   s) -}
+17f2097426b72eb751701f86cd97792c
+  $fShowFixity_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.AST.Operators.Fixity -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.AST.Operators.Fixity)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.AST.Operators.Fixity ww3 ww4 ->
+                 Language.PureScript.AST.Operators.$w$cshowsPrec1
+                   ww1
+                   ww3
+                   ww4
+                   w2 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONAssociativity ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      Language.PureScript.AST.Operators.Associativity
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Associativity
+                  Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoJSON
+                  Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoEncoding
+                  Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoJSONList
+                  Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoEncodingList -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONAssociativity_$ctoEncoding ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Language.PureScript.AST.Operators.Associativity) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoJSON
+                      x))
+                  `cast`
+                (<Language.PureScript.AST.Operators.Associativity>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONAssociativity_$ctoEncodingList ::
+    [Language.PureScript.AST.Operators.Associativity]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Language.PureScript.AST.Operators.Associativity
+                   Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoEncoding) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONAssociativity_$ctoJSON ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m3, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Associativity) ->
+                 case w of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case Data.Text.Show.unpackCString#
+                             Language.PureScript.AST.Operators.readAssoc5 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                      Data.Aeson.Types.Internal.String dt }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case Data.Text.Show.unpackCString#
+                             Language.PureScript.AST.Operators.readAssoc3 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                      Data.Aeson.Types.Internal.String dt }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case Data.Text.Show.unpackCString#
+                             Language.PureScript.AST.Operators.readAssoc7 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                      Data.Aeson.Types.Internal.String dt } }) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONAssociativity_$ctoJSONList ::
+    [Language.PureScript.AST.Operators.Associativity]
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Language.PureScript.AST.Operators.Associativity]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Language.PureScript.AST.Operators.Associativity
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Language.PureScript.AST.Operators.Associativity
+                                     c
+                                     Language.PureScript.AST.Operators.$fToJSONAssociativity_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONFixity ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      Language.PureScript.AST.Operators.Fixity
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Operators.Fixity
+                  Language.PureScript.AST.Operators.$fToJSONFixity_$ctoJSON
+                  Language.PureScript.AST.Operators.$fToJSONFixity_$ctoEncoding
+                  Language.PureScript.AST.Operators.$fToJSONFixity_$ctoJSONList
+                  Language.PureScript.AST.Operators.$fToJSONFixity_$ctoEncodingList -}
+be1be2842d8d4fae91c762676510f73e
+  $fToJSONFixity1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.AST.Operators.readAssoc7) -}
+bacecc39db717b5bcaf45afb4f9f91d2
+  $fToJSONFixity2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.AST.Operators.readAssoc3) -}
+07a3da3a72661de9136d9a442eb69b23
+  $fToJSONFixity3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.AST.Operators.readAssoc5) -}
+bd64e8d6fe5ffd1c0392e3a006fff7e4
+  $fToJSONFixity4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.AST.Operators.$fToJSONFixity5) -}
+7a4d0a85be0a377ca2a04b26f08bcdae
+  $fToJSONFixity5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("precedence"#) -}
+7dc64e4854d7eb33c547f8415f059272
+  $fToJSONFixity6 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.AST.Operators.$fToJSONFixity7) -}
+c9c90aa0770cd6f09482a66f3d5c444f
+  $fToJSONFixity7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("associativity"#) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONFixity_$ctoEncoding ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S(SS),1*U(1*U,1*U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Language.PureScript.AST.Operators.Fixity) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Language.PureScript.AST.Operators.$fToJSONFixity_$ctoJSON x))
+                  `cast`
+                (<Language.PureScript.AST.Operators.Fixity>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONFixity_$ctoEncodingList ::
+    [Language.PureScript.AST.Operators.Fixity]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Language.PureScript.AST.Operators.Fixity
+                   Language.PureScript.AST.Operators.$fToJSONFixity_$ctoEncoding) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONFixity_$ctoJSON ::
+    Language.PureScript.AST.Operators.Fixity
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S(SS),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.AST.Operators.Fixity) ->
+                 case w of ww { Language.PureScript.AST.Operators.Fixity ww1 ww2 ->
+                 Language.PureScript.AST.Operators.$w$ctoJSON ww1 ww2 }) -}
+17f2097426b72eb751701f86cd97792c
+  $fToJSONFixity_$ctoJSONList ::
+    [Language.PureScript.AST.Operators.Fixity]
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Language.PureScript.AST.Operators.Fixity]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Language.PureScript.AST.Operators.Fixity
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Language.PureScript.AST.Operators.Fixity
+                                     c
+                                     Language.PureScript.AST.Operators.$fToJSONFixity_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+98236f6453884930804016aa324e83e7
+  $tc'Fixity :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9494827236045467817##
+                   17595820903474745430##
+                   Language.PureScript.AST.Operators.$trModule
+                   Language.PureScript.AST.Operators.$tc'Fixity2
+                   0#
+                   Language.PureScript.AST.Operators.$tc'Fixity1) -}
+1691b1f9004bc21f890c1dcc8d9969bf
+  $tc'Fixity1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+59e643eecf94d55b3f7ca7e3f42e4d17
+  $tc'Fixity2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$tc'Fixity3) -}
+84997d88d52972f0a3996ee74aee2fe9
+  $tc'Fixity3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Fixity"#) -}
+c0099412ed7c230eb865a038f919a368
+  $tc'Infix :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10987308143110840632##
+                   946055475415359936##
+                   Language.PureScript.AST.Operators.$trModule
+                   Language.PureScript.AST.Operators.$tc'Infix2
+                   0#
+                   Language.PureScript.AST.Operators.$tc'Infix1) -}
+afda7e848efd65c1459a51ff92d8e676
+  $tc'Infix1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+6adb44c2bfe00213fe81e7cded3e7a69
+  $tc'Infix2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$tc'Infix3) -}
+56de920621061b3affaa202116f8eba8
+  $tc'Infix3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Infix"#) -}
+94b31f8faa9c4fc2b3a56772b13a20f0
+  $tc'Infixl :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17052560954458590841##
+                   15070273363365955145##
+                   Language.PureScript.AST.Operators.$trModule
+                   Language.PureScript.AST.Operators.$tc'Infixl1
+                   0#
+                   Language.PureScript.AST.Operators.$tc'Infix1) -}
+58bed9ee3b4cc493fb476b5604036cf0
+  $tc'Infixl1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$tc'Infixl2) -}
+b7882eadbc21af0788dbbfd3e270765e
+  $tc'Infixl2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Infixl"#) -}
+001038b969b09302274a384188ebd635
+  $tc'Infixr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9895585840056200933##
+                   14413355966559689762##
+                   Language.PureScript.AST.Operators.$trModule
+                   Language.PureScript.AST.Operators.$tc'Infixr1
+                   0#
+                   Language.PureScript.AST.Operators.$tc'Infix1) -}
+fbacff888a67ea965717f7dfe11a5f08
+  $tc'Infixr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$tc'Infixr2) -}
+81c7d23f8cfc2081d4894a6302d627eb
+  $tc'Infixr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Infixr"#) -}
+9ba46fff55f57b9923bed5667458ebdb
+  $tcAssociativity :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8301459154301954190##
+                   16387816122580520778##
+                   Language.PureScript.AST.Operators.$trModule
+                   Language.PureScript.AST.Operators.$tcAssociativity1
+                   0#
+                   GHC.Types.krep$*) -}
+3c2a96b18a5a223c938ef608f13725f9
+  $tcAssociativity1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$tcAssociativity2) -}
+734a7218039435c359ff0f255bca3e46
+  $tcAssociativity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Associativity"#) -}
+9da921e30a885aea45829167cf34c216
+  $tcFixity :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12086159311540014182##
+                   11609778010423934544##
+                   Language.PureScript.AST.Operators.$trModule
+                   Language.PureScript.AST.Operators.$tcFixity1
+                   0#
+                   GHC.Types.krep$*) -}
+44fd4e48a4a423ce9ae9537bb4828381
+  $tcFixity1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$tcFixity2) -}
+4fdd20be8895a7ba3818265c99cc0172
+  $tcFixity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Fixity"#) -}
+408f60fd95a1a8503f5203f79ce9d1e9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.AST.Operators.$trModule3
+                   Language.PureScript.AST.Operators.$trModule1) -}
+dcfc93d39910c9dbac0a71ef5fdeb630
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$trModule2) -}
+f895d3a2a91e0bfb15b4588be7226f37
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.AST.Operators"#) -}
+1d95a81002a3bb30e1549b34a4e1f251
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Operators.$trModule4) -}
+3941231e3dde021554bc8b4e52044c81
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+17f2097426b72eb751701f86cd97792c
+  $w$c< ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><L,U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.AST.Operators.Associativity)
+                   (ww1 :: Language.PureScript.AST.Operators.Precedence)
+                   (ww2 :: Language.PureScript.AST.Operators.Associativity)
+                   (ww3 :: Language.PureScript.AST.Operators.Precedence) ->
+                 case ww of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww2 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> GHC.Integer.Type.ltInteger ww1 ww3
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.True }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww2 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infixr
+                        -> GHC.Integer.Type.ltInteger ww1 ww3
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.True }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infix
+                        -> GHC.Integer.Type.ltInteger ww1 ww3 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$c<= ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><L,U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.AST.Operators.Associativity)
+                   (ww1 :: Language.PureScript.AST.Operators.Precedence)
+                   (ww2 :: Language.PureScript.AST.Operators.Associativity)
+                   (ww3 :: Language.PureScript.AST.Operators.Precedence) ->
+                 case ww2 of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> case GHC.Integer.Type.ltInteger# ww3 ww1 of wild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.False }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infixr
+                        -> case GHC.Integer.Type.ltInteger# ww3 ww1 of wild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.False }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infix
+                        -> case GHC.Integer.Type.ltInteger# ww3 ww1 of wild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$c== ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.AST.Operators.Associativity)
+                   (ww1 :: Language.PureScript.AST.Operators.Precedence)
+                   (ww2 :: Language.PureScript.AST.Operators.Associativity)
+                   (ww3 :: Language.PureScript.AST.Operators.Precedence) ->
+                 case ww of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infixl
+                        -> GHC.Integer.Type.eqInteger ww1 ww3 }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infixr
+                        -> GHC.Integer.Type.eqInteger ww1 ww3 }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infix
+                        -> GHC.Integer.Type.eqInteger ww1 ww3 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$c>= ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><L,U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.AST.Operators.Associativity)
+                   (ww1 :: Language.PureScript.AST.Operators.Precedence)
+                   (ww2 :: Language.PureScript.AST.Operators.Associativity)
+                   (ww3 :: Language.PureScript.AST.Operators.Precedence) ->
+                 case ww of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww2 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> case GHC.Integer.Type.ltInteger# ww1 ww3 of wild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.False
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.False }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww2 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infixr
+                        -> case GHC.Integer.Type.ltInteger# ww1 ww3 of wild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.False }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.PureScript.AST.Operators.Infix
+                        -> case GHC.Integer.Type.ltInteger# ww1 ww3 of wild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$ccompare ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.AST.Operators.Associativity)
+                   (ww1 :: Language.PureScript.AST.Operators.Precedence)
+                   (ww2 :: Language.PureScript.AST.Operators.Associativity)
+                   (ww3 :: Language.PureScript.AST.Operators.Precedence) ->
+                 case ww of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case ww2 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl
+                        -> GHC.Integer.Type.compareInteger ww1 ww3
+                        Language.PureScript.AST.Operators.Infixr -> GHC.Types.LT
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.LT }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case ww2 of wild1 {
+                        Language.PureScript.AST.Operators.Infixl -> GHC.Types.GT
+                        Language.PureScript.AST.Operators.Infixr
+                        -> GHC.Integer.Type.compareInteger ww1 ww3
+                        Language.PureScript.AST.Operators.Infix -> GHC.Types.LT }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Language.PureScript.AST.Operators.Infix
+                        -> GHC.Integer.Type.compareInteger ww1 ww3 } }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$cshowsPrec ::
+    Language.PureScript.AST.Operators.Associativity
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.AST.Operators.Associativity)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.AST.Operators.$fShowAssociativity5
+                        w1
+                   Language.PureScript.AST.Operators.Infixr
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.AST.Operators.$fShowAssociativity3
+                        w1
+                   Language.PureScript.AST.Operators.Infix
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.AST.Operators.$fShowAssociativity1
+                        w1 }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Language.PureScript.AST.Operators.Associativity)
+                   (ww2 :: Language.PureScript.AST.Operators.Precedence)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (eta :: GHC.Base.String)[OneShot] ->
+                     case ww1 of wild {
+                       Language.PureScript.AST.Operators.Infixl
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            Language.PureScript.AST.Operators.$fShowAssociativity5
+                            eta
+                       Language.PureScript.AST.Operators.Infixr
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            Language.PureScript.AST.Operators.$fShowAssociativity3
+                            eta
+                       Language.PureScript.AST.Operators.Infix
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            Language.PureScript.AST.Operators.$fShowAssociativity1
+                            eta }
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        Language.PureScript.AST.Operators.$fShowFixity2
+                        (f (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.showSpace1
+                              (case GHC.Show.$w$cshowsPrec4 11# ww2 w of ww3 { (#,#) ww4 ww5 ->
+                               GHC.Types.: @ GHC.Types.Char ww4 ww5 })))
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.AST.Operators.$fShowFixity2
+                           (f (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 GHC.Show.showSpace1
+                                 (case GHC.Show.$w$cshowsPrec4
+                                         11#
+                                         ww2
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            w) of ww3 { (#,#) ww4 ww5 ->
+                                  GHC.Types.: @ GHC.Types.Char ww4 ww5 })))) }) -}
+17f2097426b72eb751701f86cd97792c
+  $w$ctoJSON ::
+    Language.PureScript.AST.Operators.Associativity
+    -> Language.PureScript.AST.Operators.Precedence
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.AST.Operators.Associativity)
+                   (ww1 :: Language.PureScript.AST.Operators.Precedence) ->
+                 let {
+                   $j :: Data.Aeson.Types.Internal.Value
+                         -> Data.Aeson.Types.Internal.Value
+                     <join 1> {- Arity: 1, Strictness: <L,U> -}
+                   = \ (v2 :: Data.Aeson.Types.Internal.Value)[OneShot] ->
+                     case Language.PureScript.AST.Operators.$fToJSONFixity6 of ww2 { Data.Text.Internal.Text ww3 ww4 ww5 ->
+                     case Data.Aeson.Types.Internal.$w$sunsafeInsert
+                            @ Data.Aeson.Types.Internal.Value
+                            ww3
+                            ww4
+                            ww5
+                            v2
+                            (Data.HashMap.Base.Empty
+                               @ Data.Text.Internal.Text
+                               @ Data.Aeson.Types.Internal.Value) of z23 { DEFAULT ->
+                     case ww1 of dt { DEFAULT ->
+                     case Language.PureScript.AST.Operators.$fToJSONFixity4 of ww6 { Data.Text.Internal.Text ww7 ww8 ww9 ->
+                     case Data.Aeson.Types.Internal.$w$sunsafeInsert
+                            @ Data.Aeson.Types.Internal.Value
+                            ww7
+                            ww8
+                            ww9
+                            (Data.Aeson.Types.Internal.Number
+                               (Data.Scientific.Scientific dt 0#))
+                            z23 of dt1 { DEFAULT ->
+                     Data.Aeson.Types.Internal.Object dt1 } } } } }
+                 } in
+                 case ww of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> case Language.PureScript.AST.Operators.$fToJSONFixity3 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                      $j (Data.Aeson.Types.Internal.String dt) }
+                   Language.PureScript.AST.Operators.Infixr
+                   -> case Language.PureScript.AST.Operators.$fToJSONFixity2 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                      $j (Data.Aeson.Types.Internal.String dt) }
+                   Language.PureScript.AST.Operators.Infix
+                   -> case Language.PureScript.AST.Operators.$fToJSONFixity1 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                      $j (Data.Aeson.Types.Internal.String dt) } }) -}
+17f2097426b72eb751701f86cd97792c
+  data Associativity = Infixl | Infixr | Infix
+17f2097426b72eb751701f86cd97792c
+  data Fixity
+    = Fixity Language.PureScript.AST.Operators.Associativity
+             Language.PureScript.AST.Operators.Precedence
+bcd61162407eaf77832b70b749dfb2a6
+  type Precedence = GHC.Integer.Type.Integer
+17f2097426b72eb751701f86cd97792c
+  axiom Language.PureScript.AST.Operators.Rep_Associativity::
+      GHC.Generics.Rep Language.PureScript.AST.Operators.Associativity
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "Associativity"
+               "Language.PureScript.AST.Operators"
+               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Infixl" 'GHC.Generics.PrefixI 'GHC.Types.False)
+               GHC.Generics.U1
+             GHC.Generics.:+: (GHC.Generics.C1
+                                 ('GHC.Generics.MetaCons
+                                    "Infixr" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                 GHC.Generics.U1
+                               GHC.Generics.:+: GHC.Generics.C1
+                                                  ('GHC.Generics.MetaCons
+                                                     "Infix" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                                  GHC.Generics.U1))
+17f2097426b72eb751701f86cd97792c
+  axiom Language.PureScript.AST.Operators.Rep_Fixity::
+      GHC.Generics.Rep Language.PureScript.AST.Operators.Fixity
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "Fixity"
+               "Language.PureScript.AST.Operators"
+               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Fixity" 'GHC.Generics.PrefixI 'GHC.Types.False)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     'GHC.Base.Nothing
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Language.PureScript.AST.Operators.Associativity)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0
+                                      Language.PureScript.AST.Operators.Precedence)))
+17f2097426b72eb751701f86cd97792c
+  readAssoc ::
+    GHC.Base.String -> Language.PureScript.AST.Operators.Associativity
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (ds :: GHC.Base.String) ->
+                 case GHC.Base.eqString
+                        ds
+                        Language.PureScript.AST.Operators.readAssoc6 of wild {
+                   GHC.Types.False
+                   -> case GHC.Base.eqString
+                             ds
+                             Language.PureScript.AST.Operators.readAssoc4 of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Base.eqString
+                                  ds
+                                  Language.PureScript.AST.Operators.readAssoc2 of wild2 {
+                             GHC.Types.False -> Language.PureScript.AST.Operators.readAssoc1
+                             GHC.Types.True -> Language.PureScript.AST.Operators.Infixr }
+                        GHC.Types.True -> Language.PureScript.AST.Operators.Infixl }
+                   GHC.Types.True -> Language.PureScript.AST.Operators.Infix }) -}
+17f2097426b72eb751701f86cd97792c
+  readAssoc1 :: Language.PureScript.AST.Operators.Associativity
+  {- Strictness: x -}
+016f85f2964b6562c78686da33e86039
+  readAssoc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.readAssoc3) -}
+8e0d22741cfe2829ab68c21a3f376b8e
+  readAssoc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("infixr"#) -}
+5541129b536b1c5e504f211d6fdf0efc
+  readAssoc4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.readAssoc5) -}
+df763cb7df608b9884c128586d3ab94f
+  readAssoc5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("infixl"#) -}
+5280b67d18622ab7a863cccd54905c54
+  readAssoc6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Operators.readAssoc7) -}
+70723081a0d3b0098e8cdf639b67d339
+  readAssoc7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("infix"#) -}
+f54fef35940752b58d0952abd939cff2
+  showAssoc ::
+    Language.PureScript.AST.Operators.Associativity -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.AST.Operators.Associativity) ->
+                 case ds of wild {
+                   Language.PureScript.AST.Operators.Infixl
+                   -> Language.PureScript.AST.Operators.readAssoc4
+                   Language.PureScript.AST.Operators.Infixr
+                   -> Language.PureScript.AST.Operators.readAssoc2
+                   Language.PureScript.AST.Operators.Infix
+                   -> Language.PureScript.AST.Operators.readAssoc6 }) -}
+instance GHC.Classes.Eq [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fEqAssociativity
+instance GHC.Classes.Eq [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.$fEqFixity
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fFromJSONAssociativity
+instance GHC.Generics.Generic [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fGenericAssociativity
+instance GHC.Generics.Generic [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.$fGenericFixity
+instance Control.DeepSeq.NFData [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fNFDataAssociativity
+instance Control.DeepSeq.NFData [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.$fNFDataFixity
+instance GHC.Classes.Ord [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fOrdAssociativity
+instance GHC.Classes.Ord [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.$fOrdFixity
+instance GHC.Show.Show [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fShowAssociativity
+instance GHC.Show.Show [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.$fShowFixity
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.$fToJSONAssociativity
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.$fToJSONFixity
+family instance GHC.Generics.Rep [Language.PureScript.AST.Operators.Fixity]
+  = Language.PureScript.AST.Operators.Rep_Fixity
+family instance GHC.Generics.Rep [Language.PureScript.AST.Operators.Associativity]
+  = Language.PureScript.AST.Operators.Rep_Associativity
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

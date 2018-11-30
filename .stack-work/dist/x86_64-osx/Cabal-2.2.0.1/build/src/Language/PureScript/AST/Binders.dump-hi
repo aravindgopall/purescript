@@ -1,0 +1,595 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:40.07326 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Binders 8043
+  interface hash: c777fcebbdd63783c40b2eb3dbe6dc94
+  ABI hash: 9d60985147b34b89300370e810fed430
+  export-list hash: 052659e0ac5b7424bfe7dc118cef8c0d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: de35dcd1d43076a5ced1b1f2744d7ead
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.AST.Binders.binderNames
+  Language.PureScript.AST.Binders.isIrrefutable
+  Language.PureScript.AST.Binders.Binder{Language.PureScript.AST.Binders.BinaryNoParensBinder Language.PureScript.AST.Binders.ConstructorBinder Language.PureScript.AST.Binders.LiteralBinder Language.PureScript.AST.Binders.NamedBinder Language.PureScript.AST.Binders.NullBinder Language.PureScript.AST.Binders.OpBinder Language.PureScript.AST.Binders.ParensInBinder Language.PureScript.AST.Binders.PositionedBinder Language.PureScript.AST.Binders.TypedBinder Language.PureScript.AST.Binders.VarBinder}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST.Literals
+                     Language.PureScript.AST.SourcePos Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Types
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 bytestring-0.10.8.2
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1 mtl-2.2.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 stm-2.4.5.0 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 uuid-types-1.0.3 vector-0.12.0.1
+orphans: stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
+  exports: a6d23ec6b024fefaa1b9450acf6240d0
+  ArrayLiteral 5b23e15244983cff3a7817389b5e2212
+  Literal 9e9b6c02bfac90a56d53685e90c059b8
+  ObjectLiteral 6a79fd56232b94e65385c3eab269a6a5
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  exports: cd99f4b22e2d3cec892dcb31686df02f
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Comments f344ceddf328cf61908be13dd1f90917
+  exports: b1904caad26a3e7c6a77f0a1156c2d62
+  Comment 23fbbb637db19d35ca8339b51dc9ecf5
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  OpName 1522672b880b192c6e05e6cf8a45712d
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  ValueOpName 1d06f91abd827e7b0c072b254546708a
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  exports: ae97bc75fcebc59f59c970736847a827
+  Type 93223f8afa90d0facc05a03f863dc72d
+50aa153193e190eabd8ac7530e604f9c
+  $fEqBinder :: GHC.Classes.Eq Language.PureScript.AST.Binders.Binder
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Binders.Binder
+                  Language.PureScript.AST.Binders.$fEqBinder_$c==
+                  Language.PureScript.AST.Binders.$fEqBinder_$c/= -}
+50aa153193e190eabd8ac7530e604f9c
+  $fEqBinder_$c/= ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fEqBinder_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fEqBinder_$c== ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder ::
+    GHC.Classes.Ord Language.PureScript.AST.Binders.Binder
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Binders.Binder
+                  Language.PureScript.AST.Binders.$fEqBinder
+                  Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                  Language.PureScript.AST.Binders.$fOrdBinder_$c<
+                  Language.PureScript.AST.Binders.$fOrdBinder_$c<=
+                  Language.PureScript.AST.Binders.$fOrdBinder_$c>
+                  Language.PureScript.AST.Binders.$fOrdBinder_$c>=
+                  Language.PureScript.AST.Binders.$fOrdBinder_$cmax
+                  Language.PureScript.AST.Binders.$fOrdBinder_$cmin -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$c< ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$c<= ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$c> ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$c>= ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$ccompare ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Types.Ordering
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$cmax ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fOrdBinder_$cmin ::
+    Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder
+    -> Language.PureScript.AST.Binders.Binder
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder)
+                   (y :: Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Binders.$fOrdBinder_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fShowBinder ::
+    GHC.Show.Show Language.PureScript.AST.Binders.Binder
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Binders.Binder
+                  Language.PureScript.AST.Binders.$fShowBinder_$cshowsPrec
+                  Language.PureScript.AST.Binders.$fShowBinder_$cshow
+                  Language.PureScript.AST.Binders.$fShowBinder_$cshowList -}
+50aa153193e190eabd8ac7530e604f9c
+  $fShowBinder1 ::
+    Language.PureScript.AST.Binders.Binder -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (Language.PureScript.AST.Binders.$fShowBinder_$cshowsPrec
+                   Language.PureScript.AST.Binders.$fShowBinder2) -}
+a5d0102fec684f6dd4a3ddcee7f5c949
+  $fShowBinder2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fShowBinder_$cshow ::
+    Language.PureScript.AST.Binders.Binder -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.AST.Binders.Binder) ->
+                 Language.PureScript.AST.Binders.$fShowBinder_$cshowsPrec
+                   Language.PureScript.AST.Binders.$fShowBinder2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fShowBinder_$cshowList ::
+    [Language.PureScript.AST.Binders.Binder] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.AST.Binders.Binder])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.AST.Binders.Binder
+                   Language.PureScript.AST.Binders.$fShowBinder1
+                   ls
+                   s) -}
+50aa153193e190eabd8ac7530e604f9c
+  $fShowBinder_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.AST.Binders.Binder -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+eb97d1751d3871322d4e1d6bbbf6885a
+  $tc'BinaryNoParensBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12749171918588307873##
+                   9780052930810507033##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'BinaryNoParensBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'BinaryNoParensBinder1) -}
+011ac21e7a5047bec0f49e0599d70367
+  $tc'BinaryNoParensBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c5727b3118e574eda22c82f9619c15c2
+  $tc'BinaryNoParensBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'BinaryNoParensBinder3) -}
+8a7b3b11c14c6ec4865312bedd81d545
+  $tc'BinaryNoParensBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BinaryNoParensBinder"#) -}
+80c0498e910c6aa8914f2e9a138f4902
+  $tc'ConstructorBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10665429826152956947##
+                   3705572294846169659##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'ConstructorBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'ConstructorBinder1) -}
+cc27008c53ceee280809971e5b4ed1f1
+  $tc'ConstructorBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bdfdc381e76488c80f902f41ed44406b
+  $tc'ConstructorBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'ConstructorBinder3) -}
+202689a6f7c3be8768159925dcf66952
+  $tc'ConstructorBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ConstructorBinder"#) -}
+bfbd7c400811081393bac1e44d38ef02
+  $tc'LiteralBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3070218236304793822##
+                   17852407784198477308##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'LiteralBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'LiteralBinder1) -}
+d6ebc7b892d9350c039f8e5a11da9b0f
+  $tc'LiteralBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d090cfe82b358adf10a36b91427f71e4
+  $tc'LiteralBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'LiteralBinder3) -}
+6c5fa5ebd33dbb00a2dd273c798ca88c
+  $tc'LiteralBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LiteralBinder"#) -}
+adb58b782ecf2f9ea65d32a976cc35dd
+  $tc'NamedBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13450547909507968008##
+                   7899664890104562776##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'NamedBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'NamedBinder1) -}
+e10e564784d28ef00f30d8efe628339f
+  $tc'NamedBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+25aa9ec2b756ab90256859d51372a264
+  $tc'NamedBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'NamedBinder3) -}
+190349fcfdc584a44c495cf25034b7da
+  $tc'NamedBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NamedBinder"#) -}
+ea42a3dfd8ba1171455e520d40df7dcc
+  $tc'NullBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7916621286306178340##
+                   14217663858145450330##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'NullBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'NullBinder1) -}
+aa7255166d5c12420d9f4cebe003d61f
+  $tc'NullBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+1a1e43729a0d262128bfb49f7e58db1b
+  $tc'NullBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'NullBinder3) -}
+ae47d73a0ab89176d03957f272a38398
+  $tc'NullBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NullBinder"#) -}
+cf1e90090bebd177094386a357c5eade
+  $tc'OpBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16034060432398774873##
+                   17410367736225845447##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'OpBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'OpBinder1) -}
+b2654ac90cfc7673698fe002bf634a2e
+  $tc'OpBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+59af5a6b7f9f1b557c2b2529727a0955
+  $tc'OpBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'OpBinder3) -}
+7f7a3ac2bae7639e94780bfa15ff41ed
+  $tc'OpBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'OpBinder"#) -}
+c2d69587d48930362ec37598499de343
+  $tc'ParensInBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6021031915744330503##
+                   1951488082615803486##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'ParensInBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'ParensInBinder1) -}
+c421892dc26f07e3b117c118e7934af3
+  $tc'ParensInBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+30e4f199a88431174523141aff2c9e92
+  $tc'ParensInBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'ParensInBinder3) -}
+5daec8a40093e9d2c49bf766800196dd
+  $tc'ParensInBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ParensInBinder"#) -}
+d258db33feb88326866a3aff3bba379d
+  $tc'PositionedBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9046523873899225479##
+                   8230456903338652628##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'PositionedBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'PositionedBinder1) -}
+f05c0b6bb0bc7ac158c117434865108b
+  $tc'PositionedBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5f6728e946b147aba5e8f060d923b625
+  $tc'PositionedBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'PositionedBinder3) -}
+dd01f27c5dea0a315ed5f4cf716fc889
+  $tc'PositionedBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PositionedBinder"#) -}
+026f29d62cfe482376b95c14b30332f3
+  $tc'TypedBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10639952542512673251##
+                   11143225686298175122##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'TypedBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'TypedBinder1) -}
+0ce98e0439773090cedb287872b954b5
+  $tc'TypedBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ff4c91ad3ffd7220197b37dd0b217735
+  $tc'TypedBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'TypedBinder3) -}
+cb3b8b2f034844446aff6b28351447a0
+  $tc'TypedBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TypedBinder"#) -}
+e0653f0585671b5bcef8582465b3f2a6
+  $tc'VarBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9020373960380272359##
+                   16343427233596524193##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tc'VarBinder2
+                   0#
+                   Language.PureScript.AST.Binders.$tc'VarBinder1) -}
+9303c2a7d1618ed90a2e0abecd4a96f6
+  $tc'VarBinder1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6f7ba8c908242f01b6ebc70bb6e2bdb2
+  $tc'VarBinder2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tc'VarBinder3) -}
+816057de2ca1c6c45aa8fec7b322059b
+  $tc'VarBinder3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'VarBinder"#) -}
+09b55ed643153893d637fc9e42d68c37
+  $tcBinder :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14830239992822931345##
+                   13056875421433096645##
+                   Language.PureScript.AST.Binders.$trModule
+                   Language.PureScript.AST.Binders.$tcBinder1
+                   0#
+                   GHC.Types.krep$*) -}
+a6c43ebb216856d883af7a6819c1114e
+  $tcBinder1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$tcBinder2) -}
+c88921caf04b66d4f4c1bad28175c9ac
+  $tcBinder2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Binder"#) -}
+5e16ea3ca465124c95453ad72177085c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.AST.Binders.$trModule3
+                   Language.PureScript.AST.Binders.$trModule1) -}
+48722983cce38a5aaca49f32752f163b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$trModule2) -}
+062ba1c907a127595ae466846ce5ce67
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.AST.Binders"#) -}
+a9fa8b6e043c7b3faea2bb7a8c3ea7e6
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Binders.$trModule4) -}
+f32006196dd65d1661914260e324a278
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+50aa153193e190eabd8ac7530e604f9c
+  data Binder
+    = NullBinder
+    | LiteralBinder Language.PureScript.AST.SourcePos.SourceSpan
+                    (Language.PureScript.AST.Literals.Literal
+                       Language.PureScript.AST.Binders.Binder)
+    | VarBinder Language.PureScript.AST.SourcePos.SourceSpan
+                Language.PureScript.Names.Ident
+    | ConstructorBinder Language.PureScript.AST.SourcePos.SourceSpan
+                        (Language.PureScript.Names.Qualified
+                           (Language.PureScript.Names.ProperName
+                              'Language.PureScript.Names.ConstructorName))
+                        [Language.PureScript.AST.Binders.Binder]
+    | OpBinder Language.PureScript.AST.SourcePos.SourceSpan
+               (Language.PureScript.Names.Qualified
+                  (Language.PureScript.Names.OpName
+                     'Language.PureScript.Names.ValueOpName))
+    | BinaryNoParensBinder Language.PureScript.AST.Binders.Binder
+                           Language.PureScript.AST.Binders.Binder
+                           Language.PureScript.AST.Binders.Binder
+    | ParensInBinder Language.PureScript.AST.Binders.Binder
+    | NamedBinder Language.PureScript.AST.SourcePos.SourceSpan
+                  Language.PureScript.Names.Ident
+                  Language.PureScript.AST.Binders.Binder
+    | PositionedBinder Language.PureScript.AST.SourcePos.SourceSpan
+                       [Language.PureScript.Comments.Comment]
+                       Language.PureScript.AST.Binders.Binder
+    | TypedBinder Language.PureScript.Types.Type
+                  Language.PureScript.AST.Binders.Binder
+02df671f437cb8e44f39ef8bc1273f3b
+  binderNames ::
+    Language.PureScript.AST.Binders.Binder
+    -> [Language.PureScript.Names.Ident]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Language.PureScript.AST.Binders.binderNames_go
+                   (GHC.Types.[] @ Language.PureScript.Names.Ident)) -}
+3b4c645ba3e40acb24236b9efa05ad80
+  binderNames_go ::
+    [Language.PureScript.Names.Ident]
+    -> Language.PureScript.AST.Binders.Binder
+    -> [Language.PureScript.Names.Ident]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+740c816cedc66b3e1cadc13999353f80
+  isIrrefutable ::
+    Language.PureScript.AST.Binders.Binder -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+instance GHC.Classes.Eq [Language.PureScript.AST.Binders.Binder]
+  = Language.PureScript.AST.Binders.$fEqBinder
+instance GHC.Classes.Ord [Language.PureScript.AST.Binders.Binder]
+  = Language.PureScript.AST.Binders.$fOrdBinder
+instance GHC.Show.Show [Language.PureScript.AST.Binders.Binder]
+  = Language.PureScript.AST.Binders.$fShowBinder
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

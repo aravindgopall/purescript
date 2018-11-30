@@ -1,0 +1,1000 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:26.216989 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.SourceFile 8043
+  interface hash: 25f870aaed43b3a1c13ad98dee5b7e39
+  ABI hash: 41485b584afd6ccbf645f71bb72ce949
+  export-list hash: a4dbc802101a8d8456766bbd5ac6628c
+  orphan hash: 4555ca6088637cd85eb5aa49fd7f195c
+  flag hash: 5ca2b6297314332f988f1cde11325eb2
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Ide.SourceFile.extractAstInformation
+  Language.PureScript.Ide.SourceFile.extractSpans
+  Language.PureScript.Ide.SourceFile.extractTypeAnnotations
+  Language.PureScript.Ide.SourceFile.parseModule
+  Language.PureScript.Ide.SourceFile.parseModulesFromFiles
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Errors.JSON
+                     Language.PureScript.Externs Language.PureScript.Ide.Error
+                     Language.PureScript.Ide.Logging Language.PureScript.Ide.Types
+                     Language.PureScript.Ide.Util Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript System.IO.UTF8
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      auto-update-0.1.4 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 clock-0.7.2
+                      colour-2.3.4 conduit-1.3.0.3 conduit-extra-1.3.0
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      directory-1.3.1.5 dlist-0.8.0.4 easy-file-0.2.2 exceptions-0.10.0
+                      fast-logger-2.4.11 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      lifted-base-0.2.3.12 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 monad-control-1.0.2.3 monad-logger-0.3.28.5
+                      monad-loops-0.4.3 mtl-2.2.2 old-locale-1.0.0.7 old-time-1.1.0.3
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      resourcet-1.2.1 safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 stm-chans-3.0.0.4 stringsearch-0.3.6.6
+                      syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 transformers-base-0.4.5.2 unix-2.7.2.2
+                      unix-time-0.3.8 unliftio-core-0.1.1.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: unix-time-0.3.8:Data.UnixTime.Diff
+         syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic text-1.2.3.0:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         clock-0.7.2:System.Clock
+                         conduit-1.3.0.3:Data.Conduit.Internal.Conduit
+                         conduit-1.3.0.3:Data.Conduit.Internal.Pipe
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         monad-logger-0.3.28.5:Control.Monad.Logger
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Monad.IO.Class 96109c36cb3c919872278540487fa39e
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  parallel-3.2.1.1:Control.Parallel.Strategies c4ad57b4c83509e5393e66a9499d773c
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  DataDeclaration db5935397ffc86d7f21188808af5170e
+  Declaration b31d94d0c7b90700d40f9ba6ec420e41
+  ExternDataDeclaration 55a53b09584ed2ea4b573ea27aa0f4e4
+  ExternDeclaration 4969f865c6e08f5324b31f68ef85d043
+  ExternKindDeclaration fdf7ad04c416fe681db015f254431a3c
+  FixityDeclaration ae83bbbeb0bf1b73467c4234bd14b77f
+  Module b9e5d519f3251f7053b581e4ecd9e6bf
+  Module 7cf4b96f7d4b51b446726a099ab87bb6
+  TypeClassDeclaration d4771a111b012cbefca253f911afd776
+  TypeDeclaration a12f822b0dbc597658a7d1e27db5ac22
+  TypeDeclarationData 99fd3317c24e020d90e98686ac5a9cec
+  TypeFixity 64291ec6ff5adfe62c3609f4ee3518e7
+  TypeSynonymDeclaration b022b78d38da14b3619ada244eaf9299
+  ValueDecl ccaaa682babb730c1361bddf2c5eee25
+  ValueFixity 521665e029a7bb45169e478d9aced723
+  getTypeDeclaration 59a0ca54505755f1fa0fc34ff5d66706
+  unwrapTypeDeclaration cd3190b939e5767c5dbe58848d9227e3
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Ide.Error cef67e67cd2fefdfbab7f8e5964385b2
+  exports: 4a39dd2ee53e53946ad697fd09af3e2c
+  IdeError b045389a5f76cac922918f9ea2f2f4b2
+import  -/  Language.PureScript.Ide.Types d9d9fd4c2b6a1fdeece731a5e8479937
+  exports: dd47afbd66baea5bbcdd5e2641556a91
+  DefinitionSites 3a3e2508f4840cba90db1936662ffe32
+  IdeNSKind e063f65cdccde7606ff4d24b7b66f6b5
+  IdeNSType 75f5cc04055e90fdd173fd56bf2091be
+  IdeNSValue 3e2f2098b0b41535be66110267b186ff
+  IdeNamespaced 3e160843be860aca9f7cb3709c7d7669
+  IdeNamespaced bf12ce78c741411b8db21a537727174e
+  TypeAnnotations d3060bd163f7b8f4cb4af455406d60b9
+import  -/  Language.PureScript.Ide.Util 28758b8888c6917067d0548bee7740c5
+  exports: 984706b8dc3d9ad9746cf1d4cf6cd995
+  ideReadFile bd050288e8c3242b5a9aa24ac30f5192
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  runIdent bc5cc3d3ba9d105c169eb6038c65d1a8
+  runOpName 1522672b880b192c6e05e6cf8a45712d
+  runProperName 29f101e190cc99df85623423972e606f
+import  -/  Language.PureScript.Parser.Declarations daa54c419c9085317ab3aee8fcf82eb2
+  parseModuleFromFile 307699faeffc033195a42b2ff5bc65d3
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  Type 93223f8afa90d0facc05a03f863dc72d
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+acb04d86099f184e9b7047c01f0bc613
+  $sfromList ::
+    [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(Language.PureScript.Names.Ident, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ Language.PureScript.Names.Ident
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case Language.PureScript.Names.$fOrdIdent_$c< kx ky of wild4 {
+                             GHC.Types.False
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Ide.SourceFile.$sfromList_$spoly_go14
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Names.Ident
+                                        @ a)) }
+                             GHC.Types.True
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Ide.SourceFile.$sfromList_$s$wpoly_go13
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a))
+                                  1# } } } } } }) -}
+5722801ac1348e26f400ac3b29f4d1d1
+  $sfromList1 ::
+    [(Language.PureScript.Ide.Types.IdeNamespaced, a)]
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: [(Language.PureScript.Ide.Types.IdeNamespaced, a)]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Map.Internal.Tip
+                        @ Language.PureScript.Ide.Types.IdeNamespaced
+                        @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { Language.PureScript.Ide.Types.IdeNamespaced ipv ipv1 ->
+                           Data.Map.Internal.Bin
+                             @ Language.PureScript.Ide.Types.IdeNamespaced
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip
+                                @ Language.PureScript.Ide.Types.IdeNamespaced
+                                @ a)
+                             (Data.Map.Internal.Tip
+                                @ Language.PureScript.Ide.Types.IdeNamespaced
+                                @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of ww { Language.PureScript.Ide.Types.IdeNamespaced ww1 ww2 ->
+                           case ky of ww3 { Language.PureScript.Ide.Types.IdeNamespaced ww4 ww5 ->
+                           case Language.PureScript.Ide.Types.$w$c>=
+                                  ww1
+                                  ww2
+                                  ww4
+                                  ww5 of wild4 {
+                             GHC.Types.False
+                             -> Language.PureScript.Ide.SourceFile.$sfromList_$s$wpoly_go1
+                                  @ a
+                                  ww4
+                                  ww5
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Ide.Types.IdeNamespaced
+                                     @ a
+                                     1#
+                                     ww
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Ide.Types.IdeNamespaced
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Ide.Types.IdeNamespaced
+                                        @ a))
+                                  1#
+                             GHC.Types.True
+                             -> Language.PureScript.Ide.SourceFile.$sfromList_$spoly_go1
+                                  @ a
+                                  ww4
+                                  ww5
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Ide.Types.IdeNamespaced
+                                     @ a
+                                     1#
+                                     ww
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Ide.Types.IdeNamespaced
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Ide.Types.IdeNamespaced
+                                        @ a)) } } } } } } }) -}
+65d4bc520f31b16738c13da62965225f
+  $sfromList_$s$wpoly_go1 ::
+    Language.PureScript.Ide.Types.IdeNamespace
+    -> Data.Text.Internal.Text
+    -> a
+    -> [(Language.PureScript.Ide.Types.IdeNamespaced, a)]
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a
+  {- Arity: 6,
+     Strictness: <L,U><L,U(U,U,U)><L,U><S,1*U><S,1*U><L,U> -}
+f02f73b1a23d0a23d8a1cb779ac302be
+  $sfromList_$s$wpoly_go13 ::
+    Language.PureScript.Names.Ident
+    -> a
+    -> [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 5, Strictness: <S,U><L,U><S,1*U><S,1*U><L,U> -}
+81223196e8c5d05c7c6ef41ff18310dd
+  $sfromList_$spoly_go1 ::
+    Language.PureScript.Ide.Types.IdeNamespace
+    -> Data.Text.Internal.Text
+    -> a
+    -> [(Language.PureScript.Ide.Types.IdeNamespaced, a)]
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a
+  {- Arity: 5, Strictness: <L,U><L,U(U,U,U)><L,U><S,1*U><S,1*U> -}
+abc5c06c68e903204e466d5e1c9a7157
+  $sfromList_$spoly_go14 ::
+    Language.PureScript.Names.Ident
+    -> a
+    -> [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 4, Strictness: <S,U><L,U><S,1*U><S,1*U> -}
+34e2fcad50e675b98eba617df12131b6
+  $sinsert_$sgo13 ::
+    Language.PureScript.Names.Ident
+    -> Language.PureScript.Names.Ident
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+1459017678f6266f879ef33c6b27861f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Ide.SourceFile.$trModule3
+                   Language.PureScript.Ide.SourceFile.$trModule1) -}
+9d83dcfaffe11db84cea4e667c7d6d20
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.SourceFile.$trModule2) -}
+a9c899f6ff815499aa08e877db9bee95
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Ide.SourceFile"#) -}
+22d24d3f945aa8a7e84904f836fc46a6
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.SourceFile.$trModule4) -}
+2ac45653db763150c4599028acb4f477
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+3621688b85cea414e618855b312f37f1
+  $w$sgo13 ::
+    Language.PureScript.Ide.Types.IdeNamespaced
+    -> Language.PureScript.Ide.Types.IdeNamespace
+    -> Data.Text.Internal.Text
+    -> a1
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a1
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a1
+  {- Arity: 5, Strictness: <L,U><L,U><L,U(U,U,U)><L,U><S,1*U>,
+     Inline: [0] -}
+2dccdbc642f3cedcb122eb0758b1d6b0
+  extractAstInformation ::
+    Language.PureScript.AST.Declarations.Module
+    -> (Language.PureScript.Ide.Types.DefinitionSites
+          Language.PureScript.AST.SourcePos.SourceSpan,
+        Language.PureScript.Ide.Types.TypeAnnotations)
+  {- Arity: 1, Strictness: <S,1*U(A,A,A,U,A)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.AST.Declarations.Module) ->
+                 case w of ww { Language.PureScript.AST.Declarations.Module ww1 ww2 ww3 ww4 ww5 ->
+                 (Language.PureScript.Ide.SourceFile.$sfromList1
+                    @ Language.PureScript.AST.SourcePos.SourceSpan
+                    (Language.PureScript.Ide.SourceFile.extractAstInformation_go ww4),
+                  Language.PureScript.Ide.SourceFile.$sfromList
+                    @ Language.PureScript.Types.Type
+                    (Data.Maybe.mapMaybe
+                       @ Language.PureScript.AST.Declarations.Declaration
+                       @ (Language.PureScript.Names.Ident, Language.PureScript.Types.Type)
+                       Language.PureScript.Ide.SourceFile.extractAstInformation1
+                       ww4)) }) -}
+6c8ab11ca05fcadcdccb1c2ae1644bde
+  extractAstInformation1 ::
+    Language.PureScript.AST.Declarations.Declaration
+    -> GHC.Base.Maybe
+         (Language.PureScript.Names.Ident, Language.PureScript.Types.Type)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.AST.Declarations.Declaration) ->
+                 case x of wild {
+                   DEFAULT
+                   -> GHC.Base.Nothing
+                        @ (Language.PureScript.Names.Ident, Language.PureScript.Types.Type)
+                   Language.PureScript.AST.Declarations.TypeDeclaration dt dt1 dt2
+                   -> GHC.Base.Just
+                        @ (Language.PureScript.Names.Ident, Language.PureScript.Types.Type)
+                        (dt1, dt2) }) -}
+a841d061cb5e2b674a831d63a9daab84
+  extractAstInformation_go ::
+    [Language.PureScript.AST.Declarations.Declaration]
+    -> [(Language.PureScript.Ide.Types.IdeNamespaced,
+         Language.PureScript.AST.SourcePos.SourceSpan)]
+  {- Arity: 1, Strictness: <S,1*U> -}
+fa9fbd4c2433f81d614979ea2b366ea9
+  extractSpans ::
+    Language.PureScript.AST.Declarations.Declaration
+    -> [(Language.PureScript.Ide.Types.IdeNamespaced,
+         Language.PureScript.AST.SourcePos.SourceSpan)]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (d :: Language.PureScript.AST.Declarations.Declaration) ->
+                 case d of wild {
+                   DEFAULT
+                   -> GHC.Types.[]
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                   Language.PureScript.AST.Declarations.DataDeclaration ds ds1 name ds2 ctors
+                   -> case ds of wild1 { (,) ss ds3 ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSType
+                           name
+                             `cast`
+                           (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.TypeName>_P),
+                         ss)
+                        (GHC.Base.map
+                           @ (Language.PureScript.Names.ProperName
+                                'Language.PureScript.Names.ConstructorName,
+                              [Language.PureScript.Types.Type])
+                           @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                              Language.PureScript.AST.SourcePos.SourceSpan)
+                           (\ (ds4 :: (Language.PureScript.Names.ProperName
+                                         'Language.PureScript.Names.ConstructorName,
+                                       [Language.PureScript.Types.Type])) ->
+                            case ds4 of wild2 { (,) cname ds5 ->
+                            (Language.PureScript.Ide.Types.IdeNamespaced
+                               Language.PureScript.Ide.Types.IdeNSValue
+                               cname
+                                 `cast`
+                               (Language.PureScript.Names.N:ProperName[0]
+                                    <'Language.PureScript.Names.ConstructorName>_P),
+                             ss) })
+                           ctors) }
+                   Language.PureScript.AST.Declarations.TypeSynonymDeclaration ds name ds1 ds2
+                   -> case ds of wild1 { (,) ss ds3 ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSType
+                           name
+                             `cast`
+                           (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.TypeName>_P),
+                         ss)
+                        (GHC.Types.[]
+                           @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                              Language.PureScript.AST.SourcePos.SourceSpan)) }
+                   Language.PureScript.AST.Declarations.ValueDeclaration dt dt1 dt2 dt3 dt4
+                   -> case dt of wild1 { (,) ss ds ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSValue
+                           (Language.PureScript.Names.runIdent dt1),
+                         ss)
+                        (GHC.Types.[]
+                           @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                              Language.PureScript.AST.SourcePos.SourceSpan)) }
+                   Language.PureScript.AST.Declarations.ExternDeclaration ds ident ds1
+                   -> case ds of wild1 { (,) ss ds2 ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSValue
+                           (Language.PureScript.Names.runIdent ident),
+                         ss)
+                        (GHC.Types.[]
+                           @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                              Language.PureScript.AST.SourcePos.SourceSpan)) }
+                   Language.PureScript.AST.Declarations.ExternDataDeclaration ds name ds1
+                   -> case ds of wild1 { (,) ss ds2 ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSType
+                           name
+                             `cast`
+                           (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.TypeName>_P),
+                         ss)
+                        (GHC.Types.[]
+                           @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                              Language.PureScript.AST.SourcePos.SourceSpan)) }
+                   Language.PureScript.AST.Declarations.ExternKindDeclaration ds name
+                   -> case ds of wild1 { (,) ss ds1 ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSKind
+                           name
+                             `cast`
+                           (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.KindName>_P),
+                         ss)
+                        (GHC.Types.[]
+                           @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                              Language.PureScript.AST.SourcePos.SourceSpan)) }
+                   Language.PureScript.AST.Declarations.FixityDeclaration ds ds1
+                   -> case ds of wild1 { (,) ss ds2 ->
+                      case ds1 of wild2 {
+                        Data.Either.Left ds3
+                        -> case ds3 of wild3 { Language.PureScript.AST.Declarations.ValueFixity ds4 ds5 opName ->
+                           GHC.Types.:
+                             @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                                Language.PureScript.AST.SourcePos.SourceSpan)
+                             (Language.PureScript.Ide.Types.IdeNamespaced
+                                Language.PureScript.Ide.Types.IdeNSValue
+                                opName
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.ValueOpName>_P),
+                              ss)
+                             (GHC.Types.[]
+                                @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                                   Language.PureScript.AST.SourcePos.SourceSpan)) }
+                        Data.Either.Right ds3
+                        -> case ds3 of wild3 { Language.PureScript.AST.Declarations.TypeFixity ds4 ds5 opName ->
+                           GHC.Types.:
+                             @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                                Language.PureScript.AST.SourcePos.SourceSpan)
+                             (Language.PureScript.Ide.Types.IdeNamespaced
+                                Language.PureScript.Ide.Types.IdeNSType
+                                opName
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.TypeOpName>_P),
+                              ss)
+                             (GHC.Types.[]
+                                @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                                   Language.PureScript.AST.SourcePos.SourceSpan)) } } }
+                   Language.PureScript.AST.Declarations.TypeClassDeclaration ds name ds1 ds2 ds3 members
+                   -> case ds of wild1 { (,) ss ds4 ->
+                      GHC.Types.:
+                        @ (Language.PureScript.Ide.Types.IdeNamespaced,
+                           Language.PureScript.AST.SourcePos.SourceSpan)
+                        (Language.PureScript.Ide.Types.IdeNamespaced
+                           Language.PureScript.Ide.Types.IdeNSType
+                           name
+                             `cast`
+                           (Language.PureScript.Names.N:ProperName[0]
+                                <'Language.PureScript.Names.ClassName>_P),
+                         ss)
+                        (Language.PureScript.Ide.SourceFile.extractSpans_go
+                           members) } }) -}
+b3e9acb7c8e184b9ff0b6aca2c20051b
+  extractSpans_go ::
+    [Language.PureScript.AST.Declarations.Declaration]
+    -> [(Language.PureScript.Ide.Types.IdeNamespaced,
+         Language.PureScript.AST.SourcePos.SourceSpan)]
+  {- Arity: 1, Strictness: <S,1*U> -}
+c9dca911acd1ebc7b3ede9023a20ccb5
+  extractTypeAnnotations ::
+    [Language.PureScript.AST.Declarations.Declaration]
+    -> [(Language.PureScript.Names.Ident,
+         Language.PureScript.Types.Type)]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Data.Maybe.mapMaybe
+                   @ Language.PureScript.AST.Declarations.Declaration
+                   @ (Language.PureScript.Names.Ident, Language.PureScript.Types.Type)
+                   Language.PureScript.Ide.SourceFile.extractAstInformation1) -}
+2ecd2abd0ad434fe7a664a7ef7176a33
+  parseModule ::
+    (Control.Monad.IO.Class.MonadIO m,
+     Control.Monad.Error.Class.MonadError
+       Language.PureScript.Ide.Error.IdeError m) =>
+    GHC.IO.FilePath
+    -> m (Data.Either.Either
+            GHC.IO.FilePath
+            (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module))
+  {- Arity: 3,
+     Strictness: <S(S(LC(C(S))LLL)L),U(U(U(A,C(U),A,A,A,A),C(C1(U)),A,A,A),C(U))><L,U(A,C(U),A)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadIO :: Control.Monad.IO.Class.MonadIO m)
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Ide.Error.IdeError m)
+                   (eta :: GHC.IO.FilePath) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 let {
+                   $dApplicative :: GHC.Base.Applicative m
+                   = GHC.Base.$p1Monad @ m $dMonad
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.IO.FilePath, Data.Text.Internal.Text)
+                   @ (Data.Either.Either
+                        GHC.IO.FilePath
+                        (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module))
+                   (Language.PureScript.Ide.Util.ideReadFile
+                      @ m
+                      $dMonadIO
+                      $dMonadError
+                      eta)
+                   (\ (ds :: (GHC.IO.FilePath, Data.Text.Internal.Text)) ->
+                    case ds of wild { (,) absPath contents ->
+                    GHC.Base.pure
+                      @ m
+                      $dApplicative
+                      @ (Data.Either.Either
+                           GHC.IO.FilePath
+                           (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module))
+                      (case (Text.Parsec.Prim.runPT
+                               @ Data.Text.Internal.Text
+                               @ Data.Functor.Identity.Identity
+                               @ GHC.Types.Char
+                               @ ()
+                               @ [Language.PureScript.Parser.Lexer.PositionedToken]
+                               Language.PureScript.Parser.Lexer.$s$fStreamTextmChar0
+                               (Language.PureScript.Parser.Lexer.lex1 @ ())
+                                 `cast`
+                               (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                         <Data.Text.Internal.Text>_R
+                                         <()>_R
+                                         <Data.Functor.Identity.Identity>_R
+                                         <[Language.PureScript.Parser.Lexer.PositionedToken]>_R))
+                               GHC.Tuple.()
+                               absPath
+                               contents)
+                              `cast`
+                            (Data.Functor.Identity.N:Identity[0]
+                                 <Data.Either.Either
+                                    Text.Parsec.Error.ParseError
+                                    [Language.PureScript.Parser.Lexer.PositionedToken]>_R) of wild1 {
+                         Data.Either.Left x1
+                         -> Data.Either.Left
+                              @ GHC.IO.FilePath
+                              @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+                              absPath
+                         Data.Either.Right y2
+                         -> case (Text.Parsec.Prim.runPT
+                                    @ [Language.PureScript.Parser.Lexer.PositionedToken]
+                                    @ Data.Functor.Identity.Identity
+                                    @ Language.PureScript.Parser.Lexer.PositionedToken
+                                    @ Language.PureScript.Parser.State.ParseState
+                                    @ Language.PureScript.AST.Declarations.Module
+                                    (Language.PureScript.Parser.Common.$s$fStream[]mtok
+                                       @ Language.PureScript.Parser.Lexer.PositionedToken)
+                                    Language.PureScript.Parser.Declarations.parseModule1
+                                      `cast`
+                                    (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                              <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                                              <Language.PureScript.Parser.State.ParseState>_R
+                                              <Data.Functor.Identity.Identity>_R
+                                              <Language.PureScript.AST.Declarations.Module>_R))
+                                    Language.PureScript.Parser.Common.runTokenParser2
+                                    absPath
+                                    (Language.PureScript.Parser.Lexer.updatePositions y2))
+                                   `cast`
+                                 (Data.Functor.Identity.N:Identity[0]
+                                      <Data.Either.Either
+                                         Text.Parsec.Error.ParseError
+                                         Language.PureScript.AST.Declarations.Module>_R) of wild2 {
+                              Data.Either.Left l
+                              -> Data.Either.Left
+                                   @ GHC.IO.FilePath
+                                   @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+                                   absPath
+                              Data.Either.Right r
+                              -> Data.Either.Right
+                                   @ GHC.IO.FilePath
+                                   @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+                                   (absPath, r) } }) })) -}
+0603f0e044d32572af9ae557188afe82
+  parseModulesFromFiles ::
+    (Control.Monad.IO.Class.MonadIO m,
+     Control.Monad.Error.Class.MonadError
+       Language.PureScript.Ide.Error.IdeError m) =>
+    [GHC.IO.FilePath]
+    -> m [Data.Either.Either
+            GHC.IO.FilePath
+            (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)]
+  {- Arity: 3,
+     Strictness: <S(S(LC(C(S))LLL)L),U(U(U(A,C(U),A,C(C1(C1(U))),A,A),C(C1(U)),A,A,A),C(U))><L,U(A,C(U),A)><L,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadIO :: Control.Monad.IO.Class.MonadIO m)
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Ide.Error.IdeError m)
+                   (eta :: [GHC.IO.FilePath]) ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 let {
+                   $dApplicative :: GHC.Base.Applicative m
+                   = GHC.Base.$p1Monad @ m $dMonad
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ [(GHC.IO.FilePath, Data.Text.Internal.Text)]
+                   @ [Data.Either.Either
+                        GHC.IO.FilePath
+                        (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)]
+                   (let {
+                      z :: m [(GHC.IO.FilePath, Data.Text.Internal.Text)]
+                      = GHC.Base.pure
+                          @ m
+                          $dApplicative
+                          @ [(GHC.IO.FilePath, Data.Text.Internal.Text)]
+                          (GHC.Types.[] @ (GHC.IO.FilePath, Data.Text.Internal.Text))
+                    } in
+                    letrec {
+                      go :: [GHC.IO.FilePath]
+                            -> m [(GHC.IO.FilePath, Data.Text.Internal.Text)]
+                        {- Arity: 1, Strictness: <S,1*U> -}
+                      = \ (ds :: [GHC.IO.FilePath]) ->
+                        case ds of wild {
+                          [] -> z
+                          : y ys
+                          -> GHC.Base.liftA2
+                               @ m
+                               $dApplicative
+                               @ (GHC.IO.FilePath, Data.Text.Internal.Text)
+                               @ [(GHC.IO.FilePath, Data.Text.Internal.Text)]
+                               @ [(GHC.IO.FilePath, Data.Text.Internal.Text)]
+                               (GHC.Types.: @ (GHC.IO.FilePath, Data.Text.Internal.Text))
+                               (Language.PureScript.Ide.Util.ideReadFile
+                                  @ m
+                                  $dMonadIO
+                                  $dMonadError
+                                  y)
+                               (go ys) }
+                    } in
+                    go eta)
+                   (\ (files :: [(GHC.IO.FilePath, Data.Text.Internal.Text)]) ->
+                    GHC.Base.pure
+                      @ m
+                      $dApplicative
+                      @ [Data.Either.Either
+                           GHC.IO.FilePath
+                           (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)]
+                      (let {
+                         y :: [Data.Either.Either
+                                 GHC.IO.FilePath
+                                 (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)]
+                         = GHC.Base.map
+                             @ (GHC.IO.FilePath, Data.Text.Internal.Text)
+                             @ (Data.Either.Either
+                                  GHC.IO.FilePath
+                                  (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module))
+                             Language.PureScript.Ide.SourceFile.parseModulesFromFiles1
+                             files
+                       } in
+                       case Control.Parallel.Strategies.parList1
+                              @ (Data.Either.Either
+                                   GHC.IO.FilePath
+                                   (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module))
+                              y of x1 { DEFAULT ->
+                       case (GHC.Magic.lazy
+                               @ (Control.Parallel.Strategies.Eval
+                                    [Data.Either.Either
+                                       GHC.IO.FilePath
+                                       (GHC.IO.FilePath,
+                                        Language.PureScript.AST.Declarations.Module)])
+                               (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, y #))
+                                 `cast`
+                               (Sym (Control.Parallel.Strategies.N:Eval[0]
+                                         <[Data.Either.Either
+                                             GHC.IO.FilePath
+                                             (GHC.IO.FilePath,
+                                              Language.PureScript.AST.Declarations.Module)]>_R)))
+                              `cast`
+                            (Control.Parallel.Strategies.N:Eval[0]
+                                 <[Data.Either.Either
+                                     GHC.IO.FilePath
+                                     (GHC.IO.FilePath,
+                                      Language.PureScript.AST.Declarations.Module)]>_R)
+                              GHC.Prim.realWorld# of ds { (#,#) ipv ipv1 ->
+                       ipv1 } }))) -}
+c25c9cb6b4e69b50e4e271deaa979fc1
+  parseModulesFromFiles1 ::
+    (GHC.IO.FilePath, Data.Text.Internal.Text)
+    -> Data.Either.Either
+         GHC.IO.FilePath
+         (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+  {- Arity: 1, Strictness: <L,U(1*U,1*U)>,
+     Unfolding: (\ (p :: (GHC.IO.FilePath, Data.Text.Internal.Text)) ->
+                 let {
+                   path :: GHC.IO.FilePath = case p of wild { (,) x ds -> x }
+                 } in
+                 case (Text.Parsec.Prim.runPT
+                         @ Data.Text.Internal.Text
+                         @ Data.Functor.Identity.Identity
+                         @ GHC.Types.Char
+                         @ ()
+                         @ [Language.PureScript.Parser.Lexer.PositionedToken]
+                         Language.PureScript.Parser.Lexer.$s$fStreamTextmChar0
+                         (Language.PureScript.Parser.Lexer.lex1 @ ())
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <Data.Text.Internal.Text>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <[Language.PureScript.Parser.Lexer.PositionedToken]>_R))
+                         GHC.Tuple.()
+                         path
+                         (case p of wild { (,) ds y -> y }))
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <Data.Either.Either
+                              Text.Parsec.Error.ParseError
+                              [Language.PureScript.Parser.Lexer.PositionedToken]>_R) of wild {
+                   Data.Either.Left x1
+                   -> Data.Either.Left
+                        @ GHC.IO.FilePath
+                        @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+                        path
+                   Data.Either.Right y2
+                   -> case (Text.Parsec.Prim.runPT
+                              @ [Language.PureScript.Parser.Lexer.PositionedToken]
+                              @ Data.Functor.Identity.Identity
+                              @ Language.PureScript.Parser.Lexer.PositionedToken
+                              @ Language.PureScript.Parser.State.ParseState
+                              @ Language.PureScript.AST.Declarations.Module
+                              (Language.PureScript.Parser.Common.$s$fStream[]mtok
+                                 @ Language.PureScript.Parser.Lexer.PositionedToken)
+                              Language.PureScript.Parser.Declarations.parseModule1
+                                `cast`
+                              (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                        <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
+                                        <Language.PureScript.Parser.State.ParseState>_R
+                                        <Data.Functor.Identity.Identity>_R
+                                        <Language.PureScript.AST.Declarations.Module>_R))
+                              Language.PureScript.Parser.Common.runTokenParser2
+                              path
+                              (Language.PureScript.Parser.Lexer.updatePositions y2))
+                             `cast`
+                           (Data.Functor.Identity.N:Identity[0]
+                                <Data.Either.Either
+                                   Text.Parsec.Error.ParseError
+                                   Language.PureScript.AST.Declarations.Module>_R) of wild1 {
+                        Data.Either.Left l
+                        -> Data.Either.Left
+                             @ GHC.IO.FilePath
+                             @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+                             path
+                        Data.Either.Right r
+                        -> Data.Either.Right
+                             @ GHC.IO.FilePath
+                             @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+                             (path, r) } }) -}
+"SPEC/Language.PureScript.Ide.SourceFile fromList @ IdeNamespaced _" [orphan] forall @ a
+                                                                                     ($dOrd :: GHC.Classes.Ord
+                                                                                                 Language.PureScript.Ide.Types.IdeNamespaced)
+  Data.Map.Internal.fromList @ Language.PureScript.Ide.Types.IdeNamespaced
+                             @ a
+                             $dOrd
+  = Language.PureScript.Ide.SourceFile.$sfromList1 @ a
+"SPEC/Language.PureScript.Ide.SourceFile fromList @ Ident _" [orphan] forall @ a
+                                                                             ($dOrd :: GHC.Classes.Ord
+                                                                                         Language.PureScript.Names.Ident)
+  Data.Map.Internal.fromList @ Language.PureScript.Names.Ident
+                             @ a
+                             $dOrd
+  = Language.PureScript.Ide.SourceFile.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

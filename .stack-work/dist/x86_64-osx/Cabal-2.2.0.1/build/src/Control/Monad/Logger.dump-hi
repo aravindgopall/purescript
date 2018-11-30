@@ -1,0 +1,805 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:05.819152 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger [family instance module] 8043
+  interface hash: da641d3cbb52d1c2d719769fbe0f5062
+  ABI hash: 6a73d687216af879d8ea091fe68fc2d0
+  export-list hash: e8f8f1773f117be4556dc4826c5d72b7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e0e1515d510de9e18590b6a971c1a1de
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Control.Monad.Logger.runLogger'
+  Control.Monad.Logger.Logger{Control.Monad.Logger.Logger runLogger}
+module dependencies:
+package dependencies: base-4.11.1.0* base-compat-0.10.4*
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 monad-control-1.0.2.3
+                      mtl-2.2.2 stm-2.4.5.0 transformers-0.5.5.0
+                      transformers-base-0.4.5.2
+orphans: stm-2.4.5.0:Control.Monad.STM
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:GHC.Exts base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Control.Monad.IO.Class 96109c36cb3c919872278540487fa39e
+import  -/  base-4.11.1.0:Data.IORef 7625124710852387e94dfb3e4df7515e
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IORef e92b95f2e36bdb5fe155921cbe861044
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  monad-control-1.0.2.3:Control.Monad.Trans.Control 82c27f877a1c7cc212232dcea6f7b8e9
+import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
+import  -/  transformers-base-0.4.5.2:Control.Monad.Base 0525bddaf47f5bace6a58bd35649c995
+1f34a77b548e00109c402b46b25d90ee
+  $fApplicativeLogger ::
+    GHC.Base.Monoid w =>
+    GHC.Base.Applicative (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ w (v :: GHC.Base.Monoid w).
+                  @ (Control.Monad.Logger.Logger w)
+                  (Control.Monad.Logger.$fFunctorLogger @ w)
+                  (\ @ a
+                     (x :: a)
+                     (eta :: GHC.IORef.IORef w)
+                     (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# eta1, x #))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R))
+                  (Control.Monad.Logger.$fApplicativeLogger2 @ w v)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.Logger w (a -> b)>_R
+                   ->_R <Control.Monad.Logger.Logger w a>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R))
+                  (Control.Monad.Logger.$fApplicativeLogger1 @ w v)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Control.Monad.Logger.Logger w a>_R
+                   ->_R <Control.Monad.Logger.Logger w b>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <c>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <c>_R))
+                  (\ @ a
+                     @ b
+                     (a1 :: Control.Monad.Logger.Logger w a)
+                     (a2 :: Control.Monad.Logger.Logger w b)
+                     (eta :: GHC.IORef.IORef w)
+                     (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (a1 `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          eta1 of ds { (#,#) ipv ipv1 ->
+                   (a2 `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R) eta)
+                     `cast`
+                   (GHC.Types.N:IO[0] <b>_R)
+                     ipv })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.Logger w a>_R
+                   ->_R <Control.Monad.Logger.Logger w b>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R))
+                  (\ @ a
+                     @ b
+                     (x :: Control.Monad.Logger.Logger w a)
+                     (eta :: Control.Monad.Logger.Logger w b)
+                     (eta1 :: GHC.IORef.IORef w)
+                     (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (x `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) eta1)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          eta2 of ds { (#,#) ipv ipv1 ->
+                   case (eta `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R)
+                           eta1)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                          ipv of ds1 { (#,#) ipv2 ipv3 ->
+                   (# ipv2, ipv1 #) } })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.Logger w a>_R
+                   ->_R <Control.Monad.Logger.Logger w b>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                          <w>_R <a>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fApplicativeLogger1 ::
+    GHC.Base.Monoid w =>
+    forall a b c.
+    (a -> b -> c)
+    -> Control.Monad.Logger.Logger w a
+    -> Control.Monad.Logger.Logger w b
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, c #)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,A><L,1*C1(C1(U))><C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (6, True, False)
+                (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   @ a
+                   @ b
+                   @ c
+                   (f1 :: a -> b -> c)
+                   (x :: Control.Monad.Logger.Logger w a)
+                   (eta :: Control.Monad.Logger.Logger w b)
+                   (eta1 :: GHC.IORef.IORef w)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (x `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) eta1)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        eta2 of ds { (#,#) ipv ipv1 ->
+                 case (eta `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R)
+                         eta1)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, f1 ipv1 ipv3 #) } }) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fApplicativeLogger2 ::
+    GHC.Base.Monoid w =>
+    forall a b.
+    Control.Monad.Logger.Logger w (a -> b)
+    -> Control.Monad.Logger.Logger w a
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Logger.Logger w (a -> b))
+                   (m2 :: Control.Monad.Logger.Logger w a)
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (m1 `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a -> b>_R)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a -> b>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case (m2 `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, ipv1 ipv3 #) } }) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fFunctorLogger :: GHC.Base.Functor (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ w.
+                  @ (Control.Monad.Logger.Logger w)
+                  (Control.Monad.Logger.$fFunctorLogger2 @ w)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R <Control.Monad.Logger.Logger w a>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R))
+                  (\ @ a @ b -> Control.Monad.Logger.$fFunctorLogger1 @ a @ b @ w)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Control.Monad.Logger.Logger w b>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                          <w>_R <a>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fFunctorLogger1 ::
+    a
+    -> Control.Monad.Logger.Logger w b
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><C(C(S(SL))),1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   @ w
+                   (x :: a)
+                   (ds :: Control.Monad.Logger.Logger w b)
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (ds `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R) r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv, x #) }) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fFunctorLogger2 ::
+    (a -> b)
+    -> Control.Monad.Logger.Logger w a
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ w
+                   @ a
+                   @ b
+                   (f :: a -> b)
+                   (ds :: Control.Monad.Logger.Logger w a)
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (ds `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv, f ipv1 #) }) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadBaseControlIOLogger ::
+    GHC.Base.Monoid w =>
+    Control.Monad.Trans.Control.MonadBaseControl
+      GHC.Types.IO (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ w (v :: GHC.Base.Monoid w).
+                  @ GHC.Types.IO
+                  @ (Control.Monad.Logger.Logger w)
+                  (Control.Monad.Logger.$fMonadBaseIOLogger @ w v)
+                  (Control.Monad.Logger.$fMonadBaseControlIOLogger1 @ w v)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Trans.Control.RunInBase
+                      (Control.Monad.Logger.Logger w) GHC.Types.IO
+                    -> GHC.Types.IO a>_R
+                   ->_R Sym (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R))
+                  (\ @ a
+                     (x :: a)
+                     (eta :: GHC.IORef.IORef w)
+                     (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# eta1, x #))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   Sub (Sym (Control.Monad.Logger.D:R:StMLoggera[0] <w>_N <a>_N))
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                          <w>_R <a>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadBaseControlIOLogger1 ::
+    GHC.Base.Monoid w =>
+    forall a.
+    (Control.Monad.Trans.Control.RunInBase
+       (Control.Monad.Logger.Logger w) GHC.Types.IO
+     -> GHC.Types.IO a)
+    -> GHC.IORef.IORef w -> GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   @ a
+                   (f :: Control.Monad.Trans.Control.RunInBase
+                           (Control.Monad.Logger.Logger w) GHC.Types.IO
+                         -> GHC.Types.IO a)
+                   (r :: GHC.IORef.IORef w) ->
+                 f (\ @ a1 (x :: Control.Monad.Logger.Logger w a1) ->
+                    x `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a1>_R) r)
+                     `cast`
+                   (forall (a1 :: <*>_N).
+                    <Control.Monad.Logger.Logger w a1>_R
+                    ->_R (GHC.Types.IO
+                            (Sub (Sym (Control.Monad.Logger.D:R:StMLoggera[0]
+                                           <w>_N <a1>_N))))_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadBaseIOLogger ::
+    GHC.Base.Monoid w =>
+    Control.Monad.Base.MonadBase
+      GHC.Types.IO (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ w (v :: GHC.Base.Monoid w).
+                  @ GHC.Types.IO
+                  @ (Control.Monad.Logger.Logger w)
+                  GHC.Base.$fApplicativeIO
+                  (Control.Monad.Logger.$fApplicativeLogger @ w v)
+                  GHC.Base.$fMonadIO
+                  (Control.Monad.Logger.$fMonadLogger @ w v)
+                  (\ @ α (x :: GHC.Types.IO α) (ds :: GHC.IORef.IORef w) -> x)
+                    `cast`
+                  (forall (α :: <*>_N).
+                   <GHC.Types.IO α>_R
+                   ->_R Sym (Control.Monad.Logger.N:Logger[0] <w>_R <α>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadIOLogger ::
+    GHC.Base.Monoid w =>
+    Control.Monad.IO.Class.MonadIO (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ w (v :: GHC.Base.Monoid w).
+                  @ (Control.Monad.Logger.Logger w)
+                  (Control.Monad.Logger.$fMonadLogger @ w v)
+                  (\ @ a (x :: GHC.Types.IO a) (ds :: GHC.IORef.IORef w) -> x)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Types.IO a>_R
+                   ->_R Sym (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadLogger ::
+    GHC.Base.Monoid w => GHC.Base.Monad (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Arity: 1, Strictness: <L,A>m, Inline: CONLIKE,
+     Unfolding: DFun: @ w (v :: GHC.Base.Monoid w).
+                  @ (Control.Monad.Logger.Logger w)
+                  (Control.Monad.Logger.$fApplicativeLogger @ w v)
+                  (\ @ a
+                     @ b
+                     (ds :: Control.Monad.Logger.Logger w a)
+                     (f :: a -> Control.Monad.Logger.Logger w b)
+                     (r :: GHC.IORef.IORef w)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) r)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   ((f ipv1) `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R) r)
+                     `cast`
+                   (GHC.Types.N:IO[0] <b>_R)
+                     ipv })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.Logger w a>_R
+                   ->_R <a -> Control.Monad.Logger.Logger w b>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R))
+                  (Control.Monad.Logger.$fMonadLogger_$c>> @ w v)
+                  (\ @ a
+                     (x :: a)
+                     (eta :: GHC.IORef.IORef w)
+                     (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# eta1, x #))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R))
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Control.Monad.Logger.Logger w a)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadLogger_$c>> ::
+    GHC.Base.Monoid w =>
+    forall a b.
+    Control.Monad.Logger.Logger w a
+    -> Control.Monad.Logger.Logger w b
+    -> Control.Monad.Logger.Logger w b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Logger.Logger w a)
+                   (k :: Control.Monad.Logger.Logger w b)
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (m1 `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (k `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <b>_R) r)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv })
+                  `cast`
+                (forall (w :: <*>_N).
+                 <GHC.Base.Monoid w>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <Control.Monad.Logger.Logger w a>_R
+                      ->_R <Control.Monad.Logger.Logger w b>_R
+                      ->_R (<GHC.IORef.IORef w>_R
+                            ->_R Sym (GHC.Types.N:IO[0]
+                                          <b>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                             <w>_R <b>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadWriterwLogger ::
+    GHC.Base.Monoid w =>
+    Control.Monad.Writer.Class.MonadWriter
+      w (Control.Monad.Logger.Logger w)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(U,U,U,U)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ w (v :: GHC.Base.Monoid w).
+                  @ w
+                  @ (Control.Monad.Logger.Logger w)
+                  v
+                  (Control.Monad.Logger.$fMonadLogger @ w v)
+                  (Control.Monad.Logger.$fMonadWriterwLogger4 @ w v)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <(a, w)>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R))
+                  (Control.Monad.Logger.$fMonadWriterwLogger3 @ w v)
+                    `cast`
+                  (<w>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <()>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                           <w>_R <()>_R))
+                  (Control.Monad.Logger.$fMonadWriterwLogger2 @ w v)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Logger.Logger w a>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <(a, w)>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                               <w>_R <(a, w)>_R))
+                  (Control.Monad.Logger.$fMonadWriterwLogger1 @ w v)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Logger.Logger w (a, w -> w)>_R
+                   ->_R (<GHC.IORef.IORef w>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
+                                                          <w>_R <a>_R)) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadWriterwLogger1 ::
+    GHC.Base.Monoid w =>
+    forall a.
+    Control.Monad.Logger.Logger w (a, w -> w)
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,1*U,C(C1(U)),A)><C(C(S(SS))),1*C1(C1(U(U,1*U(U,1*C1(U)))))><L,1*U(U)><S,U>m,
+     Unfolding: (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   @ a
+                   (l :: Control.Monad.Logger.Logger w (a, w -> w))
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.newMutVar#
+                        @ w
+                        @ GHC.Prim.RealWorld
+                        (GHC.Base.mempty @ w $dMonoid)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (l `cast`
+                       (Control.Monad.Logger.N:Logger[0] <w>_R <(a, w -> w)>_R)
+                         (GHC.STRef.STRef @ GHC.Prim.RealWorld @ w ipv1)
+                           `cast`
+                         (Sym (GHC.IORef.N:IORef[0]) <w>_N))
+                        `cast`
+                      (GHC.Types.N:IO[0] <(a, w -> w)>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        ipv1
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 case ipv3 of wild { (,) a1 f ->
+                 case r `cast`
+                      (GHC.IORef.N:IORef[0] <w>_N) of wild1 { GHC.STRef.STRef r# ->
+                 let {
+                   lvl6 :: w = f ipv5
+                 } in
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        @ (w, a)
+                        @ a
+                        r#
+                        (\ (a2 :: w) ->
+                         case GHC.Base.mappend @ w $dMonoid a2 lvl6 of a'1 { DEFAULT ->
+                         (a'1, a1) })
+                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                 case ipv7 of b1 { DEFAULT -> ds3 } } } } } } }) -}
+1f34a77b548e00109c402b46b25d90ee
+  $fMonadWriterwLogger2 ::
+    GHC.Base.Monoid w =>
+    forall a.
+    Control.Monad.Logger.Logger w a
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, (a, w) #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,1*U,C(C1(U)),A)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*U(U)><S,U>m,
+     Unfolding: (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   @ a
+                   (l :: Control.Monad.Logger.Logger w a)
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.newMutVar#
+                        @ w
+                        @ GHC.Prim.RealWorld
+                        (GHC.Base.mempty @ w $dMonoid)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (l `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R)
+                         (GHC.STRef.STRef @ GHC.Prim.RealWorld @ w ipv1)
+                           `cast`
+                         (Sym (GHC.IORef.N:IORef[0]) <w>_N))
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        ipv1
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 case r `cast`
+                      (GHC.IORef.N:IORef[0] <w>_N) of wild { GHC.STRef.STRef r# ->
+                 let {
+                   lvl6 :: (a, w) = (ipv3, ipv5)
+                 } in
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        @ (w, (a, w))
+                        @ (a, w)
+                        r#
+                        (\ (a1 :: w) ->
+                         case GHC.Base.mappend @ w $dMonoid a1 ipv5 of a'1 { DEFAULT ->
+                         (a'1, lvl6) })
+                        ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                 case ipv7 of b1 { (,) ipv8 ipv9 -> ds3 } } } } } }) -}
+1b3da541710f6bc3030df5d83c52fa1a
+  $fMonadWriterwLogger3 ::
+    GHC.Base.Monoid w =>
+    w
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A)><L,U><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ w
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   (w1 :: w)
+                   (r :: GHC.IORef.IORef w)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case r `cast`
+                      (GHC.IORef.N:IORef[0] <w>_N) of wild { GHC.STRef.STRef r# ->
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        @ (w, ())
+                        @ ()
+                        r#
+                        (\ (a1 :: w) ->
+                         case GHC.Base.mappend @ w $dMonoid a1 w1 of a'1 { DEFAULT ->
+                         (a'1, GHC.Tuple.()) })
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of b1 { () -> (# ipv, GHC.Tuple.() #) } } }) -}
+05ab3e62da53e0b9ef4e831f246c4277
+  $fMonadWriterwLogger4 ::
+    GHC.Base.Monoid w =>
+    forall a.
+    (a, w)
+    -> GHC.IORef.IORef w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A)><L,U(U,U)><S(S),1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ w
+                   (w1 :: GHC.Base.Monoid w)
+                   @ a
+                   (w2 :: (a, w))
+                   (w3 :: GHC.IORef.IORef w)
+                   (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w3
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <w>_N) of ww { GHC.STRef.STRef ww1 ->
+                 Control.Monad.Logger.$w$cwriter @ w w1 @ a w2 ww1 w4 }) -}
+5161b37bf224aaea04d5117c25085000
+  $tc'Logger :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7362556901127833145##
+                   5275514214975632401##
+                   Control.Monad.Logger.$trModule
+                   Control.Monad.Logger.$tc'Logger2
+                   2#
+                   Control.Monad.Logger.$tc'Logger1) -}
+4ce017dbcae7490c7827839f8bf84e49
+  $tc'Logger1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b96c768836fb68abbf41d25680c8c5ab
+  $tc'Logger2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Control.Monad.Logger.$tc'Logger3) -}
+6b17820a56d054ac91970c182b85b56f
+  $tc'Logger3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Logger"#) -}
+1eb34a7f912636c6f222cc7c08faecc6
+  $tcLogger :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11863795284363237657##
+                   15259005426256909498##
+                   Control.Monad.Logger.$trModule
+                   Control.Monad.Logger.$tcLogger1
+                   0#
+                   GHC.Types.krep$*->*->*) -}
+41617b1b82bf966d5a47197964eb6959
+  $tcLogger1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Control.Monad.Logger.$tcLogger2) -}
+b0978ba3d1cae9cd50da1e978ed84b67
+  $tcLogger2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Logger"#) -}
+5688debbb7fc211bdfe0585a5df8a237
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Control.Monad.Logger.$trModule3
+                   Control.Monad.Logger.$trModule1) -}
+7651781ce1d874ad40a6827376b68087
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Control.Monad.Logger.$trModule2) -}
+056bb94a6d87722791cb12a543b1e28c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Control.Monad.Logger"#) -}
+8488e6ce0e8dd597fed2e4cb58901f55
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Control.Monad.Logger.$trModule4) -}
+eb28eff103e45d059c78c5dab4b59bfc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+a5f0ec11b51a79f89d21c24a8e2fa413
+  $w$cwriter ::
+    GHC.Base.Monoid w =>
+    forall a.
+    (a, w)
+    -> GHC.Prim.MutVar# GHC.Prim.RealWorld w
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A)><L,U(1*U,1*U)><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ w
+                   (w1 :: GHC.Base.Monoid w)
+                   @ a
+                   (w2 :: (a, w))
+                   (ww :: GHC.Prim.MutVar# GHC.Prim.RealWorld w)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 let {
+                   w4 :: w = case w2 of wild { (,) a1 w5 -> w5 }
+                 } in
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        @ (w, ())
+                        @ ()
+                        ww
+                        (\ (a1 :: w) ->
+                         case GHC.Base.mappend @ w w1 a1 w4 of a'1 { DEFAULT ->
+                         (a'1, GHC.Tuple.()) })
+                        w3 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of b1 { () ->
+                 (# ipv, case w2 of wild { (,) a1 w5 -> a1 } #) } }) -}
+1f34a77b548e00109c402b46b25d90ee
+  axiom Control.Monad.Logger.D:R:StMLoggera::
+      Control.Monad.Trans.Control.StM (Control.Monad.Logger.Logger w) a
+        = a
+1f34a77b548e00109c402b46b25d90ee
+  newtype Logger w a
+    = Logger {runLogger :: GHC.IORef.IORef w -> GHC.Types.IO a}
+1f34a77b548e00109c402b46b25d90ee
+  runLogger ::
+    Control.Monad.Logger.Logger w a
+    -> GHC.IORef.IORef w -> GHC.Types.IO a
+  RecSel Left Control.Monad.Logger.Logger
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Control.Monad.Logger.runLogger1
+                  `cast`
+                (forall (w :: <*>_N) (a :: <*>_N).
+                 <Control.Monad.Logger.Logger w a>_R
+                 ->_R Control.Monad.Logger.N:Logger[0] <w>_R <a>_R) -}
+dd008480b5d4475b1df61b0e46f5eb13
+  runLogger' ::
+    GHC.Base.Monoid w =>
+    Control.Monad.Logger.Logger w a -> GHC.Types.IO (a, w)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A,A)><C(C(S(SL))),1*C1(C1(U(U,U)))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Control.Monad.Logger.runLogger'1
+                  `cast`
+                (forall (w :: <*>_N) (a :: <*>_N).
+                 <GHC.Base.Monoid w>_R
+                 ->_R <Control.Monad.Logger.Logger w a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <(a, w)>_R)) -}
+a7b221ced4f5d5625e896d1cce7ccbf2
+  runLogger'1 ::
+    GHC.Base.Monoid w =>
+    Control.Monad.Logger.Logger w a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, (a, w) #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A,A)><C(C(S(SL))),1*C1(C1(U(U,U)))><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ w
+                   @ a
+                   ($dMonoid :: GHC.Base.Monoid w)
+                   (l :: Control.Monad.Logger.Logger w a)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.newMutVar#
+                        @ w
+                        @ GHC.Prim.RealWorld
+                        (GHC.Base.mempty @ w $dMonoid)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (l `cast` (Control.Monad.Logger.N:Logger[0] <w>_R <a>_R)
+                         (GHC.STRef.STRef @ GHC.Prim.RealWorld @ w ipv1)
+                           `cast`
+                         (Sym (GHC.IORef.N:IORef[0]) <w>_N))
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ w
+                        ipv1
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 (# ipv4, (ipv3, ipv5) #) } } }) -}
+1f34a77b548e00109c402b46b25d90ee
+  runLogger1 ::
+    Control.Monad.Logger.Logger w a -> Control.Monad.Logger.Logger w a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ w @ a (ds :: Control.Monad.Logger.Logger w a) -> ds) -}
+instance [safe] GHC.Base.Applicative [Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fApplicativeLogger
+instance [safe] GHC.Base.Functor [Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fFunctorLogger
+instance [safe] Control.Monad.Trans.Control.MonadBaseControl [GHC.Types.IO,
+                                                              Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fMonadBaseControlIOLogger
+instance [safe] Control.Monad.Base.MonadBase [GHC.Types.IO,
+                                              Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fMonadBaseIOLogger
+instance [safe] Control.Monad.IO.Class.MonadIO [Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fMonadIOLogger
+instance [safe] GHC.Base.Monad [Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fMonadLogger
+instance [safe] Control.Monad.Writer.Class.MonadWriter [.,
+                                                        Control.Monad.Logger.Logger]
+  = Control.Monad.Logger.$fMonadWriterwLogger
+family instance Control.Monad.Trans.Control.StM [Control.Monad.Logger.Logger],
+                                                [.]
+  = Control.Monad.Logger.D:R:StMLoggera
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

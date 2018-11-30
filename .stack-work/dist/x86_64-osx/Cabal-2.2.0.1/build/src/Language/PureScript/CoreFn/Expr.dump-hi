@@ -1,0 +1,1070 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:18.015428 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreFn.Expr 8043
+  interface hash: 908cbfc94ec8ad925558adc670782d4c
+  ABI hash: dc01d65ee85cbeac279960eab91a6089
+  export-list hash: 815f1656fc5389582588e5576378bf42
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 354630b2248d720ba62df5ccf315f8dd
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.CoreFn.Expr.extractAnn
+  Language.PureScript.CoreFn.Expr.modifyAnn
+  Language.PureScript.CoreFn.Expr.Bind{Language.PureScript.CoreFn.Expr.NonRec Language.PureScript.CoreFn.Expr.Rec}
+  Language.PureScript.CoreFn.Expr.CaseAlternative{Language.PureScript.CoreFn.Expr.CaseAlternative caseAlternativeBinders caseAlternativeResult}
+  Language.PureScript.CoreFn.Expr.Expr{Language.PureScript.CoreFn.Expr.Abs Language.PureScript.CoreFn.Expr.Accessor Language.PureScript.CoreFn.Expr.App Language.PureScript.CoreFn.Expr.Case Language.PureScript.CoreFn.Expr.Constructor Language.PureScript.CoreFn.Expr.Let Language.PureScript.CoreFn.Expr.Literal Language.PureScript.CoreFn.Expr.ObjectUpdate Language.PureScript.CoreFn.Expr.Var}
+  Language.PureScript.CoreFn.Expr.Guard
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST.Literals
+                     Language.PureScript.CoreFn.Binders Language.PureScript.Names
+                     Language.PureScript.PSString
+package dependencies: aeson-1.3.1.1 array-0.5.2.0
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1 mtl-2.2.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 random-1.1 scientific-0.3.6.2
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
+  exports: a6d23ec6b024fefaa1b9450acf6240d0
+  Literal 9e9b6c02bfac90a56d53685e90c059b8
+import  -/  Language.PureScript.CoreFn.Binders e205438100975de38a52db38c037abe2
+  exports: 946b814fa48e11d0bef7a72f59ba19db
+  Binder 1fe84739935c12de224bac2b426b559a
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  TypeName da42c92f73f4f363c63ecaf77b6335b9
+import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
+  exports: 41608caf7cc5b51f34de641c9952ab6d
+  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorBind ::
+    GHC.Base.Functor Language.PureScript.CoreFn.Expr.Bind
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreFn.Expr.Bind
+                  Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap
+                  Language.PureScript.CoreFn.Expr.$fFunctorBind_$c<$ -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorBind_$c<$ ::
+    a
+    -> Language.PureScript.CoreFn.Expr.Bind b
+    -> Language.PureScript.CoreFn.Expr.Bind a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (z :: a)
+                   (ds :: Language.PureScript.CoreFn.Expr.Bind b) ->
+                 case ds of wild {
+                   Language.PureScript.CoreFn.Expr.NonRec a1 a2 a3
+                   -> Language.PureScript.CoreFn.Expr.NonRec
+                        @ a
+                        z
+                        a2
+                        (Language.PureScript.CoreFn.Expr.$fFunctorBind_$c<$1 @ a @ b z a3)
+                   Language.PureScript.CoreFn.Expr.Rec a1
+                   -> Language.PureScript.CoreFn.Expr.Rec
+                        @ a
+                        (GHC.Base.map
+                           @ ((b, Language.PureScript.Names.Ident),
+                              Language.PureScript.CoreFn.Expr.Expr b)
+                           @ ((a, Language.PureScript.Names.Ident),
+                              Language.PureScript.CoreFn.Expr.Expr a)
+                           (\ (b5 :: ((b, Language.PureScript.Names.Ident),
+                                      Language.PureScript.CoreFn.Expr.Expr b)) ->
+                            case b5 of wild1 { (,) a2 a3 ->
+                            (case a2 of wild2 { (,) a4 a5 -> (z, a5) },
+                             Language.PureScript.CoreFn.Expr.$fFunctorBind_$c<$1
+                               @ a
+                               @ b
+                               z
+                               a3) })
+                           a1) }) -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorBind_$c<$1 ::
+    a
+    -> Language.PureScript.CoreFn.Expr.Expr b
+    -> Language.PureScript.CoreFn.Expr.Expr a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorBind_$cfmap ::
+    (a -> b)
+    -> Language.PureScript.CoreFn.Expr.Bind a
+    -> Language.PureScript.CoreFn.Expr.Bind b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (f4 :: a -> b)
+                   (ds :: Language.PureScript.CoreFn.Expr.Bind a) ->
+                 case ds of wild {
+                   Language.PureScript.CoreFn.Expr.NonRec a1 a2 a3
+                   -> Language.PureScript.CoreFn.Expr.NonRec
+                        @ b
+                        (f4 a1)
+                        a2
+                        (Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap1
+                           @ a
+                           @ b
+                           f4
+                           a3)
+                   Language.PureScript.CoreFn.Expr.Rec a1
+                   -> Language.PureScript.CoreFn.Expr.Rec
+                        @ b
+                        (GHC.Base.map
+                           @ ((a, Language.PureScript.Names.Ident),
+                              Language.PureScript.CoreFn.Expr.Expr a)
+                           @ ((b, Language.PureScript.Names.Ident),
+                              Language.PureScript.CoreFn.Expr.Expr b)
+                           (\ (b3 :: ((a, Language.PureScript.Names.Ident),
+                                      Language.PureScript.CoreFn.Expr.Expr a)) ->
+                            case b3 of wild1 { (,) a2 a3 ->
+                            (case a2 of wild2 { (,) a4 a5 -> (f4 a4, a5) },
+                             Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap1
+                               @ a
+                               @ b
+                               f4
+                               a3) })
+                           a1) }) -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorBind_$cfmap1 ::
+    (a -> b)
+    -> Language.PureScript.CoreFn.Expr.Expr a
+    -> Language.PureScript.CoreFn.Expr.Expr b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorCaseAlternative ::
+    GHC.Base.Functor Language.PureScript.CoreFn.Expr.CaseAlternative
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreFn.Expr.CaseAlternative
+                  Language.PureScript.CoreFn.Expr.$fFunctorCaseAlternative_$cfmap
+                  Language.PureScript.CoreFn.Expr.$fFunctorCaseAlternative_$c<$ -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorCaseAlternative_$c<$ ::
+    a
+    -> Language.PureScript.CoreFn.Expr.CaseAlternative b
+    -> Language.PureScript.CoreFn.Expr.CaseAlternative a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(1*U,1*U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (x :: a)
+                   (eta :: Language.PureScript.CoreFn.Expr.CaseAlternative b) ->
+                 Language.PureScript.CoreFn.Expr.$fFunctorCaseAlternative_$cfmap
+                   @ b
+                   @ a
+                   (\ (ds :: b) -> x)
+                   eta) -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorCaseAlternative_$cfmap ::
+    (a -> b)
+    -> Language.PureScript.CoreFn.Expr.CaseAlternative a
+    -> Language.PureScript.CoreFn.Expr.CaseAlternative b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U(1*U,1*U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (w :: a -> b)
+                   (w1 :: Language.PureScript.CoreFn.Expr.CaseAlternative a) ->
+                 case w1 of ww { Language.PureScript.CoreFn.Expr.CaseAlternative ww1 ww2 ->
+                 case Language.PureScript.CoreFn.Expr.$w$cfmap
+                        @ a
+                        @ b
+                        w
+                        ww1
+                        ww2 of ww3 { (#,#) ww4 ww5 ->
+                 Language.PureScript.CoreFn.Expr.CaseAlternative @ b ww4 ww5 } }) -}
+3a14ce51d583743172851fcd35eb633c
+  $fFunctorExpr ::
+    GHC.Base.Functor Language.PureScript.CoreFn.Expr.Expr
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.CoreFn.Expr.Expr
+                  Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap1
+                  Language.PureScript.CoreFn.Expr.$fFunctorBind_$c<$1 -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowBind ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Language.PureScript.CoreFn.Expr.Bind a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Language.PureScript.CoreFn.Expr.Bind a)
+                  (Language.PureScript.CoreFn.Expr.$fShowBind_$cshowsPrec @ a v)
+                  (Language.PureScript.CoreFn.Expr.$fShowBind_$cshow @ a v)
+                  (Language.PureScript.CoreFn.Expr.$fShowBind_$cshowList @ a v) -}
+998258c958fcd86d99e58589fec69971
+  $fShowBind1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowBind_$cshow ::
+    GHC.Show.Show a =>
+    Language.PureScript.CoreFn.Expr.Bind a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Language.PureScript.CoreFn.Expr.Bind a) ->
+                 Language.PureScript.CoreFn.Expr.$fShowBind_$cshowsPrec
+                   @ a
+                   $dShow
+                   Language.PureScript.CoreFn.Expr.$fShowBind1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowBind_$cshowList ::
+    GHC.Show.Show a =>
+    [Language.PureScript.CoreFn.Expr.Bind a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Language.PureScript.CoreFn.Expr.Bind a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Language.PureScript.CoreFn.Expr.Bind a)
+                   (Language.PureScript.CoreFn.Expr.$fShowBind_$cshowsPrec
+                      @ a
+                      $dShow
+                      Language.PureScript.CoreFn.Expr.$fShowBind1)
+                   ls
+                   s) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowBind_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Language.PureScript.CoreFn.Expr.Bind a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Language.PureScript.CoreFn.Expr.Bind a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.CoreFn.Expr.$w$cshowsPrec @ a w ww1 w2 }) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowCaseAlternative ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Language.PureScript.CoreFn.Expr.CaseAlternative a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Language.PureScript.CoreFn.Expr.CaseAlternative a)
+                  (Language.PureScript.CoreFn.Expr.$fShowCaseAlternative_$cshowsPrec
+                     @ a
+                     v)
+                  (Language.PureScript.CoreFn.Expr.$fShowCaseAlternative_$cshow
+                     @ a
+                     v)
+                  (Language.PureScript.CoreFn.Expr.$fShowCaseAlternative_$cshowList
+                     @ a
+                     v) -}
+1cc0169da213bf658cdd1a2cf197770e
+  $fShowCaseAlternative1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+05ae7260fa3219cc4c12b76fc33de4c6
+  $fShowCaseAlternative2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("caseAlternativeResult = "#) -}
+fb5983d7d494131924fede683fcde786
+  $fShowCaseAlternative3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("caseAlternativeBinders = "#) -}
+17a7216ab6dfedf287dc0a8b1a952d93
+  $fShowCaseAlternative4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CaseAlternative {"#) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowCaseAlternative_$cshow ::
+    GHC.Show.Show a =>
+    Language.PureScript.CoreFn.Expr.CaseAlternative a
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Language.PureScript.CoreFn.Expr.CaseAlternative a) ->
+                 Language.PureScript.CoreFn.Expr.$fShowCaseAlternative_$cshowsPrec
+                   @ a
+                   $dShow
+                   Language.PureScript.CoreFn.Expr.$fShowBind1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowCaseAlternative_$cshowList ::
+    GHC.Show.Show a =>
+    [Language.PureScript.CoreFn.Expr.CaseAlternative a]
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Language.PureScript.CoreFn.Expr.CaseAlternative a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Language.PureScript.CoreFn.Expr.CaseAlternative a)
+                   (Language.PureScript.CoreFn.Expr.$fShowCaseAlternative_$cshowsPrec
+                      @ a
+                      $dShow
+                      Language.PureScript.CoreFn.Expr.$fShowBind1)
+                   ls
+                   s) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowCaseAlternative_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Language.PureScript.CoreFn.Expr.CaseAlternative a
+    -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>,
+     Unfolding: (\ @ a ($dShow :: GHC.Show.Show a) ->
+                 let {
+                   lvl10 :: Language.PureScript.CoreFn.Binders.Binder a
+                            -> GHC.Show.ShowS
+                   = Language.PureScript.CoreFn.Binders.$fShowBinder_$cshowsPrec
+                       @ a
+                       $dShow
+                       Language.PureScript.CoreFn.Binders.$fShowBinder1
+                 } in
+                 let {
+                   $dShow1 :: GHC.Show.Show (Language.PureScript.CoreFn.Expr.Expr a)
+                   = Language.PureScript.CoreFn.Expr.$fShowExpr @ a $dShow
+                 } in
+                 let {
+                   $dShow2 :: GHC.Show.Show
+                                (Language.PureScript.CoreFn.Expr.Guard a,
+                                 Language.PureScript.CoreFn.Expr.Expr a)
+                   = GHC.Show.$fShow(,)
+                       @ (Language.PureScript.CoreFn.Expr.Expr a)
+                       @ (Language.PureScript.CoreFn.Expr.Expr a)
+                       $dShow1
+                       $dShow1
+                 } in
+                 let {
+                   $dShow3 :: GHC.Show.Show
+                                [(Language.PureScript.CoreFn.Expr.Guard a,
+                                  Language.PureScript.CoreFn.Expr.Expr a)]
+                   = GHC.Show.$fShow[]
+                       @ (Language.PureScript.CoreFn.Expr.Guard a,
+                          Language.PureScript.CoreFn.Expr.Expr a)
+                       $dShow2
+                 } in
+                 \ (a1 :: GHC.Types.Int)
+                   (ds :: Language.PureScript.CoreFn.Expr.CaseAlternative a) ->
+                 case ds of wild { Language.PureScript.CoreFn.Expr.CaseAlternative b1 b2 ->
+                 case a1 of wild1 { GHC.Types.I# x ->
+                 let {
+                   f4 :: GHC.Base.String -> GHC.Base.String
+                   = Data.Either.$w$cshowsPrec
+                       @ [(Language.PureScript.CoreFn.Expr.Guard a,
+                           Language.PureScript.CoreFn.Expr.Expr a)]
+                       @ (Language.PureScript.CoreFn.Expr.Expr a)
+                       $dShow3
+                       $dShow1
+                       0#
+                       b2
+                 } in
+                 case GHC.Prim.>=# x 11# of lwild {
+                   DEFAULT
+                   -> \ (x1 :: GHC.Base.String) ->
+                      GHC.CString.unpackAppendCString#
+                        Language.PureScript.CoreFn.Expr.$fShowCaseAlternative4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.CoreFn.Expr.$fShowCaseAlternative3
+                           (GHC.Show.showList__
+                              @ (Language.PureScript.CoreFn.Binders.Binder a)
+                              lvl10
+                              b1
+                              (GHC.Base.++
+                                 @ GHC.Types.Char
+                                 GHC.Show.showCommaSpace1
+                                 (GHC.CString.unpackAppendCString#
+                                    Language.PureScript.CoreFn.Expr.$fShowCaseAlternative2
+                                    (f4
+                                       (GHC.CString.unpackAppendCString#
+                                          Language.PureScript.CoreFn.Expr.$fShowCaseAlternative1
+                                          x1))))))
+                   1#
+                   -> \ (x1 :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.CoreFn.Expr.$fShowCaseAlternative4
+                           (GHC.CString.unpackAppendCString#
+                              Language.PureScript.CoreFn.Expr.$fShowCaseAlternative3
+                              (GHC.Show.showList__
+                                 @ (Language.PureScript.CoreFn.Binders.Binder a)
+                                 lvl10
+                                 b1
+                                 (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    GHC.Show.showCommaSpace1
+                                    (GHC.CString.unpackAppendCString#
+                                       Language.PureScript.CoreFn.Expr.$fShowCaseAlternative2
+                                       (f4
+                                          (GHC.CString.unpackAppendCString#
+                                             Language.PureScript.CoreFn.Expr.$fShowCaseAlternative1
+                                             (GHC.Types.:
+                                                @ GHC.Types.Char
+                                                GHC.Show.$fShow(,)2
+                                                x1)))))))) } } }) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowExpr ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Language.PureScript.CoreFn.Expr.Expr a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Language.PureScript.CoreFn.Expr.Expr a)
+                  (Language.PureScript.CoreFn.Expr.$fShowExpr_$cshowsPrec @ a v)
+                  (Language.PureScript.CoreFn.Expr.$fShowExpr_$cshow @ a v)
+                  (Language.PureScript.CoreFn.Expr.$fShowExpr_$cshowList @ a v) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowExpr_$cshow ::
+    GHC.Show.Show a =>
+    Language.PureScript.CoreFn.Expr.Expr a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Language.PureScript.CoreFn.Expr.Expr a) ->
+                 Language.PureScript.CoreFn.Expr.$fShowExpr_$cshowsPrec
+                   @ a
+                   $dShow
+                   Language.PureScript.CoreFn.Expr.$fShowBind1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowExpr_$cshowList ::
+    GHC.Show.Show a =>
+    [Language.PureScript.CoreFn.Expr.Expr a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Language.PureScript.CoreFn.Expr.Expr a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Language.PureScript.CoreFn.Expr.Expr a)
+                   (Language.PureScript.CoreFn.Expr.$fShowExpr_$cshowsPrec
+                      @ a
+                      $dShow
+                      Language.PureScript.CoreFn.Expr.$fShowBind1)
+                   ls
+                   s) -}
+3a14ce51d583743172851fcd35eb633c
+  $fShowExpr_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Language.PureScript.CoreFn.Expr.Expr a -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)> -}
+0f3dc7a92072e55e517adeb8d6236baa
+  $tc'Abs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16754970701096191159##
+                   16926085537593420662##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Abs2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Abs1) -}
+49ccf0e7341efe48b20e40f588f153a8
+  $tc'Abs1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+525ad3b5c08631b351112c6f8299674c
+  $tc'Abs2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Abs3) -}
+ce845413f7227acd803464ea3e0e669c
+  $tc'Abs3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Abs"#) -}
+e9eda07685d3a3a1a52d93c5c29d9c53
+  $tc'Accessor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16259578564210620467##
+                   18020538080815091840##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Accessor2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Accessor1) -}
+ca19f8d817f221f7d34219b5fe7aa13e
+  $tc'Accessor1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9cb119d73c5c0b1c10b8a65d4340ab8f
+  $tc'Accessor2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Accessor3) -}
+8694e3713cca4111ff0b13a077dd45a0
+  $tc'Accessor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Accessor"#) -}
+74c55b1ef0fc8548f31a184e41f3964a
+  $tc'App :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7232625971974243281##
+                   5760090043381776476##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'App2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'App1) -}
+b6e438119f771d195fcd2e5a3c33a152
+  $tc'App1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+092ef9f6fc59d74eccfa08acadc520fb
+  $tc'App2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'App3) -}
+0c0db82adf235e4f3f265ee407d710b3
+  $tc'App3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'App"#) -}
+c4589d5f4fc4ded39cbadb809c5f3424
+  $tc'Case :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8247498114309447484##
+                   13494161542509615245##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Case2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Case1) -}
+a8ab27270e548be06f791e07d1146124
+  $tc'Case1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+02c114e9c675fa39f0b8b395f8d000e7
+  $tc'Case2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Case3) -}
+5a081f073c98481c666f48fa22af4fe1
+  $tc'Case3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Case"#) -}
+fd9bc350cfec5e9ae291f075566c5848
+  $tc'CaseAlternative :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4871328344520646019##
+                   10173144608279964720##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'CaseAlternative2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'CaseAlternative1) -}
+95c902dfcaef1dd6fee71e8baffbc804
+  $tc'CaseAlternative1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b0cac5b32e533b58568f767ccafb1314
+  $tc'CaseAlternative2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'CaseAlternative3) -}
+dab7194801e4698b39e83f43bfb8ec55
+  $tc'CaseAlternative3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CaseAlternative"#) -}
+048c9df2aa134a8f96bf1327a06addea
+  $tc'Constructor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14054088900807964664##
+                   5633292055733961280##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Constructor2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Constructor1) -}
+db814b290e65db28f6c22922ea3a2a09
+  $tc'Constructor1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9432afb15de098e4ecd2dc5ab94d8148
+  $tc'Constructor2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Constructor3) -}
+e27ae0d90094d64c9afcb9c755590b8a
+  $tc'Constructor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Constructor"#) -}
+70cbcef254f0c875be6d2ca8943f2e6f
+  $tc'Let :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17810391653196799205##
+                   2742215119163889967##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Let2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Let1) -}
+264586979c0db98989a030e5678f2741
+  $tc'Let1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0a33d65755f4598fb43ed654b9855005
+  $tc'Let2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Let3) -}
+2a9ab71bcb9394f64dea6fdce454db23
+  $tc'Let3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Let"#) -}
+2f1f4e56a9ad06185b2445d0b599886b
+  $tc'Literal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6468317146878574740##
+                   8932573797903505815##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Literal2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Literal1) -}
+068e0eeb0466f996a0e7fbbe8d17cb53
+  $tc'Literal1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+22193982d1db765f5469cfc4ab1083e7
+  $tc'Literal2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Literal3) -}
+bbb41e9b0789cd0bd65bc84322d57820
+  $tc'Literal3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Literal"#) -}
+470e4eda1ded7a9744eba8349a51b93a
+  $tc'NonRec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4198096968484711506##
+                   10232690896252035607##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'NonRec2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'NonRec1) -}
+6f27fcc028ff3a7b0294f96b102f8f03
+  $tc'NonRec1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d263e5220eee11664f236ebf5aeeb489
+  $tc'NonRec2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'NonRec3) -}
+8894d2c12720ee64c86ac410c8a14f90
+  $tc'NonRec3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NonRec"#) -}
+077a03f9ab03d40cc12f3e3a998415da
+  $tc'ObjectUpdate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8207617786283689586##
+                   11440252027661404821##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'ObjectUpdate2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'ObjectUpdate1) -}
+a71e0173c181e6b69a92d10aec20ded6
+  $tc'ObjectUpdate1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6e8c1b6862d5d947c76c501ba3729fc8
+  $tc'ObjectUpdate2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'ObjectUpdate3) -}
+95b22942072524d5ffc111e3c4382e1c
+  $tc'ObjectUpdate3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ObjectUpdate"#) -}
+1a32ff7b65eb654f2d38259aebd7f7f6
+  $tc'Rec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9193487089390338637##
+                   12708147832659356556##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Rec2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Rec1) -}
+50b81a0501b21babc98d59c9a274bf11
+  $tc'Rec1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+21313b4c9f880d2024d06dfaf361702e
+  $tc'Rec2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Rec3) -}
+7ab824f12bde4f781f03aa29a44fec71
+  $tc'Rec3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Rec"#) -}
+6420754bad8bb13ec9c605967686c313
+  $tc'Var :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7798310396125847490##
+                   11139000178666889671##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tc'Var2
+                   1#
+                   Language.PureScript.CoreFn.Expr.$tc'Var1) -}
+088a6d490e969e16f161cba2dabe4f3f
+  $tc'Var1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f587a618a6afa7455137148b79973957
+  $tc'Var2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tc'Var3) -}
+21f4b50495f80b660d8286d33811511a
+  $tc'Var3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Var"#) -}
+a59b50d0910898a17e32f41efc1e78fa
+  $tcBind :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1779275847566305523##
+                   4301555271140666377##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tcBind1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+e6da4d61aee8187ba8adcee4c3b67160
+  $tcBind1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tcBind2) -}
+a8db4ac557478aeab23fd9ad9d810c1b
+  $tcBind2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Bind"#) -}
+4eadc3401918ca1d2d22cce7b1d2c528
+  $tcCaseAlternative :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16764658453008951813##
+                   9758727707531212504##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tcCaseAlternative1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+e7c46a27f71583d149ba4d69c5462f4d
+  $tcCaseAlternative1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tcCaseAlternative2) -}
+146a5d6444c958613de2b0c98c1f217b
+  $tcCaseAlternative2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CaseAlternative"#) -}
+c80a1399e90b89c99d69b82ac966f1c8
+  $tcExpr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8054795403408272595##
+                   5189803387842071320##
+                   Language.PureScript.CoreFn.Expr.$trModule
+                   Language.PureScript.CoreFn.Expr.$tcExpr1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+b699d12053b0039d6fd091847e426006
+  $tcExpr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$tcExpr2) -}
+dcbf8cd92f6f5cc03932bd722993c8fa
+  $tcExpr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Expr"#) -}
+56578d3748a49dada3092f4fb61c2e86
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.CoreFn.Expr.$trModule3
+                   Language.PureScript.CoreFn.Expr.$trModule1) -}
+cca070a9f1041d91b26ac0f4a652020b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$trModule2) -}
+9047aebb6bf53c5ff8d8278e6eb9c815
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.CoreFn.Expr"#) -}
+50055b972a7c5e8b1ec566b8cded8732
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreFn.Expr.$trModule4) -}
+e561a9d69bd394eaf16f29c522a4fc17
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+3a14ce51d583743172851fcd35eb633c
+  $w$cfmap ::
+    (a -> b)
+    -> [Language.PureScript.CoreFn.Binders.Binder a]
+    -> Data.Either.Either
+         [(Language.PureScript.CoreFn.Expr.Guard a,
+           Language.PureScript.CoreFn.Expr.Expr a)]
+         (Language.PureScript.CoreFn.Expr.Expr a)
+    -> (# [Language.PureScript.CoreFn.Binders.Binder b],
+          Data.Either.Either
+            [(Language.PureScript.CoreFn.Expr.Guard b,
+              Language.PureScript.CoreFn.Expr.Expr b)]
+            (Language.PureScript.CoreFn.Expr.Expr b) #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(U)><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b)
+                   (ww :: [Language.PureScript.CoreFn.Binders.Binder a])
+                   (ww1 :: Data.Either.Either
+                             [(Language.PureScript.CoreFn.Expr.Guard a,
+                               Language.PureScript.CoreFn.Expr.Expr a)]
+                             (Language.PureScript.CoreFn.Expr.Expr a)) ->
+                 (# GHC.Base.map
+                      @ (Language.PureScript.CoreFn.Binders.Binder a)
+                      @ (Language.PureScript.CoreFn.Binders.Binder b)
+                      (Language.PureScript.CoreFn.Binders.$fFunctorBinder_$cfmap
+                         @ a
+                         @ b
+                         w)
+                      ww,
+                    case ww1 of wild {
+                      Data.Either.Left x
+                      -> Data.Either.Left
+                           @ [(Language.PureScript.CoreFn.Expr.Guard b,
+                               Language.PureScript.CoreFn.Expr.Expr b)]
+                           @ (Language.PureScript.CoreFn.Expr.Expr b)
+                           (GHC.Base.map
+                              @ (Language.PureScript.CoreFn.Expr.Guard a,
+                                 Language.PureScript.CoreFn.Expr.Expr a)
+                              @ (Language.PureScript.CoreFn.Expr.Guard b,
+                                 Language.PureScript.CoreFn.Expr.Expr b)
+                              (\ (ds :: (Language.PureScript.CoreFn.Expr.Expr a,
+                                         Language.PureScript.CoreFn.Expr.Expr a)) ->
+                               (case ds of wild1 { (,) x1 y ->
+                                Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap1
+                                  @ a
+                                  @ b
+                                  w
+                                  x1 },
+                                case ds of wild1 { (,) x1 y ->
+                                Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap1
+                                  @ a
+                                  @ b
+                                  w
+                                  y }))
+                              x)
+                      Data.Either.Right y
+                      -> Data.Either.Right
+                           @ [(Language.PureScript.CoreFn.Expr.Guard b,
+                               Language.PureScript.CoreFn.Expr.Expr b)]
+                           @ (Language.PureScript.CoreFn.Expr.Expr b)
+                           (Language.PureScript.CoreFn.Expr.$fFunctorBind_$cfmap1
+                              @ a
+                              @ b
+                              w
+                              y) } #)) -}
+3a14ce51d583743172851fcd35eb633c
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int#
+    -> Language.PureScript.CoreFn.Expr.Bind a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,U><S,1*U>,
+     Inline: [0] -}
+3a14ce51d583743172851fcd35eb633c
+  data Bind a
+    = NonRec a
+             Language.PureScript.Names.Ident
+             (Language.PureScript.CoreFn.Expr.Expr a)
+    | Rec [((a, Language.PureScript.Names.Ident),
+            Language.PureScript.CoreFn.Expr.Expr a)]
+3a14ce51d583743172851fcd35eb633c
+  data CaseAlternative a
+    = CaseAlternative {caseAlternativeBinders :: [Language.PureScript.CoreFn.Binders.Binder
+                                                    a],
+                       caseAlternativeResult :: Data.Either.Either
+                                                  [(Language.PureScript.CoreFn.Expr.Guard a,
+                                                    Language.PureScript.CoreFn.Expr.Expr a)]
+                                                  (Language.PureScript.CoreFn.Expr.Expr a)}
+3a14ce51d583743172851fcd35eb633c
+  data Expr a
+    = Literal a
+              (Language.PureScript.AST.Literals.Literal
+                 (Language.PureScript.CoreFn.Expr.Expr a))
+    | Constructor a
+                  (Language.PureScript.Names.ProperName
+                     'Language.PureScript.Names.TypeName)
+                  (Language.PureScript.Names.ProperName
+                     'Language.PureScript.Names.ConstructorName)
+                  [Language.PureScript.Names.Ident]
+    | Accessor a
+               Language.PureScript.PSString.PSString
+               (Language.PureScript.CoreFn.Expr.Expr a)
+    | ObjectUpdate a
+                   (Language.PureScript.CoreFn.Expr.Expr a)
+                   [(Language.PureScript.PSString.PSString,
+                     Language.PureScript.CoreFn.Expr.Expr a)]
+    | Abs a
+          Language.PureScript.Names.Ident
+          (Language.PureScript.CoreFn.Expr.Expr a)
+    | App a
+          (Language.PureScript.CoreFn.Expr.Expr a)
+          (Language.PureScript.CoreFn.Expr.Expr a)
+    | Var a
+          (Language.PureScript.Names.Qualified
+             Language.PureScript.Names.Ident)
+    | Case a
+           [Language.PureScript.CoreFn.Expr.Expr a]
+           [Language.PureScript.CoreFn.Expr.CaseAlternative a]
+    | Let a
+          [Language.PureScript.CoreFn.Expr.Bind a]
+          (Language.PureScript.CoreFn.Expr.Expr a)
+3a14ce51d583743172851fcd35eb633c
+  type Guard a = Language.PureScript.CoreFn.Expr.Expr a
+3a14ce51d583743172851fcd35eb633c
+  caseAlternativeBinders ::
+    Language.PureScript.CoreFn.Expr.CaseAlternative a
+    -> [Language.PureScript.CoreFn.Binders.Binder a]
+  RecSel Left Language.PureScript.CoreFn.Expr.CaseAlternative
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Language.PureScript.CoreFn.Expr.CaseAlternative a) ->
+                 case ds of wild { Language.PureScript.CoreFn.Expr.CaseAlternative ds1 ds2 ->
+                 ds1 }) -}
+3a14ce51d583743172851fcd35eb633c
+  caseAlternativeResult ::
+    Language.PureScript.CoreFn.Expr.CaseAlternative a
+    -> Data.Either.Either
+         [(Language.PureScript.CoreFn.Expr.Guard a,
+           Language.PureScript.CoreFn.Expr.Expr a)]
+         (Language.PureScript.CoreFn.Expr.Expr a)
+  RecSel Left Language.PureScript.CoreFn.Expr.CaseAlternative
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Language.PureScript.CoreFn.Expr.CaseAlternative a) ->
+                 case ds of wild { Language.PureScript.CoreFn.Expr.CaseAlternative ds1 ds2 ->
+                 ds2 }) -}
+694c8d53a789ffef2175a5e718e4749c
+  extractAnn :: Language.PureScript.CoreFn.Expr.Expr a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: Language.PureScript.CoreFn.Expr.Expr a) ->
+                 case ds of wild {
+                   Language.PureScript.CoreFn.Expr.Literal a1 ds1 -> a1
+                   Language.PureScript.CoreFn.Expr.Constructor a1 ds1 ds2 ds3 -> a1
+                   Language.PureScript.CoreFn.Expr.Accessor a1 ds1 ds2 -> a1
+                   Language.PureScript.CoreFn.Expr.ObjectUpdate a1 ds1 ds2 -> a1
+                   Language.PureScript.CoreFn.Expr.Abs a1 ds1 ds2 -> a1
+                   Language.PureScript.CoreFn.Expr.App a1 ds1 ds2 -> a1
+                   Language.PureScript.CoreFn.Expr.Var a1 ds1 -> a1
+                   Language.PureScript.CoreFn.Expr.Case a1 ds1 ds2 -> a1
+                   Language.PureScript.CoreFn.Expr.Let a1 ds1 ds2 -> a1 }) -}
+d89bc9ae38db0a774f23ea1db9967479
+  modifyAnn ::
+    (a -> a)
+    -> Language.PureScript.CoreFn.Expr.Expr a
+    -> Language.PureScript.CoreFn.Expr.Expr a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   (f4 :: a -> a)
+                   (ds :: Language.PureScript.CoreFn.Expr.Expr a) ->
+                 case ds of wild {
+                   Language.PureScript.CoreFn.Expr.Literal a1 b
+                   -> Language.PureScript.CoreFn.Expr.Literal @ a (f4 a1) b
+                   Language.PureScript.CoreFn.Expr.Constructor a1 b c d
+                   -> Language.PureScript.CoreFn.Expr.Constructor @ a (f4 a1) b c d
+                   Language.PureScript.CoreFn.Expr.Accessor a1 b c
+                   -> Language.PureScript.CoreFn.Expr.Accessor @ a (f4 a1) b c
+                   Language.PureScript.CoreFn.Expr.ObjectUpdate a1 b c
+                   -> Language.PureScript.CoreFn.Expr.ObjectUpdate @ a (f4 a1) b c
+                   Language.PureScript.CoreFn.Expr.Abs a1 b c
+                   -> Language.PureScript.CoreFn.Expr.Abs @ a (f4 a1) b c
+                   Language.PureScript.CoreFn.Expr.App a1 b c
+                   -> Language.PureScript.CoreFn.Expr.App @ a (f4 a1) b c
+                   Language.PureScript.CoreFn.Expr.Var a1 b
+                   -> Language.PureScript.CoreFn.Expr.Var @ a (f4 a1) b
+                   Language.PureScript.CoreFn.Expr.Case a1 b c
+                   -> Language.PureScript.CoreFn.Expr.Case @ a (f4 a1) b c
+                   Language.PureScript.CoreFn.Expr.Let a1 b c
+                   -> Language.PureScript.CoreFn.Expr.Let @ a (f4 a1) b c }) -}
+instance GHC.Base.Functor [Language.PureScript.CoreFn.Expr.Bind]
+  = Language.PureScript.CoreFn.Expr.$fFunctorBind
+instance GHC.Base.Functor [Language.PureScript.CoreFn.Expr.CaseAlternative]
+  = Language.PureScript.CoreFn.Expr.$fFunctorCaseAlternative
+instance GHC.Base.Functor [Language.PureScript.CoreFn.Expr.Expr]
+  = Language.PureScript.CoreFn.Expr.$fFunctorExpr
+instance GHC.Show.Show [Language.PureScript.CoreFn.Expr.Bind]
+  = Language.PureScript.CoreFn.Expr.$fShowBind
+instance GHC.Show.Show [Language.PureScript.CoreFn.Expr.CaseAlternative]
+  = Language.PureScript.CoreFn.Expr.$fShowCaseAlternative
+instance GHC.Show.Show [Language.PureScript.CoreFn.Expr.Expr]
+  = Language.PureScript.CoreFn.Expr.$fShowExpr
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

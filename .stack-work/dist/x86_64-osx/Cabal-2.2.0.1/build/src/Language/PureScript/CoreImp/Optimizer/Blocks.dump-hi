@@ -1,0 +1,238 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:28:25.247932 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreImp.Optimizer.Blocks 8043
+  interface hash: fbe8a822701ab47c9205df5fe1b5f146
+  ABI hash: b98c3b2de5a24ea6265d8c4ded5ec0ff
+  export-list hash: b0494e2135e7cf9076ee3d2fb6359d6a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bec0ba85914d2da9e0a4be22213f6c78
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.CoreImp.Optimizer.Blocks.collapseNestedBlocks
+  Language.PureScript.CoreImp.Optimizer.Blocks.collapseNestedIfs
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.CoreImp.AST Language.PureScript.Crash
+                     Language.PureScript.Environment Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  Language.PureScript.CoreImp.AST 66108f8b83c9a1c508a34f2e6114094e
+  exports: 1da27be6d04935ab665d52ac441d8230
+  AST 2d7016401e08dc68af93e9a4339f76ff
+  And d78a5f0a6e4f1787fe8a41b415f31603
+  Binary 2a933ca609152651cc6896eb3ba9b36d
+  Block ae40450aa1df093ea2f6b6a0b6380186
+  BooleanLiteral de16554a89d0104f6ca2ec3a3baff8bf
+  IfElse 258c74242d6d11c763bf32ce42701ac2
+  everywhere 8ce9417ee75b74710133c4483c16425a
+f0e02329b470cde71d340bd675443b4a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.CoreImp.Optimizer.Blocks.$trModule3
+                   Language.PureScript.CoreImp.Optimizer.Blocks.$trModule1) -}
+69ad7aac08cb49a7922aba0a4ed383bd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.Optimizer.Blocks.$trModule2) -}
+370894afc367ca44b9bef3672ef72b47
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.CoreImp.Optimizer.Blocks"#) -}
+4b46f702def36d0b012c3a46ec1b24ae
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.Optimizer.Blocks.$trModule4) -}
+2158a65052f93694bb47d809e225d977
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+5369f4b35012e857b95073445fd52632
+  collapseNestedBlocks ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Language.PureScript.CoreImp.AST.everywhere
+                   Language.PureScript.CoreImp.Optimizer.Blocks.collapseNestedBlocks_collapse) -}
+b923db09e88e2b177ef25dccd14f6acc
+  collapseNestedBlocks_collapse ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                 case ds of wild {
+                   DEFAULT -> wild
+                   Language.PureScript.CoreImp.AST.Block ss sts
+                   -> Language.PureScript.CoreImp.AST.Block
+                        ss
+                        (Language.PureScript.CoreImp.Optimizer.Blocks.collapseNestedBlocks_go
+                           sts) }) -}
+02b37b983a120dc478bd1bc3547479f4
+  collapseNestedBlocks_go ::
+    [Language.PureScript.CoreImp.AST.AST]
+    -> [Language.PureScript.CoreImp.AST.AST]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+41e7839fd2bf33e0966a25d048ec1557
+  collapseNestedIfs ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Language.PureScript.CoreImp.AST.everywhere
+                   Language.PureScript.CoreImp.Optimizer.Blocks.collapseNestedIfs_collapse) -}
+2e07f4f5e4f38ca0b8bcdccc4f3dd8ea
+  collapseNestedIfs_collapse ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                 case ds of wild {
+                   DEFAULT -> wild
+                   Language.PureScript.CoreImp.AST.IfElse ds1 ds2 ds3 ds4
+                   -> let {
+                        fail :: GHC.Prim.Void# -> Language.PureScript.CoreImp.AST.AST
+                          <join 1> {- Arity: 1, Strictness: <L,A> -}
+                        = \ (ds5 :: GHC.Prim.Void#)[OneShot] ->
+                          case ds3 of wild1 {
+                            DEFAULT -> wild
+                            Language.PureScript.CoreImp.AST.Block ds6 ds7
+                            -> case ds7 of wild2 {
+                                 [] -> wild
+                                 : ds8 ds9
+                                 -> case ds8 of wild3 {
+                                      DEFAULT -> wild
+                                      Language.PureScript.CoreImp.AST.IfElse s2 cond2 body ds10
+                                      -> case ds10 of wild4 {
+                                           GHC.Base.Nothing
+                                           -> case ds9 of wild5 {
+                                                []
+                                                -> case ds4 of wild6 {
+                                                     GHC.Base.Nothing
+                                                     -> Language.PureScript.CoreImp.AST.IfElse
+                                                          ds1
+                                                          (Language.PureScript.CoreImp.AST.Binary
+                                                             s2
+                                                             Language.PureScript.CoreImp.AST.And
+                                                             ds2
+                                                             cond2)
+                                                          body
+                                                          (GHC.Base.Nothing
+                                                             @ Language.PureScript.CoreImp.AST.AST)
+                                                     GHC.Base.Just ipv -> wild }
+                                                : ipv ipv1 -> wild }
+                                           GHC.Base.Just ipv -> wild } } } }
+                      } in
+                      case ds2 of wild1 {
+                        DEFAULT -> fail GHC.Prim.void#
+                        Language.PureScript.CoreImp.AST.BooleanLiteral ds5 ds6
+                        -> case ds6 of wild2 {
+                             GHC.Types.False -> fail GHC.Prim.void#
+                             GHC.Types.True
+                             -> case ds3 of wild3 {
+                                  DEFAULT -> fail GHC.Prim.void#
+                                  Language.PureScript.CoreImp.AST.Block ds7 ds8
+                                  -> case ds8 of wild4 {
+                                       [] -> fail GHC.Prim.void#
+                                       : js ds9
+                                       -> case ds9 of wild5 {
+                                            [] -> js
+                                            : ipv ipv1 -> fail GHC.Prim.void# } } } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

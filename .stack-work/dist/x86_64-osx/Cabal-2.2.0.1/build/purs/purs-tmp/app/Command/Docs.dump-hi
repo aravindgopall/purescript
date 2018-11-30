@@ -1,0 +1,2312 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:49.233084 UTC
+
+interface main:Command.Docs 8043
+  interface hash: 7b4c46dfd2509a9c19418a6251074c78
+  ABI hash: e01b2912d543378168ee6f6e862c2586
+  export-list hash: 9dddb413c668bf7ff16f5beec4475449
+  orphan hash: f6293057149b2fe8e05e35eab7ee60fc
+  flag hash: b8bf76a4e499070f312618f3da385ad7
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Command.Docs.command
+  Command.Docs.infoModList
+module dependencies: Command.Docs.Html Paths_purescript Version
+package dependencies: Glob-0.9.2 aeson-1.3.1.1
+                      aeson-better-errors-0.9.1.0 ansi-terminal-0.8.0.4
+                      ansi-wl-pprint-0.6.8.2 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 blaze-html-0.9.1.1 blaze-markup-0.8.2.1
+                      bower-json-1.0.0.1 boxes-0.1.5 bytestring-0.10.8.2 cheapskate-0.1.1
+                      colour-2.3.4 containers-0.5.11.0 css-text-0.1.3.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 data-ordlist-0.4.7.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 file-embed-0.0.10.1
+                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
+                      microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
+                      monad-control-1.0.2.3 mtl-2.2.2 network-uri-2.6.1.0
+                      old-locale-1.0.0.7 optparse-applicative-0.14.2.0 parallel-3.2.1.1
+                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
+                      primitive-0.6.3.0 process-1.6.3.0 protolude-0.2.2 purescript-0.12.1
+                      random-1.1 safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 stringsearch-0.3.6.6 syb-0.7 tagged-0.8.5
+                      tagsoup-0.14.6 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 transformers-base-0.4.5.2 uniplate-1.6.12
+                      unix-2.7.2.2 unordered-containers-0.2.9.0 utf8-string-1.0.1.1
+                      uuid-types-1.0.3 vector-0.12.0.1 xss-sanitize-0.3.6
+orphans: cheapskate-0.1.1:Cheapskate
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         uniplate-1.6.12:Data.Generics.Uniplate.Data
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         colour-2.3.4:Data.Colour time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic text-1.2.3.0:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         bower-json-1.0.0.1:Web.Bower.PackageMeta.Internal
+                         cheapskate-0.1.1:Cheapskate.Types containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1:Control.Monad.Logger
+                         purescript-0.12.1:Language.PureScript.AST.Declarations
+                         purescript-0.12.1:Language.PureScript.AST.Operators
+                         purescript-0.12.1:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.1:Language.PureScript.Docs.Types
+                         purescript-0.12.1:Language.PureScript.Environment
+                         purescript-0.12.1:Language.PureScript.Kinds
+                         purescript-0.12.1:Language.PureScript.Label
+                         purescript-0.12.1:Language.PureScript.Make.Monad
+                         purescript-0.12.1:Language.PureScript.Names
+                         purescript-0.12.1:Language.PureScript.PSString
+                         purescript-0.12.1:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  Glob-0.9.2:System.FilePath.Glob 8625fdb96b8fcebd81114734e6844e2a
+import  -/  Glob-0.9.2:System.FilePath.Glob.Directory d42249ffcaa5351009a12b5db988f46f
+import  -/  ansi-wl-pprint-0.6.8.2:Text.PrettyPrint.ANSI.Leijen d922c8dc1a7a95fff0153d95ad559acf
+import  -/  ansi-wl-pprint-0.6.8.2:Text.PrettyPrint.ANSI.Leijen.Internal d573fa1670e84cc4dbf5cccd93501908
+import  -/  base-4.11.1.0:Control.Applicative 55d9b3a7491623b0362290e162d67308
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Control.Category b839bca5d85319b86c37d29f1613a5a2
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Function 6e6aae9442025aeeb92a909c1bbc3fca
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.IO.Handle.FD e69f914efff91201d4bcd54a391a46dd
+import  -/  base-4.11.1.0:GHC.IO.Handle.Text e23ef47ca91991c54e165e15e91a1ab0
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Read b9e6d20d40da8c8a12b566d22e1160e0
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.Exit a7af6f90beaa15182d3a20667d878df0
+import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
+import  -/  directory-1.3.1.5:System.Directory bc76216f25ffcaf1c91b529f41ea3bf7
+import  -/  filepath-1.4.2:System.FilePath a538d436328dd004b88f7d29a8b244c0
+import  -/  filepath-1.4.2:System.FilePath.Posix c021b7a40cfcdd9b08724b5bb7566b59
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Command.Docs.Html 4428cca42d016d89772111ffb4899c3d
+  exports: 43760124a4aa61d043f3947dae846e1e
+  asHtml 7fea1553ecebec293b236a0b4ae528fe
+  writeHtmlModules 44c038eab729f0397071315385dd1dc8
+import  -/  mtl-2.2.2:Control.Monad.Writer b86905dc6b5d4d3a09dfa93d3ac3bb98
+import  -/  optparse-applicative-0.14.2.0:Options.Applicative d95e0b32490502bba50f41d6948c00e0
+import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Builder c6546faa9e09bef2ac2df9eff4a77f61
+import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Extra b48c7bfd920b8a9e933e034981589447
+import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Types 7d35983d2990cf2ee861dc28ddfea4a2
+import  -/  purescript-0.12.1:Language.PureScript 055283757289375c92e0f1e11d744c0e
+import  -/  purescript-0.12.1:Language.PureScript.Docs 46c76393ed10ce047f1ff7fc97c85af9
+import  -/  purescript-0.12.1:Language.PureScript.Docs.AsMarkdown 9060efc6fdad02739808af659fa88ac1
+import  -/  purescript-0.12.1:Language.PureScript.Docs.Convert 0ff3b576d52bae937ee4df90e8c7a003
+import  -/  purescript-0.12.1:Language.PureScript.Docs.ParseInPackage 28a8e168a234e16d9ea50ede2ce2984f
+import  -/  purescript-0.12.1:Language.PureScript.Docs.Prim 7d365ebd1ff02fa424143ce6b800ec99
+import  -/  purescript-0.12.1:Language.PureScript.Docs.Tags 099fd0c82b3903efdf769c5ebd623c5e
+import  -/  purescript-0.12.1:Language.PureScript.Docs.Types f3dabfa61d83d3270ed9cf5a3f1e8614
+import  -/  purescript-0.12.1:Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+import  -/  purescript-0.12.1:Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+import  -/  purescript-0.12.1:System.IO.UTF8 750082717040f0844ba6a864b87f2d07
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.IO f7dcaf653a3b760ece6adefe76040164
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Except 1cac4acbba7f36bd732fcc993d3cc20d
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fEqFormat :: GHC.Classes.Eq Command.Docs.Format
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Command.Docs.Format
+                  Command.Docs.$fEqFormat_$c==
+                  Command.Docs.$fEqFormat_$c/= -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fEqFormat_$c/= ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Command.Docs.Format) (y :: Command.Docs.Format) ->
+                 case x of wild {
+                   Command.Docs.Markdown
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Command.Docs.Markdown -> GHC.Types.False }
+                   Command.Docs.Html
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Command.Docs.Html -> GHC.Types.False }
+                   Command.Docs.Ctags
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Command.Docs.Ctags -> GHC.Types.False }
+                   Command.Docs.Etags
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Command.Docs.Etags -> GHC.Types.False } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fEqFormat_$c== ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Command.Docs.Format)
+                   (ds1 :: Command.Docs.Format) ->
+                 case ds of wild {
+                   Command.Docs.Markdown
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Command.Docs.Markdown -> GHC.Types.True }
+                   Command.Docs.Html
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Command.Docs.Html -> GHC.Types.True }
+                   Command.Docs.Ctags
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Command.Docs.Ctags -> GHC.Types.True }
+                   Command.Docs.Etags
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Command.Docs.Etags -> GHC.Types.True } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat :: GHC.Classes.Ord Command.Docs.Format
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Command.Docs.Format
+                  Command.Docs.$fEqFormat
+                  Command.Docs.$fOrdFormat_$ccompare
+                  Command.Docs.$fOrdFormat_$c<
+                  Command.Docs.$fOrdFormat_$c<=
+                  Command.Docs.$fOrdFormat_$c>
+                  Command.Docs.$fOrdFormat_$c>=
+                  Command.Docs.$fOrdFormat_$cmax
+                  Command.Docs.$fOrdFormat_$cmin -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$c< ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Command.Docs.Format)
+                   (b :: Command.Docs.Format) ->
+                 case a of wild {
+                   Command.Docs.Markdown
+                   -> case b of wild1 {
+                        Command.Docs.Markdown -> GHC.Types.False
+                        Command.Docs.Html -> GHC.Types.True
+                        Command.Docs.Ctags -> GHC.Types.True
+                        Command.Docs.Etags -> GHC.Types.True }
+                   Command.Docs.Html
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Command.Docs.Ctags -> GHC.Types.True
+                        Command.Docs.Etags -> GHC.Types.True }
+                   Command.Docs.Ctags
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False Command.Docs.Etags -> GHC.Types.True }
+                   Command.Docs.Etags
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$c<= ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Command.Docs.Format)
+                   (b :: Command.Docs.Format) ->
+                 case b of wild {
+                   Command.Docs.Markdown
+                   -> case a of wild1 {
+                        Command.Docs.Markdown -> GHC.Types.True
+                        Command.Docs.Html -> GHC.Types.False
+                        Command.Docs.Ctags -> GHC.Types.False
+                        Command.Docs.Etags -> GHC.Types.False }
+                   Command.Docs.Html
+                   -> case a of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Command.Docs.Ctags -> GHC.Types.False
+                        Command.Docs.Etags -> GHC.Types.False }
+                   Command.Docs.Ctags
+                   -> case a of wild1 {
+                        DEFAULT -> GHC.Types.True Command.Docs.Etags -> GHC.Types.False }
+                   Command.Docs.Etags
+                   -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$c> ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Command.Docs.Format) (b :: Command.Docs.Format) ->
+                 Command.Docs.$fOrdFormat_$c< b a) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$c>= ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Command.Docs.Format)
+                   (b :: Command.Docs.Format) ->
+                 case a of wild {
+                   Command.Docs.Markdown
+                   -> case b of wild1 {
+                        Command.Docs.Markdown -> GHC.Types.True
+                        Command.Docs.Html -> GHC.Types.False
+                        Command.Docs.Ctags -> GHC.Types.False
+                        Command.Docs.Etags -> GHC.Types.False }
+                   Command.Docs.Html
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Command.Docs.Ctags -> GHC.Types.False
+                        Command.Docs.Etags -> GHC.Types.False }
+                   Command.Docs.Ctags
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Command.Docs.Etags -> GHC.Types.False }
+                   Command.Docs.Etags
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$ccompare ::
+    Command.Docs.Format -> Command.Docs.Format -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Command.Docs.Format)
+                   (b :: Command.Docs.Format) ->
+                 case a of wild {
+                   Command.Docs.Markdown
+                   -> case b of wild1 {
+                        Command.Docs.Markdown -> GHC.Types.EQ
+                        Command.Docs.Html -> GHC.Types.LT
+                        Command.Docs.Ctags -> GHC.Types.LT
+                        Command.Docs.Etags -> GHC.Types.LT }
+                   Command.Docs.Html
+                   -> case b of wild1 {
+                        Command.Docs.Markdown -> GHC.Types.GT
+                        Command.Docs.Html -> GHC.Types.EQ
+                        Command.Docs.Ctags -> GHC.Types.LT
+                        Command.Docs.Etags -> GHC.Types.LT }
+                   Command.Docs.Ctags
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Command.Docs.Ctags -> GHC.Types.EQ
+                        Command.Docs.Etags -> GHC.Types.LT }
+                   Command.Docs.Etags
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT Command.Docs.Etags -> GHC.Types.EQ } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$cmax ::
+    Command.Docs.Format -> Command.Docs.Format -> Command.Docs.Format
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Command.Docs.Format)
+                   (y :: Command.Docs.Format) ->
+                 case y of wild {
+                   Command.Docs.Markdown -> x
+                   Command.Docs.Html
+                   -> case x of wild1 {
+                        DEFAULT -> Command.Docs.Html
+                        Command.Docs.Ctags -> Command.Docs.Ctags
+                        Command.Docs.Etags -> Command.Docs.Etags }
+                   Command.Docs.Ctags
+                   -> case x of wild1 {
+                        DEFAULT -> Command.Docs.Ctags
+                        Command.Docs.Etags -> Command.Docs.Etags }
+                   Command.Docs.Etags
+                   -> case x of wild1 { DEFAULT -> Command.Docs.Etags } }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fOrdFormat_$cmin ::
+    Command.Docs.Format -> Command.Docs.Format -> Command.Docs.Format
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Command.Docs.Format)
+                   (y :: Command.Docs.Format) ->
+                 case y of wild {
+                   Command.Docs.Markdown
+                   -> case x of wild1 { DEFAULT -> Command.Docs.Markdown }
+                   Command.Docs.Html
+                   -> case x of wild1 {
+                        DEFAULT -> wild1
+                        Command.Docs.Ctags -> Command.Docs.Html
+                        Command.Docs.Etags -> Command.Docs.Html }
+                   Command.Docs.Ctags
+                   -> case x of wild1 {
+                        DEFAULT -> wild1 Command.Docs.Etags -> Command.Docs.Ctags }
+                   Command.Docs.Etags -> x }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat :: GHC.Read.Read Command.Docs.Format
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Command.Docs.Format
+                  Command.Docs.$fReadFormat_$creadsPrec
+                  Command.Docs.$fReadFormat_$creadList
+                  Command.Docs.$fReadFormat4
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Command.Docs.Format>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                       <Command.Docs.Format>_R))
+                  Command.Docs.$fReadFormat1
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <[Command.Docs.Format]>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                         <[Command.Docs.Format]>_R)) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([Command.Docs.Format] -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,A><L,C(U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (w1 :: [Command.Docs.Format]
+                          -> Text.ParserCombinators.ReadP.P b) ->
+                 case Text.ParserCombinators.ReadP.$wreadS_to_P
+                        @ [Command.Docs.Format]
+                        Command.Docs.$fReadFormat_$creadList
+                        @ b
+                        w1 of ww { Unit# ww1 ->
+                 Text.ParserCombinators.ReadP.Look @ b ww1 }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat10 :: (Command.Docs.Format, [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Command.Docs.Html, GHC.Types.[] @ GHC.Types.Char)) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat11 :: [(Command.Docs.Format, GHC.Base.String)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Command.Docs.Format, GHC.Base.String)
+                   Command.Docs.$fReadFormat12
+                   (GHC.Types.[] @ (Command.Docs.Format, GHC.Base.String))) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat12 :: (Command.Docs.Format, [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Command.Docs.Markdown,
+                  GHC.Types.[] @ GHC.Types.Char)) -}
+f9ae3f8b4b172a375b81c5bd9fb02a77
+  $fReadFormat13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fReadFormat14) -}
+dc327ece5358be0f642f449c800786ca
+  $fReadFormat14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("markdown"#) -}
+5ece9297d0b2424e4882f7447cb48464
+  $fReadFormat15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fReadFormat16) -}
+7958afa3fac128921e32f6907d01a2b8
+  $fReadFormat16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("html"#) -}
+d9c17481f07c97a308fdeff8432fe42e
+  $fReadFormat17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fReadFormat18) -}
+cd91254346297d5dff1b1686b4e83aaf
+  $fReadFormat18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("etags"#) -}
+edc745b2317d433a5875d724fdde906a
+  $fReadFormat19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fReadFormat20) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat2 ::
+    Text.ParserCombinators.ReadP.P [Command.Docs.Format]
+  {- Unfolding: (((GHC.Read.list
+                     @ Command.Docs.Format
+                     Command.Docs.$fReadFormat4
+                       `cast`
+                     ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                       ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                     <Command.Docs.Format>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                          <Command.Docs.Format>_R)))
+                    `cast`
+                  (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                       <[Command.Docs.Format]>_R)
+                    Command.Docs.$fReadFormat3)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0] <[Command.Docs.Format]>_R)
+                   @ [Command.Docs.Format]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [Command.Docs.Format])) -}
+a4511c06813ca399680728e7cf33464a
+  $fReadFormat20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ctags"#) -}
+eb72d94b1b1b19e5921a8c1b914f5fa0
+  $fReadFormat3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat4 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Command.Docs.Format -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,A><L,C(U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: Command.Docs.Format -> Text.ParserCombinators.ReadP.P b) ->
+                 case Text.ParserCombinators.ReadP.$wreadS_to_P
+                        @ Command.Docs.Format
+                        (Command.Docs.$fReadFormat_$creadsPrec n)
+                        @ b
+                        eta of ww { Unit# ww1 ->
+                 Text.ParserCombinators.ReadP.Look @ b ww1 }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat5 :: [(Command.Docs.Format, GHC.Base.String)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Command.Docs.Format, GHC.Base.String)
+                   Command.Docs.$fReadFormat6
+                   (GHC.Types.[] @ (Command.Docs.Format, GHC.Base.String))) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat6 :: (Command.Docs.Format, [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Command.Docs.Ctags, GHC.Types.[] @ GHC.Types.Char)) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat7 :: [(Command.Docs.Format, GHC.Base.String)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Command.Docs.Format, GHC.Base.String)
+                   Command.Docs.$fReadFormat8
+                   (GHC.Types.[] @ (Command.Docs.Format, GHC.Base.String))) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat8 :: (Command.Docs.Format, [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Command.Docs.Etags, GHC.Types.[] @ GHC.Types.Char)) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat9 :: [(Command.Docs.Format, GHC.Base.String)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Command.Docs.Format, GHC.Base.String)
+                   Command.Docs.$fReadFormat10
+                   (GHC.Types.[] @ (Command.Docs.Format, GHC.Base.String))) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [Command.Docs.Format]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [Command.Docs.Format]
+                   Command.Docs.$fReadFormat2) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fReadFormat_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS Command.Docs.Format
+  {- Arity: 2, Strictness: <L,A><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Base.String) ->
+                 Command.Docs.$w$creadsPrec w1) -}
+c6a09c6e8b99435a9f44ef872bea9cf8
+  $fShowDocgenOutput :: GHC.Show.Show Command.Docs.DocgenOutput
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Command.Docs.DocgenOutput
+                  Command.Docs.$fShowDocgenOutput_$cshowsPrec
+                  Command.Docs.$fShowDocgenOutput_$cshow
+                  Command.Docs.$fShowDocgenOutput_$cshowList -}
+c6a09c6e8b99435a9f44ef872bea9cf8
+  $fShowDocgenOutput1 :: Command.Docs.DocgenOutput -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Command.Docs.$fShowDocgenOutput_$cshowsPrec
+                   Command.Docs.$fReadFormat3) -}
+c6a09c6e8b99435a9f44ef872bea9cf8
+  $fShowDocgenOutput_$cshow ::
+    Command.Docs.DocgenOutput -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Command.Docs.DocgenOutput) ->
+                 Command.Docs.$fShowDocgenOutput_$cshowsPrec
+                   Command.Docs.$fReadFormat3
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c6a09c6e8b99435a9f44ef872bea9cf8
+  $fShowDocgenOutput_$cshowList ::
+    [Command.Docs.DocgenOutput] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Command.Docs.DocgenOutput]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Command.Docs.DocgenOutput
+                   Command.Docs.$fShowDocgenOutput1
+                   ls
+                   s) -}
+c6a09c6e8b99435a9f44ef872bea9cf8
+  $fShowDocgenOutput_$cshowsPrec ::
+    GHC.Types.Int -> Command.Docs.DocgenOutput -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fShowFormat :: GHC.Show.Show Command.Docs.Format
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Command.Docs.Format
+                  Command.Docs.$fShowFormat_$cshowsPrec
+                  Command.Docs.$fShowFormat_$cshow
+                  Command.Docs.$fShowFormat_$cshowList -}
+1fa558898babab914c25c0a6d6fe3ecc
+  $fShowFormat1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fShowFormat2) -}
+c224dad8a25009e7ab6b1843de5f4c4b
+  $fShowFormat2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Etags"#) -}
+566ed2f25607048f934eb3c6a7a97c19
+  $fShowFormat3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fShowFormat4) -}
+6706cc5620996563e0161f5e80d92da7
+  $fShowFormat4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Ctags"#) -}
+f3a6eef5afc0ea362fcf0b95007d647b
+  $fShowFormat5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fShowFormat6) -}
+1bdaa97e18739acfc8bd56c339ba7824
+  $fShowFormat6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Html"#) -}
+323da2bf48a2017bbad4cd52444a50b9
+  $fShowFormat7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.$fShowFormat8) -}
+6f6935032a0fc6030e31f1479f572994
+  $fShowFormat8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Markdown"#) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fShowFormat_$cshow :: Command.Docs.Format -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Command.Docs.Format) ->
+                 case x of wild {
+                   Command.Docs.Markdown -> Command.Docs.$fShowFormat7
+                   Command.Docs.Html -> Command.Docs.$fShowFormat5
+                   Command.Docs.Ctags -> Command.Docs.$fShowFormat3
+                   Command.Docs.Etags -> Command.Docs.$fShowFormat1 }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fShowFormat_$cshowList :: [Command.Docs.Format] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Command.Docs.Format]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Command.Docs.Format
+                   Command.Docs.$w$cshowsPrec
+                   ls
+                   s) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $fShowFormat_$cshowsPrec ::
+    GHC.Types.Int -> Command.Docs.Format -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Command.Docs.Format)
+                   (w2 :: GHC.Base.String) ->
+                 Command.Docs.$w$cshowsPrec w1 w2) -}
+7960ea4544f3b444afccf140b44e9c10
+  $fShowPSCDocsOptions :: GHC.Show.Show Command.Docs.PSCDocsOptions
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Command.Docs.PSCDocsOptions
+                  Command.Docs.$fShowPSCDocsOptions_$cshowsPrec
+                  Command.Docs.$fShowPSCDocsOptions_$cshow
+                  Command.Docs.$fShowPSCDocsOptions_$cshowList -}
+7960ea4544f3b444afccf140b44e9c10
+  $fShowPSCDocsOptions1 ::
+    Command.Docs.PSCDocsOptions -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U,1*U,1*U)><L,U>,
+     Unfolding: (\ (w :: Command.Docs.PSCDocsOptions)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Command.Docs.PSCDocsOptions ww1 ww2 ww3 ->
+                 Command.Docs.$w$cshowsPrec1 0# ww1 ww2 ww3 w1 }) -}
+49f0bc85dcc0d781dcb712620f41e01b
+  $fShowPSCDocsOptions2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+dbad692dacc54d6d217a0578bbb8826d
+  $fShowPSCDocsOptions3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("_pscdDocgen = "#) -}
+94f33c05c98d8e84e955e4ace7873053
+  $fShowPSCDocsOptions4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("_pscdInputFiles = "#) -}
+f81ab0076fbebb04f1808f25931cdafd
+  $fShowPSCDocsOptions5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("_pscdFormat = "#) -}
+cb504e4664c9bd692e5e0cb70dfcddcc
+  $fShowPSCDocsOptions6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PSCDocsOptions {"#) -}
+7960ea4544f3b444afccf140b44e9c10
+  $fShowPSCDocsOptions_$cshow ::
+    Command.Docs.PSCDocsOptions -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Command.Docs.PSCDocsOptions) ->
+                 Command.Docs.$fShowPSCDocsOptions_$cshowsPrec
+                   Command.Docs.$fReadFormat3
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+7960ea4544f3b444afccf140b44e9c10
+  $fShowPSCDocsOptions_$cshowList ::
+    [Command.Docs.PSCDocsOptions] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Command.Docs.PSCDocsOptions]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Command.Docs.PSCDocsOptions
+                   Command.Docs.$fShowPSCDocsOptions1
+                   ls
+                   s) -}
+7960ea4544f3b444afccf140b44e9c10
+  $fShowPSCDocsOptions_$cshowsPrec ::
+    GHC.Types.Int -> Command.Docs.PSCDocsOptions -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Command.Docs.PSCDocsOptions)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Command.Docs.PSCDocsOptions ww3 ww4 ww5 ->
+                 Command.Docs.$w$cshowsPrec1 ww1 ww3 ww4 ww5 w2 } }) -}
+2298d6ec8e3fc08416c55f2db22056a8
+  $s$fApplicativeExceptT ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ e.
+                  @ (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+                  (Command.Docs.$s$fApplicativeExceptT_$s$fFunctorExceptT @ e)
+                  (Command.Docs.$s$fApplicativeExceptT_$s$fApplicativeExceptT_$cpure
+                     @ e)
+                  (Control.Monad.Trans.Except.$fApplicativeExceptT_$c<*>
+                     @ GHC.Types.IO
+                     @ e
+                     GHC.Base.$fFunctorIO
+                     GHC.Base.$fMonadIO)
+                  (\ @ a
+                     @ b
+                     @ c
+                     (f1 :: a -> b -> c)
+                     (x :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a) ->
+                   Control.Monad.Trans.Except.$fApplicativeExceptT_$c<*>
+                     @ GHC.Types.IO
+                     @ e
+                     GHC.Base.$fFunctorIO
+                     GHC.Base.$fMonadIO
+                     @ b
+                     @ c
+                     (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                      case x `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <e>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                                   <Data.Either.Either e a>_R)
+                             s of ds { (#,#) ipv ipv1 ->
+                      (# ipv,
+                         Data.Either.$fApplicativeEither_$cfmap
+                           @ e
+                           @ a
+                           @ (b -> c)
+                           f1
+                           ipv1 #) })
+                       `cast`
+                     (Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e (b -> c)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                            <e>_N <GHC.Types.IO>_R <b -> c>_N)))
+                  (Command.Docs.$s$fApplicativeExceptT_$s$fApplicativeExceptT_$c*>
+                     @ e)
+                  (\ @ a
+                     @ b
+                     (x :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a) ->
+                   Control.Monad.Trans.Except.$fApplicativeExceptT_$c<*>
+                     @ GHC.Types.IO
+                     @ e
+                     GHC.Base.$fFunctorIO
+                     GHC.Base.$fMonadIO
+                     @ b
+                     @ a
+                     (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                      case x `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <e>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                                   <Data.Either.Either e a>_R)
+                             s of ds { (#,#) ipv ipv1 ->
+                      (# ipv,
+                         Control.Monad.Trans.Except.$fApplicativeExceptT1
+                           @ a
+                           @ b
+                           @ e
+                           ipv1 #) })
+                       `cast`
+                     (Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e (b -> a)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                            <e>_N <GHC.Types.IO>_R <b -> a>_N))) -}
+17192e8b0edaf448a5a55eec92e81f97
+  $s$fApplicativeExceptT_$s$fApplicativeExceptT_$c*> ::
+    Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a
+    -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b
+    -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S(SS)),1*C1(U(U,1*U))><L,1*C1(U(U,U))><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ e
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a)
+                   (k :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left e1 -> (# ipv, Data.Either.Left @ e @ b e1 #)
+                   Data.Either.Right x
+                   -> k `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <b>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e b>_R)
+                        ipv } })
+                  `cast`
+                (forall (e :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a>_R
+                 ->_R <Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e b>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                     <e>_N <GHC.Types.IO>_R <b>_N)) -}
+c2086a5be029997426e984d46bf07ba6
+  $s$fApplicativeExceptT_$s$fApplicativeExceptT_$cpure ::
+    a -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ e @ a (a1 :: a) (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, Data.Either.Right @ e @ a a1 #))
+                  `cast`
+                (forall (e :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e a>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                     <e>_N <GHC.Types.IO>_R <a>_N)) -}
+420bb61ca58a9b0d56592c65a8801cc7
+  $s$fApplicativeExceptT_$s$fFunctorExceptT ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ e.
+                  @ (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+                  (Control.Monad.Trans.Except.$fFunctorExceptT_$cfmap
+                     @ GHC.Types.IO
+                     @ e
+                     GHC.Base.$fFunctorIO)
+                  (Control.Monad.Trans.Except.$fFunctorExceptT_$c<$
+                     @ GHC.Types.IO
+                     @ e
+                     GHC.Base.$fFunctorIO) -}
+a7d66c5dd9bd42a0009d394e0ddcea7f
+  $s$fMonadErroreExceptT ::
+    Control.Monad.Error.Class.MonadError
+      e (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ e.
+                  @ e
+                  @ (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+                  (Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT @ e)
+                  (\ @ a (x :: e) (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# s, Data.Either.Left @ e @ a x #))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <e>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Either.Either
+                                    e a>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                       <e>_N <GHC.Types.IO>_R <a>_N))
+                  (\ @ a ->
+                   Command.Docs.$s$fMonadErroreExceptT_$scatchE @ e @ a @ e) -}
+b0ea14c7fa67d23f0db75a678e69b50c
+  $s$fMonadErroreExceptT_$s$fMonadExceptT ::
+    GHC.Base.Monad (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ e.
+                  @ (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+                  (Command.Docs.$s$fApplicativeExceptT @ e)
+                  (Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT_$c>>= @ e)
+                  (Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT_$c>> @ e)
+                  (\ @ a (eta :: a) (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# s, Data.Either.Right @ e @ a eta #))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Either.Either
+                                    e a>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                       <e>_N <GHC.Types.IO>_R <a>_N))
+                  (\ @ a (x :: GHC.Base.String) ->
+                   GHC.Magic.noinline
+                     @ (forall a1. [GHC.Types.Char] -> GHC.Types.IO a1)
+                     GHC.IO.failIO1
+                       `cast`
+                     (forall (a1 :: <*>_N).
+                      <GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                     @ (Data.Either.Either e a)
+                     x)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Base.String>_R
+                   ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                 <e>_N <GHC.Types.IO>_R <a>_N)) -}
+596343d7f7ef63de2936c9d378442cb6
+  $s$fMonadErroreExceptT_$s$fMonadExceptT_$c>> ::
+    Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a
+    -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b
+    -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S(SS)),1*C1(U(U,1*U))><L,1*C1(U(U,U))><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ e
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a)
+                   (k :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left e1 -> (# ipv, Data.Either.Left @ e @ b e1 #)
+                   Data.Either.Right x
+                   -> k `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <b>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e b>_R)
+                        ipv } })
+                  `cast`
+                (forall (e :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a>_R
+                 ->_R <Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e b>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                     <e>_N <GHC.Types.IO>_R <b>_N)) -}
+cd4aa624e05b871d0944a3c053b1fd03
+  $s$fMonadErroreExceptT_$s$fMonadExceptT_$c>>= ::
+    Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a
+    -> (a -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b)
+    -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S(SS)),1*C1(U(U,1*U))><L,1*C1(C1(U(U,U)))><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ e
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a)
+                   (k :: a -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left e1 -> (# ipv, Data.Either.Left @ e @ b e1 #)
+                   Data.Either.Right x
+                   -> (k x)
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <b>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e b>_R)
+                        ipv } })
+                  `cast`
+                (forall (e :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a>_R
+                 ->_R <a -> Control.Monad.Trans.Except.ExceptT e GHC.Types.IO b>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e b>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                     <e>_N <GHC.Types.IO>_R <b>_N)) -}
+847af83178d9c3052f39c5721a8c14c5
+  $s$fMonadErroreExceptT_$scatchE ::
+    Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a
+    -> (e -> Control.Monad.Trans.Except.ExceptT e' GHC.Types.IO a)
+    -> Control.Monad.Trans.Except.ExceptT e' GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S(SS)),1*C1(U(U,1*U))><L,1*C1(C1(U(U,U)))><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ e
+                   @ a
+                   @ e'
+                   (m1 :: Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a)
+                   (h :: e -> Control.Monad.Trans.Except.ExceptT e' GHC.Types.IO a)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                              <Data.Either.Either e a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left l
+                   -> (h l)
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <e'>_N <GHC.Types.IO>_R <a>_N ; GHC.Types.N:IO[0]
+                                                               <Data.Either.Either e' a>_R)
+                        ipv
+                   Data.Either.Right r -> (# ipv, Data.Either.Right @ e' @ a r #) } })
+                  `cast`
+                (forall (e :: <*>_N) (a :: <*>_N) (e' :: <*>_N).
+                 <Control.Monad.Trans.Except.ExceptT e GHC.Types.IO a>_R
+                 ->_R <e -> Control.Monad.Trans.Except.ExceptT e' GHC.Types.IO a>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  e' a>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                      <e'>_N <GHC.Types.IO>_R <a>_N)) -}
+d81a8b33ab6b96e7bb7464f69eafdecd
+  $s$fMonadIOExceptT ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ e.
+                  @ (Control.Monad.Trans.Except.ExceptT e GHC.Types.IO)
+                  (Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT @ e)
+                  (\ @ a
+                     (x :: GHC.Types.IO a)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case x `cast` (GHC.Types.N:IO[0] <a>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   (# ipv, Data.Either.Right @ e @ a ipv1 #) })
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Types.IO a>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Either.Either
+                                    e a>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                       <e>_N <GHC.Types.IO>_R <a>_N)) -}
+19e15591861aa357fc64d63a11eb3ede
+  $tc'Ctags :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12564065960645965589##
+                   1739567883437349779##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'Ctags2
+                   0#
+                   Command.Docs.$tc'Ctags1) -}
+44ab2262e73def62933e0596869b146c
+  $tc'Ctags1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+0bd06dd4fa45a5c87456a0c734b7ab65
+  $tc'Ctags2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'Ctags3) -}
+4627db105131cd4f05403322b1d4cf88
+  $tc'Ctags3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Ctags"#) -}
+d62caf902196f0c620397e772d404b56
+  $tc'Etags :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9733104412652070818##
+                   9039164470529536926##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'Etags1
+                   0#
+                   Command.Docs.$tc'Ctags1) -}
+1ed05334fdb29ce5f7b46b9975956950
+  $tc'Etags1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'Etags2) -}
+b5dafebc06d53f42322a5421c505c420
+  $tc'Etags2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Etags"#) -}
+c0bdef22564944504be60f9279e4febc
+  $tc'EverythingToStdOut :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4567756318925753748##
+                   4741639456306774585##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'EverythingToStdOut2
+                   0#
+                   Command.Docs.$tc'EverythingToStdOut1) -}
+344e13406bfb2f7a6d676401caa42676
+  $tc'EverythingToStdOut1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+1da91db12d4130daec6727e5896a3f88
+  $tc'EverythingToStdOut2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Command.Docs.$tc'EverythingToStdOut3) -}
+c73a27e29798655b01c3c45aa4c2e61a
+  $tc'EverythingToStdOut3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EverythingToStdOut"#) -}
+6cb177d037c8cbc193c9e53b00c5b447
+  $tc'Html :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12520467526576834761##
+                   16076803257821961005##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'Html1
+                   0#
+                   Command.Docs.$tc'Ctags1) -}
+60b257862730d28bb60e8682393ff43a
+  $tc'Html1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'Html2) -}
+3f122f5ff5400ccf676acaa17154c921
+  $tc'Html2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Html"#) -}
+27d69ec97d4c6de559a7e6420b0df20e
+  $tc'IToFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13112289815188496551##
+                   17050890277661733526##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'IToFile2
+                   0#
+                   Command.Docs.$tc'IToFile1) -}
+5b63f38f013f7585b47a9056b3016fe1
+  $tc'IToFile1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2d4019faf6980bc68e93101400b658f3
+  $tc'IToFile2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'IToFile3) -}
+e5c40a3b857e936a8d517446d1f83198
+  $tc'IToFile3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IToFile"#) -}
+45574c1a905253d25c8a3c6c45f92ce9
+  $tc'IToStdOut :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   276087928106317657##
+                   9092290679496658185##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'IToStdOut2
+                   0#
+                   Command.Docs.$tc'IToStdOut1) -}
+9e40b63cbd2c67c89723d93de9cae863
+  $tc'IToStdOut1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+aec3c3075db2aad3c8ae44bd43ea7241
+  $tc'IToStdOut2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'IToStdOut3) -}
+9483ce20486e7007c982686f0852b18f
+  $tc'IToStdOut3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IToStdOut"#) -}
+7aaef729ff82d1520dd6177c18b6519a
+  $tc'Markdown :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13915531690848915444##
+                   3543999371731445999##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'Markdown1
+                   0#
+                   Command.Docs.$tc'Ctags1) -}
+f659df73373539011d578be093aeeabd
+  $tc'Markdown1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'Markdown2) -}
+f07db7fcd1570106f59c2b04168eb183
+  $tc'Markdown2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Markdown"#) -}
+f173acad185c19ed36d43fd9d4ff43a7
+  $tc'PSCDocsOptions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16363387936739716404##
+                   12599673800565352710##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'PSCDocsOptions2
+                   0#
+                   Command.Docs.$tc'PSCDocsOptions1) -}
+03e80b1f43db328628cdd416e9d60be4
+  $tc'PSCDocsOptions1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+655f83bc4eacd30fa03d145785375680
+  $tc'PSCDocsOptions2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'PSCDocsOptions3) -}
+552768bfdcafcd3e8357e9037cef1be3
+  $tc'PSCDocsOptions3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PSCDocsOptions"#) -}
+ca18a8aac91d0068940d0c8e45da60a7
+  $tc'ToFiles :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   510676866313972830##
+                   2811373044719115411##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'ToFiles2
+                   0#
+                   Command.Docs.$tc'ToFiles1) -}
+0e8545643d65a39a67e3ec5f81fd088d
+  $tc'ToFiles1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a5286d2f1bb8ef8511e4efe010fd6765
+  $tc'ToFiles2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'ToFiles3) -}
+8450bde7c35c08b1616005772fa504fd
+  $tc'ToFiles3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ToFiles"#) -}
+6538871e62807b25a380e23101fad06d
+  $tc'ToStdOut :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13594538045247913999##
+                   5398410700982530715##
+                   Command.Docs.$trModule
+                   Command.Docs.$tc'ToStdOut2
+                   0#
+                   Command.Docs.$tc'ToStdOut1) -}
+ec533f1c6a5e3a1172f891aa702d5422
+  $tc'ToStdOut1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b4cb47beb9eab5fd3c0d8e548f594e23
+  $tc'ToStdOut2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tc'ToStdOut3) -}
+df208638ea76c471bbf06b57efdf1ea4
+  $tc'ToStdOut3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ToStdOut"#) -}
+42d19f19195775bf7fb4e7e00656f40d
+  $tcDocgenOutput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14225349552717164020##
+                   7882838104299662563##
+                   Command.Docs.$trModule
+                   Command.Docs.$tcDocgenOutput1
+                   0#
+                   GHC.Types.krep$*) -}
+cef70f3c566943ce7650e8c67b72aebe
+  $tcDocgenOutput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tcDocgenOutput2) -}
+4a021bcd6bf08e201ecb7a1d075bf9f5
+  $tcDocgenOutput2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DocgenOutput"#) -}
+83a15a62cea6a0f11f6e6fb0bbf3b4a3
+  $tcDocgenOutputItem :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2346846750111645986##
+                   13146342861019368187##
+                   Command.Docs.$trModule
+                   Command.Docs.$tcDocgenOutputItem1
+                   0#
+                   GHC.Types.krep$*) -}
+1f9da3153ece4b1e8a7b606157bf850f
+  $tcDocgenOutputItem1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tcDocgenOutputItem2) -}
+1e126a1978f12bb8e8a8499ef335f317
+  $tcDocgenOutputItem2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DocgenOutputItem"#) -}
+863f26832baca5db7267beb61cc78a84
+  $tcFormat :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13795436504661070691##
+                   12615114713006222308##
+                   Command.Docs.$trModule
+                   Command.Docs.$tcFormat1
+                   0#
+                   GHC.Types.krep$*) -}
+852e0ebe1a19b097454be666e19009e0
+  $tcFormat1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tcFormat2) -}
+a01e189280bf70d8f8cdef177100396b
+  $tcFormat2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Format"#) -}
+4af1a52ba0f0937c89730e49ca17f410
+  $tcPSCDocsOptions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6280040205876074353##
+                   6414902873924458803##
+                   Command.Docs.$trModule
+                   Command.Docs.$tcPSCDocsOptions1
+                   0#
+                   GHC.Types.krep$*) -}
+610b82b3909ed015ca47976e5c5234e7
+  $tcPSCDocsOptions1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$tcPSCDocsOptions2) -}
+bd8087e505ad23f2bb51563682738c66
+  $tcPSCDocsOptions2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PSCDocsOptions"#) -}
+073010f08f18f00ebafe042ec1584f9f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Command.Docs.$trModule3
+                   Command.Docs.$trModule1) -}
+22e5d4d77dd3be578c14034d817e8644
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$trModule2) -}
+f5c80fae80854593abf140852f7bd601
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Command.Docs"#) -}
+292f3cd59a532383c7317c6f3b81cccc
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.$trModule4) -}
+647d68a584248d5061367f9efe5f2dbe
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $w$creadsPrec ::
+    GHC.Base.String -> [(Command.Docs.Format, GHC.Base.String)]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Base.String) ->
+                 case GHC.Base.eqString w Command.Docs.$fReadFormat19 of wild {
+                   GHC.Types.False
+                   -> case GHC.Base.eqString w Command.Docs.$fReadFormat17 of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Base.eqString w Command.Docs.$fReadFormat15 of wild2 {
+                             GHC.Types.False
+                             -> case GHC.Base.eqString w Command.Docs.$fReadFormat13 of wild3 {
+                                  GHC.Types.False
+                                  -> GHC.Types.[] @ (Command.Docs.Format, GHC.Base.String)
+                                  GHC.Types.True -> Command.Docs.$fReadFormat11 }
+                             GHC.Types.True -> Command.Docs.$fReadFormat9 }
+                        GHC.Types.True -> Command.Docs.$fReadFormat7 }
+                   GHC.Types.True -> Command.Docs.$fReadFormat5 }) -}
+893f5f4a63ef56b7f4c22202c7b01e4c
+  $w$cshowsPrec ::
+    Command.Docs.Format -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Command.Docs.Format) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Command.Docs.Markdown
+                   -> GHC.Base.++ @ GHC.Types.Char Command.Docs.$fShowFormat7 w1
+                   Command.Docs.Html
+                   -> GHC.Base.++ @ GHC.Types.Char Command.Docs.$fShowFormat5 w1
+                   Command.Docs.Ctags
+                   -> GHC.Base.++ @ GHC.Types.Char Command.Docs.$fShowFormat3 w1
+                   Command.Docs.Etags
+                   -> GHC.Base.++ @ GHC.Types.Char Command.Docs.$fShowFormat1 w1 }) -}
+3223b990d21b2a663474d4e249136527
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Command.Docs.Format
+    -> [GHC.IO.FilePath]
+    -> Command.Docs.DocgenOutput
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Command.Docs.Format)
+                   (ww2 :: [GHC.IO.FilePath])
+                   (ww3 :: Command.Docs.DocgenOutput)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.CString.unpackAppendCString#
+                       Command.Docs.$fShowPSCDocsOptions6
+                       (GHC.CString.unpackAppendCString#
+                          Command.Docs.$fShowPSCDocsOptions5
+                          (Command.Docs.$w$cshowsPrec
+                             ww1
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                GHC.Show.showCommaSpace1
+                                (GHC.CString.unpackAppendCString#
+                                   Command.Docs.$fShowPSCDocsOptions4
+                                   (let {
+                                      s :: GHC.Base.String
+                                      = GHC.Base.++
+                                          @ GHC.Types.Char
+                                          GHC.Show.showCommaSpace1
+                                          (GHC.CString.unpackAppendCString#
+                                             Command.Docs.$fShowPSCDocsOptions3
+                                             (Command.Docs.$fShowDocgenOutput_$cshowsPrec
+                                                Command.Docs.$fReadFormat3
+                                                ww3
+                                                (GHC.CString.unpackAppendCString#
+                                                   Command.Docs.$fShowPSCDocsOptions2
+                                                   x)))
+                                    } in
+                                    case ww2 of wild {
+                                      [] -> GHC.CString.unpackAppendCString# GHC.Show.showList__4 s
+                                      : x1 xs
+                                      -> GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.showList__3
+                                           (GHC.Types.:
+                                              @ GHC.Types.Char
+                                              GHC.Show.$fShow(,)3
+                                              (GHC.Show.showLitString
+                                                 x1
+                                                 (GHC.Types.:
+                                                    @ GHC.Types.Char
+                                                    GHC.Show.$fShow(,)3
+                                                    (let {
+                                                       lvl43 :: [GHC.Types.Char]
+                                                       = GHC.Types.:
+                                                           @ GHC.Types.Char
+                                                           GHC.Show.showList__2
+                                                           s
+                                                     } in
+                                                     letrec {
+                                                       showl :: [[GHC.Types.Char]]
+                                                                -> GHC.Base.String
+                                                         {- Arity: 1, Strictness: <S,1*U> -}
+                                                       = \ (ds2 :: [[GHC.Types.Char]]) ->
+                                                         case ds2 of wild1 {
+                                                           [] -> lvl43
+                                                           : y ys
+                                                           -> GHC.Types.:
+                                                                @ GHC.Types.Char
+                                                                GHC.Show.showList__1
+                                                                (GHC.Types.:
+                                                                   @ GHC.Types.Char
+                                                                   GHC.Show.$fShow(,)3
+                                                                   (GHC.Show.showLitString
+                                                                      y
+                                                                      (GHC.Types.:
+                                                                         @ GHC.Types.Char
+                                                                         GHC.Show.$fShow(,)3
+                                                                         (showl ys)))) }
+                                                     } in
+                                                     showl xs)))) })))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p w
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)) }) -}
+c6a09c6e8b99435a9f44ef872bea9cf8
+  data DocgenOutput
+    = EverythingToStdOut
+    | ToStdOut [Language.PureScript.Names.ModuleName]
+    | ToFiles [(Language.PureScript.Names.ModuleName, GHC.IO.FilePath)]
+df1a161e06d6ab24d04fdc0f973c80c9
+  data DocgenOutputItem
+    = IToStdOut Language.PureScript.Names.ModuleName
+    | IToFile (Language.PureScript.Names.ModuleName, GHC.IO.FilePath)
+893f5f4a63ef56b7f4c22202c7b01e4c
+  data Format = Markdown | Html | Ctags | Etags
+7960ea4544f3b444afccf140b44e9c10
+  data PSCDocsOptions
+    = PSCDocsOptions {_pscdFormat :: Command.Docs.Format,
+                      _pscdInputFiles :: [GHC.IO.FilePath],
+                      _pscdDocgen :: Command.Docs.DocgenOutput}
+7960ea4544f3b444afccf140b44e9c10
+  _pscdDocgen ::
+    Command.Docs.PSCDocsOptions -> Command.Docs.DocgenOutput
+  RecSel Left Command.Docs.PSCDocsOptions
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Command.Docs.PSCDocsOptions) ->
+                 case ds of wild { Command.Docs.PSCDocsOptions ds1 ds2 ds3 ->
+                 ds3 }) -}
+7960ea4544f3b444afccf140b44e9c10
+  _pscdFormat :: Command.Docs.PSCDocsOptions -> Command.Docs.Format
+  RecSel Left Command.Docs.PSCDocsOptions
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Command.Docs.PSCDocsOptions) ->
+                 case ds of wild { Command.Docs.PSCDocsOptions ds1 ds2 ds3 ->
+                 ds1 }) -}
+7960ea4544f3b444afccf140b44e9c10
+  _pscdInputFiles :: Command.Docs.PSCDocsOptions -> [GHC.IO.FilePath]
+  RecSel Left Command.Docs.PSCDocsOptions
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Command.Docs.PSCDocsOptions) ->
+                 case ds of wild { Command.Docs.PSCDocsOptions ds1 ds2 ds3 ->
+                 ds2 }) -}
+3888828cf171934cb34a9ac4337d0e40
+  command :: Options.Applicative.Types.Parser (GHC.Types.IO ())
+  {- Unfolding: (Options.Applicative.Types.$fApplicativeParser_$cfmap
+                   @ (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+                   @ (GHC.Types.IO ())
+                   Command.Docs.command38
+                     `cast`
+                   (<(Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                   Command.Docs.command1) -}
+20f47d1ebe6381627aab7bd2d422d9ae
+  command1 ::
+    Options.Applicative.Types.Parser
+      (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+                   @ (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+                   (Options.Applicative.Extra.helper
+                      @ (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String]))
+                   Command.Docs.command2) -}
+30c30dfd54f43ca3ecf2f783165b6347
+  command10 :: Options.Applicative.Types.CReader GHC.IO.FilePath
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Options.Applicative.Types.CReader
+                   @ GHC.IO.FilePath
+                   Options.Applicative.Types.$fMonoidCompleter3
+                     `cast`
+                   ((<GHC.Base.String>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <[GHC.Base.String]>_R)) ; Sym (Options.Applicative.Types.N:Completer[0]))
+                   (Data.Either.Right
+                      @ Options.Applicative.Types.ParseError
+                      @ GHC.IO.FilePath)
+                     `cast`
+                   ((<GHC.Base.String>_R
+                     ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                   <Data.Either.Either
+                                      Options.Applicative.Types.ParseError
+                                      GHC.IO.FilePath>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                     <Options.Applicative.Types.ParseError>_N
+                                                                     <Data.Functor.Identity.Identity>_R
+                                                                     <GHC.IO.FilePath>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <GHC.Base.String>_R
+                                                                                                       <Control.Monad.Trans.Except.Except
+                                                                                                          Options.Applicative.Types.ParseError>_R
+                                                                                                       <GHC.IO.FilePath>_N) ; Sym (Options.Applicative.Types.N:ReadM[0]) <GHC.IO.FilePath>_N))) -}
+637be8af5c454254fa113c059deda6cc
+  command11 :: [Options.Applicative.Types.OptName]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Options.Applicative.Types.OptName
+                   Command.Docs.command_n
+                   (GHC.Types.[] @ Options.Applicative.Types.OptName)) -}
+393800495f6f20596cd1b970b311553a
+  command12 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.command13) -}
+ed22da690bb4472daa6eb00831ff8b63
+  command13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("docgen"#) -}
+b94855d45ee6533a38d02f03c5fbf883
+  command14 ::
+    Options.Applicative.Types.Parser
+      ([GHC.Base.String]
+       -> (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String]))
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ ([GHC.Base.String]
+                      -> (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String]))
+                   @ [GHC.IO.FilePath]
+                   Command.Docs.command23
+                   Command.Docs.command15) -}
+1b49465074446204295f44f4782a7acf
+  command15 :: Options.Applicative.Types.Parser [GHC.IO.FilePath]
+  {- Unfolding: ((Options.Applicative.Types.manyM
+                    @ GHC.IO.FilePath
+                    Command.Docs.command16)
+                   `cast`
+                 (Options.Applicative.Types.N:ParserM[0] <[GHC.IO.FilePath]>_R)
+                   @ [GHC.IO.FilePath]
+                   (Options.Applicative.Types.$fAlternativeParser_$cpure
+                      @ [GHC.IO.FilePath])) -}
+96ab49247268666152c7d34035308098
+  command16 :: Options.Applicative.Types.Parser GHC.IO.FilePath
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ GHC.IO.FilePath
+                   Command.Docs.command17
+                   (Options.Applicative.Types.$fAlternativeParser_$cempty
+                      @ GHC.IO.FilePath)) -}
+07f52da1010c2fe6870fbc41be3cb5c3
+  command17 :: Options.Applicative.Types.Parser GHC.IO.FilePath
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptP
+                   @ GHC.IO.FilePath
+                   Command.Docs.command18) -}
+6207339bd6a4adc11fb98b184dcccc10
+  command18 :: Options.Applicative.Types.Option GHC.IO.FilePath
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.Option
+                   @ GHC.IO.FilePath
+                   Command.Docs.command22
+                   Command.Docs.command19) -}
+eaca864e0fc151bff592fda63b67531a
+  command19 :: Options.Applicative.Types.OptProperties
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.OptProperties
+                   Options.Applicative.Types.Visible
+                   Command.Docs.command_lvl1
+                   Command.Docs.command_var
+                   (GHC.Base.Nothing @ GHC.Base.String)
+                   (GHC.Base.Nothing
+                      @ (Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                         -> Text.PrettyPrint.ANSI.Leijen.Internal.Doc))) -}
+4ffae17176b3a808d3522da704efb75d
+  command2 ::
+    Options.Applicative.Types.Parser
+      (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+                   @ [GHC.Base.String]
+                   Command.Docs.command14
+                   Command.Docs.command3) -}
+9450cdc61f2ffd514cd9cdc1942aaad0
+  command20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FILE"#) -}
+401eb618c8adbfe2f861de80030b3239
+  command21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("The input .purs file(s)"#) -}
+97620645761d6317abad862911e5bd19
+  command22 :: Options.Applicative.Types.OptReader GHC.IO.FilePath
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Options.Applicative.Types.ArgReader
+                   @ GHC.IO.FilePath
+                   Command.Docs.command10) -}
+e3dbf122c7ef5dd0ef7fddb0ee774fa0
+  command23 ::
+    Options.Applicative.Types.Parser
+      ([GHC.IO.FilePath]
+       -> [GHC.Base.String]
+       -> (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String]))
+  {- Unfolding: (Options.Applicative.Types.$fApplicativeParser_$cfmap
+                   @ Command.Docs.Format
+                   @ ([GHC.IO.FilePath]
+                      -> [GHC.Base.String]
+                      -> (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String]))
+                   (GHC.Tuple.(,,)
+                      @ Command.Docs.Format
+                      @ [GHC.IO.FilePath]
+                      @ [GHC.Base.String])
+                   Command.Docs.command24) -}
+d54d3ebcad442b1f6b3d89993e5ddc9c
+  command24 :: Options.Applicative.Types.Parser Command.Docs.Format
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ Command.Docs.Format
+                   Command.Docs.command27
+                   Command.Docs.command25) -}
+68d692aeca52cd87afc1712571549704
+  command25 :: Options.Applicative.Types.Parser Command.Docs.Format
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Options.Applicative.Types.NilP
+                   @ Command.Docs.Format
+                   Command.Docs.command26) -}
+987a0eb347a25f6992465b3a14d6d097
+  command26 :: GHC.Base.Maybe Command.Docs.Format
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Command.Docs.Format
+                   Command.Docs.Markdown) -}
+445a9c730abbb235c4c4b4c3514e5f86
+  command27 :: Options.Applicative.Types.Parser Command.Docs.Format
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptP
+                   @ Command.Docs.Format
+                   Command.Docs.command28) -}
+e4d465f4ed0c3faa927417407fc0987b
+  command28 :: Options.Applicative.Types.Option Command.Docs.Format
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.Option
+                   @ Command.Docs.Format
+                   Command.Docs.command32
+                   Command.Docs.command29) -}
+0c07312509bc2d0d068d8109fc4cc403
+  command29 :: Options.Applicative.Types.OptProperties
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.OptProperties
+                   Options.Applicative.Types.Visible
+                   Command.Docs.command_lvl2
+                   Command.Docs.command_var1
+                   (GHC.Base.Nothing @ GHC.Base.String)
+                   (GHC.Base.Nothing
+                      @ (Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                         -> Text.PrettyPrint.ANSI.Leijen.Internal.Doc))) -}
+5c4daa3223de0219e1b331ada9ffe1f0
+  command3 :: Options.Applicative.Types.Parser [GHC.Base.String]
+  {- Unfolding: ((Options.Applicative.Types.manyM
+                    @ GHC.Base.String
+                    Command.Docs.command4)
+                   `cast`
+                 (Options.Applicative.Types.N:ParserM[0] <[GHC.Base.String]>_R)
+                   @ [GHC.Base.String]
+                   (Options.Applicative.Types.$fAlternativeParser_$cpure
+                      @ [GHC.Base.String])) -}
+f97fbfcd7822dcde458bc1da8fd47a6b
+  command30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FORMAT"#) -}
+594ff9b82df0d0601539a76ef6e083c0
+  command31 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Set output FORMAT (markdown | html | etags | ctags)"#) -}
+5dd3467e33abc89d984795dfa8a58ac4
+  command32 ::
+    Options.Applicative.Types.OptReader Command.Docs.Format
+  {- Strictness: m1,
+     Unfolding: (Options.Applicative.Types.OptReader
+                   @ Command.Docs.Format
+                   Command.Docs.command35
+                   Command.Docs.command33
+                   Options.Applicative.Types.ExpectsArgError) -}
+8e1f3ca50771391992f50ab4c1083cd1
+  command33 :: Options.Applicative.Types.CReader Command.Docs.Format
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.CReader
+                   @ Command.Docs.Format
+                   Options.Applicative.Types.$fMonoidCompleter3
+                     `cast`
+                   ((<GHC.Base.String>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <[GHC.Base.String]>_R)) ; Sym (Options.Applicative.Types.N:Completer[0]))
+                   Command.Docs.command34
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <GHC.Base.String>_R
+                             <Control.Monad.Trans.Except.Except
+                                Options.Applicative.Types.ParseError>_R
+                             <Command.Docs.Format>_N) ; Sym (Options.Applicative.Types.N:ReadM[0]) <Command.Docs.Format>_N)) -}
+a53bd1a43012b1c297d087332f0fc832
+  command34 ::
+    GHC.Base.String
+    -> Control.Monad.Trans.Except.Except
+         Options.Applicative.Types.ParseError Command.Docs.Format
+  {- Arity: 1,
+     Unfolding: (Options.Applicative.Builder.auto1
+                   @ Command.Docs.Format
+                   Command.Docs.$fReadFormat) -}
+77de3c893177a973fed9eeb9644afada
+  command35 :: [Options.Applicative.Types.OptName]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Options.Applicative.Types.OptName
+                   Command.Docs.command_n1
+                   (GHC.Types.[] @ Options.Applicative.Types.OptName)) -}
+91c125548c071beae482e5c3dc168e28
+  command36 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.command37) -}
+4a55d4bf4a6ff03b7b02990560a3f567
+  command37 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("format"#) -}
+ce82b8d9857925c96d2d7cd9e2ed438a
+  command38 ::
+    (Command.Docs.Format, [GHC.IO.FilePath], [GHC.Base.String])
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S(LLS),1*U(U,U,1*U)><S,U> -}
+91f8bb6558c1f897b2da34278da2aa70
+  command4 :: Options.Applicative.Types.Parser GHC.Base.String
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ GHC.Base.String
+                   Command.Docs.command5
+                   (Options.Applicative.Types.$fAlternativeParser_$cempty
+                      @ GHC.Base.String)) -}
+320ee94345d4a43e554364f6295baa20
+  command5 :: Options.Applicative.Types.Parser GHC.Base.String
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptP
+                   @ GHC.Base.String
+                   Command.Docs.command6) -}
+2905b4de24ba62ee0d9ae2e3035a4035
+  command6 :: Options.Applicative.Types.Option GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.Option
+                   @ GHC.Base.String
+                   Command.Docs.command9
+                   Command.Docs.command7) -}
+efc2d963b66546d266533413224e98e5
+  command7 :: Options.Applicative.Types.OptProperties
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.OptProperties
+                   Options.Applicative.Types.Visible
+                   Command.Docs.command_lvl
+                   Options.Applicative.Builder.abortOption_var
+                   (GHC.Base.Nothing @ GHC.Base.String)
+                   (GHC.Base.Nothing
+                      @ (Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                         -> Text.PrettyPrint.ANSI.Leijen.Internal.Doc))) -}
+2fe08116c318581eba12650389ae4b31
+  command8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("A list of module names which should appear in the output. This can optionally include file paths to write individual modules to, by separating with a colon ':'. For example, Prelude:docs/Prelude.md. This option may be specified multiple times."#) -}
+5be8a963fb224bc707b3f0711202ea4d
+  command9 :: Options.Applicative.Types.OptReader GHC.Base.String
+  {- Strictness: m1,
+     Unfolding: (Options.Applicative.Types.OptReader
+                   @ GHC.Base.String
+                   Command.Docs.command11
+                   Command.Docs.command10
+                   Options.Applicative.Types.ExpectsArgError) -}
+0b5b02a55c2119e7906a7a495f531c4a
+  command_lvl ::
+    Options.Applicative.Help.Chunk.Chunk
+      Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (Options.Applicative.Help.Chunk.paragraph_go
+                   (GHC.CString.unpackCString# Command.Docs.command8)) -}
+b5ec35f3141b61a4d75e05bca062f665
+  command_lvl1 ::
+    Options.Applicative.Help.Chunk.Chunk
+      Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (Options.Applicative.Help.Chunk.paragraph_go
+                   (GHC.CString.unpackCString# Command.Docs.command21)) -}
+2c6cf47e071f061232400ce175457118
+  command_lvl2 ::
+    Options.Applicative.Help.Chunk.Chunk
+      Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (Options.Applicative.Help.Chunk.paragraph_go
+                   (GHC.CString.unpackCString# Command.Docs.command31)) -}
+957db4236d4cde9397c5269d41a2bed9
+  command_n :: Options.Applicative.Types.OptName
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptLong
+                   Command.Docs.command12) -}
+637a8f50bd0da4e1d904fdebcaf5b534
+  command_n1 :: Options.Applicative.Types.OptName
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptLong
+                   Command.Docs.command36) -}
+ff19f93c66f178ca1e5380732a4a0de9
+  command_var :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.command20) -}
+10ff41c789370cf85b136d79a49d48ad
+  command_var1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.command30) -}
+340086590d4f125b4b686598747a5730
+  infoModList :: Options.Applicative.Builder.InfoMod a
+  {- Arity: 1, Strictness: <S,1*U(U,A,U,U,A,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Command.Docs.infoModList1
+                  `cast`
+                (forall (a :: <*>_N).
+                 Sym (Options.Applicative.Builder.N:InfoMod[0] <a>_N)) -}
+4a17166c4b9da006aeb559fc39a61c2a
+  infoModList1 ::
+    Options.Applicative.Types.ParserInfo a
+    -> Options.Applicative.Types.ParserInfo a
+  {- Arity: 1, Strictness: <S,1*U(U,A,U,U,A,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: Options.Applicative.Types.ParserInfo a) ->
+                 case x of wild { Options.Applicative.Types.ParserInfo ds ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 Options.Applicative.Types.ParserInfo
+                   @ a
+                   ds
+                   GHC.Types.True
+                   ds2
+                   ds3
+                   Command.Docs.infoModList_doc
+                     `cast`
+                   (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
+                   ds5
+                   ds6 }) -}
+8e3296925f96efe816beee6453589acf
+  infoModList10 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList23
+                   Command.Docs.infoModList11) -}
+f6589cf84442cdef3748353eaff78b19
+  infoModList11 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList21
+                   Command.Docs.infoModList12) -}
+cf9c2024c29c79f8ae54df39480772ef
+  infoModList12 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList19
+                   Command.Docs.infoModList13) -}
+857a4f6542045639b83438d05fbb3afb
+  infoModList13 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList17
+                   Command.Docs.infoModList14) -}
+6ca5308e36d23d170ce2e832ff466256
+  infoModList14 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList15
+                   (GHC.Types.[] @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc)) -}
+2e780f07982996626aeeef19209d89a5
+  infoModList15 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild1
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild1 }) -}
+da38679202cc4edb94e5deb8dbce04eb
+  infoModList16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("     --docgen Data.List.Lazy:docs/Data.List.Lazy.md"#) -}
+50508b39259353c023630361ce25ed1e
+  infoModList17 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild2
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild2 }) -}
+d53da0fff5a26c1bc1fbd7004af836e5
+  infoModList18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("     --docgen Data.List:docs/Data.List.md \\"#) -}
+d331e67c246d35f12d3268a00bf2b4ff
+  infoModList19 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild3
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild3 }) -}
+cdeacf2241431df379953b2028c52b11
+  infoModList2 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (Text.PrettyPrint.ANSI.Leijen.Internal.vcat_go2
+                   Command.Docs.infoModList_wild) -}
+fb89f8d9708e88e26d710228ff6e180b
+  infoModList20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("   purs docs \"src/**/*.purs\" \".psc-package/*/*/*/src/**/*.purs\" \\"#) -}
+3a13d6be58b5410890f331f418d492bd
+  infoModList21 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild4
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild4 }) -}
+fff770b9ae2d6b7fe52a958f6ee18a44
+  infoModList22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: (" documentation for Data.List.Lazy to docs/Data.List.Lazy.md:"#) -}
+8119650c87c3c1011c35abce8b4a61cb
+  infoModList23 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild5
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild5 }) -}
+9abff4a4729f696b66651f9eb9d48dff
+  infoModList24 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: (" write documentation for Data.List to docs/Data.List.md, and"#) -}
+1fdbecfb7116be7b2919cb5cfab77e9f
+  infoModList25 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild6
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild6 }) -}
+6ac5ceb266c798669286e50af332d47e
+  infoModList26 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("     --docgen Data.List:docs/Data.List.md"#) -}
+1078dceb2cdbe9e4b3c6497ac7d91eb4
+  infoModList27 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild7
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild7 }) -}
+0ad21eb2e61e6d439c4d8f3cca6a1c6f
+  infoModList28 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: (" write documentation for Data.List to docs/Data.List.md:"#) -}
+a5083d88a126c1a22543d14273aad800
+  infoModList29 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild8
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild8 }) -}
+279a1658af96d00b87c3b784e2ed035b
+  infoModList3 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList19
+                   Command.Docs.infoModList4) -}
+96196a74577eb6fdb17c85cbee297cb1
+  infoModList30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("     --docgen Data.List"#) -}
+063657a7b73ba5fa861dc8f1d7465f81
+  infoModList31 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild9
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild9 }) -}
+39de56814084b35c92ff00da4c2c621a
+  infoModList32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: (" print documentation for Data.List to stdout:"#) -}
+60e4f7a29857b8c2b8575a129b7aff3c
+  infoModList33 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("xamples:"#) -}
+f3cd0ee765d6f3d2030be1deeada9178
+  infoModList4 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList29
+                   Command.Docs.infoModList5) -}
+460e324250e274e39630c14229435d23
+  infoModList5 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Text.PrettyPrint.ANSI.Leijen.Internal.Empty
+                   Command.Docs.infoModList6) -}
+5f32b7fd4af5ce52819e10d04a1c78dd
+  infoModList6 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList27
+                   Command.Docs.infoModList7) -}
+0f338cdf940299be791619f5c2c95b32
+  infoModList7 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList19
+                   Command.Docs.infoModList8) -}
+00aaf69ff8f0fded1f43b0feccf63408
+  infoModList8 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList25
+                   Command.Docs.infoModList9) -}
+7f7f3ced16542ac89c22327846e458c0
+  infoModList9 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Text.PrettyPrint.ANSI.Leijen.Internal.Empty
+                   Command.Docs.infoModList10) -}
+dbe51355175dc678c20ff0adcedaa6bb
+  infoModList_doc ::
+    GHC.Base.Maybe Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList2) -}
+da1c82a51b07319b33732f01aafd5a4e
+  infoModList_ipv :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ' '#) -}
+e133f8e4019ec74c5ee0657d6b120266
+  infoModList_ipv1 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList31
+                   Command.Docs.infoModList3) -}
+661613605825d37ff4dfa0d3f897ac8d
+  infoModList_ipv10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList32) -}
+d4a6f3dab6a0f9a503caf5b8c2ad5e1d
+  infoModList_ipv11 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Command.Docs.infoModList_wild10
+                        0# of ww2 { DEFAULT ->
+                 Text.PrettyPrint.ANSI.Leijen.Internal.Text
+                   ww2
+                   Command.Docs.infoModList_wild10 }) -}
+ddeb03c4c5d310ed50ad42444d538a33
+  infoModList_ipv12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList33) -}
+85c234f18212e9302515dc3c767f6177
+  infoModList_ipv13 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'E'#) -}
+7f85e77209db0586a24433c40608c9bc
+  infoModList_ipv2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList16) -}
+b99db628d5109d1d7e459e18beb74346
+  infoModList_ipv3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList18) -}
+fca84f32e5ec91dcd294f5f0da7eda3c
+  infoModList_ipv4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList20) -}
+ad0beae3af8a13c6340f226cab0bc3b3
+  infoModList_ipv5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList22) -}
+0d04f7c8754d210f63fd37dab15e5ad0
+  infoModList_ipv6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList24) -}
+3d99c59ce1d36723367815b8ed577755
+  infoModList_ipv7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList26) -}
+f150488be9cc60857863a6f995756143
+  infoModList_ipv8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList28) -}
+d625865d8a6ef41f9b268957c31eaf16
+  infoModList_ipv9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.infoModList30) -}
+9618a7d7babc61722bfb76e410ebcdce
+  infoModList_wild :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                   Command.Docs.infoModList_ipv11
+                   Command.Docs.infoModList_ipv1) -}
+a09aa779a3410b081d4eb3f680084e4a
+  infoModList_wild1 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv2) -}
+0b9f3a08c572b7c5794ab55bafed9240
+  infoModList_wild10 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv13
+                   Command.Docs.infoModList_ipv12) -}
+3b163fa1d6f712ee293e35306ab237b8
+  infoModList_wild2 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv3) -}
+4d4ac093828fecb6b04799d5ec7c5ce8
+  infoModList_wild3 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv4) -}
+e1125f202aa87692a017efacfd3c2389
+  infoModList_wild4 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv5) -}
+af48221abf0a70dd48bb76065e4156d4
+  infoModList_wild5 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv6) -}
+780570ae6f5289ff3f9a67ec2adbad92
+  infoModList_wild6 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv7) -}
+effb9c4fbdc8bf15a5a8c19ed91d2c67
+  infoModList_wild7 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv8) -}
+c0a3478774ec1249778503f6c84da5d9
+  infoModList_wild8 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv9) -}
+5beaeab4af6a33e59e2c4be354b86239
+  infoModList_wild9 :: [GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Command.Docs.infoModList_ipv
+                   Command.Docs.infoModList_ipv10) -}
+instance GHC.Classes.Eq [Command.Docs.Format]
+  = Command.Docs.$fEqFormat
+instance GHC.Classes.Ord [Command.Docs.Format]
+  = Command.Docs.$fOrdFormat
+instance GHC.Read.Read [Command.Docs.Format]
+  = Command.Docs.$fReadFormat
+instance GHC.Show.Show [Command.Docs.DocgenOutput]
+  = Command.Docs.$fShowDocgenOutput
+instance GHC.Show.Show [Command.Docs.Format]
+  = Command.Docs.$fShowFormat
+instance GHC.Show.Show [Command.Docs.PSCDocsOptions]
+  = Command.Docs.$fShowPSCDocsOptions
+"SPEC/Command.Docs $fApplicativeExceptT @ IO _" [orphan] forall @ e
+                                                                (v1 :: GHC.Base.Monad GHC.Types.IO)
+                                                                (v :: GHC.Base.Functor GHC.Types.IO)
+  Control.Monad.Trans.Except.$fApplicativeExceptT @ GHC.Types.IO
+                                                  @ e
+                                                  v
+                                                  v1
+  = Command.Docs.$s$fApplicativeExceptT @ e
+"SPEC/Command.Docs $fApplicativeExceptT_$c*> @ IO _" [orphan] forall @ e
+                                                                     ($dMonad :: GHC.Base.Monad
+                                                                                   GHC.Types.IO)
+                                                                     ($dFunctor :: GHC.Base.Functor
+                                                                                     GHC.Types.IO)
+  Control.Monad.Trans.Except.$fApplicativeExceptT_$c*> @ GHC.Types.IO
+                                                       @ e
+                                                       $dFunctor
+                                                       $dMonad
+  = Command.Docs.$s$fApplicativeExceptT_$s$fApplicativeExceptT_$c*>
+      @ e
+"SPEC/Command.Docs $fApplicativeExceptT_$cpure @ IO _" [orphan] forall @ e
+                                                                       ($dMonad :: GHC.Base.Monad
+                                                                                     GHC.Types.IO)
+                                                                       ($dFunctor :: GHC.Base.Functor
+                                                                                       GHC.Types.IO)
+  Control.Monad.Trans.Except.$fApplicativeExceptT_$cpure @ GHC.Types.IO
+                                                         @ e
+                                                         $dFunctor
+                                                         $dMonad
+  = Command.Docs.$s$fApplicativeExceptT_$s$fApplicativeExceptT_$cpure
+      @ e
+"SPEC/Command.Docs $fFunctorExceptT @ IO _" [orphan] forall @ e
+                                                            (v :: GHC.Base.Functor GHC.Types.IO)
+  Control.Monad.Trans.Except.$fFunctorExceptT @ GHC.Types.IO @ e v
+  = Command.Docs.$s$fApplicativeExceptT_$s$fFunctorExceptT @ e
+"SPEC/Command.Docs $fMonadErroreExceptT @ IO _" [orphan] forall @ e
+                                                                (v :: GHC.Base.Monad GHC.Types.IO)
+  Control.Monad.Error.Class.$fMonadErroreExceptT @ GHC.Types.IO @ e v
+  = Command.Docs.$s$fMonadErroreExceptT @ e
+"SPEC/Command.Docs $fMonadExceptT @ IO _" [orphan] forall @ e
+                                                          (v :: GHC.Base.Monad GHC.Types.IO)
+  Control.Monad.Trans.Except.$fMonadExceptT @ GHC.Types.IO @ e v
+  = Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT @ e
+"SPEC/Command.Docs $fMonadExceptT_$c>> @ IO _" [orphan] forall @ e
+                                                               ($dMonad :: GHC.Base.Monad
+                                                                             GHC.Types.IO)
+  Control.Monad.Trans.Except.$fMonadExceptT_$c>> @ GHC.Types.IO
+                                                 @ e
+                                                 $dMonad
+  = Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT_$c>> @ e
+"SPEC/Command.Docs $fMonadExceptT_$c>>= @ IO _" [orphan] forall @ e
+                                                                ($dMonad :: GHC.Base.Monad
+                                                                              GHC.Types.IO)
+  Control.Monad.Trans.Except.$fMonadExceptT_$c>>= @ GHC.Types.IO
+                                                  @ e
+                                                  $dMonad
+  = Command.Docs.$s$fMonadErroreExceptT_$s$fMonadExceptT_$c>>= @ e
+"SPEC/Command.Docs $fMonadIOExceptT @ IO _" [orphan] forall @ e
+                                                            (v :: Control.Monad.IO.Class.MonadIO
+                                                                    GHC.Types.IO)
+  Control.Monad.Trans.Except.$fMonadIOExceptT @ GHC.Types.IO @ e v
+  = Command.Docs.$s$fMonadIOExceptT @ e
+"SPEC/Command.Docs catchE @ IO _ _ _" [orphan] forall @ e
+                                                      @ a
+                                                      @ e'
+                                                      ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Control.Monad.Trans.Except.catchE @ GHC.Types.IO
+                                    @ e
+                                    @ a
+                                    @ e'
+                                    $dMonad
+  = Command.Docs.$s$fMonadErroreExceptT_$scatchE @ e @ a @ e'
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

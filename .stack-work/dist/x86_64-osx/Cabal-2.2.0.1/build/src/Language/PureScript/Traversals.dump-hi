@@ -1,0 +1,263 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:23.493183 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Traversals 8043
+  interface hash: 75a4c5fbd3cd80a9bf11c761aac2ce18
+  ABI hash: 0b1167883a6d6cc72496ff4af9cd7535
+  export-list hash: ff3aac3cd7b378c02751a42ba037de7e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 2ae478d21823b7c739b1b08c46262eb0
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Traversals.defS
+  Language.PureScript.Traversals.eitherM
+  Language.PureScript.Traversals.fstM
+  Language.PureScript.Traversals.maybeM
+  Language.PureScript.Traversals.pairM
+  Language.PureScript.Traversals.sndM
+  Language.PureScript.Traversals.thirdM
+module dependencies:
+package dependencies: base-4.11.1.0 base-compat-0.10.4*
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:GHC.Exts base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+49607cff279a425ec60736413d443fec
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Traversals.$trModule3
+                   Language.PureScript.Traversals.$trModule1) -}
+4b0140bf22042369e3db996db753e434
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Traversals.$trModule2) -}
+2564458428d2a469004d97d0ba1cd47d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Traversals"#) -}
+a49b9726e1c6757042467b97c28d2532
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Traversals.$trModule4) -}
+13a75e94b06dbc6ce10c211da2ef7c0a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+026922435d047d6ccba4db8be488ad79
+  $wpairM ::
+    GHC.Base.Applicative f =>
+    (a -> f c) -> (b -> f d) -> a -> b -> f (c, d)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LLL),U(1*U(1*C1(C1(U)),A),A,1*C1(C1(U)),A,A,A)><L,1*C1(U)><L,1*C1(U)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ f :: * -> *
+                   @ a
+                   @ c
+                   @ b
+                   @ d
+                   (w :: GHC.Base.Applicative f)
+                   (w1 :: a -> f c)
+                   (w2 :: b -> f d)
+                   (ww :: a)
+                   (ww1 :: b) ->
+                 GHC.Base.<*>
+                   @ f
+                   w
+                   @ d
+                   @ (c, d)
+                   (GHC.Base.fmap
+                      @ f
+                      (GHC.Base.$p1Applicative @ f w)
+                      @ c
+                      @ (d -> (c, d))
+                      (GHC.Tuple.(,) @ c @ d)
+                      (w1 ww))
+                   (w2 ww1)) -}
+6ddff71af3ee79c0e480484d77dbcf66
+  defS :: GHC.Base.Monad m => st -> val -> m (st, val)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLC(S)L),1*U(A,A,A,1*C1(U),A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ m :: * -> *
+                   @ st
+                   @ val
+                   ($dMonad :: GHC.Base.Monad m)
+                   (s :: st)
+                   (val1 :: val) ->
+                 GHC.Base.return @ m $dMonad @ (st, val) (s, val1)) -}
+c4a2cff14570441e56c02b0c94e7fe40
+  eitherM ::
+    GHC.Base.Applicative f =>
+    (a -> f c)
+    -> (b -> f d)
+    -> Data.Either.Either a b
+    -> f (Data.Either.Either c d)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S(C(C(S))L)LLLLL),1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A)><L,1*C1(U)><L,1*C1(U)><S,1*U>,
+     Unfolding: (\ @ f :: * -> *
+                   @ a
+                   @ c
+                   @ b
+                   @ d
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   (eta :: a -> f c)
+                   (eta1 :: b -> f d)
+                   (eta2 :: Data.Either.Either a b) ->
+                 case eta2 of wild {
+                   Data.Either.Left a1
+                   -> GHC.Base.fmap
+                        @ f
+                        (GHC.Base.$p1Applicative @ f $dApplicative)
+                        @ c
+                        @ (Data.Either.Either c d)
+                        (Data.Either.Left @ c @ d)
+                        (eta a1)
+                   Data.Either.Right b1
+                   -> GHC.Base.fmap
+                        @ f
+                        (GHC.Base.$p1Applicative @ f $dApplicative)
+                        @ d
+                        @ (Data.Either.Either c d)
+                        (Data.Either.Right @ c @ d)
+                        (eta1 b1) }) -}
+12c9043ca4643fd25017b678d6cdfb43
+  fstM :: GHC.Base.Functor f => (a -> f c) -> (a, b) -> f (c, b)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ f :: * -> *
+                   @ a
+                   @ c
+                   @ b
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (f1 :: a -> f c)
+                   (ds :: (a, b)) ->
+                 case ds of wild { (,) a1 b1 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ c
+                   @ (c, b)
+                   (\ (y :: c) -> (y, b1))
+                   (f1 a1) }) -}
+f1e2a58329a5e719d2f53bf29d8b0edb
+  maybeM ::
+    GHC.Base.Applicative f =>
+    (a -> f b) -> GHC.Base.Maybe a -> f (GHC.Base.Maybe b)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(1*C1(C1(U)),A),1*C1(U),A,A,A,A)><L,1*C1(U)><S,1*U>,
+     Unfolding: (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   ($dApplicative :: GHC.Base.Applicative f)
+                   (eta :: a -> f b)
+                   (eta1 :: GHC.Base.Maybe a) ->
+                 case eta1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.Base.pure
+                        @ f
+                        $dApplicative
+                        @ (GHC.Base.Maybe b)
+                        (GHC.Base.Nothing @ b)
+                   GHC.Base.Just a1
+                   -> GHC.Base.fmap
+                        @ f
+                        (GHC.Base.$p1Applicative @ f $dApplicative)
+                        @ b
+                        @ (GHC.Base.Maybe b)
+                        (GHC.Base.Just @ b)
+                        (eta a1) }) -}
+0143056ce5ba7a658c917e8603d3f246
+  pairM ::
+    GHC.Base.Applicative f =>
+    (a -> f c) -> (b -> f d) -> (a, b) -> f (c, d)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LLL),U(U(C(C1(U)),A),A,C(C1(U)),A,A,A)><L,1*C1(U)><L,1*C1(U)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ f :: * -> *
+                   @ a
+                   @ c
+                   @ b
+                   @ d
+                   (w :: GHC.Base.Applicative f)
+                   (w1 :: a -> f c)
+                   (w2 :: b -> f d)
+                   (w3 :: (a, b)) ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 Language.PureScript.Traversals.$wpairM
+                   @ f
+                   @ a
+                   @ c
+                   @ b
+                   @ d
+                   w
+                   w1
+                   w2
+                   ww1
+                   ww2 }) -}
+f92d028593bfff03fd7f7a06605574ae
+  sndM :: GHC.Base.Functor f => (b -> f c) -> (a, b) -> f (a, c)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ f :: * -> *
+                   @ b
+                   @ c
+                   @ a
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (f1 :: b -> f c)
+                   (ds :: (a, b)) ->
+                 case ds of wild { (,) a1 b1 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ c
+                   @ (a, c)
+                   (GHC.Tuple.(,) @ a @ c a1)
+                   (f1 b1) }) -}
+3976a24e9a12074f53555714d49531a3
+  thirdM ::
+    GHC.Base.Functor f => (c -> f d) -> (a, b, c) -> f (a, b, d)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ f :: * -> *
+                   @ c
+                   @ d
+                   @ a
+                   @ b
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (f1 :: c -> f d)
+                   (ds :: (a, b, c)) ->
+                 case ds of wild { (,,) a1 b1 c1 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ d
+                   @ (a, b, d)
+                   (GHC.Tuple.(,,) @ a @ b @ d a1 b1)
+                   (f1 c1) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

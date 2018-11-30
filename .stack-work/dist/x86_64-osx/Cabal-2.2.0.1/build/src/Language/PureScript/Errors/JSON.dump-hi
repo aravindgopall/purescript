@@ -1,0 +1,3638 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:06.960011 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Errors.JSON 8043
+  interface hash: 822c7e002604c5ef02c53a75eeeeb98e
+  ABI hash: 4e9b93194a2c68c4b730a06cb8e4e206
+  export-list hash: e5af02e2b945f5768c6030f3334aadfd
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b6396bf39d506c0ee54b9e4d06e52dcd
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Language.PureScript.Errors.JSON.toJSONError
+  Language.PureScript.Errors.JSON.toJSONErrors
+  Language.PureScript.Errors.JSON.ErrorPosition{Language.PureScript.Errors.JSON.ErrorPosition endColumn endLine startColumn startLine}
+  Language.PureScript.Errors.JSON.ErrorSuggestion{Language.PureScript.Errors.JSON.ErrorSuggestion replaceRange replacement}
+  Language.PureScript.Errors.JSON.JSONError{Language.PureScript.Errors.JSON.JSONError allSpans errorCode errorLink filename message moduleName position suggestion}
+  Language.PureScript.Errors.JSON.JSONResult{Language.PureScript.Errors.JSON.JSONResult errors warnings}
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Linter Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      directory-1.3.1.5 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      lifted-base-0.2.3.12 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 monad-control-1.0.2.3 mtl-2.2.2
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
+                      stm-2.4.5.0 syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.3.1.1:Data.Aeson.TH 7d552baba5d6d064e5d0fb814e331004
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.FromJSON 1ea0c919856f0d29f12e53cd074d532c
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.Internal df76c21edff000f9355bfb6fb0dbf3e6
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.ToJSON 587c7d8b9444e85253d7faf5f824f568
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List.NonEmpty 595ee3baddcadebc4831ea7541427984
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  ErrorMessage cebd18718f7c34278cac50a2f0ab0386
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+  sourcePosColumn 73c071552214b3f18e94970349d3affc
+  sourcePosLine 73c071552214b3f18e94970349d3affc
+  spanEnd 73c071552214b3f18e94970349d3affc
+  spanName 73c071552214b3f18e94970349d3affc
+  spanStart 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  ErrorSuggestion 930fe8f05d64df8a09d4af8a39c65d73
+  Level f5ce61e445e04407a253c0b2bb946756
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+  PPEOptions 2539f342abd3a883d6a86c7c48c8eef4
+  errorCode a47697ea73840f79dfd4b159fcce442f
+  errorDocUri 6dc5cb6c94fb6f3044a79bdcc368646f
+  errorModule f528729d1b4e30fbb471d7516f5074f1
+  errorSpan b2ead8c48a7e47b9c0e1477646912b50
+  errorSuggestion 864aad0ca3bb13080a6e3768c201c438
+  prettyPrintSingleError 9c0d4ab80938df67a11af43623eb4cf3
+  renderBox 7f6f93d9d728e36de4ca6de52c6c6350
+  runMultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+  stripModuleAndSpan 7711562f5c8c412a4f7f391f8fb5f855
+  suggestionSpan b1b4aefd9e2d17e5b532b12508a6d20b
+  unwrapErrorMessage 9e4106662e6ce3debb3a91374fcbef46
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  runModuleName e07c63fa3ece350e6976663ef993edbb
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+77f52731327b534ae19fd51ef3c48e4c
+  $fEqErrorPosition ::
+    GHC.Classes.Eq Language.PureScript.Errors.JSON.ErrorPosition
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorPosition
+                  Language.PureScript.Errors.JSON.$fEqErrorPosition_$c==
+                  Language.PureScript.Errors.JSON.$fEqErrorPosition_$c/= -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fEqErrorPosition_$c/= ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (y :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case Language.PureScript.Errors.JSON.$fEqErrorPosition_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fEqErrorPosition_$c== ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (w1 :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorPosition ww1 ww2 ww3 ww4 ->
+                 case ww1 of ww5 { GHC.Types.I# ww6 ->
+                 case w1 of ww7 { Language.PureScript.Errors.JSON.ErrorPosition ww8 ww9 ww10 ww11 ->
+                 case ww8 of ww12 { GHC.Types.I# ww13 ->
+                 Language.PureScript.Errors.JSON.$w$c==
+                   ww6
+                   ww2
+                   ww3
+                   ww4
+                   ww13
+                   ww9
+                   ww10
+                   ww11 } } } }) -}
+a16ea294c880346e7898f448f24e974e
+  $fEqErrorSuggestion ::
+    GHC.Classes.Eq Language.PureScript.Errors.JSON.ErrorSuggestion
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                  Language.PureScript.Errors.JSON.$fEqErrorSuggestion_$c==
+                  Language.PureScript.Errors.JSON.$fEqErrorSuggestion_$c/= -}
+a16ea294c880346e7898f448f24e974e
+  $fEqErrorSuggestion_$c/= ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)L),1*U(1*U(U,U,U),1*U)><S(S(LLS)L),1*U(1*U(U,U,U),1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Errors.JSON.ErrorSuggestion)
+                   (y :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case Language.PureScript.Errors.JSON.$fEqErrorSuggestion_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a16ea294c880346e7898f448f24e974e
+  $fEqErrorSuggestion_$c== ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SSS)L),1*U(1*U(U,U,U),1*U)><S(S(SSS)L),1*U(1*U(U,U,U),1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorSuggestion)
+                   (w1 :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorSuggestion ww1 ww2 ->
+                 case ww1 of ww3 { Data.Text.Internal.Text ww4 ww5 ww6 ->
+                 case w1 of ww7 { Language.PureScript.Errors.JSON.ErrorSuggestion ww8 ww9 ->
+                 case ww8 of ww10 { Data.Text.Internal.Text ww11 ww12 ww13 ->
+                 Language.PureScript.Errors.JSON.$w$c==1
+                   ww4
+                   ww5
+                   ww6
+                   ww2
+                   ww11
+                   ww12
+                   ww13
+                   ww9 } } } }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fEqJSONError ::
+    GHC.Classes.Eq Language.PureScript.Errors.JSON.JSONError
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONError
+                  Language.PureScript.Errors.JSON.$fEqJSONError_$c==
+                  Language.PureScript.Errors.JSON.$fEqJSONError_$c/= -}
+ad1f587e3efc4043e303d59af27d718f
+  $fEqJSONError_$c/= ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> Language.PureScript.Errors.JSON.JSONError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(1*U,1*U,1*U(U,U,U),1*U(U,U,U),1*U,1*U,1*U,1*U)><S(SLLLLLLL),1*U(1*U,1*U,1*U(U,U,U),1*U(U,U,U),1*U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Errors.JSON.JSONError)
+                   (y :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case Language.PureScript.Errors.JSON.$fEqJSONError_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fEqJSONError_$c== ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> Language.PureScript.Errors.JSON.JSONError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(1*U,1*U,1*U(U,U,U),1*U(U,U,U),1*U,1*U,1*U,1*U)><S(SLLLLLLL),1*U(1*U,1*U,1*U(U,U,U),1*U(U,U,U),1*U,1*U,1*U,1*U)> -}
+ed088f7687ca21e4756045fcd491894c
+  $fEqJSONResult ::
+    GHC.Classes.Eq Language.PureScript.Errors.JSON.JSONResult
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONResult
+                  Language.PureScript.Errors.JSON.$fEqJSONResult_$c==
+                  Language.PureScript.Errors.JSON.$fEqJSONResult_$c/= -}
+ed088f7687ca21e4756045fcd491894c
+  $fEqJSONResult_$c/= ::
+    Language.PureScript.Errors.JSON.JSONResult
+    -> Language.PureScript.Errors.JSON.JSONResult -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Errors.JSON.JSONResult)
+                   (y :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 case Language.PureScript.Errors.JSON.$fEqJSONResult_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fEqJSONResult_$c== ::
+    Language.PureScript.Errors.JSON.JSONResult
+    -> Language.PureScript.Errors.JSON.JSONResult -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.JSONResult)
+                   (w1 :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONResult ww1 ww2 ->
+                 case w1 of ww3 { Language.PureScript.Errors.JSON.JSONResult ww4 ww5 ->
+                 Language.PureScript.Errors.JSON.$w$c==2 ww1 ww2 ww4 ww5 } }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fFromJSONErrorPosition ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      Language.PureScript.Errors.JSON.ErrorPosition
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorPosition
+                  Language.PureScript.Errors.JSON.$fFromJSONErrorPosition_$cparseJSON
+                  Language.PureScript.Errors.JSON.$fFromJSONErrorPosition_$cparseJSONList -}
+ff7eefca9fc133a081c5a8525845d13d
+  $fFromJSONErrorPosition1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (", encountered "#) -}
+77e9d46a5ecfcfd6016ca70cef74149c
+  $fFromJSONErrorPosition10 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition11) -}
+38217e5ea7bd2927f7aeaeba766b0479
+  $fFromJSONErrorPosition11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("startLine"#) -}
+0b09dbc164f252225266ec0852fa51de
+  $fFromJSONErrorPosition12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition13) -}
+5042276db697de6c3d4212822caaf1ad
+  $fFromJSONErrorPosition13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Object"#) -}
+faa1e5a875e064d703b5a29f7e0ece45
+  $fFromJSONErrorPosition14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition15) -}
+647957d4286cc3cc490bae3f9fa5cb01
+  $fFromJSONErrorPosition15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Errors.JSON.ErrorPosition"#) -}
+2238de733bd5ac50f9b6101e176db6a8
+  $fFromJSONErrorPosition16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition17) -}
+a31a7aabb88893a3c659a459e45341cd
+  $fFromJSONErrorPosition17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ErrorPosition"#) -}
+5b42383d8fbd57ba3ce57aa67ffe82df
+  $fFromJSONErrorPosition2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("[a]"#) -}
+89c19752430619c6e6ccfbb7b4d71e63
+  $fFromJSONErrorPosition3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("expected "#) -}
+93548ff3eeff2fd98c55e85756681b80
+  $fFromJSONErrorPosition4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition5) -}
+a50f69d3ef3bf3d2913c8b518ba5a560
+  $fFromJSONErrorPosition5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("endColumn"#) -}
+0d5eb60fb3c8b67561fb1a88294c7d5e
+  $fFromJSONErrorPosition6 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition7) -}
+0153e8ba23ee82fbee349d0547eab345
+  $fFromJSONErrorPosition7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("endLine"#) -}
+dfc1e403569d4e212a082444371a36e3
+  $fFromJSONErrorPosition8 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition9) -}
+6cdea6ca0686c5271c0ba63cf93af60d
+  $fFromJSONErrorPosition9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("startColumn"#) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fFromJSONErrorPosition_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (value :: Data.Aeson.Types.Internal.Value) ->
+                 case value of wild {
+                   DEFAULT
+                   -> Data.Aeson.TH.parseTypeMismatch'
+                        @ Language.PureScript.Errors.JSON.ErrorPosition
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorPosition16
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorPosition14
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorPosition12
+                        (case wild of wild1 {
+                           Data.Aeson.Types.Internal.Array ds9 -> Data.Aeson.TH.valueConName9
+                           Data.Aeson.Types.Internal.String ds9 -> Data.Aeson.TH.valueConName7
+                           Data.Aeson.Types.Internal.Number ds9 -> Data.Aeson.TH.valueConName5
+                           Data.Aeson.Types.Internal.Bool ds9 -> Data.Aeson.TH.valueConName3
+                           Data.Aeson.Types.Internal.Null -> Data.Aeson.TH.valueConName1 })
+                   Data.Aeson.Types.Internal.Object recObj
+                   -> let {
+                        m :: Data.Aeson.Types.Internal.Parser GHC.Types.Int
+                        = case Language.PureScript.Errors.JSON.$fFromJSONErrorPosition10 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ GHC.Types.Int
+                            Data.Aeson.Types.FromJSON.$fFromJSON1IntMap_$cparseJSON
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition14
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition16
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      let {
+                        e :: Data.Aeson.Types.Internal.Parser GHC.Types.Int
+                        = case Language.PureScript.Errors.JSON.$fFromJSONErrorPosition8 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ GHC.Types.Int
+                            Data.Aeson.Types.FromJSON.$fFromJSON1IntMap_$cparseJSON
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition14
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition16
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      let {
+                        e1 :: Data.Aeson.Types.Internal.Parser GHC.Types.Int
+                        = case Language.PureScript.Errors.JSON.$fFromJSONErrorPosition6 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ GHC.Types.Int
+                            Data.Aeson.Types.FromJSON.$fFromJSON1IntMap_$cparseJSON
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition14
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition16
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      let {
+                        e2 :: Data.Aeson.Types.Internal.Parser GHC.Types.Int
+                        = case Language.PureScript.Errors.JSON.$fFromJSONErrorPosition4 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ GHC.Types.Int
+                            Data.Aeson.Types.FromJSON.$fFromJSON1IntMap_$cparseJSON
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition14
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition16
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (ks :: Data.Aeson.Types.Internal.Success
+                                  Language.PureScript.Errors.JSON.ErrorPosition f4 r) ->
+                       m `cast` (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Types.Int>_R)
+                         @ f4
+                         @ r
+                         path
+                         kf
+                         (\ (a2 :: GHC.Types.Int) ->
+                          e `cast` (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Types.Int>_R)
+                            @ f4
+                            @ r
+                            path
+                            kf
+                            (\ (a3 :: GHC.Types.Int) ->
+                             e1 `cast` (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Types.Int>_R)
+                               @ f4
+                               @ r
+                               path
+                               kf
+                               (\ (a4 :: GHC.Types.Int) ->
+                                e2 `cast` (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Types.Int>_R)
+                                  @ f4
+                                  @ r
+                                  path
+                                  kf
+                                  (\ (a5 :: GHC.Types.Int) ->
+                                   ks
+                                     (Language.PureScript.Errors.JSON.ErrorPosition
+                                        a2
+                                        a3
+                                        a4
+                                        a5))))))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <Language.PureScript.Errors.JSON.ErrorPosition>_R)) }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fFromJSONErrorPosition_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.ErrorPosition]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> let {
+                        msg19 :: GHC.Base.String
+                        = GHC.CString.unpackAppendCString#
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition3
+                            (GHC.CString.unpackAppendCString#
+                               Language.PureScript.Errors.JSON.$fFromJSONErrorPosition2
+                               (GHC.CString.unpackAppendCString#
+                                  Language.PureScript.Errors.JSON.$fFromJSONErrorPosition1
+                                  (case wild of wild1 {
+                                     Data.Aeson.Types.Internal.Object ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                     Data.Aeson.Types.Internal.String ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList8
+                                     Data.Aeson.Types.Internal.Number ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                     Data.Aeson.Types.Internal.Bool ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (_ks :: Data.Aeson.Types.Internal.Success
+                                   [Language.PureScript.Errors.JSON.ErrorPosition] f4 r) ->
+                       kf
+                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                         msg19)
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Language.PureScript.Errors.JSON.ErrorPosition]>_R))
+                   Data.Aeson.Types.Internal.Array a2
+                   -> case a2 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      letrec {
+                        $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) ->
+                          case GHC.Prim.>=# ww dt1 of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.indexArray#
+                                      @ Data.Aeson.Types.Internal.Value
+                                      dt2
+                                      (GHC.Prim.+# dt ww) of ds3 { Unit# ipv8 ->
+                               GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ipv8
+                                 ($wgo (GHC.Prim.+# ww 1#)) }
+                            1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                      } in
+                      Language.PureScript.Errors.JSON.$fFromJSONErrorPosition_go
+                        0#
+                        ($wgo 0#) } }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fFromJSONErrorPosition_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.ErrorPosition]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+a16ea294c880346e7898f448f24e974e
+  $fFromJSONErrorSuggestion ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      Language.PureScript.Errors.JSON.ErrorSuggestion
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                  Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion_$cparseJSON
+                  Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion_$cparseJSONList -}
+4e2d908ebf773e7d22c20a2d0524e686
+  $fFromJSONErrorSuggestion1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("replaceRange"#) -}
+dec9327ce52f9829128daa8608a7fa91
+  $fFromJSONErrorSuggestion2 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> Data.Aeson.Types.Internal.Failure f4 r
+    -> Data.Aeson.Types.Internal.Success
+         (GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition) f4 r
+    -> f4 r
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ f4 :: * -> *
+                   @ r
+                   (_path :: Data.Aeson.Types.Internal.JSONPath)
+                   (_kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                   (ks :: Data.Aeson.Types.Internal.Success
+                            (GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition)
+                            f4
+                            r) ->
+                 ks
+                   (GHC.Base.Nothing
+                      @ Language.PureScript.Errors.JSON.ErrorPosition)) -}
+9dd8dbd7158b56895ad4a109eb920ce8
+  $fFromJSONErrorSuggestion3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion4) -}
+a7f5abcdebf326a48605dd375de6a97b
+  $fFromJSONErrorSuggestion4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("replacement"#) -}
+d9ad1161c08e00e766b06d6a8748320f
+  $fFromJSONErrorSuggestion5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion6) -}
+19634e7a2a3d77a6b3a28cc5a3204312
+  $fFromJSONErrorSuggestion6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Errors.JSON.ErrorSuggestion"#) -}
+7d079bd6b5cb456b3d035fd9799be0f6
+  $fFromJSONErrorSuggestion7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion8) -}
+b134439c26c49ee4ab65c0edc4c30b2c
+  $fFromJSONErrorSuggestion8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ErrorSuggestion"#) -}
+a16ea294c880346e7898f448f24e974e
+  $fFromJSONErrorSuggestion_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.Errors.JSON.ErrorSuggestion
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (value :: Data.Aeson.Types.Internal.Value) ->
+                 case value of wild {
+                   DEFAULT
+                   -> Data.Aeson.TH.parseTypeMismatch'
+                        @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion7
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion5
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorPosition12
+                        (case wild of wild1 {
+                           Data.Aeson.Types.Internal.Array ds9 -> Data.Aeson.TH.valueConName9
+                           Data.Aeson.Types.Internal.String ds9 -> Data.Aeson.TH.valueConName7
+                           Data.Aeson.Types.Internal.Number ds9 -> Data.Aeson.TH.valueConName5
+                           Data.Aeson.Types.Internal.Bool ds9 -> Data.Aeson.TH.valueConName3
+                           Data.Aeson.Types.Internal.Null -> Data.Aeson.TH.valueConName1 })
+                   Data.Aeson.Types.Internal.Object recObj
+                   -> let {
+                        m :: Data.Aeson.Types.Internal.Parser Data.Text.Internal.Text
+                        = case Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion3 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ Data.Text.Internal.Text
+                            Data.Aeson.Types.FromJSON.$fFromJSONText0_$cparseJSON
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion5
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion7
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      let {
+                        e :: Data.Aeson.Types.Internal.Parser
+                               (GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition)
+                        = case Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion_key2 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          case Data.Aeson.Types.FromJSON.$w$slookup
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ww1
+                                 ww2
+                                 ww3
+                                 recObj of wild1 {
+                            GHC.Base.Nothing
+                            -> Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion2
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                         <GHC.Base.Maybe
+                                            Language.PureScript.Errors.JSON.ErrorPosition>_R))
+                            GHC.Base.Just v
+                            -> let {
+                                 p :: Data.Aeson.Types.Internal.Parser
+                                        (GHC.Base.Maybe
+                                           Language.PureScript.Errors.JSON.ErrorPosition)
+                                 = case v of wild2 {
+                                     DEFAULT
+                                     -> let {
+                                          m1 :: Data.Aeson.Types.Internal.Parser
+                                                  Language.PureScript.Errors.JSON.ErrorPosition
+                                          = Language.PureScript.Errors.JSON.$fFromJSONErrorPosition_$cparseJSON
+                                              wild2
+                                        } in
+                                        (\ @ f5 :: * -> *
+                                           @ r
+                                           (path :: Data.Aeson.Types.Internal.JSONPath)
+                                           (kf :: Data.Aeson.Types.Internal.Failure f5 r)[OneShot]
+                                           (ks :: Data.Aeson.Types.Internal.Success
+                                                    (GHC.Base.Maybe
+                                                       Language.PureScript.Errors.JSON.ErrorPosition)
+                                                    f5
+                                                    r)[OneShot] ->
+                                         m1
+                                           `cast`
+                                         (Data.Aeson.Types.Internal.N:Parser[0]
+                                              <Language.PureScript.Errors.JSON.ErrorPosition>_R)
+                                           @ f5
+                                           @ r
+                                           path
+                                           kf
+                                           (\ (a2 :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                                            ks
+                                              (GHC.Base.Just
+                                                 @ Language.PureScript.Errors.JSON.ErrorPosition
+                                                 a2)))
+                                          `cast`
+                                        (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                  <GHC.Base.Maybe
+                                                     Language.PureScript.Errors.JSON.ErrorPosition>_R))
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion2
+                                          `cast`
+                                        (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                  <GHC.Base.Maybe
+                                                     Language.PureScript.Errors.JSON.ErrorPosition>_R)) }
+                               } in
+                               (\ @ f4 :: * -> *
+                                  @ r
+                                  (path :: Data.Aeson.Types.Internal.JSONPath)
+                                  (kf :: Data.Aeson.Types.Internal.Failure f4 r)[OneShot]
+                                  (ks :: Data.Aeson.Types.Internal.Success
+                                           (GHC.Base.Maybe
+                                              Language.PureScript.Errors.JSON.ErrorPosition)
+                                           f4
+                                           r)[OneShot] ->
+                                p `cast`
+                                (Data.Aeson.Types.Internal.N:Parser[0]
+                                     <GHC.Base.Maybe
+                                        Language.PureScript.Errors.JSON.ErrorPosition>_R)
+                                  @ f4
+                                  @ r
+                                  (GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.JSONPathElement
+                                     Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion_pathElem16
+                                     path)
+                                  kf
+                                  ks)
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                         <GHC.Base.Maybe
+                                            Language.PureScript.Errors.JSON.ErrorPosition>_R)) } }
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (ks :: Data.Aeson.Types.Internal.Success
+                                  Language.PureScript.Errors.JSON.ErrorSuggestion f4 r) ->
+                       m `cast`
+                       (Data.Aeson.Types.Internal.N:Parser[0] <Data.Text.Internal.Text>_R)
+                         @ f4
+                         @ r
+                         path
+                         kf
+                         (\ (a2 :: Data.Text.Internal.Text) ->
+                          e `cast`
+                          (Data.Aeson.Types.Internal.N:Parser[0]
+                               <GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition>_R)
+                            @ f4
+                            @ r
+                            path
+                            kf
+                            (\ (a3 :: GHC.Base.Maybe
+                                        Language.PureScript.Errors.JSON.ErrorPosition) ->
+                             ks (Language.PureScript.Errors.JSON.ErrorSuggestion a2 a3))))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <Language.PureScript.Errors.JSON.ErrorSuggestion>_R)) }) -}
+a16ea294c880346e7898f448f24e974e
+  $fFromJSONErrorSuggestion_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.ErrorSuggestion]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> let {
+                        msg19 :: GHC.Base.String
+                        = GHC.CString.unpackAppendCString#
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition3
+                            (GHC.CString.unpackAppendCString#
+                               Language.PureScript.Errors.JSON.$fFromJSONErrorPosition2
+                               (GHC.CString.unpackAppendCString#
+                                  Language.PureScript.Errors.JSON.$fFromJSONErrorPosition1
+                                  (case wild of wild1 {
+                                     Data.Aeson.Types.Internal.Object ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                     Data.Aeson.Types.Internal.String ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList8
+                                     Data.Aeson.Types.Internal.Number ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                     Data.Aeson.Types.Internal.Bool ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (_ks :: Data.Aeson.Types.Internal.Success
+                                   [Language.PureScript.Errors.JSON.ErrorSuggestion] f4 r) ->
+                       kf
+                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                         msg19)
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Language.PureScript.Errors.JSON.ErrorSuggestion]>_R))
+                   Data.Aeson.Types.Internal.Array a2
+                   -> case a2 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      letrec {
+                        $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) ->
+                          case GHC.Prim.>=# ww dt1 of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.indexArray#
+                                      @ Data.Aeson.Types.Internal.Value
+                                      dt2
+                                      (GHC.Prim.+# dt ww) of ds3 { Unit# ipv8 ->
+                               GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ipv8
+                                 ($wgo (GHC.Prim.+# ww 1#)) }
+                            1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                      } in
+                      Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion_go
+                        0#
+                        ($wgo 0#) } }) -}
+a16ea294c880346e7898f448f24e974e
+  $fFromJSONErrorSuggestion_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.ErrorSuggestion]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+15d9795388320081c6b73ec4149a6208
+  $fFromJSONErrorSuggestion_key2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion1) -}
+ff25fee6b0a7af295481b166eb56f18d
+  $fFromJSONErrorSuggestion_pathElem16 ::
+    Data.Aeson.Types.Internal.JSONPathElement
+  {- Strictness: m1,
+     Unfolding: (Data.Aeson.Types.Internal.Key
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion_key2) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fFromJSONJSONError ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      Language.PureScript.Errors.JSON.JSONError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONError
+                  Language.PureScript.Errors.JSON.$fFromJSONJSONError_$cparseJSON
+                  Language.PureScript.Errors.JSON.$fFromJSONJSONError_$cparseJSONList -}
+ad1f587e3efc4043e303d59af27d718f
+  $fFromJSONJSONError_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, Strictness: <S,1*U> -}
+ad1f587e3efc4043e303d59af27d718f
+  $fFromJSONJSONError_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.JSONError]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> let {
+                        msg19 :: GHC.Base.String
+                        = GHC.CString.unpackAppendCString#
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition3
+                            (GHC.CString.unpackAppendCString#
+                               Language.PureScript.Errors.JSON.$fFromJSONErrorPosition2
+                               (GHC.CString.unpackAppendCString#
+                                  Language.PureScript.Errors.JSON.$fFromJSONErrorPosition1
+                                  (case wild of wild1 {
+                                     Data.Aeson.Types.Internal.Object ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                     Data.Aeson.Types.Internal.String ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList8
+                                     Data.Aeson.Types.Internal.Number ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                     Data.Aeson.Types.Internal.Bool ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (_ks :: Data.Aeson.Types.Internal.Success
+                                   [Language.PureScript.Errors.JSON.JSONError] f4 r) ->
+                       kf
+                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                         msg19)
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Language.PureScript.Errors.JSON.JSONError]>_R))
+                   Data.Aeson.Types.Internal.Array a2
+                   -> case a2 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      letrec {
+                        $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) ->
+                          case GHC.Prim.>=# ww dt1 of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.indexArray#
+                                      @ Data.Aeson.Types.Internal.Value
+                                      dt2
+                                      (GHC.Prim.+# dt ww) of ds3 { Unit# ipv8 ->
+                               GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ipv8
+                                 ($wgo (GHC.Prim.+# ww 1#)) }
+                            1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                      } in
+                      Language.PureScript.Errors.JSON.$fFromJSONJSONError_go
+                        0#
+                        ($wgo 0#) } }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fFromJSONJSONError_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.JSONError]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+ed088f7687ca21e4756045fcd491894c
+  $fFromJSONJSONResult ::
+    Data.Aeson.Types.FromJSON.FromJSON
+      Language.PureScript.Errors.JSON.JSONResult
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONResult
+                  Language.PureScript.Errors.JSON.$fFromJSONJSONResult_$cparseJSON
+                  Language.PureScript.Errors.JSON.$fFromJSONJSONResult_$cparseJSONList -}
+0395166361feaca4cdb5505954859a70
+  $fFromJSONJSONResult1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONJSONResult2) -}
+a35d8f9365f1a9a895fea3014dbb75a5
+  $fFromJSONJSONResult2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("errors"#) -}
+71a4d777994cdde8a06ca067f6de1ddf
+  $fFromJSONJSONResult3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONJSONResult4) -}
+a28949dd62e8d6419f78f85bcce21fb1
+  $fFromJSONJSONResult4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("warnings"#) -}
+48e7307225f8ba8e37e3f8ca722e1bf2
+  $fFromJSONJSONResult5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONJSONResult6) -}
+0afe637d74b0b9d1fa75a478b621440d
+  $fFromJSONJSONResult6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Errors.JSON.JSONResult"#) -}
+d0c7383f905f6d58badbbf73305cf697
+  $fFromJSONJSONResult7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONJSONResult8) -}
+16f6e5cea11d372025678f2161e639aa
+  $fFromJSONJSONResult8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JSONResult"#) -}
+ed088f7687ca21e4756045fcd491894c
+  $fFromJSONJSONResult_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         Language.PureScript.Errors.JSON.JSONResult
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (value :: Data.Aeson.Types.Internal.Value) ->
+                 case value of wild {
+                   DEFAULT
+                   -> Data.Aeson.TH.parseTypeMismatch'
+                        @ Language.PureScript.Errors.JSON.JSONResult
+                        Language.PureScript.Errors.JSON.$fFromJSONJSONResult7
+                        Language.PureScript.Errors.JSON.$fFromJSONJSONResult5
+                        Language.PureScript.Errors.JSON.$fFromJSONErrorPosition12
+                        (case wild of wild1 {
+                           Data.Aeson.Types.Internal.Array ds9 -> Data.Aeson.TH.valueConName9
+                           Data.Aeson.Types.Internal.String ds9 -> Data.Aeson.TH.valueConName7
+                           Data.Aeson.Types.Internal.Number ds9 -> Data.Aeson.TH.valueConName5
+                           Data.Aeson.Types.Internal.Bool ds9 -> Data.Aeson.TH.valueConName3
+                           Data.Aeson.Types.Internal.Null -> Data.Aeson.TH.valueConName1 })
+                   Data.Aeson.Types.Internal.Object recObj
+                   -> let {
+                        m :: Data.Aeson.Types.Internal.Parser
+                               [Language.PureScript.Errors.JSON.JSONError]
+                        = case Language.PureScript.Errors.JSON.$fFromJSONJSONResult3 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ [Language.PureScript.Errors.JSON.JSONError]
+                            Language.PureScript.Errors.JSON.$fFromJSONJSONError_$cparseJSONList
+                            Language.PureScript.Errors.JSON.$fFromJSONJSONResult5
+                            Language.PureScript.Errors.JSON.$fFromJSONJSONResult7
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      let {
+                        e :: Data.Aeson.Types.Internal.Parser
+                               [Language.PureScript.Errors.JSON.JSONError]
+                        = case Language.PureScript.Errors.JSON.$fFromJSONJSONResult1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          Data.Aeson.TH.$w$clookupField1
+                            @ [Language.PureScript.Errors.JSON.JSONError]
+                            Language.PureScript.Errors.JSON.$fFromJSONJSONError_$cparseJSONList
+                            Language.PureScript.Errors.JSON.$fFromJSONJSONResult5
+                            Language.PureScript.Errors.JSON.$fFromJSONJSONResult7
+                            recObj
+                            ww1
+                            ww2
+                            ww3 }
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (ks :: Data.Aeson.Types.Internal.Success
+                                  Language.PureScript.Errors.JSON.JSONResult f4 r) ->
+                       m `cast`
+                       (Data.Aeson.Types.Internal.N:Parser[0]
+                            <[Language.PureScript.Errors.JSON.JSONError]>_R)
+                         @ f4
+                         @ r
+                         path
+                         kf
+                         (\ (a2 :: [Language.PureScript.Errors.JSON.JSONError]) ->
+                          e `cast`
+                          (Data.Aeson.Types.Internal.N:Parser[0]
+                               <[Language.PureScript.Errors.JSON.JSONError]>_R)
+                            @ f4
+                            @ r
+                            path
+                            kf
+                            (\ (a3 :: [Language.PureScript.Errors.JSON.JSONError]) ->
+                             ks (Language.PureScript.Errors.JSON.JSONResult a2 a3))))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <Language.PureScript.Errors.JSON.JSONResult>_R)) }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fFromJSONJSONResult_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.JSONResult]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> let {
+                        msg19 :: GHC.Base.String
+                        = GHC.CString.unpackAppendCString#
+                            Language.PureScript.Errors.JSON.$fFromJSONErrorPosition3
+                            (GHC.CString.unpackAppendCString#
+                               Language.PureScript.Errors.JSON.$fFromJSONErrorPosition2
+                               (GHC.CString.unpackAppendCString#
+                                  Language.PureScript.Errors.JSON.$fFromJSONErrorPosition1
+                                  (case wild of wild1 {
+                                     Data.Aeson.Types.Internal.Object ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList10
+                                     Data.Aeson.Types.Internal.String ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList8
+                                     Data.Aeson.Types.Internal.Number ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList6
+                                     Data.Aeson.Types.Internal.Bool ds1
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList4
+                                     Data.Aeson.Types.Internal.Null
+                                     -> Data.Aeson.Types.FromJSON.$dmliftParseJSONList1 })))
+                      } in
+                      (\ @ f4 :: * -> *
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f4 r)
+                         (_ks :: Data.Aeson.Types.Internal.Success
+                                   [Language.PureScript.Errors.JSON.JSONResult] f4 r) ->
+                       kf
+                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                         msg19)
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Language.PureScript.Errors.JSON.JSONResult]>_R))
+                   Data.Aeson.Types.Internal.Array a2
+                   -> case a2 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      letrec {
+                        $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) ->
+                          case GHC.Prim.>=# ww dt1 of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.indexArray#
+                                      @ Data.Aeson.Types.Internal.Value
+                                      dt2
+                                      (GHC.Prim.+# dt ww) of ds3 { Unit# ipv8 ->
+                               GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ipv8
+                                 ($wgo (GHC.Prim.+# ww 1#)) }
+                            1# -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                      } in
+                      Language.PureScript.Errors.JSON.$fFromJSONJSONResult_go
+                        0#
+                        ($wgo 0#) } }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fFromJSONJSONResult_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> Data.Aeson.Types.Internal.Parser
+         [Language.PureScript.Errors.JSON.JSONResult]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition ::
+    GHC.Classes.Ord Language.PureScript.Errors.JSON.ErrorPosition
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorPosition
+                  Language.PureScript.Errors.JSON.$fEqErrorPosition
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$ccompare
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c<
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c<=
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c>
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c>=
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$cmax
+                  Language.PureScript.Errors.JSON.$fOrdErrorPosition_$cmin -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$c< ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (w1 :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorPosition ww1 ww2 ww3 ww4 ->
+                 case ww1 of ww5 { GHC.Types.I# ww6 ->
+                 case w1 of ww7 { Language.PureScript.Errors.JSON.ErrorPosition ww8 ww9 ww10 ww11 ->
+                 case ww8 of ww12 { GHC.Types.I# ww13 ->
+                 Language.PureScript.Errors.JSON.$w$c<
+                   ww6
+                   ww2
+                   ww3
+                   ww4
+                   ww13
+                   ww9
+                   ww10
+                   ww11 } } } }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$c<= ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a2 :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (b :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c<
+                        b
+                        a2 of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$c> ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a2 :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (b :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c< b a2) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$c>= ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a2 :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (b :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c<
+                        a2
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$ccompare ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))><S(S(S)LLL),1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (w1 :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorPosition ww1 ww2 ww3 ww4 ->
+                 case ww1 of ww5 { GHC.Types.I# ww6 ->
+                 case w1 of ww7 { Language.PureScript.Errors.JSON.ErrorPosition ww8 ww9 ww10 ww11 ->
+                 case ww8 of ww12 { GHC.Types.I# ww13 ->
+                 Language.PureScript.Errors.JSON.$w$ccompare
+                   ww6
+                   ww2
+                   ww3
+                   ww4
+                   ww13
+                   ww9
+                   ww10
+                   ww11 } } } }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$cmax ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(U(U),U(U),U(U),U(U))><S(S(S)LLL),1*U(U(U),U(U),U(U),U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (y :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c<
+                        y
+                        x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fOrdErrorPosition_$cmin ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition
+    -> Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LLL),1*U(U(U),U(U),U(U),U(U))><S(S(S)LLL),1*U(U(U),U(U),U(U),U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (y :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case Language.PureScript.Errors.JSON.$fOrdErrorPosition_$c<
+                        y
+                        x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fShowErrorPosition ::
+    GHC.Show.Show Language.PureScript.Errors.JSON.ErrorPosition
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorPosition
+                  Language.PureScript.Errors.JSON.$fShowErrorPosition_$cshowsPrec
+                  Language.PureScript.Errors.JSON.$fShowErrorPosition_$cshow
+                  Language.PureScript.Errors.JSON.$fShowErrorPosition_$cshowList -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fShowErrorPosition1 ::
+    Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
+     Unfolding: (\ (w :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorPosition ww1 ww2 ww3 ww4 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec
+                   0#
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   w1 }) -}
+c501f9f2126b667414ea14f52288ec5c
+  $fShowErrorPosition2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fShowErrorPosition3) -}
+0c66367db76e3c1054ecf4eb688f5062
+  $fShowErrorPosition3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ErrorPosition {"#) -}
+e9bc3df8a2b09de29741444a96ed28df
+  $fShowErrorPosition4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+e4eb541d6883caed7282e08c064cba09
+  $fShowErrorPosition5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("endColumn = "#) -}
+7ed9fa0b5acbff80daaa31394c7ae58f
+  $fShowErrorPosition6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("endLine = "#) -}
+0cf86ec0499031b3dddbade1b0eade7b
+  $fShowErrorPosition7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("startColumn = "#) -}
+950b4325f5855da9ab3ec7e29e673f8a
+  $fShowErrorPosition8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("startLine = "#) -}
+fb031ad73a9271a00a5e12ba87f576e9
+  $fShowErrorPosition9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fShowErrorPosition_$cshow ::
+    Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 Language.PureScript.Errors.JSON.$fShowErrorPosition_$cshowsPrec
+                   Language.PureScript.Errors.JSON.$fShowErrorPosition9
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fShowErrorPosition_$cshowList ::
+    [Language.PureScript.Errors.JSON.ErrorPosition] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Errors.JSON.ErrorPosition])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Errors.JSON.ErrorPosition
+                   Language.PureScript.Errors.JSON.$fShowErrorPosition1
+                   ls
+                   s) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fShowErrorPosition_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Errors.JSON.ErrorPosition ww3 ww4 ww5 ww6 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   w2 } }) -}
+a16ea294c880346e7898f448f24e974e
+  $fShowErrorSuggestion ::
+    GHC.Show.Show Language.PureScript.Errors.JSON.ErrorSuggestion
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                  Language.PureScript.Errors.JSON.$fShowErrorSuggestion_$cshowsPrec
+                  Language.PureScript.Errors.JSON.$fShowErrorSuggestion_$cshow
+                  Language.PureScript.Errors.JSON.$fShowErrorSuggestion_$cshowList -}
+a16ea294c880346e7898f448f24e974e
+  $fShowErrorSuggestion1 ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U(U(U,U,U),1*U)>,
+     Unfolding: (\ (w :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorSuggestion ww1 ww2 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec1 0# ww1 ww2 }) -}
+e797ab9799e7fb338161f29ca23db5d9
+  $fShowErrorSuggestion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("replaceRange = "#) -}
+279db415b42be0569b2b3f192c26dd87
+  $fShowErrorSuggestion3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("replacement = "#) -}
+36090b113c23dcfac53e0bd65c749ecf
+  $fShowErrorSuggestion4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ErrorSuggestion {"#) -}
+1bbe6dd98e2c64073dab97d955bf2b8d
+  $fShowErrorSuggestion5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fShowErrorPosition4) -}
+41e992e1412ebb880a7c3fd4fcde6e08
+  $fShowErrorSuggestion6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.$fShowMaybe4
+                   Language.PureScript.Errors.JSON.$fShowErrorSuggestion5) -}
+a16ea294c880346e7898f448f24e974e
+  $fShowErrorSuggestion_$cshow ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U,U,U),1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorSuggestion ww1 ww2 ->
+                 Language.PureScript.Errors.JSON.$w$cshow ww1 ww2 }) -}
+a16ea294c880346e7898f448f24e974e
+  $fShowErrorSuggestion_$cshowList ::
+    [Language.PureScript.Errors.JSON.ErrorSuggestion] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Errors.JSON.ErrorSuggestion])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                   Language.PureScript.Errors.JSON.$fShowErrorSuggestion1
+                   ls
+                   s) -}
+a16ea294c880346e7898f448f24e974e
+  $fShowErrorSuggestion_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U(U,U,U),1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Errors.JSON.ErrorSuggestion ww3 ww4 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec1 ww1 ww3 ww4 } }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fShowJSONError ::
+    GHC.Show.Show Language.PureScript.Errors.JSON.JSONError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONError
+                  Language.PureScript.Errors.JSON.$fShowJSONError_$cshowsPrec
+                  Language.PureScript.Errors.JSON.$fShowJSONError_$cshow
+                  Language.PureScript.Errors.JSON.$fShowJSONError_$cshowList -}
+ad1f587e3efc4043e303d59af27d718f
+  $fShowJSONError1 ::
+    Language.PureScript.Errors.JSON.JSONError -> GHC.Show.ShowS
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,U,U(U,U,U),U(U,U,U),1*U,1*U,1*U,U)>,
+     Unfolding: (\ (w :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONError ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec2
+                   0#
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fShowJSONError_$cshow ::
+    Language.PureScript.Errors.JSON.JSONError -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,U,U(U,U,U),U(U,U,U),1*U,1*U,1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Errors.JSON.JSONError) ->
+                 Language.PureScript.Errors.JSON.$fShowJSONError_$cshowsPrec
+                   Language.PureScript.Errors.JSON.$fShowErrorPosition9
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fShowJSONError_$cshowList ::
+    [Language.PureScript.Errors.JSON.JSONError] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Errors.JSON.JSONError])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Errors.JSON.JSONError
+                   Language.PureScript.Errors.JSON.$fShowJSONError1
+                   ls
+                   s) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fShowJSONError_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Errors.JSON.JSONError -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U,U,U(U,U,U),U(U,U,U),1*U,1*U,1*U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Errors.JSON.JSONError ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec2
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10 } }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fShowJSONResult ::
+    GHC.Show.Show Language.PureScript.Errors.JSON.JSONResult
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONResult
+                  Language.PureScript.Errors.JSON.$fShowJSONResult_$cshowsPrec
+                  Language.PureScript.Errors.JSON.$fShowJSONResult_$cshow
+                  Language.PureScript.Errors.JSON.$fShowJSONResult_$cshowList -}
+ed088f7687ca21e4756045fcd491894c
+  $fShowJSONResult1 ::
+    Language.PureScript.Errors.JSON.JSONResult -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U,1*U)><L,U>,
+     Unfolding: (\ (w :: Language.PureScript.Errors.JSON.JSONResult)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONResult ww1 ww2 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec3 0# ww1 ww2 w1 }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fShowJSONResult_$cshow ::
+    Language.PureScript.Errors.JSON.JSONResult -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 Language.PureScript.Errors.JSON.$fShowJSONResult_$cshowsPrec
+                   Language.PureScript.Errors.JSON.$fShowErrorPosition9
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ed088f7687ca21e4756045fcd491894c
+  $fShowJSONResult_$cshowList ::
+    [Language.PureScript.Errors.JSON.JSONResult] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Errors.JSON.JSONResult])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Errors.JSON.JSONResult
+                   Language.PureScript.Errors.JSON.$fShowJSONResult1
+                   ls
+                   s) -}
+ed088f7687ca21e4756045fcd491894c
+  $fShowJSONResult_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Errors.JSON.JSONResult -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Errors.JSON.JSONResult)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Errors.JSON.JSONResult ww3 ww4 ->
+                 Language.PureScript.Errors.JSON.$w$cshowsPrec3
+                   ww1
+                   ww3
+                   ww4
+                   w2 } }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fToJSONErrorPosition ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      Language.PureScript.Errors.JSON.ErrorPosition
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorPosition
+                  Language.PureScript.Errors.JSON.$fToJSONErrorPosition_$ctoJSON
+                  Language.PureScript.Errors.JSON.$fToJSONErrorPosition1
+                    `cast`
+                  (<Language.PureScript.Errors.JSON.ErrorPosition>_R
+                   ->_R Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                       <Data.Aeson.Types.Internal.Value>_P))
+                  Language.PureScript.Errors.JSON.$fToJSONErrorPosition_$ctoJSONList
+                  Language.PureScript.Errors.JSON.$fToJSONErrorPosition_$ctoEncodingList -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fToJSONErrorPosition1 ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> forall r.
+       Data.ByteString.Builder.Internal.BuildStep r
+       -> Data.ByteString.Builder.Internal.BuildStep r
+  {- Arity: 2,
+     Strictness: <S,1*U(U(U),U(U),U(U),U(U))><L,C(C1(U(U,U)))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorPosition)
+                   @ r
+                   (w1 :: Data.ByteString.Builder.Internal.BuildStep r) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorPosition ww1 ww2 ww3 ww4 ->
+                 Language.PureScript.Errors.JSON.$w$ctoEncoding
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   @ r
+                   w1 }) -}
+d84d61eaa0c4945e6458ffae65b2f992
+  $fToJSONErrorPosition10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition9) -}
+292f9a82bf464161b32872e28959f945
+  $fToJSONErrorPosition11 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONErrorPosition12 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+c99760922d83956a3c19637fe3c98043
+  $fToJSONErrorPosition12 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   Language.PureScript.Errors.JSON.$fToJSONErrorPosition13
+                   0#
+                   ipv8 }) -}
+fa14151a5ddad92af0befca648c6b8c3
+  $fToJSONErrorPosition13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition11) -}
+5f3f9ddd3b0b30a62c611579b8150c12
+  $fToJSONErrorPosition2 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONErrorPosition3 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+e9a3cfb416e075c4a2f975a03d4ef832
+  $fToJSONErrorPosition3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   Language.PureScript.Errors.JSON.$fToJSONErrorPosition4
+                   0#
+                   ipv8 }) -}
+d049871f6deff83098b2887d14c68e11
+  $fToJSONErrorPosition4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition5) -}
+d0cf890fdd587cd20393a866f91f2e86
+  $fToJSONErrorPosition5 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONErrorPosition6 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+cf7e254f8f01bbdea381a184b9b96fd5
+  $fToJSONErrorPosition6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   Language.PureScript.Errors.JSON.$fToJSONErrorPosition7
+                   0#
+                   ipv8 }) -}
+b91b67b57312e2f61ad20a346e0c3c49
+  $fToJSONErrorPosition7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition7) -}
+e9d416ce094aafbb20c9fc51ed9b9b6f
+  $fToJSONErrorPosition8 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONErrorPosition9 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+1a9129bf594c7b48b6f6ea0c7a0f75ff
+  $fToJSONErrorPosition9 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   Language.PureScript.Errors.JSON.$fToJSONErrorPosition10
+                   0#
+                   ipv8 }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fToJSONErrorPosition_$ctoEncodingList ::
+    [Language.PureScript.Errors.JSON.ErrorPosition]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Language.PureScript.Errors.JSON.ErrorPosition
+                   Language.PureScript.Errors.JSON.$fToJSONErrorPosition1
+                     `cast`
+                   (<Language.PureScript.Errors.JSON.ErrorPosition>_R
+                    ->_R Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                        <Data.Aeson.Types.Internal.Value>_P))) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fToJSONErrorPosition_$ctoJSON ::
+    Language.PureScript.Errors.JSON.ErrorPosition
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U(U),1*U(U),1*U(U))>m1,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorPosition ww1 ww2 ww3 ww4 ->
+                 case Language.PureScript.Errors.JSON.$w$ctoJSON
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww5 { Unit# ww6 ->
+                 Data.Aeson.Types.Internal.Object ww6 } }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  $fToJSONErrorPosition_$ctoJSONList ::
+    [Language.PureScript.Errors.JSON.ErrorPosition]
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Language.PureScript.Errors.JSON.ErrorPosition]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Language.PureScript.Errors.JSON.ErrorPosition
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Language.PureScript.Errors.JSON.ErrorPosition
+                                     c
+                                     Language.PureScript.Errors.JSON.$fToJSONErrorPosition_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+a16ea294c880346e7898f448f24e974e
+  $fToJSONErrorSuggestion ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      Language.PureScript.Errors.JSON.ErrorSuggestion
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                  Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion_$ctoJSON
+                  Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion1
+                    `cast`
+                  (<Language.PureScript.Errors.JSON.ErrorSuggestion>_R
+                   ->_R Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                       <Data.Aeson.Types.Internal.Value>_P))
+                  Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion_$ctoJSONList
+                  Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion_$ctoEncodingList -}
+a16ea294c880346e7898f448f24e974e
+  $fToJSONErrorSuggestion1 ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> forall r.
+       Data.ByteString.Builder.Internal.BuildStep r
+       -> Data.ByteString.Builder.Internal.BuildStep r
+  {- Arity: 2, Strictness: <S,1*U(U(U,U,U),U)><L,C(C1(U(U,U)))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorSuggestion)
+                   @ r
+                   (w1 :: Data.ByteString.Builder.Internal.BuildStep r) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorSuggestion ww1 ww2 ->
+                 Language.PureScript.Errors.JSON.$w$ctoEncoding1
+                   ww1
+                   ww2
+                   @ r
+                   w1 }) -}
+bc8e9882f55059ed11210b71b70c46cf
+  $fToJSONErrorSuggestion2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion4) -}
+22ca14ea2953beb8be2861ae814b6b29
+  $fToJSONErrorSuggestion3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion1) -}
+cc0a33074adefe1dca0e57806c04754b
+  $fToJSONErrorSuggestion4 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion5 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+51de96261c1d0930172e08c0a63b5a52
+  $fToJSONErrorSuggestion5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   (GHC.CString.unpackCString#
+                      Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion1)
+                   0#
+                   ipv8 }) -}
+9ada7323b687ec83e146d0bab948315f
+  $fToJSONErrorSuggestion6 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion7 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+3ad4743bab316fccbe6d6b2a3d787ecd
+  $fToJSONErrorSuggestion7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   (GHC.CString.unpackCString#
+                      Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion4)
+                   0#
+                   ipv8 }) -}
+a16ea294c880346e7898f448f24e974e
+  $fToJSONErrorSuggestion_$ctoEncodingList ::
+    [Language.PureScript.Errors.JSON.ErrorSuggestion]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                   Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion1
+                     `cast`
+                   (<Language.PureScript.Errors.JSON.ErrorSuggestion>_R
+                    ->_R Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                        <Data.Aeson.Types.Internal.Value>_P))) -}
+a16ea294c880346e7898f448f24e974e
+  $fToJSONErrorSuggestion_$ctoJSON ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(U,1*U)>m1, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case w of ww { Language.PureScript.Errors.JSON.ErrorSuggestion ww1 ww2 ->
+                 case Language.PureScript.Errors.JSON.$w$ctoJSON1
+                        ww1
+                        ww2 of ww3 { Unit# ww4 ->
+                 Data.Aeson.Types.Internal.Object ww4 } }) -}
+a16ea294c880346e7898f448f24e974e
+  $fToJSONErrorSuggestion_$ctoJSONList ::
+    [Language.PureScript.Errors.JSON.ErrorSuggestion]
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Language.PureScript.Errors.JSON.ErrorSuggestion]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Language.PureScript.Errors.JSON.ErrorSuggestion
+                                     c
+                                     Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+dbb7977a8095c346f721c5dca88d2359
+  $fToJSONErrorSuggestion_$d~~ ::
+    (Data.Aeson.Types.Internal.Value :: *)
+    GHC.Types.~~ (Data.Aeson.Types.Internal.Value :: *)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Aeson.Types.Internal.Value
+                   @ Data.Aeson.Types.Internal.Value
+                   @~ <Data.Aeson.Types.Internal.Value>_N) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fToJSONJSONError ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      Language.PureScript.Errors.JSON.JSONError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONError
+                  Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoJSON
+                  Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoEncoding
+                  Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoJSONList
+                  Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoEncodingList -}
+ad1f587e3efc4043e303d59af27d718f
+  $fToJSONJSONError_$ctoEncoding ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U(U,U,U(U,U,U),U(U,U,U),U,U,U,1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONError ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 (Language.PureScript.Errors.JSON.$w$ctoEncoding2
+                    ww1
+                    ww2
+                    ww3
+                    ww4
+                    ww5
+                    ww6
+                    ww7
+                    ww8)
+                   `cast`
+                 (Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                 <Data.Aeson.Types.Internal.Value>_P)) }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fToJSONJSONError_$ctoEncodingList ::
+    [Language.PureScript.Errors.JSON.JSONError]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Language.PureScript.Errors.JSON.JSONError
+                   Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoEncoding) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fToJSONJSONError_$ctoJSON ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,U,U,1*U,1*U,1*U,1*U)>m1,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONError ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case Language.PureScript.Errors.JSON.$w$ctoJSON2
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6
+                        ww7
+                        ww8 of ww9 { Unit# ww10 ->
+                 Data.Aeson.Types.Internal.Object ww10 } }) -}
+ad1f587e3efc4043e303d59af27d718f
+  $fToJSONJSONError_$ctoJSONList ::
+    [Language.PureScript.Errors.JSON.JSONError]
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Language.PureScript.Errors.JSON.JSONError]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Language.PureScript.Errors.JSON.JSONError
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Language.PureScript.Errors.JSON.JSONError
+                                     c
+                                     Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+ed088f7687ca21e4756045fcd491894c
+  $fToJSONJSONResult ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      Language.PureScript.Errors.JSON.JSONResult
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.JSON.JSONResult
+                  Language.PureScript.Errors.JSON.$fToJSONJSONResult_$ctoJSON
+                  Language.PureScript.Errors.JSON.$fToJSONJSONResult_$ctoEncoding
+                  Language.PureScript.Errors.JSON.$fToJSONJSONResult_$ctoJSONList
+                  Language.PureScript.Errors.JSON.$fToJSONJSONResult_$ctoEncodingList -}
+2777fcb88239babf1119fd0d52b1eb4e
+  $fToJSONJSONResult1 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONJSONResult2 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+2a2fcbe726655997d59dedbdf64058e4
+  $fToJSONJSONResult2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   (GHC.CString.unpackCString#
+                      Language.PureScript.Errors.JSON.$fFromJSONJSONResult2)
+                   0#
+                   ipv8 }) -}
+5cc64d6660de76c208dbe63c0346a8cf
+  $fToJSONJSONResult3 :: Data.Text.Internal.Text
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Language.PureScript.Errors.JSON.$fToJSONJSONResult4 of ds1 { (#,#) ipv8 ipv9 ->
+                 ipv9 }) -}
+bc688fb0ab795dddb30fb9bfbacb36ac
+  $fToJSONJSONResult4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv8 ipv9 ->
+                 Data.Aeson.Types.ToJSON.$wouter1
+                   ipv9
+                   4#
+                   (GHC.CString.unpackCString#
+                      Language.PureScript.Errors.JSON.$fFromJSONJSONResult4)
+                   0#
+                   ipv8 }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fToJSONJSONResult_$ctoEncoding ::
+    Language.PureScript.Errors.JSON.JSONResult
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONResult ww1 ww2 ->
+                 (Language.PureScript.Errors.JSON.$w$ctoEncoding3 ww1 ww2)
+                   `cast`
+                 (Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                 <Data.Aeson.Types.Internal.Value>_P)) }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fToJSONJSONResult_$ctoEncodingList ::
+    [Language.PureScript.Errors.JSON.JSONResult]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Language.PureScript.Errors.JSON.JSONResult
+                   Language.PureScript.Errors.JSON.$fToJSONJSONResult_$ctoEncoding) -}
+ed088f7687ca21e4756045fcd491894c
+  $fToJSONJSONResult_$ctoJSON ::
+    Language.PureScript.Errors.JSON.JSONResult
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>m1, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 case w of ww { Language.PureScript.Errors.JSON.JSONResult ww1 ww2 ->
+                 case Language.PureScript.Errors.JSON.$w$ctoJSON3
+                        ww1
+                        ww2 of ww3 { Unit# ww4 ->
+                 Data.Aeson.Types.Internal.Object ww4 } }) -}
+ed088f7687ca21e4756045fcd491894c
+  $fToJSONJSONResult_$ctoJSONList ::
+    [Language.PureScript.Errors.JSON.JSONResult]
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Language.PureScript.Errors.JSON.JSONResult]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Language.PureScript.Errors.JSON.JSONResult
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Language.PureScript.Errors.JSON.JSONResult
+                                     c
+                                     Language.PureScript.Errors.JSON.$fToJSONJSONResult_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+84cddc543cf0f80f3d4a22515c86c17d
+  $fToJSONJSONResult_$s$wfoldlM_loop ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> [Data.Aeson.Types.Internal.Value]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray#
+         GHC.Prim.RealWorld Data.Aeson.Types.Internal.Value
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Vector.Vector Data.Aeson.Types.Internal.Value #)
+  {- Arity: 6, Strictness: <S,U><S,1*U><L,U><S,U><L,U><L,U> -}
+df38bc64bbcf07ffdc1fafd59134c695
+  $tc'ErrorPosition :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6682711925874601086##
+                   2013601942617378803##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tc'ErrorPosition2
+                   0#
+                   Language.PureScript.Errors.JSON.$tc'ErrorPosition1) -}
+0e163038bea5809ed201543fe309689a
+  $tc'ErrorPosition1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+aca7469da9008a6a12cc907cae459bce
+  $tc'ErrorPosition2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$tc'ErrorPosition3) -}
+7224791e9bd3cb9ff95fe9bdc252ea08
+  $tc'ErrorPosition3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ErrorPosition"#) -}
+06c0e5f44ec316d323fe1851a1e7f59f
+  $tc'ErrorSuggestion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4374730085618265493##
+                   4076117559280088366##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tc'ErrorSuggestion2
+                   0#
+                   Language.PureScript.Errors.JSON.$tc'ErrorSuggestion1) -}
+d2bc191ee7ce12c14896f3c8da10776f
+  $tc'ErrorSuggestion1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+11d0d37cc17ed057236b91b673698cf9
+  $tc'ErrorSuggestion2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$tc'ErrorSuggestion3) -}
+807be4db81ba3c643ee11be528fab165
+  $tc'ErrorSuggestion3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ErrorSuggestion"#) -}
+07cf021a5fc2f2c7942878666a983b24
+  $tc'JSONError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16939055569796272619##
+                   15037505429499227101##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tc'JSONError2
+                   0#
+                   Language.PureScript.Errors.JSON.$tc'JSONError1) -}
+0e1d9fb703279be9f57731412676a993
+  $tc'JSONError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fe14e5cd0810b87780f0b3a6eec55542
+  $tc'JSONError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$tc'JSONError3) -}
+5d4f85cc763ae4be7199d45dafd81b6b
+  $tc'JSONError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JSONError"#) -}
+99bf8ed5addafbda79e49d43eee5bea9
+  $tc'JSONResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4811607158661126857##
+                   7395496416573792390##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tc'JSONResult2
+                   0#
+                   Language.PureScript.Errors.JSON.$tc'JSONResult1) -}
+6f5df5bedcd7140a33dbe3c091aa79ce
+  $tc'JSONResult1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a7a3e112198f390f2e0295b1aeb57208
+  $tc'JSONResult2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$tc'JSONResult3) -}
+027b2e1f90bb8ae36689fa773552e002
+  $tc'JSONResult3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JSONResult"#) -}
+d7d56d6f7158c6f1730ad6dfaec0a99e
+  $tcErrorPosition :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3723400962656930563##
+                   9766778276589648418##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tcErrorPosition1
+                   0#
+                   GHC.Types.krep$*) -}
+a49fb94f03bc88c5c3f00d896f51a0f8
+  $tcErrorPosition1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorPosition17) -}
+bebf460026035642f3bb223fdd7f7dc4
+  $tcErrorSuggestion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7984752006520976891##
+                   362293905962742482##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tcErrorSuggestion1
+                   0#
+                   GHC.Types.krep$*) -}
+183b92004fb55433004bd1868d9ed536
+  $tcErrorSuggestion1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion8) -}
+9a276a09c8b9ee3a83045394dd16a706
+  $tcJSONError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14703948446452006616##
+                   3123345106368438782##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tcJSONError1
+                   0#
+                   GHC.Types.krep$*) -}
+66ee226985767dab47d0dc21d9c54522
+  $tcJSONError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$tcJSONError2) -}
+b97cb8da955efbce56e84e8513d89c8c
+  $tcJSONError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JSONError"#) -}
+61a81b7c2ab979c15ea54c1f43a6f2ae
+  $tcJSONResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10980315729099676192##
+                   8978210733784972704##
+                   Language.PureScript.Errors.JSON.$trModule
+                   Language.PureScript.Errors.JSON.$tcJSONResult1
+                   0#
+                   GHC.Types.krep$*) -}
+51fc258c403ab47848aa72e7671a0d63
+  $tcJSONResult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$fFromJSONJSONResult8) -}
+3b232ec0b1941427a6459baf46c6be58
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Errors.JSON.$trModule3
+                   Language.PureScript.Errors.JSON.$trModule1) -}
+9944f91e17853f63e912abfb53aab4c7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$trModule2) -}
+cced15b18c2a55cff61b02cd779f62fc
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Errors.JSON"#) -}
+78e2de01a6811d0a3b9354675dfd80d5
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Errors.JSON.$trModule4) -}
+a1c0001d9f7d508549aa6608539c521e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+e3d389b1acdf280887fa7cf7524ce58c
+  $w$c< ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: GHC.Types.Int)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Types.Int)
+                   (ww6 :: GHC.Types.Int)
+                   (ww7 :: GHC.Types.Int) ->
+                 case GHC.Prim.<# ww ww4 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww ww4 of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case ww1 of wild { GHC.Types.I# x# ->
+                           case ww5 of wild1 { GHC.Types.I# y# ->
+                           case GHC.Prim.<# x# y# of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# x# y# of lwild3 {
+                                  DEFAULT -> GHC.Types.False
+                                  1#
+                                  -> case ww2 of wild2 { GHC.Types.I# x#1 ->
+                                     case ww6 of wild3 { GHC.Types.I# y#1 ->
+                                     case GHC.Prim.<# x#1 y#1 of lwild4 {
+                                       DEFAULT
+                                       -> case GHC.Prim.==# x#1 y#1 of lwild5 {
+                                            DEFAULT -> GHC.Types.False
+                                            1# -> GHC.Classes.ltInt ww3 ww7 }
+                                       1# -> GHC.Types.True } } } }
+                             1# -> GHC.Types.True } } } }
+                   1# -> GHC.Types.True }) -}
+b4ccd6734e10679592205174e434fceb
+  $w$c== ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: GHC.Types.Int)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Types.Int)
+                   (ww6 :: GHC.Types.Int)
+                   (ww7 :: GHC.Types.Int) ->
+                 case GHC.Prim.==# ww ww4 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case ww1 of wild { GHC.Types.I# x ->
+                      case ww5 of wild1 { GHC.Types.I# y ->
+                      case GHC.Prim.==# x y of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case ww2 of wild2 { GHC.Types.I# x1 ->
+                           case ww6 of wild3 { GHC.Types.I# y1 ->
+                           case GHC.Prim.==# x1 y1 of lwild2 {
+                             DEFAULT -> GHC.Types.False
+                             1# -> GHC.Classes.eqInt ww3 ww7 } } } } } } }) -}
+51c2222e484b194255fa03602dd7ef01
+  $w$c==1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Types.Bool
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <L,U><L,U><S,U><L,1*U><L,U><L,U><S,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Base.Maybe
+                             Language.PureScript.Errors.JSON.ErrorPosition)
+                   (ww4 :: GHC.Prim.ByteArray#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Int#)
+                   (ww7 :: GHC.Base.Maybe
+                             Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case GHC.Prim.==# ww2 ww6 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             ww
+                             (GHC.Prim.int2Word# ww1)
+                             ww4
+                             (GHC.Prim.int2Word# ww5)
+                             (GHC.Prim.int2Word# ww2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> case ww3 of wild1 {
+                             GHC.Base.Nothing
+                             -> case ww7 of wild2 {
+                                  GHC.Base.Nothing -> GHC.Types.True
+                                  GHC.Base.Just ipv8 -> GHC.Types.False }
+                             GHC.Base.Just a2
+                             -> case ww7 of wild2 {
+                                  GHC.Base.Nothing -> GHC.Types.False
+                                  GHC.Base.Just b1
+                                  -> Language.PureScript.Errors.JSON.$fEqErrorPosition_$c==
+                                       a2
+                                       b1 } } } } }) -}
+153e90e718a13b72058701e50f717e15
+  $w$c==2 ::
+    [Language.PureScript.Errors.JSON.JSONError]
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: [Language.PureScript.Errors.JSON.JSONError])
+                   (ww1 :: [Language.PureScript.Errors.JSON.JSONError])
+                   (ww2 :: [Language.PureScript.Errors.JSON.JSONError])
+                   (ww3 :: [Language.PureScript.Errors.JSON.JSONError]) ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ Language.PureScript.Errors.JSON.JSONError
+                        Language.PureScript.Errors.JSON.$fEqJSONError
+                        ww
+                        ww2 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ Language.PureScript.Errors.JSON.JSONError
+                        Language.PureScript.Errors.JSON.$fEqJSONError
+                        ww1
+                        ww3 }) -}
+1745b5d0978adbd833ac35ca08f1ca49
+  $w$ccompare ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Ordering
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)><S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: GHC.Types.Int)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Types.Int)
+                   (ww6 :: GHC.Types.Int)
+                   (ww7 :: GHC.Types.Int) ->
+                 case GHC.Prim.<# ww ww4 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww ww4 of lwild1 {
+                        DEFAULT -> GHC.Types.GT
+                        1#
+                        -> case ww1 of wild { GHC.Types.I# x# ->
+                           case ww5 of wild1 { GHC.Types.I# y# ->
+                           case GHC.Prim.<# x# y# of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# x# y# of lwild3 {
+                                  DEFAULT -> GHC.Types.GT
+                                  1#
+                                  -> case ww2 of wild2 { GHC.Types.I# x#1 ->
+                                     case ww6 of wild3 { GHC.Types.I# y#1 ->
+                                     case GHC.Prim.<# x#1 y#1 of lwild4 {
+                                       DEFAULT
+                                       -> case GHC.Prim.==# x#1 y#1 of lwild5 {
+                                            DEFAULT -> GHC.Types.GT
+                                            1# -> GHC.Classes.compareInt ww3 ww7 }
+                                       1# -> GHC.Types.LT } } } }
+                             1# -> GHC.Types.LT } } } }
+                   1# -> GHC.Types.LT }) -}
+b976658efccf204a82de976a24f2f045
+  $w$cshow ::
+    Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Data.Text.Internal.Text)
+                   (ww1 :: GHC.Base.Maybe
+                             Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 GHC.CString.unpackAppendCString#
+                   Language.PureScript.Errors.JSON.$fShowErrorSuggestion4
+                   (GHC.CString.unpackAppendCString#
+                      Language.PureScript.Errors.JSON.$fShowErrorSuggestion3
+                      (case Data.Text.Show.$w$cshowsPrec
+                              ww
+                              (GHC.Base.++
+                                 @ GHC.Types.Char
+                                 GHC.Show.showCommaSpace1
+                                 (GHC.CString.unpackAppendCString#
+                                    Language.PureScript.Errors.JSON.$fShowErrorSuggestion2
+                                    (case ww1 of wild {
+                                       GHC.Base.Nothing
+                                       -> Language.PureScript.Errors.JSON.$fShowErrorSuggestion6
+                                       GHC.Base.Just b1
+                                       -> GHC.Base.++
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShowMaybe1
+                                            (case b1 of ww2 { Language.PureScript.Errors.JSON.ErrorPosition ww3 ww4 ww5 ww6 ->
+                                             Language.PureScript.Errors.JSON.$w$cshowsPrec
+                                               11#
+                                               ww3
+                                               ww4
+                                               ww5
+                                               ww6
+                                               Language.PureScript.Errors.JSON.$fShowErrorSuggestion5 }) }))) of ww2 { (#,#) ww3 ww4 ->
+                       GHC.Types.: @ GHC.Types.Char ww3 ww4 }))) -}
+836106cce3d53be6625f7b2256012aaf
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 6,
+     Strictness: <S,U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: GHC.Types.Int)
+                   (ww4 :: GHC.Types.Int)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.CString.unpackAppendCString#
+                       Language.PureScript.Errors.JSON.$fShowErrorPosition8
+                       (case ww1 of ww5 { GHC.Types.I# ww6 ->
+                        case GHC.Show.$wshowSignedInt
+                               0#
+                               ww6
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  GHC.Show.showCommaSpace1
+                                  (GHC.CString.unpackAppendCString#
+                                     Language.PureScript.Errors.JSON.$fShowErrorPosition7
+                                     (case ww2 of ww7 { GHC.Types.I# ww8 ->
+                                      case GHC.Show.$wshowSignedInt
+                                             0#
+                                             ww8
+                                             (GHC.Base.++
+                                                @ GHC.Types.Char
+                                                GHC.Show.showCommaSpace1
+                                                (GHC.CString.unpackAppendCString#
+                                                   Language.PureScript.Errors.JSON.$fShowErrorPosition6
+                                                   (case ww3 of ww9 { GHC.Types.I# ww10 ->
+                                                    case GHC.Show.$wshowSignedInt
+                                                           0#
+                                                           ww10
+                                                           (GHC.Base.++
+                                                              @ GHC.Types.Char
+                                                              GHC.Show.showCommaSpace1
+                                                              (GHC.CString.unpackAppendCString#
+                                                                 Language.PureScript.Errors.JSON.$fShowErrorPosition5
+                                                                 (case ww4 of ww11 { GHC.Types.I# ww12 ->
+                                                                  case GHC.Show.$wshowSignedInt
+                                                                         0#
+                                                                         ww12
+                                                                         (GHC.CString.unpackAppendCString#
+                                                                            Language.PureScript.Errors.JSON.$fShowErrorPosition4
+                                                                            x) of ww13 { (#,#) ww14 ww15 ->
+                                                                  GHC.Types.:
+                                                                    @ GHC.Types.Char
+                                                                    ww14
+                                                                    ww15 } }))) of ww11 { (#,#) ww12 ww13 ->
+                                                    GHC.Types.:
+                                                      @ GHC.Types.Char
+                                                      ww12
+                                                      ww13 } }))) of ww9 { (#,#) ww10 ww11 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww10
+                                        ww11 } }))) of ww7 { (#,#) ww8 ww9 ->
+                        GHC.Types.: @ GHC.Types.Char ww8 ww9 } })
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Errors.JSON.$fShowErrorPosition2
+                        (g w)
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Language.PureScript.Errors.JSON.$fShowErrorPosition2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w))) }) -}
+fc3d941181f33335391269e7b354e561
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,U><L,U(U,U,U)><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Data.Text.Internal.Text)
+                   (ww2 :: GHC.Base.Maybe
+                             Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 let {
+                   f4 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.$fShowMaybe_$cshowsPrec
+                       @ Language.PureScript.Errors.JSON.ErrorPosition
+                       Language.PureScript.Errors.JSON.$fShowErrorPosition
+                       Language.PureScript.Errors.JSON.$fShowErrorPosition9
+                       ww2
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.CString.unpackAppendCString#
+                        Language.PureScript.Errors.JSON.$fShowErrorSuggestion4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.Errors.JSON.$fShowErrorSuggestion3
+                           (case Data.Text.Show.$w$cshowsPrec
+                                   ww1
+                                   (GHC.Base.++
+                                      @ GHC.Types.Char
+                                      GHC.Show.showCommaSpace1
+                                      (GHC.CString.unpackAppendCString#
+                                         Language.PureScript.Errors.JSON.$fShowErrorSuggestion2
+                                         (f4
+                                            (GHC.CString.unpackAppendCString#
+                                               Language.PureScript.Errors.JSON.$fShowErrorPosition4
+                                               x)))) of ww3 { (#,#) ww4 ww5 ->
+                            GHC.Types.: @ GHC.Types.Char ww4 ww5 }))
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.Errors.JSON.$fShowErrorSuggestion4
+                           (GHC.CString.unpackAppendCString#
+                              Language.PureScript.Errors.JSON.$fShowErrorSuggestion3
+                              (case Data.Text.Show.$w$cshowsPrec
+                                      ww1
+                                      (GHC.Base.++
+                                         @ GHC.Types.Char
+                                         GHC.Show.showCommaSpace1
+                                         (GHC.CString.unpackAppendCString#
+                                            Language.PureScript.Errors.JSON.$fShowErrorSuggestion2
+                                            (f4
+                                               (GHC.CString.unpackAppendCString#
+                                                  Language.PureScript.Errors.JSON.$fShowErrorPosition4
+                                                  (GHC.Types.:
+                                                     @ GHC.Types.Char
+                                                     GHC.Show.$fShow(,)2
+                                                     x))))) of ww3 { (#,#) ww4 ww5 ->
+                               GHC.Types.: @ GHC.Types.Char ww4 ww5 }))) }) -}
+b292111141e3ae638cf2cc63ffbeadde
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Base.String
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.Maybe GHC.Base.String
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> [Language.PureScript.AST.SourcePos.SourceSpan]
+    -> GHC.Show.ShowS
+  {- Arity: 9,
+     Strictness: <S,U><L,1*U><L,U><L,U(U,U,U)><L,U(U,U,U)><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0] -}
+8c9a146aafcfe1049a635cbd688dc998
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int#
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U><L,U>, Inline: [0] -}
+66b8316a524891cd06c303f976a3d0e4
+  $w$ctoEncoding ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> forall r.
+       Data.ByteString.Builder.Internal.BuildStep r
+       -> Data.ByteString.Builder.Internal.BuildStep r
+  {- Arity: 5,
+     Strictness: <L,U(U)><L,U(U)><L,U(U)><L,U(U)><L,C(C1(U(U,U)))>,
+     Inline: [0] -}
+2029057b06224d8ae98a68fe7b5bdd59
+  $w$ctoEncoding1 ::
+    Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> forall r.
+       Data.ByteString.Builder.Internal.BuildStep r
+       -> Data.ByteString.Builder.Internal.BuildStep r
+  {- Arity: 3, Strictness: <L,U(U,U,U)><L,U><L,C(C1(U(U,U)))>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Data.Text.Internal.Text)
+                   (ww1 :: GHC.Base.Maybe
+                             Language.PureScript.Errors.JSON.ErrorPosition)
+                   @ r
+                   (w :: Data.ByteString.Builder.Internal.BuildStep r) ->
+                 Data.Aeson.Types.ToJSON.$fFromPairsEncoding'Series1
+                   @ Data.Aeson.Types.Internal.Value
+                   Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Aeson.Types.Internal.Value>_N <Data.Aeson.Types.Internal.Value>_N)
+                   (Data.Aeson.Encoding.Internal.Value
+                      (\ @ r1 (x :: Data.ByteString.Builder.Internal.BuildStep r1) ->
+                       let {
+                         w1 :: Data.ByteString.Builder.Internal.BuildStep r1
+                         = case ww1 of wild {
+                             GHC.Base.Nothing
+                             -> (Data.Aeson.Encoding.Builder.null_1 @ r1 x)
+                                  `cast`
+                                (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                 ->_R Sym (GHC.Types.N:IO[0]
+                                               <Data.ByteString.Builder.Internal.BuildSignal r1>_R))
+                             GHC.Base.Just a2
+                             -> case a2 of ww2 { Language.PureScript.Errors.JSON.ErrorPosition ww3 ww4 ww5 ww6 ->
+                                Language.PureScript.Errors.JSON.$w$ctoEncoding
+                                  ww3
+                                  ww4
+                                  ww5
+                                  ww6
+                                  @ r1
+                                  x } }
+                       } in
+                       let {
+                         w2 :: Data.ByteString.Builder.Internal.BufferRange
+                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                               -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                           {- Arity: 2 -}
+                         = Data.Aeson.Encoding.Internal.colon1 @ r1 w1
+                       } in
+                       let {
+                         lvl50 :: Data.ByteString.Builder.Internal.BufferRange
+                                  -> GHC.Prim.State# GHC.Prim.RealWorld
+                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                        Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                           {- Arity: 2, Strictness: <S(SS),1*U(U,U)><S,U> -}
+                         = \ (ds :: Data.ByteString.Builder.Internal.BufferRange)
+                             (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                           case ds of wild { Data.ByteString.Builder.Internal.BufferRange dt dt1 ->
+                           case GHC.Prim.writeWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  dt
+                                  0#
+                                  44##
+                                  eta of s2 { DEFAULT ->
+                           Data.Aeson.Encoding.Builder.$wstring
+                             Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion3
+                             @ r1
+                             w2
+                               `cast`
+                             (<Data.ByteString.Builder.Internal.BufferRange>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Data.ByteString.Builder.Internal.BuildSignal r1>_R))
+                             (GHC.Prim.plusAddr# dt 1#)
+                             dt1
+                             s2 } }
+                       } in
+                       let {
+                         x1 :: Data.ByteString.Builder.Internal.BufferRange
+                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                               -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                           {- Arity: 2, Strictness: <S(SS),1*U(U,U)><S,U>, Inline: [0],
+                              Unfolding: InlineRule (2, True, False)
+                                         (\ (w3 :: Data.ByteString.Builder.Internal.BufferRange)
+                                            (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                          case w3 of ww2 { Data.ByteString.Builder.Internal.BufferRange ww3 ww4 ->
+                                          case GHC.Prim.<#
+                                                 (GHC.Prim.minusAddr# ww4 ww3)
+                                                 1# of lwild {
+                                            DEFAULT
+                                            -> case GHC.Prim.writeWord8OffAddr#
+                                                      @ GHC.Prim.RealWorld
+                                                      ww3
+                                                      0#
+                                                      44##
+                                                      w4 of s2 { DEFAULT ->
+                                               Data.Aeson.Encoding.Builder.$wstring
+                                                 Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion3
+                                                 @ r1
+                                                 w2
+                                                   `cast`
+                                                 (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                                <Data.ByteString.Builder.Internal.BuildSignal
+                                                                   r1>_R))
+                                                 (GHC.Prim.plusAddr# ww3 1#)
+                                                 ww4
+                                                 s2 }
+                                            1#
+                                            -> (# w4,
+                                                  Data.ByteString.Builder.Internal.BufferFull
+                                                    @ r1
+                                                    1#
+                                                    ww3
+                                                    lvl50
+                                                      `cast`
+                                                    (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                                     ->_R Sym (GHC.Types.N:IO[0]
+                                                                   <Data.ByteString.Builder.Internal.BuildSignal
+                                                                      r1>_R)) #) } }) -}
+                         = \ (w3 :: Data.ByteString.Builder.Internal.BufferRange)
+                             (w4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                           case w3 of ww2 { Data.ByteString.Builder.Internal.BufferRange ww3 ww4 ->
+                           case GHC.Prim.<# (GHC.Prim.minusAddr# ww4 ww3) 1# of lwild {
+                             DEFAULT
+                             -> case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       ww3
+                                       0#
+                                       44##
+                                       w4 of s2 { DEFAULT ->
+                                Data.Aeson.Encoding.Builder.$wstring
+                                  Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion3
+                                  @ r1
+                                  w2
+                                    `cast`
+                                  (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <Data.ByteString.Builder.Internal.BuildSignal
+                                                    r1>_R))
+                                  (GHC.Prim.plusAddr# ww3 1#)
+                                  ww4
+                                  s2 }
+                             1#
+                             -> (# w4,
+                                   Data.ByteString.Builder.Internal.BufferFull
+                                     @ r1
+                                     1#
+                                     ww3
+                                     lvl50
+                                       `cast`
+                                     (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                      ->_R Sym (GHC.Types.N:IO[0]
+                                                    <Data.ByteString.Builder.Internal.BuildSignal
+                                                       r1>_R)) #) } }
+                       } in
+                       let {
+                         lvl51 :: Data.ByteString.Builder.Internal.BufferRange
+                                  -> GHC.Prim.State# GHC.Prim.RealWorld
+                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                        Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                           {- Arity: 2, Strictness: <S(SS),1*U(U,U)><S,U> -}
+                         = \ (ds :: Data.ByteString.Builder.Internal.BufferRange)
+                             (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                           case ds of wild { Data.ByteString.Builder.Internal.BufferRange dt dt1 ->
+                           case GHC.Prim.writeWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  dt
+                                  0#
+                                  58##
+                                  eta of s2 { DEFAULT ->
+                           Data.Aeson.Encoding.Builder.$wtext
+                             ww
+                             @ r1
+                             x1
+                               `cast`
+                             (<Data.ByteString.Builder.Internal.BufferRange>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Data.ByteString.Builder.Internal.BuildSignal r1>_R))
+                             (GHC.Prim.plusAddr# dt 1#)
+                             dt1
+                             s2 } }
+                       } in
+                       let {
+                         w3 :: Data.ByteString.Builder.Internal.BufferRange
+                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                               -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                           {- Arity: 2, Strictness: <S(SS),1*U(U,U)><S,U>, Inline: [0],
+                              Unfolding: InlineRule (2, True, False)
+                                         (\ (w3 :: Data.ByteString.Builder.Internal.BufferRange)
+                                            (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                          case w3 of ww2 { Data.ByteString.Builder.Internal.BufferRange ww3 ww4 ->
+                                          case GHC.Prim.<#
+                                                 (GHC.Prim.minusAddr# ww4 ww3)
+                                                 1# of lwild {
+                                            DEFAULT
+                                            -> case GHC.Prim.writeWord8OffAddr#
+                                                      @ GHC.Prim.RealWorld
+                                                      ww3
+                                                      0#
+                                                      58##
+                                                      w4 of s2 { DEFAULT ->
+                                               Data.Aeson.Encoding.Builder.$wtext
+                                                 ww
+                                                 @ r1
+                                                 x1
+                                                   `cast`
+                                                 (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                                <Data.ByteString.Builder.Internal.BuildSignal
+                                                                   r1>_R))
+                                                 (GHC.Prim.plusAddr# ww3 1#)
+                                                 ww4
+                                                 s2 }
+                                            1#
+                                            -> (# w4,
+                                                  Data.ByteString.Builder.Internal.BufferFull
+                                                    @ r1
+                                                    1#
+                                                    ww3
+                                                    lvl51
+                                                      `cast`
+                                                    (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                                     ->_R Sym (GHC.Types.N:IO[0]
+                                                                   <Data.ByteString.Builder.Internal.BuildSignal
+                                                                      r1>_R)) #) } }) -}
+                         = \ (w4 :: Data.ByteString.Builder.Internal.BufferRange)
+                             (w5 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                           case w4 of ww2 { Data.ByteString.Builder.Internal.BufferRange ww3 ww4 ->
+                           case GHC.Prim.<# (GHC.Prim.minusAddr# ww4 ww3) 1# of lwild {
+                             DEFAULT
+                             -> case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       ww3
+                                       0#
+                                       58##
+                                       w5 of s2 { DEFAULT ->
+                                Data.Aeson.Encoding.Builder.$wtext
+                                  ww
+                                  @ r1
+                                  x1
+                                    `cast`
+                                  (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <Data.ByteString.Builder.Internal.BuildSignal
+                                                    r1>_R))
+                                  (GHC.Prim.plusAddr# ww3 1#)
+                                  ww4
+                                  s2 }
+                             1#
+                             -> (# w5,
+                                   Data.ByteString.Builder.Internal.BufferFull
+                                     @ r1
+                                     1#
+                                     ww3
+                                     lvl51
+                                       `cast`
+                                     (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                      ->_R Sym (GHC.Types.N:IO[0]
+                                                    <Data.ByteString.Builder.Internal.BuildSignal
+                                                       r1>_R)) #) } }
+                       } in
+                       \ (w4 :: Data.ByteString.Builder.Internal.BufferRange)
+                         (w5 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       case w4 of ww2 { Data.ByteString.Builder.Internal.BufferRange ww3 ww4 ->
+                       Data.Aeson.Encoding.Builder.$wstring
+                         Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion2
+                         @ r1
+                         w3
+                           `cast`
+                         (<Data.ByteString.Builder.Internal.BufferRange>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <Data.ByteString.Builder.Internal.BuildSignal r1>_R))
+                         ww3
+                         ww4
+                         w5 })
+                        `cast`
+                      ((forall (r1 :: <*>_N).
+                        <Data.ByteString.Builder.Internal.BuildStep r1>_R
+                        ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                        ->_R Sym (GHC.Types.N:IO[0]
+                                      <Data.ByteString.Builder.Internal.BuildSignal
+                                         r1>_R)) ; (Sym (Data.ByteString.Builder.Internal.N:Builder[0]) ; Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                                                                                   <Data.Aeson.Encoding.Internal.Series>_P))))
+                   @ r
+                   w) -}
+eeb6b7f50488b1a5e6999b9463685dbe
+  $w$ctoEncoding2 ::
+    GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Base.String
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.Maybe GHC.Base.String
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> [Language.PureScript.AST.SourcePos.SourceSpan]
+    -> forall r.
+       Data.ByteString.Builder.Internal.BuildStep r
+       -> Data.ByteString.Builder.Internal.BuildStep r
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,U(U,U,U)><L,U(U,U,U)><L,U><L,U><L,U><L,1*U> -}
+cf1d597efb2594449ae5ce7bba453805
+  $w$ctoEncoding3 ::
+    [Language.PureScript.Errors.JSON.JSONError]
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> forall r.
+       Data.ByteString.Builder.Internal.BuildStep r
+       -> Data.ByteString.Builder.Internal.BuildStep r
+  {- Arity: 2, Strictness: <L,1*U><L,1*U> -}
+f09c49c1ec3b94082c22495b321c3d51
+  $w$ctoJSON ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 4, Strictness: <L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Int)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: GHC.Types.Int) ->
+                 case Data.Aeson.Types.ToJSON.$fFromPairsValueDList_go
+                        (GHC.Types.:
+                           @ Data.Aeson.Types.Internal.Pair
+                           (Language.PureScript.Errors.JSON.$fToJSONErrorPosition11,
+                            case ww of wild { GHC.Types.I# i ->
+                            case GHC.Integer.Type.smallInteger i of dt { DEFAULT ->
+                            Data.Aeson.Types.Internal.Number
+                              (Data.Scientific.Scientific dt 0#) } })
+                           (GHC.Types.:
+                              @ Data.Aeson.Types.Internal.Pair
+                              (Language.PureScript.Errors.JSON.$fToJSONErrorPosition8,
+                               case ww1 of wild { GHC.Types.I# i ->
+                               case GHC.Integer.Type.smallInteger i of dt { DEFAULT ->
+                               Data.Aeson.Types.Internal.Number
+                                 (Data.Scientific.Scientific dt 0#) } })
+                              (GHC.Types.:
+                                 @ Data.Aeson.Types.Internal.Pair
+                                 (Language.PureScript.Errors.JSON.$fToJSONErrorPosition5,
+                                  case ww2 of wild { GHC.Types.I# i ->
+                                  case GHC.Integer.Type.smallInteger i of dt { DEFAULT ->
+                                  Data.Aeson.Types.Internal.Number
+                                    (Data.Scientific.Scientific dt 0#) } })
+                                 (GHC.Types.:
+                                    @ Data.Aeson.Types.Internal.Pair
+                                    (Language.PureScript.Errors.JSON.$fToJSONErrorPosition2,
+                                     case ww3 of wild { GHC.Types.I# i ->
+                                     case GHC.Integer.Type.smallInteger i of dt { DEFAULT ->
+                                     Data.Aeson.Types.Internal.Number
+                                       (Data.Scientific.Scientific dt 0#) } })
+                                    (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair)))))
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of ww4 { Data.Aeson.Types.Internal.Object ww5 ->
+                 (# ww5 #) }) -}
+a5bd5f91bf40e5d5d6937857a2bf26e4
+  $w$ctoJSON1 ::
+    Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 2, Strictness: <L,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Data.Text.Internal.Text)
+                   (ww1 :: GHC.Base.Maybe
+                             Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case Data.Aeson.Types.ToJSON.$fFromPairsValueDList_go
+                        (GHC.Types.:
+                           @ Data.Aeson.Types.Internal.Pair
+                           (Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion6,
+                            Data.Aeson.Types.Internal.$WString ww)
+                           (GHC.Types.:
+                              @ Data.Aeson.Types.Internal.Pair
+                              (Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion4,
+                               case ww1 of wild {
+                                 GHC.Base.Nothing -> Data.Aeson.Types.Internal.Null
+                                 GHC.Base.Just a2
+                                 -> Language.PureScript.Errors.JSON.$fToJSONErrorPosition_$ctoJSON
+                                      a2 })
+                              (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair)))
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of ww2 { Data.Aeson.Types.Internal.Object ww3 ->
+                 (# ww3 #) }) -}
+af13bd8611bcee0d551ea74637372a19
+  $w$ctoJSON2 ::
+    GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+    -> GHC.Base.String
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.Maybe GHC.Base.String
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> [Language.PureScript.AST.SourcePos.SourceSpan]
+    -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 8,
+     Strictness: <L,1*U><L,1*U><L,U><L,U><L,1*U><L,1*U><L,1*U><L,1*U>,
+     Inline: [0] -}
+6e47d3089edd7edc9628b7ea03d249ff
+  $w$ctoJSON3 ::
+    [Language.PureScript.Errors.JSON.JSONError]
+    -> [Language.PureScript.Errors.JSON.JSONError]
+    -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 2, Strictness: <L,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: [Language.PureScript.Errors.JSON.JSONError])
+                   (ww1 :: [Language.PureScript.Errors.JSON.JSONError]) ->
+                 case Data.Aeson.Types.ToJSON.$fFromPairsValueDList_go
+                        (GHC.Types.:
+                           @ Data.Aeson.Types.Internal.Pair
+                           (Language.PureScript.Errors.JSON.$fToJSONJSONResult3,
+                            case GHC.Magic.runRW#
+                                   @ ('GHC.Types.TupleRep
+                                        '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                                   @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                        Data.Vector.Vector Data.Aeson.Types.Internal.Value #)
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case GHC.Prim.newArray#
+                                           @ Data.Aeson.Types.Internal.Value
+                                           @ (Control.Monad.Primitive.PrimState
+                                                (GHC.ST.ST GHC.Prim.RealWorld))
+                                           0#
+                                           (Data.Vector.Mutable.uninitialised
+                                              @ Data.Aeson.Types.Internal.Value)
+                                           s1
+                                             `cast`
+                                           (GHC.Prim.State#
+                                              (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                        <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv8 ipv9 ->
+                                    Language.PureScript.Errors.JSON.$fToJSONJSONResult_$s$wfoldlM_loop
+                                      ipv8
+                                        `cast`
+                                      (GHC.Prim.State#
+                                         (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                              <GHC.Prim.RealWorld>_N))_R
+                                      (GHC.Base.map
+                                         @ Language.PureScript.Errors.JSON.JSONError
+                                         @ Data.Aeson.Types.Internal.Value
+                                         Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoJSON
+                                         ww)
+                                      0#
+                                      ipv9
+                                        `cast`
+                                      (GHC.Prim.MutableArray#
+                                         (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                              <GHC.Prim.RealWorld>_N)
+                                         <Data.Aeson.Types.Internal.Value>_R)_R
+                                      0#
+                                      0# }) of ds1 { (#,#) ipv8 ipv9 ->
+                            case ipv9 of dt { Data.Vector.Vector ipv10 ipv11 ipv12 ->
+                            Data.Aeson.Types.Internal.Array dt } })
+                           (GHC.Types.:
+                              @ Data.Aeson.Types.Internal.Pair
+                              (Language.PureScript.Errors.JSON.$fToJSONJSONResult1,
+                               case GHC.Magic.runRW#
+                                      @ ('GHC.Types.TupleRep
+                                           '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                                      @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                           Data.Vector.Vector Data.Aeson.Types.Internal.Value #)
+                                      (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                       case GHC.Prim.newArray#
+                                              @ Data.Aeson.Types.Internal.Value
+                                              @ (Control.Monad.Primitive.PrimState
+                                                   (GHC.ST.ST GHC.Prim.RealWorld))
+                                              0#
+                                              (Data.Vector.Mutable.uninitialised
+                                                 @ Data.Aeson.Types.Internal.Value)
+                                              s1
+                                                `cast`
+                                              (GHC.Prim.State#
+                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv8 ipv9 ->
+                                       Language.PureScript.Errors.JSON.$fToJSONJSONResult_$s$wfoldlM_loop
+                                         ipv8
+                                           `cast`
+                                         (GHC.Prim.State#
+                                            (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                 <GHC.Prim.RealWorld>_N))_R
+                                         (GHC.Base.map
+                                            @ Language.PureScript.Errors.JSON.JSONError
+                                            @ Data.Aeson.Types.Internal.Value
+                                            Language.PureScript.Errors.JSON.$fToJSONJSONError_$ctoJSON
+                                            ww1)
+                                         0#
+                                         ipv9
+                                           `cast`
+                                         (GHC.Prim.MutableArray#
+                                            (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                 <GHC.Prim.RealWorld>_N)
+                                            <Data.Aeson.Types.Internal.Value>_R)_R
+                                         0#
+                                         0# }) of ds1 { (#,#) ipv8 ipv9 ->
+                               case ipv9 of dt { Data.Vector.Vector ipv10 ipv11 ipv12 ->
+                               Data.Aeson.Types.Internal.Array dt } })
+                              (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair)))
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of ww2 { Data.Aeson.Types.Internal.Object ww3 ->
+                 (# ww3 #) }) -}
+b1e96bde594948db4feabf9ffebc9e78
+  $wtoJSONError ::
+    GHC.Types.Bool
+    -> Language.PureScript.Errors.Level
+    -> Language.PureScript.AST.Declarations.ErrorMessage
+    -> (# GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition,
+          GHC.Base.String, Data.Text.Internal.Text, Data.Text.Internal.Text,
+          GHC.Base.Maybe GHC.Base.String,
+          GHC.Base.Maybe Data.Text.Internal.Text,
+          GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorSuggestion,
+          [Language.PureScript.AST.SourcePos.SourceSpan] #)
+  {- Arity: 3, Strictness: <L,U><L,1*U><L,U(U,U)>, Inline: [0] -}
+77f52731327b534ae19fd51ef3c48e4c
+  data ErrorPosition
+    = ErrorPosition {startLine :: GHC.Types.Int,
+                     startColumn :: GHC.Types.Int,
+                     endLine :: GHC.Types.Int,
+                     endColumn :: GHC.Types.Int}
+a16ea294c880346e7898f448f24e974e
+  data ErrorSuggestion
+    = ErrorSuggestion {replacement :: Data.Text.Internal.Text,
+                       replaceRange :: GHC.Base.Maybe
+                                         Language.PureScript.Errors.JSON.ErrorPosition}
+ad1f587e3efc4043e303d59af27d718f
+  data JSONError
+    = JSONError {position :: GHC.Base.Maybe
+                               Language.PureScript.Errors.JSON.ErrorPosition,
+                 message :: GHC.Base.String,
+                 errorCode :: Data.Text.Internal.Text,
+                 errorLink :: Data.Text.Internal.Text,
+                 filename :: GHC.Base.Maybe GHC.Base.String,
+                 moduleName :: GHC.Base.Maybe Data.Text.Internal.Text,
+                 suggestion :: GHC.Base.Maybe
+                                 Language.PureScript.Errors.JSON.ErrorSuggestion,
+                 allSpans :: [Language.PureScript.AST.SourcePos.SourceSpan]}
+ed088f7687ca21e4756045fcd491894c
+  data JSONResult
+    = JSONResult {warnings :: [Language.PureScript.Errors.JSON.JSONError],
+                  errors :: [Language.PureScript.Errors.JSON.JSONError]}
+ad1f587e3efc4043e303d59af27d718f
+  allSpans ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> [Language.PureScript.AST.SourcePos.SourceSpan]
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLS),1*U(A,A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds8 }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  endColumn ::
+    Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Int
+  RecSel Left Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.ErrorPosition ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  endLine ::
+    Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Int
+  RecSel Left Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.ErrorPosition ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  errorCode ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> Data.Text.Internal.Text
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLL),1*U(A,A,1*U(U,U,U),A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds3 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  errorLink ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> Data.Text.Internal.Text
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLL),1*U(A,A,A,1*U(U,U,U),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds4 }) -}
+ed088f7687ca21e4756045fcd491894c
+  errors ::
+    Language.PureScript.Errors.JSON.JSONResult
+    -> [Language.PureScript.Errors.JSON.JSONError]
+  RecSel Left Language.PureScript.Errors.JSON.JSONResult
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONResult ds1 ds2 ->
+                 ds2 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  filename ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> GHC.Base.Maybe GHC.Base.String
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLL),1*U(A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds5 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  message ::
+    Language.PureScript.Errors.JSON.JSONError -> GHC.Base.String
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLL),1*U(A,1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds2 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  moduleName ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLL),1*U(A,A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds6 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  position ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(1*U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds1 }) -}
+a16ea294c880346e7898f448f24e974e
+  replaceRange ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorPosition
+  RecSel Left Language.PureScript.Errors.JSON.ErrorSuggestion
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.ErrorSuggestion ds1 ds2 ->
+                 ds2 }) -}
+a16ea294c880346e7898f448f24e974e
+  replacement ::
+    Language.PureScript.Errors.JSON.ErrorSuggestion
+    -> Data.Text.Internal.Text
+  RecSel Left Language.PureScript.Errors.JSON.ErrorSuggestion
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.ErrorSuggestion) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.ErrorSuggestion ds1 ds2 ->
+                 ds1 }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  startColumn ::
+    Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Int
+  RecSel Left Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.ErrorPosition ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+77f52731327b534ae19fd51ef3c48e4c
+  startLine ::
+    Language.PureScript.Errors.JSON.ErrorPosition -> GHC.Types.Int
+  RecSel Left Language.PureScript.Errors.JSON.ErrorPosition
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.ErrorPosition) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.ErrorPosition ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+ad1f587e3efc4043e303d59af27d718f
+  suggestion ::
+    Language.PureScript.Errors.JSON.JSONError
+    -> GHC.Base.Maybe Language.PureScript.Errors.JSON.ErrorSuggestion
+  RecSel Left Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSL),1*U(A,A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONError) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONError ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds7 }) -}
+892fabc9781d95a04df3bd0b2868d36b
+  toJSONError ::
+    GHC.Types.Bool
+    -> Language.PureScript.Errors.Level
+    -> Language.PureScript.AST.Declarations.ErrorMessage
+    -> Language.PureScript.Errors.JSON.JSONError
+  {- Arity: 3, Strictness: <L,U><L,1*U><L,U(U,U)>m, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Bool)
+                   (w1 :: Language.PureScript.Errors.Level)
+                   (w2 :: Language.PureScript.AST.Declarations.ErrorMessage) ->
+                 case Language.PureScript.Errors.JSON.$wtoJSONError
+                        w
+                        w1
+                        w2 of ww { (#,,,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.PureScript.Errors.JSON.JSONError
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8 }) -}
+f8a9dd495752e3a41b414ae7c0db03cb
+  toJSONErrors ::
+    GHC.Types.Bool
+    -> Language.PureScript.Errors.Level
+    -> Language.PureScript.Errors.MultipleErrors
+    -> [Language.PureScript.Errors.JSON.JSONError]
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (verbose :: GHC.Types.Bool)
+                   (level :: Language.PureScript.Errors.Level)
+                   (eta :: Language.PureScript.Errors.MultipleErrors) ->
+                 GHC.Base.build
+                   @ Language.PureScript.Errors.JSON.JSONError
+                   (\ @ b1
+                      (c :: Language.PureScript.Errors.JSON.JSONError
+                            -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ Language.PureScript.AST.Declarations.ErrorMessage
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ Language.PureScript.Errors.JSON.JSONError
+                         @ b1
+                         @ Language.PureScript.AST.Declarations.ErrorMessage
+                         c
+                         (Language.PureScript.Errors.JSON.toJSONError verbose level))
+                      n
+                      eta `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))) -}
+ed088f7687ca21e4756045fcd491894c
+  warnings ::
+    Language.PureScript.Errors.JSON.JSONResult
+    -> [Language.PureScript.Errors.JSON.JSONError]
+  RecSel Left Language.PureScript.Errors.JSON.JSONResult
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Errors.JSON.JSONResult) ->
+                 case ds of wild { Language.PureScript.Errors.JSON.JSONResult ds1 ds2 ->
+                 ds1 }) -}
+instance GHC.Classes.Eq [Language.PureScript.Errors.JSON.ErrorPosition]
+  = Language.PureScript.Errors.JSON.$fEqErrorPosition
+instance GHC.Classes.Eq [Language.PureScript.Errors.JSON.ErrorSuggestion]
+  = Language.PureScript.Errors.JSON.$fEqErrorSuggestion
+instance GHC.Classes.Eq [Language.PureScript.Errors.JSON.JSONError]
+  = Language.PureScript.Errors.JSON.$fEqJSONError
+instance GHC.Classes.Eq [Language.PureScript.Errors.JSON.JSONResult]
+  = Language.PureScript.Errors.JSON.$fEqJSONResult
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.Errors.JSON.ErrorPosition]
+  = Language.PureScript.Errors.JSON.$fFromJSONErrorPosition
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.Errors.JSON.ErrorSuggestion]
+  = Language.PureScript.Errors.JSON.$fFromJSONErrorSuggestion
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.Errors.JSON.JSONError]
+  = Language.PureScript.Errors.JSON.$fFromJSONJSONError
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.Errors.JSON.JSONResult]
+  = Language.PureScript.Errors.JSON.$fFromJSONJSONResult
+instance GHC.Classes.Ord [Language.PureScript.Errors.JSON.ErrorPosition]
+  = Language.PureScript.Errors.JSON.$fOrdErrorPosition
+instance GHC.Show.Show [Language.PureScript.Errors.JSON.ErrorPosition]
+  = Language.PureScript.Errors.JSON.$fShowErrorPosition
+instance GHC.Show.Show [Language.PureScript.Errors.JSON.ErrorSuggestion]
+  = Language.PureScript.Errors.JSON.$fShowErrorSuggestion
+instance GHC.Show.Show [Language.PureScript.Errors.JSON.JSONError]
+  = Language.PureScript.Errors.JSON.$fShowJSONError
+instance GHC.Show.Show [Language.PureScript.Errors.JSON.JSONResult]
+  = Language.PureScript.Errors.JSON.$fShowJSONResult
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.Errors.JSON.ErrorPosition]
+  = Language.PureScript.Errors.JSON.$fToJSONErrorPosition
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.Errors.JSON.ErrorSuggestion]
+  = Language.PureScript.Errors.JSON.$fToJSONErrorSuggestion
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.Errors.JSON.JSONError]
+  = Language.PureScript.Errors.JSON.$fToJSONJSONError
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.Errors.JSON.JSONResult]
+  = Language.PureScript.Errors.JSON.$fToJSONJSONResult
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

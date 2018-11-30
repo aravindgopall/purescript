@@ -1,0 +1,320 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:47:57.646919 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Sugar 8043
+  interface hash: 5440cf6e23dbaa4feb1486edc6eff402
+  ABI hash: aa3ff9d4f115df60e6b3cb2b5c4996e5
+  export-list hash: 797e63e99d6544f7cf3b1c7ef7dbb306
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 2ae478d21823b7c739b1b08c46262eb0
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Sugar.desugar
+  Language.PureScript.Sugar.AdoNotation.desugarAdoModule
+  Language.PureScript.Sugar.BindingGroups.collapseBindingGroups
+  Language.PureScript.Sugar.BindingGroups.collapseBindingGroupsModule
+  Language.PureScript.Sugar.BindingGroups.createBindingGroups
+  Language.PureScript.Sugar.BindingGroups.createBindingGroupsModule
+  Language.PureScript.Sugar.CaseDeclarations.desugarCaseGuards
+  Language.PureScript.Sugar.CaseDeclarations.desugarCases
+  Language.PureScript.Sugar.CaseDeclarations.desugarCasesModule
+  Language.PureScript.Sugar.DoNotation.desugarDoModule
+  Language.PureScript.Sugar.LetPattern.desugarLetPatternModule
+  Language.PureScript.Sugar.Names.desugarImports
+  Language.PureScript.Sugar.Names.desugarImportsWithEnv
+  Language.PureScript.Sugar.Names.Env.primEnv
+  Language.PureScript.Sugar.ObjectWildcards.desugarDecl
+  Language.PureScript.Sugar.ObjectWildcards.desugarObjectConstructors
+  Language.PureScript.Sugar.Operators.checkFixityExports
+  Language.PureScript.Sugar.Operators.desugarSignedLiterals
+  Language.PureScript.Sugar.Operators.rebracket
+  Language.PureScript.Sugar.Operators.rebracketFiltered
+  Language.PureScript.Sugar.TypeClasses.desugarTypeClasses
+  Language.PureScript.Sugar.TypeClasses.superClassDictionaryNames
+  Language.PureScript.Sugar.TypeClasses.typeClassMemberName
+  Language.PureScript.Sugar.TypeClasses.Deriving.deriveInstances
+  Language.PureScript.Sugar.TypeDeclarations.desugarTypeDeclarationsModule
+  Language.PureScript.Sugar.Names.Env.Env
+  Language.PureScript.Sugar.Names.Env.Exports{Language.PureScript.Sugar.Names.Env.Exports exportedKinds exportedTypeClasses exportedTypeOps exportedTypes exportedValueOps exportedValues}
+  Language.PureScript.Sugar.Names.Env.ImportProvenance{Language.PureScript.Sugar.Names.Env.FromExplicit Language.PureScript.Sugar.Names.Env.FromImplicit Language.PureScript.Sugar.Names.Env.Local Language.PureScript.Sugar.Names.Env.Prim}
+  Language.PureScript.Sugar.Names.Env.ImportRecord{Language.PureScript.Sugar.Names.Env.ImportRecord importName importProvenance importSourceModule importSourceSpan}
+  Language.PureScript.Sugar.Names.Env.Imports{Language.PureScript.Sugar.Names.Env.Imports importedDataConstructors importedKinds importedModules importedQualModules importedTypeClasses importedTypeOps importedTypes importedValueOps importedValues}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Linter Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 mtl-2.2.2 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
+                      stm-2.4.5.0 syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle colour-2.3.4:Data.Colour
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Category b839bca5d85319b86c37d29f1613a5a2
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
+import  -/  Control.Monad.Supply.Class a5ac88ebb2786fa0ca39c7248b7c5b8f
+  exports: 91d489aaf16020272ece745e2b32bd17
+  MonadSupply 6a9f80f28cc3fad47a987fee945f2fd2
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  Module 7cf4b96f7d4b51b446726a099ab87bb6
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+import  -/  Language.PureScript.Externs 17598d5385c46f650a2a55de08912a53
+  exports: f9fc7fa26f69a655fd896d8cccd21570
+  ExternsFile b2e76f24ecba17bf3b946e078a8414b6
+import  -/  Language.PureScript.Sugar.AdoNotation f8c67920ee384e4d9c0b81f76a3c2d07
+  exports: 57765ab7edf303e1df3a3cbd63a547e7
+  desugarAdoModule 00e97ae5a7aeeb19f48333fcb441aac6
+import  -/  Language.PureScript.Sugar.BindingGroups 75c008bf205a2bc8bec24ca3a4714dce
+  exports: c05893d6895cf1d225cf230bb2cc2550
+  collapseBindingGroups 498494256504789d7b86e4ff75a67147
+  collapseBindingGroupsModule 7b9d008a15053e931aa364aa03921dee
+  createBindingGroups f2f9a217c6a7ad7245f907d8c2e02bbf
+  createBindingGroupsModule 69f84aa52a7b82c383e30a86e7dc6c25
+import  -/  Language.PureScript.Sugar.CaseDeclarations fe08967cb69359188ce54cf76d090655
+  exports: 8a15357106057deeec790631c23e5564
+  desugarCaseGuards 9af9a1549a4dd7f1468a8ef261a2457b
+  desugarCases 8241317727ce0f66e3a61ae8493dc416
+  desugarCasesModule a44633acb1f83f667cf09a3615285541
+import  -/  Language.PureScript.Sugar.DoNotation 60220a295a0a6477bfe849b7bad5e1c7
+  exports: f151601f2f627046438bbb6e84dbd3fd
+  desugarDoModule 349c91727918b58304ed26e17a2e378f
+import  -/  Language.PureScript.Sugar.LetPattern a237d823cca31d5c50ce5bdbb705ddd9
+  exports: 6a372b6bd3e20a6f40c22840189cfb4c
+  desugarLetPatternModule 9379dbc9cebbb538fd4d1131538c7d1a
+import  -/  Language.PureScript.Sugar.Names 257b0a54d872bfbc841b404e407868f9
+  exports: 54dc7e4e5ff42e6dff5fca4bbe5881f9
+  desugarImports 5a73e592af9dff97d672d282a7d5ea95
+  desugarImportsWithEnv fdaa1234b6047d99f3e717eb943ef63a
+import  -/  Language.PureScript.Sugar.Names.Env 86ed82ed542c248a8928297b6b346572
+  Env 5f9e6484b1f2e8e2d5b6bfcee5f814e9
+  Exports 01f3e0364e56d91d1394c81cd74dc74f
+  Exports 2212f1aeac86faa420eb4b44c2cc2982
+  FromExplicit a87b9454b70b411f90f36ea9664a518b
+  FromImplicit 884fd1226fc81d47cd70d9770578fe18
+  ImportProvenance b5a892de418489c767f720864d2c6782
+  ImportRecord 67ee13394ca9da4b4e70f1e0da141509
+  ImportRecord bf5a97568e086735d3bbc97dc5ee1e68
+  Imports 3ee9ac130ea39977fc512d6d60116683
+  Imports b53ca872c8c47c3d8839f496fc15c222
+  Local a4ae9d445dc300743dfa866505a1b676
+  Prim 042ad6a1ad384c8a391b47efd96efbcf
+  exportedKinds 2212f1aeac86faa420eb4b44c2cc2982
+  exportedTypeClasses 2212f1aeac86faa420eb4b44c2cc2982
+  exportedTypeOps 2212f1aeac86faa420eb4b44c2cc2982
+  exportedTypes 2212f1aeac86faa420eb4b44c2cc2982
+  exportedValueOps 2212f1aeac86faa420eb4b44c2cc2982
+  exportedValues 2212f1aeac86faa420eb4b44c2cc2982
+  importName bf5a97568e086735d3bbc97dc5ee1e68
+  importProvenance bf5a97568e086735d3bbc97dc5ee1e68
+  importSourceModule bf5a97568e086735d3bbc97dc5ee1e68
+  importSourceSpan bf5a97568e086735d3bbc97dc5ee1e68
+  importedDataConstructors b53ca872c8c47c3d8839f496fc15c222
+  importedKinds b53ca872c8c47c3d8839f496fc15c222
+  importedModules b53ca872c8c47c3d8839f496fc15c222
+  importedQualModules b53ca872c8c47c3d8839f496fc15c222
+  importedTypeClasses b53ca872c8c47c3d8839f496fc15c222
+  importedTypeOps b53ca872c8c47c3d8839f496fc15c222
+  importedTypes b53ca872c8c47c3d8839f496fc15c222
+  importedValueOps b53ca872c8c47c3d8839f496fc15c222
+  importedValues b53ca872c8c47c3d8839f496fc15c222
+  primEnv c32e5288863d919737261c42c8049b58
+import  -/  Language.PureScript.Sugar.ObjectWildcards 3b532922a3a2bdc4aa9ed12290f59ad6
+  exports: 7ee0fe079ba75bff6dbffad504006f2c
+  desugarDecl 67794fadde3549f486772e1b11dddfc7
+  desugarObjectConstructors ebedfd360911e3898d24b27510216c5b
+import  -/  Language.PureScript.Sugar.Operators a75af500c641e9468cdd1e4448ec8d39
+  exports: 9b828e16ad51ab36fdac3b30052b3abf
+  checkFixityExports a52f61495da0e37398e1d41caebb66f4
+  desugarSignedLiterals eecb334d55f77076a595abc64dcd636d
+  rebracket d62b03a4fab729494bbb4945cb197f2c
+  rebracketFiltered 8da6d412ca171ad60c95070a67b87dc2
+import  -/  Language.PureScript.Sugar.TypeClasses b0b35622778ecfb45d31b2bff35b66f2
+  exports: 4b5cc0bfdd32c6fdb9b54f8636afa4e9
+  desugarTypeClasses 8d7e429402b3eb17bd0c09280b672a3e
+  superClassDictionaryNames 2e6be420af66cf8e11b714ac00a6f32c
+  typeClassMemberName 262adb4d52205a4e3d11ad6d6495325b
+import  -/  Language.PureScript.Sugar.TypeClasses.Deriving 1421e4b2dcad28794160e0dcd619c94e
+  exports: 794a2207ad7b06eb39404a8f987c109d
+  deriveInstances 50e8b24ab5b4654626722eb9bc7a9818
+import  -/  Language.PureScript.Sugar.TypeDeclarations 56250e3fde3f58ada094d799694a90e9
+  exports: bd77356cb3a1370104e9d91c6e851819
+  desugarTypeDeclarationsModule 876ff840f5d16025682cdbda3b5f8509
+f93237b80fec2fa0b566e66229eea160
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Sugar.$trModule3
+                   Language.PureScript.Sugar.$trModule1) -}
+3b593eb2d81f5c2dd4c94aeafbdb9a1b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Sugar.$trModule2) -}
+ade215c83e29c88c54110be9781415a5
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Sugar"#) -}
+697d8d8223786abdffeaa4810815b50a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Sugar.$trModule4) -}
+3add4346090a521399738f141c56361f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+2e2102883da30aee1534b8b1102bc4ef
+  desugar ::
+    (Control.Monad.Supply.Class.MonadSupply m,
+     Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.Writer.Class.MonadWriter
+       Language.PureScript.Errors.MultipleErrors m) =>
+    [Language.PureScript.Externs.ExternsFile]
+    -> [Language.PureScript.AST.Declarations.Module]
+    -> m [Language.PureScript.AST.Declarations.Module]
+  {- Arity: 4,
+     Strictness: <L,U(U(U(U(C(C(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),C(C1(U)),U,C(U)),U,U)><L,U(U(U(U(C(C(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,C(U)),C(U),C(C1(U)))><L,U(U,U(U(U(C(C1(U)),A),C(U),A,C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,C(U)),C(U),C(U),C(U),C(U))><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

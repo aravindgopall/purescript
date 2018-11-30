@@ -1,0 +1,1293 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:26.811914 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Reexports [family instance module] 8043
+  interface hash: 6079f46efd66619bb5c9b6bf8b29d157
+  ABI hash: 515a315d86a38b4d6948b7c2eac90cce
+  export-list hash: 2b3ce93a86241d0d499efca513f1142d
+  orphan hash: bccb9f2fc2af8de83c27c3ccb0bc894c
+  flag hash: 7c888060b236033a64748d3dc5454882
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Ide.Reexports.prettyPrintReexportResult
+  Language.PureScript.Ide.Reexports.reexportHasFailures
+  Language.PureScript.Ide.Reexports.resolveReexports
+  Language.PureScript.Ide.Reexports.resolveReexports'
+  Language.PureScript.Ide.Reexports.ReexportResult{Language.PureScript.Ide.Reexports.ReexportResult reFailed reResolved}
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Errors.JSON
+                     Language.PureScript.Externs Language.PureScript.Ide.Error
+                     Language.PureScript.Ide.Logging Language.PureScript.Ide.Types
+                     Language.PureScript.Ide.Util Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript System.IO.UTF8
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      auto-update-0.1.4 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 clock-0.7.2
+                      colour-2.3.4 conduit-1.3.0.3 conduit-extra-1.3.0
+                      containers-0.5.11.0 data-ordlist-0.4.7.0 deepseq-1.4.3.0
+                      directory-1.3.1.5 dlist-0.8.0.4 easy-file-0.2.2 exceptions-0.10.0
+                      fast-logger-2.4.11 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      lifted-base-0.2.3.12 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 monad-control-1.0.2.3 monad-logger-0.3.28.5
+                      monad-loops-0.4.3 mtl-2.2.2 old-locale-1.0.0.7 old-time-1.1.0.3
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      resourcet-1.2.1 safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 stm-chans-3.0.0.4 stringsearch-0.3.6.6
+                      syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 transformers-base-0.4.5.2 unix-2.7.2.2
+                      unix-time-0.3.8 unliftio-core-0.1.1.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: unix-time-0.3.8:Data.UnixTime.Diff
+         syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         clock-0.7.2:System.Clock
+                         conduit-1.3.0.3:Data.Conduit.Internal.Conduit
+                         conduit-1.3.0.3:Data.Conduit.Internal.Pipe
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         monad-logger-0.3.28.5:Control.Monad.Logger
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Bifunctor a977586bad544f929bb5bc7f139aaa1c
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Generics 4d1469b3e29804a05a1be33d11accff6
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 171f1f567c47ef82860df4ad686d11b1
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  microlens-0.4.9.1:Lens.Micro 962434009a31a5b07a9c325f04604c4d
+import  -/  microlens-platform-0.3.10:Lens.Micro.Platform 0a8b1a3c754e3254d224cc9602b42f64
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  DeclarationRef 9de74e8b46bfd07e044a72617cc5da5c
+  KindRef 8245863d9321690e594853e7ff0fdb63
+  TypeClassRef 93a0e32770563d43fa3f04289a54725f
+  TypeOpRef 9ae3d7bbee64a9887c8d95defd65b0b0
+  TypeRef f23e4bfa1c94ce55e9357e5fb97176c4
+  ValueOpRef 340c88beba94c802cc00b112ca1ce8ae
+  ValueRef 984b564c7d121e5297a91fc424d0970b
+import  -/  Language.PureScript.Ide.Types d9d9fd4c2b6a1fdeece731a5e8479937
+  exports: dd47afbd66baea5bbcdd5e2641556a91
+  IdeDeclarationAnn 9e61215f32f4caed313e4d158f96dea0
+  ModuleMap 315b3ac99c0a1df9ab81f6091369924a
+  _IdeDeclDataConstructor fb9bd523b9df3ddda459a7ff8a9013b1
+  _IdeDeclKind ee4c9fc7570a99a4b976b5b15c191e37
+  _IdeDeclType b6abbb84c05a2626bb6f939f2d4a01d9
+  _IdeDeclTypeClass 7b73d8300b94013ccf0fa786e0e8feda
+  _IdeDeclTypeOperator 0c11922a67a7da1aba4a94a02792d17d
+  _IdeDeclTypeSynonym b5eace2e83b060396a866e675bda3356
+  _IdeDeclValue 6fa877d6b1628fd5f64602ebac3fae78
+  _IdeDeclValueOperator de68182cc0bcf920a206595d7ef15fa3
+  annExportedFrom f7c30e8a6a1c7f1139386b04b04850df
+  anyOf 42e219aefc77f695882094d59e3b6182
+  idaAnnotation fbbb7f9df853960d494f789a81b28c63
+  idaDeclaration a8a9c5d727b1ceabcff6fe9a77c3ce8a
+  ideDtorName 4b0e35dffdadad83f0994bd143209fc9
+  ideDtorTypeName d0c37f04951e936a8b0f6444e932c3d9
+  ideSynonymName f05596230d9dbc39b510041107fb41e9
+  ideTCName 66e9343e4eda36974b61203c0546ec1e
+  ideTypeName 07a28cae9afd06eac4ebbeba9047afee
+  ideTypeOpName a71d07d03868a498ff32bb8d2a39a281
+  ideValueIdent 47a1c1011665faf42f703f8df96ff6f0
+  ideValueOpName 4c4afc0fa58c943c5be021a21d27c60f
+import  -/  Language.PureScript.Ide.Util 28758b8888c6917067d0548bee7740c5
+  exports: 984706b8dc3d9ad9746cf1d4cf6cd995
+  discardAnn e44cc83d97b0cc6922e7f0b3fcd27b9e
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  runModuleName e07c63fa3ece350e6976663ef993edbb
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fEqReexportResult ::
+    GHC.Classes.Eq a =>
+    GHC.Classes.Eq (Language.PureScript.Ide.Reexports.ReexportResult a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Classes.Eq a).
+                  @ (Language.PureScript.Ide.Reexports.ReexportResult a)
+                  (Language.PureScript.Ide.Reexports.$fEqReexportResult_$c== @ a v)
+                  (Language.PureScript.Ide.Reexports.$fEqReexportResult_$c/=
+                     @ a
+                     v) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fEqReexportResult_$c/= ::
+    GHC.Classes.Eq a =>
+    Language.PureScript.Ide.Reexports.ReexportResult a
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+    -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><S,1*U(U,1*U)><S,1*U(U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: Language.PureScript.Ide.Reexports.ReexportResult a)
+                   (y :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case Language.PureScript.Ide.Reexports.$fEqReexportResult_$c==
+                        @ a
+                        $dEq
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fEqReexportResult_$c== ::
+    GHC.Classes.Eq a =>
+    Language.PureScript.Ide.Reexports.ReexportResult a
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+    -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><S,1*U(U,1*U)><S,1*U(U,1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (w1 :: Language.PureScript.Ide.Reexports.ReexportResult a)
+                   (w2 :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case w1 of ww { Language.PureScript.Ide.Reexports.ReexportResult ww1 ww2 ->
+                 case w2 of ww3 { Language.PureScript.Ide.Reexports.ReexportResult ww4 ww5 ->
+                 Language.PureScript.Ide.Reexports.$w$c==
+                   @ a
+                   w
+                   ww1
+                   ww2
+                   ww4
+                   ww5 } }) -}
+14d94c00126561feff1923cb8d5db808
+  $fEqReexportResult_$s$fEq(,) ::
+    GHC.Classes.Eq
+      (Language.PureScript.Names.ModuleName,
+       Language.PureScript.AST.Declarations.DeclarationRef)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.Names.ModuleName,
+                     Language.PureScript.AST.Declarations.DeclarationRef)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ Language.PureScript.Names.ModuleName
+                     @ Language.PureScript.AST.Declarations.DeclarationRef
+                     Language.PureScript.Names.$fEqModuleName
+                     Language.PureScript.AST.Declarations.$fEqDeclarationRef)
+                  Language.PureScript.Ide.Reexports.$fEqReexportResult_$s$fEq(,)_$c/= -}
+5cbcb4c86baf7d8021469a7868efb082
+  $fEqReexportResult_$s$fEq(,)_$c/= ::
+    (Language.PureScript.Names.ModuleName,
+     Language.PureScript.AST.Declarations.DeclarationRef)
+    -> (Language.PureScript.Names.ModuleName,
+        Language.PureScript.AST.Declarations.DeclarationRef)
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: (Language.PureScript.Names.ModuleName,
+                          Language.PureScript.AST.Declarations.DeclarationRef))
+                   (y :: (Language.PureScript.Names.ModuleName,
+                          Language.PureScript.AST.Declarations.DeclarationRef)) ->
+                 case x of wild { (,) a1 a2 ->
+                 case y of wild1 { (,) b1 b2 ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.Namespace)
+                        (Language.PureScript.Names.$fEqProperName
+                           @ 'Language.PureScript.Names.Namespace)
+                        a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                        b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case Language.PureScript.AST.Declarations.$fEqDeclarationRef_$c==
+                             a2
+                             b2 of wild3 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } } } }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fFunctorReexportResult ::
+    GHC.Base.Functor Language.PureScript.Ide.Reexports.ReexportResult
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Ide.Reexports.ReexportResult
+                  Language.PureScript.Ide.Reexports.$fFunctorReexportResult_$cfmap
+                  Language.PureScript.Ide.Reexports.$fFunctorReexportResult_$c<$ -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fFunctorReexportResult_$c<$ ::
+    a
+    -> Language.PureScript.Ide.Reexports.ReexportResult b
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(A,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (z :: a)
+                   (ds :: Language.PureScript.Ide.Reexports.ReexportResult b) ->
+                 case ds of wild { Language.PureScript.Ide.Reexports.ReexportResult a1 a2 ->
+                 Language.PureScript.Ide.Reexports.ReexportResult @ a z a2 }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fFunctorReexportResult_$cfmap ::
+    (a -> b)
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+    -> Language.PureScript.Ide.Reexports.ReexportResult b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (f :: a -> b)
+                   (ds :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case ds of wild { Language.PureScript.Ide.Reexports.ReexportResult a1 a2 ->
+                 Language.PureScript.Ide.Reexports.ReexportResult
+                   @ b
+                   (f a1)
+                   a2 }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fGenericReexportResult ::
+    GHC.Generics.Generic
+      (Language.PureScript.Ide.Reexports.ReexportResult a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Language.PureScript.Ide.Reexports.ReexportResult a)
+                  (Language.PureScript.Ide.Reexports.$fGenericReexportResult1 @ a)
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <Language.PureScript.Ide.Reexports.ReexportResult a>_R
+                   ->_R (Sym (GHC.Generics.N:M1[0]
+                                  <*>_N
+                                  <GHC.Generics.D>_P
+                                  <'GHC.Generics.MetaData
+                                     "ReexportResult"
+                                     "Language.PureScript.Ide.Reexports"
+                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                     'GHC.Types.False>_P
+                                  <GHC.Generics.M1
+                                     GHC.Generics.C
+                                     ('GHC.Generics.MetaCons
+                                        "ReexportResult" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                     (GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "reResolved")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R a)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            ('GHC.Base.Just "reFailed")
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            [(Language.PureScript.Names.ModuleName,
+                                                              Language.PureScript.AST.Declarations.DeclarationRef)]))>_R) ; Sub (Sym (Language.PureScript.Ide.Reexports.Rep_ReexportResult[0]
+                                                                                                                                          <a>_N))) <x>_N)
+                  (Language.PureScript.Ide.Reexports.$fGenericReexportResult_$cto
+                     @ a) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fGenericReexportResult1 ::
+    Language.PureScript.Ide.Reexports.ReexportResult a
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "ReexportResult" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "reResolved")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R a)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                ('GHC.Base.Just "reFailed")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1
+                                GHC.Generics.R
+                                [(Language.PureScript.Names.ModuleName,
+                                  Language.PureScript.AST.Declarations.DeclarationRef)]))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   @ x
+                   (x1 :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case x1 of wild { Language.PureScript.Ide.Reexports.ReexportResult g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "reResolved")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R a))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "reFailed")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1
+                            GHC.Generics.R
+                            [(Language.PureScript.Names.ModuleName,
+                              Language.PureScript.AST.Declarations.DeclarationRef)]))
+                    @ x
+                    g1
+                      `cast`
+                    (Sym (GHC.Generics.N:K1[0]
+                              <*>_N <GHC.Generics.R>_P <a>_R <x>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                                               <*>_N
+                                                                               <GHC.Generics.S>_P
+                                                                               <'GHC.Generics.MetaSel
+                                                                                  ('GHC.Base.Just
+                                                                                     "reResolved")
+                                                                                  'GHC.Generics.NoSourceUnpackedness
+                                                                                  'GHC.Generics.NoSourceStrictness
+                                                                                  'GHC.Generics.DecidedLazy>_P
+                                                                               <GHC.Generics.K1
+                                                                                  GHC.Generics.R
+                                                                                  a>_R) <x>_N)
+                    g2
+                      `cast`
+                    (Sym (GHC.Generics.N:K1[0]
+                              <*>_N
+                              <GHC.Generics.R>_P
+                              <[(Language.PureScript.Names.ModuleName,
+                                 Language.PureScript.AST.Declarations.DeclarationRef)]>_R
+                              <x>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                <*>_N
+                                                <GHC.Generics.S>_P
+                                                <'GHC.Generics.MetaSel
+                                                   ('GHC.Base.Just "reFailed")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy>_P
+                                                <GHC.Generics.K1
+                                                   GHC.Generics.R
+                                                   [(Language.PureScript.Names.ModuleName,
+                                                     Language.PureScript.AST.Declarations.DeclarationRef)]>_R) <x>_N))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "ReexportResult" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "reResolved")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R a)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "reFailed")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R
+                                                  [(Language.PureScript.Names.ModuleName,
+                                                    Language.PureScript.AST.Declarations.DeclarationRef)])>_R) <x>_N) }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fGenericReexportResult_$cto ::
+    GHC.Generics.Rep
+      (Language.PureScript.Ide.Reexports.ReexportResult a) x
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   @ x
+                   (ds :: GHC.Generics.Rep
+                            (Language.PureScript.Ide.Reexports.ReexportResult a) x) ->
+                 case ds
+                        `cast`
+                      ((Sub (Language.PureScript.Ide.Reexports.Rep_ReexportResult[0]
+                                 <a>_N) ; (GHC.Generics.N:M1[0]
+                                               <*>_N
+                                               <GHC.Generics.D>_P
+                                               <'GHC.Generics.MetaData
+                                                  "ReexportResult"
+                                                  "Language.PureScript.Ide.Reexports"
+                                                  "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                  'GHC.Types.False>_P
+                                               <GHC.Generics.M1
+                                                  GHC.Generics.C
+                                                  ('GHC.Generics.MetaCons
+                                                     "ReexportResult"
+                                                     'GHC.Generics.PrefixI
+                                                     'GHC.Types.True)
+                                                  (GHC.Generics.M1
+                                                     GHC.Generics.S
+                                                     ('GHC.Generics.MetaSel
+                                                        ('GHC.Base.Just "reResolved")
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.K1 GHC.Generics.R a)
+                                                   GHC.Generics.:*: GHC.Generics.M1
+                                                                      GHC.Generics.S
+                                                                      ('GHC.Generics.MetaSel
+                                                                         ('GHC.Base.Just "reFailed")
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.K1
+                                                                         GHC.Generics.R
+                                                                         [(Language.PureScript.Names.ModuleName,
+                                                                           Language.PureScript.AST.Declarations.DeclarationRef)]))>_R ; GHC.Generics.N:M1[0]
+                                                                                                                                            <*>_N
+                                                                                                                                            <GHC.Generics.C>_P
+                                                                                                                                            <'GHC.Generics.MetaCons
+                                                                                                                                               "ReexportResult"
+                                                                                                                                               'GHC.Generics.PrefixI
+                                                                                                                                               'GHC.Types.True>_P
+                                                                                                                                            <GHC.Generics.M1
+                                                                                                                                               GHC.Generics.S
+                                                                                                                                               ('GHC.Generics.MetaSel
+                                                                                                                                                  ('GHC.Base.Just
+                                                                                                                                                     "reResolved")
+                                                                                                                                                  'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                  'GHC.Generics.NoSourceStrictness
+                                                                                                                                                  'GHC.Generics.DecidedLazy)
+                                                                                                                                               (GHC.Generics.K1
+                                                                                                                                                  GHC.Generics.R
+                                                                                                                                                  a)
+                                                                                                                                             GHC.Generics.:*: GHC.Generics.M1
+                                                                                                                                                                GHC.Generics.S
+                                                                                                                                                                ('GHC.Generics.MetaSel
+                                                                                                                                                                   ('GHC.Base.Just
+                                                                                                                                                                      "reFailed")
+                                                                                                                                                                   'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                   'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                   'GHC.Generics.DecidedLazy)
+                                                                                                                                                                (GHC.Generics.K1
+                                                                                                                                                                   GHC.Generics.R
+                                                                                                                                                                   [(Language.PureScript.Names.ModuleName,
+                                                                                                                                                                     Language.PureScript.AST.Declarations.DeclarationRef)])>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 Language.PureScript.Ide.Reexports.ReexportResult
+                   @ a
+                   ds1
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Base.Just "reResolved")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1 GHC.Generics.R a>_R <x>_N ; GHC.Generics.N:K1[0]
+                                                                         <*>_N
+                                                                         <GHC.Generics.R>_P
+                                                                         <a>_R
+                                                                         <x>_P)
+                   ds2
+                     `cast`
+                   (GHC.Generics.N:M1[0]
+                        <*>_N
+                        <GHC.Generics.S>_P
+                        <'GHC.Generics.MetaSel
+                           ('GHC.Base.Just "reFailed")
+                           'GHC.Generics.NoSourceUnpackedness
+                           'GHC.Generics.NoSourceStrictness
+                           'GHC.Generics.DecidedLazy>_P
+                        <GHC.Generics.K1
+                           GHC.Generics.R
+                           [(Language.PureScript.Names.ModuleName,
+                             Language.PureScript.AST.Declarations.DeclarationRef)]>_R <x>_N ; GHC.Generics.N:K1[0]
+                                                                                                  <*>_N
+                                                                                                  <GHC.Generics.R>_P
+                                                                                                  <[(Language.PureScript.Names.ModuleName,
+                                                                                                     Language.PureScript.AST.Declarations.DeclarationRef)]>_R
+                                                                                                  <x>_P) }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fNFDataReexportResult ::
+    Control.DeepSeq.NFData a =>
+    Control.DeepSeq.NFData
+      (Language.PureScript.Ide.Reexports.ReexportResult a)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S),1*C1(H)><S(LS),1*U(U,1*U)>, Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                Language.PureScript.Ide.Reexports.$fNFDataReexportResult_$crnf
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Control.DeepSeq.NFData a>_R
+                 ->_R Sym (Control.DeepSeq.N:NFData[0]
+                               <Language.PureScript.Ide.Reexports.ReexportResult a>_N)) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fNFDataReexportResult_$crnf ::
+    Control.DeepSeq.NFData a =>
+    Language.PureScript.Ide.Reexports.ReexportResult a -> ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S),1*C1(H)><S(LS),1*U(U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dNFData :: Control.DeepSeq.NFData a)
+                   (eta :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case eta of wild { Language.PureScript.Ide.Reexports.ReexportResult g1 g2 ->
+                 case $dNFData `cast` (Control.DeepSeq.N:NFData[0] <a>_N)
+                        g1 of wild1 { () ->
+                 Language.PureScript.Ide.Reexports.$fNFDataReexportResult_go
+                   g2 } }) -}
+6d9be4ba2d8e4ab8d9b966179e1262a8
+  $fNFDataReexportResult_go ::
+    [(Language.PureScript.Names.ModuleName,
+      Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fShowReexportResult ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Language.PureScript.Ide.Reexports.ReexportResult a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Language.PureScript.Ide.Reexports.ReexportResult a)
+                  (Language.PureScript.Ide.Reexports.$fShowReexportResult_$cshowsPrec
+                     @ a
+                     v)
+                  (Language.PureScript.Ide.Reexports.$fShowReexportResult_$cshow
+                     @ a
+                     v)
+                  (Language.PureScript.Ide.Reexports.$fShowReexportResult_$cshowList
+                     @ a
+                     v) -}
+9d410122aa9a2bb1743ff72f2695078e
+  $fShowReexportResult1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+b902f7af70a1a550a626c7877ac8d266
+  $fShowReexportResult2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Ide.Reexports.$fShowReexportResult3) -}
+03b23c90e26aca818f7e2fcd55186885
+  $fShowReexportResult3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ReexportResult {"#) -}
+1903d2ba8fa4280e070fa7888ca3a0c1
+  $fShowReexportResult4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+049e7dd29726ca6485277b42ff488c89
+  $fShowReexportResult5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("reFailed = "#) -}
+3aa481bfd6d862427a8c0d5514715a3b
+  $fShowReexportResult6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("reResolved = "#) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fShowReexportResult_$cshow ::
+    GHC.Show.Show a =>
+    Language.PureScript.Ide.Reexports.ReexportResult a
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C(U))),A,A)><S,1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 Language.PureScript.Ide.Reexports.$fShowReexportResult_$cshowsPrec
+                   @ a
+                   $dShow
+                   Language.PureScript.Ide.Reexports.$fShowReexportResult1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fShowReexportResult_$cshowList ::
+    GHC.Show.Show a =>
+    [Language.PureScript.Ide.Reexports.ReexportResult a]
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Language.PureScript.Ide.Reexports.ReexportResult a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Language.PureScript.Ide.Reexports.ReexportResult a)
+                   (Language.PureScript.Ide.Reexports.$fShowReexportResult_$cshowsPrec
+                      @ a
+                      $dShow
+                      Language.PureScript.Ide.Reexports.$fShowReexportResult1)
+                   ls
+                   s) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  $fShowReexportResult_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+    -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Language.PureScript.Ide.Reexports.ReexportResult ww3 ww4 ->
+                 Language.PureScript.Ide.Reexports.$w$cshowsPrec
+                   @ a
+                   w
+                   ww1
+                   ww3
+                   ww4 } }) -}
+b4828a9871aa652376f53d60a7b43e18
+  $sannExportedFrom ::
+    (GHC.Base.Maybe Language.PureScript.Names.ModuleName
+     -> Data.Functor.Identity.Identity
+          (GHC.Base.Maybe Language.PureScript.Names.ModuleName))
+    -> Language.PureScript.Ide.Types.Annotation
+    -> Data.Functor.Identity.Identity
+         Language.PureScript.Ide.Types.Annotation
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><S,1*U(U,U,U,U)>m, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (f15 :: GHC.Base.Maybe Language.PureScript.Names.ModuleName
+                           -> Data.Functor.Identity.Identity
+                                (GHC.Base.Maybe Language.PureScript.Names.ModuleName))
+                   (ds :: Language.PureScript.Ide.Types.Annotation) ->
+                 case ds of wild { Language.PureScript.Ide.Types.Annotation x x1 x2 x3 ->
+                 (Language.PureScript.Ide.Types.Annotation
+                    x
+                    (f15 x1)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0]
+                         <GHC.Base.Maybe Language.PureScript.Names.ModuleName>_R)
+                    x2
+                    x3)
+                   `cast`
+                 (Sym (Data.Functor.Identity.N:Identity[0]
+                           <Language.PureScript.Ide.Types.Annotation>_R)) }) -}
+51293d2cf665ac7006e42cc6cb67c1e5
+  $sidaAnnotation ::
+    (Language.PureScript.Ide.Types.Annotation
+     -> Data.Functor.Identity.Identity
+          Language.PureScript.Ide.Types.Annotation)
+    -> Language.PureScript.Ide.Types.IdeDeclarationAnn
+    -> Data.Functor.Identity.Identity
+         Language.PureScript.Ide.Types.IdeDeclarationAnn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U,U)>m,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (f15 :: Language.PureScript.Ide.Types.Annotation
+                           -> Data.Functor.Identity.Identity
+                                Language.PureScript.Ide.Types.Annotation)
+                   (ds :: Language.PureScript.Ide.Types.IdeDeclarationAnn) ->
+                 case ds of wild { Language.PureScript.Ide.Types.IdeDeclarationAnn x x1 ->
+                 (Language.PureScript.Ide.Types.IdeDeclarationAnn
+                    (f15 x)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0]
+                         <Language.PureScript.Ide.Types.Annotation>_R)
+                    x1)
+                   `cast`
+                 (Sym (Data.Functor.Identity.N:Identity[0]
+                           <Language.PureScript.Ide.Types.IdeDeclarationAnn>_R)) }) -}
+42c33fb98083d350663cb95c4033efba
+  $slookup1 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+50eb848662274ca20c5218033eb13541
+  $tc'ReexportResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7844279554686443758##
+                   2091937002476975554##
+                   Language.PureScript.Ide.Reexports.$trModule
+                   Language.PureScript.Ide.Reexports.$tc'ReexportResult2
+                   1#
+                   Language.PureScript.Ide.Reexports.$tc'ReexportResult1) -}
+1177dfa2b3f9d88a14ea59840619cc5a
+  $tc'ReexportResult1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+03fb520a90c095c949dbee5666e79c44
+  $tc'ReexportResult2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Reexports.$tc'ReexportResult3) -}
+3bd17f8d189ac1d7a04ccd3f3033cb67
+  $tc'ReexportResult3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ReexportResult"#) -}
+8fd803a75dd5dbb9f329d44381a341bd
+  $tcReexportResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15630043962493946549##
+                   10490030288041659840##
+                   Language.PureScript.Ide.Reexports.$trModule
+                   Language.PureScript.Ide.Reexports.$tcReexportResult1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+619e88a6e0ead828d1e2163bb914dbb1
+  $tcReexportResult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Reexports.$tcReexportResult2) -}
+f4127a2e1a7f5354c32c8738b5f58686
+  $tcReexportResult2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ReexportResult"#) -}
+3c5afbcaa74e43ff26d20f6650e4f792
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Ide.Reexports.$trModule3
+                   Language.PureScript.Ide.Reexports.$trModule1) -}
+24c16341d326f81d7ce34b8dbb7cb1b1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Reexports.$trModule2) -}
+13432f44b4bdb0657c1a35b4acf14300
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Ide.Reexports"#) -}
+aae60af1a96b4844c0ff7beb2bf8b7e3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.Reexports.$trModule4) -}
+67f6aae6ef9d5d061ffc2e8a9cbd071a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+2a11eecd834762bbe3a198d43823970c
+  $w$c== ::
+    GHC.Classes.Eq a =>
+    a
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> a
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,1*U><L,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (ww :: a)
+                   (ww1 :: [(Language.PureScript.Names.ModuleName,
+                             Language.PureScript.AST.Declarations.DeclarationRef)])
+                   (ww2 :: a)
+                   (ww3 :: [(Language.PureScript.Names.ModuleName,
+                             Language.PureScript.AST.Declarations.DeclarationRef)]) ->
+                 case GHC.Classes.== @ a w ww ww2 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ (Language.PureScript.Names.ModuleName,
+                           Language.PureScript.AST.Declarations.DeclarationRef)
+                        Language.PureScript.Ide.Reexports.$fEqReexportResult_$s$fEq(,)
+                        ww1
+                        ww3 }) -}
+87e32ee21e76575377e2a6d71c4395ef
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int#
+    -> a
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(C(U))),A,A)><S,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: a)
+                   (ww2 :: [(Language.PureScript.Names.ModuleName,
+                             Language.PureScript.AST.Declarations.DeclarationRef)]) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec
+                       @ a
+                       w
+                       Language.PureScript.Ide.Reexports.$fShowReexportResult1
+                       ww1
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.CString.unpackAppendCString#
+                       Language.PureScript.Ide.Reexports.$fShowReexportResult6
+                       (f (GHC.Base.++
+                             @ GHC.Types.Char
+                             GHC.Show.showCommaSpace1
+                             (GHC.CString.unpackAppendCString#
+                                Language.PureScript.Ide.Reexports.$fShowReexportResult5
+                                (let {
+                                   s :: GHC.Base.String
+                                   = GHC.CString.unpackAppendCString#
+                                       Language.PureScript.Ide.Reexports.$fShowReexportResult4
+                                       x
+                                 } in
+                                 case ww2 of wild {
+                                   [] -> GHC.CString.unpackAppendCString# GHC.Show.showList__4 s
+                                   : x1 xs
+                                   -> GHC.Types.:
+                                        @ GHC.Types.Char
+                                        GHC.Show.showList__3
+                                        (case x1 of ww3 { (,) ww4 ww5 ->
+                                         GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.$fShow(,)4
+                                           (Language.PureScript.Names.$w$cshowsPrec
+                                              0#
+                                              ww4
+                                              (GHC.Types.:
+                                                 @ GHC.Types.Char
+                                                 GHC.Show.showList__1
+                                                 (GHC.Show.$fShow(,)_$sgo1
+                                                    (GHC.Types.:
+                                                       @ GHC.Types.Char
+                                                       GHC.Show.$fShow(,)2
+                                                       (let {
+                                                          lvl43 :: [GHC.Types.Char]
+                                                          = GHC.Types.:
+                                                              @ GHC.Types.Char
+                                                              GHC.Show.showList__2
+                                                              s
+                                                        } in
+                                                        letrec {
+                                                          showl :: [(Language.PureScript.Names.ModuleName,
+                                                                     Language.PureScript.AST.Declarations.DeclarationRef)]
+                                                                   -> GHC.Base.String
+                                                            {- Arity: 1, Strictness: <S,1*U> -}
+                                                          = \ (ds2 :: [(Language.PureScript.Names.ModuleName,
+                                                                        Language.PureScript.AST.Declarations.DeclarationRef)]) ->
+                                                            case ds2 of wild1 {
+                                                              [] -> lvl43
+                                                              : y ys
+                                                              -> GHC.Types.:
+                                                                   @ GHC.Types.Char
+                                                                   GHC.Show.showList__1
+                                                                   (case y of ww6 { (,) ww7 ww8 ->
+                                                                    GHC.Types.:
+                                                                      @ GHC.Types.Char
+                                                                      GHC.Show.$fShow(,)4
+                                                                      (Language.PureScript.Names.$w$cshowsPrec
+                                                                         0#
+                                                                         ww7
+                                                                         (GHC.Types.:
+                                                                            @ GHC.Types.Char
+                                                                            GHC.Show.showList__1
+                                                                            (GHC.Show.$fShow(,)_$sgo1
+                                                                               (GHC.Types.:
+                                                                                  @ GHC.Types.Char
+                                                                                  GHC.Show.$fShow(,)2
+                                                                                  (showl ys))
+                                                                               (Language.PureScript.AST.Declarations.$w$cshowsPrec3
+                                                                                  0#
+                                                                                  ww8)
+                                                                               (GHC.Types.[]
+                                                                                  @ GHC.Show.ShowS)))) }) }
+                                                        } in
+                                                        showl xs))
+                                                    (Language.PureScript.AST.Declarations.$w$cshowsPrec3
+                                                       0#
+                                                       ww5)
+                                                    (GHC.Types.[] @ GHC.Show.ShowS)))) }) }))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.Ide.Reexports.$fShowReexportResult2
+                        (g x)
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Language.PureScript.Ide.Reexports.$fShowReexportResult2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }) -}
+f4654ad009ff0b0aa2e9f7c27d026224
+  $wprettyPrintReexportResult ::
+    (a -> Data.Text.Internal.Text)
+    -> a
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> Data.Text.Internal.Text
+  {- Arity: 3, Strictness: <C(S(LSS)),1*C1(U(U,U,U))><L,U><S,1*U>,
+     Inline: [0] -}
+6a3994fad77e355282ddaf25870cb56c
+  $wresolveReexports' ::
+    Language.PureScript.Ide.Types.ModuleMap
+      [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> (# [Language.PureScript.Ide.Types.IdeDeclarationAnn],
+          [(Language.PureScript.Names.ModuleName,
+            Language.PureScript.AST.Declarations.DeclarationRef)] #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,1*U>, Inline: [0] -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  data ReexportResult a
+    = ReexportResult {reResolved :: a,
+                      reFailed :: [(Language.PureScript.Names.ModuleName,
+                                    Language.PureScript.AST.Declarations.DeclarationRef)]}
+1d998d10a5915e66a9ff3f971ecd02d1
+  axiom Language.PureScript.Ide.Reexports.Rep_ReexportResult::
+      GHC.Generics.Rep
+        (Language.PureScript.Ide.Reexports.ReexportResult a)
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "ReexportResult"
+               "Language.PureScript.Ide.Reexports"
+               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "ReexportResult" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "reResolved")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 a)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "reFailed")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0
+                                      [(Language.PureScript.Names.ModuleName,
+                                        Language.PureScript.AST.Declarations.DeclarationRef)])))
+b88ef45410f655a4084650504369b02c
+  prettyPrintReexportResult ::
+    (a -> Data.Text.Internal.Text)
+    -> Language.PureScript.Ide.Reexports.ReexportResult a
+    -> Data.Text.Internal.Text
+  {- Arity: 2,
+     Strictness: <C(S(LSS)),1*C1(U(U,U,U))><S(LS),1*U(U,1*U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: a -> Data.Text.Internal.Text)
+                   (w1 :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case w1 of ww { Language.PureScript.Ide.Reexports.ReexportResult ww1 ww2 ->
+                 Language.PureScript.Ide.Reexports.$wprettyPrintReexportResult
+                   @ a
+                   w
+                   ww1
+                   ww2 }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  reFailed ::
+    Language.PureScript.Ide.Reexports.ReexportResult a
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+  RecSel Left Language.PureScript.Ide.Reexports.ReexportResult
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   (ds :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case ds of wild { Language.PureScript.Ide.Reexports.ReexportResult ds1 ds2 ->
+                 ds2 }) -}
+1d998d10a5915e66a9ff3f971ecd02d1
+  reResolved ::
+    Language.PureScript.Ide.Reexports.ReexportResult a -> a
+  RecSel Left Language.PureScript.Ide.Reexports.ReexportResult
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   (ds :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case ds of wild { Language.PureScript.Ide.Reexports.ReexportResult ds1 ds2 ->
+                 ds1 }) -}
+1547c78df9c9c345b038a46bc966e02d
+  reexportHasFailures ::
+    Language.PureScript.Ide.Reexports.ReexportResult a
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: Language.PureScript.Ide.Reexports.ReexportResult a) ->
+                 case x of wild { Language.PureScript.Ide.Reexports.ReexportResult ds ds1 ->
+                 case ds1 of wild1 {
+                   [] -> GHC.Types.False : ds2 ds3 -> GHC.Types.True } }) -}
+8b19126dd850b69349cb03829a93caad
+  resolveReexports ::
+    Language.PureScript.Ide.Types.ModuleMap
+      [(Language.PureScript.Names.ModuleName,
+        Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> Language.PureScript.Ide.Types.ModuleMap
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> Language.PureScript.Ide.Types.ModuleMap
+         (Language.PureScript.Ide.Reexports.ReexportResult
+            [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: (\ (reexportRefs :: Language.PureScript.Ide.Types.ModuleMap
+                                      [(Language.PureScript.Names.ModuleName,
+                                        Language.PureScript.AST.Declarations.DeclarationRef)])
+                   (modules :: Language.PureScript.Ide.Types.ModuleMap
+                                 [Language.PureScript.Ide.Types.IdeDeclarationAnn]) ->
+                 Data.Map.Internal.mapWithKey
+                   @ Language.PureScript.Names.ModuleName
+                   @ [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+                   @ (Language.PureScript.Ide.Reexports.ReexportResult
+                        [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                   (\ (moduleName :: Language.PureScript.Names.ModuleName)
+                      (decls :: [Language.PureScript.Ide.Types.IdeDeclarationAnn])[OneShot] ->
+                    case Language.PureScript.Ide.Reexports.$slookup1
+                           @ [(Language.PureScript.Names.ModuleName,
+                               Language.PureScript.AST.Declarations.DeclarationRef)]
+                           moduleName
+                           reexportRefs of wild {
+                      GHC.Base.Nothing
+                      -> Language.PureScript.Ide.Reexports.ReexportResult
+                           @ [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+                           decls
+                           (GHC.Types.[]
+                              @ (Language.PureScript.Names.ModuleName,
+                                 Language.PureScript.AST.Declarations.DeclarationRef))
+                      GHC.Base.Just x
+                      -> case Language.PureScript.Ide.Reexports.$wresolveReexports'
+                                modules
+                                x of ww { (#,#) ww1 ww2 ->
+                         Language.PureScript.Ide.Reexports.ReexportResult
+                           @ [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+                           (GHC.Base.++
+                              @ Language.PureScript.Ide.Types.IdeDeclarationAnn
+                              decls
+                              ww1)
+                           ww2 } })
+                   modules) -}
+ff50143876384dc7ca96fcb11b793228
+  resolveReexports' ::
+    Language.PureScript.Ide.Types.ModuleMap
+      [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.AST.Declarations.DeclarationRef)]
+    -> Language.PureScript.Ide.Reexports.ReexportResult
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,1*U>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Ide.Types.ModuleMap
+                           [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                   (w1 :: [(Language.PureScript.Names.ModuleName,
+                            Language.PureScript.AST.Declarations.DeclarationRef)]) ->
+                 case Language.PureScript.Ide.Reexports.$wresolveReexports'
+                        w
+                        w1 of ww { (#,#) ww1 ww2 ->
+                 Language.PureScript.Ide.Reexports.ReexportResult
+                   @ [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+                   ww1
+                   ww2 }) -}
+instance GHC.Classes.Eq [Language.PureScript.Ide.Reexports.ReexportResult]
+  = Language.PureScript.Ide.Reexports.$fEqReexportResult
+instance GHC.Base.Functor [Language.PureScript.Ide.Reexports.ReexportResult]
+  = Language.PureScript.Ide.Reexports.$fFunctorReexportResult
+instance GHC.Generics.Generic [Language.PureScript.Ide.Reexports.ReexportResult]
+  = Language.PureScript.Ide.Reexports.$fGenericReexportResult
+instance Control.DeepSeq.NFData [Language.PureScript.Ide.Reexports.ReexportResult]
+  = Language.PureScript.Ide.Reexports.$fNFDataReexportResult
+instance GHC.Show.Show [Language.PureScript.Ide.Reexports.ReexportResult]
+  = Language.PureScript.Ide.Reexports.$fShowReexportResult
+family instance GHC.Generics.Rep [Language.PureScript.Ide.Reexports.ReexportResult]
+  = Language.PureScript.Ide.Reexports.Rep_ReexportResult
+"SPEC/Language.PureScript.Ide.Reexports $fEq(,) @ ModuleName @ DeclarationRef" [orphan] forall (v1 :: GHC.Classes.Eq
+                                                                                                        Language.PureScript.AST.Declarations.DeclarationRef)
+                                                                                               (v :: GHC.Classes.Eq
+                                                                                                       Language.PureScript.Names.ModuleName)
+  GHC.Classes.$fEq(,) @ Language.PureScript.Names.ModuleName
+                      @ Language.PureScript.AST.Declarations.DeclarationRef
+                      v
+                      v1
+  = Language.PureScript.Ide.Reexports.$fEqReexportResult_$s$fEq(,)
+"SPEC/Language.PureScript.Ide.Reexports $fEq(,)_$c/= @ ModuleName @ DeclarationRef" [orphan] forall ($dEq1 :: GHC.Classes.Eq
+                                                                                                                Language.PureScript.AST.Declarations.DeclarationRef)
+                                                                                                    ($dEq :: GHC.Classes.Eq
+                                                                                                               Language.PureScript.Names.ModuleName)
+  GHC.Classes.$fEq(,)_$c/= @ Language.PureScript.Names.ModuleName
+                           @ Language.PureScript.AST.Declarations.DeclarationRef
+                           $dEq
+                           $dEq1
+  = Language.PureScript.Ide.Reexports.$fEqReexportResult_$s$fEq(,)_$c/=
+"SPEC/Language.PureScript.Ide.Reexports annExportedFrom @ Identity" [orphan] forall ($dFunctor :: GHC.Base.Functor
+                                                                                                    Data.Functor.Identity.Identity)
+  Language.PureScript.Ide.Types.annExportedFrom @ Data.Functor.Identity.Identity
+                                                $dFunctor
+  = Language.PureScript.Ide.Reexports.$sannExportedFrom
+"SPEC/Language.PureScript.Ide.Reexports idaAnnotation @ Identity" [orphan] forall ($dFunctor :: GHC.Base.Functor
+                                                                                                  Data.Functor.Identity.Identity)
+  Language.PureScript.Ide.Types.idaAnnotation @ Data.Functor.Identity.Identity
+                                              $dFunctor
+  = Language.PureScript.Ide.Reexports.$sidaAnnotation
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

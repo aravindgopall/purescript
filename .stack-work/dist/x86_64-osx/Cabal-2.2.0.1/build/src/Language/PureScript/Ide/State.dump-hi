@@ -1,0 +1,2111 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:27.828589 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.State 8043
+  interface hash: c2c7a42e03b33240294e8ac95acd833d
+  ABI hash: 8ef311140d8df2a0751fa82966180060
+  export-list hash: d6e7d701ca3802e1ad145664a1252d33
+  orphan hash: 057dfa3db8f7fa6a52dda05376425801
+  flag hash: 40c9df1c9c54f4995cad6ab02a187ed7
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Ide.State.cacheRebuild
+  Language.PureScript.Ide.State.cachedRebuild
+  Language.PureScript.Ide.State.getAllModules
+  Language.PureScript.Ide.State.getExternFiles
+  Language.PureScript.Ide.State.getFileState
+  Language.PureScript.Ide.State.getLoadedModulenames
+  Language.PureScript.Ide.State.insertExterns
+  Language.PureScript.Ide.State.insertExternsSTM
+  Language.PureScript.Ide.State.insertModule
+  Language.PureScript.Ide.State.populateVolatileState
+  Language.PureScript.Ide.State.populateVolatileStateSTM
+  Language.PureScript.Ide.State.populateVolatileStateSync
+  Language.PureScript.Ide.State.resetIdeState
+  Language.PureScript.Ide.State.resolveDataConstructorsForModule
+  Language.PureScript.Ide.State.resolveInstances
+  Language.PureScript.Ide.State.resolveOperatorsForModule
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Docs.Convert.Single
+                     Language.PureScript.Docs.RenderedCode
+                     Language.PureScript.Docs.RenderedCode.RenderKind
+                     Language.PureScript.Docs.RenderedCode.RenderType
+                     Language.PureScript.Docs.RenderedCode.Types
+                     Language.PureScript.Docs.Types
+                     Language.PureScript.Docs.Utils.MonoidExtras
+                     Language.PureScript.Environment Language.PureScript.Errors
+                     Language.PureScript.Errors.JSON Language.PureScript.Externs
+                     Language.PureScript.Ide.Error Language.PureScript.Ide.Externs
+                     Language.PureScript.Ide.Logging Language.PureScript.Ide.Reexports
+                     Language.PureScript.Ide.SourceFile Language.PureScript.Ide.Types
+                     Language.PureScript.Ide.Util Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript System.IO.UTF8
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      auto-update-0.1.4 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bower-json-1.0.0.1 boxes-0.1.5
+                      bytestring-0.10.8.2 clock-0.7.2 colour-2.3.4 conduit-1.3.0.3
+                      conduit-extra-1.3.0 containers-0.5.11.0 data-ordlist-0.4.7.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 easy-file-0.2.2
+                      exceptions-0.10.0 fast-logger-2.4.11 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
+                      microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
+                      monad-control-1.0.2.3 monad-logger-0.3.28.5 monad-loops-0.4.3
+                      mtl-2.2.2 old-locale-1.0.0.7 old-time-1.1.0.3 parallel-3.2.1.1
+                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
+                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 resourcet-1.2.1
+                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
+                      stm-2.4.5.0 stm-chans-3.0.0.4 stringsearch-0.3.6.6 syb-0.7
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 transformers-base-0.4.5.2 unix-2.7.2.2
+                      unix-time-0.3.8 unliftio-core-0.1.1.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: unix-time-0.3.8:Data.UnixTime.Diff
+         syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         bower-json-1.0.0.1:Web.Bower.PackageMeta.Internal
+                         clock-0.7.2:System.Clock
+                         conduit-1.3.0.3:Data.Conduit.Internal.Conduit
+                         conduit-1.3.0.3:Data.Conduit.Internal.Pipe
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         monad-logger-0.3.28.5:Control.Monad.Logger
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Reexports
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Ide.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  async-2.2.1:Control.Concurrent.Async 459357253edd9936fe4b88fefb91a0c0
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Control.Monad.IO.Class 96109c36cb3c919872278540487fa39e
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Function 6e6aae9442025aeeb92a909c1bbc3fca
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Conc.Sync 0f06fc4d7792ea35160385e7175366ba
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  containers-0.5.11.0:Data.Map.Lazy 04768812a57695fe69782cd0014b0c7b
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 171f1f567c47ef82860df4ad686d11b1
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  microlens-0.4.9.1:Lens.Micro 962434009a31a5b07a9c325f04604c4d
+import  -/  microlens-0.4.9.1:Lens.Micro.Internal 5d6464033dd2b487f83c604f394b1101
+import  -/  microlens-mtl-0.1.11.1:Lens.Micro.Mtl 0b8886821fc976acf46035b23c9705b6
+import  -/  microlens-platform-0.3.10:Lens.Micro.Platform 0a8b1a3c754e3254d224cc9602b42f64
+import  -/  monad-logger-0.3.28.5:Control.Monad.Logger ae6f9fbc4451af5ecbeab48dfdfd01ee
+import  -/  mtl-2.2.2:Control.Monad.Reader.Class a5ac59953d953ab8532b5c11f5e8e0b0
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  Declaration b31d94d0c7b90700d40f9ba6ec420e41
+  Module b9e5d519f3251f7053b581e4ecd9e6bf
+  Module 7cf4b96f7d4b51b446726a099ab87bb6
+  TypeDeclaration a12f822b0dbc597658a7d1e27db5ac22
+  declName e5f550546a379316c2a828bc4bea491c
+  declSourceAnn e369e234b56621b5ead544cee7b1e586
+  getModuleName 578b1d81b22244b5aeca14680df8f57d
+  tydeclIdent 73dd7603bbe7fadce9f5fc48c4dc58fb
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Comments f344ceddf328cf61908be13dd1f90917
+  Comment 23fbbb637db19d35ca8339b51dc9ecf5
+import  -/  Language.PureScript.Docs.Convert.Single 2a113b35af7bf7d639de3ddcc5cd6463
+  exports: cbc4b881f850848dc01ffb3b8ae98c43
+  convertComments ef6434dddeabd11852f6a52d2a9f1b2a
+import  -/  Language.PureScript.Externs 17598d5385c46f650a2a55de08912a53
+  exports: f9fc7fa26f69a655fd896d8cccd21570
+  EDInstance df162d5263c0f620dff99525d40ae26f
+  ExternsFile b2e76f24ecba17bf3b946e078a8414b6
+  edInstanceChain 45a26a6f5854665222c379466681ba1c
+  edInstanceChainIndex 45a26a6f5854665222c379466681ba1c
+  edInstanceClassName 45a26a6f5854665222c379466681ba1c
+  edInstanceConstraints 45a26a6f5854665222c379466681ba1c
+  edInstanceName 45a26a6f5854665222c379466681ba1c
+  edInstanceTypes 45a26a6f5854665222c379466681ba1c
+  efDeclarations b2e76f24ecba17bf3b946e078a8414b6
+  efModuleName b2e76f24ecba17bf3b946e078a8414b6
+import  -/  Language.PureScript.Ide.Externs 52bfc827ac343fc1bcc9fcb1e0829386
+  exports: 85b0c309d5657903e842ccf132c588bd
+  convertExterns 7c7045db41fe4488180d91efb674c757
+import  -/  Language.PureScript.Ide.Logging 502eef995fef3c7a1a41c5ba470e9af8
+  displayTimeSpec 6effe2be22125576e87fd8b86be01d7d
+  logPerf 32b7bd06b53b47916f10ab4612b9fbbf
+  runLogger 84c8023e8f27f863766ee07a8171d65f
+import  -/  Language.PureScript.Ide.Reexports 515a315d86a38b4d6948b7c2eac90cce
+  exports: 2b3ce93a86241d0d499efca513f1142d
+  ReexportResult 1d998d10a5915e66a9ff3f971ecd02d1
+  prettyPrintReexportResult b88ef45410f655a4084650504369b02c
+  reResolved 1d998d10a5915e66a9ff3f971ecd02d1
+  reexportHasFailures 1547c78df9c9c345b038a46bc966e02d
+  resolveReexports 8b19126dd850b69349cb03829a93caad
+import  -/  Language.PureScript.Ide.SourceFile 41485b584afd6ccbf645f71bb72ce949
+  exports: a4dbc802101a8d8456766bbd5ac6628c
+  extractAstInformation 2dccdbc642f3cedcb122eb0758b1d6b0
+import  -/  Language.PureScript.Ide.Types d9d9fd4c2b6a1fdeece731a5e8479937
+  exports: dd47afbd66baea5bbcdd5e2641556a91
+  AstData 89d4fa58dc14d0bdfcfa07e5db723f1f
+  DefinitionSites 3a3e2508f4840cba90db1936662ffe32
+  Ide e9f79bb08c02b580420aa93d49f8c0de
+  IdeDataConstructor ee5d3e9882f97e73a2c60aca5e5d9c06
+  IdeDeclDataConstructor 79fe65acfb276d9846795832f8cd5967
+  IdeDeclKind f96b042ff6b5e4c79ef566bb7be1b354
+  IdeDeclType 57208577780a76f017987bca4d2b2560
+  IdeDeclTypeClass 42ebe2284da9669a4b1d687dc16c646e
+  IdeDeclTypeOperator df9f5cb0624ba5f26f443c10cd955133
+  IdeDeclTypeSynonym 28ae0a9332e5ab733f2495e6a4ce73c4
+  IdeDeclValue 1a020d12f4b3babbfaa3f10dcf94e2d1
+  IdeDeclValueOperator 54fcb442fafa92ac00e4505c9d086275
+  IdeDeclaration 9a139a83eccdb4ce038336f38d1d61cf
+  IdeDeclarationAnn fcd7162a0948180de725959709c4eb31
+  IdeDeclarationAnn 9e61215f32f4caed313e4d158f96dea0
+  IdeFileState ff2c138c173d5cc7c94c28d2583d85e1
+  IdeFileState 3efe7a586df81e9939e878abd1e5b6ba
+  IdeInstance efc01ecce865ec0da0eceffb613a7dbf
+  IdeInstance c34cd658b6edc1c9e8202306ab95e2f0
+  IdeNSKind e063f65cdccde7606ff4d24b7b66f6b5
+  IdeNSType 75f5cc04055e90fdd173fd56bf2091be
+  IdeNSValue 3e2f2098b0b41535be66110267b186ff
+  IdeNamespaced 3e160843be860aca9f7cb3709c7d7669
+  IdeState c64cafa4c111c51ee62bcfcf640157b5
+  IdeVolatileState 4dc9b657eae1bc7804e8205f9a90472b
+  IdeVolatileState 553cccbafe2b1e345c62ddbb697c6a55
+  ModuleMap 315b3ac99c0a1df9ab81f6091369924a
+  TypeAnnotations d3060bd163f7b8f4cb4af455406d60b9
+  _IdeDeclDataConstructor fb9bd523b9df3ddda459a7ff8a9013b1
+  _IdeDeclType b6abbb84c05a2626bb6f939f2d4a01d9
+  _IdeDeclTypeClass 7b73d8300b94013ccf0fa786e0e8feda
+  _IdeDeclValue 6fa877d6b1628fd5f64602ebac3fae78
+  _annDocumentation 9e61215f32f4caed313e4d158f96dea0
+  _annLocation 9e61215f32f4caed313e4d158f96dea0
+  _annTypeAnnotation 9e61215f32f4caed313e4d158f96dea0
+  anyOf 42e219aefc77f695882094d59e3b6182
+  confLogLevel b2d24d9e851cc1c4d2bfe702e4e8e593
+  emptyIdeState 48b8fadb61e252df0065b7be15599a6e
+  fsExterns 3efe7a586df81e9939e878abd1e5b6ba
+  fsModules 3efe7a586df81e9939e878abd1e5b6ba
+  idaDeclaration a8a9c5d727b1ceabcff6fe9a77c3ce8a
+  ideConfiguration 6f3b6b19886fb003ac3367d5df972b0f
+  ideDtorName 4b0e35dffdadad83f0994bd143209fc9
+  ideDtorType 88238d24f2d1a10b2a977ac1a1991867
+  ideFileState c64cafa4c111c51ee62bcfcf640157b5
+  ideStateVar 6f3b6b19886fb003ac3367d5df972b0f
+  ideSynonymName f05596230d9dbc39b510041107fb41e9
+  ideTCInstances d96ef841d9cae5877a4c8d8f68ba433c
+  ideTCName 66e9343e4eda36974b61203c0546ec1e
+  ideTypeDtors 5de4dbaa6c0ef11fbab6321f0f48a768
+  ideTypeKind 41b7daeb2ecc3435543b5da07ba15ee3
+  ideTypeName 07a28cae9afd06eac4ebbeba9047afee
+  ideTypeOpAlias 4f7a5aab16297f26afe248ebdddab891
+  ideTypeOpKind f049f369c37b12b2e433596aec8edcd6
+  ideTypeOpName a71d07d03868a498ff32bb8d2a39a281
+  ideValueIdent 47a1c1011665faf42f703f8df96ff6f0
+  ideValueOpAlias 523a759161b438fe3567c509d86cbda8
+  ideValueOpName 4c4afc0fa58c943c5be021a21d27c60f
+  ideValueOpType 2e2d8468609678dee7e7347e555d02f7
+  ideValueType 9e0e4761099915fe4c8b2cf03ac5d1ce
+  ideVolatileState c64cafa4c111c51ee62bcfcf640157b5
+  vsAstData 553cccbafe2b1e345c62ddbb697c6a55
+  vsCachedRebuild 553cccbafe2b1e345c62ddbb697c6a55
+  vsDeclarations 553cccbafe2b1e345c62ddbb697c6a55
+import  -/  Language.PureScript.Ide.Util 28758b8888c6917067d0548bee7740c5
+  exports: 984706b8dc3d9ad9746cf1d4cf6cd995
+  discardAnn e44cc83d97b0cc6922e7f0b3fcd27b9e
+  opNameT 5f081b1215b743d0287cb7ea0eb66b39
+  properNameT eeb3262d1e87ea333fe2a7b97d12fc1c
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  ClassName e69348bcf8c43a2174540a1d5983bfaa
+  Ident 0ccd7f2221de64569e50634367691253
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  IdentName 5b06dbfa684a1a4686ae5dc3b60a0a36
+  KiName 3988b2e6728e13d6e386f74a6394b09e
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  Name 184494d9e734645f374e2a0fce32bfac
+  ProperName 9eb330c84db102abf2d0f2652fe4a144
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified d600a7f01c8203cf5504999de99c923c
+  TyName 2de556166e59a0005c7143bf3b600f7e
+  runIdent bc5cc3d3ba9d105c169eb6038c65d1a8
+  runModuleName e07c63fa3ece350e6976663ef993edbb
+import  -/  stm-2.4.5.0:Control.Concurrent.STM 5ec97830246fb15a85b4d8cd8209f698
+import  -/  stm-2.4.5.0:Control.Concurrent.STM.TVar a2518ded50e38dfa02555ea1dc90f6c2
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Reader 42962052353a5a0f766912058b765b5d
+6137da2916fd56137d1b05b896678f8c
+  $s$fApplicativeLoggingT ::
+    GHC.Base.Applicative (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Language.PureScript.Ide.State.$s$fApplicativeLoggingT_$s$fFunctorLoggingT
+                  (\ @ a (x :: a) ->
+                   let {
+                     x1 :: GHC.Prim.State# GHC.Prim.RealWorld
+                           -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                       {- Arity: 1 -}
+                     = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, x #)
+                   } in
+                   (\ (ds :: Language.Haskell.TH.Syntax.Loc
+                             -> Control.Monad.Logger.LogSource
+                             -> Control.Monad.Logger.LogLevel
+                             -> System.Log.FastLogger.LogStr.LogStr
+                             -> GHC.Types.IO ()) ->
+                    x1)
+                     `cast`
+                   ((<Language.Haskell.TH.Syntax.Loc
+                      -> Control.Monad.Logger.LogSource
+                      -> Control.Monad.Logger.LogLevel
+                      -> System.Log.FastLogger.LogStr.LogStr
+                      -> GHC.Types.IO ()>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <a>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                      <GHC.Types.IO>_R <a>_N)))
+                  Language.PureScript.Ide.State.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*>
+                  (\ @ a
+                     @ b
+                     @ c
+                     (eta :: a -> b -> c)
+                     (eta1 :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                     (eta2 :: Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                     (eta3 :: Language.Haskell.TH.Syntax.Loc
+                              -> Control.Monad.Logger.LogSource
+                              -> Control.Monad.Logger.LogLevel
+                              -> System.Log.FastLogger.LogStr.LogStr
+                              -> GHC.Types.IO ())
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (eta1
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                           eta3)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds { (#,#) ipv ipv1 ->
+                   case (eta2
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <b>_N)
+                           eta3)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                          ipv of ds1 { (#,#) ipv2 ipv3 ->
+                   (# ipv2, eta ipv1 ipv3 #) } })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                   ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO b>_R
+                   ->_R (<Language.Haskell.TH.Syntax.Loc
+                          -> Control.Monad.Logger.LogSource
+                          -> Control.Monad.Logger.LogLevel
+                          -> System.Log.FastLogger.LogStr.LogStr
+                          -> GHC.Types.IO ()>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <c>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                          <GHC.Types.IO>_R <c>_N))
+                  (\ @ a
+                     @ b
+                     (eta :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                     (eta1 :: Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                     (eta2 :: Language.Haskell.TH.Syntax.Loc
+                              -> Control.Monad.Logger.LogSource
+                              -> Control.Monad.Logger.LogLevel
+                              -> System.Log.FastLogger.LogStr.LogStr
+                              -> GHC.Types.IO ())
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (eta
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                           eta2)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds { (#,#) ipv ipv1 ->
+                   (eta1
+                      `cast`
+                    (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <b>_N)
+                      eta2)
+                     `cast`
+                   (GHC.Types.N:IO[0] <b>_R)
+                     ipv })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                   ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO b>_R
+                   ->_R (<Language.Haskell.TH.Syntax.Loc
+                          -> Control.Monad.Logger.LogSource
+                          -> Control.Monad.Logger.LogLevel
+                          -> System.Log.FastLogger.LogStr.LogStr
+                          -> GHC.Types.IO ()>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                          <GHC.Types.IO>_R <b>_N))
+                  (\ @ a
+                     @ b
+                     (eta1 :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                     (eta2 :: Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                     (eta3 :: Language.Haskell.TH.Syntax.Loc
+                              -> Control.Monad.Logger.LogSource
+                              -> Control.Monad.Logger.LogLevel
+                              -> System.Log.FastLogger.LogStr.LogStr
+                              -> GHC.Types.IO ())
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (eta1
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                           eta3)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds { (#,#) ipv ipv1 ->
+                   case (eta2
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <b>_N)
+                           eta3)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                          ipv of ds1 { (#,#) ipv2 ipv3 ->
+                   (# ipv2, ipv1 #) } })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                   ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO b>_R
+                   ->_R (<Language.Haskell.TH.Syntax.Loc
+                          -> Control.Monad.Logger.LogSource
+                          -> Control.Monad.Logger.LogLevel
+                          -> System.Log.FastLogger.LogStr.LogStr
+                          -> GHC.Types.IO ()>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                          <GHC.Types.IO>_R <a>_N)) -}
+b44b56a2acd6fcb8eb06927a22ca7e59
+  $s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*> ::
+    Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b)
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (loggerF :: Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b))
+                   (loggerA :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                   (loggerFn :: Language.Haskell.TH.Syntax.Loc
+                                -> Control.Monad.Logger.LogSource
+                                -> Control.Monad.Logger.LogLevel
+                                -> System.Log.FastLogger.LogStr.LogStr
+                                -> GHC.Types.IO ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (loggerF
+                         `cast`
+                       (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a -> b>_N)
+                         loggerFn)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a -> b>_R)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (loggerA
+                         `cast`
+                       (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                         loggerFn)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, ipv1 ipv3 #) } })
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Logger.LoggingT GHC.Types.IO (a -> b)>_R
+                 ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                 ->_R (<Language.Haskell.TH.Syntax.Loc
+                        -> Control.Monad.Logger.LogSource
+                        -> Control.Monad.Logger.LogLevel
+                        -> System.Log.FastLogger.LogStr.LogStr
+                        -> GHC.Types.IO ()>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                        <GHC.Types.IO>_R <b>_N)) -}
+b4c43068a7cc61e4a5887bfadbe7fc1f
+  $s$fApplicativeLoggingT_$s$fFunctorLoggingT ::
+    GHC.Base.Functor (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Language.PureScript.Ide.State.$s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap
+                  (\ @ a
+                     @ b
+                     (x :: a)
+                     (eta :: Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                     (eta1 :: Language.Haskell.TH.Syntax.Loc
+                              -> Control.Monad.Logger.LogSource
+                              -> Control.Monad.Logger.LogLevel
+                              -> System.Log.FastLogger.LogStr.LogStr
+                              -> GHC.Types.IO ())
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (eta
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <b>_N)
+                           eta1)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                          s of ds { (#,#) ipv ipv1 ->
+                   (# ipv, x #) })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO b>_R
+                   ->_R (<Language.Haskell.TH.Syntax.Loc
+                          -> Control.Monad.Logger.LogSource
+                          -> Control.Monad.Logger.LogLevel
+                          -> System.Log.FastLogger.LogStr.LogStr
+                          -> GHC.Types.IO ()>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                          <GHC.Types.IO>_R <a>_N)) -}
+5f8178f01361bfca4b6fd7878ef5b5e3
+  $s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (f1 :: a -> b)
+                   (logger :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                   (loggerFn :: Language.Haskell.TH.Syntax.Loc
+                                -> Control.Monad.Logger.LogSource
+                                -> Control.Monad.Logger.LogLevel
+                                -> System.Log.FastLogger.LogStr.LogStr
+                                -> GHC.Types.IO ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (logger
+                         `cast`
+                       (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                         loggerFn)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv, f1 ipv1 #) })
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R
+                 ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                 ->_R (<Language.Haskell.TH.Syntax.Loc
+                        -> Control.Monad.Logger.LogSource
+                        -> Control.Monad.Logger.LogLevel
+                        -> System.Log.FastLogger.LogStr.LogStr
+                        -> GHC.Types.IO ()>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                        <GHC.Types.IO>_R <b>_N)) -}
+3e21126e21d19aa96771a21be87b674d
+  $s$fMonadIOLoggingT_$s$fMonadLoggingT ::
+    GHC.Base.Monad (Control.Monad.Logger.LoggingT GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                  Language.PureScript.Ide.State.$s$fApplicativeLoggingT
+                  (\ @ a
+                     @ b
+                     (ds :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                     (f1 :: a -> Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                     (r :: Language.Haskell.TH.Syntax.Loc
+                           -> Control.Monad.Logger.LogSource
+                           -> Control.Monad.Logger.LogLevel
+                           -> System.Log.FastLogger.LogStr.LogStr
+                           -> GHC.Types.IO ())
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds
+                           `cast`
+                         (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                           r)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   ((f1 ipv1)
+                      `cast`
+                    (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <b>_N)
+                      r)
+                     `cast`
+                   (GHC.Types.N:IO[0] <b>_R)
+                     ipv })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                   ->_R <a -> Control.Monad.Logger.LoggingT GHC.Types.IO b>_R
+                   ->_R (<Language.Haskell.TH.Syntax.Loc
+                          -> Control.Monad.Logger.LogSource
+                          -> Control.Monad.Logger.LogLevel
+                          -> System.Log.FastLogger.LogStr.LogStr
+                          -> GHC.Types.IO ()>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                          <GHC.Types.IO>_R <b>_N))
+                  Language.PureScript.Ide.State.$s$fMonadIOLoggingT_$s$fMonadLoggingT_$c>>
+                  (\ @ a (eta :: a) ->
+                   let {
+                     x :: GHC.Prim.State# GHC.Prim.RealWorld
+                          -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                       {- Arity: 1 -}
+                     = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, eta #)
+                   } in
+                   (\ (ds :: Language.Haskell.TH.Syntax.Loc
+                             -> Control.Monad.Logger.LogSource
+                             -> Control.Monad.Logger.LogLevel
+                             -> System.Log.FastLogger.LogStr.LogStr
+                             -> GHC.Types.IO ()) ->
+                    x)
+                     `cast`
+                   ((<Language.Haskell.TH.Syntax.Loc
+                      -> Control.Monad.Logger.LogSource
+                      -> Control.Monad.Logger.LogLevel
+                      -> System.Log.FastLogger.LogStr.LogStr
+                      -> GHC.Types.IO ()>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <a>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                      <GHC.Types.IO>_R <a>_N)))
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Control.Monad.Logger.LoggingT GHC.Types.IO a)) -}
+883074eee7c65060710b7b193f56a869
+  $s$fMonadIOLoggingT_$s$fMonadLoggingT_$c>> ::
+    Control.Monad.Logger.LoggingT GHC.Types.IO a
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+    -> Control.Monad.Logger.LoggingT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m1 :: Control.Monad.Logger.LoggingT GHC.Types.IO a)
+                   (k :: Control.Monad.Logger.LoggingT GHC.Types.IO b)
+                   (r :: Language.Haskell.TH.Syntax.Loc
+                         -> Control.Monad.Logger.LogSource
+                         -> Control.Monad.Logger.LogLevel
+                         -> System.Log.FastLogger.LogStr.LogStr
+                         -> GHC.Types.IO ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (m1
+                         `cast`
+                       (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <a>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (k `cast`
+                  (Control.Monad.Logger.N:LoggingT[0] <GHC.Types.IO>_R <b>_N)
+                    r)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv })
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Logger.LoggingT GHC.Types.IO a>_R
+                 ->_R <Control.Monad.Logger.LoggingT GHC.Types.IO b>_R
+                 ->_R (<Language.Haskell.TH.Syntax.Loc
+                        -> Control.Monad.Logger.LogSource
+                        -> Control.Monad.Logger.LogLevel
+                        -> System.Log.FastLogger.LogStr.LogStr
+                        -> GHC.Types.IO ()>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                        <GHC.Types.IO>_R <b>_N)) -}
+0734ae3a97910f7fd1d8a92533f2da09
+  $s$fMonadIOReaderT ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Trans.Reader.ReaderT
+         r (Control.Monad.Logger.LoggingT GHC.Types.IO))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ r.
+                  @ (Control.Monad.Trans.Reader.ReaderT
+                       r (Control.Monad.Logger.LoggingT GHC.Types.IO))
+                  (Control.Monad.Trans.Reader.$fMonadReaderT
+                     @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                     @ r
+                     Language.PureScript.Ide.State.$s$fMonadIOLoggingT_$s$fMonadLoggingT)
+                  (\ @ a (x :: GHC.Types.IO a) ->
+                   let {
+                     m1 :: (Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ())
+                           -> GHC.Types.IO a
+                       {- Arity: 1 -}
+                     = \ (ds :: Language.Haskell.TH.Syntax.Loc
+                                -> Control.Monad.Logger.LogSource
+                                -> Control.Monad.Logger.LogLevel
+                                -> System.Log.FastLogger.LogStr.LogStr
+                                -> GHC.Types.IO ()) ->
+                       x
+                   } in
+                   (\ (ds :: r) -> m1)
+                     `cast`
+                   ((<r>_R
+                     ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                   <GHC.Types.IO>_R
+                                   <a>_N)) ; Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                      <*>_N
+                                                      <r>_R
+                                                      <Control.Monad.Logger.LoggingT GHC.Types.IO>_R
+                                                      <a>_N))) -}
+7d990f6e022ca57661f6e92b57f09076
+  $s$fMonadLoggerReaderT ::
+    Control.Monad.Logger.MonadLogger
+      (Control.Monad.Trans.Reader.ReaderT
+         r (Control.Monad.Logger.LoggingT GHC.Types.IO))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ r.
+                  @ (Control.Monad.Trans.Reader.ReaderT
+                       r (Control.Monad.Logger.LoggingT GHC.Types.IO))
+                  (Control.Monad.Trans.Reader.$fMonadReaderT
+                     @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
+                     @ r
+                     Language.PureScript.Ide.State.$s$fMonadIOLoggingT_$s$fMonadLoggingT)
+                  (\ @ msg
+                     (eta :: System.Log.FastLogger.LogStr.ToLogStr msg)
+                     (eta1 :: Language.Haskell.TH.Syntax.Loc)
+                     (eta2 :: Control.Monad.Logger.LogSource)
+                     (eta3 :: Control.Monad.Logger.LogLevel)
+                     (eta4 :: msg) ->
+                   let {
+                     m1 :: (Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ())
+                           -> GHC.Types.IO ()
+                       {- Arity: 1 -}
+                     = \ (f1 :: Language.Haskell.TH.Syntax.Loc
+                                -> Control.Monad.Logger.LogSource
+                                -> Control.Monad.Logger.LogLevel
+                                -> System.Log.FastLogger.LogStr.LogStr
+                                -> GHC.Types.IO ()) ->
+                       f1
+                         eta1
+                         eta2
+                         eta3
+                         (eta `cast` (System.Log.FastLogger.LogStr.N:ToLogStr[0] <msg>_N)
+                            eta4)
+                   } in
+                   (\ (ds :: r) -> m1)
+                     `cast`
+                   ((<r>_R
+                     ->_R Sym (Control.Monad.Logger.N:LoggingT[0]
+                                   <GHC.Types.IO>_R
+                                   <()>_N)) ; Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                       <*>_N
+                                                       <r>_R
+                                                       <Control.Monad.Logger.LoggingT
+                                                          GHC.Types.IO>_R
+                                                       <()>_N))) -}
+af2addd3dd301377924e9814faa50ffc
+  $s$fMonadLoggingT_$creturn ::
+    a -> Control.Monad.Logger.LoggingT GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (eta :: a) ->
+                 let {
+                   x :: GHC.Prim.State# GHC.Prim.RealWorld
+                        -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                     {- Arity: 1 -}
+                   = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, eta #)
+                 } in
+                 (\ (ds :: Language.Haskell.TH.Syntax.Loc
+                           -> Control.Monad.Logger.LogSource
+                           -> Control.Monad.Logger.LogLevel
+                           -> System.Log.FastLogger.LogStr.LogStr
+                           -> GHC.Types.IO ()) ->
+                  x)
+                   `cast`
+                 ((<Language.Haskell.TH.Syntax.Loc
+                    -> Control.Monad.Logger.LogSource
+                    -> Control.Monad.Logger.LogLevel
+                    -> System.Log.FastLogger.LogStr.LogStr
+                    -> GHC.Types.IO ()>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <a>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                    <GHC.Types.IO>_R <a>_N))) -}
+08e23ed8cf8a4417c01b89b8b41a8761
+  $sadjustWithKey_$sgo13 ::
+    (Language.PureScript.Names.ModuleName -> a1 -> a1)
+    -> Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C1(U))><S,1*U><S,1*U> -}
+08fbd51d5b13c44296f167b44460b44c
+  $sidaDeclaration1 ::
+    (Language.PureScript.Ide.Types.IdeDeclaration
+     -> Data.Functor.Identity.Identity
+          Language.PureScript.Ide.Types.IdeDeclaration)
+    -> Language.PureScript.Ide.Types.IdeDeclarationAnn
+    -> Data.Functor.Identity.Identity
+         Language.PureScript.Ide.Types.IdeDeclarationAnn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U,U)>m,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (f15 :: Language.PureScript.Ide.Types.IdeDeclaration
+                           -> Data.Functor.Identity.Identity
+                                Language.PureScript.Ide.Types.IdeDeclaration)
+                   (ds :: Language.PureScript.Ide.Types.IdeDeclarationAnn) ->
+                 case ds of wild { Language.PureScript.Ide.Types.IdeDeclarationAnn x x1 ->
+                 (Language.PureScript.Ide.Types.IdeDeclarationAnn
+                    x
+                    (f15 x1)
+                      `cast`
+                    (Data.Functor.Identity.N:Identity[0]
+                         <Language.PureScript.Ide.Types.IdeDeclaration>_R))
+                   `cast`
+                 (Sym (Data.Functor.Identity.N:Identity[0]
+                           <Language.PureScript.Ide.Types.IdeDeclarationAnn>_R)) }) -}
+4f4f56a0b350712bb17632ccbe781032
+  $sinsertWithKey_$s$sgo13 ::
+    Data.Map.Internal.Map
+      Language.PureScript.Names.Name
+      [Language.PureScript.Comments.Comment]
+    -> [Language.PureScript.Comments.Comment]
+    -> Language.PureScript.Names.Name
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.Name
+         [Language.PureScript.Comments.Comment]
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+75f236c461c0ea71e28045346f5a1ffc
+  $sinsert_$sgo13 ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ModuleName
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+0d2e1737b21097d93ab679b383658975
+  $slookup1 ::
+    Language.PureScript.Names.Ident
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+c86d1227b3200e4a0589b2fd0b3e5bf3
+  $slookup7 ::
+    Language.PureScript.Names.Name
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+be4845dba15e3ea0d0633ccecff08a4b
+  $slookup9 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+de0103c166b70161997aefae52045574
+  $slookup_$spoly_go1 ::
+    Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Integer.Type.Integer
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,U> -}
+1d0960cb653d92d4e4be230c8d93e8ab
+  $slookup_$spoly_go13 ::
+    Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Base.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+0e5dfe3f0b03906073779672a5a85790
+  $slookup_$spoly_go2 ::
+    Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> Data.Text.Internal.Text -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+0ea3e64cbf9585447a8d4c193e54875e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Ide.State.$trModule3
+                   Language.PureScript.Ide.State.$trModule1) -}
+c4db17e848f093b122f2dd2eae0c4666
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.State.$trModule2) -}
+674aa3a524a4ea8573122b8ad419b369
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Ide.State"#) -}
+8d4dc36af7bab6d511fd2c1a068d59e5
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Ide.State.$trModule4) -}
+7008e88eb0da81b3ed6217f01edbc0db
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+46f3af34cedd891f99a1e1c5e1feb17c
+  $w$sgo13 ::
+    (a1 -> a1 -> a1)
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a1
+  {- Arity: 6,
+     Strictness: <L,1*C1(C1(U))><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+ae4b53aff0720d78e17f0e3aeb28618e
+  $wgo13 ::
+    Data.Map.Internal.Map
+      Language.PureScript.Names.ModuleName
+      (Language.PureScript.Ide.Reexports.ReexportResult
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+    -> (Language.Haskell.TH.Syntax.Loc
+        -> Control.Monad.Logger.LogSource
+        -> Control.Monad.Logger.LogLevel
+        -> System.Log.FastLogger.LogStr.LogStr
+        -> GHC.Types.IO ())
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Map.Internal.Map Language.PureScript.Names.ModuleName () #)
+  {- Arity: 3, Strictness: <S,1*U><L,C(C1(C1(C1(C1(U(U,U))))))><S,U>,
+     Inline: [0] -}
+a91bf961f8f9b0881e555d79b864e489
+  $winsertExternsSTM ::
+    GHC.Prim.TVar#
+      GHC.Prim.RealWorld Language.PureScript.Ide.Types.IdeState
+    -> Language.PureScript.Externs.ExternsFile
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,U><L,1*U(U,U,U,U,U,U,U,U)><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.TVar#
+                            GHC.Prim.RealWorld Language.PureScript.Ide.Types.IdeState)
+                   (w :: Language.PureScript.Externs.ExternsFile)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.readTVar#
+                        @ GHC.Prim.RealWorld
+                        @ Language.PureScript.Ide.Types.IdeState
+                        ww
+                        w1 of ds { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeTVar#
+                        @ GHC.Prim.RealWorld
+                        @ Language.PureScript.Ide.Types.IdeState
+                        ww
+                        (case ipv1 of wild { Language.PureScript.Ide.Types.IdeState ds1 ds2 ->
+                         Language.PureScript.Ide.Types.IdeState
+                           (case ds1 of wild1 { Language.PureScript.Ide.Types.IdeFileState ds3 ds4 ->
+                            Language.PureScript.Ide.Types.IdeFileState
+                              (case w of wild2 { Language.PureScript.Externs.ExternsFile ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
+                               Language.PureScript.Ide.State.$sinsert_$sgo13
+                                 @ Language.PureScript.Externs.ExternsFile
+                                 ds6
+                                 ds6
+                                 wild2
+                                 ds3 })
+                              ds4 })
+                           ds2 })
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } }) -}
+824d8270d0bd7d10e41c99d163a5d193
+  $wlvl ::
+    Language.PureScript.Names.ModuleName
+    -> [Language.PureScript.Externs.ExternsDeclaration]
+    -> [(Language.PureScript.Ide.Types.IdeInstance,
+         Language.PureScript.Names.ModuleName,
+         Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.ClassName)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.Names.ModuleName)
+                   (ww :: [Language.PureScript.Externs.ExternsDeclaration]) ->
+                 Data.Maybe.mapMaybe
+                   @ Language.PureScript.Externs.ExternsDeclaration
+                   @ (Language.PureScript.Ide.Types.IdeInstance,
+                      Language.PureScript.Names.ModuleName,
+                      Language.PureScript.Names.ProperName
+                        'Language.PureScript.Names.ClassName)
+                   (\ (ds :: Language.PureScript.Externs.ExternsDeclaration) ->
+                    case ds of wild {
+                      DEFAULT
+                      -> GHC.Base.Nothing
+                           @ (Language.PureScript.Ide.Types.IdeInstance,
+                              Language.PureScript.Names.ModuleName,
+                              Language.PureScript.Names.ProperName
+                                'Language.PureScript.Names.ClassName)
+                      Language.PureScript.Externs.EDInstance ds1 ds2 ds3 ds4 ds5 ds6
+                      -> case ds1 of wild1 { Language.PureScript.Names.Qualified ds7 className ->
+                         case ds7 of wild2 {
+                           GHC.Base.Nothing
+                           -> GHC.Base.Nothing
+                                @ (Language.PureScript.Ide.Types.IdeInstance,
+                                   Language.PureScript.Names.ModuleName,
+                                   Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.ClassName)
+                           GHC.Base.Just classModule
+                           -> GHC.Base.Just
+                                @ (Language.PureScript.Ide.Types.IdeInstance,
+                                   Language.PureScript.Names.ModuleName,
+                                   Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.ClassName)
+                                (Language.PureScript.Ide.Types.IdeInstance w ds2 ds3 ds4,
+                                 classModule, className) } } })
+                   ww) -}
+b9e660d11ae6b6ab8064b4d1e4fd93ed
+  $wpoly_go1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+cae77c7cbb1aac039d77e3f08714e39b
+  $wpoly_go13 ::
+    Language.PureScript.Ide.Types.IdeNamespace
+    -> Data.Text.Internal.Text
+    -> Data.Map.Internal.Map
+         Language.PureScript.Ide.Types.IdeNamespaced a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U(U,U,U)><S,1*U>,
+     Inline: [0] -}
+c6e074de5678c9ff42a752928bf790c2
+  $wpopulateVolatileState ::
+    Language.PureScript.Ide.Types.Ide m =>
+    m (Control.Concurrent.Async.Async ())
+  {- Arity: 1,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(A,1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))>,
+     Inline: [0],
+     Unfolding: (\ @ m :: * -> *
+                   (w :: Language.PureScript.Ide.Types.Ide m) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       w
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   (Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO)
+                   @ Language.PureScript.Ide.Types.IdeEnvironment
+                   @ (Control.Concurrent.Async.Async ())
+                   (Control.Monad.Reader.Class.ask
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ m
+                      (GHC.Classes.$p2(%,%)
+                         @ (Control.Monad.IO.Class.MonadIO m)
+                         @ (Control.Monad.Reader.Class.MonadReader
+                              Language.PureScript.Ide.Types.IdeEnvironment m)
+                         w))
+                   (\ (env :: Language.PureScript.Ide.Types.IdeEnvironment) ->
+                    Control.Monad.IO.Class.liftIO
+                      @ m
+                      $dMonadIO
+                      @ (Control.Concurrent.Async.Async ())
+                      (Control.Concurrent.Async.async2
+                         @ ()
+                         Control.Concurrent.Async.rawForkIO
+                         (Language.PureScript.Ide.Logging.$wrunLogger
+                            @ GHC.Types.IO
+                            @ ()
+                            (case env of wild { Language.PureScript.Ide.Types.IdeEnvironment ds1 ds2 ->
+                             case ds2 of wild1 { Language.PureScript.Ide.Types.IdeConfiguration ds4 ds5 ds3 ds6 ->
+                             ds5 } })
+                            (\ (r :: Language.Haskell.TH.Syntax.Loc
+                                     -> Control.Monad.Logger.LogSource
+                                     -> Control.Monad.Logger.LogLevel
+                                     -> System.Log.FastLogger.LogStr.LogStr
+                                     -> GHC.Types.IO ())[OneShot]
+                               (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                             Language.PureScript.Ide.State.populateVolatileState1
+                               (Language.PureScript.Ide.Types.ideStateVar env)
+                               env
+                               r
+                               s)
+                              `cast`
+                            ((<Language.Haskell.TH.Syntax.Loc
+                               -> Control.Monad.Logger.LogSource
+                               -> Control.Monad.Logger.LogLevel
+                               -> System.Log.FastLogger.LogStr.LogStr
+                               -> GHC.Types.IO ()>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <()>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                                <GHC.Types.IO>_R <()>_N))))
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0]
+                                <Control.Concurrent.Async.Async ()>_R)))) -}
+40692b56bdf40e70855bcab24aadeef0
+  $wpopulateVolatileStateSTM ::
+    GHC.Prim.TVar#
+      GHC.Prim.RealWorld Language.PureScript.Ide.Types.IdeState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.PureScript.Ide.Types.ModuleMap
+            (Language.PureScript.Ide.Reexports.ReexportResult
+               [Language.PureScript.Ide.Types.IdeDeclarationAnn]) #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+f7ab0a2647c7751c92e70173896e96c1
+  cacheRebuild ::
+    Language.PureScript.Ide.Types.Ide m =>
+    Language.PureScript.Externs.ExternsFile -> m ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))><L,U(U,U,U,U,U,U,U,U)>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m)
+                   (eta :: Language.PureScript.Externs.ExternsFile) ->
+                 let {
+                   lvl13 :: Language.PureScript.Names.ModuleName
+                   = case eta of wild { Language.PureScript.Externs.ExternsFile ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                     ds2 }
+                 } in
+                 let {
+                   lvl14 :: (Language.PureScript.Names.ModuleName,
+                             Language.PureScript.Externs.ExternsFile)
+                   = (lvl13, eta)
+                 } in
+                 let {
+                   lvl15 :: GHC.Base.Maybe
+                              (Language.PureScript.Names.ModuleName,
+                               Language.PureScript.Externs.ExternsFile)
+                   = GHC.Base.Just
+                       @ (Language.PureScript.Names.ModuleName,
+                          Language.PureScript.Externs.ExternsFile)
+                       lvl14
+                 } in
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   @ ()
+                   (GHC.Base.fmap
+                      @ m
+                      (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                      Language.PureScript.Ide.Types.ideStateVar
+                      (Control.Monad.Reader.Class.ask
+                         @ Language.PureScript.Ide.Types.IdeEnvironment
+                         @ m
+                         (GHC.Classes.$p2(%,%)
+                            @ (Control.Monad.IO.Class.MonadIO m)
+                            @ (Control.Monad.Reader.Class.MonadReader
+                                 Language.PureScript.Ide.Types.IdeEnvironment m)
+                            $d(%,%))))
+                   (\ (st :: GHC.Conc.Sync.TVar
+                               Language.PureScript.Ide.Types.IdeState) ->
+                    Control.Monad.IO.Class.liftIO
+                      @ m
+                      $dMonadIO
+                      @ ()
+                      (GHC.Prim.atomically#
+                         @ ()
+                         (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case st of wild { GHC.Conc.Sync.TVar tvar# ->
+                          case GHC.Prim.readTVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ Language.PureScript.Ide.Types.IdeState
+                                 tvar#
+                                 s of ds { (#,#) ipv ipv1 ->
+                          case GHC.Prim.writeTVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ Language.PureScript.Ide.Types.IdeState
+                                 tvar#
+                                 (case ipv1 of wild1 { Language.PureScript.Ide.Types.IdeState ds1 ds2 ->
+                                  Language.PureScript.Ide.Types.IdeState
+                                    ds1
+                                    (case ds2 of wild2 { Language.PureScript.Ide.Types.IdeVolatileState ds3 ds4 ds5 ->
+                                     Language.PureScript.Ide.Types.IdeVolatileState
+                                       ds3
+                                       ds4
+                                       lvl15 }) })
+                                 ipv of s2# { DEFAULT ->
+                          (# s2#, GHC.Tuple.() #) } } }))
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)))) -}
+cf15e113aa3bd48b355f97910f867580
+  cachedRebuild ::
+    Language.PureScript.Ide.Types.Ide m =>
+    m (GHC.Base.Maybe
+         (Language.PureScript.Names.ModuleName,
+          Language.PureScript.Externs.ExternsFile))
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(S(S(C(C(S))L)LLLLL)LLLL)L)L),U(U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,A,A),C(U)),U(A,U,A,A))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.IO.Class.$p1MonadIO
+                            @ m
+                            (GHC.Classes.$p1(%,%)
+                               @ (Control.Monad.IO.Class.MonadIO m)
+                               @ (Control.Monad.Reader.Class.MonadReader
+                                    Language.PureScript.Ide.Types.IdeEnvironment m)
+                               $d(%,%)))))
+                   @ Language.PureScript.Ide.Types.IdeVolatileState
+                   @ (GHC.Base.Maybe
+                        (Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Externs.ExternsFile))
+                   Language.PureScript.Ide.Types.vsCachedRebuild
+                   (Language.PureScript.Ide.State.getVolatileState @ m $d(%,%))) -}
+65927bc1e951b0cca7a6fe51785affc0
+  getAllModules ::
+    Language.PureScript.Ide.Types.Ide m =>
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> m (Language.PureScript.Ide.Types.ModuleMap
+            [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+  {- Arity: 2,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(U(U(U(U(C(C1(U)),A),C(U),A,A,A,A),C(C1(U)),A,A,A),C(U)),U(A,U,A,A))><L,U> -}
+cd1394dff4e8df5ca16be37fc717c1da
+  getExternFiles ::
+    Language.PureScript.Ide.Types.Ide m =>
+    m (Language.PureScript.Ide.Types.ModuleMap
+         Language.PureScript.Externs.ExternsFile)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(S(S(C(C(S))L)LLLLL)LLLL)L)L),U(U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,A,A),C(U)),U(A,U,A,A))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.IO.Class.$p1MonadIO
+                            @ m
+                            (GHC.Classes.$p1(%,%)
+                               @ (Control.Monad.IO.Class.MonadIO m)
+                               @ (Control.Monad.Reader.Class.MonadReader
+                                    Language.PureScript.Ide.Types.IdeEnvironment m)
+                               $d(%,%)))))
+                   @ Language.PureScript.Ide.Types.IdeFileState
+                   @ (Language.PureScript.Ide.Types.ModuleMap
+                        Language.PureScript.Externs.ExternsFile)
+                   Language.PureScript.Ide.Types.fsExterns
+                   (Language.PureScript.Ide.State.getFileState @ m $d(%,%))) -}
+fa7176964486c7b257da6bcd58da2186
+  getFileState ::
+    Language.PureScript.Ide.Types.Ide m =>
+    m Language.PureScript.Ide.Types.IdeFileState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(1*U(1*U(C(C1(U)),A),A,A,A,A,A),1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 let {
+                   $dApplicative :: GHC.Base.Applicative m
+                   = GHC.Base.$p1Monad @ m $dMonad
+                 } in
+                 let {
+                   $dFunctor :: GHC.Base.Functor m
+                   = GHC.Base.$p1Applicative @ m $dApplicative
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   @ Language.PureScript.Ide.Types.IdeFileState
+                   (GHC.Base.fmap
+                      @ m
+                      $dFunctor
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                      Language.PureScript.Ide.Types.ideStateVar
+                      (Control.Monad.Reader.Class.ask
+                         @ Language.PureScript.Ide.Types.IdeEnvironment
+                         @ m
+                         (GHC.Classes.$p2(%,%)
+                            @ (Control.Monad.IO.Class.MonadIO m)
+                            @ (Control.Monad.Reader.Class.MonadReader
+                                 Language.PureScript.Ide.Types.IdeEnvironment m)
+                            $d(%,%))))
+                   (\ (st :: GHC.Conc.Sync.TVar
+                               Language.PureScript.Ide.Types.IdeState) ->
+                    GHC.Base.fmap
+                      @ m
+                      $dFunctor
+                      @ Language.PureScript.Ide.Types.IdeState
+                      @ Language.PureScript.Ide.Types.IdeFileState
+                      Language.PureScript.Ide.Types.ideFileState
+                      (Control.Monad.IO.Class.liftIO
+                         @ m
+                         $dMonadIO
+                         @ Language.PureScript.Ide.Types.IdeState
+                         (GHC.Conc.Sync.readTVarIO1
+                            @ Language.PureScript.Ide.Types.IdeState
+                            st)
+                           `cast`
+                         (Sym (GHC.Types.N:IO[0]
+                                   <Language.PureScript.Ide.Types.IdeState>_R))))) -}
+1bb6af87b955a75a69e258101b9ff591
+  getLoadedModulenames ::
+    Language.PureScript.Ide.Types.Ide m =>
+    m [Language.PureScript.Names.ModuleName]
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(S(S(C(C(S))L)LLLLL)LLLL)L)L),U(U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,A,A),C(U)),U(A,U,A,A))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.IO.Class.$p1MonadIO
+                            @ m
+                            (GHC.Classes.$p1(%,%)
+                               @ (Control.Monad.IO.Class.MonadIO m)
+                               @ (Control.Monad.Reader.Class.MonadReader
+                                    Language.PureScript.Ide.Types.IdeEnvironment m)
+                               $d(%,%)))))
+                   @ (Data.Map.Internal.Map
+                        Language.PureScript.Names.ModuleName
+                        Language.PureScript.Externs.ExternsFile)
+                   @ [Language.PureScript.Names.ModuleName]
+                   (Data.Map.Internal.keys
+                      @ Language.PureScript.Names.ModuleName
+                      @ Language.PureScript.Externs.ExternsFile)
+                   (Language.PureScript.Ide.State.getExternFiles @ m $d(%,%))) -}
+450955ee380a279c89f19a3b6b3033a4
+  getVolatileState ::
+    Language.PureScript.Ide.Types.Ide m =>
+    m Language.PureScript.Ide.Types.IdeVolatileState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   @ Language.PureScript.Ide.Types.IdeVolatileState
+                   (GHC.Base.fmap
+                      @ m
+                      (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                      Language.PureScript.Ide.Types.ideStateVar
+                      (Control.Monad.Reader.Class.ask
+                         @ Language.PureScript.Ide.Types.IdeEnvironment
+                         @ m
+                         (GHC.Classes.$p2(%,%)
+                            @ (Control.Monad.IO.Class.MonadIO m)
+                            @ (Control.Monad.Reader.Class.MonadReader
+                                 Language.PureScript.Ide.Types.IdeEnvironment m)
+                            $d(%,%))))
+                   (\ (st :: GHC.Conc.Sync.TVar
+                               Language.PureScript.Ide.Types.IdeState) ->
+                    Control.Monad.IO.Class.liftIO
+                      @ m
+                      $dMonadIO
+                      @ Language.PureScript.Ide.Types.IdeVolatileState
+                      (GHC.Prim.atomically#
+                         @ Language.PureScript.Ide.Types.IdeVolatileState
+                         (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case st of wild { GHC.Conc.Sync.TVar tvar# ->
+                          case GHC.Prim.readTVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ Language.PureScript.Ide.Types.IdeState
+                                 tvar#
+                                 eta of ds { (#,#) ipv ipv1 ->
+                          (# ipv,
+                             Language.PureScript.Ide.Types.ideVolatileState ipv1 #) } }))
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0]
+                                <Language.PureScript.Ide.Types.IdeVolatileState>_R)))) -}
+40d20c3175274155b16eaa6acfdf3b7a
+  insertExterns ::
+    Language.PureScript.Ide.Types.Ide m =>
+    Language.PureScript.Externs.ExternsFile -> m ()
+  {- Arity: 2,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))><L,U(U,U,U,U,U,U,U,U)>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m)
+                   (eta :: Language.PureScript.Externs.ExternsFile) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   @ ()
+                   (GHC.Base.fmap
+                      @ m
+                      (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                      Language.PureScript.Ide.Types.ideStateVar
+                      (Control.Monad.Reader.Class.ask
+                         @ Language.PureScript.Ide.Types.IdeEnvironment
+                         @ m
+                         (GHC.Classes.$p2(%,%)
+                            @ (Control.Monad.IO.Class.MonadIO m)
+                            @ (Control.Monad.Reader.Class.MonadReader
+                                 Language.PureScript.Ide.Types.IdeEnvironment m)
+                            $d(%,%))))
+                   (\ (st :: GHC.Conc.Sync.TVar
+                               Language.PureScript.Ide.Types.IdeState) ->
+                    Control.Monad.IO.Class.liftIO
+                      @ m
+                      $dMonadIO
+                      @ ()
+                      (GHC.Prim.atomically#
+                         @ ()
+                         (Language.PureScript.Ide.State.insertExterns1 st eta))
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)))) -}
+6cbf8b10fd69ba23458991bba5442182
+  insertExterns1 ::
+    GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState
+    -> Language.PureScript.Externs.ExternsFile
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><L,1*U(U,U,U,U,U,U,U,U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   (w1 :: Language.PureScript.Externs.ExternsFile)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { GHC.Conc.Sync.TVar ww1 ->
+                 Language.PureScript.Ide.State.$winsertExternsSTM ww1 w1 w2 }) -}
+055dc0992b3bbd9ba90ebe0687f442db
+  insertExternsSTM ::
+    GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState
+    -> Language.PureScript.Externs.ExternsFile -> GHC.Conc.Sync.STM ()
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><L,1*U(U,U,U,U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Ide.State.insertExterns1
+                  `cast`
+                (<GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState>_R
+                 ->_R <Language.PureScript.Externs.ExternsFile>_R
+                 ->_R Sym (GHC.Conc.Sync.N:STM[0] <()>_R)) -}
+83681b8e3976a005b0503d1b44630975
+  insertModule ::
+    Language.PureScript.Ide.Types.Ide m =>
+    (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
+    -> m ()
+  {- Arity: 2,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))><L,U(U,U(U,U,U,U,U))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m)
+                   (eta :: (GHC.IO.FilePath,
+                            Language.PureScript.AST.Declarations.Module)) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   @ ()
+                   (GHC.Base.fmap
+                      @ m
+                      (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                      Language.PureScript.Ide.Types.ideStateVar
+                      (Control.Monad.Reader.Class.ask
+                         @ Language.PureScript.Ide.Types.IdeEnvironment
+                         @ m
+                         (GHC.Classes.$p2(%,%)
+                            @ (Control.Monad.IO.Class.MonadIO m)
+                            @ (Control.Monad.Reader.Class.MonadReader
+                                 Language.PureScript.Ide.Types.IdeEnvironment m)
+                            $d(%,%))))
+                   (\ (stateVar :: GHC.Conc.Sync.TVar
+                                     Language.PureScript.Ide.Types.IdeState) ->
+                    Control.Monad.IO.Class.liftIO
+                      @ m
+                      $dMonadIO
+                      @ ()
+                      (GHC.Prim.atomically#
+                         @ ()
+                         (case eta of wild { (,) fp module' ->
+                          \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case stateVar of wild1 { GHC.Conc.Sync.TVar tvar# ->
+                          case GHC.Prim.readTVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ Language.PureScript.Ide.Types.IdeState
+                                 tvar#
+                                 s of ds { (#,#) ipv ipv1 ->
+                          case GHC.Prim.writeTVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ Language.PureScript.Ide.Types.IdeState
+                                 tvar#
+                                 (case ipv1 of wild2 { Language.PureScript.Ide.Types.IdeState ds1 ds2 ->
+                                  Language.PureScript.Ide.Types.IdeState
+                                    (case ds1 of wild3 { Language.PureScript.Ide.Types.IdeFileState ds3 ds4 ->
+                                     Language.PureScript.Ide.Types.IdeFileState
+                                       ds3
+                                       (case module' of wild4 { Language.PureScript.AST.Declarations.Module ds5 ds6 name ds7 ds8 ->
+                                        Language.PureScript.Ide.State.$sinsert_$sgo13
+                                          @ (Language.PureScript.AST.Declarations.Module,
+                                             GHC.IO.FilePath)
+                                          name
+                                          name
+                                          (wild4, fp)
+                                          ds4 }) })
+                                    ds2 })
+                                 ipv of s2# { DEFAULT ->
+                          (# s2#, GHC.Tuple.() #) } } } }))
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)))) -}
+e6c1d73dc11a92a913cd21be78ce873d
+  populateVolatileState ::
+    (Language.PureScript.Ide.Types.Ide m,
+     Control.Monad.Logger.MonadLogger m) =>
+    m (Control.Concurrent.Async.Async ())
+  {- Arity: 2,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(U(U(A,C(C1(U)),A,A,A),C(U)),U(A,U,A,A))><L,A>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ m :: * -> *
+                   (w :: Language.PureScript.Ide.Types.Ide m)
+                   (w1 :: Control.Monad.Logger.MonadLogger m) ->
+                 Language.PureScript.Ide.State.$wpopulateVolatileState @ m w) -}
+f87c9c11ac3e8062e0212909912ddd6d
+  populateVolatileState1 ::
+    GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState
+    -> Language.PureScript.Ide.Types.IdeEnvironment
+    -> (Language.Haskell.TH.Syntax.Loc
+        -> Control.Monad.Logger.LogSource
+        -> Control.Monad.Logger.LogLevel
+        -> System.Log.FastLogger.LogStr.LogStr
+        -> GHC.Types.IO ())
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,U(U)><L,U><L,U><S,U>,
+     Unfolding: (\ (st :: GHC.Conc.Sync.TVar
+                            Language.PureScript.Ide.Types.IdeState)
+                   (eta :: Language.PureScript.Ide.Types.IdeEnvironment)
+                   (eta1 :: Language.Haskell.TH.Syntax.Loc
+                            -> Control.Monad.Logger.LogSource
+                            -> Control.Monad.Logger.LogLevel
+                            -> System.Log.FastLogger.LogStr.LogStr
+                            -> GHC.Types.IO ())
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 let {
+                   lvl13 :: GHC.Prim.State# GHC.Prim.RealWorld
+                            -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                  Language.PureScript.Ide.Types.ModuleMap
+                                    (Language.PureScript.Ide.Reexports.ReexportResult
+                                       [Language.PureScript.Ide.Types.IdeDeclarationAnn]) #)
+                     {- Arity: 1 -}
+                   = Language.PureScript.Ide.State.populateVolatileState4 st
+                 } in
+                 case (((Language.PureScript.Ide.Logging.logPerf
+                           @ (Control.Monad.Trans.Reader.ReaderT
+                                Language.PureScript.Ide.Types.IdeEnvironment
+                                (Control.Monad.Logger.LoggingT GHC.Types.IO))
+                           @ (Language.PureScript.Ide.Types.ModuleMap
+                                (Language.PureScript.Ide.Reexports.ReexportResult
+                                   [Language.PureScript.Ide.Types.IdeDeclarationAnn]))
+                           (Language.PureScript.Ide.State.$s$fMonadIOReaderT
+                              @ Language.PureScript.Ide.Types.IdeEnvironment)
+                           (Language.PureScript.Ide.State.$s$fMonadLoggerReaderT
+                              @ Language.PureScript.Ide.Types.IdeEnvironment)
+                           Language.PureScript.Ide.State.populateVolatileState3
+                           (\ (r1 :: Language.PureScript.Ide.Types.IdeEnvironment)
+                              (eta3 :: Language.Haskell.TH.Syntax.Loc
+                                       -> Control.Monad.Logger.LogSource
+                                       -> Control.Monad.Logger.LogLevel
+                                       -> System.Log.FastLogger.LogStr.LogStr
+                                       -> GHC.Types.IO ())
+                              (eta4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                            case GHC.Prim.atomically#
+                                   @ (Language.PureScript.Ide.Types.ModuleMap
+                                        (Language.PureScript.Ide.Reexports.ReexportResult
+                                           [Language.PureScript.Ide.Types.IdeDeclarationAnn]))
+                                   lvl13
+                                   eta4 of ds1 { (#,#) ipv ipv1 ->
+                            case ipv1 of r { DEFAULT -> ds1 } })
+                             `cast`
+                           ((<Language.PureScript.Ide.Types.IdeEnvironment>_R
+                             ->_R (<Language.Haskell.TH.Syntax.Loc
+                                    -> Control.Monad.Logger.LogSource
+                                    -> Control.Monad.Logger.LogLevel
+                                    -> System.Log.FastLogger.LogStr.LogStr
+                                    -> GHC.Types.IO ()>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <Language.PureScript.Ide.Types.ModuleMap
+                                                    (Language.PureScript.Ide.Reexports.ReexportResult
+                                                       [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
+                                                                                                                          <GHC.Types.IO>_R
+                                                                                                                          <Language.PureScript.Ide.Types.ModuleMap
+                                                                                                                             (Language.PureScript.Ide.Reexports.ReexportResult
+                                                                                                                                [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_N)) ; Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                                   <*>_N
+                                                                                                                                                                                                   <Language.PureScript.Ide.Types.IdeEnvironment>_R
+                                                                                                                                                                                                   <Control.Monad.Logger.LoggingT
+                                                                                                                                                                                                      GHC.Types.IO>_R
+                                                                                                                                                                                                   <Language.PureScript.Ide.Types.ModuleMap
+                                                                                                                                                                                                      (Language.PureScript.Ide.Reexports.ReexportResult
+                                                                                                                                                                                                         [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_N)))
+                          `cast`
+                        (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Language.PureScript.Ide.Types.IdeEnvironment>_R
+                             <Control.Monad.Logger.LoggingT GHC.Types.IO>_R
+                             <Language.PureScript.Ide.Types.ModuleMap
+                                (Language.PureScript.Ide.Reexports.ReexportResult
+                                   [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_N)
+                          eta)
+                         `cast`
+                       (Control.Monad.Logger.N:LoggingT[0]
+                            <GHC.Types.IO>_R
+                            <Language.PureScript.Ide.Types.ModuleMap
+                               (Language.PureScript.Ide.Reexports.ReexportResult
+                                  [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_N)
+                         eta1)
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Language.PureScript.Ide.Types.ModuleMap
+                              (Language.PureScript.Ide.Reexports.ReexportResult
+                                 [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_R)
+                        eta2 of ds1 { (#,#) ipv ipv1 ->
+                 case Language.PureScript.Ide.State.$wgo13
+                        (Data.Map.Internal.filterWithKey
+                           @ Language.PureScript.Names.ModuleName
+                           @ (Language.PureScript.Ide.Reexports.ReexportResult
+                                [Language.PureScript.Ide.Types.IdeDeclarationAnn])
+                           Language.PureScript.Ide.State.populateVolatileState2
+                           ipv1)
+                        eta1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2, GHC.Tuple.() #) } }) -}
+f6ce7a9454800b6547e51f7ec20328fc
+  populateVolatileState2 ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Ide.Reexports.ReexportResult
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Language.PureScript.Names.ModuleName)
+                   (x :: Language.PureScript.Ide.Reexports.ReexportResult
+                           [Language.PureScript.Ide.Types.IdeDeclarationAnn])[OneShot] ->
+                 Language.PureScript.Ide.Reexports.reexportHasFailures
+                   @ [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+                   x) -}
+01b3ae3a68b76e90d6225a256bc3ba49
+  populateVolatileState3 ::
+    System.Clock.TimeSpec -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <L,1*U(U,U)> -}
+e61d42239ecf71d8f24fbef52248e82d
+  populateVolatileState4 ::
+    GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.PureScript.Ide.Types.ModuleMap
+            (Language.PureScript.Ide.Reexports.ReexportResult
+               [Language.PureScript.Ide.Types.IdeDeclarationAnn]) #)
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { GHC.Conc.Sync.TVar ww1 ->
+                 Language.PureScript.Ide.State.$wpopulateVolatileStateSTM
+                   ww1
+                   w1 }) -}
+1ed30dbd16bec308541253b77ecbb55e
+  populateVolatileStateSTM ::
+    GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState
+    -> GHC.Conc.Sync.STM
+         (Language.PureScript.Ide.Types.ModuleMap
+            (Language.PureScript.Ide.Reexports.ReexportResult
+               [Language.PureScript.Ide.Types.IdeDeclarationAnn]))
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Ide.State.populateVolatileState4
+                  `cast`
+                (<GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState>_R
+                 ->_R Sym (GHC.Conc.Sync.N:STM[0]
+                               <Language.PureScript.Ide.Types.ModuleMap
+                                  (Language.PureScript.Ide.Reexports.ReexportResult
+                                     [Language.PureScript.Ide.Types.IdeDeclarationAnn])>_R)) -}
+c844919ed8c382b080a1142a0bc00226
+  populateVolatileStateSync ::
+    (Language.PureScript.Ide.Types.Ide m,
+     Control.Monad.Logger.MonadLogger m) =>
+    m ()
+  {- Arity: 2,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(U(U(1*U(C(C1(U)),C(C1(U))),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),C(C1(U)),A,A),C(U)),1*U(A,1*U,A,A))><L,U(A,C(C1(C1(C1(C(U))))))> -}
+769106bf9e5fd9397515b20f7186281b
+  resetIdeState :: Language.PureScript.Ide.Types.Ide m => m ()
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(LC(C(S))LLL)L)L),U(1*U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),1*C1(C1(U)),A,A,A),C(U)),1*U(A,1*U,A,A))>,
+     Unfolding: (\ @ m :: * -> *
+                   ($d(%,%) :: Language.PureScript.Ide.Types.Ide m) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = GHC.Classes.$p1(%,%)
+                       @ (Control.Monad.IO.Class.MonadIO m)
+                       @ (Control.Monad.Reader.Class.MonadReader
+                            Language.PureScript.Ide.Types.IdeEnvironment m)
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                   @ ()
+                   (GHC.Base.fmap
+                      @ m
+                      (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                      @ Language.PureScript.Ide.Types.IdeEnvironment
+                      @ (GHC.Conc.Sync.TVar Language.PureScript.Ide.Types.IdeState)
+                      Language.PureScript.Ide.Types.ideStateVar
+                      (Control.Monad.Reader.Class.ask
+                         @ Language.PureScript.Ide.Types.IdeEnvironment
+                         @ m
+                         (GHC.Classes.$p2(%,%)
+                            @ (Control.Monad.IO.Class.MonadIO m)
+                            @ (Control.Monad.Reader.Class.MonadReader
+                                 Language.PureScript.Ide.Types.IdeEnvironment m)
+                            $d(%,%))))
+                   (\ (ideVar :: GHC.Conc.Sync.TVar
+                                   Language.PureScript.Ide.Types.IdeState) ->
+                    Control.Monad.IO.Class.liftIO
+                      @ m
+                      $dMonadIO
+                      @ ()
+                      (GHC.Prim.atomically#
+                         @ ()
+                         (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case ideVar of wild { GHC.Conc.Sync.TVar tvar# ->
+                          case GHC.Prim.writeTVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ Language.PureScript.Ide.Types.IdeState
+                                 tvar#
+                                 Language.PureScript.Ide.Types.emptyIdeState
+                                 eta of s2# { DEFAULT ->
+                          (# s2#, GHC.Tuple.() #) } }))
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R)))) -}
+ccfa13ec4f5989c102a63e9ebfe43f6e
+  resolveDataConstructorsForModule ::
+    [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (decls :: [Language.PureScript.Ide.Types.IdeDeclarationAnn]) ->
+                 let {
+                   dtors :: Data.Map.Internal.Map
+                              (Language.PureScript.Names.ProperName
+                                 'Language.PureScript.Names.TypeName)
+                              [(Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.ConstructorName,
+                                Language.PureScript.Types.Type)]
+                   = Language.PureScript.Ide.State.resolveDataConstructorsForModule_go
+                       decls
+                 } in
+                 GHC.Base.map
+                   @ Language.PureScript.Ide.Types.IdeDeclarationAnn
+                   @ Language.PureScript.Ide.Types.IdeDeclarationAnn
+                   (Language.PureScript.Ide.State.$sidaDeclaration1
+                      (\ (decl :: Language.PureScript.Ide.Types.IdeDeclaration) ->
+                       case decl of wild {
+                         DEFAULT -> wild
+                         Language.PureScript.Ide.Types.IdeDeclType ty
+                         -> Language.PureScript.Ide.Types.IdeDeclType
+                              (case ty of wild1 { Language.PureScript.Ide.Types.IdeType x x1 x2 ->
+                               Language.PureScript.Ide.Types.IdeType
+                                 x
+                                 x1
+                                 (case x `cast`
+                                       (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.TypeName>_P) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                                  case Language.PureScript.Ide.State.$wpoly_go1
+                                         @ [(Language.PureScript.Names.ProperName
+                                               'Language.PureScript.Names.ConstructorName,
+                                             Language.PureScript.Types.Type)]
+                                         ww1
+                                         ww2
+                                         ww3
+                                         dtors of wild2 {
+                                    GHC.Base.Nothing
+                                    -> GHC.Types.[]
+                                         @ (Language.PureScript.Names.ProperName
+                                              'Language.PureScript.Names.ConstructorName,
+                                            Language.PureScript.Types.Type)
+                                    GHC.Base.Just v -> v } }) }) })
+                        `cast`
+                      (<Language.PureScript.Ide.Types.IdeDeclaration>_R
+                       ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                     <Language.PureScript.Ide.Types.IdeDeclaration>_R)))
+                     `cast`
+                   (<Language.PureScript.Ide.Types.IdeDeclarationAnn>_R
+                    ->_R Data.Functor.Identity.N:Identity[0]
+                             <Language.PureScript.Ide.Types.IdeDeclarationAnn>_R)
+                   decls) -}
+b1844f6a7a1288a560973981fa0798dd
+  resolveDataConstructorsForModule_go ::
+    [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         [(Language.PureScript.Names.ProperName
+             'Language.PureScript.Names.ConstructorName,
+           Language.PureScript.Types.Type)]
+  {- Arity: 1, Strictness: <S,1*U> -}
+69983ab2cd5da03798b24ef449f4f450
+  resolveInstances ::
+    Language.PureScript.Ide.Types.ModuleMap
+      Language.PureScript.Externs.ExternsFile
+    -> Language.PureScript.Ide.Types.ModuleMap
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> Language.PureScript.Ide.Types.ModuleMap
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (externs :: Language.PureScript.Ide.Types.ModuleMap
+                                 Language.PureScript.Externs.ExternsFile)
+                   (declarations :: Language.PureScript.Ide.Types.ModuleMap
+                                      [Language.PureScript.Ide.Types.IdeDeclarationAnn]) ->
+                 Language.PureScript.Ide.State.resolveInstances_go13
+                   declarations
+                   (Data.Map.Internal.mapWithKey
+                      @ Language.PureScript.Names.ModuleName
+                      @ Language.PureScript.Externs.ExternsFile
+                      @ [(Language.PureScript.Ide.Types.IdeInstance,
+                          Language.PureScript.Names.ModuleName,
+                          Language.PureScript.Names.ProperName
+                            'Language.PureScript.Names.ClassName)]
+                      Language.PureScript.Ide.State.resolveInstances1
+                      externs)) -}
+3f533197a975a7df730cdfe476445727
+  resolveInstances1 ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Externs.ExternsFile
+    -> [(Language.PureScript.Ide.Types.IdeInstance,
+         Language.PureScript.Names.ModuleName,
+         Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.ClassName)]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(LLLLLLSL),1*U(A,A,A,A,A,A,1*U,A)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Names.ModuleName)
+                   (w1 :: Language.PureScript.Externs.ExternsFile) ->
+                 case w1 of ww { Language.PureScript.Externs.ExternsFile ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.PureScript.Ide.State.$wlvl w ww7 }) -}
+495e07a33d590a0c1c457ce927c98254
+  resolveInstances_go13 ::
+    Language.PureScript.Ide.Types.ModuleMap
+      [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName
+         [(Language.PureScript.Ide.Types.IdeInstance,
+           Language.PureScript.Names.ModuleName,
+           Language.PureScript.Names.ProperName
+             'Language.PureScript.Names.ClassName)]
+    -> Language.PureScript.Ide.Types.ModuleMap
+         [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+49869357d4d473ce196f5c880bb9e2e4
+  resolveOperatorsForModule ::
+    Language.PureScript.Ide.Types.ModuleMap
+      [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+    -> [Language.PureScript.Ide.Types.IdeDeclarationAnn]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+"SC:poly_go130" forall @ a
+                       (sc :: Data.Map.Internal.Map Language.PureScript.Names.Ident a)
+                       (sc1 :: Data.Text.Internal.Text)
+  Language.PureScript.Ide.State.$slookup1 @ a
+                                          (Language.PureScript.Names.Ident sc1)
+                                          sc
+  = Language.PureScript.Ide.State.$slookup_$spoly_go2 @ a sc sc1
+"SC:poly_go131" forall @ a
+                       (sc :: Data.Map.Internal.Map Language.PureScript.Names.Ident a)
+                       (sc1 :: GHC.Base.Maybe Data.Text.Internal.Text)
+                       (sc2 :: GHC.Integer.Type.Integer)
+  Language.PureScript.Ide.State.$slookup1 @ a
+                                          (Language.PureScript.Names.GenIdent sc1 sc2)
+                                          sc
+  = Language.PureScript.Ide.State.$slookup_$spoly_go1 @ a sc sc1 sc2
+"SC:poly_go132" forall @ a
+                       (sc :: Data.Map.Internal.Map Language.PureScript.Names.Ident a)
+  Language.PureScript.Ide.State.$slookup1 @ a
+                                          Language.PureScript.Names.UnusedIdent
+                                          sc
+  = Language.PureScript.Ide.State.$slookup_$spoly_go13 @ a sc
+"SPEC/Language.PureScript.Ide.State $fApplicativeLoggingT @ IO" [orphan] forall (v :: GHC.Base.Applicative
+                                                                                        GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT @ GHC.Types.IO v
+  = Language.PureScript.Ide.State.$s$fApplicativeLoggingT
+"SPEC/Language.PureScript.Ide.State $fApplicativeLoggingT_$c<*> @ IO" [orphan] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                                          GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeLoggingT_$c<*> @ GHC.Types.IO
+                                                   $dApplicative
+  = Language.PureScript.Ide.State.$s$fApplicativeLoggingT_$s$fApplicativeLoggingT_$c<*>
+"SPEC/Language.PureScript.Ide.State $fFunctorLoggingT @ IO" [orphan] forall (v :: GHC.Base.Functor
+                                                                                    GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorLoggingT @ GHC.Types.IO v
+  = Language.PureScript.Ide.State.$s$fApplicativeLoggingT_$s$fFunctorLoggingT
+"SPEC/Language.PureScript.Ide.State $fFunctorLoggingT_$cfmap @ IO" [orphan] forall ($dFunctor :: GHC.Base.Functor
+                                                                                                   GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorLoggingT_$cfmap @ GHC.Types.IO
+                                                $dFunctor
+  = Language.PureScript.Ide.State.$s$fApplicativeLoggingT_$s$fFunctorLoggingT_$cfmap
+"SPEC/Language.PureScript.Ide.State $fMonadIOReaderT @ (LoggingT
+                                                         IO) _" [orphan] forall @ r
+                                                                                                                                                 (v :: Control.Monad.IO.Class.MonadIO
+                                                                                                                                                         (Control.Monad.Logger.LoggingT
+                                                                                                                                                            GHC.Types.IO))
+  Control.Monad.Trans.Reader.$fMonadIOReaderT @ (Control.Monad.Logger.LoggingT
+                                                   GHC.Types.IO)
+                                              @ r
+                                              v
+  = Language.PureScript.Ide.State.$s$fMonadIOReaderT @ r
+"SPEC/Language.PureScript.Ide.State $fMonadLoggerReaderT @ (LoggingT
+                                                             IO) _" [orphan] forall @ r
+                                                                                                                                                         (v :: Control.Monad.Logger.MonadLogger
+                                                                                                                                                                 (Control.Monad.Logger.LoggingT
+                                                                                                                                                                    GHC.Types.IO))
+  Control.Monad.Logger.$fMonadLoggerReaderT @ (Control.Monad.Logger.LoggingT
+                                                 GHC.Types.IO)
+                                            @ r
+                                            v
+  = Language.PureScript.Ide.State.$s$fMonadLoggerReaderT @ r
+"SPEC/Language.PureScript.Ide.State $fMonadLoggingT @ IO" [orphan] forall (v :: GHC.Base.Monad
+                                                                                  GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT @ GHC.Types.IO v
+  = Language.PureScript.Ide.State.$s$fMonadIOLoggingT_$s$fMonadLoggingT
+"SPEC/Language.PureScript.Ide.State $fMonadLoggingT_$c>> @ IO" [orphan] forall ($dMonad :: GHC.Base.Monad
+                                                                                             GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$c>> @ GHC.Types.IO $dMonad
+  = Language.PureScript.Ide.State.$s$fMonadIOLoggingT_$s$fMonadLoggingT_$c>>
+"SPEC/Language.PureScript.Ide.State $fMonadLoggingT_$creturn @ IO" [orphan] forall ($dMonad :: GHC.Base.Monad
+                                                                                                 GHC.Types.IO)
+  Control.Monad.Logger.$fMonadLoggingT_$creturn @ GHC.Types.IO
+                                                $dMonad
+  = Language.PureScript.Ide.State.$s$fMonadLoggingT_$creturn
+"SPEC/Language.PureScript.Ide.State idaDeclaration @ Identity" [orphan] forall ($dFunctor :: GHC.Base.Functor
+                                                                                               Data.Functor.Identity.Identity)
+  Language.PureScript.Ide.Types.idaDeclaration @ Data.Functor.Identity.Identity
+                                               $dFunctor
+  = Language.PureScript.Ide.State.$sidaDeclaration1
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

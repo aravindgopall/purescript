@@ -1,0 +1,1735 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:46:30.566415 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Traversals 8043
+  interface hash: f7e6ba2cec426c2d41c89f1ad3f1adb4
+  ABI hash: a3d1a9b4309f1aa3055f23e3fb101c5e
+  export-list hash: 5f95b86b1ffc20ac260993dc77fff788
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: de35dcd1d43076a5ced1b1f2744d7ead
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.AST.Traversals.accumKinds
+  Language.PureScript.AST.Traversals.accumTypes
+  Language.PureScript.AST.Traversals.everythingOnValues
+  Language.PureScript.AST.Traversals.everythingWithContextOnValues
+  Language.PureScript.AST.Traversals.everythingWithScope
+  Language.PureScript.AST.Traversals.everywhereOnValues
+  Language.PureScript.AST.Traversals.everywhereOnValuesM
+  Language.PureScript.AST.Traversals.everywhereOnValuesTopDownM
+  Language.PureScript.AST.Traversals.everywhereWithContextOnValuesM
+  Language.PureScript.AST.Traversals.guardedExprM
+  Language.PureScript.AST.Traversals.inScope
+  Language.PureScript.AST.Traversals.litM
+  Language.PureScript.AST.Traversals.mapGuardedExpr
+  Language.PureScript.AST.Traversals.overTypes
+  Language.PureScript.AST.Traversals.ScopedIdent{Language.PureScript.AST.Traversals.LocalIdent Language.PureScript.AST.Traversals.ToplevelIdent}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Literals Language.PureScript.AST.Operators
+                     Language.PureScript.AST.SourcePos Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Names Language.PureScript.PSString
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.List.NonEmpty 595ee3baddcadebc4831ea7541427984
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
+import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Language.PureScript.AST.Binders 9d60985147b34b89300370e810fed430
+  exports: 052659e0ac5b7424bfe7dc118cef8c0d
+  BinaryNoParensBinder 0a9649b4372c6e05d173870dfa1006fa
+  Binder 50aa153193e190eabd8ac7530e604f9c
+  ConstructorBinder a80ed0550c5d3abdd1e6249cec7ebb29
+  LiteralBinder fb24b5107abb72eda0b4f926a357d676
+  NamedBinder b48e1eb9e717d35392ab81ba6112a0c5
+  ParensInBinder d5e3e2b30a59f234cee3c52dcb18b9a6
+  PositionedBinder 882f8081b0418fe44d4a7e237a20b9bb
+  TypedBinder f780e44b8446316aee6b532b3afc4341
+  binderNames 02df671f437cb8e44f39ef8bc1273f3b
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  exports: 576360d4491bba45e29e263c5de23a07
+  Abs d07c7c6c44b48a3411184d34629a601e
+  Accessor efce1a21efe3a6d2f322942575a5ad70
+  Ado 37d00c1fafdcb3ef01dc19068c5ac23a
+  App 60282620a1433a146ffafd0d8773af87
+  BinaryNoParens 74f8609dfb4850c239012b6c7f3f2502
+  BindingGroupDeclaration d3c1d83dc1fbac7412bbc6e3b0fc8e06
+  BoundValueDeclaration 2a1064417e2b13bd8230beec138bd3f3
+  Case 26360a43049b71a59ced6dc5180ab8d3
+  CaseAlternative 53d0b5fb91e3184ce5b575a7cf70b18d
+  CaseAlternative b31d94d0c7b90700d40f9ba6ec420e41
+  ConditionGuard 2db62e1fae4ae7a464999119c33e7329
+  DataBindingGroupDeclaration 6581515de193582450a8e6e01c902ba4
+  DataDeclaration db5935397ffc86d7f21188808af5170e
+  Declaration b31d94d0c7b90700d40f9ba6ec420e41
+  DeferredDictionary 7a56aac6dc1b7f4256df8373658d67a5
+  Do b8fad0bebe96a0626d89acbd41a552b3
+  DoNotationBind fec991d5ab40627d0cce74b30ebfede6
+  DoNotationElement b31d94d0c7b90700d40f9ba6ec420e41
+  DoNotationLet 6feff6a200614ac607daa94006ad3ed5
+  DoNotationValue cc0f2bc0eef838fad83abc6d1864b17c
+  ExplicitInstance 566045ea839404c561f5bf2109dbe534
+  Expr b31d94d0c7b90700d40f9ba6ec420e41
+  ExternDataDeclaration 55a53b09584ed2ea4b573ea27aa0f4e4
+  ExternDeclaration 4969f865c6e08f5324b31f68ef85d043
+  Guard b31d94d0c7b90700d40f9ba6ec420e41
+  GuardedExpr 27042b32d879f10c681888a144cccbf4
+  GuardedExpr b31d94d0c7b90700d40f9ba6ec420e41
+  IfThenElse 861db5e7c442fcad4ef6b09852058a52
+  Let 1e154f741d98347f87a436fe079b9677
+  Literal 25fe050a9db328cb74b9c2f7e7994889
+  ObjectUpdate 6ecfa64620245159f62232366ffa0b51
+  ObjectUpdateNested f0f594d942338e4c5632d561472ff5f5
+  Parens d8b532f50bb6822d72d510f7cf291c86
+  PatternGuard 8f00c4347b1f607cbe6ab09d14685d9d
+  PositionedDoNotationElement c12364668936cfdcd1fd6a9966e8f1cd
+  PositionedValue ce9f35ccf631ea46c29b12e823f5cdda
+  TypeClassDeclaration d4771a111b012cbefca253f911afd776
+  TypeClassDictionary 9f4047c1c1ff9eeef0292c33d9ecb17c
+  TypeClassDictionaryConstructorApp e1cd14c07fae64c9cd8679680a21319e
+  TypeDeclaration a12f822b0dbc597658a7d1e27db5ac22
+  TypeInstanceDeclaration c99b2ac93a5feb1209c747921a9e548b
+  TypeSynonymDeclaration b022b78d38da14b3619ada244eaf9299
+  TypedValue d9e4565826b9abbfd5d9b0aba42f2e58
+  UnaryMinus a219b7d00bf9c8706678ac90686eba33
+  ValueDecl ccaaa682babb730c1361bddf2c5eee25
+  ValueDeclaration 12e8a69dfeaef3b3a7e4d8343e12683e
+  caseAlternativeBinders b31d94d0c7b90700d40f9ba6ec420e41
+  caseAlternativeResult b31d94d0c7b90700d40f9ba6ec420e41
+  mapTypeInstanceBody 1826036fea52f25657e6111625d52b7a
+  traverseTypeInstanceBody 0b0b6c668555518d768d4dfdaf4d710b
+  tydeclIdent 73dd7603bbe7fadce9f5fc48c4dc58fb
+  tydeclType 73dd7603bbe7fadce9f5fc48c4dc58fb
+  valdeclBinders 0c2d915175f1072d8eeca07af2b73e20
+  valdeclExpression 0c2d915175f1072d8eeca07af2b73e20
+  valdeclIdent 0c2d915175f1072d8eeca07af2b73e20
+import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
+  exports: a6d23ec6b024fefaa1b9450acf6240d0
+  ArrayLiteral 5b23e15244983cff3a7817389b5e2212
+  Literal 9e9b6c02bfac90a56d53685e90c059b8
+  ObjectLiteral 6a79fd56232b94e65385c3eab269a6a5
+import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
+  exports: 2c2448e43e622d2466a59b9cd8f4db91
+  Kind 3e1e213eb647453235d33b0d1b36ec59
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  Ident ab98a56ffa88760dad1380079e8ee35a
+import  -/  Language.PureScript.Traversals 0b1167883a6d6cc72496ff4af9cd7535
+  exports: ff3aac3cd7b378c02751a42ba037de7e
+  sndM f92d028593bfff03fd7f7a06605574ae
+  thirdM 3976a24e9a12074f53555714d49531a3
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  exports: ae97bc75fcebc59f59c970736847a827
+  KindedType 0c5178e2942b7d198426b0539b6f6442
+  Type 93223f8afa90d0facc05a03f863dc72d
+  constraintArgs 93223f8afa90d0facc05a03f863dc72d
+  mapConstraintArgs 4c5821e8c0e3a903ec8fe07d5d289eaf
+fd1c63950c5ecf1a17f0b7742333850b
+  $fEqScopedIdent ::
+    GHC.Classes.Eq Language.PureScript.AST.Traversals.ScopedIdent
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Traversals.ScopedIdent
+                  Language.PureScript.AST.Traversals.$fEqScopedIdent_$c==
+                  Language.PureScript.AST.Traversals.$fEqScopedIdent_$c/= -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fEqScopedIdent_$c/= ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (y :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case x of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case y of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> case Language.PureScript.Names.$fEqIdent_$c== a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv
+                        -> GHC.Types.True }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case y of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv -> GHC.Types.True
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> case Language.PureScript.Names.$fEqIdent_$c== a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fEqScopedIdent_$c== ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (ds1 :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case ds of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case ds1 of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> Language.PureScript.Names.$fEqIdent_$c== a1 b1
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv
+                        -> GHC.Types.False }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case ds1 of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv
+                        -> GHC.Types.False
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> Language.PureScript.Names.$fEqIdent_$c== a1 b1 } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent ::
+    GHC.Classes.Ord Language.PureScript.AST.Traversals.ScopedIdent
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Traversals.ScopedIdent
+                  Language.PureScript.AST.Traversals.$fEqScopedIdent
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$ccompare
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c<
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c<=
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c>
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c>=
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$cmax
+                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$cmin -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$c< ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (b :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case a of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> Language.PureScript.Names.$fOrdIdent_$c< a1 b1
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv
+                        -> GHC.Types.True }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv
+                        -> GHC.Types.False
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> Language.PureScript.Names.$fOrdIdent_$c< a1 b1 } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$c<= ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (b :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case b of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case a of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv
+                        -> GHC.Types.False }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case a of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv -> GHC.Types.True
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$c> ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (b :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c< b a) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$c>= ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (b :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case a of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv
+                        -> GHC.Types.False }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv -> GHC.Types.True
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$ccompare ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (b :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case a of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> Language.PureScript.Names.$fOrdIdent_$ccompare a1 b1
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv
+                        -> GHC.Types.LT }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case b of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv -> GHC.Types.GT
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> Language.PureScript.Names.$fOrdIdent_$ccompare a1 b1 } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$cmax ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (y :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case y of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case x of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> wild GHC.Types.True -> wild1 }
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv -> wild1 }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case x of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv -> wild
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> wild GHC.Types.True -> wild1 } } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fOrdScopedIdent_$cmin ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (y :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case y of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent a1
+                   -> case x of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> wild1 GHC.Types.True -> wild }
+                        Language.PureScript.AST.Traversals.ToplevelIdent ipv -> wild }
+                   Language.PureScript.AST.Traversals.ToplevelIdent a1
+                   -> case x of wild1 {
+                        Language.PureScript.AST.Traversals.LocalIdent ipv -> wild1
+                        Language.PureScript.AST.Traversals.ToplevelIdent b1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
+                             GHC.Types.False -> wild1 GHC.Types.True -> wild } } }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fShowScopedIdent ::
+    GHC.Show.Show Language.PureScript.AST.Traversals.ScopedIdent
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.AST.Traversals.ScopedIdent
+                  Language.PureScript.AST.Traversals.$fShowScopedIdent_$cshowsPrec
+                  Language.PureScript.AST.Traversals.$fShowScopedIdent_$cshow
+                  Language.PureScript.AST.Traversals.$fShowScopedIdent_$cshowList -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fShowScopedIdent1 ::
+    Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (w :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 Language.PureScript.AST.Traversals.$w$cshowsPrec 0# w) -}
+656175aa2f66650b721fd3ec0d622275
+  $fShowScopedIdent2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Traversals.$fShowScopedIdent3) -}
+5f77145074839712c3e0ee589533cf7d
+  $fShowScopedIdent3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ToplevelIdent "#) -}
+d68081ac60d1af24fececa3614987248
+  $fShowScopedIdent4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.AST.Traversals.$fShowScopedIdent5) -}
+121b2f90f969ed6f9716a75152cb0943
+  $fShowScopedIdent5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LocalIdent "#) -}
+55e21467b159d547f75fb218319b682f
+  $fShowScopedIdent6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fShowScopedIdent_$cshow ::
+    Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case x of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.AST.Traversals.$fShowScopedIdent4
+                        (Language.PureScript.Names.$fShowIdent_$cshowsPrec
+                           Language.PureScript.AST.Traversals.$fShowScopedIdent6
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Language.PureScript.AST.Traversals.ToplevelIdent b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.PureScript.AST.Traversals.$fShowScopedIdent2
+                        (Language.PureScript.Names.$fShowIdent_$cshowsPrec
+                           Language.PureScript.AST.Traversals.$fShowScopedIdent6
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fShowScopedIdent_$cshowList ::
+    [Language.PureScript.AST.Traversals.ScopedIdent] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.AST.Traversals.ScopedIdent])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.AST.Traversals.ScopedIdent
+                   Language.PureScript.AST.Traversals.$fShowScopedIdent1
+                   ls
+                   s) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $fShowScopedIdent_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.AST.Traversals.$w$cshowsPrec ww1 w1 }) -}
+36eb8fa85572ca32ec2b3c6a1acb4306
+  $s$wsplitS ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> (# Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent,
+          Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [~] -}
+1568fb1bdd9838a11f1148f0d18ed1f9
+  $sfromList ::
+    [Language.PureScript.AST.Traversals.ScopedIdent]
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Language.PureScript.AST.Traversals.ScopedIdent]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Set.Internal.Tip
+                        @ Language.PureScript.AST.Traversals.ScopedIdent
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { DEFAULT ->
+                           Data.Set.Internal.Bin
+                             @ Language.PureScript.AST.Traversals.ScopedIdent
+                             1#
+                             dt
+                             (Data.Set.Internal.Tip
+                                @ Language.PureScript.AST.Traversals.ScopedIdent)
+                             (Data.Set.Internal.Tip
+                                @ Language.PureScript.AST.Traversals.ScopedIdent) }
+                        : ipv ipv1
+                        -> case x of wild2 {
+                             Language.PureScript.AST.Traversals.LocalIdent a1
+                             -> case ipv of wild3 {
+                                  Language.PureScript.AST.Traversals.LocalIdent b1
+                                  -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild4 {
+                                       GHC.Types.False
+                                       -> Language.PureScript.AST.Traversals.$sfromList_$sgo4
+                                            wild3
+                                            ipv1
+                                            (Data.Set.Internal.Bin
+                                               @ Language.PureScript.AST.Traversals.ScopedIdent
+                                               1#
+                                               wild2
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent)
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent))
+                                       GHC.Types.True
+                                       -> Language.PureScript.AST.Traversals.$sfromList_$s$wgo1
+                                            b1
+                                            ipv1
+                                            (Data.Set.Internal.Bin
+                                               @ Language.PureScript.AST.Traversals.ScopedIdent
+                                               1#
+                                               wild2
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent)
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent))
+                                            1# }
+                                  Language.PureScript.AST.Traversals.ToplevelIdent ipv2
+                                  -> Language.PureScript.AST.Traversals.$sfromList_$s$wgo3
+                                       ipv2
+                                       ipv1
+                                       (Data.Set.Internal.Bin
+                                          @ Language.PureScript.AST.Traversals.ScopedIdent
+                                          1#
+                                          wild2
+                                          (Data.Set.Internal.Tip
+                                             @ Language.PureScript.AST.Traversals.ScopedIdent)
+                                          (Data.Set.Internal.Tip
+                                             @ Language.PureScript.AST.Traversals.ScopedIdent))
+                                       1# }
+                             Language.PureScript.AST.Traversals.ToplevelIdent a1
+                             -> case ipv of wild3 {
+                                  Language.PureScript.AST.Traversals.LocalIdent ipv2
+                                  -> Language.PureScript.AST.Traversals.$sfromList_$sgo4
+                                       wild3
+                                       ipv1
+                                       (Data.Set.Internal.Bin
+                                          @ Language.PureScript.AST.Traversals.ScopedIdent
+                                          1#
+                                          wild2
+                                          (Data.Set.Internal.Tip
+                                             @ Language.PureScript.AST.Traversals.ScopedIdent)
+                                          (Data.Set.Internal.Tip
+                                             @ Language.PureScript.AST.Traversals.ScopedIdent))
+                                  Language.PureScript.AST.Traversals.ToplevelIdent b1
+                                  -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild4 {
+                                       GHC.Types.False
+                                       -> Language.PureScript.AST.Traversals.$sfromList_$sgo4
+                                            wild3
+                                            ipv1
+                                            (Data.Set.Internal.Bin
+                                               @ Language.PureScript.AST.Traversals.ScopedIdent
+                                               1#
+                                               wild2
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent)
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent))
+                                       GHC.Types.True
+                                       -> Language.PureScript.AST.Traversals.$sfromList_$s$wgo3
+                                            b1
+                                            ipv1
+                                            (Data.Set.Internal.Bin
+                                               @ Language.PureScript.AST.Traversals.ScopedIdent
+                                               1#
+                                               wild2
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent)
+                                               (Data.Set.Internal.Tip
+                                                  @ Language.PureScript.AST.Traversals.ScopedIdent))
+                                            1# } } } } }) -}
+e3af48ff3d2081ca2272d0e7da95b0a1
+  $sfromList_$s$wgo1 ::
+    Language.PureScript.Names.Ident
+    -> [Language.PureScript.AST.Traversals.ScopedIdent]
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 4, Strictness: <L,U><S,1*U><S,1*U><L,U> -}
+fe9bc050c6b82da8df46d33cf2edb0e6
+  $sfromList_$s$wgo3 ::
+    Language.PureScript.Names.Ident
+    -> [Language.PureScript.AST.Traversals.ScopedIdent]
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 4, Strictness: <L,U><S,1*U><S,1*U><L,U> -}
+f774b62ae4cd476eb7d481abfbe9b334
+  $sfromList_$sgo4 ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> [Language.PureScript.AST.Traversals.ScopedIdent]
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 3, Strictness: <S,U><S,1*U><S,1*U> -}
+f81b5a5ad5436699d61890e7d9bf3bc9
+  $sinsertR_$sgo3 ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+2e4559ec49829fdf9bf63e5ecf505768
+  $sinsert_$s$sgo1 ::
+    Data.Set.Internal.Set
+      Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.Names.Ident
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U> -}
+f50593f2f0b81be57e5694a6037e058a
+  $sinsert_$s$sgo2 ::
+    Data.Set.Internal.Set
+      Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.Names.Ident
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U> -}
+37ffa3f780cb21b33a588ffa4e3fa80a
+  $sinsert_$s$sgo3 ::
+    GHC.Prim.Int#
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 6, Strictness: <L,U><S,U><L,U><L,U><S,1*U><L,U> -}
+4096c86d9bb77c3a342b3710bb6b424d
+  $sinsert_$sgo3 ::
+    Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+164e9b3002243e25dec65fd55edb14e5
+  $smember_$sgo1 ::
+    Data.Set.Internal.Set
+      Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.Names.Ident -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+56473e98b1e905962ab96c29dc628256
+  $smember_$sgo3 ::
+    Data.Set.Internal.Set
+      Language.PureScript.AST.Traversals.ScopedIdent
+    -> Language.PureScript.Names.Ident -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+3336c8aadc151a2c06ebe658675d62fb
+  $sunion ::
+    Data.Set.Internal.Set
+      Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+2cd2f79c45dddf4655dae17b1b148b12
+  $tc'LocalIdent :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10700866326930824690##
+                   7930449348064233925##
+                   Language.PureScript.AST.Traversals.$trModule
+                   Language.PureScript.AST.Traversals.$tc'LocalIdent2
+                   0#
+                   Language.PureScript.AST.Traversals.$tc'LocalIdent1) -}
+3475ab7e59a92f1049ee54a1fc2211d1
+  $tc'LocalIdent1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+aaa7bc808790e297788b91da46df429a
+  $tc'LocalIdent2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Traversals.$tc'LocalIdent3) -}
+33952a4894f7a09d3266ec3fb8e05cad
+  $tc'LocalIdent3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LocalIdent"#) -}
+d7af2e465665f44c8867f2c058e75c7a
+  $tc'ToplevelIdent :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13016754896826322925##
+                   10062842599548190429##
+                   Language.PureScript.AST.Traversals.$trModule
+                   Language.PureScript.AST.Traversals.$tc'ToplevelIdent1
+                   0#
+                   Language.PureScript.AST.Traversals.$tc'LocalIdent1) -}
+e42764c0b5262ffb3395fc6a3a53d52b
+  $tc'ToplevelIdent1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Traversals.$tc'ToplevelIdent2) -}
+d5befbe4b9249e67fb2f18f51959592c
+  $tc'ToplevelIdent2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ToplevelIdent"#) -}
+715947c30e72f27452003e325fd7b206
+  $tcScopedIdent :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15221820959309315540##
+                   6869472355101584501##
+                   Language.PureScript.AST.Traversals.$trModule
+                   Language.PureScript.AST.Traversals.$tcScopedIdent1
+                   0#
+                   GHC.Types.krep$*) -}
+d655181787a96e62cca6d0ae5194d110
+  $tcScopedIdent1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Traversals.$tcScopedIdent2) -}
+49788ca3e89e203a25daf7e0fb29bd79
+  $tcScopedIdent2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ScopedIdent"#) -}
+b80b4b8bbb547d9e0f24cdffa6934bf0
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.AST.Traversals.$trModule3
+                   Language.PureScript.AST.Traversals.$trModule1) -}
+dbee4d28ab568fcc46201e22f779c582
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Traversals.$trModule2) -}
+16e300a11434725d915d82ae7e9cd95a
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.AST.Traversals"#) -}
+dadc2ea6aa497a65e5f9a1e6a9cca79a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.AST.Traversals.$trModule4) -}
+cf2f3f559967ceb59bb6514b205f367a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case w of wild {
+                   Language.PureScript.AST.Traversals.LocalIdent b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = Language.PureScript.Names.$fShowIdent_$cshowsPrec
+                            Language.PureScript.AST.Traversals.$fShowScopedIdent6
+                            b1
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             Language.PureScript.AST.Traversals.$fShowScopedIdent4
+                             (g x)
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Language.PureScript.AST.Traversals.$fShowScopedIdent4
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }
+                   Language.PureScript.AST.Traversals.ToplevelIdent b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = Language.PureScript.Names.$fShowIdent_$cshowsPrec
+                            Language.PureScript.AST.Traversals.$fShowScopedIdent6
+                            b1
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             Language.PureScript.AST.Traversals.$fShowScopedIdent2
+                             (g x)
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Language.PureScript.AST.Traversals.$fShowScopedIdent2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) } }) -}
+f45a7333e38a5d329f5144a5b4ee18ae
+  $waccumKinds ::
+    GHC.Base.Monoid r =>
+    (Language.PureScript.Kinds.Kind -> r)
+    -> (# Language.PureScript.AST.Declarations.Declaration -> r,
+          Language.PureScript.AST.Declarations.Expr -> r,
+          Language.PureScript.AST.Binders.Binder -> r,
+          Language.PureScript.AST.Declarations.CaseAlternative -> r,
+          Language.PureScript.AST.Declarations.DoNotationElement -> r #)
+  {- Arity: 2,
+     Strictness: <L,U(1*U(C(C1(U)),A,A),1*U,C(C1(U)),A)><L,C(U)>,
+     Inline: [0] -}
+b871240aa37f0574baa2a52e83d9e1cf
+  $waccumTypes ::
+    GHC.Base.Monoid r =>
+    (Language.PureScript.Types.Type -> r)
+    -> (# Language.PureScript.AST.Declarations.Declaration -> r,
+          Language.PureScript.AST.Declarations.Expr -> r,
+          Language.PureScript.AST.Binders.Binder -> r,
+          Language.PureScript.AST.Declarations.CaseAlternative -> r,
+          Language.PureScript.AST.Declarations.DoNotationElement -> r #)
+  {- Arity: 2,
+     Strictness: <L,U(1*U(C(C1(U)),A,A),1*U,1*C(C1(U)),C(U))><L,C(U)>,
+     Inline: [0] -}
+d896cd61827918ff94a1775b138a7dbe
+  $weverythingOnValues ::
+    (r -> r -> r)
+    -> (Language.PureScript.AST.Declarations.Declaration -> r)
+    -> (Language.PureScript.AST.Declarations.Expr -> r)
+    -> (Language.PureScript.AST.Binders.Binder -> r)
+    -> (Language.PureScript.AST.Declarations.CaseAlternative -> r)
+    -> (Language.PureScript.AST.Declarations.DoNotationElement -> r)
+    -> (# Language.PureScript.AST.Declarations.Declaration -> r,
+          Language.PureScript.AST.Declarations.Expr -> r,
+          Language.PureScript.AST.Binders.Binder -> r,
+          Language.PureScript.AST.Declarations.CaseAlternative -> r,
+          Language.PureScript.AST.Declarations.DoNotationElement -> r #)
+  {- Arity: 6,
+     Strictness: <L,C(C1(U))><L,C(U)><L,C(U)><L,C(U)><L,C(U)><L,C(U)>,
+     Inline: [0] -}
+40abac1f31fcee9628b7688f1f07b663
+  $weverythingWithContextOnValues ::
+    s
+    -> r
+    -> (r -> r -> r)
+    -> (s
+        -> Language.PureScript.AST.Declarations.Declaration -> (s, r))
+    -> (s -> Language.PureScript.AST.Declarations.Expr -> (s, r))
+    -> (s -> Language.PureScript.AST.Binders.Binder -> (s, r))
+    -> (s
+        -> Language.PureScript.AST.Declarations.CaseAlternative -> (s, r))
+    -> (s
+        -> Language.PureScript.AST.Declarations.DoNotationElement
+        -> (s, r))
+    -> (# Language.PureScript.AST.Declarations.Declaration -> r,
+          Language.PureScript.AST.Declarations.Expr -> r,
+          Language.PureScript.AST.Binders.Binder -> r,
+          Language.PureScript.AST.Declarations.CaseAlternative -> r,
+          Language.PureScript.AST.Declarations.DoNotationElement -> r #)
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,C(C1(U))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))>,
+     Inline: [0] -}
+2a98eb99fb4026af09d4626aaf3c8219
+  $weverythingWithScope ::
+    GHC.Base.Monoid r =>
+    (Data.Set.Internal.Set
+       Language.PureScript.AST.Traversals.ScopedIdent
+     -> Language.PureScript.AST.Declarations.Declaration -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.Expr -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Binders.Binder -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.CaseAlternative -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.DoNotationElement -> r)
+    -> (# Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent
+          -> Language.PureScript.AST.Declarations.Declaration -> r,
+          Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent
+          -> Language.PureScript.AST.Declarations.Expr -> r,
+          Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent
+          -> Language.PureScript.AST.Binders.Binder -> r,
+          Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent
+          -> Language.PureScript.AST.Declarations.CaseAlternative -> r,
+          Data.Set.Internal.Set
+            Language.PureScript.AST.Traversals.ScopedIdent
+          -> Language.PureScript.AST.Declarations.DoNotationElement -> r #)
+  {- Arity: 6,
+     Strictness: <L,U(1*U(C(C1(U)),A,A),U,C(C1(U)),A)><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))>,
+     Inline: [0] -}
+4481c34a79c980bf50e725406f4bf446
+  $weverywhereOnValues ::
+    (Language.PureScript.AST.Declarations.Declaration
+     -> Language.PureScript.AST.Declarations.Declaration)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> Language.PureScript.AST.Declarations.Expr)
+    -> (Language.PureScript.AST.Binders.Binder
+        -> Language.PureScript.AST.Binders.Binder)
+    -> (# Language.PureScript.AST.Declarations.Declaration
+          -> Language.PureScript.AST.Declarations.Declaration,
+          Language.PureScript.AST.Declarations.Expr
+          -> Language.PureScript.AST.Declarations.Expr,
+          Language.PureScript.AST.Binders.Binder
+          -> Language.PureScript.AST.Binders.Binder #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(U)><L,C(U)><L,C(U)>,
+     Inline: [0] -}
+d37e3b81cc4ecb3bca457a163eeb27b5
+  $weverywhereOnValuesM ::
+    GHC.Base.Monad m =>
+    (Language.PureScript.AST.Declarations.Declaration
+     -> m Language.PureScript.AST.Declarations.Declaration)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr)
+    -> (Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder)
+    -> (# Language.PureScript.AST.Declarations.Declaration
+          -> m Language.PureScript.AST.Declarations.Declaration,
+          Language.PureScript.AST.Declarations.Expr
+          -> m Language.PureScript.AST.Declarations.Expr,
+          Language.PureScript.AST.Binders.Binder
+          -> m Language.PureScript.AST.Binders.Binder #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,U><L,U><L,U>,
+     Inline: [0] -}
+434d96a264df607491b6ce5317d07b06
+  $weverywhereOnValuesTopDownM ::
+    GHC.Base.Monad m =>
+    (Language.PureScript.AST.Declarations.Declaration
+     -> m Language.PureScript.AST.Declarations.Declaration)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr)
+    -> (Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder)
+    -> (# Language.PureScript.AST.Declarations.Declaration
+          -> m Language.PureScript.AST.Declarations.Declaration,
+          Language.PureScript.AST.Declarations.Expr
+          -> m Language.PureScript.AST.Declarations.Expr,
+          Language.PureScript.AST.Binders.Binder
+          -> m Language.PureScript.AST.Binders.Binder #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,C(U)><L,C(U)><L,C(U)>,
+     Inline: [0] -}
+5b6879264409b9cd0532d7b6a347fd93
+  $weverywhereWithContextOnValuesM ::
+    GHC.Base.Monad m =>
+    s
+    -> (s
+        -> Language.PureScript.AST.Declarations.Declaration
+        -> m (s, Language.PureScript.AST.Declarations.Declaration))
+    -> (s
+        -> Language.PureScript.AST.Declarations.Expr
+        -> m (s, Language.PureScript.AST.Declarations.Expr))
+    -> (s
+        -> Language.PureScript.AST.Binders.Binder
+        -> m (s, Language.PureScript.AST.Binders.Binder))
+    -> (s
+        -> Language.PureScript.AST.Declarations.CaseAlternative
+        -> m (s, Language.PureScript.AST.Declarations.CaseAlternative))
+    -> (s
+        -> Language.PureScript.AST.Declarations.DoNotationElement
+        -> m (s, Language.PureScript.AST.Declarations.DoNotationElement))
+    -> (# Language.PureScript.AST.Declarations.Declaration
+          -> m Language.PureScript.AST.Declarations.Declaration,
+          Language.PureScript.AST.Declarations.Expr
+          -> m Language.PureScript.AST.Declarations.Expr,
+          Language.PureScript.AST.Binders.Binder
+          -> m Language.PureScript.AST.Binders.Binder,
+          Language.PureScript.AST.Declarations.CaseAlternative
+          -> m Language.PureScript.AST.Declarations.CaseAlternative,
+          Language.PureScript.AST.Declarations.DoNotationElement
+          -> m Language.PureScript.AST.Declarations.DoNotationElement #)
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,U(1*U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,C(U),A)><L,U><L,C(C(U))><L,C(C(U))><L,C(C(U))><L,C(C(U))><L,C(C(U))>,
+     Inline: [0] -}
+11aa30887646cbdfefd3ab762fdeda74
+  $wguardedExprM ::
+    GHC.Base.Applicative m =>
+    (Language.PureScript.AST.Declarations.Guard
+     -> m Language.PureScript.AST.Declarations.Guard)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr)
+    -> [Language.PureScript.AST.Declarations.Guard]
+    -> Language.PureScript.AST.Declarations.Expr
+    -> m Language.PureScript.AST.Declarations.GuardedExpr
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LLL),U(1*U(1*C1(C1(U)),A),1*C1(U),1*C1(C1(U)),C(C1(C1(U))),A,A)><L,C(U)><L,1*C1(U)><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ m :: * -> *
+                   (w :: GHC.Base.Applicative m)
+                   (w1 :: Language.PureScript.AST.Declarations.Guard
+                          -> m Language.PureScript.AST.Declarations.Guard)
+                   (w2 :: Language.PureScript.AST.Declarations.Expr
+                          -> m Language.PureScript.AST.Declarations.Expr)
+                   (ww :: [Language.PureScript.AST.Declarations.Guard])
+                   (ww1 :: Language.PureScript.AST.Declarations.Expr) ->
+                 GHC.Base.<*>
+                   @ m
+                   w
+                   @ Language.PureScript.AST.Declarations.Expr
+                   @ Language.PureScript.AST.Declarations.GuardedExpr
+                   (GHC.Base.fmap
+                      @ m
+                      (GHC.Base.$p1Applicative @ m w)
+                      @ [Language.PureScript.AST.Declarations.Guard]
+                      @ (Language.PureScript.AST.Declarations.Expr
+                         -> Language.PureScript.AST.Declarations.GuardedExpr)
+                      Language.PureScript.AST.Declarations.GuardedExpr
+                      (let {
+                         z :: m [Language.PureScript.AST.Declarations.Guard]
+                         = GHC.Base.pure
+                             @ m
+                             w
+                             @ [Language.PureScript.AST.Declarations.Guard]
+                             (GHC.Types.[] @ Language.PureScript.AST.Declarations.Guard)
+                       } in
+                       letrec {
+                         go5 :: [Language.PureScript.AST.Declarations.Guard]
+                                -> m [Language.PureScript.AST.Declarations.Guard]
+                           {- Arity: 1, Strictness: <S,1*U> -}
+                         = \ (ds :: [Language.PureScript.AST.Declarations.Guard]) ->
+                           case ds of wild {
+                             [] -> z
+                             : y ys
+                             -> GHC.Base.liftA2
+                                  @ m
+                                  w
+                                  @ Language.PureScript.AST.Declarations.Guard
+                                  @ [Language.PureScript.AST.Declarations.Guard]
+                                  @ [Language.PureScript.AST.Declarations.Guard]
+                                  (GHC.Types.: @ Language.PureScript.AST.Declarations.Guard)
+                                  (w1 y)
+                                  (go5 ys) }
+                       } in
+                       go5 ww))
+                   (w2 ww1)) -}
+fd1c63950c5ecf1a17f0b7742333850b
+  data ScopedIdent
+    = LocalIdent Language.PureScript.Names.Ident
+    | ToplevelIdent Language.PureScript.Names.Ident
+34a02c7a8bb803687d93352bdff88b6a
+  accumKinds ::
+    GHC.Base.Monoid r =>
+    (Language.PureScript.Kinds.Kind -> r)
+    -> (Language.PureScript.AST.Declarations.Declaration -> r,
+        Language.PureScript.AST.Declarations.Expr -> r,
+        Language.PureScript.AST.Binders.Binder -> r,
+        Language.PureScript.AST.Declarations.CaseAlternative -> r,
+        Language.PureScript.AST.Declarations.DoNotationElement -> r)
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C1(U)),A,A),U,C(C1(U)),A)><L,C(U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ r
+                   (w :: GHC.Base.Monoid r)
+                   (w1 :: Language.PureScript.Kinds.Kind -> r) ->
+                 case Language.PureScript.AST.Traversals.$waccumKinds
+                        @ r
+                        w
+                        w1 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                 (ww1, ww2, ww3, ww4, ww5) }) -}
+57de83595e87d9fa4f8615bb6ea4d7cf
+  accumTypes ::
+    GHC.Base.Monoid r =>
+    (Language.PureScript.Types.Type -> r)
+    -> (Language.PureScript.AST.Declarations.Declaration -> r,
+        Language.PureScript.AST.Declarations.Expr -> r,
+        Language.PureScript.AST.Binders.Binder -> r,
+        Language.PureScript.AST.Declarations.CaseAlternative -> r,
+        Language.PureScript.AST.Declarations.DoNotationElement -> r)
+  {- Arity: 2,
+     Strictness: <L,U(U(C(C1(U)),A,A),U,C(C1(U)),C(U))><L,C(U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ r
+                   (w :: GHC.Base.Monoid r)
+                   (w1 :: Language.PureScript.Types.Type -> r) ->
+                 case Language.PureScript.AST.Traversals.$waccumTypes
+                        @ r
+                        w
+                        w1 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                 (ww1, ww2, ww3, ww4, ww5) }) -}
+c357e31af2a9709a2f6a4005be39c3f1
+  everythingOnValues ::
+    (r -> r -> r)
+    -> (Language.PureScript.AST.Declarations.Declaration -> r)
+    -> (Language.PureScript.AST.Declarations.Expr -> r)
+    -> (Language.PureScript.AST.Binders.Binder -> r)
+    -> (Language.PureScript.AST.Declarations.CaseAlternative -> r)
+    -> (Language.PureScript.AST.Declarations.DoNotationElement -> r)
+    -> (Language.PureScript.AST.Declarations.Declaration -> r,
+        Language.PureScript.AST.Declarations.Expr -> r,
+        Language.PureScript.AST.Binders.Binder -> r,
+        Language.PureScript.AST.Declarations.CaseAlternative -> r,
+        Language.PureScript.AST.Declarations.DoNotationElement -> r)
+  {- Arity: 6,
+     Strictness: <L,C(C1(U))><L,C(U)><L,C(U)><L,C(U)><L,C(U)><L,C(U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ r
+                   (w :: r -> r -> r)
+                   (w1 :: Language.PureScript.AST.Declarations.Declaration -> r)
+                   (w2 :: Language.PureScript.AST.Declarations.Expr -> r)
+                   (w3 :: Language.PureScript.AST.Binders.Binder -> r)
+                   (w4 :: Language.PureScript.AST.Declarations.CaseAlternative -> r)
+                   (w5 :: Language.PureScript.AST.Declarations.DoNotationElement
+                          -> r) ->
+                 case Language.PureScript.AST.Traversals.$weverythingOnValues
+                        @ r
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        w5 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                 (ww1, ww2, ww3, ww4, ww5) }) -}
+96100f22de180f7be1760582c2409ed4
+  everythingWithContextOnValues ::
+    s
+    -> r
+    -> (r -> r -> r)
+    -> (s
+        -> Language.PureScript.AST.Declarations.Declaration -> (s, r))
+    -> (s -> Language.PureScript.AST.Declarations.Expr -> (s, r))
+    -> (s -> Language.PureScript.AST.Binders.Binder -> (s, r))
+    -> (s
+        -> Language.PureScript.AST.Declarations.CaseAlternative -> (s, r))
+    -> (s
+        -> Language.PureScript.AST.Declarations.DoNotationElement
+        -> (s, r))
+    -> (Language.PureScript.AST.Declarations.Declaration -> r,
+        Language.PureScript.AST.Declarations.Expr -> r,
+        Language.PureScript.AST.Binders.Binder -> r,
+        Language.PureScript.AST.Declarations.CaseAlternative -> r,
+        Language.PureScript.AST.Declarations.DoNotationElement -> r)
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,C(C1(U))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))>m,
+     Inline: [0],
+     Unfolding: InlineRule (8, True, False)
+                (\ @ s
+                   @ r
+                   (w :: s)
+                   (w1 :: r)
+                   (w2 :: r -> r -> r)
+                   (w3 :: s
+                          -> Language.PureScript.AST.Declarations.Declaration -> (s, r))
+                   (w4 :: s -> Language.PureScript.AST.Declarations.Expr -> (s, r))
+                   (w5 :: s -> Language.PureScript.AST.Binders.Binder -> (s, r))
+                   (w6 :: s
+                          -> Language.PureScript.AST.Declarations.CaseAlternative -> (s, r))
+                   (w7 :: s
+                          -> Language.PureScript.AST.Declarations.DoNotationElement
+                          -> (s, r)) ->
+                 case Language.PureScript.AST.Traversals.$weverythingWithContextOnValues
+                        @ s
+                        @ r
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        w5
+                        w6
+                        w7 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                 (ww1, ww2, ww3, ww4, ww5) }) -}
+299173827d0ece19df542f918941d0da
+  everythingWithScope ::
+    GHC.Base.Monoid r =>
+    (Data.Set.Internal.Set
+       Language.PureScript.AST.Traversals.ScopedIdent
+     -> Language.PureScript.AST.Declarations.Declaration -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.Expr -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Binders.Binder -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.CaseAlternative -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.DoNotationElement -> r)
+    -> (Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.Declaration -> r,
+        Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.Expr -> r,
+        Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Binders.Binder -> r,
+        Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.CaseAlternative -> r,
+        Data.Set.Internal.Set
+          Language.PureScript.AST.Traversals.ScopedIdent
+        -> Language.PureScript.AST.Declarations.DoNotationElement -> r)
+  {- Arity: 6,
+     Strictness: <L,U(U(C(C1(U)),A,A),U,C(C1(U)),A)><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))>m,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ r
+                   (w :: GHC.Base.Monoid r)
+                   (w1 :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent
+                          -> Language.PureScript.AST.Declarations.Declaration -> r)
+                   (w2 :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent
+                          -> Language.PureScript.AST.Declarations.Expr -> r)
+                   (w3 :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent
+                          -> Language.PureScript.AST.Binders.Binder -> r)
+                   (w4 :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent
+                          -> Language.PureScript.AST.Declarations.CaseAlternative -> r)
+                   (w5 :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent
+                          -> Language.PureScript.AST.Declarations.DoNotationElement -> r) ->
+                 case Language.PureScript.AST.Traversals.$weverythingWithScope
+                        @ r
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        w5 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                 (ww1, ww2, ww3, ww4, ww5) }) -}
+ad4625d6eef7aa4388eb405da834d508
+  everywhereOnValues ::
+    (Language.PureScript.AST.Declarations.Declaration
+     -> Language.PureScript.AST.Declarations.Declaration)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> Language.PureScript.AST.Declarations.Expr)
+    -> (Language.PureScript.AST.Binders.Binder
+        -> Language.PureScript.AST.Binders.Binder)
+    -> (Language.PureScript.AST.Declarations.Declaration
+        -> Language.PureScript.AST.Declarations.Declaration,
+        Language.PureScript.AST.Declarations.Expr
+        -> Language.PureScript.AST.Declarations.Expr,
+        Language.PureScript.AST.Binders.Binder
+        -> Language.PureScript.AST.Binders.Binder)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(U)><L,C(U)><L,C(U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Language.PureScript.AST.Declarations.Declaration
+                         -> Language.PureScript.AST.Declarations.Declaration)
+                   (w1 :: Language.PureScript.AST.Declarations.Expr
+                          -> Language.PureScript.AST.Declarations.Expr)
+                   (w2 :: Language.PureScript.AST.Binders.Binder
+                          -> Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Traversals.$weverywhereOnValues
+                        w
+                        w1
+                        w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+01a8d95490ca25e5157bbf2f4092d320
+  everywhereOnValuesM ::
+    GHC.Base.Monad m =>
+    (Language.PureScript.AST.Declarations.Declaration
+     -> m Language.PureScript.AST.Declarations.Declaration)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr)
+    -> (Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder)
+    -> (Language.PureScript.AST.Declarations.Declaration
+        -> m Language.PureScript.AST.Declarations.Declaration,
+        Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr,
+        Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,U><L,U><L,U>m,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ m :: * -> *
+                   (w :: GHC.Base.Monad m)
+                   (w1 :: Language.PureScript.AST.Declarations.Declaration
+                          -> m Language.PureScript.AST.Declarations.Declaration)
+                   (w2 :: Language.PureScript.AST.Declarations.Expr
+                          -> m Language.PureScript.AST.Declarations.Expr)
+                   (w3 :: Language.PureScript.AST.Binders.Binder
+                          -> m Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Traversals.$weverywhereOnValuesM
+                        @ m
+                        w
+                        w1
+                        w2
+                        w3 of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+eeb56e921678602b009af2041c8eba21
+  everywhereOnValuesTopDownM ::
+    GHC.Base.Monad m =>
+    (Language.PureScript.AST.Declarations.Declaration
+     -> m Language.PureScript.AST.Declarations.Declaration)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr)
+    -> (Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder)
+    -> (Language.PureScript.AST.Declarations.Declaration
+        -> m Language.PureScript.AST.Declarations.Declaration,
+        Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr,
+        Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,C(U)><L,C(U)><L,C(U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ m :: * -> *
+                   (w :: GHC.Base.Monad m)
+                   (w1 :: Language.PureScript.AST.Declarations.Declaration
+                          -> m Language.PureScript.AST.Declarations.Declaration)
+                   (w2 :: Language.PureScript.AST.Declarations.Expr
+                          -> m Language.PureScript.AST.Declarations.Expr)
+                   (w3 :: Language.PureScript.AST.Binders.Binder
+                          -> m Language.PureScript.AST.Binders.Binder) ->
+                 case Language.PureScript.AST.Traversals.$weverywhereOnValuesTopDownM
+                        @ m
+                        w
+                        w1
+                        w2
+                        w3 of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+4fdd13188200e3f571550d8ad6f3de86
+  everywhereWithContextOnValuesM ::
+    GHC.Base.Monad m =>
+    s
+    -> (s
+        -> Language.PureScript.AST.Declarations.Declaration
+        -> m (s, Language.PureScript.AST.Declarations.Declaration))
+    -> (s
+        -> Language.PureScript.AST.Declarations.Expr
+        -> m (s, Language.PureScript.AST.Declarations.Expr))
+    -> (s
+        -> Language.PureScript.AST.Binders.Binder
+        -> m (s, Language.PureScript.AST.Binders.Binder))
+    -> (s
+        -> Language.PureScript.AST.Declarations.CaseAlternative
+        -> m (s, Language.PureScript.AST.Declarations.CaseAlternative))
+    -> (s
+        -> Language.PureScript.AST.Declarations.DoNotationElement
+        -> m (s, Language.PureScript.AST.Declarations.DoNotationElement))
+    -> (Language.PureScript.AST.Declarations.Declaration
+        -> m Language.PureScript.AST.Declarations.Declaration,
+        Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr,
+        Language.PureScript.AST.Binders.Binder
+        -> m Language.PureScript.AST.Binders.Binder,
+        Language.PureScript.AST.Declarations.CaseAlternative
+        -> m Language.PureScript.AST.Declarations.CaseAlternative,
+        Language.PureScript.AST.Declarations.DoNotationElement
+        -> m Language.PureScript.AST.Declarations.DoNotationElement)
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,C(U),A)><L,U><L,C(C(U))><L,C(C(U))><L,C(C(U))><L,C(C(U))><L,C(C(U))>m,
+     Inline: [0],
+     Unfolding: InlineRule (7, True, False)
+                (\ @ m :: * -> *
+                   @ s
+                   (w :: GHC.Base.Monad m)
+                   (w1 :: s)
+                   (w2 :: s
+                          -> Language.PureScript.AST.Declarations.Declaration
+                          -> m (s, Language.PureScript.AST.Declarations.Declaration))
+                   (w3 :: s
+                          -> Language.PureScript.AST.Declarations.Expr
+                          -> m (s, Language.PureScript.AST.Declarations.Expr))
+                   (w4 :: s
+                          -> Language.PureScript.AST.Binders.Binder
+                          -> m (s, Language.PureScript.AST.Binders.Binder))
+                   (w5 :: s
+                          -> Language.PureScript.AST.Declarations.CaseAlternative
+                          -> m (s, Language.PureScript.AST.Declarations.CaseAlternative))
+                   (w6 :: s
+                          -> Language.PureScript.AST.Declarations.DoNotationElement
+                          -> m (s,
+                                Language.PureScript.AST.Declarations.DoNotationElement)) ->
+                 case Language.PureScript.AST.Traversals.$weverywhereWithContextOnValuesM
+                        @ m
+                        @ s
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        w5
+                        w6 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                 (ww1, ww2, ww3, ww4, ww5) }) -}
+78bf5315840d518118f221b5678e37e0
+  guardedExprM ::
+    GHC.Base.Applicative m =>
+    (Language.PureScript.AST.Declarations.Guard
+     -> m Language.PureScript.AST.Declarations.Guard)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> m Language.PureScript.AST.Declarations.Expr)
+    -> Language.PureScript.AST.Declarations.GuardedExpr
+    -> m Language.PureScript.AST.Declarations.GuardedExpr
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LLL),U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A)><L,C(U)><L,1*C1(U)><S,1*U(1*U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ m :: * -> *
+                   (w :: GHC.Base.Applicative m)
+                   (w1 :: Language.PureScript.AST.Declarations.Guard
+                          -> m Language.PureScript.AST.Declarations.Guard)
+                   (w2 :: Language.PureScript.AST.Declarations.Expr
+                          -> m Language.PureScript.AST.Declarations.Expr)
+                   (w3 :: Language.PureScript.AST.Declarations.GuardedExpr) ->
+                 case w3 of ww { Language.PureScript.AST.Declarations.GuardedExpr ww1 ww2 ->
+                 Language.PureScript.AST.Traversals.$wguardedExprM
+                   @ m
+                   w
+                   w1
+                   w2
+                   ww1
+                   ww2 }) -}
+2ecdce1893ec3507816e8bc88c2fcb29
+  inScope ::
+    Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set
+         Language.PureScript.AST.Traversals.ScopedIdent
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: (\ (i :: Language.PureScript.Names.Ident)
+                   (s :: Data.Set.Internal.Set
+                           Language.PureScript.AST.Traversals.ScopedIdent) ->
+                 case Language.PureScript.AST.Traversals.$smember_$sgo1
+                        s
+                        i of wild {
+                   GHC.Types.False
+                   -> Language.PureScript.AST.Traversals.$smember_$sgo3 s i
+                   GHC.Types.True -> GHC.Types.True }) -}
+f0cfc068760981c7cbd590be7d721279
+  litM ::
+    GHC.Base.Monad m =>
+    (a -> m a)
+    -> Language.PureScript.AST.Literals.Literal a
+    -> m (Language.PureScript.AST.Literals.Literal a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLLLL),1*U(1*U(1*U(C(C1(U)),A),1*C1(U),A,C(C1(C1(U))),A,A),A,A,A,A)><L,C(U)><S,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   @ a
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: a -> m a)
+                   (eta1 :: Language.PureScript.AST.Literals.Literal a) ->
+                 let {
+                   $dApplicative :: GHC.Base.Applicative m
+                   = GHC.Base.$p1Monad @ m $dMonad
+                 } in
+                 case eta1 of wild {
+                   DEFAULT
+                   -> GHC.Base.pure
+                        @ m
+                        $dApplicative
+                        @ (Language.PureScript.AST.Literals.Literal a)
+                        wild
+                   Language.PureScript.AST.Literals.ArrayLiteral as
+                   -> GHC.Base.fmap
+                        @ m
+                        (GHC.Base.$p1Applicative @ m $dApplicative)
+                        @ [a]
+                        @ (Language.PureScript.AST.Literals.Literal a)
+                        (Language.PureScript.AST.Literals.ArrayLiteral @ a)
+                        (let {
+                           z :: m [a]
+                           = GHC.Base.pure @ m $dApplicative @ [a] (GHC.Types.[] @ a)
+                         } in
+                         letrec {
+                           go5 :: [a] -> m [a] {- Arity: 1, Strictness: <S,1*U> -}
+                           = \ (ds :: [a]) ->
+                             case ds of wild1 {
+                               [] -> z
+                               : y ys
+                               -> GHC.Base.liftA2
+                                    @ m
+                                    $dApplicative
+                                    @ a
+                                    @ [a]
+                                    @ [a]
+                                    (GHC.Types.: @ a)
+                                    (eta y)
+                                    (go5 ys) }
+                         } in
+                         go5 as)
+                   Language.PureScript.AST.Literals.ObjectLiteral as
+                   -> let {
+                        $dFunctor :: GHC.Base.Functor m
+                        = GHC.Base.$p1Applicative @ m $dApplicative
+                      } in
+                      GHC.Base.fmap
+                        @ m
+                        $dFunctor
+                        @ [(Language.PureScript.PSString.PSString, a)]
+                        @ (Language.PureScript.AST.Literals.Literal a)
+                        (Language.PureScript.AST.Literals.ObjectLiteral @ a)
+                        (let {
+                           z :: m [(Language.PureScript.PSString.PSString, a)]
+                           = GHC.Base.pure
+                               @ m
+                               $dApplicative
+                               @ [(Language.PureScript.PSString.PSString, a)]
+                               (GHC.Types.[] @ (Language.PureScript.PSString.PSString, a))
+                         } in
+                         letrec {
+                           go5 :: [(Language.PureScript.PSString.PSString, a)]
+                                  -> m [(Language.PureScript.PSString.PSString, a)]
+                             {- Arity: 1, Strictness: <S,1*U> -}
+                           = \ (ds :: [(Language.PureScript.PSString.PSString, a)]) ->
+                             case ds of wild1 {
+                               [] -> z
+                               : y ys
+                               -> GHC.Base.liftA2
+                                    @ m
+                                    $dApplicative
+                                    @ (Language.PureScript.PSString.PSString, a)
+                                    @ [(Language.PureScript.PSString.PSString, a)]
+                                    @ [(Language.PureScript.PSString.PSString, a)]
+                                    (GHC.Types.: @ (Language.PureScript.PSString.PSString, a))
+                                    (case y of wild2 { (,) a1 b1 ->
+                                     GHC.Base.fmap
+                                       @ m
+                                       $dFunctor
+                                       @ a
+                                       @ (Language.PureScript.PSString.PSString, a)
+                                       (GHC.Tuple.(,)
+                                          @ Language.PureScript.PSString.PSString
+                                          @ a
+                                          a1)
+                                       (eta b1) })
+                                    (go5 ys) }
+                         } in
+                         go5 as) }) -}
+f3496f057922e0cd7b9ce09305bf9712
+  mapGuardedExpr ::
+    (Language.PureScript.AST.Declarations.Guard
+     -> Language.PureScript.AST.Declarations.Guard)
+    -> (Language.PureScript.AST.Declarations.Expr
+        -> Language.PureScript.AST.Declarations.Expr)
+    -> Language.PureScript.AST.Declarations.GuardedExpr
+    -> Language.PureScript.AST.Declarations.GuardedExpr
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(U)><L,1*C1(U)><S,1*U(1*U,U)>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ (f :: Language.PureScript.AST.Declarations.Guard
+                         -> Language.PureScript.AST.Declarations.Guard)
+                   (g :: Language.PureScript.AST.Declarations.Expr
+                         -> Language.PureScript.AST.Declarations.Expr)
+                   (ds :: Language.PureScript.AST.Declarations.GuardedExpr) ->
+                 case ds of wild { Language.PureScript.AST.Declarations.GuardedExpr guards rhs ->
+                 Language.PureScript.AST.Declarations.GuardedExpr
+                   (GHC.Base.build
+                      @ Language.PureScript.AST.Declarations.Guard
+                      (\ @ b1
+                         (c :: Language.PureScript.AST.Declarations.Guard
+                               -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ Language.PureScript.AST.Declarations.Guard
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ Language.PureScript.AST.Declarations.Guard
+                            @ b1
+                            @ Language.PureScript.AST.Declarations.Guard
+                            c
+                            f)
+                         n
+                         guards))
+                   (g rhs) }) -}
+abfbcc4ac387d3565fd77fe0109b088c
+  overTypes ::
+    (Language.PureScript.Types.Type -> Language.PureScript.Types.Type)
+    -> Language.PureScript.AST.Declarations.Expr
+    -> Language.PureScript.AST.Declarations.Expr
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,C(U)>,
+     Unfolding: (\ (f :: Language.PureScript.Types.Type
+                         -> Language.PureScript.Types.Type) ->
+                 case Language.PureScript.AST.Traversals.$weverywhereOnValues
+                        (GHC.Base.id @ Language.PureScript.AST.Declarations.Declaration)
+                        (\ (ds :: Language.PureScript.AST.Declarations.Expr) ->
+                         case ds of wild {
+                           DEFAULT -> wild
+                           Language.PureScript.AST.Declarations.TypedValue checkTy val t
+                           -> Language.PureScript.AST.Declarations.TypedValue
+                                checkTy
+                                val
+                                (f t)
+                           Language.PureScript.AST.Declarations.TypeClassDictionary c sco hints
+                           -> Language.PureScript.AST.Declarations.TypeClassDictionary
+                                (case c of wild1 { Language.PureScript.Types.Constraint ds1 ds2 ds3 ->
+                                 Language.PureScript.Types.Constraint
+                                   ds1
+                                   (GHC.Base.map
+                                      @ Language.PureScript.Types.Type
+                                      @ Language.PureScript.Types.Type
+                                      f
+                                      ds2)
+                                   ds3 })
+                                sco
+                                hints })
+                        (GHC.Base.id
+                           @ Language.PureScript.AST.Binders.Binder) of ww { (#,,#) ww1 ww2 ww3 ->
+                 ww2 }) -}
+instance GHC.Classes.Eq [Language.PureScript.AST.Traversals.ScopedIdent]
+  = Language.PureScript.AST.Traversals.$fEqScopedIdent
+instance GHC.Classes.Ord [Language.PureScript.AST.Traversals.ScopedIdent]
+  = Language.PureScript.AST.Traversals.$fOrdScopedIdent
+instance GHC.Show.Show [Language.PureScript.AST.Traversals.ScopedIdent]
+  = Language.PureScript.AST.Traversals.$fShowScopedIdent
+"SC:$sgo30" forall (sc :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent)
+                   (sc1 :: Language.PureScript.Names.Ident)
+                   (sc2 :: Language.PureScript.AST.Traversals.ScopedIdent)
+  Language.PureScript.AST.Traversals.$sinsert_$sgo3 sc2
+                                                    (Language.PureScript.AST.Traversals.LocalIdent
+                                                       sc1)
+                                                    sc
+  = Language.PureScript.AST.Traversals.$sinsert_$s$sgo2 sc sc1 sc2
+"SC:$sgo31" forall (sc :: Data.Set.Internal.Set
+                            Language.PureScript.AST.Traversals.ScopedIdent)
+                   (sc1 :: Language.PureScript.Names.Ident)
+                   (sc2 :: Language.PureScript.AST.Traversals.ScopedIdent)
+  Language.PureScript.AST.Traversals.$sinsert_$sgo3 sc2
+                                                    (Language.PureScript.AST.Traversals.ToplevelIdent
+                                                       sc1)
+                                                    sc
+  = Language.PureScript.AST.Traversals.$sinsert_$s$sgo1 sc sc1 sc2
+"SC:$sgo32" forall (sc :: GHC.Prim.Int#)
+                   (sc1 :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (sc2 :: Data.Set.Internal.Set
+                             Language.PureScript.AST.Traversals.ScopedIdent)
+                   (sc3 :: Data.Set.Internal.Set
+                             Language.PureScript.AST.Traversals.ScopedIdent)
+                   (sc4 :: Language.PureScript.AST.Traversals.ScopedIdent)
+                   (sc5 :: Language.PureScript.AST.Traversals.ScopedIdent)
+  Language.PureScript.AST.Traversals.$sinsert_$sgo3 sc5
+                                                    sc4
+                                                    (Data.Set.Internal.Bin
+                                                       @ Language.PureScript.AST.Traversals.ScopedIdent
+                                                       sc
+                                                       sc1
+                                                       sc2
+                                                       sc3)
+  = Language.PureScript.AST.Traversals.$sinsert_$s$sgo3
+      sc
+      sc1
+      sc2
+      sc3
+      sc4
+      sc5
+"SPEC/Language.PureScript.AST.Traversals $wsplitS @ ScopedIdent" [0] forall (w :: GHC.Classes.Ord
+                                                                                    Language.PureScript.AST.Traversals.ScopedIdent)
+  Data.Set.Internal.$wsplitS @ Language.PureScript.AST.Traversals.ScopedIdent
+                             w
+  = Language.PureScript.AST.Traversals.$s$wsplitS
+"SPEC/Language.PureScript.AST.Traversals fromList @ ScopedIdent" forall ($dOrd :: GHC.Classes.Ord
+                                                                                    Language.PureScript.AST.Traversals.ScopedIdent)
+  Data.Set.Internal.fromList @ Language.PureScript.AST.Traversals.ScopedIdent
+                             $dOrd
+  = Language.PureScript.AST.Traversals.$sfromList
+"SPEC/Language.PureScript.AST.Traversals union @ ScopedIdent" forall ($dOrd :: GHC.Classes.Ord
+                                                                                 Language.PureScript.AST.Traversals.ScopedIdent)
+  Data.Set.Internal.union @ Language.PureScript.AST.Traversals.ScopedIdent
+                          $dOrd
+  = Language.PureScript.AST.Traversals.$sunion
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

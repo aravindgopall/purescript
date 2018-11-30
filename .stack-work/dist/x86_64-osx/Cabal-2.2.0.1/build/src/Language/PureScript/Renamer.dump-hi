@@ -1,0 +1,841 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:28:26.39243 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Renamer 8043
+  interface hash: bf02fb90d14afa1c3c449eaec61e822d
+  ABI hash: 5b8bd8f811cea25565ccbdf28b384575
+  export-list hash: 7aeb93c3fcea20d1997588fd9fbfc91a
+  orphan hash: b20f6c33ef963927659e25298941ed26
+  flag hash: 2ae478d21823b7c739b1b08c46262eb0
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Renamer.renameInModules
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.CoreFn Language.PureScript.CoreFn.Ann
+                     Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.Traversals Language.PureScript.Crash
+                     Language.PureScript.Environment Language.PureScript.Errors
+                     Language.PureScript.Externs Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: colour-2.3.4:Data.Colour syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Err 5e26aa744981f14e0f1e4d29c44ac52e
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
+import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
+import  -/  mtl-2.2.2:Control.Monad.State 1f28325cb5ef11b6b40ffadfe4bc2ca3
+import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
+import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
+  ArrayLiteral 5b23e15244983cff3a7817389b5e2212
+  Literal 9e9b6c02bfac90a56d53685e90c059b8
+  ObjectLiteral 6a79fd56232b94e65385c3eab269a6a5
+import  -/  Language.PureScript.CoreFn 2c440e872f36673fe5ebfa97cb0ef951
+  exports: 7b81da316d90028601129b65203a4443
+import  -/  Language.PureScript.CoreFn.Ann 67adbeeb949d973571e5b91a33c2a9a2
+  Ann 8e0992b34878737a5d5d4b7dd1d0f2bb
+import  -/  Language.PureScript.CoreFn.Binders e205438100975de38a52db38c037abe2
+  Binder 1fe84739935c12de224bac2b426b559a
+  ConstructorBinder de7d08f67d4b5949eab0859dec085cc5
+  LiteralBinder 04b8eb6c3a78e3b286b4c009ebd58ee9
+  NamedBinder f45a5d9db0c5cc82ee87a5b119819d5c
+  NullBinder cac3a111b70d6b0b70597d185b0d57e0
+  VarBinder b68157a790a8eb7dde589ed325cb7857
+import  -/  Language.PureScript.CoreFn.Expr dc01d65ee85cbeac279960eab91a6089
+  Abs d9e754cc62f157fda7eb9fe38c7bc644
+  Accessor d84c3bf7ad9228fdb00e15aa8c83518b
+  App 77a51951b914dfd3b94e51ddd520ec0e
+  Bind 3a14ce51d583743172851fcd35eb633c
+  Case 51c9c582576807567bb4ffd959c82edb
+  CaseAlternative abfcb1e9a9d76f97c029167f07c293ed
+  CaseAlternative 3a14ce51d583743172851fcd35eb633c
+  Constructor 57018ac6047f1d551d425190e1bcc16e
+  Expr 3a14ce51d583743172851fcd35eb633c
+  Let 17825244d8218e85133caa5a595ea0ae
+  Literal b891712fe7581e36b785ba9bd3755b39
+  NonRec b568585b3d08a11780fb3e691b7e4790
+  ObjectUpdate 04b18a0bc044a80321746bf3b253761b
+  Rec f735e1d08a6c429cf77f90fb93c0b23a
+  Var 9aaf662f2ee048ef7264115e98281c8f
+import  -/  Language.PureScript.CoreFn.Meta f9a7ac55ab29a2359120679a28dbcec4
+  IsTypeClassConstructor d6fc477cec85bb2a9775d6106cca56eb
+import  -/  Language.PureScript.CoreFn.Module acf6e67de03c5a4b8c92dada86ffff0c
+  Module 085b794eb633bbb8ed0396031fa5acc6
+  Module 41104609d8c9d8e7c7b0b779f70dfd27
+  moduleDecls 41104609d8c9d8e7c7b0b779f70dfd27
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  GenIdent b24b10553b46fa06c1a68c4a91cc2198
+  Ident 0ccd7f2221de64569e50634367691253
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  Qualified d600a7f01c8203cf5504999de99c923c
+  UnusedIdent 054d24daf49a85444a23e09c0885fe16
+  runIdent bc5cc3d3ba9d105c169eb6038c65d1a8
+  showIdent 5c662c2cc0373f386893e9287ea83382
+import  -/  Language.PureScript.Traversals 0b1167883a6d6cc72496ff4af9cd7535
+  exports: ff3aac3cd7b378c02751a42ba037de7e
+  eitherM c4a2cff14570441e56c02b0c94e7fe40
+  pairM 0143056ce5ba7a658c917e8603d3f246
+  sndM f92d028593bfff03fd7f7a06605574ae
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.State.Lazy bb07ba19cd14893d125b163b03c16c98
+1874f1030084a0d926cb76cb0156fcba
+  $sfromList ::
+    [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(Language.PureScript.Names.Ident, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ Language.PureScript.Names.Ident
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case Language.PureScript.Names.$fOrdIdent_$c< kx ky of wild4 {
+                             GHC.Types.False
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Renamer.$sfromList_$spoly_go14
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Names.Ident
+                                        @ a)) }
+                             GHC.Types.True
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Renamer.$sfromList_$s$wpoly_go13
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a))
+                                  1# } } } } } }) -}
+c1527eff70d27568400c59b5eac27776
+  $sfromList1 ::
+    [Language.PureScript.Names.Ident]
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Language.PureScript.Names.Ident]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Internal.Tip @ Language.PureScript.Names.Ident
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { DEFAULT ->
+                           Data.Set.Internal.Bin
+                             @ Language.PureScript.Names.Ident
+                             1#
+                             dt
+                             (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)
+                             (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident) }
+                        : ipv ipv1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< x ipv of wild2 {
+                             GHC.Types.False
+                             -> case x of dt { DEFAULT ->
+                                Language.PureScript.Renamer.$sfromList_$sgo4
+                                  ipv
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     1#
+                                     dt
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)) }
+                             GHC.Types.True
+                             -> case x of dt { DEFAULT ->
+                                Language.PureScript.Renamer.$sfromList_$s$wgo3
+                                  ipv
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     1#
+                                     dt
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident))
+                                  1# } } } }) -}
+519a688aba9486dd3b989b5cc13581f7
+  $sfromList_$s$wgo3 ::
+    Language.PureScript.Names.Ident
+    -> [Language.PureScript.Names.Ident]
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 4, Strictness: <S,U><S,1*U><S,1*U><L,U> -}
+266c9159e258aa6a82be465886a84141
+  $sfromList_$s$wpoly_go13 ::
+    Language.PureScript.Names.Ident
+    -> a
+    -> [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 5, Strictness: <S,U><L,U><S,1*U><S,1*U><L,U> -}
+ca382632d4c2186c500da7334db5aeed
+  $sfromList_$sgo4 ::
+    Language.PureScript.Names.Ident
+    -> [Language.PureScript.Names.Ident]
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 3, Strictness: <S,U><S,1*U><S,1*U> -}
+ea8f265c22986258e61ad5e5da159c62
+  $sfromList_$spoly_go14 ::
+    Language.PureScript.Names.Ident
+    -> a
+    -> [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 4, Strictness: <S,U><L,U><S,1*U><S,1*U> -}
+9c77d9a51d8d7dc31f0a5a97a36e62d6
+  $sinsert_$sgo13 ::
+    Language.PureScript.Names.Ident
+    -> Language.PureScript.Names.Ident
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+12218babd9687bd1b01b06ff17168f6c
+  $sinsert_$sgo3 ::
+    Language.PureScript.Names.Ident
+    -> Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+8136c398d85107124f8717534aff9f4a
+  $slookup1 ::
+    Language.PureScript.Names.Ident
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+a92b8332dfcf697571007df2117a73de
+  $slookup_$spoly_go1 ::
+    Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Integer.Type.Integer
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,U> -}
+0f05defb54b922e30a3091f63104dd49
+  $slookup_$spoly_go13 ::
+    Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Base.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+cf6d9e3a39935860b931021371546b0f
+  $slookup_$spoly_go2 ::
+    Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> Data.Text.Internal.Text -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+03117db203f14c96ebadff4659828529
+  $smember_$sgo1 ::
+    Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+4aa6edd66d7bdb74f4867dcf527964cb
+  $smember_$sgo2 ::
+    Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,U> -}
+5b9835daadf85807490e44ca1baae280
+  $smember_$sgo3 ::
+    Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Text.Internal.Text -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+a5c082dd7407ceff2502286d0dde8e4a
+  $smember_go3 ::
+    Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+7531b9ad34ba907754dd665e6e0a7972
+  $tc'RenameState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14269018062023279332##
+                   2345744066414061004##
+                   Language.PureScript.Renamer.$trModule
+                   Language.PureScript.Renamer.$tc'RenameState2
+                   0#
+                   Language.PureScript.Renamer.$tc'RenameState1) -}
+984237c7fa8dfa39752233372a825b4c
+  $tc'RenameState1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7d99a2bfb6c7a1ab89774f412dec2705
+  $tc'RenameState2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Renamer.$tc'RenameState3) -}
+6e4307d7d8c775c5668ca19fb01c72fc
+  $tc'RenameState3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RenameState"#) -}
+2e1da06ce6c4b93493f24586dea80c32
+  $tcRenameState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16840523589510503136##
+                   10725351608084791727##
+                   Language.PureScript.Renamer.$trModule
+                   Language.PureScript.Renamer.$tcRenameState1
+                   0#
+                   GHC.Types.krep$*) -}
+1812b61e39d5bb57066b026769555314
+  $tcRenameState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Renamer.$tcRenameState2) -}
+d90bae6bc7f50fbc9bb7d11e900970e4
+  $tcRenameState2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RenameState"#) -}
+067710784b49f6c0464b3ab292cd2213
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Renamer.$trModule3
+                   Language.PureScript.Renamer.$trModule1) -}
+39119456aa220d6c833f7be0278a0c17
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Renamer.$trModule2) -}
+b8326b4bcc57627e2e7819dc29304506
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Renamer"#) -}
+c2831bce9b2dac7124a2bf0b15c815dd
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Renamer.$trModule4) -}
+2d6639df86eb50a7077b41c6b4b65624
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+5f539be116fbdc9eef3a94e68bdd6029
+  $wgo ::
+    [((Language.PureScript.CoreFn.Ann.Ann,
+       Language.PureScript.Names.Ident),
+      Language.PureScript.CoreFn.Expr.Expr
+        Language.PureScript.CoreFn.Ann.Ann)]
+    -> Language.PureScript.Renamer.RenameState
+    -> (# [((Language.PureScript.CoreFn.Ann.Ann,
+             Language.PureScript.Names.Ident),
+            Language.PureScript.CoreFn.Expr.Expr
+              Language.PureScript.CoreFn.Ann.Ann)],
+          Language.PureScript.Renamer.RenameState #)
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+9f51f11469fd1e85af9ab133378e1c9d
+  type Rename =
+    Control.Monad.Trans.State.Lazy.State
+      Language.PureScript.Renamer.RenameState
+    :: * -> *
+3fcae3e495090a4fff1cf464b7ae0a05
+  data RenameState
+    = RenameState {rsBoundNames :: Data.Map.Internal.Map
+                                     Language.PureScript.Names.Ident
+                                     Language.PureScript.Names.Ident,
+                   rsUsedNames :: Data.Set.Internal.Set
+                                    Language.PureScript.Names.Ident}
+90e0dc956413e3b8cb337169ee3496c9
+  renameInModules ::
+    [Language.PureScript.CoreFn.Module.Module
+       Language.PureScript.CoreFn.Ann.Ann]
+    -> [Language.PureScript.CoreFn.Module.Module
+          Language.PureScript.CoreFn.Ann.Ann]
+  {- Arity: 1,
+     Unfolding: (GHC.Base.map
+                   @ (Language.PureScript.CoreFn.Module.Module
+                        Language.PureScript.CoreFn.Ann.Ann)
+                   @ (Language.PureScript.CoreFn.Module.Module
+                        Language.PureScript.CoreFn.Ann.Ann)
+                   Language.PureScript.Renamer.renameInModules_go) -}
+20c750bc0a2628cf27ee2a3c64b8543d
+  renameInModules1 ::
+    Language.PureScript.CoreFn.Expr.Bind
+      (Language.PureScript.AST.SourcePos.SourceSpan,
+       [Language.PureScript.Comments.Comment],
+       GHC.Base.Maybe Language.PureScript.Types.Type,
+       GHC.Base.Maybe Language.PureScript.CoreFn.Meta.Meta)
+    -> Language.PureScript.Renamer.RenameState
+    -> Data.Functor.Identity.Identity
+         (Language.PureScript.CoreFn.Expr.Bind
+            Language.PureScript.CoreFn.Ann.Ann,
+          Language.PureScript.Renamer.RenameState)
+  {- Arity: 2, Strictness: <S,1*U><L,U>m,
+     Unfolding: (\ (sc :: Language.PureScript.CoreFn.Expr.Bind
+                            (Language.PureScript.AST.SourcePos.SourceSpan,
+                             [Language.PureScript.Comments.Comment],
+                             GHC.Base.Maybe Language.PureScript.Types.Type,
+                             GHC.Base.Maybe Language.PureScript.CoreFn.Meta.Meta))
+                   (eta :: Language.PureScript.Renamer.RenameState) ->
+                 case sc of wild {
+                   Language.PureScript.CoreFn.Expr.NonRec a name val
+                   -> let {
+                        ds :: Data.Functor.Identity.Identity
+                                (Language.PureScript.CoreFn.Expr.Expr
+                                   Language.PureScript.CoreFn.Ann.Ann,
+                                 Language.PureScript.Renamer.RenameState)
+                        = (Language.PureScript.Renamer.renameInValue val)
+                            `cast`
+                          (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <Language.PureScript.Renamer.RenameState>_N
+                               <Data.Functor.Identity.Identity>_R
+                               <Language.PureScript.CoreFn.Expr.Expr
+                                  Language.PureScript.CoreFn.Ann.Ann>_N)
+                            eta
+                      } in
+                      (Language.PureScript.CoreFn.Expr.NonRec
+                         @ Language.PureScript.CoreFn.Ann.Ann
+                         a
+                         name
+                         (case ds
+                                 `cast`
+                               (Data.Functor.Identity.N:Identity[0]
+                                    <(Language.PureScript.CoreFn.Expr.Expr
+                                        Language.PureScript.CoreFn.Ann.Ann,
+                                      Language.PureScript.Renamer.RenameState)>_R) of wild1 { (,) a1 s' ->
+                          a1 }),
+                       case ds
+                              `cast`
+                            (Data.Functor.Identity.N:Identity[0]
+                                 <(Language.PureScript.CoreFn.Expr.Expr
+                                     Language.PureScript.CoreFn.Ann.Ann,
+                                   Language.PureScript.Renamer.RenameState)>_R) of wild1 { (,) a1 s' ->
+                       s' })
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <(Language.PureScript.CoreFn.Expr.Bind
+                                    Language.PureScript.CoreFn.Ann.Ann,
+                                  Language.PureScript.Renamer.RenameState)>_R))
+                   Language.PureScript.CoreFn.Expr.Rec ds
+                   -> letrec {
+                        go8 :: [((Language.PureScript.CoreFn.Ann.Ann,
+                                  Language.PureScript.Names.Ident),
+                                 Language.PureScript.CoreFn.Expr.Expr
+                                   Language.PureScript.CoreFn.Ann.Ann)]
+                               -> Language.PureScript.Renamer.RenameState
+                               -> Data.Functor.Identity.Identity
+                                    ([((Language.PureScript.CoreFn.Ann.Ann,
+                                        Language.PureScript.Names.Ident),
+                                       Language.PureScript.CoreFn.Expr.Expr
+                                         Language.PureScript.CoreFn.Ann.Ann)],
+                                     Language.PureScript.Renamer.RenameState)
+                          {- Arity: 2, Strictness: <S,1*U><L,U>m -}
+                        = \ (ds1 :: [((Language.PureScript.CoreFn.Ann.Ann,
+                                       Language.PureScript.Names.Ident),
+                                      Language.PureScript.CoreFn.Expr.Expr
+                                        Language.PureScript.CoreFn.Ann.Ann)])
+                            (eta1 :: Language.PureScript.Renamer.RenameState) ->
+                          case ds1 of wild1 {
+                            []
+                            -> (Language.PureScript.Renamer.renameInModules2 eta1)
+                                 `cast`
+                               (Sym (Data.Functor.Identity.N:Identity[0]
+                                         <([((Language.PureScript.CoreFn.Ann.Ann,
+                                              Language.PureScript.Names.Ident),
+                                             Language.PureScript.CoreFn.Expr.Expr
+                                               Language.PureScript.CoreFn.Ann.Ann)],
+                                           Language.PureScript.Renamer.RenameState)>_R))
+                            : y ys
+                            -> let {
+                                 ds2 :: Data.Functor.Identity.Identity
+                                          ([((Language.PureScript.CoreFn.Ann.Ann,
+                                              Language.PureScript.Names.Ident),
+                                             Language.PureScript.CoreFn.Expr.Expr
+                                               Language.PureScript.CoreFn.Ann.Ann)],
+                                           Language.PureScript.Renamer.RenameState)
+                                 = go8
+                                     ys
+                                     (case y of wild2 { (,) ds3 val ->
+                                      case ds3 of wild3 { (,) a name -> eta1 } })
+                               } in
+                               (GHC.Types.:
+                                  @ ((Language.PureScript.CoreFn.Ann.Ann,
+                                      Language.PureScript.Names.Ident),
+                                     Language.PureScript.CoreFn.Expr.Expr
+                                       Language.PureScript.CoreFn.Ann.Ann)
+                                  (case y of wild2 { (,) ds3 val ->
+                                   case ds3 of wild3 { (,) a name -> ((a, name), val) } })
+                                  (case ds2
+                                          `cast`
+                                        (Data.Functor.Identity.N:Identity[0]
+                                             <([((Language.PureScript.CoreFn.Ann.Ann,
+                                                  Language.PureScript.Names.Ident),
+                                                 Language.PureScript.CoreFn.Expr.Expr
+                                                   Language.PureScript.CoreFn.Ann.Ann)],
+                                               Language.PureScript.Renamer.RenameState)>_R) of wild2 { (,) x1 s'' ->
+                                   x1 }),
+                                case ds2
+                                       `cast`
+                                     (Data.Functor.Identity.N:Identity[0]
+                                          <([((Language.PureScript.CoreFn.Ann.Ann,
+                                               Language.PureScript.Names.Ident),
+                                              Language.PureScript.CoreFn.Expr.Expr
+                                                Language.PureScript.CoreFn.Ann.Ann)],
+                                            Language.PureScript.Renamer.RenameState)>_R) of wild2 { (,) x1 s'' ->
+                                s'' })
+                                 `cast`
+                               (Sym (Data.Functor.Identity.N:Identity[0]
+                                         <([((Language.PureScript.CoreFn.Ann.Ann,
+                                              Language.PureScript.Names.Ident),
+                                             Language.PureScript.CoreFn.Expr.Expr
+                                               Language.PureScript.CoreFn.Ann.Ann)],
+                                           Language.PureScript.Renamer.RenameState)>_R)) }
+                      } in
+                      let {
+                        ds1 :: Data.Functor.Identity.Identity
+                                 ([((Language.PureScript.CoreFn.Ann.Ann,
+                                     Language.PureScript.Names.Ident),
+                                    Language.PureScript.CoreFn.Expr.Expr
+                                      Language.PureScript.CoreFn.Ann.Ann)],
+                                  Language.PureScript.Renamer.RenameState)
+                        = case (go8 ds eta)
+                                 `cast`
+                               (Data.Functor.Identity.N:Identity[0]
+                                    <([((Language.PureScript.CoreFn.Ann.Ann,
+                                         Language.PureScript.Names.Ident),
+                                        Language.PureScript.CoreFn.Expr.Expr
+                                          Language.PureScript.CoreFn.Ann.Ann)],
+                                      Language.PureScript.Renamer.RenameState)>_R) of wild1 { (,) a1 s' ->
+                          case Language.PureScript.Renamer.$wgo
+                                 a1
+                                 s' of ww { (#,#) ww1 ww2 ->
+                          (ww1, ww2)
+                            `cast`
+                          (Sym (Data.Functor.Identity.N:Identity[0]
+                                    <([((Language.PureScript.CoreFn.Ann.Ann,
+                                         Language.PureScript.Names.Ident),
+                                        Language.PureScript.CoreFn.Expr.Expr
+                                          Language.PureScript.CoreFn.Ann.Ann)],
+                                      Language.PureScript.Renamer.RenameState)>_R)) } }
+                      } in
+                      (Language.PureScript.CoreFn.Expr.Rec
+                         @ Language.PureScript.CoreFn.Ann.Ann
+                         (case ds1
+                                 `cast`
+                               (Data.Functor.Identity.N:Identity[0]
+                                    <([((Language.PureScript.CoreFn.Ann.Ann,
+                                         Language.PureScript.Names.Ident),
+                                        Language.PureScript.CoreFn.Expr.Expr
+                                          Language.PureScript.CoreFn.Ann.Ann)],
+                                      Language.PureScript.Renamer.RenameState)>_R) of wild1 { (,) a1 s' ->
+                          a1 }),
+                       case ds1
+                              `cast`
+                            (Data.Functor.Identity.N:Identity[0]
+                                 <([((Language.PureScript.CoreFn.Ann.Ann,
+                                      Language.PureScript.Names.Ident),
+                                     Language.PureScript.CoreFn.Expr.Expr
+                                       Language.PureScript.CoreFn.Ann.Ann)],
+                                   Language.PureScript.Renamer.RenameState)>_R) of wild1 { (,) a1 s' ->
+                       s' })
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <(Language.PureScript.CoreFn.Expr.Bind
+                                    Language.PureScript.CoreFn.Ann.Ann,
+                                  Language.PureScript.Renamer.RenameState)>_R)) }) -}
+1225b6271042ad9adda7eb5fa262b94b
+  renameInModules2 ::
+    Language.PureScript.Renamer.RenameState
+    -> ([((Language.PureScript.CoreFn.Ann.Ann,
+           Language.PureScript.Names.Ident),
+          Language.PureScript.CoreFn.Expr.Expr
+            Language.PureScript.CoreFn.Ann.Ann)],
+        Language.PureScript.Renamer.RenameState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.PureScript.Renamer.RenameState) ->
+                 (GHC.Types.[]
+                    @ ((Language.PureScript.CoreFn.Ann.Ann,
+                        Language.PureScript.Names.Ident),
+                       Language.PureScript.CoreFn.Expr.Expr
+                         Language.PureScript.CoreFn.Ann.Ann),
+                  s1)) -}
+3e146b0c6a9774e5bf845fc2788309c9
+  renameInModules_go ::
+    Language.PureScript.CoreFn.Module.Module
+      Language.PureScript.CoreFn.Ann.Ann
+    -> Language.PureScript.CoreFn.Module.Module
+         Language.PureScript.CoreFn.Ann.Ann
+  {- Arity: 1, Strictness: <S,1*U(U,U,U,U,U,U,U,U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.CoreFn.Module.Module
+                           Language.PureScript.CoreFn.Ann.Ann) ->
+                 case w of ww { Language.PureScript.CoreFn.Module.Module ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.PureScript.CoreFn.Module.Module
+                   @ Language.PureScript.CoreFn.Ann.Ann
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   (GHC.Base.map
+                      @ (Language.PureScript.CoreFn.Expr.Bind
+                           Language.PureScript.CoreFn.Ann.Ann)
+                      @ (Language.PureScript.CoreFn.Expr.Bind
+                           Language.PureScript.CoreFn.Ann.Ann)
+                      (let {
+                         scope :: [Language.PureScript.Names.Ident]
+                         = Language.PureScript.Renamer.renameInModules_go1 ww8
+                       } in
+                       let {
+                         x :: Data.Map.Internal.Map
+                                Language.PureScript.Names.Ident Language.PureScript.Names.Ident
+                         = Language.PureScript.Renamer.$sfromList
+                             @ Language.PureScript.Names.Ident
+                             (GHC.List.zip
+                                @ Language.PureScript.Names.Ident
+                                @ Language.PureScript.Names.Ident
+                                scope
+                                scope)
+                       } in
+                       let {
+                         x1 :: Data.Set.Internal.Set Language.PureScript.Names.Ident
+                         = Language.PureScript.Renamer.$sfromList1 scope
+                       } in
+                       let {
+                         x2 :: Language.PureScript.Renamer.RenameState
+                         = Language.PureScript.Renamer.RenameState x x1
+                       } in
+                       \ (x3 :: Language.PureScript.CoreFn.Expr.Bind
+                                  Language.PureScript.CoreFn.Ann.Ann) ->
+                       case (Language.PureScript.Renamer.renameInModules1 x3 x2)
+                              `cast`
+                            (Data.Functor.Identity.N:Identity[0]
+                                 <(Language.PureScript.CoreFn.Expr.Bind
+                                     Language.PureScript.CoreFn.Ann.Ann,
+                                   Language.PureScript.Renamer.RenameState)>_R) of wild { (,) x4 ds1 ->
+                       x4 })
+                      ww8) }) -}
+284153c2ab1f7efa7a163455a64a2a70
+  renameInModules_go1 ::
+    [Language.PureScript.CoreFn.Expr.Bind
+       Language.PureScript.CoreFn.Ann.Ann]
+    -> [Language.PureScript.Names.Ident]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+36910a89e104230365605136596be937
+  renameInValue ::
+    Language.PureScript.CoreFn.Expr.Expr
+      Language.PureScript.CoreFn.Ann.Ann
+    -> Language.PureScript.Renamer.Rename
+         (Language.PureScript.CoreFn.Expr.Expr
+            Language.PureScript.CoreFn.Ann.Ann)
+  {- Arity: 1, Strictness: <S,1*U> -}
+3fcae3e495090a4fff1cf464b7ae0a05
+  rsBoundNames ::
+    Language.PureScript.Renamer.RenameState
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.Ident Language.PureScript.Names.Ident
+  RecSel Left Language.PureScript.Renamer.RenameState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Renamer.RenameState) ->
+                 case ds of wild { Language.PureScript.Renamer.RenameState ds1 ds2 ->
+                 ds1 }) -}
+3fcae3e495090a4fff1cf464b7ae0a05
+  rsUsedNames ::
+    Language.PureScript.Renamer.RenameState
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  RecSel Left Language.PureScript.Renamer.RenameState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Renamer.RenameState) ->
+                 case ds of wild { Language.PureScript.Renamer.RenameState ds1 ds2 ->
+                 ds2 }) -}
+"SC:go30" forall (sc :: Data.Set.Internal.Set
+                          Language.PureScript.Names.Ident)
+                 (sc1 :: Data.Text.Internal.Text)
+  Language.PureScript.Renamer.$smember_go3 (Language.PureScript.Names.Ident
+                                              sc1)
+                                           sc
+  = Language.PureScript.Renamer.$smember_$sgo3 sc sc1
+"SC:go31" forall (sc :: Data.Set.Internal.Set
+                          Language.PureScript.Names.Ident)
+                 (sc1 :: GHC.Base.Maybe Data.Text.Internal.Text)
+                 (sc2 :: GHC.Integer.Type.Integer)
+  Language.PureScript.Renamer.$smember_go3 (Language.PureScript.Names.GenIdent
+                                              sc1
+                                              sc2)
+                                           sc
+  = Language.PureScript.Renamer.$smember_$sgo2 sc sc1 sc2
+"SC:go32" forall (sc :: Data.Set.Internal.Set
+                          Language.PureScript.Names.Ident)
+  Language.PureScript.Renamer.$smember_go3 Language.PureScript.Names.UnusedIdent
+                                           sc
+  = Language.PureScript.Renamer.$smember_$sgo1 sc
+"SC:poly_go130" forall @ a
+                       (sc :: Data.Map.Internal.Map Language.PureScript.Names.Ident a)
+                       (sc1 :: Data.Text.Internal.Text)
+  Language.PureScript.Renamer.$slookup1 @ a
+                                        (Language.PureScript.Names.Ident sc1)
+                                        sc
+  = Language.PureScript.Renamer.$slookup_$spoly_go2 @ a sc sc1
+"SC:poly_go131" forall @ a
+                       (sc :: Data.Map.Internal.Map Language.PureScript.Names.Ident a)
+                       (sc1 :: GHC.Base.Maybe Data.Text.Internal.Text)
+                       (sc2 :: GHC.Integer.Type.Integer)
+  Language.PureScript.Renamer.$slookup1 @ a
+                                        (Language.PureScript.Names.GenIdent sc1 sc2)
+                                        sc
+  = Language.PureScript.Renamer.$slookup_$spoly_go1 @ a sc sc1 sc2
+"SC:poly_go132" forall @ a
+                       (sc :: Data.Map.Internal.Map Language.PureScript.Names.Ident a)
+  Language.PureScript.Renamer.$slookup1 @ a
+                                        Language.PureScript.Names.UnusedIdent
+                                        sc
+  = Language.PureScript.Renamer.$slookup_$spoly_go13 @ a sc
+"SPEC/Language.PureScript.Renamer fromList @ Ident" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                                Language.PureScript.Names.Ident)
+  Data.Set.Internal.fromList @ Language.PureScript.Names.Ident $dOrd
+  = Language.PureScript.Renamer.$sfromList1
+"SPEC/Language.PureScript.Renamer fromList @ Ident _" [orphan] forall @ a
+                                                                      ($dOrd :: GHC.Classes.Ord
+                                                                                  Language.PureScript.Names.Ident)
+  Data.Map.Internal.fromList @ Language.PureScript.Names.Ident
+                             @ a
+                             $dOrd
+  = Language.PureScript.Renamer.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

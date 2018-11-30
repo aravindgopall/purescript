@@ -1,0 +1,521 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:28:23.891485 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreImp.Optimizer.Common 8043
+  interface hash: ac024b5316f01acf5c90d9adc0a298dd
+  ABI hash: d1b700c07ed6677e35c7d0ef5c1d797a
+  export-list hash: 6b4d83e29381b01143d015e4188e1b4a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bec0ba85914d2da9e0a4be22213f6c78
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.CoreImp.Optimizer.Common.applyAll
+  Language.PureScript.CoreImp.Optimizer.Common.isDict
+  Language.PureScript.CoreImp.Optimizer.Common.isDict'
+  Language.PureScript.CoreImp.Optimizer.Common.isReassigned
+  Language.PureScript.CoreImp.Optimizer.Common.isRebound
+  Language.PureScript.CoreImp.Optimizer.Common.isUpdated
+  Language.PureScript.CoreImp.Optimizer.Common.isUsed
+  Language.PureScript.CoreImp.Optimizer.Common.removeFromBlock
+  Language.PureScript.CoreImp.Optimizer.Common.replaceIdent
+  Language.PureScript.CoreImp.Optimizer.Common.replaceIdents
+  Language.PureScript.CoreImp.Optimizer.Common.targetVariable
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.CoreImp.AST Language.PureScript.Crash
+                     Language.PureScript.Environment Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  Language.PureScript.CoreImp.AST 66108f8b83c9a1c508a34f2e6114094e
+  exports: 1da27be6d04935ab665d52ac441d8230
+  AST 2d7016401e08dc68af93e9a4339f76ff
+  Assignment 96ad8db50ba48c6225a174431baf9676
+  Block ae40450aa1df093ea2f6b6a0b6380186
+  For 81a7750edd95cb398263d8f3ac1dcf04
+  ForIn 31053d303f2e985ae6bed80d42b67e41
+  Function 6a0d4d5d81b982f4c8eca9b6610fca93
+  Indexer 76027cc8e466bea1311cd2770f494b34
+  StringLiteral a6ff0f5bf676b04b36c1bcbec4e8d804
+  Var c3d3709a7644965f92d8326eb3be56cf
+  VariableIntroduction 47f714cb8440f55c999364abbec8bff7
+  everything 985b55d9675ee599ae2b170dd43f9772
+  everywhere 8ce9417ee75b74710133c4483c16425a
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
+  exports: 41608caf7cc5b51f34de641c9952ab6d
+  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+97b7d149bad6427dbac108e68937fdf8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.CoreImp.Optimizer.Common.$trModule3
+                   Language.PureScript.CoreImp.Optimizer.Common.$trModule1) -}
+17aff91521f154c69a5054075c16ffd8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.Optimizer.Common.$trModule2) -}
+4ec1ed1aea081c9340f216695a4f8b76
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.CoreImp.Optimizer.Common"#) -}
+5987b0b95b96af6b9d58712c1b7a3d6b
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.CoreImp.Optimizer.Common.$trModule4) -}
+866810de1f1574952d54cbc36b225d2c
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+ecb90082c85bdb84e168e5006d4b9d4e
+  $wisDict ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.PSString.PSString
+    -> Language.PureScript.CoreImp.AST.AST
+    -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(U,U,U)><L,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Data.Text.Internal.Text)
+                   (ww1 :: Language.PureScript.PSString.PSString)
+                   (w :: Language.PureScript.CoreImp.AST.AST) ->
+                 case w of wild {
+                   DEFAULT -> GHC.Types.False
+                   Language.PureScript.CoreImp.AST.Indexer ds ds1 ds2
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.PureScript.CoreImp.AST.StringLiteral ds3 x
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Types.False
+                             Language.PureScript.CoreImp.AST.Var ds4 y
+                             -> case GHC.Classes.$fEq[]_$c==
+                                       @ GHC.Word.Word16
+                                       GHC.Word.$fEqWord16
+                                       x `cast` (Language.PureScript.PSString.N:PSString[0])
+                                       ww1
+                                         `cast`
+                                       (Language.PureScript.PSString.N:PSString[0]) of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True -> Data.Text.$fEqText_$c== y ww } } } }) -}
+08a668726537f334aa8c502e17246480
+  applyAll :: [a -> a] -> a -> a
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 GHC.List.foldl'
+                   @ (a -> a)
+                   @ (a -> a)
+                   (GHC.Base.. @ a @ a @ a)
+                   (GHC.Base.id @ a)) -}
+ed8e6ae6890dfcc089e7b80eb521297a
+  isDict ::
+    (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(U,U,U),1*U)><S,1*U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Data.Text.Internal.Text,
+                          Language.PureScript.PSString.PSString))
+                   (w1 :: Language.PureScript.CoreImp.AST.AST) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 Language.PureScript.CoreImp.Optimizer.Common.$wisDict
+                   ww1
+                   ww2
+                   w1 }) -}
+3168dd94b4f73b7315062090fee0d79c
+  isDict' ::
+    [(Data.Text.Internal.Text, Language.PureScript.PSString.PSString)]
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.CoreImp.Optimizer.Common.isDict'1
+                  `cast`
+                (<[(Data.Text.Internal.Text,
+                    Language.PureScript.PSString.PSString)]>_R
+                 ->_R <Language.PureScript.CoreImp.AST.AST>_R
+                 ->_R Data.Semigroup.Internal.N:Any[0]) -}
+9e600dcb48564b43f6ebde15ac293cd0
+  isDict'1 ::
+    [(Data.Text.Internal.Text, Language.PureScript.PSString.PSString)]
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Data.Semigroup.Internal.Any
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (xs :: [(Data.Text.Internal.Text,
+                            Language.PureScript.PSString.PSString)])
+                   (js :: Language.PureScript.CoreImp.AST.AST) ->
+                 letrec {
+                   go :: [(Data.Text.Internal.Text,
+                           Language.PureScript.PSString.PSString)]
+                         -> Data.Semigroup.Internal.Any
+                     <join 1> {- Arity: 1 -}
+                   = \ (ds :: [(Data.Text.Internal.Text,
+                                Language.PureScript.PSString.PSString)]) ->
+                     case ds of wild {
+                       []
+                       -> GHC.Types.False `cast` (Sym (Data.Semigroup.Internal.N:Any[0]))
+                       : y ys
+                       -> case Language.PureScript.CoreImp.Optimizer.Common.isDict
+                                 y
+                                 js of wild1 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True
+                            -> GHC.Types.True
+                                 `cast`
+                               (Sym (Data.Semigroup.Internal.N:Any[0])) } }
+                 } in
+                 go xs) -}
+d05ad96780973c00c709a3e8f98c4ee9
+  isReassigned ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U,U,U)><S,1*U>,
+     Unfolding: (\ (var1 :: Data.Text.Internal.Text)
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.everything
+                   @ GHC.Types.Bool
+                   GHC.Classes.||
+                   (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                    case ds of wild {
+                      DEFAULT -> GHC.Types.False
+                      Language.PureScript.CoreImp.AST.Function ds1 ds2 args ds3
+                      -> GHC.List.elem
+                           @ Data.Text.Internal.Text
+                           Data.Text.$fEqText
+                           var1
+                           args
+                      Language.PureScript.CoreImp.AST.VariableIntroduction ds1 arg ds2
+                      -> Data.Text.$fEqText_$c== var1 arg
+                      Language.PureScript.CoreImp.AST.Assignment ds1 ds2 ds3
+                      -> case ds2 of wild1 {
+                           DEFAULT -> GHC.Types.False
+                           Language.PureScript.CoreImp.AST.Var ds4 arg
+                           -> Data.Text.$fEqText_$c== var1 arg }
+                      Language.PureScript.CoreImp.AST.For ds1 arg ds2 ds3 ds4
+                      -> Data.Text.$fEqText_$c== var1 arg
+                      Language.PureScript.CoreImp.AST.ForIn ds1 arg ds2 ds3
+                      -> Data.Text.$fEqText_$c== var1 arg })
+                   eta) -}
+afe79a9faef69d36b5eed8390fa5d02b
+  isRebound ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.CoreImp.Optimizer.Common.isRebound1
+                  `cast`
+                (<Language.PureScript.CoreImp.AST.AST>_R
+                 ->_R <Language.PureScript.CoreImp.AST.AST>_R
+                 ->_R Data.Semigroup.Internal.N:Any[0]) -}
+5f83cdf0bff90b9520bb9c5945abc751
+  isRebound1 ::
+    Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Data.Semigroup.Internal.Any
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (js :: Language.PureScript.CoreImp.AST.AST)
+                   (d :: Language.PureScript.CoreImp.AST.AST) ->
+                 letrec {
+                   go :: [Data.Text.Internal.Text] -> Data.Semigroup.Internal.Any
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [Data.Text.Internal.Text]) ->
+                     case ds of wild {
+                       []
+                       -> GHC.Types.False `cast` (Sym (Data.Semigroup.Internal.N:Any[0]))
+                       : y ys
+                       -> case Language.PureScript.CoreImp.Optimizer.Common.isReassigned
+                                 y
+                                 d of wild1 {
+                            GHC.Types.False
+                            -> case Language.PureScript.CoreImp.Optimizer.Common.isUpdated
+                                      y
+                                      d of wild2 {
+                                 GHC.Types.False -> go ys
+                                 GHC.Types.True
+                                 -> GHC.Types.True `cast` (Sym (Data.Semigroup.Internal.N:Any[0])) }
+                            GHC.Types.True
+                            -> GHC.Types.True
+                                 `cast`
+                               (Sym (Data.Semigroup.Internal.N:Any[0])) } }
+                 } in
+                 go
+                   (Language.PureScript.CoreImp.AST.everything
+                      @ [Data.Text.Internal.Text]
+                      (GHC.Base.++ @ Data.Text.Internal.Text)
+                      Language.PureScript.CoreImp.Optimizer.Common.isRebound2
+                      js)) -}
+b9fbb0d69101d5157ded43647f4c21d4
+  isRebound2 ::
+    Language.PureScript.CoreImp.AST.AST -> [Data.Text.Internal.Text]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Types.[] @ Data.Text.Internal.Text
+                   Language.PureScript.CoreImp.AST.Var ds1 var
+                   -> GHC.Types.:
+                        @ Data.Text.Internal.Text
+                        var
+                        (GHC.Types.[] @ Data.Text.Internal.Text) }) -}
+8f09dd8940858e686de52dfa56a49e4d
+  isUpdated ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,1*U>,
+     Unfolding: (\ (var1 :: Data.Text.Internal.Text)
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.everything
+                   @ GHC.Types.Bool
+                   GHC.Classes.||
+                   (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                    case ds of wild {
+                      DEFAULT -> GHC.Types.False
+                      Language.PureScript.CoreImp.AST.Assignment ds1 target ds2
+                      -> case var1 of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                         case Language.PureScript.CoreImp.Optimizer.Common.targetVariable
+                                target of wild2 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                         case GHC.Prim.==# dt2 dt5 of lwild {
+                           DEFAULT -> GHC.Types.False
+                           1#
+                           -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.ByteArray#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                             -> (# GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld,
+                                                                   GHC.Prim.Int# #)}
+                                     dt
+                                     (GHC.Prim.int2Word# dt1)
+                                     dt3
+                                     (GHC.Prim.int2Word# dt4)
+                                     (GHC.Prim.int2Word# dt2)
+                                     GHC.Prim.realWorld# of wild5 { (#,#) ds3 ds4 ->
+                              case GHC.Prim.narrow32Int# ds4 of wild3 {
+                                DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } } } })
+                   eta) -}
+d25c2f85017839ebf200197ade6e0dec
+  isUsed ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,1*U>,
+     Unfolding: (\ (var1 :: Data.Text.Internal.Text)
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.everything
+                   @ GHC.Types.Bool
+                   GHC.Classes.||
+                   (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                    case ds of wild {
+                      DEFAULT -> GHC.Types.False
+                      Language.PureScript.CoreImp.AST.Var ds1 var2
+                      -> Data.Text.$fEqText_$c== var1 var2
+                      Language.PureScript.CoreImp.AST.Assignment ds1 target ds2
+                      -> case var1 of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                         case Language.PureScript.CoreImp.Optimizer.Common.targetVariable
+                                target of wild2 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                         case GHC.Prim.==# dt2 dt5 of lwild {
+                           DEFAULT -> GHC.Types.False
+                           1#
+                           -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.ByteArray#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                             -> (# GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld,
+                                                                   GHC.Prim.Int# #)}
+                                     dt
+                                     (GHC.Prim.int2Word# dt1)
+                                     dt3
+                                     (GHC.Prim.int2Word# dt4)
+                                     (GHC.Prim.int2Word# dt2)
+                                     GHC.Prim.realWorld# of wild5 { (#,#) ds3 ds4 ->
+                              case GHC.Prim.narrow32Int# ds4 of wild3 {
+                                DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } } } })
+                   eta) -}
+281994b35a4fd4cb5eceb2b42d1e5d18
+  removeFromBlock ::
+    ([Language.PureScript.CoreImp.AST.AST]
+     -> [Language.PureScript.CoreImp.AST.AST])
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (go :: [Language.PureScript.CoreImp.AST.AST]
+                          -> [Language.PureScript.CoreImp.AST.AST])
+                   (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                 case ds of wild {
+                   DEFAULT -> wild
+                   Language.PureScript.CoreImp.AST.Block ss sts
+                   -> Language.PureScript.CoreImp.AST.Block ss (go sts) }) -}
+4bcd508bd97f20da235c609cf5c794b4
+  replaceIdent ::
+    Data.Text.Internal.Text
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(U,U,U)><L,U><S,1*U>,
+     Unfolding: (\ (var1 :: Data.Text.Internal.Text)
+                   (js :: Language.PureScript.CoreImp.AST.AST)
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.everywhere
+                   (\ (ds :: Language.PureScript.CoreImp.AST.AST) ->
+                    case ds of wild {
+                      DEFAULT -> wild
+                      Language.PureScript.CoreImp.AST.Var ds1 var2
+                      -> case var1 of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                         case var2 of wild2 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                         case GHC.Prim.==# dt2 dt5 of lwild {
+                           DEFAULT -> wild
+                           1#
+                           -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.ByteArray#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.Word#
+                                                             -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                             -> (# GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld,
+                                                                   GHC.Prim.Int# #)}
+                                     dt
+                                     (GHC.Prim.int2Word# dt1)
+                                     dt3
+                                     (GHC.Prim.int2Word# dt4)
+                                     (GHC.Prim.int2Word# dt2)
+                                     GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                              case GHC.Prim.narrow32Int# ds3 of wild3 {
+                                DEFAULT -> wild 0# -> js } } } } } })
+                   eta) -}
+b4f7daa1aa369c8e6cab34fa4406a534
+  replaceIdents ::
+    [(Data.Text.Internal.Text, Language.PureScript.CoreImp.AST.AST)]
+    -> Language.PureScript.CoreImp.AST.AST
+    -> Language.PureScript.CoreImp.AST.AST
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (vars :: [(Data.Text.Internal.Text,
+                              Language.PureScript.CoreImp.AST.AST)])
+                   (eta :: Language.PureScript.CoreImp.AST.AST) ->
+                 Language.PureScript.CoreImp.AST.everywhere
+                   (\ (v :: Language.PureScript.CoreImp.AST.AST) ->
+                    case v of wild {
+                      DEFAULT -> wild
+                      Language.PureScript.CoreImp.AST.Var ds var
+                      -> case GHC.List.lookup
+                                @ Data.Text.Internal.Text
+                                @ Language.PureScript.CoreImp.AST.AST
+                                Data.Text.$fEqText
+                                var
+                                vars of wild1 {
+                           GHC.Base.Nothing -> wild GHC.Base.Just v1 -> v1 } })
+                   eta) -}
+2ecb7ab677ce53abf2e578b2299dc3ee
+  targetVariable ::
+    Language.PureScript.CoreImp.AST.AST -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

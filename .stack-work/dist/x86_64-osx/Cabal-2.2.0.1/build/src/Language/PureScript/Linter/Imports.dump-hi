@@ -1,0 +1,463 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:47:47.581601 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Linter.Imports 8043
+  interface hash: 295d69bf93aaaf6f08613b733669c5d6
+  ABI hash: 9e3b4760ca4bdd0cb4c31b706245c709
+  export-list hash: 16519a1a97dc2a16e07b7511715e76cd
+  orphan hash: ba9d14919050d5253c65670668d91eb5
+  flag hash: 14472b647fa7c417d91c58225e422ddf
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Linter.Imports.lintImports
+  Language.PureScript.Linter.Imports.UsedImports
+  Language.PureScript.Names.Name{Language.PureScript.Names.DctorName Language.PureScript.Names.IdentName Language.PureScript.Names.KiName Language.PureScript.Names.ModName Language.PureScript.Names.TyClassName Language.PureScript.Names.TyName Language.PureScript.Names.TyOpName Language.PureScript.Names.ValOpName}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 safe-0.3.17 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM colour-2.3.4:Data.Colour
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Function 6e6aae9442025aeeb92a909c1bbc3fca
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Monoid c40cd435d79b84293ce5503253ee6d44
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Semigroup.Internal 3e64145a879c21fc4c6fc83e5d8ca93b
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  protolude-0.2.2:Protolude.List 3a80368167450d7a4360ebf1ea443345
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  exports: 576360d4491bba45e29e263c5de23a07
+  Declaration b31d94d0c7b90700d40f9ba6ec420e41
+  DeclarationRef 9de74e8b46bfd07e044a72617cc5da5c
+  DuplicateImport 91ee875abde4688d127d09cb7341865f
+  DuplicateImportRef 986275ea0ced79279cbad170298f8188
+  DuplicateSelectiveImport db882007c51946da07b0a477057869db
+  Explicit b1c38eaf46155af7f2da52da8f5861c4
+  Hiding 8116598858a7036038611cde115d4da3
+  HidingImport 1b9cb459f7de05f122cf213e908805ab
+  Implicit 850358a1da5071d49098050ad7d1227d
+  ImplicitImport 407208787f8b3b3133edd0bf43c50c67
+  ImplicitQualifiedImport a8d651a1fdeef948b6902269fdbb4bd5
+  ImplicitQualifiedImportReExport 1d16f13998b0bc8bbf53ada4f4ff6284
+  ImportDeclaration 0c2bc2f3ca892343473f34859c93a6e3
+  ImportDeclarationType f900e8c96b49d573d3e54286bc8fd980
+  KindRef 8245863d9321690e594853e7ff0fdb63
+  Module b9e5d519f3251f7053b581e4ecd9e6bf
+  Module 7cf4b96f7d4b51b446726a099ab87bb6
+  ModuleRef 9bebdcb4233f1d570107d6e7f75034d7
+  SimpleErrorMessage 33c1a345bb3f2be69a13531f80c78fbd
+  TypeClassRef 93a0e32770563d43fa3f04289a54725f
+  TypeOpRef 9ae3d7bbee64a9887c8d95defd65b0b0
+  TypeRef f23e4bfa1c94ce55e9357e5fb97176c4
+  UnusedDctorExplicitImport 072cd589c2c4044d86ae240bc4154879
+  UnusedDctorImport b9e1f7e8e169a2e719c139ab2026c33c
+  UnusedExplicitImport 1a56a0421aab0fb41bedab47a8e42a4f
+  UnusedImport 6c3a94947383a5e30fee3bbf986d90f7
+  ValueOpRef 340c88beba94c802cc00b112ca1ce8ae
+  ValueRef 984b564c7d121e5297a91fc424d0970b
+  compDecRef e6b9ede356764ec70bdeb002d83e4f15
+  getTypeRef 42ae9903e046664143824d50598f73c8
+  isExplicit c43a0a53610d48db0933cf215a04e210
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  exports: cd99f4b22e2d3cec892dcb31686df02f
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Constants d290cccb0db8657cab5f1253ab0da1ee
+  exports: cd83a0f5b6591e5c66c598e34359260d
+  prim 48b048c216cc1c04ce512572fd809a92
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+  errorMessage' 5055fef8b372f878a840ac9e7783f39a
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
+  DctorName 953e2be7c584ad49e8fe105d218f14a0
+  IdentName 5b06dbfa684a1a4686ae5dc3b60a0a36
+  KiName 3988b2e6728e13d6e386f74a6394b09e
+  ModName 3aadbf737116de1d7bcb446bea8a25af
+  ModuleName 0cb2c8b6c90c347a41315bf0e0fd925c
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  Name 184494d9e734645f374e2a0fce32bfac
+  ProperName 9eb330c84db102abf2d0f2652fe4a144
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified d600a7f01c8203cf5504999de99c923c
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  TyClassName 21009befdac7827e5cfc4e5a7606bd0e
+  TyName 2de556166e59a0005c7143bf3b600f7e
+  TyOpName 66cc4d214f55e6f0f298e52eab8013ac
+  TypeName da42c92f73f4f363c63ecaf77b6335b9
+  ValOpName f03a1a616a24e6d18322d9bb9fa39c73
+  disqualifyFor 3f29138a9e3485e827b393d046b0e5ba
+  getClassName c780df7e6467f0296a24d1a31e4fbc8b
+  getDctorName fcc1f2d552c74cea759070c84b872263
+  getIdentName 7c09a83f9ea638c212a01e0364b01784
+  getKindName 98be7ae0203bc645e8e2b3c024b0edba
+  getQual 878f7f5431a436ba3cc48c8dfb031d4d
+  getTypeName 9443b324af8d23739ab259070b11272c
+  getTypeOpName 6075388781efd3165adabbf8ac6d95cf
+  getValOpName 8e502c19034dacb1b06aa73925516aa5
+  isQualifiedWith 1a899c7992db0d6d9f94496786ac7c60
+  isUnqualified e37e569339287956fd68345c529e4b8c
+  runModuleName e07c63fa3ece350e6976663ef993edbb
+  runProperName 29f101e190cc99df85623423972e606f
+import  -/  Language.PureScript.Sugar.Names.Common 30b7033188349c25c62888117c9c6d4e
+  exports: 8d3cdc1b6bc0542e42829fad1489ed8b
+  warnDuplicateRefs 634593ab8eecad5a48501d94e8be8bc5
+import  -/  Language.PureScript.Sugar.Names.Env 86ed82ed542c248a8928297b6b346572
+  exports: eac96abb84bb227ec29cea13c70276ff
+  Env 5f9e6484b1f2e8e2d5b6bfcee5f814e9
+  ImportRecord bf5a97568e086735d3bbc97dc5ee1e68
+  Imports b53ca872c8c47c3d8839f496fc15c222
+  envModuleExports 1f6e036b17f3356d6a09c48836206f4b
+  exportedTypes 2212f1aeac86faa420eb4b44c2cc2982
+  importName bf5a97568e086735d3bbc97dc5ee1e68
+  importedDataConstructors b53ca872c8c47c3d8839f496fc15c222
+  importedTypeClasses b53ca872c8c47c3d8839f496fc15c222
+  importedTypeOps b53ca872c8c47c3d8839f496fc15c222
+  importedTypes b53ca872c8c47c3d8839f496fc15c222
+  importedValueOps b53ca872c8c47c3d8839f496fc15c222
+  importedValues b53ca872c8c47c3d8839f496fc15c222
+  nullImports ce7df041a470e7796955adec9bc54637
+import  -/  Language.PureScript.Sugar.Names.Imports 74530d1e35a91db4df5eb1198a6fa3df
+  exports: 538cf21a6523dc126f5c86e5bc711c31
+  ImportDef 78e4b45c0ae58f67bf0e3d6dfb6c34f6
+  findImports 68aad10a420e32a9744663d0b8a43bbb
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+752549c4d98a23be1bd0cc8809aeefd9
+  $s$fEqQualified ::
+    GHC.Classes.Eq
+      (Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Name)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.Names.Qualified
+                       Language.PureScript.Names.Name)
+                  (Language.PureScript.Names.$fEqQualified_$c==
+                     @ Language.PureScript.Names.Name
+                     Language.PureScript.Names.$fEqName)
+                  Language.PureScript.Linter.Imports.$s$fEqQualified_$s$fEqQualified_$c/= -}
+bcd658130ba527e128c42bc16241a578
+  $s$fEqQualified_$s$fEqQualified_$c/= ::
+    Language.PureScript.Names.Qualified Language.PureScript.Names.Name
+    -> Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Name
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x1 :: Language.PureScript.Names.Qualified
+                            Language.PureScript.Names.Name)
+                   (y :: Language.PureScript.Names.Qualified
+                           Language.PureScript.Names.Name) ->
+                 case Language.PureScript.Names.$fEqQualified_$c==
+                        @ Language.PureScript.Names.Name
+                        Language.PureScript.Names.$fEqName
+                        x1
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+be1df54c698c17c00713763d6d892b98
+  $s$fOrdQualified ::
+    GHC.Classes.Ord
+      (Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Name)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.Names.Qualified
+                       Language.PureScript.Names.Name)
+                  Language.PureScript.Linter.Imports.$s$fEqQualified
+                  (Language.PureScript.Names.$fOrdQualified_$ccompare
+                     @ Language.PureScript.Names.Name
+                     Language.PureScript.Names.$fOrdName)
+                  (Language.PureScript.Names.$fOrdQualified_$c<
+                     @ Language.PureScript.Names.Name
+                     Language.PureScript.Names.$fOrdName)
+                  (\ (a1 :: Language.PureScript.Names.Qualified
+                              Language.PureScript.Names.Name)
+                     (b :: Language.PureScript.Names.Qualified
+                             Language.PureScript.Names.Name) ->
+                   case Language.PureScript.Names.$fOrdQualified_$c<
+                          @ Language.PureScript.Names.Name
+                          Language.PureScript.Names.$fOrdName
+                          b
+                          a1 of wild {
+                     GHC.Types.False -> GHC.Types.True
+                     GHC.Types.True -> GHC.Types.False })
+                  (\ (a1 :: Language.PureScript.Names.Qualified
+                              Language.PureScript.Names.Name)
+                     (b :: Language.PureScript.Names.Qualified
+                             Language.PureScript.Names.Name) ->
+                   Language.PureScript.Names.$fOrdQualified_$c<
+                     @ Language.PureScript.Names.Name
+                     Language.PureScript.Names.$fOrdName
+                     b
+                     a1)
+                  (\ (a1 :: Language.PureScript.Names.Qualified
+                              Language.PureScript.Names.Name)
+                     (b :: Language.PureScript.Names.Qualified
+                             Language.PureScript.Names.Name) ->
+                   case Language.PureScript.Names.$fOrdQualified_$c<
+                          @ Language.PureScript.Names.Name
+                          Language.PureScript.Names.$fOrdName
+                          a1
+                          b of wild {
+                     GHC.Types.False -> GHC.Types.True
+                     GHC.Types.True -> GHC.Types.False })
+                  (\ (x1 :: Language.PureScript.Names.Qualified
+                              Language.PureScript.Names.Name)
+                     (y :: Language.PureScript.Names.Qualified
+                             Language.PureScript.Names.Name) ->
+                   case Language.PureScript.Names.$fOrdQualified_$c<
+                          @ Language.PureScript.Names.Name
+                          Language.PureScript.Names.$fOrdName
+                          y
+                          x1 of wild {
+                     GHC.Types.False -> y GHC.Types.True -> x1 })
+                  (\ (x1 :: Language.PureScript.Names.Qualified
+                              Language.PureScript.Names.Name)
+                     (y :: Language.PureScript.Names.Qualified
+                             Language.PureScript.Names.Name) ->
+                   case Language.PureScript.Names.$fOrdQualified_$c<
+                          @ Language.PureScript.Names.Name
+                          Language.PureScript.Names.$fOrdName
+                          y
+                          x1 of wild {
+                     GHC.Types.False -> x1 GHC.Types.True -> y }) -}
+c3d914f73b4940c5dae2843bc7c67a57
+  $salter_$sgo1 ::
+    (GHC.Base.Maybe a1 -> GHC.Base.Maybe a1)
+    -> Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 3, Strictness: <C(S),1*C1(U)><S,1*U><S,1*U> -}
+a8fc38263d2db66a30502f9384ed3979
+  $sfindWithDefault1 ::
+    a
+    -> Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><S,1*U><S,1*U> -}
+3f8a989761cf2b22428d07dae0da2708
+  $slookup3 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+1dc12bfb8186b9421df2f85b4654b7ea
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Linter.Imports.$trModule3
+                   Language.PureScript.Linter.Imports.$trModule1) -}
+162e67e9a50f5c27fba8eab08309ca74
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Linter.Imports.$trModule2) -}
+28960f717493db4ada8dada237ffe95c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Linter.Imports"#) -}
+84dfa07225a1e5a57eef2a9b65bddda0
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Linter.Imports.$trModule4) -}
+602eee1f9700defe4d6e8a414e28fa95
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+cdc287e827b1bfa5d1c214585f25bf7e
+  $w$sgo13 ::
+    (GHC.Base.Maybe a1 -> GHC.Base.Maybe a1)
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a1
+  {- Arity: 5, Strictness: <C(S),1*C1(U)><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+668ec54e39ddfb40abc694b1341cbd76
+  $wpoly_go1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+e65ee1de15f6841e62a23f6bc89877ff
+  $wpoly_go13 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+e695b6d4a1d82f88641244c402f52151
+  type UsedImports =
+    Data.Map.Internal.Map
+      Language.PureScript.Names.ModuleName
+      [Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Name]
+5ae9ddd02cbe538eb6adf6061585e2d3
+  lintImports ::
+    Control.Monad.Writer.Class.MonadWriter
+      Language.PureScript.Errors.MultipleErrors m =>
+    Language.PureScript.AST.Declarations.Module
+    -> Language.PureScript.Sugar.Names.Env.Env
+    -> Language.PureScript.Linter.Imports.UsedImports
+    -> m ()
+  {- Arity: 1,
+     Strictness: <L,U(A,U(U(A,C(U),A,C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,A),A,C(U),A,C(U))> -}
+"SPEC/Language.PureScript.Linter.Imports $fEqQualified @ Name" [orphan] forall (v :: GHC.Classes.Eq
+                                                                                       Language.PureScript.Names.Name)
+  Language.PureScript.Names.$fEqQualified @ Language.PureScript.Names.Name
+                                          v
+  = Language.PureScript.Linter.Imports.$s$fEqQualified
+"SPEC/Language.PureScript.Linter.Imports $fEqQualified_$c/= @ Name" [orphan] forall ($dEq :: GHC.Classes.Eq
+                                                                                               Language.PureScript.Names.Name)
+  Language.PureScript.Names.$fEqQualified_$c/= @ Language.PureScript.Names.Name
+                                               $dEq
+  = Language.PureScript.Linter.Imports.$s$fEqQualified_$s$fEqQualified_$c/=
+"SPEC/Language.PureScript.Linter.Imports $fOrdQualified @ Name" [orphan] forall (v :: GHC.Classes.Ord
+                                                                                        Language.PureScript.Names.Name)
+  Language.PureScript.Names.$fOrdQualified @ Language.PureScript.Names.Name
+                                           v
+  = Language.PureScript.Linter.Imports.$s$fOrdQualified
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,2868 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:48:01.296812 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Actions 8043
+  interface hash: f8903ccea1467fa844e48692a80c724e
+  ABI hash: e063664ba4322d93370f5867c4f87435
+  export-list hash: d998e1a87fad141f5852b5461efef53d
+  orphan hash: 50516234b31fca3946e1b076f249702e
+  flag hash: c8d8f450ed10350d849cb7e71446cfa1
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Make.Actions.buildMakeActions
+  Language.PureScript.Make.Actions.checkForeignDecls
+  Language.PureScript.Make.Actions.Externs
+  Language.PureScript.Make.Actions.MakeActions{Language.PureScript.Make.Actions.MakeActions codegen ffiCodegen getInputTimestamp getOutputTimestamp progress readExterns}
+  Language.PureScript.Make.Actions.ProgressMessage{Language.PureScript.Make.Actions.CompilingModule}
+  Language.PureScript.Make.Actions.RebuildPolicy{Language.PureScript.Make.Actions.RebuildAlways Language.PureScript.Make.Actions.RebuildNever}
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Make.Monad Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4
+                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 monad-control-1.0.2.3 mtl-2.2.2
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
+                      stm-2.4.5.0 syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+orphans: colour-2.3.4:Data.Colour syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         hashable-1.2.7.0:Data.Hashable.Generic
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.3.1.1:Data.Aeson 108dfb08de41cf77aad4693ac1dc3d44
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Control.Monad.IO.Class 96109c36cb3c919872278540487fa39e
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List.NonEmpty 595ee3baddcadebc4831ea7541427984
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Version 26b96b3dd83a23703e0b8110475fc04a
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy b6cb59a78204810b2a79502bf5b4c1fc
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy.Internal af245ead1f52eca50149d040b0b86693
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
+import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
+import  -/  directory-1.3.1.5:System.Directory bc76216f25ffcaf1c91b529f41ea3bf7
+import  -/  directory-1.3.1.5:System.Directory.Internal.Common 88eeec2dd4e3d7d63bc24c2d657e6981
+import  -/  filepath-1.4.2:System.FilePath a538d436328dd004b88f7d29a8b244c0
+import  -/  filepath-1.4.2:System.FilePath.Posix c021b7a40cfcdd9b08724b5bb7566b59
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser fbf89a16f99af1afcc6e4509cec1cbf6
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser.AST 4b3343c84045afd7e43ca1ee2b8b52cf
+import  -/  language-javascript-0.6.0.11:Language.JavaScript.Parser.Parser 2d496c459b60c675679d78fbf6f9beaf
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  mtl-2.2.2:Control.Monad.Reader a496a2f5c2c54feee0ad154b4fe8533d
+import  -/  mtl-2.2.2:Control.Monad.Reader.Class a5ac59953d953ab8532b5c11f5e8e0b0
+import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
+import  -/  parsec-3.1.13.0:Text.Parsec 963cbe7b4116cef91451434dc005a011
+import  -/  parsec-3.1.13.0:Text.Parsec.Combinator 86d872425bd48a2d67c0d1ce1a8ccc8b
+import  -/  Control.Monad.Supply a9e15eeca39e18ec2ace0537b1dcfc3b
+  exports: 33181f9f2f157b80f20fe5bc34a62230
+  SupplyT a33fc23ef2131a2ed4dfdd2f28dff7f5
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  CannotGetFileInfo bccd08da8b44786e185afb19001c7ae6
+  CannotWriteFile e62624cd56ba2286c2e8fb199761c478
+  ErrorMessage bc889ae8d74a01dbbd95e220faa4631d
+  ErrorParsingFFIModule d3c01586d758e8345e918afbfb471538
+  InvalidFFIIdentifier 06849bd73a647feca66eefc4bed14bc4
+  MissingFFIImplementations 7dce9f6cf4969010ad8633867a328b17
+  MissingFFIModule 17f063658d2d06bebf4df38e5ac29537
+  UnnecessaryFFIModule cbe3ee04a2fcfa9a3d89e22bc85e696f
+  UnusedFFIImplementations bbc70805a421143cbfb5176e99ae94c5
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourcePos b32bf71fd97066221fb5294f6129d546
+  SourcePos 73c071552214b3f18e94970349d3affc
+  sourcePosColumn 73c071552214b3f18e94970349d3affc
+  sourcePosLine 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Bundle 850a0b3ac8794bcad3be1a1d23d53dc5
+  exports: 436e6291784d08551205d74d8d15119b
+  ErrorMessage b76460e7f9aa17db386324a975b25223
+  UnableToParseModule 8f2bccdb318e8f8ce879c16d0677809b
+  getExportedIdentifiers 86ea982b532c60635d5b5d7c7120c3ce
+import  -/  Language.PureScript.CodeGen.JS 97c6335464b7df1ab5fc3637b1775d61
+  exports: e3b67d81b311a660b206ff5f667c9c4c
+  moduleToJs b1994f7efa942cd6f41061d7ae5c5475
+import  -/  Language.PureScript.CodeGen.JS.Printer 8dfcdfdb9541136658228e2c694129f0
+  exports: 01ac78c15ca441f724cdbc76a523c40a
+  prettyPrintJS e3262209f2299a702c6e70ce6aa13450
+  prettyPrintJSWithSourceMaps dc6420000bed6bd6002117584bba59e4
+import  -/  Language.PureScript.CoreFn 2c440e872f36673fe5ebfa97cb0ef951
+  exports: 7b81da316d90028601129b65203a4443
+import  -/  Language.PureScript.CoreFn.Ann 67adbeeb949d973571e5b91a33c2a9a2
+  Ann 8e0992b34878737a5d5d4b7dd1d0f2bb
+import  -/  Language.PureScript.CoreFn.Module acf6e67de03c5a4b8c92dada86ffff0c
+  Module 41104609d8c9d8e7c7b0b779f70dfd27
+  moduleForeign 41104609d8c9d8e7c7b0b779f70dfd27
+  moduleName 41104609d8c9d8e7c7b0b779f70dfd27
+  moduleSourceSpan 41104609d8c9d8e7c7b0b779f70dfd27
+import  -/  Language.PureScript.CoreFn.ToJSON 22f93197734eb0f9aae67fe8eb4918c1
+  exports: 9a6f4550b435063db01b3b6b4711d651
+  moduleToJSON 61bc796b59b6bf2b96b3325024949cdf
+import  -/  Language.PureScript.CoreImp.AST 66108f8b83c9a1c508a34f2e6114094e
+  exports: 1da27be6d04935ab665d52ac441d8230
+  App d468a52c8340e49be5e7e3a8742c9aaf
+  StringLiteral a6ff0f5bf676b04b36c1bcbec4e8d804
+  Var c3d3709a7644965f92d8326eb3be56cf
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Environment 31667499b7017b19998bb405474fbe93
+  exports: 56b1ef0ac6132b4c113ce26a807dcfb6
+  Environment c291d940fae22a3f1400d8c90f26bdd4
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  errorMessage 56e7aa221570d7d0bd9b4d606b8de7f2
+  errorMessage' 5055fef8b372f878a840ac9e7783f39a
+import  -/  Language.PureScript.Make.Monad 0cf50a6714897adf0be9853da80fce0b
+  exports: 8d0a2d6b070f225b4a8d6fee61814383
+  Make 3e3b14b08c410e5ba3c590f1d3af7206
+  makeIO 00cc90af9817d7c7b877b2ad73f023f0
+  readTextFile 263a09e2be3cabd481a9394cd39eb184
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  runModuleName e07c63fa3ece350e6976663ef993edbb
+import  -/  Language.PureScript.Options 41178707a96359e93f10aa9345b25f64
+  exports: 0c988ddc260707f6c03a83826c104ef5
+  CodegenTarget febf126f9b77b511b07e580d530f9f19
+  CoreFn 567d645281d7438c60b1c80165d38753
+  JS 570832b8d7c40903dfb32e3784faf86a
+  JSSourceMap 5460e97f517263f68ce83c154bdaf792
+  optionsCodegenTargets 3d4c612f0e93f04d7e7834ac0f92767f
+import  -/  Language.PureScript.Parser 1b692a755e4923ec071834c79ee69c88
+  exports: ef38a8271746ca1dd5aed3e5bcb3e65b
+import  -/  Language.PureScript.Parser.Common cd9daf83419acf425eed3583730b480a
+  parseIdent 955eb3247a0ae016694c4b540be1ad3c
+  runTokenParser 22c139ae6db58097fa5b3743e91aefec
+import  -/  Language.PureScript.Parser.Lexer db153cafc807e1fa539fece18593da12
+  lex 8cc273ef9ffe00ce51529fc0c7f44874
+import  -/  Language.PureScript.Pretty.Common 3b6e69c173d325d7c9be0bb0169f3188
+  exports: 3b669d7e8560d3ed86c28ef1f72a89c4
+  SMap 32fda1768e1ead7897e759f017e5f246
+  SMap 8b815595ed734bd275a4b21776b41324
+import  -/  Paths_purescript a1929913cfb69ecc53654efc3b17c6b3
+  exports: 2c455cd4735d13a5fa8e95701f74bbba
+  version 36e47562f1510cc9eab6b4cc20db5d32
+import  -/  sourcemap-0.1.6:SourceMap 46a5eda4d84cbb7bf492294c0e65b642
+import  -/  sourcemap-0.1.6:SourceMap.Types b775770f549711c0150c5529f935d9d4
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Encoding 8e60367b574d8e5016309aaea7dc2100
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+import  -/  time-1.8.0.2:Data.Time.Clock 38823c785626821df1f9ec84dba1c4d7
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536acb5e422cc
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.Class 352c7bdb1604d64f8f438c96bf57066a
+import  -/  utf8-string-1.0.1.1:Data.ByteString.Lazy.UTF8 90be7ca8da23b0b606aeffbca3d1d3af
+4a743826962b72d84d42aec7cdba2522
+  $fEqProgressMessage ::
+    GHC.Classes.Eq Language.PureScript.Make.Actions.ProgressMessage
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Make.Actions.ProgressMessage
+                  Language.PureScript.Make.Actions.$fEqProgressMessage_$c==
+                  Language.PureScript.Make.Actions.$fEqProgressMessage_$c/= -}
+4a743826962b72d84d42aec7cdba2522
+  $fEqProgressMessage_$c/= ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (y :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case x of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case y of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.Namespace)
+                        (Language.PureScript.Names.$fEqProperName
+                           @ 'Language.PureScript.Names.Namespace)
+                        a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                        b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fEqProgressMessage_$c== ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (ds1 :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case ds of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case ds1 of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ (Language.PureScript.Names.ProperName
+                        'Language.PureScript.Names.Namespace)
+                   (Language.PureScript.Names.$fEqProperName
+                      @ 'Language.PureScript.Names.Namespace)
+                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fEqRebuildPolicy ::
+    GHC.Classes.Eq Language.PureScript.Make.Actions.RebuildPolicy
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Make.Actions.RebuildPolicy
+                  Language.PureScript.Make.Actions.$fEqRebuildPolicy_$c==
+                  Language.PureScript.Make.Actions.$fEqRebuildPolicy_$c/= -}
+dc23e87659656978c63bb77d0007e1f3
+  $fEqRebuildPolicy_$c/= ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (y :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case x of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case y of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.False
+                        Language.PureScript.Make.Actions.RebuildAlways -> GHC.Types.True }
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case y of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.True
+                        Language.PureScript.Make.Actions.RebuildAlways
+                        -> GHC.Types.False } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fEqRebuildPolicy_$c== ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (ds1 :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case ds of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case ds1 of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.True
+                        Language.PureScript.Make.Actions.RebuildAlways -> GHC.Types.False }
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case ds1 of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.False
+                        Language.PureScript.Make.Actions.RebuildAlways
+                        -> GHC.Types.True } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage ::
+    GHC.Classes.Ord Language.PureScript.Make.Actions.ProgressMessage
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Make.Actions.ProgressMessage
+                  Language.PureScript.Make.Actions.$fEqProgressMessage
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$ccompare
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$c<
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$c<=
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$c>
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$c>=
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$cmax
+                  Language.PureScript.Make.Actions.$fOrdProgressMessage_$cmin -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$c< ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (b :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case a of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case b of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 Language.PureScript.Names.$fOrdModuleName6
+                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$c<= ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (b :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case b of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case a of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.Namespace)
+                        (Language.PureScript.Names.$fOrdProperName
+                           @ 'Language.PureScript.Names.Namespace)
+                        a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                        b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$c> ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (b :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 Language.PureScript.Make.Actions.$fOrdProgressMessage_$c< b a) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$c>= ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (b :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case a of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case b of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.Namespace)
+                        (Language.PureScript.Names.$fOrdProperName
+                           @ 'Language.PureScript.Names.Namespace)
+                        a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                        b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$ccompare ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (b :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case a of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case b of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 GHC.Classes.$fOrd[]_$ccompare
+                   @ (Language.PureScript.Names.ProperName
+                        'Language.PureScript.Names.Namespace)
+                   (Language.PureScript.Names.$fOrdProperName
+                      @ 'Language.PureScript.Names.Namespace)
+                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$cmax ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (y :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case y of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case x of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.Namespace)
+                        (Language.PureScript.Names.$fOrdProperName
+                           @ 'Language.PureScript.Names.Namespace)
+                        a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                        b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
+                   DEFAULT -> wild GHC.Types.LT -> wild1 } } }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fOrdProgressMessage_$cmin ::
+    Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> Language.PureScript.Make.Actions.ProgressMessage
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (y :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case y of wild { Language.PureScript.Make.Actions.CompilingModule a1 ->
+                 case x of wild1 { Language.PureScript.Make.Actions.CompilingModule b1 ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.Namespace)
+                        (Language.PureScript.Names.$fOrdProperName
+                           @ 'Language.PureScript.Names.Namespace)
+                        a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                        b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
+                   DEFAULT -> wild1 GHC.Types.LT -> wild } } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy ::
+    GHC.Classes.Ord Language.PureScript.Make.Actions.RebuildPolicy
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Make.Actions.RebuildPolicy
+                  Language.PureScript.Make.Actions.$fEqRebuildPolicy
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$ccompare
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$c<
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$c<=
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$c>
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$c>=
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$cmax
+                  Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$cmin -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$c< ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (b :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case a of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case b of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.False
+                        Language.PureScript.Make.Actions.RebuildAlways -> GHC.Types.True }
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$c<= ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (b :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case b of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case a of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.True
+                        Language.PureScript.Make.Actions.RebuildAlways -> GHC.Types.False }
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$c> ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (b :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 Language.PureScript.Make.Actions.$fOrdRebuildPolicy_$c< b a) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$c>= ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (b :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case a of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case b of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.True
+                        Language.PureScript.Make.Actions.RebuildAlways -> GHC.Types.False }
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$ccompare ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (b :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case a of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case b of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.EQ
+                        Language.PureScript.Make.Actions.RebuildAlways -> GHC.Types.LT }
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case b of wild1 {
+                        Language.PureScript.Make.Actions.RebuildNever -> GHC.Types.GT
+                        Language.PureScript.Make.Actions.RebuildAlways
+                        -> GHC.Types.EQ } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$cmax ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (y :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case y of wild {
+                   Language.PureScript.Make.Actions.RebuildNever -> x
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> case x of wild1 { DEFAULT ->
+                      Language.PureScript.Make.Actions.RebuildAlways } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fOrdRebuildPolicy_$cmin ::
+    Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy
+    -> Language.PureScript.Make.Actions.RebuildPolicy
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (y :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case y of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> case x of wild1 { DEFAULT ->
+                      Language.PureScript.Make.Actions.RebuildNever }
+                   Language.PureScript.Make.Actions.RebuildAlways -> x }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fShowProgressMessage ::
+    GHC.Show.Show Language.PureScript.Make.Actions.ProgressMessage
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Make.Actions.ProgressMessage
+                  Language.PureScript.Make.Actions.$fShowProgressMessage_$cshowsPrec
+                  Language.PureScript.Make.Actions.$fShowProgressMessage_$cshow
+                  Language.PureScript.Make.Actions.$fShowProgressMessage_$cshowList -}
+4a743826962b72d84d42aec7cdba2522
+  $fShowProgressMessage1 ::
+    Language.PureScript.Make.Actions.ProgressMessage -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U)><L,U>,
+     Unfolding: (\ (w :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Language.PureScript.Make.Actions.CompilingModule ww1 ->
+                 Language.PureScript.Make.Actions.$w$cshowsPrec 0# ww1 w1 }) -}
+a9b6bf983373eeaa2a98a3776855a18b
+  $fShowProgressMessage2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CompilingModule "#) -}
+4a743826962b72d84d42aec7cdba2522
+  $fShowProgressMessage_$cshow ::
+    Language.PureScript.Make.Actions.ProgressMessage -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Make.Actions.ProgressMessage) ->
+                 case w of ww { Language.PureScript.Make.Actions.CompilingModule ww1 ->
+                 Language.PureScript.Make.Actions.$w$cshow ww1 }) -}
+4a743826962b72d84d42aec7cdba2522
+  $fShowProgressMessage_$cshowList ::
+    [Language.PureScript.Make.Actions.ProgressMessage]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Make.Actions.ProgressMessage])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Make.Actions.ProgressMessage
+                   Language.PureScript.Make.Actions.$fShowProgressMessage1
+                   ls
+                   s) -}
+4a743826962b72d84d42aec7cdba2522
+  $fShowProgressMessage_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Make.Actions.ProgressMessage
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Make.Actions.ProgressMessage)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.PureScript.Make.Actions.CompilingModule ww3 ->
+                 Language.PureScript.Make.Actions.$w$cshowsPrec ww1 ww3 w2 } }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fShowRebuildPolicy ::
+    GHC.Show.Show Language.PureScript.Make.Actions.RebuildPolicy
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Make.Actions.RebuildPolicy
+                  Language.PureScript.Make.Actions.$fShowRebuildPolicy_$cshowsPrec
+                  Language.PureScript.Make.Actions.$fShowRebuildPolicy_$cshow
+                  Language.PureScript.Make.Actions.$fShowRebuildPolicy_$cshowList -}
+dc23e87659656978c63bb77d0007e1f3
+  $fShowRebuildPolicy1 ::
+    Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (eta7 :: GHC.Base.String) ->
+                 case ds of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Make.Actions.$fShowRebuildPolicy4)
+                        eta7
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Make.Actions.$fShowRebuildPolicy2)
+                        eta7 }) -}
+4c7e1d61d9d7ec7beef250be0321c3ca
+  $fShowRebuildPolicy2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Make.Actions.$fShowRebuildPolicy3) -}
+05a31cc6268af641dbc67e1fe94e07dd
+  $fShowRebuildPolicy3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RebuildAlways"#) -}
+3a29c16b65e7c58908406d038c328ca8
+  $fShowRebuildPolicy4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Make.Actions.$fShowRebuildPolicy5) -}
+53ccacca641ad7fef133b15402a89ef1
+  $fShowRebuildPolicy5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RebuildNever"#) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fShowRebuildPolicy_$cshow ::
+    Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Make.Actions.RebuildPolicy) ->
+                 case x of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> Language.PureScript.Make.Actions.$fShowRebuildPolicy4
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> Language.PureScript.Make.Actions.$fShowRebuildPolicy2 }) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fShowRebuildPolicy_$cshowList ::
+    [Language.PureScript.Make.Actions.RebuildPolicy] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Make.Actions.RebuildPolicy])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Make.Actions.RebuildPolicy
+                   Language.PureScript.Make.Actions.$fShowRebuildPolicy1
+                   ls
+                   s) -}
+dc23e87659656978c63bb77d0007e1f3
+  $fShowRebuildPolicy_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.PureScript.Make.Actions.RebuildPolicy -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Language.PureScript.Make.Actions.RebuildPolicy)
+                   (eta7 :: GHC.Base.String) ->
+                 case ds1 of wild {
+                   Language.PureScript.Make.Actions.RebuildNever
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Make.Actions.$fShowRebuildPolicy4)
+                        eta7
+                   Language.PureScript.Make.Actions.RebuildAlways
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr
+                           @ GHC.Types.Char
+                           @ b
+                           c
+                           n
+                           Language.PureScript.Make.Actions.$fShowRebuildPolicy2)
+                        eta7 }) -}
+a5049021a12d062fc01db95772ed8bc0
+  $s$fApplicativeSupplyT ::
+    GHC.Base.Applicative
+      (Control.Monad.Supply.SupplyT Language.PureScript.Make.Monad.Make)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Supply.SupplyT
+                       Language.PureScript.Make.Monad.Make)
+                  Language.PureScript.Make.Actions.$s$fApplicativeSupplyT_$s$fFunctorSupplyT
+                  (\ @ a (eta7 :: a) (eta8 :: GHC.Integer.Type.Integer) ->
+                   let {
+                     x :: (a, GHC.Integer.Type.Integer) = (eta7, eta8)
+                   } in
+                   (\ (eta9 :: Language.PureScript.Options.Options)
+                      (eta10 :: GHC.IORef.IORef
+                                  Language.PureScript.Errors.MultipleErrors)
+                      (eta11 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    (# eta11,
+                       Data.Either.Right
+                         @ Language.PureScript.Errors.MultipleErrors
+                         @ (a, GHC.Integer.Type.Integer)
+                         x #))
+                     `cast`
+                   ((<Language.PureScript.Options.Options>_R
+                     ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Data.Either.Either
+                                            Language.PureScript.Errors.MultipleErrors
+                                            (a,
+                                             GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                        <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                        <Data.Either.Either
+                                                                                           Language.PureScript.Errors.MultipleErrors
+                                                                                           (a,
+                                                                                            GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                     <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                     <Control.Monad.Logger.Logger
+                                                                                                                                        Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                     <(a,
+                                                                                                                                       GHC.Integer.Type.Integer)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                   <*>_N
+                                                                                                                                                                                   <Language.PureScript.Options.Options>_R
+                                                                                                                                                                                   <Control.Monad.Trans.Except.ExceptT
+                                                                                                                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                                                                                                                      (Control.Monad.Logger.Logger
+                                                                                                                                                                                         Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                                                                                   <(a,
+                                                                                                                                                                                     GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                                                                                                                                                                      GHC.Integer.Type.Integer)>_N)))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N)
+                  (Control.Monad.Supply.$fApplicativeSupplyT4
+                     @ Language.PureScript.Make.Monad.Make
+                     Language.PureScript.Make.Monad.$fMonadMake)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a
+                                                                                                    -> b>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <b>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N)
+                  (\ @ a
+                     @ b
+                     @ c
+                     (eta7 :: a -> b -> c)
+                     (eta8 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make a)
+                     (eta9 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make b)
+                     (eta10 :: GHC.Integer.Type.Integer) ->
+                   Control.Monad.Trans.State.Lazy.$fAlternativeStateT2
+                     @ Language.PureScript.Make.Monad.Make
+                     @ GHC.Integer.Type.Integer
+                     Language.PureScript.Make.Monad.$fFunctorMake
+                     Language.PureScript.Make.Monad.$fMonadMake
+                     @ a
+                     @ b
+                     @ c
+                     eta7
+                     eta8
+                     eta9
+                     eta10)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <c>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <c>_N)
+                  (\ @ a
+                     @ b
+                     (eta7 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make a)
+                     (eta8 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make b)
+                     (eta9 :: GHC.Integer.Type.Integer) ->
+                   let {
+                     m1 :: Language.PureScript.Make.Monad.Make
+                             (a, GHC.Integer.Type.Integer)
+                     = eta7
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Integer.Type.Integer>_N
+                            <Language.PureScript.Make.Monad.Make>_R
+                            <a>_N)
+                         eta9
+                   } in
+                   (\ (r1 :: Language.PureScript.Options.Options) ->
+                    let {
+                      ds :: Control.Monad.Trans.Except.ExceptT
+                              Language.PureScript.Errors.MultipleErrors
+                              (Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors)
+                              (a, GHC.Integer.Type.Integer)
+                      = m1
+                          `cast`
+                        (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                    GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Language.PureScript.Options.Options>_R
+                                                                                                       <Control.Monad.Trans.Except.ExceptT
+                                                                                                          Language.PureScript.Errors.MultipleErrors
+                                                                                                          (Control.Monad.Logger.Logger
+                                                                                                             Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                       <(a,
+                                                                                                         GHC.Integer.Type.Integer)>_N)
+                          r1
+                    } in
+                    (\ (r2 :: GHC.IORef.IORef
+                                Language.PureScript.Errors.MultipleErrors)
+                       (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case (ds
+                             `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Language.PureScript.Errors.MultipleErrors>_N
+                                <Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors>_R
+                                <(a,
+                                  GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                     <Language.PureScript.Errors.MultipleErrors>_R
+                                                                     <Data.Either.Either
+                                                                        Language.PureScript.Errors.MultipleErrors
+                                                                        (a,
+                                                                         GHC.Integer.Type.Integer)>_R)
+                             r2)
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Language.PureScript.Errors.MultipleErrors
+                                  (a, GHC.Integer.Type.Integer)>_R)
+                            s of ds1 { (#,#) ipv ipv1 ->
+                     case ipv1 of wild {
+                       Data.Either.Left e1
+                       -> (# ipv,
+                             Data.Either.Left
+                               @ Language.PureScript.Errors.MultipleErrors
+                               @ (b, GHC.Integer.Type.Integer)
+                               e1 #)
+                       Data.Either.Right x
+                       -> (((eta8
+                               `cast`
+                             (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                  <GHC.Integer.Type.Integer>_N
+                                  <Language.PureScript.Make.Monad.Make>_R
+                                  <b>_N)
+                               (case x of wild1 { (,) a1 s' -> s' }))
+                              `cast`
+                            (Language.PureScript.Make.Monad.N:Make[0] <(b,
+                                                                        GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                           <*>_N
+                                                                                                           <Language.PureScript.Options.Options>_R
+                                                                                                           <Control.Monad.Trans.Except.ExceptT
+                                                                                                              Language.PureScript.Errors.MultipleErrors
+                                                                                                              (Control.Monad.Logger.Logger
+                                                                                                                 Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                           <(b,
+                                                                                                             GHC.Integer.Type.Integer)>_N)
+                              r1)
+                             `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Language.PureScript.Errors.MultipleErrors>_N
+                                <Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors>_R
+                                <(b,
+                                  GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                     <Language.PureScript.Errors.MultipleErrors>_R
+                                                                     <Data.Either.Either
+                                                                        Language.PureScript.Errors.MultipleErrors
+                                                                        (b,
+                                                                         GHC.Integer.Type.Integer)>_R)
+                             r2)
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Language.PureScript.Errors.MultipleErrors
+                                  (b, GHC.Integer.Type.Integer)>_R)
+                            ipv } })
+                      `cast`
+                    ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Language.PureScript.Errors.MultipleErrors
+                                       (b,
+                                        GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                   <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                   <Data.Either.Either
+                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                      (b,
+                                                                                       GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                <Control.Monad.Logger.Logger
+                                                                                                                                   Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                <(b,
+                                                                                                                                  GHC.Integer.Type.Integer)>_N))))
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Language.PureScript.Options.Options>_R
+                             <Control.Monad.Trans.Except.ExceptT
+                                Language.PureScript.Errors.MultipleErrors
+                                (Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors)>_R
+                             <(b,
+                               GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(b,
+                                                                                                                GHC.Integer.Type.Integer)>_N))
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <b>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N)
+                  (\ @ a
+                     @ b
+                     (eta7 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make a)
+                     (eta8 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make b)
+                     (eta9 :: GHC.Integer.Type.Integer) ->
+                   let {
+                     m1 :: Language.PureScript.Make.Monad.Make
+                             (a, GHC.Integer.Type.Integer)
+                     = eta7
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Integer.Type.Integer>_N
+                            <Language.PureScript.Make.Monad.Make>_R
+                            <a>_N)
+                         eta9
+                   } in
+                   (\ (r1 :: Language.PureScript.Options.Options) ->
+                    let {
+                      ds :: Control.Monad.Trans.Except.ExceptT
+                              Language.PureScript.Errors.MultipleErrors
+                              (Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors)
+                              (a, GHC.Integer.Type.Integer)
+                      = m1
+                          `cast`
+                        (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                    GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Language.PureScript.Options.Options>_R
+                                                                                                       <Control.Monad.Trans.Except.ExceptT
+                                                                                                          Language.PureScript.Errors.MultipleErrors
+                                                                                                          (Control.Monad.Logger.Logger
+                                                                                                             Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                       <(a,
+                                                                                                         GHC.Integer.Type.Integer)>_N)
+                          r1
+                    } in
+                    (\ (r2 :: GHC.IORef.IORef
+                                Language.PureScript.Errors.MultipleErrors)
+                       (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case (ds
+                             `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Language.PureScript.Errors.MultipleErrors>_N
+                                <Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors>_R
+                                <(a,
+                                  GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                     <Language.PureScript.Errors.MultipleErrors>_R
+                                                                     <Data.Either.Either
+                                                                        Language.PureScript.Errors.MultipleErrors
+                                                                        (a,
+                                                                         GHC.Integer.Type.Integer)>_R)
+                             r2)
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Language.PureScript.Errors.MultipleErrors
+                                  (a, GHC.Integer.Type.Integer)>_R)
+                            s of ds1 { (#,#) ipv ipv1 ->
+                     case ipv1 of wild {
+                       Data.Either.Left x
+                       -> (# ipv,
+                             Data.Either.Left
+                               @ Language.PureScript.Errors.MultipleErrors
+                               @ (a, GHC.Integer.Type.Integer)
+                               x #)
+                       Data.Either.Right y
+                       -> case (((eta8
+                                    `cast`
+                                  (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                       <GHC.Integer.Type.Integer>_N
+                                       <Language.PureScript.Make.Monad.Make>_R
+                                       <b>_N)
+                                    (case y of wild1 { (,) a1 s' -> s' }))
+                                   `cast`
+                                 (Language.PureScript.Make.Monad.N:Make[0] <(b,
+                                                                             GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                <*>_N
+                                                                                                                <Language.PureScript.Options.Options>_R
+                                                                                                                <Control.Monad.Trans.Except.ExceptT
+                                                                                                                   Language.PureScript.Errors.MultipleErrors
+                                                                                                                   (Control.Monad.Logger.Logger
+                                                                                                                      Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                <(b,
+                                                                                                                  GHC.Integer.Type.Integer)>_N)
+                                   r1)
+                                  `cast`
+                                (Control.Monad.Trans.Except.N:ExceptT[0]
+                                     <Language.PureScript.Errors.MultipleErrors>_N
+                                     <Control.Monad.Logger.Logger
+                                        Language.PureScript.Errors.MultipleErrors>_R
+                                     <(b,
+                                       GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                          <Language.PureScript.Errors.MultipleErrors>_R
+                                                                          <Data.Either.Either
+                                                                             Language.PureScript.Errors.MultipleErrors
+                                                                             (b,
+                                                                              GHC.Integer.Type.Integer)>_R)
+                                  r2)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Language.PureScript.Errors.MultipleErrors
+                                       (b, GHC.Integer.Type.Integer)>_R)
+                                 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                          case ipv3 of wild1 {
+                            Data.Either.Left e1
+                            -> (# ipv2,
+                                  Data.Either.Left
+                                    @ Language.PureScript.Errors.MultipleErrors
+                                    @ (a, GHC.Integer.Type.Integer)
+                                    e1 #)
+                            Data.Either.Right x
+                            -> (# ipv2,
+                                  Data.Either.Right
+                                    @ Language.PureScript.Errors.MultipleErrors
+                                    @ (a, GHC.Integer.Type.Integer)
+                                    (case y of wild2 { (,) a1 s' -> a1 },
+                                     case x of wild2 { (,) x1 s'' -> s'' }) #) } } } })
+                      `cast`
+                    ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Language.PureScript.Errors.MultipleErrors
+                                       (a,
+                                        GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                   <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                   <Data.Either.Either
+                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                      (a,
+                                                                                       GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                <Control.Monad.Logger.Logger
+                                                                                                                                   Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                <(a,
+                                                                                                                                  GHC.Integer.Type.Integer)>_N))))
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Language.PureScript.Options.Options>_R
+                             <Control.Monad.Trans.Except.ExceptT
+                                Language.PureScript.Errors.MultipleErrors
+                                (Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors)>_R
+                             <(a,
+                               GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                GHC.Integer.Type.Integer)>_N))
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N) -}
+b9a4c56431033f4cc36765def8b261f1
+  $s$fApplicativeSupplyT_$s$fFunctorStateT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Language.PureScript.Make.Monad.Make a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Language.PureScript.Make.Monad.Make b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(U)><L,1*C1(C(C(C1(U(U,1*U)))))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (f :: a -> b)
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s Language.PureScript.Make.Monad.Make a)
+                   (s1 :: s) ->
+                 let {
+                   m2 :: Language.PureScript.Make.Monad.Make (a, s)
+                   = m1
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <Language.PureScript.Make.Monad.Make>_R <a>_N)
+                       s1
+                 } in
+                 (\ (x :: Language.PureScript.Options.Options) ->
+                  let {
+                    ds :: Control.Monad.Trans.Except.ExceptT
+                            Language.PureScript.Errors.MultipleErrors
+                            (Control.Monad.Logger.Logger
+                               Language.PureScript.Errors.MultipleErrors)
+                            (a, s)
+                    = m2
+                        `cast`
+                      (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                  s)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                              <*>_N
+                                                                              <Language.PureScript.Options.Options>_R
+                                                                              <Control.Monad.Trans.Except.ExceptT
+                                                                                 Language.PureScript.Errors.MultipleErrors
+                                                                                 (Control.Monad.Logger.Logger
+                                                                                    Language.PureScript.Errors.MultipleErrors)>_R
+                                                                              <(a, s)>_N)
+                        x
+                  } in
+                  \ (r :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                    (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case (ds
+                          `cast`
+                        (Control.Monad.Trans.Except.N:ExceptT[0]
+                             <Language.PureScript.Errors.MultipleErrors>_N
+                             <Control.Monad.Logger.Logger
+                                Language.PureScript.Errors.MultipleErrors>_R
+                             <(a, s)>_N ; Control.Monad.Logger.N:Logger[0]
+                                              <Language.PureScript.Errors.MultipleErrors>_R
+                                              <Data.Either.Either
+                                                 Language.PureScript.Errors.MultipleErrors
+                                                 (a, s)>_R)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0]
+                            <Data.Either.Either
+                               Language.PureScript.Errors.MultipleErrors (a, s)>_R)
+                         s2 of ds1 { (#,#) ipv ipv1 ->
+                  (# ipv,
+                     case ipv1 of wild {
+                       Data.Either.Left x1
+                       -> Data.Either.Left
+                            @ Language.PureScript.Errors.MultipleErrors
+                            @ (b, s)
+                            x1
+                       Data.Either.Right y
+                       -> Data.Either.Right
+                            @ Language.PureScript.Errors.MultipleErrors
+                            @ (b, s)
+                            (f (case y of wild1 { (,) a1 s' -> a1 }),
+                             case y of wild1 { (,) a1 s' -> s' }) } #) })
+                   `cast`
+                 ((<Language.PureScript.Options.Options>_R
+                   ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <Data.Either.Either
+                                          Language.PureScript.Errors.MultipleErrors
+                                          (b, s)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                  <Language.PureScript.Errors.MultipleErrors>_R
+                                                                  <Data.Either.Either
+                                                                     Language.PureScript.Errors.MultipleErrors
+                                                                     (b,
+                                                                      s)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                        <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                        <Control.Monad.Logger.Logger
+                                                                                           Language.PureScript.Errors.MultipleErrors>_R
+                                                                                        <(b,
+                                                                                          s)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                               <*>_N
+                                                                                                               <Language.PureScript.Options.Options>_R
+                                                                                                               <Control.Monad.Trans.Except.ExceptT
+                                                                                                                  Language.PureScript.Errors.MultipleErrors
+                                                                                                                  (Control.Monad.Logger.Logger
+                                                                                                                     Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                               <(b,
+                                                                                                                 s)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(b,
+                                                                                                                                                                           s)>_N)))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R
+                 ->_R <Control.Monad.Trans.State.Lazy.StateT
+                         s Language.PureScript.Make.Monad.Make a>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <Language.PureScript.Make.Monad.Make>_R <b>_N)) -}
+470e2decc7f67218487c075fa0ddbc1a
+  $s$fApplicativeSupplyT_$s$fFunctorSupplyT ::
+    GHC.Base.Functor
+      (Control.Monad.Supply.SupplyT Language.PureScript.Make.Monad.Make)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Supply.SupplyT
+                       Language.PureScript.Make.Monad.Make)
+                  (Language.PureScript.Make.Actions.$s$fApplicativeSupplyT_$s$fFunctorStateT_$cfmap
+                     @ GHC.Integer.Type.Integer)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N)
+                  (\ @ a
+                     @ b
+                     (x :: a)
+                     (eta7 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make b)
+                     (eta8 :: GHC.Integer.Type.Integer) ->
+                   let {
+                     m1 :: Language.PureScript.Make.Monad.Make
+                             (b, GHC.Integer.Type.Integer)
+                     = eta7
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Integer.Type.Integer>_N
+                            <Language.PureScript.Make.Monad.Make>_R
+                            <b>_N)
+                         eta8
+                   } in
+                   (\ (x1 :: Language.PureScript.Options.Options) ->
+                    let {
+                      ds :: Control.Monad.Trans.Except.ExceptT
+                              Language.PureScript.Errors.MultipleErrors
+                              (Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors)
+                              (b, GHC.Integer.Type.Integer)
+                      = m1
+                          `cast`
+                        (Language.PureScript.Make.Monad.N:Make[0] <(b,
+                                                                    GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Language.PureScript.Options.Options>_R
+                                                                                                       <Control.Monad.Trans.Except.ExceptT
+                                                                                                          Language.PureScript.Errors.MultipleErrors
+                                                                                                          (Control.Monad.Logger.Logger
+                                                                                                             Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                       <(b,
+                                                                                                         GHC.Integer.Type.Integer)>_N)
+                          x1
+                    } in
+                    (\ (r :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                       (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case (ds
+                             `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Language.PureScript.Errors.MultipleErrors>_N
+                                <Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors>_R
+                                <(b,
+                                  GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                     <Language.PureScript.Errors.MultipleErrors>_R
+                                                                     <Data.Either.Either
+                                                                        Language.PureScript.Errors.MultipleErrors
+                                                                        (b,
+                                                                         GHC.Integer.Type.Integer)>_R)
+                             r)
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Language.PureScript.Errors.MultipleErrors
+                                  (b, GHC.Integer.Type.Integer)>_R)
+                            s of ds1 { (#,#) ipv ipv1 ->
+                     (# ipv,
+                        case ipv1 of wild {
+                          Data.Either.Left x2
+                          -> Data.Either.Left
+                               @ Language.PureScript.Errors.MultipleErrors
+                               @ (a, GHC.Integer.Type.Integer)
+                               x2
+                          Data.Either.Right y
+                          -> Data.Either.Right
+                               @ Language.PureScript.Errors.MultipleErrors
+                               @ (a, GHC.Integer.Type.Integer)
+                               (x, case y of wild1 { (,) a1 s' -> s' }) } #) })
+                      `cast`
+                    ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Language.PureScript.Errors.MultipleErrors
+                                       (a,
+                                        GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                   <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                   <Data.Either.Either
+                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                      (a,
+                                                                                       GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                <Control.Monad.Logger.Logger
+                                                                                                                                   Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                <(a,
+                                                                                                                                  GHC.Integer.Type.Integer)>_N))))
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Language.PureScript.Options.Options>_R
+                             <Control.Monad.Trans.Except.ExceptT
+                                Language.PureScript.Errors.MultipleErrors
+                                (Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors)>_R
+                             <(a,
+                               GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                GHC.Integer.Type.Integer)>_N))
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N) -}
+180bae8ff4f84c36d7eb0cc93ca3c4cf
+  $s$fMonadErrorSupplyT ::
+    Control.Monad.Error.Class.MonadError
+      Language.PureScript.Errors.MultipleErrors
+      (Control.Monad.Supply.SupplyT Language.PureScript.Make.Monad.Make)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Errors.MultipleErrors
+                  @ (Control.Monad.Supply.SupplyT
+                       Language.PureScript.Make.Monad.Make)
+                  Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadSupplyT
+                  (\ @ a
+                     (eta7 :: Language.PureScript.Errors.MultipleErrors)
+                     (s1 :: GHC.Integer.Type.Integer)
+                     (r1 :: Language.PureScript.Options.Options)
+                     (r2 :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# s,
+                      Data.Either.Left
+                        @ Language.PureScript.Errors.MultipleErrors
+                        @ (a, GHC.Integer.Type.Integer)
+                        eta7 #))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Language.PureScript.Errors.MultipleErrors>_R
+                   ->_R (<GHC.Integer.Type.Integer>_R
+                         ->_R (<Language.PureScript.Options.Options>_R
+                               ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                                     ->_R Sym (GHC.Types.N:IO[0]
+                                                   <Data.Either.Either
+                                                      Language.PureScript.Errors.MultipleErrors
+                                                      (a,
+                                                       GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                                  <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                  <Data.Either.Either
+                                                                                                     Language.PureScript.Errors.MultipleErrors
+                                                                                                     (a,
+                                                                                                      GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                               <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                               <Control.Monad.Logger.Logger
+                                                                                                                                                  Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                               <(a,
+                                                                                                                                                 GHC.Integer.Type.Integer)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                             <*>_N
+                                                                                                                                                                                             <Language.PureScript.Options.Options>_R
+                                                                                                                                                                                             <Control.Monad.Trans.Except.ExceptT
+                                                                                                                                                                                                Language.PureScript.Errors.MultipleErrors
+                                                                                                                                                                                                (Control.Monad.Logger.Logger
+                                                                                                                                                                                                   Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                                                                                             <(a,
+                                                                                                                                                                                               GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                                                                                                                                                                                GHC.Integer.Type.Integer)>_N)) ; (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                                                                                                                                                                                                                                                           <GHC.Integer.Type.Integer>_N
+                                                                                                                                                                                                                                                                                                                           <Language.PureScript.Make.Monad.Make>_R
+                                                                                                                                                                                                                                                                                                                           <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N))
+                  (\ @ a
+                     (eta7 :: Control.Monad.Trans.State.Lazy.StateT
+                                GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make a)
+                     (eta8 :: Language.PureScript.Errors.MultipleErrors
+                              -> Control.Monad.Trans.State.Lazy.StateT
+                                   GHC.Integer.Type.Integer Language.PureScript.Make.Monad.Make a)
+                     (eta9 :: GHC.Integer.Type.Integer) ->
+                   let {
+                     eta10 :: Language.PureScript.Make.Monad.Make
+                                (a, GHC.Integer.Type.Integer)
+                     = eta7
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Integer.Type.Integer>_N
+                            <Language.PureScript.Make.Monad.Make>_R
+                            <a>_N)
+                         eta9
+                   } in
+                   (\ (eta11 :: Language.PureScript.Options.Options) ->
+                    let {
+                      ds :: Control.Monad.Trans.Except.ExceptT
+                              Language.PureScript.Errors.MultipleErrors
+                              (Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors)
+                              (a, GHC.Integer.Type.Integer)
+                      = eta10
+                          `cast`
+                        (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                    GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                       <*>_N
+                                                                                                       <Language.PureScript.Options.Options>_R
+                                                                                                       <Control.Monad.Trans.Except.ExceptT
+                                                                                                          Language.PureScript.Errors.MultipleErrors
+                                                                                                          (Control.Monad.Logger.Logger
+                                                                                                             Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                       <(a,
+                                                                                                         GHC.Integer.Type.Integer)>_N)
+                          eta11
+                    } in
+                    (\ (r :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                       (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case (ds
+                             `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Language.PureScript.Errors.MultipleErrors>_N
+                                <Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors>_R
+                                <(a,
+                                  GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                     <Language.PureScript.Errors.MultipleErrors>_R
+                                                                     <Data.Either.Either
+                                                                        Language.PureScript.Errors.MultipleErrors
+                                                                        (a,
+                                                                         GHC.Integer.Type.Integer)>_R)
+                             r)
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Language.PureScript.Errors.MultipleErrors
+                                  (a, GHC.Integer.Type.Integer)>_R)
+                            s of ds1 { (#,#) ipv ipv1 ->
+                     case ipv1 of wild {
+                       Data.Either.Left l
+                       -> ((((eta8 l)
+                               `cast`
+                             (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                  <GHC.Integer.Type.Integer>_N
+                                  <Language.PureScript.Make.Monad.Make>_R
+                                  <a>_N)
+                               eta9)
+                              `cast`
+                            (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                        GHC.Integer.Type.Integer)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                           <*>_N
+                                                                                                           <Language.PureScript.Options.Options>_R
+                                                                                                           <Control.Monad.Trans.Except.ExceptT
+                                                                                                              Language.PureScript.Errors.MultipleErrors
+                                                                                                              (Control.Monad.Logger.Logger
+                                                                                                                 Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                           <(a,
+                                                                                                             GHC.Integer.Type.Integer)>_N)
+                              eta11)
+                             `cast`
+                           (Control.Monad.Trans.Except.N:ExceptT[0]
+                                <Language.PureScript.Errors.MultipleErrors>_N
+                                <Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors>_R
+                                <(a,
+                                  GHC.Integer.Type.Integer)>_N ; Control.Monad.Logger.N:Logger[0]
+                                                                     <Language.PureScript.Errors.MultipleErrors>_R
+                                                                     <Data.Either.Either
+                                                                        Language.PureScript.Errors.MultipleErrors
+                                                                        (a,
+                                                                         GHC.Integer.Type.Integer)>_R)
+                             r)
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  Language.PureScript.Errors.MultipleErrors
+                                  (a, GHC.Integer.Type.Integer)>_R)
+                            ipv
+                       Data.Either.Right r1 -> ds1 } })
+                      `cast`
+                    ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Language.PureScript.Errors.MultipleErrors
+                                       (a,
+                                        GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                   <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                   <Data.Either.Either
+                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                      (a,
+                                                                                       GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                <Control.Monad.Logger.Logger
+                                                                                                                                   Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                <(a,
+                                                                                                                                  GHC.Integer.Type.Integer)>_N))))
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <*>_N
+                             <Language.PureScript.Options.Options>_R
+                             <Control.Monad.Trans.Except.ExceptT
+                                Language.PureScript.Errors.MultipleErrors
+                                (Control.Monad.Logger.Logger
+                                   Language.PureScript.Errors.MultipleErrors)>_R
+                             <(a,
+                               GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                GHC.Integer.Type.Integer)>_N))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R (<Language.PureScript.Errors.MultipleErrors>_R
+                         ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N)
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N) -}
+524539dae5189fa754d5c9b449c4fdef
+  $s$fMonadErrorSupplyT_$s$fMonadStateT_$c>> ::
+    Control.Monad.Trans.State.Lazy.StateT
+      s Language.PureScript.Make.Monad.Make a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Language.PureScript.Make.Monad.Make b
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Language.PureScript.Make.Monad.Make b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C(C(C1(U(U,1*U)))))><L,C(C1(C1(C1(U))))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s Language.PureScript.Make.Monad.Make a)
+                   (k :: Control.Monad.Trans.State.Lazy.StateT
+                           s Language.PureScript.Make.Monad.Make b)
+                   (s1 :: s) ->
+                 let {
+                   m2 :: Language.PureScript.Make.Monad.Make (a, s)
+                   = m1
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <Language.PureScript.Make.Monad.Make>_R <a>_N)
+                       s1
+                 } in
+                 (\ (r1 :: Language.PureScript.Options.Options) ->
+                  let {
+                    ds :: Control.Monad.Trans.Except.ExceptT
+                            Language.PureScript.Errors.MultipleErrors
+                            (Control.Monad.Logger.Logger
+                               Language.PureScript.Errors.MultipleErrors)
+                            (a, s)
+                    = m2
+                        `cast`
+                      (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                  s)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                              <*>_N
+                                                                              <Language.PureScript.Options.Options>_R
+                                                                              <Control.Monad.Trans.Except.ExceptT
+                                                                                 Language.PureScript.Errors.MultipleErrors
+                                                                                 (Control.Monad.Logger.Logger
+                                                                                    Language.PureScript.Errors.MultipleErrors)>_R
+                                                                              <(a, s)>_N)
+                        r1
+                  } in
+                  (\ (r2 :: GHC.IORef.IORef
+                              Language.PureScript.Errors.MultipleErrors)
+                     (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds
+                           `cast`
+                         (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Language.PureScript.Errors.MultipleErrors>_N
+                              <Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors>_R
+                              <(a, s)>_N ; Control.Monad.Logger.N:Logger[0]
+                                               <Language.PureScript.Errors.MultipleErrors>_R
+                                               <Data.Either.Either
+                                                  Language.PureScript.Errors.MultipleErrors
+                                                  (a, s)>_R)
+                           r2)
+                          `cast`
+                        (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                Language.PureScript.Errors.MultipleErrors (a, s)>_R)
+                          s2 of ds1 { (#,#) ipv ipv1 ->
+                   case ipv1 of wild {
+                     Data.Either.Left e1
+                     -> (# ipv,
+                           Data.Either.Left
+                             @ Language.PureScript.Errors.MultipleErrors
+                             @ (b, s)
+                             e1 #)
+                     Data.Either.Right x
+                     -> (((k `cast`
+                           (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                <s>_N <Language.PureScript.Make.Monad.Make>_R <b>_N)
+                             (case x of wild1 { (,) a1 s' -> s' }))
+                            `cast`
+                          (Language.PureScript.Make.Monad.N:Make[0] <(b,
+                                                                      s)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                  <*>_N
+                                                                                  <Language.PureScript.Options.Options>_R
+                                                                                  <Control.Monad.Trans.Except.ExceptT
+                                                                                     Language.PureScript.Errors.MultipleErrors
+                                                                                     (Control.Monad.Logger.Logger
+                                                                                        Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                  <(b, s)>_N)
+                            r1)
+                           `cast`
+                         (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Language.PureScript.Errors.MultipleErrors>_N
+                              <Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors>_R
+                              <(b, s)>_N ; Control.Monad.Logger.N:Logger[0]
+                                               <Language.PureScript.Errors.MultipleErrors>_R
+                                               <Data.Either.Either
+                                                  Language.PureScript.Errors.MultipleErrors
+                                                  (b, s)>_R)
+                           r2)
+                          `cast`
+                        (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                Language.PureScript.Errors.MultipleErrors (b, s)>_R)
+                          ipv } })
+                    `cast`
+                  ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     Language.PureScript.Errors.MultipleErrors
+                                     (b, s)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                             <Language.PureScript.Errors.MultipleErrors>_R
+                                                             <Data.Either.Either
+                                                                Language.PureScript.Errors.MultipleErrors
+                                                                (b,
+                                                                 s)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                   <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                   <Control.Monad.Logger.Logger
+                                                                                      Language.PureScript.Errors.MultipleErrors>_R
+                                                                                   <(b, s)>_N))))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <*>_N
+                           <Language.PureScript.Options.Options>_R
+                           <Control.Monad.Trans.Except.ExceptT
+                              Language.PureScript.Errors.MultipleErrors
+                              (Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors)>_R
+                           <(b, s)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(b,
+                                                                                          s)>_N))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    s Language.PureScript.Make.Monad.Make a>_R
+                 ->_R <Control.Monad.Trans.State.Lazy.StateT
+                         s Language.PureScript.Make.Monad.Make b>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <Language.PureScript.Make.Monad.Make>_R <b>_N)) -}
+e9023e19d52aebb46c93d490bdba2298
+  $s$fMonadErrorSupplyT_$s$fMonadStateT_$c>>= ::
+    Control.Monad.Trans.State.Lazy.StateT
+      s Language.PureScript.Make.Monad.Make a
+    -> (a
+        -> Control.Monad.Trans.State.Lazy.StateT
+             s Language.PureScript.Make.Monad.Make b)
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Language.PureScript.Make.Monad.Make b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C(C(C1(U(U,1*U)))))><L,C(C1(C1(C1(C1(U)))))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s Language.PureScript.Make.Monad.Make a)
+                   (k :: a
+                         -> Control.Monad.Trans.State.Lazy.StateT
+                              s Language.PureScript.Make.Monad.Make b)
+                   (s1 :: s) ->
+                 let {
+                   m2 :: Language.PureScript.Make.Monad.Make (a, s)
+                   = m1
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <Language.PureScript.Make.Monad.Make>_R <a>_N)
+                       s1
+                 } in
+                 (\ (r1 :: Language.PureScript.Options.Options) ->
+                  let {
+                    ds :: Control.Monad.Trans.Except.ExceptT
+                            Language.PureScript.Errors.MultipleErrors
+                            (Control.Monad.Logger.Logger
+                               Language.PureScript.Errors.MultipleErrors)
+                            (a, s)
+                    = m2
+                        `cast`
+                      (Language.PureScript.Make.Monad.N:Make[0] <(a,
+                                                                  s)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                              <*>_N
+                                                                              <Language.PureScript.Options.Options>_R
+                                                                              <Control.Monad.Trans.Except.ExceptT
+                                                                                 Language.PureScript.Errors.MultipleErrors
+                                                                                 (Control.Monad.Logger.Logger
+                                                                                    Language.PureScript.Errors.MultipleErrors)>_R
+                                                                              <(a, s)>_N)
+                        r1
+                  } in
+                  (\ (r2 :: GHC.IORef.IORef
+                              Language.PureScript.Errors.MultipleErrors)
+                     (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds
+                           `cast`
+                         (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Language.PureScript.Errors.MultipleErrors>_N
+                              <Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors>_R
+                              <(a, s)>_N ; Control.Monad.Logger.N:Logger[0]
+                                               <Language.PureScript.Errors.MultipleErrors>_R
+                                               <Data.Either.Either
+                                                  Language.PureScript.Errors.MultipleErrors
+                                                  (a, s)>_R)
+                           r2)
+                          `cast`
+                        (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                Language.PureScript.Errors.MultipleErrors (a, s)>_R)
+                          s2 of ds1 { (#,#) ipv ipv1 ->
+                   case ipv1 of wild {
+                     Data.Either.Left e1
+                     -> (# ipv,
+                           Data.Either.Left
+                             @ Language.PureScript.Errors.MultipleErrors
+                             @ (b, s)
+                             e1 #)
+                     Data.Either.Right x
+                     -> ((((k (case x of wild1 { (,) a1 s' -> a1 }))
+                             `cast`
+                           (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                <s>_N <Language.PureScript.Make.Monad.Make>_R <b>_N)
+                             (case x of wild1 { (,) a1 s' -> s' }))
+                            `cast`
+                          (Language.PureScript.Make.Monad.N:Make[0] <(b,
+                                                                      s)>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                  <*>_N
+                                                                                  <Language.PureScript.Options.Options>_R
+                                                                                  <Control.Monad.Trans.Except.ExceptT
+                                                                                     Language.PureScript.Errors.MultipleErrors
+                                                                                     (Control.Monad.Logger.Logger
+                                                                                        Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                  <(b, s)>_N)
+                            r1)
+                           `cast`
+                         (Control.Monad.Trans.Except.N:ExceptT[0]
+                              <Language.PureScript.Errors.MultipleErrors>_N
+                              <Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors>_R
+                              <(b, s)>_N ; Control.Monad.Logger.N:Logger[0]
+                                               <Language.PureScript.Errors.MultipleErrors>_R
+                                               <Data.Either.Either
+                                                  Language.PureScript.Errors.MultipleErrors
+                                                  (b, s)>_R)
+                           r2)
+                          `cast`
+                        (GHC.Types.N:IO[0]
+                             <Data.Either.Either
+                                Language.PureScript.Errors.MultipleErrors (b, s)>_R)
+                          ipv } })
+                    `cast`
+                  ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     Language.PureScript.Errors.MultipleErrors
+                                     (b, s)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                             <Language.PureScript.Errors.MultipleErrors>_R
+                                                             <Data.Either.Either
+                                                                Language.PureScript.Errors.MultipleErrors
+                                                                (b,
+                                                                 s)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                   <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                   <Control.Monad.Logger.Logger
+                                                                                      Language.PureScript.Errors.MultipleErrors>_R
+                                                                                   <(b, s)>_N))))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <*>_N
+                           <Language.PureScript.Options.Options>_R
+                           <Control.Monad.Trans.Except.ExceptT
+                              Language.PureScript.Errors.MultipleErrors
+                              (Control.Monad.Logger.Logger
+                                 Language.PureScript.Errors.MultipleErrors)>_R
+                           <(b, s)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(b,
+                                                                                          s)>_N))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    s Language.PureScript.Make.Monad.Make a>_R
+                 ->_R <a
+                       -> Control.Monad.Trans.State.Lazy.StateT
+                            s Language.PureScript.Make.Monad.Make b>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <Language.PureScript.Make.Monad.Make>_R <b>_N)) -}
+b2e04e420f725b10df4a5ba0ed430b75
+  $s$fMonadErrorSupplyT_$s$fMonadStateT_$cfail ::
+    GHC.Base.String
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s Language.PureScript.Make.Monad.Make a
+  {- Arity: 3, Strictness: <B,U><B,A><B,A>x, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ @ s @ a (str :: GHC.Base.String) (ds :: s) ->
+                 Language.PureScript.Make.Monad.$fMonadMake_$s$fMonadReaderT_$cfail
+                   @ Language.PureScript.Options.Options
+                   @ (a, s)
+                   str)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <GHC.Base.String>_R
+                 ->_R (<s>_R
+                       ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                             s)>_N) ; Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                               <s>_N
+                                                                                               <Language.PureScript.Make.Monad.Make>_R
+                                                                                               <a>_N)) -}
+489d591bde30ffa633f7498b1635b879
+  $s$fMonadErrorSupplyT_$s$fMonadSupplyT ::
+    GHC.Base.Monad
+      (Control.Monad.Supply.SupplyT Language.PureScript.Make.Monad.Make)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Supply.SupplyT
+                       Language.PureScript.Make.Monad.Make)
+                  Language.PureScript.Make.Actions.$s$fApplicativeSupplyT
+                  (Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadStateT_$c>>=
+                     @ GHC.Integer.Type.Integer)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R (<a>_R
+                         ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N)
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N)
+                  (Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadStateT_$c>>
+                     @ GHC.Integer.Type.Integer)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <b>_N)
+                  (\ @ a (eta7 :: a) (eta8 :: GHC.Integer.Type.Integer) ->
+                   let {
+                     x :: (a, GHC.Integer.Type.Integer) = (eta7, eta8)
+                   } in
+                   (\ (eta9 :: Language.PureScript.Options.Options)
+                      (eta10 :: GHC.IORef.IORef
+                                  Language.PureScript.Errors.MultipleErrors)
+                      (eta11 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    (# eta11,
+                       Data.Either.Right
+                         @ Language.PureScript.Errors.MultipleErrors
+                         @ (a, GHC.Integer.Type.Integer)
+                         x #))
+                     `cast`
+                   ((<Language.PureScript.Options.Options>_R
+                     ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Data.Either.Either
+                                            Language.PureScript.Errors.MultipleErrors
+                                            (a,
+                                             GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                        <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                        <Data.Either.Either
+                                                                                           Language.PureScript.Errors.MultipleErrors
+                                                                                           (a,
+                                                                                            GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                     <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                     <Control.Monad.Logger.Logger
+                                                                                                                                        Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                     <(a,
+                                                                                                                                       GHC.Integer.Type.Integer)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                   <*>_N
+                                                                                                                                                                                   <Language.PureScript.Options.Options>_R
+                                                                                                                                                                                   <Control.Monad.Trans.Except.ExceptT
+                                                                                                                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                                                                                                                      (Control.Monad.Logger.Logger
+                                                                                                                                                                                         Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                                                                                   <(a,
+                                                                                                                                                                                     GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                                                                                                                                                                      GHC.Integer.Type.Integer)>_N)))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <GHC.Integer.Type.Integer>_N
+                                 <Language.PureScript.Make.Monad.Make>_R
+                                 <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N)
+                  (Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadStateT_$cfail
+                     @ GHC.Integer.Type.Integer)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <[GHC.Types.Char]>_R
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N) -}
+7744c19f08ccacd285170cadf9a09b4d
+  $s$fMonadReaderSupplyT ::
+    Control.Monad.Reader.Class.MonadReader
+      Language.PureScript.Options.Options
+      (Control.Monad.Supply.SupplyT Language.PureScript.Make.Monad.Make)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Options.Options
+                  @ (Control.Monad.Supply.SupplyT
+                       Language.PureScript.Make.Monad.Make)
+                  Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadSupplyT
+                  (\ (eta7 :: GHC.Integer.Type.Integer)
+                     (r1 :: Language.PureScript.Options.Options)
+                     (r2 :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# s,
+                      Data.Either.Right
+                        @ Language.PureScript.Errors.MultipleErrors
+                        @ (Language.PureScript.Options.Options, GHC.Integer.Type.Integer)
+                        (r1, eta7) #))
+                    `cast`
+                  ((<GHC.Integer.Type.Integer>_R
+                    ->_R (<Language.PureScript.Options.Options>_R
+                          ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <Data.Either.Either
+                                                 Language.PureScript.Errors.MultipleErrors
+                                                 (Language.PureScript.Options.Options,
+                                                  GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                             <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                             <Data.Either.Either
+                                                                                                Language.PureScript.Errors.MultipleErrors
+                                                                                                (Language.PureScript.Options.Options,
+                                                                                                 GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                          <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                          <Control.Monad.Logger.Logger
+                                                                                                                                             Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                          <(Language.PureScript.Options.Options,
+                                                                                                                                            GHC.Integer.Type.Integer)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                        <*>_N
+                                                                                                                                                                                        <Language.PureScript.Options.Options>_R
+                                                                                                                                                                                        <Control.Monad.Trans.Except.ExceptT
+                                                                                                                                                                                           Language.PureScript.Errors.MultipleErrors
+                                                                                                                                                                                           (Control.Monad.Logger.Logger
+                                                                                                                                                                                              Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                                                                                        <(Language.PureScript.Options.Options,
+                                                                                                                                                                                          GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(Language.PureScript.Options.Options,
+                                                                                                                                                                                                                                                                           GHC.Integer.Type.Integer)>_N)) ; (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                                                                                                                                                                                                                                                      <GHC.Integer.Type.Integer>_N
+                                                                                                                                                                                                                                                                                                                      <Language.PureScript.Make.Monad.Make>_R
+                                                                                                                                                                                                                                                                                                                      <Language.PureScript.Options.Options>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <Language.PureScript.Options.Options>_N))
+                  (\ @ a
+                     (eta7 :: Language.PureScript.Options.Options
+                              -> Language.PureScript.Options.Options) ->
+                   Control.Monad.Trans.State.Lazy.mapStateT
+                     @ Language.PureScript.Make.Monad.Make
+                     @ a
+                     @ GHC.Integer.Type.Integer
+                     @ Language.PureScript.Make.Monad.Make
+                     @ a
+                     (Control.Monad.Trans.Reader.withReaderT
+                        @ *
+                        @ Language.PureScript.Options.Options
+                        @ Language.PureScript.Options.Options
+                        @ (Control.Monad.Trans.Except.ExceptT
+                             Language.PureScript.Errors.MultipleErrors
+                             (Control.Monad.Logger.Logger
+                                Language.PureScript.Errors.MultipleErrors))
+                        @ (a, GHC.Integer.Type.Integer)
+                        eta7)
+                       `cast`
+                     (Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                       GHC.Integer.Type.Integer)>_N
+                      ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                            GHC.Integer.Type.Integer)>_N))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Language.PureScript.Options.Options
+                    -> Language.PureScript.Options.Options>_R
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N
+                   ->_R Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N)
+                  (\ @ a
+                     (eta7 :: Language.PureScript.Options.Options -> a)
+                     (s1 :: GHC.Integer.Type.Integer)
+                     (r1 :: Language.PureScript.Options.Options) ->
+                   let {
+                     eta8 :: a = eta7 r1
+                   } in
+                   (\ (r2 :: GHC.IORef.IORef
+                               Language.PureScript.Errors.MultipleErrors)
+                      (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    (# s,
+                       Data.Either.Right
+                         @ Language.PureScript.Errors.MultipleErrors
+                         @ (a, GHC.Integer.Type.Integer)
+                         (eta8, s1) #))
+                     `cast`
+                   ((<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <Data.Either.Either
+                                      Language.PureScript.Errors.MultipleErrors
+                                      (a,
+                                       GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                  <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                  <Data.Either.Either
+                                                                                     Language.PureScript.Errors.MultipleErrors
+                                                                                     (a,
+                                                                                      GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                               <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                               <Control.Monad.Logger.Logger
+                                                                                                                                  Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                               <(a,
+                                                                                                                                 GHC.Integer.Type.Integer)>_N))))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Language.PureScript.Options.Options -> a>_R
+                   ->_R (<GHC.Integer.Type.Integer>_R
+                         ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <Language.PureScript.Options.Options>_R
+                                       <Control.Monad.Trans.Except.ExceptT
+                                          Language.PureScript.Errors.MultipleErrors
+                                          (Control.Monad.Logger.Logger
+                                             Language.PureScript.Errors.MultipleErrors)>_R
+                                       <(a,
+                                         GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(a,
+                                                                                                                          GHC.Integer.Type.Integer)>_N) ; (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                                                                                                    <GHC.Integer.Type.Integer>_N
+                                                                                                                                                                    <Language.PureScript.Make.Monad.Make>_R
+                                                                                                                                                                    <a>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <a>_N)) -}
+9046866c1eb20d914079c33976bbb36a
+  $s$fMonadSupplySupplyT ::
+    Control.Monad.Supply.Class.MonadSupply
+      (Control.Monad.Supply.SupplyT Language.PureScript.Make.Monad.Make)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Supply.SupplyT
+                       Language.PureScript.Make.Monad.Make)
+                  Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadSupplyT
+                  (\ (eta7 :: GHC.Integer.Type.Integer)
+                     (r1 :: Language.PureScript.Options.Options)
+                     (r2 :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   (# s,
+                      Data.Either.Right
+                        @ Language.PureScript.Errors.MultipleErrors
+                        @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                        (eta7,
+                         GHC.Integer.Type.plusInteger
+                           eta7
+                           Control.Monad.Supply.Class.$fMonadSupplySupplyT2) #))
+                    `cast`
+                  ((<GHC.Integer.Type.Integer>_R
+                    ->_R (<Language.PureScript.Options.Options>_R
+                          ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <Data.Either.Either
+                                                 Language.PureScript.Errors.MultipleErrors
+                                                 (GHC.Integer.Type.Integer,
+                                                  GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                             <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                             <Data.Either.Either
+                                                                                                Language.PureScript.Errors.MultipleErrors
+                                                                                                (GHC.Integer.Type.Integer,
+                                                                                                 GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                          <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                          <Control.Monad.Logger.Logger
+                                                                                                                                             Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                          <(GHC.Integer.Type.Integer,
+                                                                                                                                            GHC.Integer.Type.Integer)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                        <*>_N
+                                                                                                                                                                                        <Language.PureScript.Options.Options>_R
+                                                                                                                                                                                        <Control.Monad.Trans.Except.ExceptT
+                                                                                                                                                                                           Language.PureScript.Errors.MultipleErrors
+                                                                                                                                                                                           (Control.Monad.Logger.Logger
+                                                                                                                                                                                              Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                                                                                        <(GHC.Integer.Type.Integer,
+                                                                                                                                                                                          GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(GHC.Integer.Type.Integer,
+                                                                                                                                                                                                                                                                           GHC.Integer.Type.Integer)>_N)) ; (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                                                                                                                                                                                                                                                      <GHC.Integer.Type.Integer>_N
+                                                                                                                                                                                                                                                                                                                      <Language.PureScript.Make.Monad.Make>_R
+                                                                                                                                                                                                                                                                                                                      <GHC.Integer.Type.Integer>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <GHC.Integer.Type.Integer>_N))
+                  (\ (x :: GHC.Integer.Type.Integer) ->
+                   let {
+                     x1 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer) = (x, x)
+                   } in
+                   (\ (eta7 :: Language.PureScript.Options.Options)
+                      (eta8 :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
+                      (eta9 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    (# eta9,
+                       Data.Either.Right
+                         @ Language.PureScript.Errors.MultipleErrors
+                         @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                         x1 #))
+                     `cast`
+                   ((<Language.PureScript.Options.Options>_R
+                     ->_R (<GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Data.Either.Either
+                                            Language.PureScript.Errors.MultipleErrors
+                                            (GHC.Integer.Type.Integer,
+                                             GHC.Integer.Type.Integer)>_R)) ; (Sym (Control.Monad.Logger.N:Logger[0]
+                                                                                        <Language.PureScript.Errors.MultipleErrors>_R
+                                                                                        <Data.Either.Either
+                                                                                           Language.PureScript.Errors.MultipleErrors
+                                                                                           (GHC.Integer.Type.Integer,
+                                                                                            GHC.Integer.Type.Integer)>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                                     <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                                     <Control.Monad.Logger.Logger
+                                                                                                                                        Language.PureScript.Errors.MultipleErrors>_R
+                                                                                                                                     <(GHC.Integer.Type.Integer,
+                                                                                                                                       GHC.Integer.Type.Integer)>_N))) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                                                                                                   <*>_N
+                                                                                                                                                                                   <Language.PureScript.Options.Options>_R
+                                                                                                                                                                                   <Control.Monad.Trans.Except.ExceptT
+                                                                                                                                                                                      Language.PureScript.Errors.MultipleErrors
+                                                                                                                                                                                      (Control.Monad.Logger.Logger
+                                                                                                                                                                                         Language.PureScript.Errors.MultipleErrors)>_R
+                                                                                                                                                                                   <(GHC.Integer.Type.Integer,
+                                                                                                                                                                                     GHC.Integer.Type.Integer)>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <(GHC.Integer.Type.Integer,
+                                                                                                                                                                                                                                                                      GHC.Integer.Type.Integer)>_N)))
+                    `cast`
+                  (Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <GHC.Integer.Type.Integer>_N
+                            <Language.PureScript.Make.Monad.Make>_R
+                            <GHC.Integer.Type.Integer>_N) ; Sym (Control.Monad.Supply.N:SupplyT[0]) <Language.PureScript.Make.Monad.Make>_N <GHC.Integer.Type.Integer>_N) -}
+00952b19449d86f86e493a6c9403944d
+  $s$fStream[]mtok ::
+    Text.Parsec.Prim.Stream [tok] Data.Functor.Identity.Identity tok
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ tok.
+                  @ [tok]
+                  @ Data.Functor.Identity.Identity
+                  @ tok
+                  Data.Functor.Identity.$fMonadIdentity
+                  (Language.PureScript.Make.Actions.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+                     @ tok) -}
+3c7ff78970bfe75e71bc9cb2e78ead83
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok (ds :: [tok]) ->
+                 case ds of wild {
+                   []
+                   -> (GHC.Base.Nothing @ (tok, [tok]))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R))
+                   : t ts
+                   -> (GHC.Base.Just @ (tok, [tok]) (t, ts))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R)) }) -}
+bd7afd982d606305d39f533fb09b3c26
+  $s$wsplitS ::
+    Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> (# Data.Set.Internal.Set Language.PureScript.Names.Ident,
+          Data.Set.Internal.Set Language.PureScript.Names.Ident #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [~] -}
+b5bf3de9c7f8d26ab1cba228bb51487e
+  $sdifference ::
+    Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [~] -}
+b60fdab1f6435122d9170fa31013c27e
+  $sfromList ::
+    [Language.PureScript.Names.Ident]
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Language.PureScript.Names.Ident]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Internal.Tip @ Language.PureScript.Names.Ident
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { DEFAULT ->
+                           Data.Set.Internal.Bin
+                             @ Language.PureScript.Names.Ident
+                             1#
+                             dt
+                             (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)
+                             (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident) }
+                        : ipv ipv1
+                        -> case Language.PureScript.Names.$fOrdIdent_$c< x ipv of wild2 {
+                             GHC.Types.False
+                             -> case x of dt { DEFAULT ->
+                                Language.PureScript.Make.Actions.$sfromList_$sgo4
+                                  ipv
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     1#
+                                     dt
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)) }
+                             GHC.Types.True
+                             -> case x of dt { DEFAULT ->
+                                Language.PureScript.Make.Actions.$sfromList_$s$wgo3
+                                  ipv
+                                  ipv1
+                                  (Data.Set.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     1#
+                                     dt
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident)
+                                     (Data.Set.Internal.Tip @ Language.PureScript.Names.Ident))
+                                  1# } } } }) -}
+85598884f7c408032c563993a4ff74ff
+  $sfromList_$s$wgo3 ::
+    Language.PureScript.Names.Ident
+    -> [Language.PureScript.Names.Ident]
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> GHC.Prim.Int#
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 4, Strictness: <S,U><S,1*U><S,1*U><L,U> -}
+fa5fe8f47b4f28f9824ada6fa6436ea1
+  $sfromList_$sgo4 ::
+    Language.PureScript.Names.Ident
+    -> [Language.PureScript.Names.Ident]
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 3, Strictness: <S,U><S,1*U><S,1*U> -}
+83388977bb5d41d76cfbae92a035472c
+  $sinsert_$sgo3 ::
+    Language.PureScript.Names.Ident
+    -> Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+    -> Data.Set.Internal.Set Language.PureScript.Names.Ident
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+06191fcd68dae4f487dd07561213c1b8
+  $slookup1 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+5a3c54388c425ac1b090cb64f47150fe
+  $smember_$sgo1 ::
+    Data.Set.Internal.Set Language.PureScript.Options.CodegenTarget
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+8269536fbadb7acaf5cdc1149d77b518
+  $smember_$sgo2 ::
+    Data.Set.Internal.Set Language.PureScript.Options.CodegenTarget
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+0e94acf1a173d29f9a49735d2b358a35
+  $smember_$sgo3 ::
+    Data.Set.Internal.Set Language.PureScript.Options.CodegenTarget
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+1f6ea7e5c2091f4a5c2f1d3512f4f6bd
+  $tc'CompilingModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7741568351598650730##
+                   11901518886252897140##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tc'CompilingModule2
+                   0#
+                   Language.PureScript.Make.Actions.$tc'CompilingModule1) -}
+415930ff26abe7d5edb349c4de46517b
+  $tc'CompilingModule1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+339b65a24e767a09fe0c844ceb9918e3
+  $tc'CompilingModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tc'CompilingModule3) -}
+63b64f7237e8e70474aeaa2aff18a36c
+  $tc'CompilingModule3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CompilingModule"#) -}
+0516517aaca329f960b1a62d0e1991e7
+  $tc'MakeActions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5726123158017742710##
+                   10175046842488644829##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tc'MakeActions2
+                   1#
+                   Language.PureScript.Make.Actions.$tc'MakeActions1) -}
+3c92239538297ffa2a256ba07c3c9e9b
+  $tc'MakeActions1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5878d5aec7d7068d91e892b5d5044a54
+  $tc'MakeActions2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tc'MakeActions3) -}
+e3bf5802482f8239b22a4e52727a152b
+  $tc'MakeActions3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MakeActions"#) -}
+1394f614c86a94b4f98e924b2183d8ad
+  $tc'RebuildAlways :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16897347377263758495##
+                   5954665576924120061##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tc'RebuildAlways2
+                   0#
+                   Language.PureScript.Make.Actions.$tc'RebuildAlways1) -}
+482381666bc05c4c173fd64393a452e4
+  $tc'RebuildAlways1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+26c96af6230955fa90ceece5edabb95d
+  $tc'RebuildAlways2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tc'RebuildAlways3) -}
+aad76512b3b7d59c1ffde450d11c13b4
+  $tc'RebuildAlways3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RebuildAlways"#) -}
+88d2a902d905774281d215b475647890
+  $tc'RebuildNever :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2837942217369128618##
+                   5625881715192651203##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tc'RebuildNever1
+                   0#
+                   Language.PureScript.Make.Actions.$tc'RebuildAlways1) -}
+d544527578b3e70737fe6414f602e392
+  $tc'RebuildNever1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tc'RebuildNever2) -}
+b4fb09ad9c000dc68eff12b69f990ab1
+  $tc'RebuildNever2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RebuildNever"#) -}
+db606421a1f02d3c755857744fe34fb5
+  $tcMakeActions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10144641634777312994##
+                   284871669814664718##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tcMakeActions2
+                   0#
+                   Language.PureScript.Make.Actions.$tcMakeActions1) -}
+d8b661295b9de139f4cc8a7d8ec72799
+  $tcMakeActions1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+edcba7f12c57bba727e96585523e49ae
+  $tcMakeActions2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tcMakeActions3) -}
+a96ab031043c8fd4e0971bea5ea57eb8
+  $tcMakeActions3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MakeActions"#) -}
+830d4a480b3c315cf1b2b63b25834468
+  $tcProgressMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2352031022460626735##
+                   3042721198419732227##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tcProgressMessage1
+                   0#
+                   GHC.Types.krep$*) -}
+1e3a190d9030b8775c01c23756d57463
+  $tcProgressMessage1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tcProgressMessage2) -}
+800f621a3c2a827a686737abdfb71af3
+  $tcProgressMessage2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ProgressMessage"#) -}
+652cdaf50afa6f18b0980479c12e17e3
+  $tcRebuildPolicy :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1689615452934255506##
+                   6654228828726353384##
+                   Language.PureScript.Make.Actions.$trModule
+                   Language.PureScript.Make.Actions.$tcRebuildPolicy1
+                   0#
+                   GHC.Types.krep$*) -}
+34685686ae763b9c8c48e03ac6e9f2e2
+  $tcRebuildPolicy1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$tcRebuildPolicy2) -}
+9f8f88cc3766ee0aecf39e1642c10578
+  $tcRebuildPolicy2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RebuildPolicy"#) -}
+90b98c8e7652a3eee26420faf8b37d7a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Make.Actions.$trModule3
+                   Language.PureScript.Make.Actions.$trModule1) -}
+1d047840ad221d9b007492f636849e97
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$trModule2) -}
+46b7ce11c574e09c6530c3648ea52091
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.PureScript.Make.Actions"#) -}
+eaf832c03e2ba254a2526204aac91535
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Make.Actions.$trModule4) -}
+d201f4009b6f00c1fa45a8d799331ecf
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+ce45fd9e9eaefca976ffa5c55ef3ebce
+  $w$cshow :: Language.PureScript.Names.ModuleName -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.Names.ModuleName) ->
+                 GHC.CString.unpackAppendCString#
+                   Language.PureScript.Make.Actions.$fShowProgressMessage2
+                   (Language.PureScript.Names.$w$cshowsPrec
+                      11#
+                      ww
+                      (GHC.Types.[] @ GHC.Types.Char))) -}
+f3091ab19bce8e1f4a316415cec021d4
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Language.PureScript.Names.ModuleName)
+                   (w :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        Language.PureScript.Make.Actions.$fShowProgressMessage2
+                        (Language.PureScript.Names.$w$cshowsPrec 11# ww1 w)
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.Make.Actions.$fShowProgressMessage2
+                           (Language.PureScript.Names.$w$cshowsPrec
+                              11#
+                              ww1
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w))) }) -}
+f4407c3c41e816696a156fa80716b127
+  $wbuildMakeActions ::
+    GHC.IO.FilePath
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName
+         (Data.Either.Either
+            Language.PureScript.Make.Actions.RebuildPolicy GHC.IO.FilePath)
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName GHC.IO.FilePath
+    -> GHC.Types.Bool
+    -> (# Language.PureScript.Names.ModuleName
+          -> Language.PureScript.Make.Monad.Make
+               (Data.Either.Either
+                  Language.PureScript.Make.Actions.RebuildPolicy
+                  (GHC.Base.Maybe Data.Time.Clock.Internal.UTCTime.UTCTime)),
+          Language.PureScript.Names.ModuleName
+          -> Language.PureScript.Make.Monad.Make
+               (GHC.Base.Maybe Data.Time.Clock.Internal.UTCTime.UTCTime),
+          Language.PureScript.Names.ModuleName
+          -> Language.PureScript.Make.Monad.Make
+               (GHC.IO.FilePath, Language.PureScript.Make.Actions.Externs),
+          Language.PureScript.CoreFn.Module.Module
+            Language.PureScript.CoreFn.Ann.Ann
+          -> Language.PureScript.Environment.Environment
+          -> Language.PureScript.Make.Actions.Externs
+          -> Control.Monad.Supply.SupplyT
+               Language.PureScript.Make.Monad.Make (),
+          Language.PureScript.CoreFn.Module.Module
+            Language.PureScript.CoreFn.Ann.Ann
+          -> Language.PureScript.Make.Monad.Make (),
+          Language.PureScript.Make.Actions.ProgressMessage
+          -> Language.PureScript.Make.Monad.Make () #)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,1*U>, Inline: [0] -}
+a2569f2ca1d89749337a0025ed19849d
+  type Externs = Data.ByteString.Lazy.Internal.ByteString
+3d0bef297a2110ab738574f1f980a96f
+  data MakeActions (m :: * -> *)
+    = MakeActions {getInputTimestamp :: Language.PureScript.Names.ModuleName
+                                        -> m (Data.Either.Either
+                                                Language.PureScript.Make.Actions.RebuildPolicy
+                                                (GHC.Base.Maybe
+                                                   Data.Time.Clock.Internal.UTCTime.UTCTime)),
+                   getOutputTimestamp :: Language.PureScript.Names.ModuleName
+                                         -> m (GHC.Base.Maybe
+                                                 Data.Time.Clock.Internal.UTCTime.UTCTime),
+                   readExterns :: Language.PureScript.Names.ModuleName
+                                  -> m (GHC.IO.FilePath, Language.PureScript.Make.Actions.Externs),
+                   codegen :: Language.PureScript.CoreFn.Module.Module
+                                Language.PureScript.CoreFn.Ann.Ann
+                              -> Language.PureScript.Environment.Environment
+                              -> Language.PureScript.Make.Actions.Externs
+                              -> Control.Monad.Supply.SupplyT m (),
+                   ffiCodegen :: Language.PureScript.CoreFn.Module.Module
+                                   Language.PureScript.CoreFn.Ann.Ann
+                                 -> m (),
+                   progress :: Language.PureScript.Make.Actions.ProgressMessage
+                               -> m ()}
+4a743826962b72d84d42aec7cdba2522
+  data ProgressMessage
+    = CompilingModule Language.PureScript.Names.ModuleName
+dc23e87659656978c63bb77d0007e1f3
+  data RebuildPolicy = RebuildNever | RebuildAlways
+8edae1aecd538f1dde247973ebaaef4f
+  buildMakeActions ::
+    GHC.IO.FilePath
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName
+         (Data.Either.Either
+            Language.PureScript.Make.Actions.RebuildPolicy GHC.IO.FilePath)
+    -> Data.Map.Internal.Map
+         Language.PureScript.Names.ModuleName GHC.IO.FilePath
+    -> GHC.Types.Bool
+    -> Language.PureScript.Make.Actions.MakeActions
+         Language.PureScript.Make.Monad.Make
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,1*U>m, Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: GHC.IO.FilePath)
+                   (w1 :: Data.Map.Internal.Map
+                            Language.PureScript.Names.ModuleName
+                            (Data.Either.Either
+                               Language.PureScript.Make.Actions.RebuildPolicy GHC.IO.FilePath))
+                   (w2 :: Data.Map.Internal.Map
+                            Language.PureScript.Names.ModuleName GHC.IO.FilePath)
+                   (w3 :: GHC.Types.Bool) ->
+                 case Language.PureScript.Make.Actions.$wbuildMakeActions
+                        w
+                        w1
+                        w2
+                        w3 of ww { (#,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Language.PureScript.Make.Actions.MakeActions
+                   @ Language.PureScript.Make.Monad.Make
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6 }) -}
+226466f772d6ad3b3b9f092c45558dad
+  checkForeignDecls ::
+    Language.PureScript.CoreFn.Module.Module ann
+    -> GHC.IO.FilePath -> Language.PureScript.Make.Monad.Make ()
+  {- Arity: 2, Strictness: <L,U(1*U,A,U,A,A,A,1*U,A)><L,U> -}
+3d0bef297a2110ab738574f1f980a96f
+  codegen ::
+    Language.PureScript.Make.Actions.MakeActions m
+    -> Language.PureScript.CoreFn.Module.Module
+         Language.PureScript.CoreFn.Ann.Ann
+    -> Language.PureScript.Environment.Environment
+    -> Language.PureScript.Make.Actions.Externs
+    -> Control.Monad.Supply.SupplyT m ()
+  RecSel Left Language.PureScript.Make.Actions.MakeActions
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLL),1*U(A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   (ds :: Language.PureScript.Make.Actions.MakeActions m) ->
+                 case ds of wild { Language.PureScript.Make.Actions.MakeActions ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds4 }) -}
+3d0bef297a2110ab738574f1f980a96f
+  ffiCodegen ::
+    Language.PureScript.Make.Actions.MakeActions m
+    -> Language.PureScript.CoreFn.Module.Module
+         Language.PureScript.CoreFn.Ann.Ann
+    -> m ()
+  RecSel Left Language.PureScript.Make.Actions.MakeActions
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSL),1*U(A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   (ds :: Language.PureScript.Make.Actions.MakeActions m) ->
+                 case ds of wild { Language.PureScript.Make.Actions.MakeActions ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds5 }) -}
+3d0bef297a2110ab738574f1f980a96f
+  getInputTimestamp ::
+    Language.PureScript.Make.Actions.MakeActions m
+    -> Language.PureScript.Names.ModuleName
+    -> m (Data.Either.Either
+            Language.PureScript.Make.Actions.RebuildPolicy
+            (GHC.Base.Maybe Data.Time.Clock.Internal.UTCTime.UTCTime))
+  RecSel Left Language.PureScript.Make.Actions.MakeActions
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   (ds :: Language.PureScript.Make.Actions.MakeActions m) ->
+                 case ds of wild { Language.PureScript.Make.Actions.MakeActions ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds1 }) -}
+3d0bef297a2110ab738574f1f980a96f
+  getOutputTimestamp ::
+    Language.PureScript.Make.Actions.MakeActions m
+    -> Language.PureScript.Names.ModuleName
+    -> m (GHC.Base.Maybe Data.Time.Clock.Internal.UTCTime.UTCTime)
+  RecSel Left Language.PureScript.Make.Actions.MakeActions
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   (ds :: Language.PureScript.Make.Actions.MakeActions m) ->
+                 case ds of wild { Language.PureScript.Make.Actions.MakeActions ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds2 }) -}
+3d0bef297a2110ab738574f1f980a96f
+  progress ::
+    Language.PureScript.Make.Actions.MakeActions m
+    -> Language.PureScript.Make.Actions.ProgressMessage -> m ()
+  RecSel Left Language.PureScript.Make.Actions.MakeActions
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLS),1*U(A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   (ds :: Language.PureScript.Make.Actions.MakeActions m) ->
+                 case ds of wild { Language.PureScript.Make.Actions.MakeActions ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds6 }) -}
+3d0bef297a2110ab738574f1f980a96f
+  readExterns ::
+    Language.PureScript.Make.Actions.MakeActions m
+    -> Language.PureScript.Names.ModuleName
+    -> m (GHC.IO.FilePath, Language.PureScript.Make.Actions.Externs)
+  RecSel Left Language.PureScript.Make.Actions.MakeActions
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLL),1*U(A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> *
+                   (ds :: Language.PureScript.Make.Actions.MakeActions m) ->
+                 case ds of wild { Language.PureScript.Make.Actions.MakeActions ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds3 }) -}
+instance GHC.Classes.Eq [Language.PureScript.Make.Actions.ProgressMessage]
+  = Language.PureScript.Make.Actions.$fEqProgressMessage
+instance GHC.Classes.Eq [Language.PureScript.Make.Actions.RebuildPolicy]
+  = Language.PureScript.Make.Actions.$fEqRebuildPolicy
+instance GHC.Classes.Ord [Language.PureScript.Make.Actions.ProgressMessage]
+  = Language.PureScript.Make.Actions.$fOrdProgressMessage
+instance GHC.Classes.Ord [Language.PureScript.Make.Actions.RebuildPolicy]
+  = Language.PureScript.Make.Actions.$fOrdRebuildPolicy
+instance GHC.Show.Show [Language.PureScript.Make.Actions.ProgressMessage]
+  = Language.PureScript.Make.Actions.$fShowProgressMessage
+instance GHC.Show.Show [Language.PureScript.Make.Actions.RebuildPolicy]
+  = Language.PureScript.Make.Actions.$fShowRebuildPolicy
+"SPEC/Language.PureScript.Make.Actions $fApplicativeSupplyT @ Make" [orphan] forall (v :: GHC.Base.Monad
+                                                                                            Language.PureScript.Make.Monad.Make)
+  Control.Monad.Supply.$fApplicativeSupplyT @ Language.PureScript.Make.Monad.Make
+                                            v
+  = Language.PureScript.Make.Actions.$s$fApplicativeSupplyT
+"SPEC/Language.PureScript.Make.Actions $fFunctorStateT_$cfmap @ Make _" [orphan] forall @ s
+                                                                                        ($dFunctor :: GHC.Base.Functor
+                                                                                                        Language.PureScript.Make.Monad.Make)
+  Control.Monad.Trans.State.Lazy.$fFunctorStateT_$cfmap @ Language.PureScript.Make.Monad.Make
+                                                        @ s
+                                                        $dFunctor
+  = Language.PureScript.Make.Actions.$s$fApplicativeSupplyT_$s$fFunctorStateT_$cfmap
+      @ s
+"SPEC/Language.PureScript.Make.Actions $fFunctorSupplyT @ Make" [orphan] forall (v :: GHC.Base.Functor
+                                                                                        Language.PureScript.Make.Monad.Make)
+  Control.Monad.Supply.$fFunctorSupplyT @ Language.PureScript.Make.Monad.Make
+                                        v
+  = Language.PureScript.Make.Actions.$s$fApplicativeSupplyT_$s$fFunctorSupplyT
+"SPEC/Language.PureScript.Make.Actions $fMonadErrorSupplyT @ MultipleErrors @ Make" [orphan] forall (v :: Control.Monad.Error.Class.MonadError
+                                                                                                            Language.PureScript.Errors.MultipleErrors
+                                                                                                            Language.PureScript.Make.Monad.Make)
+  Control.Monad.Supply.$fMonadErrorSupplyT @ Language.PureScript.Errors.MultipleErrors
+                                           @ Language.PureScript.Make.Monad.Make
+                                           v
+  = Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT
+"SPEC/Language.PureScript.Make.Actions $fMonadReaderSupplyT @ Options @ Make" [orphan] forall (v :: Control.Monad.Reader.Class.MonadReader
+                                                                                                      Language.PureScript.Options.Options
+                                                                                                      Language.PureScript.Make.Monad.Make)
+  Control.Monad.Supply.$fMonadReaderSupplyT @ Language.PureScript.Options.Options
+                                            @ Language.PureScript.Make.Monad.Make
+                                            v
+  = Language.PureScript.Make.Actions.$s$fMonadReaderSupplyT
+"SPEC/Language.PureScript.Make.Actions $fMonadStateT_$c>> @ Make _" [orphan] forall @ s
+                                                                                    ($dMonad :: GHC.Base.Monad
+                                                                                                  Language.PureScript.Make.Monad.Make)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT_$c>> @ Language.PureScript.Make.Monad.Make
+                                                    @ s
+                                                    $dMonad
+  = Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadStateT_$c>>
+      @ s
+"SPEC/Language.PureScript.Make.Actions $fMonadStateT_$c>>= @ Make _" [orphan] forall @ s
+                                                                                     ($dMonad :: GHC.Base.Monad
+                                                                                                   Language.PureScript.Make.Monad.Make)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT_$c>>= @ Language.PureScript.Make.Monad.Make
+                                                     @ s
+                                                     $dMonad
+  = Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadStateT_$c>>=
+      @ s
+"SPEC/Language.PureScript.Make.Actions $fMonadStateT_$cfail @ Make _" [orphan] forall @ s
+                                                                                      ($dMonad :: GHC.Base.Monad
+                                                                                                    Language.PureScript.Make.Monad.Make)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT_$cfail @ Language.PureScript.Make.Monad.Make
+                                                      @ s
+                                                      $dMonad
+  = Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadStateT_$cfail
+      @ s
+"SPEC/Language.PureScript.Make.Actions $fMonadSupplySupplyT @ Make" [orphan] forall (v :: GHC.Base.Monad
+                                                                                            Language.PureScript.Make.Monad.Make)
+  Control.Monad.Supply.Class.$fMonadSupplySupplyT @ Language.PureScript.Make.Monad.Make
+                                                  v
+  = Language.PureScript.Make.Actions.$s$fMonadSupplySupplyT
+"SPEC/Language.PureScript.Make.Actions $fMonadSupplyT @ Make" [orphan] forall (v :: GHC.Base.Monad
+                                                                                      Language.PureScript.Make.Monad.Make)
+  Control.Monad.Supply.$fMonadSupplyT @ Language.PureScript.Make.Monad.Make
+                                      v
+  = Language.PureScript.Make.Actions.$s$fMonadErrorSupplyT_$s$fMonadSupplyT
+"SPEC/Language.PureScript.Make.Actions $fStream[]mtok @ Identity _" [orphan] forall @ tok
+                                                                                    (v :: GHC.Base.Monad
+                                                                                            Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok @ Data.Functor.Identity.Identity
+                                  @ tok
+                                  v
+  = Language.PureScript.Make.Actions.$s$fStream[]mtok @ tok
+"SPEC/Language.PureScript.Make.Actions $fStream[]mtok_$cuncons @ Identity _" [orphan] forall @ tok
+                                                                                             ($dMonad :: GHC.Base.Monad
+                                                                                                           Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ Data.Functor.Identity.Identity
+                                           @ tok
+                                           $dMonad
+  = Language.PureScript.Make.Actions.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+      @ tok
+"SPEC/Language.PureScript.Make.Actions $wsplitS @ Ident" [orphan] [0] forall (w :: GHC.Classes.Ord
+                                                                                     Language.PureScript.Names.Ident)
+  Data.Set.Internal.$wsplitS @ Language.PureScript.Names.Ident w
+  = Language.PureScript.Make.Actions.$s$wsplitS
+"SPEC/Language.PureScript.Make.Actions difference @ Ident" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                                       Language.PureScript.Names.Ident)
+  Data.Set.Internal.difference @ Language.PureScript.Names.Ident
+                               $dOrd
+  = Language.PureScript.Make.Actions.$sdifference
+"SPEC/Language.PureScript.Make.Actions fromList @ Ident" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                                     Language.PureScript.Names.Ident)
+  Data.Set.Internal.fromList @ Language.PureScript.Names.Ident $dOrd
+  = Language.PureScript.Make.Actions.$sfromList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

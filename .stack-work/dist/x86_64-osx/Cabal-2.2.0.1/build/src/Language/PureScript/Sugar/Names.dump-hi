@@ -1,0 +1,2918 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 20:47:49.913123 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Sugar.Names 8043
+  interface hash: bb5993a43df580081e7298e577919529
+  ABI hash: 257b0a54d872bfbc841b404e407868f9
+  export-list hash: 54dc7e4e5ff42e6dff5fca4bbe5881f9
+  orphan hash: 9e222c5fa31e5cb4f060c6ea9d45f7e4
+  flag hash: 69d8350f4fac920b6d109c2ab05c8489
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Sugar.Names.desugarImports
+  Language.PureScript.Sugar.Names.desugarImportsWithEnv
+  Language.PureScript.Sugar.Names.Env.primEnv
+  Language.PureScript.Sugar.Names.Env.Env
+  Language.PureScript.Sugar.Names.Env.Exports{Language.PureScript.Sugar.Names.Env.Exports exportedKinds exportedTypeClasses exportedTypeOps exportedTypes exportedValueOps exportedValues}
+  Language.PureScript.Sugar.Names.Env.ImportProvenance{Language.PureScript.Sugar.Names.Env.FromExplicit Language.PureScript.Sugar.Names.Env.FromImplicit Language.PureScript.Sugar.Names.Env.Local Language.PureScript.Sugar.Names.Env.Prim}
+  Language.PureScript.Sugar.Names.Env.ImportRecord{Language.PureScript.Sugar.Names.Env.ImportRecord importName importProvenance importSourceModule importSourceSpan}
+  Language.PureScript.Sugar.Names.Env.Imports{Language.PureScript.Sugar.Names.Env.Imports importedDataConstructors importedKinds importedModules importedQualModules importedTypeClasses importedTypeOps importedTypes importedValueOps importedValues}
+module dependencies: Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript.AST
+                     Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.Comments Language.PureScript.Constants
+                     Language.PureScript.Crash Language.PureScript.Environment
+                     Language.PureScript.Errors Language.PureScript.Externs
+                     Language.PureScript.Kinds Language.PureScript.Label
+                     Language.PureScript.Linter.Imports Language.PureScript.Names
+                     Language.PureScript.PSString Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Pretty
+                     Language.PureScript.Pretty.Common Language.PureScript.Pretty.Kinds
+                     Language.PureScript.Pretty.Types Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Traversals
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 safe-0.3.17 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
+orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Function 6e6aae9442025aeeb92a909c1bbc3fca
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Traversable 7ad4edb9184ea1ae8e73f6b94f115c8c
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
+import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
+import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
+import  -/  mtl-2.2.2:Control.Monad.State.Lazy f8ee64596a088338bed8c51f9750dde2
+import  -/  mtl-2.2.2:Control.Monad.Writer b86905dc6b5d4d3a09dfa93d3ac3bb98
+import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
+import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
+import  -/  protolude-0.2.2:Protolude.List 3a80368167450d7a4360ebf1ea443345
+import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
+  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
+import  -/  Language.PureScript.AST.Binders 9d60985147b34b89300370e810fed430
+  Binder 50aa153193e190eabd8ac7530e604f9c
+  ConstructorBinder a80ed0550c5d3abdd1e6249cec7ebb29
+  OpBinder 8c4232ee53e2707d427c05940eb3b3a1
+  PositionedBinder 882f8081b0418fe44d4a7e237a20b9bb
+  TypedBinder f780e44b8446316aee6b532b3afc4341
+  VarBinder 2a223807b33e6f190799aea12e8ed5d7
+  binderNames 02df671f437cb8e44f39ef8bc1273f3b
+import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
+  Abs d07c7c6c44b48a3411184d34629a601e
+  CaseAlternative 53d0b5fb91e3184ce5b575a7cf70b18d
+  CaseAlternative b31d94d0c7b90700d40f9ba6ec420e41
+  Constructor bb7c3f03ee8743dfc68d80ee99f8c1e3
+  DataDeclaration db5935397ffc86d7f21188808af5170e
+  Declaration b31d94d0c7b90700d40f9ba6ec420e41
+  DeclarationRef 9de74e8b46bfd07e044a72617cc5da5c
+  ErrorInModule 30c97edb8a43314700377edb3b90ccc8
+  Expr b31d94d0c7b90700d40f9ba6ec420e41
+  ExternDataDeclaration 55a53b09584ed2ea4b573ea27aa0f4e4
+  ExternDeclaration 4969f865c6e08f5324b31f68ef85d043
+  GuardedExpr 27042b32d879f10c681888a144cccbf4
+  GuardedExpr b31d94d0c7b90700d40f9ba6ec420e41
+  KindRef 8245863d9321690e594853e7ff0fdb63
+  Let 1e154f741d98347f87a436fe079b9677
+  Module b9e5d519f3251f7053b581e4ecd9e6bf
+  Module 7cf4b96f7d4b51b446726a099ab87bb6
+  Op 4d49590d9b87d07686937c6859e5ae47
+  OverlappingNamesInLet 3e4ae571cd30e5429fd2ceab0386c54c
+  PatternGuard 8f00c4347b1f607cbe6ab09d14685d9d
+  PositionedValue ce9f35ccf631ea46c29b12e823f5cdda
+  ReExportRef f67e2c43a2cbc62a4a950b387e3ed943
+  TypeClassDeclaration d4771a111b012cbefca253f911afd776
+  TypeClassRef 93a0e32770563d43fa3f04289a54725f
+  TypeDeclaration a12f822b0dbc597658a7d1e27db5ac22
+  TypeDeclarationData 99fd3317c24e020d90e98686ac5a9cec
+  TypeFixityDeclaration 442ba50b491e46b095a0fd0218f236ad
+  TypeInstanceDeclaration c99b2ac93a5feb1209c747921a9e548b
+  TypeOpRef 9ae3d7bbee64a9887c8d95defd65b0b0
+  TypeRef f23e4bfa1c94ce55e9357e5fb97176c4
+  TypeSynonymDeclaration b022b78d38da14b3619ada244eaf9299
+  TypedValue d9e4565826b9abbfd5d9b0aba42f2e58
+  UnknownName 0628ac315dcabeec4442b9d03a3d0b84
+  ValueFixityDeclaration eb9c8f0bb082690f8aa4e758b5751212
+  ValueOpRef 340c88beba94c802cc00b112ca1ce8ae
+  ValueRef 984b564c7d121e5297a91fc424d0970b
+  Var 0202d242cce06e67fa6944b3c05a8982
+  declName e5f550546a379316c2a828bc4bea491c
+  declRefName 088fcb4e3edc129f809097a23b6de3c2
+  declSourceSpan 901cd3587e8d9e55060bf90daca551d7
+  getKindRef 169d4cac4d05cba42539e2862c95b3db
+  getTypeClassRef 4a5cb731417baeb982ffa07d84f048ab
+  getTypeOpRef c807c0d47029b8283509ed31e6fc3ff1
+  getValueDeclaration ef64f0b12c753d90369287393976ca51
+  getValueOpRef be7af64c7f2421e5081867b94579e0a9
+  getValueRef 94912d263388bc977447f55c96bc921e
+  isModuleRef 8269dde3a1e3ea44b18ed7f930f87a16
+  valdeclIdent 0c2d915175f1072d8eeca07af2b73e20
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.AST.Traversals a3d1a9b4309f1aa3055f23e3fb101c5e
+  everywhereWithContextOnValuesM 4fdd13188200e3f571550d8ad6f3de86
+import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+  exports: 8a971f39d6ef3f27956f413640cb0a24
+  internalError f3db7e23c75878c9d13888d6d114012d
+import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
+  exports: 142ea650dec62642d1cff09ef1eee74e
+  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
+  addHint c2d92e868230119a30631ae026505b5b
+  errorMessage 56e7aa221570d7d0bd9b4d606b8de7f2
+  errorMessage' 5055fef8b372f878a840ac9e7783f39a
+  parU da72186e6c92f529dd0bd0ac4699ef1e
+  warnAndRethrow 38a15ae4c90b2d8cb225173895fa7070
+  warnAndRethrowWithPosition 244bd1e640516a8c9aa68657648a6934
+import  -/  Language.PureScript.Externs 17598d5385c46f650a2a55de08912a53
+  exports: f9fc7fa26f69a655fd896d8cccd21570
+  EDDataConstructor fcc92094c364f9506042d3ad829e5b28
+  ExternsDeclaration 45a26a6f5854665222c379466681ba1c
+  ExternsFile c70689fb9608ce693621d95a9618d3ec
+  ExternsFile b2e76f24ecba17bf3b946e078a8414b6
+  ExternsImport 71e649a634abefc03975978678a224e9
+  efDeclarations b2e76f24ecba17bf3b946e078a8414b6
+  efExports b2e76f24ecba17bf3b946e078a8414b6
+  efFixities b2e76f24ecba17bf3b946e078a8414b6
+  efImports b2e76f24ecba17bf3b946e078a8414b6
+  efModuleName b2e76f24ecba17bf3b946e078a8414b6
+  efSourceSpan b2e76f24ecba17bf3b946e078a8414b6
+  efTypeFixities b2e76f24ecba17bf3b946e078a8414b6
+  efVersion b2e76f24ecba17bf3b946e078a8414b6
+import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
+  exports: 2c2448e43e622d2466a59b9cd8f4db91
+  Kind 3e1e213eb647453235d33b0d1b36ec59
+  NamedKind 536943c580461ebe2091622f07457ca3
+  everywhereOnKindsM 118389ddd36956918c0a5e2532ce1d9c
+import  -/  Language.PureScript.Linter.Imports 9e3b4760ca4bdd0cb4c31b706245c709
+  exports: 16519a1a97dc2a16e07b7511715e76cd
+  UsedImports e695b6d4a1d82f88641244c402f52151
+  lintImports 5ae9ddd02cbe538eb6adf6061585e2d3
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  exports: f7f3503d20957194bda83c16bb5f1288
+  ClassName e69348bcf8c43a2174540a1d5983bfaa
+  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
+  DctorName 953e2be7c584ad49e8fe105d218f14a0
+  Ident ab98a56ffa88760dad1380079e8ee35a
+  IdentName 5b06dbfa684a1a4686ae5dc3b60a0a36
+  KiName 3988b2e6728e13d6e386f74a6394b09e
+  KindName 681d490d18bc7da009f3503010a994f8
+  ModName 3aadbf737116de1d7bcb446bea8a25af
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  Name 184494d9e734645f374e2a0fce32bfac
+  OpName 1522672b880b192c6e05e6cf8a45712d
+  ProperName 29f101e190cc99df85623423972e606f
+  Qualified d600a7f01c8203cf5504999de99c923c
+  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
+  TyClassName 21009befdac7827e5cfc4e5a7606bd0e
+  TyName 2de556166e59a0005c7143bf3b600f7e
+  TyOpName 66cc4d214f55e6f0f298e52eab8013ac
+  TypeName da42c92f73f4f363c63ecaf77b6335b9
+  TypeOpName 34023316af2b751c6196ece0b5420c6b
+  ValOpName f03a1a616a24e6d18322d9bb9fa39c73
+  ValueOpName 1d06f91abd827e7b0c072b254546708a
+import  -/  Language.PureScript.Sugar.Names.Env 86ed82ed542c248a8928297b6b346572
+  exports: eac96abb84bb227ec29cea13c70276ff
+  Env 5f9e6484b1f2e8e2d5b6bfcee5f814e9
+  Exports 01f3e0364e56d91d1394c81cd74dc74f
+  Exports 2212f1aeac86faa420eb4b44c2cc2982
+  FromExplicit a87b9454b70b411f90f36ea9664a518b
+  FromImplicit 884fd1226fc81d47cd70d9770578fe18
+  ImportProvenance b5a892de418489c767f720864d2c6782
+  ImportRecord 67ee13394ca9da4b4e70f1e0da141509
+  ImportRecord bf5a97568e086735d3bbc97dc5ee1e68
+  Imports 3ee9ac130ea39977fc512d6d60116683
+  Imports b53ca872c8c47c3d8839f496fc15c222
+  Local a4ae9d445dc300743dfa866505a1b676
+  Prim 042ad6a1ad384c8a391b47efd96efbcf
+  checkImportConflicts 64f71a199310dc3ca4a6ef756eed74e7
+  exportedKinds 2212f1aeac86faa420eb4b44c2cc2982
+  exportedTypeClasses 2212f1aeac86faa420eb4b44c2cc2982
+  exportedTypeOps 2212f1aeac86faa420eb4b44c2cc2982
+  exportedTypes 2212f1aeac86faa420eb4b44c2cc2982
+  exportedValueOps 2212f1aeac86faa420eb4b44c2cc2982
+  exportedValues 2212f1aeac86faa420eb4b44c2cc2982
+  importName bf5a97568e086735d3bbc97dc5ee1e68
+  importProvenance bf5a97568e086735d3bbc97dc5ee1e68
+  importSourceModule bf5a97568e086735d3bbc97dc5ee1e68
+  importSourceSpan bf5a97568e086735d3bbc97dc5ee1e68
+  importedDataConstructors b53ca872c8c47c3d8839f496fc15c222
+  importedKinds b53ca872c8c47c3d8839f496fc15c222
+  importedModules b53ca872c8c47c3d8839f496fc15c222
+  importedQualModules b53ca872c8c47c3d8839f496fc15c222
+  importedTypeClasses b53ca872c8c47c3d8839f496fc15c222
+  importedTypeOps b53ca872c8c47c3d8839f496fc15c222
+  importedTypes b53ca872c8c47c3d8839f496fc15c222
+  importedValueOps b53ca872c8c47c3d8839f496fc15c222
+  importedValues b53ca872c8c47c3d8839f496fc15c222
+  nullImports ce7df041a470e7796955adec9bc54637
+  primEnv c32e5288863d919737261c42c8049b58
+import  -/  Language.PureScript.Sugar.Names.Exports 281dcc3400b61063ba2b857efb426ba3
+  exports: 37ce399515e3d009ac2dc766154cf5d0
+  findExportable efb0fea1ff53af2f670bde0c1287b473
+  resolveExports 17699bd8398c2e872873689d372301a2
+import  -/  Language.PureScript.Sugar.Names.Imports 74530d1e35a91db4df5eb1198a6fa3df
+  exports: 538cf21a6523dc126f5c86e5bc711c31
+  resolveImports 9fa846d91cc3e599dc34502480128f1a
+  resolveModuleImport e019756aed6514aca4e642df8f55aac8
+import  -/  Language.PureScript.Traversals 0b1167883a6d6cc72496ff4af9cd7535
+  exports: ff3aac3cd7b378c02751a42ba037de7e
+  defS 6ddff71af3ee79c0e480484d77dbcf66
+  sndM f92d028593bfff03fd7f7a06605574ae
+import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
+  exports: ae97bc75fcebc59f59c970736847a827
+  ConstrainedType c2b3670e25b3b510981414df0f340e0f
+  Constraint 07ef72cbe41926551b2da51008274cd5
+  Constraint 93223f8afa90d0facc05a03f863dc72d
+  KindedType 0c5178e2942b7d198426b0539b6f6442
+  Type 93223f8afa90d0facc05a03f863dc72d
+  TypeConstructor 5e1c42d22ac701f08c049fde0171d9ac
+  TypeOp ad0891db755477b54ad0870dc64917cc
+  everywhereOnTypesM 46428778ed53c5878c6229be3528079b
+import  -/  transformers-0.5.5.0:Control.Monad.Trans.State.Lazy bb07ba19cd14893d125b163b03c16c98
+b8ab3fff91ee7e48eabf724bdc65db26
+  $sfromList ::
+    [(Language.PureScript.Names.ProperName
+        'Language.PureScript.Names.KindName,
+      a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: [(Language.PureScript.Names.ProperName
+                              'Language.PureScript.Names.KindName,
+                            a)]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Map.Internal.Tip
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.KindName)
+                        @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.KindName>_P) of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                           Data.Map.Internal.Bin
+                             @ (Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.KindName)
+                             @ a
+                             1#
+                             nt
+                               `cast`
+                             (Sym (Language.PureScript.Names.N:ProperName[0]
+                                       <'Language.PureScript.Names.KindName>_P))
+                             x
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.KindName)
+                                @ a)
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.KindName)
+                                @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.KindName>_P) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                           case ky
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.KindName>_P) of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                           case Data.Text.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 of wild4 {
+                             DEFAULT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$spoly_go14
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.KindName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.KindName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.KindName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.KindName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.KindName)
+                                        @ a))
+                             GHC.Types.LT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go13
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.KindName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.KindName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.KindName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.KindName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.KindName)
+                                        @ a))
+                                  1# } } } } } } }) -}
+d309b421cc670687bf719fc3262f2885
+  $sfromList1 ::
+    [(Language.PureScript.Names.OpName
+        'Language.PureScript.Names.ValueOpName,
+      a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: [(Language.PureScript.Names.OpName
+                              'Language.PureScript.Names.ValueOpName,
+                            a)]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Map.Internal.Tip
+                        @ (Language.PureScript.Names.OpName
+                             'Language.PureScript.Names.ValueOpName)
+                        @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.ValueOpName>_P) of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                           Data.Map.Internal.Bin
+                             @ (Language.PureScript.Names.OpName
+                                  'Language.PureScript.Names.ValueOpName)
+                             @ a
+                             1#
+                             nt
+                               `cast`
+                             (Sym (Language.PureScript.Names.N:OpName[0]
+                                       <'Language.PureScript.Names.ValueOpName>_P))
+                             x
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.OpName
+                                     'Language.PureScript.Names.ValueOpName)
+                                @ a)
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.OpName
+                                     'Language.PureScript.Names.ValueOpName)
+                                @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.ValueOpName>_P) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                           case ky
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.ValueOpName>_P) of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                           case Data.Text.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 of wild4 {
+                             DEFAULT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$spoly_go1
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:OpName[0]
+                                            <'Language.PureScript.Names.ValueOpName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.OpName
+                                          'Language.PureScript.Names.ValueOpName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.ValueOpName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.ValueOpName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.ValueOpName)
+                                        @ a))
+                             GHC.Types.LT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go1
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:OpName[0]
+                                            <'Language.PureScript.Names.ValueOpName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.OpName
+                                          'Language.PureScript.Names.ValueOpName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.ValueOpName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.ValueOpName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.ValueOpName)
+                                        @ a))
+                                  1# } } } } } } }) -}
+387561528ec53b1354234b0998025f23
+  $sfromList2 ::
+    [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(Language.PureScript.Names.Ident, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ Language.PureScript.Names.Ident
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case Language.PureScript.Names.$fOrdIdent_$c< kx ky of wild4 {
+                             GHC.Types.False
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Sugar.Names.$sfromList_$spoly_go2
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ Language.PureScript.Names.Ident
+                                        @ a)) }
+                             GHC.Types.True
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go2
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Ident
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a)
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Ident @ a))
+                                  1# } } } } } }) -}
+79449c5cfe2b71e4a4886149090944be
+  $sfromList3 ::
+    [(Language.PureScript.Names.ProperName
+        'Language.PureScript.Names.ClassName,
+      a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: [(Language.PureScript.Names.ProperName
+                              'Language.PureScript.Names.ClassName,
+                            a)]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Map.Internal.Tip
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.ClassName)
+                        @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.ClassName>_P) of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                           Data.Map.Internal.Bin
+                             @ (Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.ClassName)
+                             @ a
+                             1#
+                             nt
+                               `cast`
+                             (Sym (Language.PureScript.Names.N:ProperName[0]
+                                       <'Language.PureScript.Names.ClassName>_P))
+                             x
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.ClassName)
+                                @ a)
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.ClassName)
+                                @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.ClassName>_P) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                           case ky
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.ClassName>_P) of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                           case Data.Text.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 of wild4 {
+                             DEFAULT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$spoly_go3
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.ClassName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.ClassName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.ClassName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.ClassName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.ClassName)
+                                        @ a))
+                             GHC.Types.LT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go3
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.ClassName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.ClassName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.ClassName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.ClassName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.ClassName)
+                                        @ a))
+                                  1# } } } } } } }) -}
+cd0a030ce30a37eaee63535c89bbca5a
+  $sfromList4 ::
+    [(Language.PureScript.Names.OpName
+        'Language.PureScript.Names.TypeOpName,
+      a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: [(Language.PureScript.Names.OpName
+                              'Language.PureScript.Names.TypeOpName,
+                            a)]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Map.Internal.Tip
+                        @ (Language.PureScript.Names.OpName
+                             'Language.PureScript.Names.TypeOpName)
+                        @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.TypeOpName>_P) of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                           Data.Map.Internal.Bin
+                             @ (Language.PureScript.Names.OpName
+                                  'Language.PureScript.Names.TypeOpName)
+                             @ a
+                             1#
+                             nt
+                               `cast`
+                             (Sym (Language.PureScript.Names.N:OpName[0]
+                                       <'Language.PureScript.Names.TypeOpName>_P))
+                             x
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.OpName
+                                     'Language.PureScript.Names.TypeOpName)
+                                @ a)
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.OpName
+                                     'Language.PureScript.Names.TypeOpName)
+                                @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.TypeOpName>_P) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                           case ky
+                                  `cast`
+                                (Language.PureScript.Names.N:OpName[0]
+                                     <'Language.PureScript.Names.TypeOpName>_P) of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                           case Data.Text.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 of wild4 {
+                             DEFAULT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$spoly_go4
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:OpName[0]
+                                            <'Language.PureScript.Names.TypeOpName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.OpName
+                                          'Language.PureScript.Names.TypeOpName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.TypeOpName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.TypeOpName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.TypeOpName)
+                                        @ a))
+                             GHC.Types.LT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go4
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:OpName[0]
+                                            <'Language.PureScript.Names.TypeOpName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.OpName
+                                          'Language.PureScript.Names.TypeOpName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.TypeOpName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.TypeOpName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.OpName
+                                             'Language.PureScript.Names.TypeOpName)
+                                        @ a))
+                                  1# } } } } } } }) -}
+6cdb5a240e0899426f7108f42fb364e6
+  $sfromList5 ::
+    [(Language.PureScript.Names.ProperName
+        'Language.PureScript.Names.TypeName,
+      a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: [(Language.PureScript.Names.ProperName
+                              'Language.PureScript.Names.TypeName,
+                            a)]) ->
+                 case ds of wild {
+                   []
+                   -> Data.Map.Internal.Tip
+                        @ (Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.TypeName)
+                        @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.TypeName>_P) of nt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                           Data.Map.Internal.Bin
+                             @ (Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.TypeName)
+                             @ a
+                             1#
+                             nt
+                               `cast`
+                             (Sym (Language.PureScript.Names.N:ProperName[0]
+                                       <'Language.PureScript.Names.TypeName>_P))
+                             x
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.TypeName)
+                                @ a)
+                             (Data.Map.Internal.Tip
+                                @ (Language.PureScript.Names.ProperName
+                                     'Language.PureScript.Names.TypeName)
+                                @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.TypeName>_P) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                           case ky
+                                  `cast`
+                                (Language.PureScript.Names.N:ProperName[0]
+                                     <'Language.PureScript.Names.TypeName>_P) of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                           case Data.Text.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 of wild4 {
+                             DEFAULT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$spoly_go5
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.TypeName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.TypeName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.TypeName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.TypeName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.TypeName)
+                                        @ a))
+                             GHC.Types.LT
+                             -> Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go5
+                                  @ a
+                                  ww4
+                                    `cast`
+                                  (Sym (Language.PureScript.Names.N:ProperName[0]
+                                            <'Language.PureScript.Names.TypeName>_P))
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ (Language.PureScript.Names.ProperName
+                                          'Language.PureScript.Names.TypeName)
+                                     @ a
+                                     1#
+                                     ww
+                                       `cast`
+                                     (Sym (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.TypeName>_P))
+                                     x
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.TypeName)
+                                        @ a)
+                                     (Data.Map.Internal.Tip
+                                        @ (Language.PureScript.Names.ProperName
+                                             'Language.PureScript.Names.TypeName)
+                                        @ a))
+                                  1# } } } } } } }) -}
+0798cbaa7b9ea3620f4c5309eb248049
+  $sfromList6 ::
+    [(Language.PureScript.Names.Name, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(Language.PureScript.Names.Name, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ Language.PureScript.Names.Name
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a)
+                             (Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case Language.PureScript.Names.$fOrdName_$ccompare kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Sugar.Names.$sfromList_$spoly_go6
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Name
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a)
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a)) }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Language.PureScript.Sugar.Names.$sfromList_$s$wpoly_go6
+                                  @ a
+                                  ky
+                                  ds3
+                                  ipv1
+                                  (Data.Map.Internal.Bin
+                                     @ Language.PureScript.Names.Name
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a)
+                                     (Data.Map.Internal.Tip @ Language.PureScript.Names.Name @ a))
+                                  1# } } } } } }) -}
+2d0067be9cbcdca8fd91afd919e65a87
+  $sfromList_$s$wpoly_go1 ::
+    Language.PureScript.Names.OpName
+      'Language.PureScript.Names.ValueOpName
+    -> a
+    -> [(Language.PureScript.Names.OpName
+           'Language.PureScript.Names.ValueOpName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a
+  {- Arity: 5, Strictness: <S,1*U(U,U,U)><L,U><S,1*U><S,1*U><L,U> -}
+074795d38ccd4648e1e597ce32f54568
+  $sfromList_$s$wpoly_go13 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.KindName
+    -> a
+    -> [(Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.KindName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a
+  {- Arity: 5, Strictness: <S,1*U(U,U,U)><L,U><S,1*U><S,1*U><L,U> -}
+6fddf28d0d7db8cdc620cafea4af06cd
+  $sfromList_$s$wpoly_go2 ::
+    Language.PureScript.Names.Ident
+    -> a
+    -> [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 5, Strictness: <S,U><L,U><S,1*U><S,1*U><L,U> -}
+0cdfc5bc40086d08a6b05570bf459808
+  $sfromList_$s$wpoly_go3 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.ClassName
+    -> a
+    -> [(Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.ClassName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a
+  {- Arity: 5, Strictness: <S,1*U(U,U,U)><L,U><S,1*U><S,1*U><L,U> -}
+0f8842dbedd8b6161e5f11721583c359
+  $sfromList_$s$wpoly_go4 ::
+    Language.PureScript.Names.OpName
+      'Language.PureScript.Names.TypeOpName
+    -> a
+    -> [(Language.PureScript.Names.OpName
+           'Language.PureScript.Names.TypeOpName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a
+  {- Arity: 5, Strictness: <S,1*U(U,U,U)><L,U><S,1*U><S,1*U><L,U> -}
+0dc7e5638036aeb6996cc22454b536ec
+  $sfromList_$s$wpoly_go5 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.TypeName
+    -> a
+    -> [(Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.TypeName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+  {- Arity: 5, Strictness: <S,1*U(U,U,U)><L,U><S,1*U><S,1*U><L,U> -}
+ff0aeebe4ee6e5b1538c1ee97181ff76
+  $sfromList_$s$wpoly_go6 ::
+    Language.PureScript.Names.Name
+    -> a
+    -> [(Language.PureScript.Names.Name, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+  {- Arity: 5, Strictness: <S,U><L,U><S,1*U><S,1*U><L,U> -}
+898d2ee4675a148848f94d92891aa15d
+  $sfromList_$spoly_go1 ::
+    Language.PureScript.Names.OpName
+      'Language.PureScript.Names.ValueOpName
+    -> a
+    -> [(Language.PureScript.Names.OpName
+           'Language.PureScript.Names.ValueOpName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a
+  {- Arity: 4, Strictness: <S(SSS),1*U(U,U,U)><L,U><S,1*U><S,1*U> -}
+894dbc0911e163f1dd50515b1c759080
+  $sfromList_$spoly_go14 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.KindName
+    -> a
+    -> [(Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.KindName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a
+  {- Arity: 4, Strictness: <S(SSS),1*U(U,U,U)><L,U><S,1*U><S,1*U> -}
+d06fcd6404b8f87a6b5b2f95137f7547
+  $sfromList_$spoly_go2 ::
+    Language.PureScript.Names.Ident
+    -> a
+    -> [(Language.PureScript.Names.Ident, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a
+  {- Arity: 4, Strictness: <S,U><L,U><S,1*U><S,1*U> -}
+8430b8c323b1375c88f0943e304b7361
+  $sfromList_$spoly_go3 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.ClassName
+    -> a
+    -> [(Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.ClassName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a
+  {- Arity: 4, Strictness: <S(SSS),1*U(U,U,U)><L,U><S,1*U><S,1*U> -}
+569fe2c8eca59e9ad58525a3434eed40
+  $sfromList_$spoly_go4 ::
+    Language.PureScript.Names.OpName
+      'Language.PureScript.Names.TypeOpName
+    -> a
+    -> [(Language.PureScript.Names.OpName
+           'Language.PureScript.Names.TypeOpName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a
+  {- Arity: 4, Strictness: <S(SSS),1*U(U,U,U)><L,U><S,1*U><S,1*U> -}
+0424b2d80d26150e6aa9f2e7c26e9024
+  $sfromList_$spoly_go5 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.TypeName
+    -> a
+    -> [(Language.PureScript.Names.ProperName
+           'Language.PureScript.Names.TypeName,
+         a)]
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a
+  {- Arity: 4, Strictness: <S(SSS),1*U(U,U,U)><L,U><S,1*U><S,1*U> -}
+4f7ff284842a749c85d1fdcfb8b98cc8
+  $sfromList_$spoly_go6 ::
+    Language.PureScript.Names.Name
+    -> a
+    -> [(Language.PureScript.Names.Name, a)]
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+  {- Arity: 4, Strictness: <S,U><L,U><S,1*U><S,1*U> -}
+b84a7c6875d41af4421247e11bb3a89a
+  $sinsertWith_$sgo13 ::
+    (a1 -> a1 -> a1)
+    -> Language.PureScript.Names.ModuleName
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 4, Strictness: <L,1*C1(C1(U))><S,1*U><L,U><S,1*U> -}
+89419fce1e18f07f74a5ce9524aeadfa
+  $sinsert_$sgo2 ::
+    Language.PureScript.Names.Ident
+    -> Language.PureScript.Names.Ident
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Ident a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+4345e8b58553ea0a2651df428c3def81
+  $sinsert_$sgo6 ::
+    Language.PureScript.Names.Name
+    -> Language.PureScript.Names.Name
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+34ac2af6fe1c846ed00e926e8c9fddd6
+  $sinsert_$sgo7 ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ModuleName
+    -> a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+e0aa8cd4934eb4af637f8193da0b58cb
+  $slookup15 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+642ee3c26885ec2a159632000d3c00be
+  $slookup17 ::
+    Language.PureScript.Names.Name
+    -> Data.Map.Internal.Map Language.PureScript.Names.Name a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+cdac1a9573c49dcc3351ac9a1e01c12d
+  $slookup_$s$wpoly_go1 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.KindName
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+384f0e5d882066baffae0451c45566df
+  $slookup_$s$wpoly_go10 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName))
+      a
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ((Data.Text.Internal.Text :: *)
+        ~R# (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.ClassName :: *)) =>
+       GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
+bdd5871a8d950e0eafa1de12fa3c6b40
+  $slookup_$s$wpoly_go11 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ConstructorName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ConstructorName
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
+fe7b54ec3a0ca3e8d182625b07680e82
+  $slookup_$s$wpoly_go12 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ConstructorName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ConstructorName
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+66030189e322f85dc5b931c54c8464ce
+  $slookup_$s$wpoly_go13 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.KindName
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
+f8deb2324c9ac66fe25a564c19c8443e
+  $slookup_$s$wpoly_go14 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ConstructorName))
+      a
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ((Data.Text.Internal.Text :: *)
+        ~R# (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.ConstructorName :: *)) =>
+       GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
+22c00b375b388f27bdee19303c9a65d0
+  $slookup_$s$wpoly_go15 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName))
+      a
+    -> Language.PureScript.Names.OpName
+         'Language.PureScript.Names.TypeOpName
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
+409c63292613e89d4eb840c12d3f5d5e
+  $slookup_$s$wpoly_go16 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName))
+      a
+    -> Language.PureScript.Names.OpName
+         'Language.PureScript.Names.TypeOpName
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+37d0ae35e2ce0c05a215b7ca9cc5faab
+  $slookup_$s$wpoly_go17 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName))
+      a
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ((Data.Text.Internal.Text :: *)
+        ~R# (Language.PureScript.Names.OpName
+               'Language.PureScript.Names.TypeOpName :: *)) =>
+       GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
+a6fb5bccc99649a66c275dcaa45737c5
+  $slookup_$s$wpoly_go18 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.TypeName
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
+9106d075ca3344f1c3f59ea70e2af3f0
+  $slookup_$s$wpoly_go19 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.TypeName
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+ebb76e82d7e4fca7c2033c3f751621b5
+  $slookup_$s$wpoly_go2 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName))
+      a
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ((Data.Text.Internal.Text :: *)
+        ~R# (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.KindName :: *)) =>
+       GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
+eb4d62e11abff011d3b18c9b7f01ad6a
+  $slookup_$s$wpoly_go20 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName))
+      a
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ((Data.Text.Internal.Text :: *)
+        ~R# (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.TypeName :: *)) =>
+       GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
+ded0e8957904c0143716a8133cf5ce24
+  $slookup_$s$wpoly_go3 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName))
+      a
+    -> Language.PureScript.Names.OpName
+         'Language.PureScript.Names.ValueOpName
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
+7fd54628197cbc5110b6207249bfdfdb
+  $slookup_$s$wpoly_go4 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName))
+      a
+    -> Language.PureScript.Names.OpName
+         'Language.PureScript.Names.ValueOpName
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+0321939f68a09030d6a63e18d31b4a3b
+  $slookup_$s$wpoly_go5 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName))
+      a
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ((Data.Text.Internal.Text :: *)
+        ~R# (Language.PureScript.Names.OpName
+               'Language.PureScript.Names.ValueOpName :: *)) =>
+       GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
+3d96d1623af7767681f1cbdf9ab9620d
+  $slookup_$s$wpoly_go6 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Ident)
+      [Language.PureScript.Sugar.Names.Env.ImportRecord
+         Language.PureScript.Names.Ident]
+    -> Language.PureScript.Names.Ident
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe
+         [Language.PureScript.Sugar.Names.Env.ImportRecord
+            Language.PureScript.Names.Ident]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U> -}
+d09351c1a282244f90e3941aaf6d6c77
+  $slookup_$s$wpoly_go7 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Ident)
+      [Language.PureScript.Sugar.Names.Env.ImportRecord
+         Language.PureScript.Names.Ident]
+    -> Language.PureScript.Names.Ident
+    -> GHC.Base.Maybe
+         [Language.PureScript.Sugar.Names.Env.ImportRecord
+            Language.PureScript.Names.Ident]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+f55118c635e98110d49d54ea398efcc4
+  $slookup_$s$wpoly_go8 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ClassName
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
+c4e2ad0ab0009c30d751b780f6c070dc
+  $slookup_$s$wpoly_go9 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName))
+      a
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ClassName
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
+90f570f383acc5613402a25d8cef7d34
+  $smember_go3 ::
+    Language.PureScript.Names.ModuleName
+    -> Data.Set.Internal.Set Language.PureScript.Names.ModuleName
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+35e5b2acf794adb261465eb8f69890e6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Sugar.Names.$trModule3
+                   Language.PureScript.Sugar.Names.$trModule1) -}
+c586fa88613e113eb1f9421660acbc6d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Sugar.Names.$trModule2) -}
+1382252d71dc479aa42ee7e80c5006c5
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Sugar.Names"#) -}
+0aac14b8ef4500c2ac2324569f57ed8d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Sugar.Names.$trModule4) -}
+cf6d17e6ca82df96293235c5bfd253a2
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+4fc05402c3e46483b6a314901ac112ef
+  $w$sgo1 ::
+    Language.PureScript.Names.OpName
+      'Language.PureScript.Names.ValueOpName
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.ValueOpName)
+         a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+ec8169ef708a61a731290c45d4c54c2c
+  $w$sgo13 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.KindName
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.KindName)
+         a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+4a62444b3b3e649723187506fa264d48
+  $w$sgo2 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.ClassName
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.ClassName)
+         a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+1296ef55812947b5998f2ae0b8759c20
+  $w$sgo3 ::
+    Language.PureScript.Names.OpName
+      'Language.PureScript.Names.TypeOpName
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.OpName
+            'Language.PureScript.Names.TypeOpName)
+         a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+d4718f4e29e573428e6ab43afc2b0572
+  $w$sgo4 ::
+    Language.PureScript.Names.ProperName
+      'Language.PureScript.Names.TypeName
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a1
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.ProperName
+            'Language.PureScript.Names.TypeName)
+         a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+b09a3c86c6bcf1e2c386ff4d16b4b3b9
+  $wpoly_go1 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.OpName
+         'Language.PureScript.Names.ValueOpName
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.OpName
+               'Language.PureScript.Names.ValueOpName))
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U)><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Base.Maybe Language.PureScript.Names.ModuleName)
+                   (ww1 :: Language.PureScript.Names.OpName
+                             'Language.PureScript.Names.ValueOpName)
+                   (w :: Data.Map.Internal.Map
+                           (Language.PureScript.Names.Qualified
+                              (Language.PureScript.Names.OpName
+                                 'Language.PureScript.Names.ValueOpName))
+                           a) ->
+                 case w of wild {
+                   Data.Map.Internal.Bin ipv ipv1 ipv2 ipv3 ipv4
+                   -> case ipv1 of ww3 { Language.PureScript.Names.Qualified ww4 ww5 ->
+                      case ww of wild1 {
+                        GHC.Base.Nothing
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> case ww1
+                                       `cast`
+                                     (Language.PureScript.Names.N:OpName[0]
+                                          <'Language.PureScript.Names.ValueOpName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                case ww5
+                                       `cast`
+                                     (Language.PureScript.Names.N:OpName[0]
+                                          <'Language.PureScript.Names.ValueOpName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                case Data.Text.$w$ccompare ww6 ww7 ww8 ww10 ww11 ww12 of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go5
+                                       @ a
+                                       ipv3
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:OpName[0]
+                                                    <'Language.PureScript.Names.ValueOpName>_P))
+                                  GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go5
+                                       @ a
+                                       ipv4
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:OpName[0]
+                                                    <'Language.PureScript.Names.ValueOpName>_P)) } } }
+                             GHC.Base.Just ipv7
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go4
+                                  @ a
+                                  ipv3
+                                  ww1 }
+                        GHC.Base.Just a2
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go3
+                                  @ a
+                                  ipv4
+                                  ww1
+                                  a2
+                             GHC.Base.Just b1
+                             -> case GHC.Classes.$fOrd[]_$ccompare
+                                       @ (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.Namespace)
+                                       (Language.PureScript.Names.$fOrdProperName
+                                          @ 'Language.PureScript.Names.Namespace)
+                                       a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                       b1
+                                         `cast`
+                                       (Language.PureScript.Names.N:ModuleName[0]) of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go3
+                                       @ a
+                                       ipv3
+                                       ww1
+                                       a2
+                                  GHC.Types.EQ
+                                  -> case ww1
+                                            `cast`
+                                          (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.ValueOpName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                     case ww5
+                                            `cast`
+                                          (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.ValueOpName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                     case Data.Text.$w$ccompare
+                                            ww6
+                                            ww7
+                                            ww8
+                                            ww10
+                                            ww11
+                                            ww12 of wild4 {
+                                       GHC.Types.LT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go3
+                                            @ a
+                                            ipv3
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:OpName[0]
+                                                      <'Language.PureScript.Names.ValueOpName>_P))
+                                            a2
+                                       GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                       GHC.Types.GT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go3
+                                            @ a
+                                            ipv4
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:OpName[0]
+                                                      <'Language.PureScript.Names.ValueOpName>_P))
+                                            a2 } } }
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go3
+                                       @ a
+                                       ipv4
+                                       ww1
+                                       a2 } } } }
+                   Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
+f167137f77a87292b295cf6b67097083
+  $wpoly_go13 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.KindName
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.KindName))
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U)><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Base.Maybe Language.PureScript.Names.ModuleName)
+                   (ww1 :: Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.KindName)
+                   (w :: Data.Map.Internal.Map
+                           (Language.PureScript.Names.Qualified
+                              (Language.PureScript.Names.ProperName
+                                 'Language.PureScript.Names.KindName))
+                           a) ->
+                 case w of wild {
+                   Data.Map.Internal.Bin ipv ipv1 ipv2 ipv3 ipv4
+                   -> case ipv1 of ww3 { Language.PureScript.Names.Qualified ww4 ww5 ->
+                      case ww of wild1 {
+                        GHC.Base.Nothing
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> case ww1
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.KindName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                case ww5
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.KindName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                case Data.Text.$w$ccompare ww6 ww7 ww8 ww10 ww11 ww12 of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go2
+                                       @ a
+                                       ipv3
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.KindName>_P))
+                                  GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go2
+                                       @ a
+                                       ipv4
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.KindName>_P)) } } }
+                             GHC.Base.Just ipv7
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go1
+                                  @ a
+                                  ipv3
+                                  ww1 }
+                        GHC.Base.Just a2
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go13
+                                  @ a
+                                  ipv4
+                                  ww1
+                                  a2
+                             GHC.Base.Just b1
+                             -> case GHC.Classes.$fOrd[]_$ccompare
+                                       @ (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.Namespace)
+                                       (Language.PureScript.Names.$fOrdProperName
+                                          @ 'Language.PureScript.Names.Namespace)
+                                       a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                       b1
+                                         `cast`
+                                       (Language.PureScript.Names.N:ModuleName[0]) of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go13
+                                       @ a
+                                       ipv3
+                                       ww1
+                                       a2
+                                  GHC.Types.EQ
+                                  -> case ww1
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.KindName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                     case ww5
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.KindName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                     case Data.Text.$w$ccompare
+                                            ww6
+                                            ww7
+                                            ww8
+                                            ww10
+                                            ww11
+                                            ww12 of wild4 {
+                                       GHC.Types.LT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go13
+                                            @ a
+                                            ipv3
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.KindName>_P))
+                                            a2
+                                       GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                       GHC.Types.GT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go13
+                                            @ a
+                                            ipv4
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.KindName>_P))
+                                            a2 } } }
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go13
+                                       @ a
+                                       ipv4
+                                       ww1
+                                       a2 } } } }
+                   Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
+78f3df2152b3c8c63bf68c3ed1b3246a
+  $wpoly_go2 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.Ident
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            Language.PureScript.Names.Ident)
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><L,U><S,1*U>,
+     Inline: [0] -}
+feec9321a95696673349f8daf8a636eb
+  $wpoly_go3 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ClassName
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.ClassName))
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U)><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Base.Maybe Language.PureScript.Names.ModuleName)
+                   (ww1 :: Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.ClassName)
+                   (w :: Data.Map.Internal.Map
+                           (Language.PureScript.Names.Qualified
+                              (Language.PureScript.Names.ProperName
+                                 'Language.PureScript.Names.ClassName))
+                           a) ->
+                 case w of wild {
+                   Data.Map.Internal.Bin ipv ipv1 ipv2 ipv3 ipv4
+                   -> case ipv1 of ww3 { Language.PureScript.Names.Qualified ww4 ww5 ->
+                      case ww of wild1 {
+                        GHC.Base.Nothing
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> case ww1
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.ClassName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                case ww5
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.ClassName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                case Data.Text.$w$ccompare ww6 ww7 ww8 ww10 ww11 ww12 of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go10
+                                       @ a
+                                       ipv3
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.ClassName>_P))
+                                  GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go10
+                                       @ a
+                                       ipv4
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.ClassName>_P)) } } }
+                             GHC.Base.Just ipv7
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go9
+                                  @ a
+                                  ipv3
+                                  ww1 }
+                        GHC.Base.Just a2
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go8
+                                  @ a
+                                  ipv4
+                                  ww1
+                                  a2
+                             GHC.Base.Just b1
+                             -> case GHC.Classes.$fOrd[]_$ccompare
+                                       @ (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.Namespace)
+                                       (Language.PureScript.Names.$fOrdProperName
+                                          @ 'Language.PureScript.Names.Namespace)
+                                       a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                       b1
+                                         `cast`
+                                       (Language.PureScript.Names.N:ModuleName[0]) of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go8
+                                       @ a
+                                       ipv3
+                                       ww1
+                                       a2
+                                  GHC.Types.EQ
+                                  -> case ww1
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.ClassName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                     case ww5
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.ClassName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                     case Data.Text.$w$ccompare
+                                            ww6
+                                            ww7
+                                            ww8
+                                            ww10
+                                            ww11
+                                            ww12 of wild4 {
+                                       GHC.Types.LT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go8
+                                            @ a
+                                            ipv3
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.ClassName>_P))
+                                            a2
+                                       GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                       GHC.Types.GT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go8
+                                            @ a
+                                            ipv4
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.ClassName>_P))
+                                            a2 } } }
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go8
+                                       @ a
+                                       ipv4
+                                       ww1
+                                       a2 } } } }
+                   Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
+ac8837230de9f7aaf223ba86bc1084e4
+  $wpoly_go4 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.ConstructorName
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.ConstructorName))
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U)><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Base.Maybe Language.PureScript.Names.ModuleName)
+                   (ww1 :: Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.ConstructorName)
+                   (w :: Data.Map.Internal.Map
+                           (Language.PureScript.Names.Qualified
+                              (Language.PureScript.Names.ProperName
+                                 'Language.PureScript.Names.ConstructorName))
+                           a) ->
+                 case w of wild {
+                   Data.Map.Internal.Bin ipv ipv1 ipv2 ipv3 ipv4
+                   -> case ipv1 of ww3 { Language.PureScript.Names.Qualified ww4 ww5 ->
+                      case ww of wild1 {
+                        GHC.Base.Nothing
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> case ww1
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.ConstructorName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                case ww5
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.ConstructorName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                case Data.Text.$w$ccompare ww6 ww7 ww8 ww10 ww11 ww12 of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go14
+                                       @ a
+                                       ipv3
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.ConstructorName>_P))
+                                  GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go14
+                                       @ a
+                                       ipv4
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.ConstructorName>_P)) } } }
+                             GHC.Base.Just ipv7
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go12
+                                  @ a
+                                  ipv3
+                                  ww1 }
+                        GHC.Base.Just a2
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go11
+                                  @ a
+                                  ipv4
+                                  ww1
+                                  a2
+                             GHC.Base.Just b1
+                             -> case GHC.Classes.$fOrd[]_$ccompare
+                                       @ (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.Namespace)
+                                       (Language.PureScript.Names.$fOrdProperName
+                                          @ 'Language.PureScript.Names.Namespace)
+                                       a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                       b1
+                                         `cast`
+                                       (Language.PureScript.Names.N:ModuleName[0]) of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go11
+                                       @ a
+                                       ipv3
+                                       ww1
+                                       a2
+                                  GHC.Types.EQ
+                                  -> case ww1
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.ConstructorName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                     case ww5
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.ConstructorName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                     case Data.Text.$w$ccompare
+                                            ww6
+                                            ww7
+                                            ww8
+                                            ww10
+                                            ww11
+                                            ww12 of wild4 {
+                                       GHC.Types.LT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go11
+                                            @ a
+                                            ipv3
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.ConstructorName>_P))
+                                            a2
+                                       GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                       GHC.Types.GT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go11
+                                            @ a
+                                            ipv4
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.ConstructorName>_P))
+                                            a2 } } }
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go11
+                                       @ a
+                                       ipv4
+                                       ww1
+                                       a2 } } } }
+                   Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
+db980276c114f0cb95bfe5f3f6b53c49
+  $wpoly_go5 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.OpName
+         'Language.PureScript.Names.TypeOpName
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.OpName
+               'Language.PureScript.Names.TypeOpName))
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U)><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Base.Maybe Language.PureScript.Names.ModuleName)
+                   (ww1 :: Language.PureScript.Names.OpName
+                             'Language.PureScript.Names.TypeOpName)
+                   (w :: Data.Map.Internal.Map
+                           (Language.PureScript.Names.Qualified
+                              (Language.PureScript.Names.OpName
+                                 'Language.PureScript.Names.TypeOpName))
+                           a) ->
+                 case w of wild {
+                   Data.Map.Internal.Bin ipv ipv1 ipv2 ipv3 ipv4
+                   -> case ipv1 of ww3 { Language.PureScript.Names.Qualified ww4 ww5 ->
+                      case ww of wild1 {
+                        GHC.Base.Nothing
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> case ww1
+                                       `cast`
+                                     (Language.PureScript.Names.N:OpName[0]
+                                          <'Language.PureScript.Names.TypeOpName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                case ww5
+                                       `cast`
+                                     (Language.PureScript.Names.N:OpName[0]
+                                          <'Language.PureScript.Names.TypeOpName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                case Data.Text.$w$ccompare ww6 ww7 ww8 ww10 ww11 ww12 of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go17
+                                       @ a
+                                       ipv3
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:OpName[0]
+                                                    <'Language.PureScript.Names.TypeOpName>_P))
+                                  GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go17
+                                       @ a
+                                       ipv4
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:OpName[0]
+                                                    <'Language.PureScript.Names.TypeOpName>_P)) } } }
+                             GHC.Base.Just ipv7
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go16
+                                  @ a
+                                  ipv3
+                                  ww1 }
+                        GHC.Base.Just a2
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go15
+                                  @ a
+                                  ipv4
+                                  ww1
+                                  a2
+                             GHC.Base.Just b1
+                             -> case GHC.Classes.$fOrd[]_$ccompare
+                                       @ (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.Namespace)
+                                       (Language.PureScript.Names.$fOrdProperName
+                                          @ 'Language.PureScript.Names.Namespace)
+                                       a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                       b1
+                                         `cast`
+                                       (Language.PureScript.Names.N:ModuleName[0]) of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go15
+                                       @ a
+                                       ipv3
+                                       ww1
+                                       a2
+                                  GHC.Types.EQ
+                                  -> case ww1
+                                            `cast`
+                                          (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.TypeOpName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                     case ww5
+                                            `cast`
+                                          (Language.PureScript.Names.N:OpName[0]
+                                               <'Language.PureScript.Names.TypeOpName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                     case Data.Text.$w$ccompare
+                                            ww6
+                                            ww7
+                                            ww8
+                                            ww10
+                                            ww11
+                                            ww12 of wild4 {
+                                       GHC.Types.LT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go15
+                                            @ a
+                                            ipv3
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:OpName[0]
+                                                      <'Language.PureScript.Names.TypeOpName>_P))
+                                            a2
+                                       GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                       GHC.Types.GT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go15
+                                            @ a
+                                            ipv4
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:OpName[0]
+                                                      <'Language.PureScript.Names.TypeOpName>_P))
+                                            a2 } } }
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go15
+                                       @ a
+                                       ipv4
+                                       ww1
+                                       a2 } } } }
+                   Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
+679ed6bf1d9324e6df3e7abeb8bba1e8
+  $wpoly_go6 ::
+    GHC.Base.Maybe Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Names.ProperName
+         'Language.PureScript.Names.TypeName
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            (Language.PureScript.Names.ProperName
+               'Language.PureScript.Names.TypeName))
+         a
+    -> GHC.Base.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U)><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Base.Maybe Language.PureScript.Names.ModuleName)
+                   (ww1 :: Language.PureScript.Names.ProperName
+                             'Language.PureScript.Names.TypeName)
+                   (w :: Data.Map.Internal.Map
+                           (Language.PureScript.Names.Qualified
+                              (Language.PureScript.Names.ProperName
+                                 'Language.PureScript.Names.TypeName))
+                           a) ->
+                 case w of wild {
+                   Data.Map.Internal.Bin ipv ipv1 ipv2 ipv3 ipv4
+                   -> case ipv1 of ww3 { Language.PureScript.Names.Qualified ww4 ww5 ->
+                      case ww of wild1 {
+                        GHC.Base.Nothing
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> case ww1
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.TypeName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                case ww5
+                                       `cast`
+                                     (Language.PureScript.Names.N:ProperName[0]
+                                          <'Language.PureScript.Names.TypeName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                case Data.Text.$w$ccompare ww6 ww7 ww8 ww10 ww11 ww12 of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go20
+                                       @ a
+                                       ipv3
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.TypeName>_P))
+                                  GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go20
+                                       @ a
+                                       ipv4
+                                       ww6
+                                       ww7
+                                       ww8
+                                       @~ (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                    <'Language.PureScript.Names.TypeName>_P)) } } }
+                             GHC.Base.Just ipv7
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go19
+                                  @ a
+                                  ipv3
+                                  ww1 }
+                        GHC.Base.Just a2
+                        -> case ww4 of wild2 {
+                             GHC.Base.Nothing
+                             -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go18
+                                  @ a
+                                  ipv4
+                                  ww1
+                                  a2
+                             GHC.Base.Just b1
+                             -> case GHC.Classes.$fOrd[]_$ccompare
+                                       @ (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.Namespace)
+                                       (Language.PureScript.Names.$fOrdProperName
+                                          @ 'Language.PureScript.Names.Namespace)
+                                       a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                       b1
+                                         `cast`
+                                       (Language.PureScript.Names.N:ModuleName[0]) of wild3 {
+                                  GHC.Types.LT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go18
+                                       @ a
+                                       ipv3
+                                       ww1
+                                       a2
+                                  GHC.Types.EQ
+                                  -> case ww1
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.TypeName>_P) of ww2 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                                     case ww5
+                                            `cast`
+                                          (Language.PureScript.Names.N:ProperName[0]
+                                               <'Language.PureScript.Names.TypeName>_P) of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                                     case Data.Text.$w$ccompare
+                                            ww6
+                                            ww7
+                                            ww8
+                                            ww10
+                                            ww11
+                                            ww12 of wild4 {
+                                       GHC.Types.LT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go18
+                                            @ a
+                                            ipv3
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.TypeName>_P))
+                                            a2
+                                       GHC.Types.EQ -> GHC.Base.Just @ a ipv2
+                                       GHC.Types.GT
+                                       -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go18
+                                            @ a
+                                            ipv4
+                                            ww2
+                                              `cast`
+                                            (Sym (Language.PureScript.Names.N:ProperName[0]
+                                                      <'Language.PureScript.Names.TypeName>_P))
+                                            a2 } } }
+                                  GHC.Types.GT
+                                  -> Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go18
+                                       @ a
+                                       ipv4
+                                       ww1
+                                       a2 } } } }
+                   Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
+5a73e592af9dff97d672d282a7d5ea95
+  desugarImports ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.Writer.Class.MonadWriter
+       Language.PureScript.Errors.MultipleErrors m) =>
+    [Language.PureScript.Externs.ExternsFile]
+    -> [Language.PureScript.AST.Declarations.Module]
+    -> m [Language.PureScript.AST.Declarations.Module]
+  {- Arity: 4,
+     Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LL),U(U(U(U(C(C(U)),C(C1(U))),C(U),A,C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,C(U)),C(U),C(C1(U)))><L,U(U,U(U(U(C(C1(U)),A),C(U),A,C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,C(U)),C(U),C(U),C(U),C(U))><L,U><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      Language.PureScript.Errors.MultipleErrors m)
+                   ($dMonadWriter :: Control.Monad.Writer.Class.MonadWriter
+                                       Language.PureScript.Errors.MultipleErrors m)
+                   (eta :: [Language.PureScript.Externs.ExternsFile])
+                   (eta1 :: [Language.PureScript.AST.Declarations.Module]) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative
+                      @ m
+                      (GHC.Base.$p1Monad
+                         @ m
+                         (Control.Monad.Error.Class.$p1MonadError
+                            @ Language.PureScript.Errors.MultipleErrors
+                            @ m
+                            $dMonadError)))
+                   @ (Language.PureScript.Sugar.Names.Env.Env,
+                      [Language.PureScript.AST.Declarations.Module])
+                   @ [Language.PureScript.AST.Declarations.Module]
+                   (Data.Tuple.snd
+                      @ Language.PureScript.Sugar.Names.Env.Env
+                      @ [Language.PureScript.AST.Declarations.Module])
+                   (Language.PureScript.Sugar.Names.desugarImportsWithEnv
+                      @ m
+                      $dMonadError
+                      $dMonadWriter
+                      eta
+                      eta1)) -}
+fdaa1234b6047d99f3e717eb943ef63a
+  desugarImportsWithEnv ::
+    (Control.Monad.Error.Class.MonadError
+       Language.PureScript.Errors.MultipleErrors m,
+     Control.Monad.Writer.Class.MonadWriter
+       Language.PureScript.Errors.MultipleErrors m) =>
+    [Language.PureScript.Externs.ExternsFile]
+    -> [Language.PureScript.AST.Declarations.Module]
+    -> m (Language.PureScript.Sugar.Names.Env.Env,
+          [Language.PureScript.AST.Declarations.Module])
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U(C(C(U)),C(C1(U))),C(U),A,C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,C(U)),C(U),C(C1(U)))><L,U(U,U(U(U(C(C1(U)),A),C(U),A,C(C1(C1(U))),C(C1(U)),A),C(C1(U)),C(C1(U)),U,C(U)),C(U),C(U),C(U),C(U))> -}
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.KindName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.KindName)
+  Language.PureScript.Sugar.Names.$wpoly_go13 @ a
+                                              (GHC.Base.Nothing
+                                                 @ Language.PureScript.Names.ModuleName)
+                                              sc1
+                                              sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go1 @ a sc sc1
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.OpName
+                                            'Language.PureScript.Names.ValueOpName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.OpName
+                                       'Language.PureScript.Names.ValueOpName)
+  Language.PureScript.Sugar.Names.$wpoly_go1 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go4 @ a sc sc1
+"SC:$wpoly_go130" [0] forall (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         Language.PureScript.Names.Ident)
+                                      [Language.PureScript.Sugar.Names.Env.ImportRecord
+                                         Language.PureScript.Names.Ident])
+                             (sc1 :: Language.PureScript.Names.Ident)
+  Language.PureScript.Sugar.Names.$wpoly_go2 @ [Language.PureScript.Sugar.Names.Env.ImportRecord
+                                                  Language.PureScript.Names.Ident]
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go7 sc sc1
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.ClassName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.ClassName)
+  Language.PureScript.Sugar.Names.$wpoly_go3 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go9 @ a sc sc1
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.ConstructorName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.ConstructorName)
+  Language.PureScript.Sugar.Names.$wpoly_go4 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go12 @ a sc sc1
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.OpName
+                                            'Language.PureScript.Names.TypeOpName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.OpName
+                                       'Language.PureScript.Names.TypeOpName)
+  Language.PureScript.Sugar.Names.$wpoly_go5 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go16 @ a sc sc1
+"SC:$wpoly_go130" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.TypeName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.TypeName)
+  Language.PureScript.Sugar.Names.$wpoly_go6 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go19 @ a sc sc1
+"SC:$wpoly_go131" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.KindName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.KindName)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go13 @ a
+                                              (GHC.Base.Just
+                                                 @ Language.PureScript.Names.ModuleName
+                                                 sc2)
+                                              sc1
+                                              sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go13
+      @ a
+      sc
+      sc1
+      sc2
+"SC:$wpoly_go131" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.OpName
+                                            'Language.PureScript.Names.ValueOpName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.OpName
+                                       'Language.PureScript.Names.ValueOpName)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go1 @ a
+                                             (GHC.Base.Just
+                                                @ Language.PureScript.Names.ModuleName
+                                                sc2)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go3
+      @ a
+      sc
+      sc1
+      sc2
+"SC:$wpoly_go131" [0] forall (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         Language.PureScript.Names.Ident)
+                                      [Language.PureScript.Sugar.Names.Env.ImportRecord
+                                         Language.PureScript.Names.Ident])
+                             (sc1 :: Language.PureScript.Names.Ident)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go2 @ [Language.PureScript.Sugar.Names.Env.ImportRecord
+                                                  Language.PureScript.Names.Ident]
+                                             (GHC.Base.Just
+                                                @ Language.PureScript.Names.ModuleName
+                                                sc2)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go6 sc sc1 sc2
+"SC:$wpoly_go131" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.ClassName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.ClassName)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go3 @ a
+                                             (GHC.Base.Just
+                                                @ Language.PureScript.Names.ModuleName
+                                                sc2)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go8
+      @ a
+      sc
+      sc1
+      sc2
+"SC:$wpoly_go131" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.ConstructorName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.ConstructorName)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go4 @ a
+                                             (GHC.Base.Just
+                                                @ Language.PureScript.Names.ModuleName
+                                                sc2)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go11
+      @ a
+      sc
+      sc1
+      sc2
+"SC:$wpoly_go131" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.OpName
+                                            'Language.PureScript.Names.TypeOpName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.OpName
+                                       'Language.PureScript.Names.TypeOpName)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go5 @ a
+                                             (GHC.Base.Just
+                                                @ Language.PureScript.Names.ModuleName
+                                                sc2)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go15
+      @ a
+      sc
+      sc1
+      sc2
+"SC:$wpoly_go131" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.TypeName))
+                                      a)
+                             (sc1 :: Language.PureScript.Names.ProperName
+                                       'Language.PureScript.Names.TypeName)
+                             (sc2 :: Language.PureScript.Names.ModuleName)
+  Language.PureScript.Sugar.Names.$wpoly_go6 @ a
+                                             (GHC.Base.Just
+                                                @ Language.PureScript.Names.ModuleName
+                                                sc2)
+                                             sc1
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go18
+      @ a
+      sc
+      sc1
+      sc2
+"SC:$wpoly_go132" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.KindName))
+                                      a)
+                             (sc1 :: GHC.Prim.ByteArray#)
+                             (sc2 :: GHC.Prim.Int#)
+                             (sc3 :: GHC.Prim.Int#)
+                             (sg :: (Data.Text.Internal.Text :: *)
+                                    ~R# (Language.PureScript.Names.ProperName
+                                           'Language.PureScript.Names.KindName :: *))
+  Language.PureScript.Sugar.Names.$wpoly_go13 @ a
+                                              (GHC.Base.Nothing
+                                                 @ Language.PureScript.Names.ModuleName)
+                                              (Data.Text.Internal.Text sc1 sc2 sc3) `cast` sg
+                                              sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go2
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      @~ sg
+"SC:$wpoly_go132" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.OpName
+                                            'Language.PureScript.Names.ValueOpName))
+                                      a)
+                             (sc1 :: GHC.Prim.ByteArray#)
+                             (sc2 :: GHC.Prim.Int#)
+                             (sc3 :: GHC.Prim.Int#)
+                             (sg :: (Data.Text.Internal.Text :: *)
+                                    ~R# (Language.PureScript.Names.OpName
+                                           'Language.PureScript.Names.ValueOpName :: *))
+  Language.PureScript.Sugar.Names.$wpoly_go1 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             (Data.Text.Internal.Text sc1 sc2 sc3) `cast` sg
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go5
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      @~ sg
+"SC:$wpoly_go132" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.ClassName))
+                                      a)
+                             (sc1 :: GHC.Prim.ByteArray#)
+                             (sc2 :: GHC.Prim.Int#)
+                             (sc3 :: GHC.Prim.Int#)
+                             (sg :: (Data.Text.Internal.Text :: *)
+                                    ~R# (Language.PureScript.Names.ProperName
+                                           'Language.PureScript.Names.ClassName :: *))
+  Language.PureScript.Sugar.Names.$wpoly_go3 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             (Data.Text.Internal.Text sc1 sc2 sc3) `cast` sg
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go10
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      @~ sg
+"SC:$wpoly_go132" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.ConstructorName))
+                                      a)
+                             (sc1 :: GHC.Prim.ByteArray#)
+                             (sc2 :: GHC.Prim.Int#)
+                             (sc3 :: GHC.Prim.Int#)
+                             (sg :: (Data.Text.Internal.Text :: *)
+                                    ~R# (Language.PureScript.Names.ProperName
+                                           'Language.PureScript.Names.ConstructorName :: *))
+  Language.PureScript.Sugar.Names.$wpoly_go4 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             (Data.Text.Internal.Text sc1 sc2 sc3) `cast` sg
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go14
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      @~ sg
+"SC:$wpoly_go132" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.OpName
+                                            'Language.PureScript.Names.TypeOpName))
+                                      a)
+                             (sc1 :: GHC.Prim.ByteArray#)
+                             (sc2 :: GHC.Prim.Int#)
+                             (sc3 :: GHC.Prim.Int#)
+                             (sg :: (Data.Text.Internal.Text :: *)
+                                    ~R# (Language.PureScript.Names.OpName
+                                           'Language.PureScript.Names.TypeOpName :: *))
+  Language.PureScript.Sugar.Names.$wpoly_go5 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             (Data.Text.Internal.Text sc1 sc2 sc3) `cast` sg
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go17
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      @~ sg
+"SC:$wpoly_go132" [0] forall @ a
+                             (sc :: Data.Map.Internal.Map
+                                      (Language.PureScript.Names.Qualified
+                                         (Language.PureScript.Names.ProperName
+                                            'Language.PureScript.Names.TypeName))
+                                      a)
+                             (sc1 :: GHC.Prim.ByteArray#)
+                             (sc2 :: GHC.Prim.Int#)
+                             (sc3 :: GHC.Prim.Int#)
+                             (sg :: (Data.Text.Internal.Text :: *)
+                                    ~R# (Language.PureScript.Names.ProperName
+                                           'Language.PureScript.Names.TypeName :: *))
+  Language.PureScript.Sugar.Names.$wpoly_go6 @ a
+                                             (GHC.Base.Nothing
+                                                @ Language.PureScript.Names.ModuleName)
+                                             (Data.Text.Internal.Text sc1 sc2 sc3) `cast` sg
+                                             sc
+  = Language.PureScript.Sugar.Names.$slookup_$s$wpoly_go20
+      @ a
+      sc
+      sc1
+      sc2
+      sc3
+      @~ sg
+"SPEC/Language.PureScript.Sugar.Names fromList @ (OpName
+                                                   'TypeOpName) _" [orphan] forall @ a
+                                                                                                                                            ($dOrd :: GHC.Classes.Ord
+                                                                                                                                                        (Language.PureScript.Names.OpName
+                                                                                                                                                           'Language.PureScript.Names.TypeOpName))
+  Data.Map.Internal.fromList @ (Language.PureScript.Names.OpName
+                                  'Language.PureScript.Names.TypeOpName)
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList4 @ a
+"SPEC/Language.PureScript.Sugar.Names fromList @ (OpName
+                                                   'ValueOpName) _" [orphan] forall @ a
+                                                                                                                                             ($dOrd :: GHC.Classes.Ord
+                                                                                                                                                         (Language.PureScript.Names.OpName
+                                                                                                                                                            'Language.PureScript.Names.ValueOpName))
+  Data.Map.Internal.fromList @ (Language.PureScript.Names.OpName
+                                  'Language.PureScript.Names.ValueOpName)
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList1 @ a
+"SPEC/Language.PureScript.Sugar.Names fromList @ (ProperName
+                                                   'ClassName) _" [orphan] forall @ a
+                                                                                                                                               ($dOrd :: GHC.Classes.Ord
+                                                                                                                                                           (Language.PureScript.Names.ProperName
+                                                                                                                                                              'Language.PureScript.Names.ClassName))
+  Data.Map.Internal.fromList @ (Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.ClassName)
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList3 @ a
+"SPEC/Language.PureScript.Sugar.Names fromList @ (ProperName
+                                                   'KindName) _" [orphan] forall @ a
+                                                                                                                                              ($dOrd :: GHC.Classes.Ord
+                                                                                                                                                          (Language.PureScript.Names.ProperName
+                                                                                                                                                             'Language.PureScript.Names.KindName))
+  Data.Map.Internal.fromList @ (Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.KindName)
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList @ a
+"SPEC/Language.PureScript.Sugar.Names fromList @ (ProperName
+                                                   'TypeName) _" [orphan] forall @ a
+                                                                                                                                              ($dOrd :: GHC.Classes.Ord
+                                                                                                                                                          (Language.PureScript.Names.ProperName
+                                                                                                                                                             'Language.PureScript.Names.TypeName))
+  Data.Map.Internal.fromList @ (Language.PureScript.Names.ProperName
+                                  'Language.PureScript.Names.TypeName)
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList5 @ a
+"SPEC/Language.PureScript.Sugar.Names fromList @ Ident _" [orphan] forall @ a
+                                                                          ($dOrd :: GHC.Classes.Ord
+                                                                                      Language.PureScript.Names.Ident)
+  Data.Map.Internal.fromList @ Language.PureScript.Names.Ident
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList2 @ a
+"SPEC/Language.PureScript.Sugar.Names fromList @ Name _" [orphan] forall @ a
+                                                                         ($dOrd :: GHC.Classes.Ord
+                                                                                     Language.PureScript.Names.Name)
+  Data.Map.Internal.fromList @ Language.PureScript.Names.Name
+                             @ a
+                             $dOrd
+  = Language.PureScript.Sugar.Names.$sfromList6 @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

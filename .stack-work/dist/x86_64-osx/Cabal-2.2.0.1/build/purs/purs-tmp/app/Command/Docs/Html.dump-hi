@@ -1,0 +1,1900 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:31:29.816563 UTC
+
+interface main:Command.Docs.Html 8043
+  interface hash: 938af2a889476fbc3bd353ac7404ee3d
+  ABI hash: 4428cca42d016d89772111ffb4899c3d
+  export-list hash: 43760124a4aa61d043f3947dae846e1e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 20697b2dec9d7bb2dbf4b2a576360b66
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Command.Docs.Html.asHtml
+  Command.Docs.Html.layout
+  Command.Docs.Html.writeHtmlModule
+  Command.Docs.Html.writeHtmlModules
+module dependencies: Paths_purescript Version
+package dependencies: Glob-0.9.2 aeson-1.3.1.1
+                      aeson-better-errors-0.9.1.0 ansi-terminal-0.8.0.4 array-0.5.2.0
+                      async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4
+                      binary-0.8.5.1 blaze-builder-0.4.1.0 blaze-html-0.9.1.1
+                      blaze-markup-0.8.2.1 bower-json-1.0.0.1 boxes-0.1.5
+                      bytestring-0.10.8.2 cheapskate-0.1.1 colour-2.3.4
+                      containers-0.5.11.0 css-text-0.1.3.0 data-default-0.7.1.1
+                      data-default-class-0.1.2.0 data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 data-ordlist-0.4.7.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 file-embed-0.0.10.1
+                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
+                      microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
+                      monad-control-1.0.2.3 mtl-2.2.2 network-uri-2.6.1.0
+                      old-locale-1.0.0.7 parallel-3.2.1.1 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 purescript-0.12.1 random-1.1 safe-0.3.17
+                      scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0
+                      stringsearch-0.3.6.6 syb-0.7 tagged-0.8.5 tagsoup-0.14.6
+                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
+                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 uniplate-1.6.12 unix-2.7.2.2
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1 xss-sanitize-0.3.6
+orphans: cheapskate-0.1.1:Cheapskate
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         uniplate-1.6.12:Data.Generics.Uniplate.Data
+         syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic text-1.2.3.0:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         bower-json-1.0.0.1:Web.Bower.PackageMeta.Internal
+                         cheapskate-0.1.1:Cheapskate.Types containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1:Control.Monad.Logger
+                         purescript-0.12.1:Language.PureScript.AST.Declarations
+                         purescript-0.12.1:Language.PureScript.AST.Operators
+                         purescript-0.12.1:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.1:Language.PureScript.Docs.Types
+                         purescript-0.12.1:Language.PureScript.Environment
+                         purescript-0.12.1:Language.PureScript.Kinds
+                         purescript-0.12.1:Language.PureScript.Label
+                         purescript-0.12.1:Language.PureScript.Make.Monad
+                         purescript-0.12.1:Language.PureScript.Names
+                         purescript-0.12.1:Language.PureScript.PSString
+                         purescript-0.12.1:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  Glob-0.9.2:System.FilePath.Glob 8625fdb96b8fcebd81114734e6844e2a
+import  -/  Glob-0.9.2:System.FilePath.Glob.Directory d42249ffcaa5351009a12b5db988f46f
+import  -/  base-4.11.1.0:Control.Applicative 55d9b3a7491623b0362290e162d67308
+import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.List 83dc843e47bfc0c5af51e19c6f3476d5
+import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html 987774b84440e0b0caf7ed1c6bbb9e89
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html.Renderer.Text 79fdcb2acbf457a085f7226dc0fdfd1f
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html5 56f4a271c220d3536adfa3fb19fe90bd
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html5.Attributes 99fe12b019c4f76838f500eeebf341e7
+import  -/  blaze-markup-0.8.2.1:Text.Blaze ce47656392c1274369c4af48179cbff9
+import  -/  blaze-markup-0.8.2.1:Text.Blaze.Internal 1eb704f9e0aaeb62fcb84cf9f0c7c699
+import  -/  directory-1.3.1.5:System.Directory bc76216f25ffcaf1c91b529f41ea3bf7
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Version 205fea00a01db65586a821f67bb0721e
+  exports: 9173b8f45d2fe9b164fef8a6ae3d10ed
+  versionString 902d0ca5f6b0f62111482446f57f31b5
+import  -/  mtl-2.2.2:Control.Monad.Writer b86905dc6b5d4d3a09dfa93d3ac3bb98
+import  -/  purescript-0.12.1:Language.PureScript 055283757289375c92e0f1e11d744c0e
+import  -/  purescript-0.12.1:Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
+import  -/  purescript-0.12.1:Language.PureScript.Docs 46c76393ed10ce047f1ff7fc97c85af9
+import  -/  purescript-0.12.1:Language.PureScript.Docs.AsHtml d6ccb9fe5d7b7534c07fe4dfb4212876
+import  -/  purescript-0.12.1:Language.PureScript.Docs.Css e5c9ed400df763d83cef184bef69c1ba
+import  -/  purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types 043476f1219ebaba7bef38f3035bc7df
+import  -/  purescript-0.12.1:Language.PureScript.Docs.Types f3dabfa61d83d3270ed9cf5a3f1e8614
+import  -/  purescript-0.12.1:Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+import  -/  purescript-0.12.1:System.IO.UTF8 750082717040f0844ba6a864b87f2d07
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+import  -/  text-1.2.3.0:Data.Text.Lazy e275f9e261def5ef9a77f6818730405e
+import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
+bdd98825b06c4aac13dc7e46fa7e81e4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Command.Docs.Html.$trModule3
+                   Command.Docs.Html.$trModule1) -}
+5c3a33016243de2818be40d858d1f11d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.Html.$trModule2) -}
+addcc279836a4594f706044599b5d22e
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Command.Docs.Html"#) -}
+ffd1f73d121efff1fa2adc3ed6e526aa
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Command.Docs.Html.$trModule4) -}
+7adc9e56ba7574b8df2df6489252665d
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+eca72cb6995b9701a2a7dfddb1f0f77b
+  $wasHtml ::
+    Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> [Language.PureScript.Docs.Types.Declaration]
+    -> [(Language.PureScript.Docs.Types.InPackage
+           Language.PureScript.Names.ModuleName,
+         [Language.PureScript.Docs.Types.Declaration])]
+    -> (# Language.PureScript.Names.ModuleName,
+          Language.PureScript.Docs.AsHtml.HtmlOutputModule
+            Text.Blaze.Html.Html #)
+  {- Arity: 4, Strictness: <L,U><L,1*U><L,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Language.PureScript.Names.ModuleName)
+                   (ww1 :: GHC.Base.Maybe Data.Text.Internal.Text)
+                   (ww2 :: [Language.PureScript.Docs.Types.Declaration])
+                   (ww3 :: [(Language.PureScript.Docs.Types.InPackage
+                               Language.PureScript.Names.ModuleName,
+                             [Language.PureScript.Docs.Types.Declaration])]) ->
+                 Language.PureScript.Docs.AsHtml.$wmoduleAsHtml
+                   (let {
+                      x :: Language.PureScript.Docs.RenderedCode.Types.Namespace
+                           -> Data.Text.Internal.Text
+                           -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
+                           -> GHC.Base.Maybe Language.PureScript.Docs.Types.DocLink
+                        {- Arity: 3, Strictness: <L,U><L,U><S,1*U> -}
+                      = \ (namespace :: Language.PureScript.Docs.RenderedCode.Types.Namespace)
+                          (target :: Data.Text.Internal.Text)
+                          (containingMod :: Language.PureScript.Docs.RenderedCode.Types.ContainingModule) ->
+                        case containingMod of wild {
+                          Language.PureScript.Docs.RenderedCode.Types.ThisModule
+                          -> GHC.Base.Just
+                               @ Language.PureScript.Docs.Types.DocLink
+                               (Language.PureScript.Docs.Types.DocLink
+                                  Language.PureScript.Docs.Types.SameModule
+                                  target
+                                  namespace)
+                          Language.PureScript.Docs.RenderedCode.Types.OtherModule a1
+                          -> case GHC.Classes.$fEq[]_$c==
+                                    @ (Language.PureScript.Names.ProperName
+                                         'Language.PureScript.Names.Namespace)
+                                    (Language.PureScript.Names.$fEqProperName
+                                       @ 'Language.PureScript.Names.Namespace)
+                                    a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
+                                    Command.Docs.Html.asHtml3 of wild1 {
+                               GHC.Types.False
+                               -> GHC.Base.Just
+                                    @ Language.PureScript.Docs.Types.DocLink
+                                    (Language.PureScript.Docs.Types.DocLink
+                                       (Language.PureScript.Docs.Types.LocalModule ww a1)
+                                       target
+                                       namespace)
+                               GHC.Types.True
+                               -> GHC.Base.Just
+                                    @ Language.PureScript.Docs.Types.DocLink
+                                    (Language.PureScript.Docs.Types.DocLink
+                                       Command.Docs.Html.asHtml2
+                                       target
+                                       namespace) } }
+                    } in
+                    let {
+                      x1 :: Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                      = Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                          ww
+                          x
+                          Command.Docs.Html.renderLink
+                          Command.Docs.Html.asHtml1
+                    } in
+                    let {
+                      x2 :: GHC.Base.Maybe
+                              Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                      = GHC.Base.Just
+                          @ Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                          x1
+                    } in
+                    \ (ds :: Language.PureScript.Docs.Types.InPackage
+                               Language.PureScript.Names.ModuleName) ->
+                    x2)
+                   ww
+                   ww1
+                   ww2
+                   ww3) -}
+b515f7b8f3308d88dc843f951b3d91d3
+  $wlayout ::
+    [Language.PureScript.Names.ModuleName]
+    -> Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Docs.AsHtml.HtmlOutputModule
+         Text.Blaze.Html.Html
+    -> Text.Blaze.Html.Html
+  {- Arity: 3, Strictness: <L,1*U><L,1*U><L,U(1*U,1*U)>,
+     Inline: [0] -}
+a25045ff90f1e018fcf471e2fa26844e
+  $wrenderLink ::
+    Language.PureScript.Docs.Types.LinkLocation
+    -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+d218ff05380d460443356f6008a3478d
+  $wwriteHtmlModule ::
+    GHC.IO.FilePath
+    -> Language.PureScript.Names.ModuleName
+    -> Text.Blaze.Html.Html
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,1*U><L,1*U><L,1*U><S,U>, Inline: [0] -}
+7fea1553ecebec293b236a0b4ae528fe
+  asHtml ::
+    Language.PureScript.Docs.Types.Module
+    -> (Language.PureScript.Names.ModuleName,
+        Language.PureScript.Docs.AsHtml.HtmlOutputModule
+          Text.Blaze.Html.Html)
+  {- Arity: 1, Strictness: <S,1*U(U,1*U,1*U,1*U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Docs.Types.Module) ->
+                 case w of ww { Language.PureScript.Docs.Types.Module ww1 ww2 ww3 ww4 ->
+                 case Command.Docs.Html.$wasHtml
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww5 { (#,#) ww6 ww7 ->
+                 (ww6, ww7) } }) -}
+5c4360349aeb23059a61c80a73e5d23d
+  asHtml1 ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 GHC.Base.Nothing @ Data.Text.Internal.Text) -}
+f42f5350571db68d36d640e89ab311b7
+  asHtml2 :: Language.PureScript.Docs.Types.LinkLocation
+  {- Strictness: m4,
+     Unfolding: (Language.PureScript.Docs.Types.BuiltinModule
+                   Command.Docs.Html.asHtml3
+                     `cast`
+                   (Sym (Language.PureScript.Names.N:ModuleName[0]))) -}
+adfd77db51b49c805ef29a9078947a7f
+  asHtml3 ::
+    [Language.PureScript.Names.ProperName
+       'Language.PureScript.Names.Namespace]
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        Command.Docs.Html.asHtml4 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Language.PureScript.Names.$wsplitProperNames
+                   @ 'Language.PureScript.Names.Namespace
+                   ww1
+                   ww2
+                   ww3 }) -}
+b0c5fd563303493b918a81262018b34d
+  asHtml4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Prim"#) -}
+46ac02431cbd7a691782cdfcc2bc17f9
+  basicLayout ::
+    Data.Text.Internal.Text
+    -> Text.Blaze.Html.Html -> Text.Blaze.Html.Html
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (title :: Data.Text.Internal.Text)
+                   (inner :: Text.Blaze.Html.Html) ->
+                 Text.Blaze.Internal.Append
+                   @ ()
+                   @ ()
+                   Text.Blaze.Html5.docType
+                   (Text.Blaze.Internal.Parent
+                      @ ()
+                      Command.Docs.Html.writeHtmlModules262
+                      Command.Docs.Html.writeHtmlModules259
+                      Command.Docs.Html.writeHtmlModules256
+                      (Text.Blaze.Internal.Append
+                         @ ()
+                         @ ()
+                         (Text.Blaze.Internal.Parent
+                            @ ()
+                            Command.Docs.Html.writeHtmlModules253
+                            Command.Docs.Html.writeHtmlModules250
+                            Command.Docs.Html.writeHtmlModules247
+                            (Text.Blaze.Internal.Append
+                               @ ()
+                               @ ()
+                               Command.Docs.Html.writeHtmlModules237
+                               (Text.Blaze.Internal.Append
+                                  @ ()
+                                  @ ()
+                                  Command.Docs.Html.writeHtmlModules223
+                                  (Text.Blaze.Internal.Append
+                                     @ ()
+                                     @ ()
+                                     Command.Docs.Html.writeHtmlModules203
+                                     (Text.Blaze.Internal.Append
+                                        @ ()
+                                        @ ()
+                                        (Text.Blaze.Internal.Parent
+                                           @ ()
+                                           Command.Docs.Html.writeHtmlModules200
+                                           Command.Docs.Html.writeHtmlModules197
+                                           Command.Docs.Html.writeHtmlModules194
+                                           (Text.Blaze.Internal.Content
+                                              @ ()
+                                              (Text.Blaze.Internal.Text title)
+                                              GHC.Tuple.()))
+                                        Command.Docs.Html.writeHtmlModules152)))))
+                         (Text.Blaze.Internal.Parent
+                            @ ()
+                            Command.Docs.Html.writeHtmlModules149
+                            Command.Docs.Html.writeHtmlModules146
+                            Command.Docs.Html.writeHtmlModules143
+                            (Text.Blaze.Internal.Append
+                               @ ()
+                               @ ()
+                               (Text.Blaze.Internal.AddAttribute
+                                  @ ()
+                                  Command.Docs.Html.writeHtmlModules26
+                                  Command.Docs.Html.writeHtmlModules23
+                                  Command.Docs.Html.writeHtmlModules140
+                                  (Text.Blaze.Internal.Parent
+                                     @ ()
+                                     Command.Docs.Html.writeHtmlModules17
+                                     Command.Docs.Html.writeHtmlModules14
+                                     Command.Docs.Html.writeHtmlModules11
+                                     (Text.Blaze.Internal.Append
+                                        @ ()
+                                        @ ()
+                                        Command.Docs.Html.writeHtmlModules88
+                                        (Text.Blaze.Internal.AddCustomAttribute
+                                           @ ()
+                                           Command.Docs.Html.writeHtmlModules85
+                                           Command.Docs.Html.writeHtmlModules84
+                                           (Text.Blaze.Internal.AddAttribute
+                                              @ ()
+                                              Command.Docs.Html.writeHtmlModules26
+                                              Command.Docs.Html.writeHtmlModules23
+                                              Command.Docs.Html.writeHtmlModules81
+                                              (Text.Blaze.Internal.Parent
+                                                 @ ()
+                                                 Command.Docs.Html.writeHtmlModules79
+                                                 Command.Docs.Html.writeHtmlModules76
+                                                 Command.Docs.Html.writeHtmlModules73
+                                                 inner))))))
+                               Command.Docs.Html.writeHtmlModules54))))) -}
+67c3aa72bb29d3423be7b5966937d4d4
+  layout ::
+    [Language.PureScript.Names.ModuleName]
+    -> (Language.PureScript.Names.ModuleName,
+        Language.PureScript.Docs.AsHtml.HtmlOutputModule
+          Text.Blaze.Html.Html)
+    -> Text.Blaze.Html.Html
+  {- Arity: 2, Strictness: <L,1*U><S,1*U(1*U,U(U,U))>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: [Language.PureScript.Names.ModuleName])
+                   (w1 :: (Language.PureScript.Names.ModuleName,
+                           Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                             Text.Blaze.Html.Html)) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 Command.Docs.Html.$wlayout w ww1 ww2 }) -}
+b1478cab693281e947601def67cdff3a
+  renderLink ::
+    Language.PureScript.Docs.Types.DocLink -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(SLL),1*U(1*U,A,A)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.Docs.Types.DocLink) ->
+                 case w of ww { Language.PureScript.Docs.Types.DocLink ww1 ww2 ww3 ->
+                 Command.Docs.Html.$wrenderLink ww1 }) -}
+ab0858e10d89dc5ae4354f29b6c11b1e
+  renderModuleList ::
+    [Language.PureScript.Names.ModuleName] -> Text.Blaze.Html.Html
+  {- Arity: 1, Strictness: <L,1*U>m1, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Language.PureScript.Names.ModuleName]) ->
+                 Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules8
+                   Command.Docs.Html.writeHtmlModules5
+                   Command.Docs.Html.writeHtmlModules2
+                   (Command.Docs.Html.writeHtmlModules_go w)) -}
+7e9078908b661561a94befca85de2726
+  writeHtmlModule ::
+    GHC.IO.FilePath
+    -> (Language.PureScript.Names.ModuleName, Text.Blaze.Html.Html)
+    -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,1*U><S,1*U(1*U,1*U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Command.Docs.Html.writeHtmlModule1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <(Language.PureScript.Names.ModuleName,
+                        Text.Blaze.Html.Html)>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+227b7140a948202b401331983fab480e
+  writeHtmlModule1 ::
+    GHC.IO.FilePath
+    -> (Language.PureScript.Names.ModuleName, Text.Blaze.Html.Html)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,1*U><S,1*U(1*U,1*U)><S,U>, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.IO.FilePath)
+                   (w1 :: (Language.PureScript.Names.ModuleName,
+                           Text.Blaze.Html.Html))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 Command.Docs.Html.$wwriteHtmlModule w ww1 ww2 w2 }) -}
+44c038eab729f0397071315385dd1dc8
+  writeHtmlModules ::
+    GHC.IO.FilePath
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.Docs.AsHtml.HtmlOutputModule
+           Text.Blaze.Html.Html)]
+    -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Command.Docs.Html.writeHtmlModules1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <[(Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                           Text.Blaze.Html.Html)]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+b6614be87b8965702b95b9fc1e0cc12a
+  writeHtmlModules1 ::
+    GHC.IO.FilePath
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.Docs.AsHtml.HtmlOutputModule
+           Text.Blaze.Html.Html)]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (outputDir :: GHC.IO.FilePath)
+                   (modules :: [(Language.PureScript.Names.ModuleName,
+                                 Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                   Text.Blaze.Html.Html)])
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.FilePath.Glob.Directory.glob2
+                        System.FilePath.Glob.Directory.globDefault
+                        (GHC.Types.:
+                           @ System.FilePath.Glob.Base.Pattern
+                           (case System.FilePath.Glob.Base.tokenize
+                                   System.FilePath.Glob.Base.compDefault
+                                   (GHC.Base.++
+                                      @ GHC.Types.Char
+                                      outputDir
+                                      Command.Docs.Html.writeHtmlModules267) of wild {
+                              Data.Either.Left x1 -> System.FilePath.Glob.Base.compile7 x1
+                              Data.Either.Right y
+                              -> (System.FilePath.Glob.Base.compile1 y)
+                                   `cast`
+                                 (Sym (System.FilePath.Glob.Base.N:Pattern[0])) })
+                           (GHC.Types.[] @ System.FilePath.Glob.Base.Pattern))
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        eta of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) x1 ds1 ->
+                 case x1 of wild1 {
+                   []
+                   -> case GHC.List.badHead
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   : x ds2
+                   -> let {
+                        $w$j :: GHC.Prim.State# GHC.Prim.RealWorld
+                                -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                          <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          let {
+                            moduleList :: [Language.PureScript.Names.ModuleName]
+                            = Data.OldList.sortBy
+                                @ Language.PureScript.Names.ModuleName
+                                Language.PureScript.Names.$fOrdModuleName7
+                                  `cast`
+                                (Sym (Language.PureScript.Names.N:ModuleName[0])
+                                 ->_R Sym (Language.PureScript.Names.N:ModuleName[0])
+                                 ->_R <GHC.Types.Ordering>_R)
+                                (GHC.Base.map
+                                   @ (Language.PureScript.Names.ModuleName,
+                                      Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                        Text.Blaze.Html.Html)
+                                   @ Language.PureScript.Names.ModuleName
+                                   (Data.Tuple.fst
+                                      @ Language.PureScript.Names.ModuleName
+                                      @ (Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                           Text.Blaze.Html.Html))
+                                   modules)
+                          } in
+                          case System.IO.UTF8.writeUTF8FileT1
+                                 (GHC.Base.++
+                                    @ GHC.Types.Char
+                                    outputDir
+                                    Command.Docs.Html.writeHtmlModules265)
+                                 (Data.Text.concat
+                                    (Data.Text.Lazy.dropEnd_go
+                                       (Text.Blaze.Renderer.Text.renderMarkupWith
+                                          Data.Text.Encoding.decodeUtf8
+                                          (Command.Docs.Html.basicLayout
+                                             Command.Docs.Html.writeHtmlModules52
+                                             (Text.Blaze.Internal.Append
+                                                @ ()
+                                                @ ()
+                                                Command.Docs.Html.writeHtmlModules29
+                                                (Text.Blaze.Internal.AddAttribute
+                                                   @ ()
+                                                   Command.Docs.Html.writeHtmlModules26
+                                                   Command.Docs.Html.writeHtmlModules23
+                                                   Command.Docs.Html.writeHtmlModules20
+                                                   (Text.Blaze.Internal.Parent
+                                                      @ ()
+                                                      Command.Docs.Html.writeHtmlModules17
+                                                      Command.Docs.Html.writeHtmlModules14
+                                                      Command.Docs.Html.writeHtmlModules11
+                                                      (Command.Docs.Html.renderModuleList
+                                                         moduleList))))))))
+                                 w of ds3 { (#,#) ipv2 ipv3 ->
+                          letrec {
+                            go1 :: [(Language.PureScript.Names.ModuleName,
+                                     Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                       Text.Blaze.Html.Html)]
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                              <join 2> {- Arity: 2, Strictness: <S,1*U><S,U> -}
+                            = \ (ds4 :: [(Language.PureScript.Names.ModuleName,
+                                          Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                            Text.Blaze.Html.Html)])
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                              case ds4 of wild2 {
+                                [] -> (# eta1, GHC.Tuple.() #)
+                                : y ys
+                                -> case Command.Docs.Html.$wwriteHtmlModule
+                                          outputDir
+                                          (Data.Tuple.fst
+                                             @ Language.PureScript.Names.ModuleName
+                                             @ (Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                                  Text.Blaze.Html.Html)
+                                             y)
+                                          (Command.Docs.Html.layout moduleList y)
+                                          eta1 of ds5 { (#,#) ipv4 ipv5 ->
+                                   go1 ys ipv4 } }
+                          } in
+                          go1 modules ipv2 }
+                      } in
+                      letrec {
+                        go1 :: [GHC.IO.FilePath]
+                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                               -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                          <join 2> {- Arity: 2, Strictness: <S,1*U><S,U> -}
+                        = \ (ds3 :: [GHC.IO.FilePath])
+                            (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case ds3 of wild2 {
+                            [] -> $w$j eta1
+                            : y ys
+                            -> case System.Posix.Files.removeLink1
+                                      y
+                                      eta1 of ds4 { (#,#) ipv2 ipv3 ->
+                               go1 ys ipv2 } }
+                      } in
+                      go1 x ipv } } }) -}
+a2ba3adbd58b08f1a52c08ed26e7f353
+  writeHtmlModules10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ul"#) -}
+f9ee35c8958b1ab24b71f2c15a3475fe
+  writeHtmlModules100 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules101) -}
+0b80d627fcf07ca4980442c2d410be0a
+  writeHtmlModules101 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</a>"#) -}
+8ad66cacfa52e6d954fe5caac25bcb0a
+  writeHtmlModules102 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules103 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+9bd62f4dd3602a9270262487963808ba
+  writeHtmlModules103 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules104) -}
+9c0257d46eea66cc0e6fcff4d66c2749
+  writeHtmlModules104 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<a"#) -}
+2543c4eae3daf2313be7f2edd8fa3fda
+  writeHtmlModules105 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules106 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+7fd12820e02262a3ff24862b3f34b21c
+  writeHtmlModules106 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules107) -}
+72ced3d3604fe074e4cb3ce2ad6eb99f
+  writeHtmlModules107 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("a"#) -}
+e9f096fa05a35bc9ab36b4181906514b
+  writeHtmlModules108 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules109) -}
+fc9da83729451fcfac05d67185b6b603
+  writeHtmlModules109 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules110) -}
+97d6cb4226ce159550b92188acfd96c9
+  writeHtmlModules11 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules12 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+871cbdf1fb161d2e4ce870f167a52e74
+  writeHtmlModules110 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("index.html"#) -}
+9130c853777c2c73292f5d7c6203eb6e
+  writeHtmlModules111 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules112 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+ddb1303d36d141285ee776afddb7a105
+  writeHtmlModules112 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules113) -}
+8ca05dc2998aed1b719eaaa718d1c789
+  writeHtmlModules113 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" href=\""#) -}
+9671656b9d27fdb9d3dbbb89c64a5855
+  writeHtmlModules114 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules115 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+d886cf297bd05b4dc9b41d89dd9bad07
+  writeHtmlModules115 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules116) -}
+f901ad4dd3b25d3585e33d9b2dd16b73
+  writeHtmlModules116 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("href"#) -}
+eeebfbfe1f62854b25a1bad0bc683005
+  writeHtmlModules117 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules118) -}
+c68b2ade58a7c30dc53aaf6786e139f9
+  writeHtmlModules118 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules119) -}
+d110a8a1af3bd63cb1bde4bdd6afacab
+  writeHtmlModules119 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("top-banner__actions__item"#) -}
+5016c79005bb5753328e63e981c50eec
+  writeHtmlModules12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules13) -}
+098b204e6a455169a5e6c097a478ded4
+  writeHtmlModules120 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules121) -}
+00d5aa1d4c8bbb606d084711255292a2
+  writeHtmlModules121 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules122) -}
+1ef61a80fbfbb2850c49bad5a4fb45e7
+  writeHtmlModules122 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("top-banner__actions"#) -}
+1e2b65b560ffa4fe2c03ce30672ac682
+  writeHtmlModules123 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules134
+                   Command.Docs.Html.writeHtmlModules131
+                   Command.Docs.Html.writeHtmlModules128
+                   Command.Docs.Html.writeHtmlModules124) -}
+9d84fe402df25fc5f8ae7bcbf06ad9b3
+  writeHtmlModules124 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules125) -}
+032e38e52f003bc0a1f2de6f00352ee4
+  writeHtmlModules125 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m5,
+     Unfolding: (Text.Blaze.Internal.Content
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules126
+                   GHC.Tuple.()) -}
+729b8d0be4eeed4e26516a41d82c6895
+  writeHtmlModules126 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules127) -}
+84a235d0de8a2783d3b0fff4e9704416
+  writeHtmlModules127 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules53) -}
+3712f4555673e64da9c7130ea07c12be
+  writeHtmlModules128 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules129) -}
+ce6ebbe48c6a9dcf8cd68f7326a0fb76
+  writeHtmlModules129 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules130) -}
+d8337d4951caf4a53b5e192a3b341c4d
+  writeHtmlModules13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</div>"#) -}
+9947506318e302c4049e44dc5c0c8f2b
+  writeHtmlModules130 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("float: left; font-size: 2.44em; font-weight: 300; line-height: 90px; margin: 0"#) -}
+ef825fa565cd6b6be05d646932fd27a1
+  writeHtmlModules131 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules132 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+f7b335b129eb39df48834faa0531d80f
+  writeHtmlModules132 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules133) -}
+848662c7fae0d1938e98ff9f973c730f
+  writeHtmlModules133 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" style=\""#) -}
+185d813e6b2cefe13daca0352ac4f161
+  writeHtmlModules134 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules135 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+f2ab99a0234f47368f66f6f9083dd014
+  writeHtmlModules135 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules136) -}
+169dcf4b21334f58a691d23eea31648e
+  writeHtmlModules136 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("style"#) -}
+471c4c25abdae5b6d250bf60bde35adb
+  writeHtmlModules137 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules138) -}
+1dd7920ff4dd5f3fc05407c5c900fa86
+  writeHtmlModules138 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules139) -}
+1bd3970f7c7cbd71b5f2502af6244f70
+  writeHtmlModules139 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("top-banner clearfix"#) -}
+2386a9a712bde1951109eea99317f9ab
+  writeHtmlModules14 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules15 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+960331ba26f28faf05466c560eed9c51
+  writeHtmlModules140 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules141) -}
+aca9c07a1c10a0ebe1b8241d60828d99
+  writeHtmlModules141 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules142) -}
+692549c497848c67bec7cc74223457d2
+  writeHtmlModules142 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("everything-except-footer"#) -}
+2fe350c591124d86cba73c005e9e3f28
+  writeHtmlModules143 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules144 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+b67bb6e10f128d73a6b18457c61a791e
+  writeHtmlModules144 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules145) -}
+bec100276ef56a5b86d15c43806948fb
+  writeHtmlModules145 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</body>"#) -}
+c471bfa76b66635bd736930808bd3e37
+  writeHtmlModules146 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules147 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+45628e90d14261ba61a993eae18e7be4
+  writeHtmlModules147 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules148) -}
+3505c6e48b5e1927609bff9c548a4d0d
+  writeHtmlModules148 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<body"#) -}
+437bfcd93ec35d6376d7c970bc91569a
+  writeHtmlModules149 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules150 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+5eda57ab0553b465440bbc82e6475a21
+  writeHtmlModules15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules16) -}
+280af155f291841f9f94500b80ad2146
+  writeHtmlModules150 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules151) -}
+d364685e6f216f437208a44f3f2c8e29
+  writeHtmlModules151 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("body"#) -}
+0373208f94b9f9334b86bcd73b68a3b8
+  writeHtmlModules152 :: Text.Blaze.Internal.MarkupM ()
+  {- Unfolding: (Text.Blaze.Internal.Append
+                   @ ()
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules179
+                   Command.Docs.Html.writeHtmlModules153) -}
+e450560bb4eaf26a717f1f0568f87a19
+  writeHtmlModules153 :: Text.Blaze.Internal.MarkupM ()
+  {- Unfolding: (Text.Blaze.Internal.Append
+                   @ ()
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules174
+                   Command.Docs.Html.writeHtmlModules154) -}
+e9982df3a238845b3accd87bcc259755
+  writeHtmlModules154 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules171
+                   Command.Docs.Html.writeHtmlModules168
+                   Command.Docs.Html.writeHtmlModules165
+                   Command.Docs.Html.writeHtmlModules155) -}
+10a0d153bddc0711c2be8567d4aa3262
+  writeHtmlModules155 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules134
+                   Command.Docs.Html.writeHtmlModules162
+                   Command.Docs.Html.writeHtmlModules159
+                   Command.Docs.Html.writeHtmlModules156) -}
+2e190bfebf42eeea0771af213c39ba59
+  writeHtmlModules156 :: Text.Blaze.Internal.MarkupM ()
+  {- Unfolding: (Text.Blaze.Internal.external
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules157) -}
+d7175a7da8ff47a321237d501a32ed6f
+  writeHtmlModules157 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m5,
+     Unfolding: (Text.Blaze.Internal.Content
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules158
+                   GHC.Tuple.()) -}
+4eac3a09eab78a789ab600cea5ea0df1
+  writeHtmlModules158 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m3,
+     Unfolding: (Text.Blaze.Internal.Text
+                   Language.PureScript.Docs.Css.pursuitCssT) -}
+06c09ac59dc047588f8cdcb80b5165ab
+  writeHtmlModules159 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules160 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+3a8c6a3f9226e2255663a7266d1b4637
+  writeHtmlModules16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<div"#) -}
+20e407fd27397fe43cdf090dddc7a0c3
+  writeHtmlModules160 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules161) -}
+53528309c29c820773d6171343b62e7b
+  writeHtmlModules161 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</style>"#) -}
+5755af720251c3e5a8b07cb3c0e658bf
+  writeHtmlModules162 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules163 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+f93817c7b638aef54b8d5df401a04863
+  writeHtmlModules163 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules164) -}
+ea62567c3bb272121d2bb3d46ff23c1a
+  writeHtmlModules164 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<style"#) -}
+0a883bdf1aa71c0610983f380cdb152b
+  writeHtmlModules165 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules166) -}
+1734d40849b72a9f05ced9045e10f412
+  writeHtmlModules166 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules167) -}
+d1d8790a523677a5e689445609f55139
+  writeHtmlModules167 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("text/css"#) -}
+fa51b9d5a3615f51e6b6af62c87802a0
+  writeHtmlModules168 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules169 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+10ed00e7caa436414eaba365091e2848
+  writeHtmlModules169 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules170) -}
+1bb8b0e6d96330fb2e83ae883db4e2e0
+  writeHtmlModules17 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules18 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+e1286afc618c890df9448ddb42d9afb2
+  writeHtmlModules170 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" type=\""#) -}
+b61afc90b5a015a2f140ee242f288db0
+  writeHtmlModules171 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules172 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+827e22bbbf9148edbea7f73f9b9b595f
+  writeHtmlModules172 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules173) -}
+e8abd148745bde1a20e8d7fa99a44d78
+  writeHtmlModules173 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("type"#) -}
+06eeb603232167ed3d30da6bee2a6580
+  writeHtmlModules174 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules171
+                   Command.Docs.Html.writeHtmlModules168
+                   Command.Docs.Html.writeHtmlModules165
+                   Command.Docs.Html.writeHtmlModules175) -}
+1a4e4cd79e403ea37ad415ab1b53218a
+  writeHtmlModules175 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules134
+                   Command.Docs.Html.writeHtmlModules162
+                   Command.Docs.Html.writeHtmlModules159
+                   Command.Docs.Html.writeHtmlModules176) -}
+b7fd2d8120d2cdd0b2aa47bfadd3bf83
+  writeHtmlModules176 :: Text.Blaze.Internal.MarkupM ()
+  {- Unfolding: (Text.Blaze.Internal.external
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules177) -}
+68f16fa27f9b6250c613af0f13861f1d
+  writeHtmlModules177 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m5,
+     Unfolding: (Text.Blaze.Internal.Content
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules178
+                   GHC.Tuple.()) -}
+60cd609a6214e50dce3092ca9b68523d
+  writeHtmlModules178 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m3,
+     Unfolding: (Text.Blaze.Internal.Text
+                   Language.PureScript.Docs.Css.normalizeCssT) -}
+63d713a7bd8bc82cb138b8edc5988ed8
+  writeHtmlModules179 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules191
+                   Command.Docs.Html.writeHtmlModules188
+                   Command.Docs.Html.writeHtmlModules185
+                   Command.Docs.Html.writeHtmlModules180) -}
+6a5293d34f433f03dfc94364d7532906
+  writeHtmlModules18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules19) -}
+dd7ee383b7c92dd9da003f5555557556
+  writeHtmlModules180 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules171
+                   Command.Docs.Html.writeHtmlModules168
+                   Command.Docs.Html.writeHtmlModules165
+                   Command.Docs.Html.writeHtmlModules181) -}
+f38cad11fd2033f882be20eeea97d2d7
+  writeHtmlModules181 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules114
+                   Command.Docs.Html.writeHtmlModules111
+                   Command.Docs.Html.writeHtmlModules182
+                   Text.Blaze.Html5.link) -}
+e5a9e7faebc7cf94702e095a61b5f2df
+  writeHtmlModules182 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules183) -}
+9be5886a8c1dc6a18a33058aaf9400b0
+  writeHtmlModules183 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules184) -}
+ea2712a5b6794f86464a60fb1187971c
+  writeHtmlModules184 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,700,700i"#) -}
+8617b0833ce6a6021f8ef3f49a850026
+  writeHtmlModules185 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules186) -}
+379e9af191f155f011d46f388c87a9b0
+  writeHtmlModules186 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules187) -}
+fefb51c7977f1b462b07597641d2dbb7
+  writeHtmlModules187 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("stylesheet"#) -}
+ece44a1b1a6841c2c0db0056f386feca
+  writeHtmlModules188 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules189 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+e3a3af4a082af716af2d99d03ae67a4b
+  writeHtmlModules189 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules190) -}
+3bacd87885d3b06dfcb7cb6af105ea4c
+  writeHtmlModules19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("div"#) -}
+db416e2fd382ce45a32527b0eb6b6cb1
+  writeHtmlModules190 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" rel=\""#) -}
+504ce48696896a33ba270a2e8edcbd48
+  writeHtmlModules191 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules192 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+185d554780d6b5853f2396f4ad1602df
+  writeHtmlModules192 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules193) -}
+87b093dc2c6b86bcf3589696e6a7b994
+  writeHtmlModules193 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rel"#) -}
+7f9ce40a8ba8716b02d65628e734c2c3
+  writeHtmlModules194 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules195 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+22245600d6cb153a1e4446e8f5b41dfc
+  writeHtmlModules195 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules196) -}
+da0c9dc6da1129592eb443a51eef6df9
+  writeHtmlModules196 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</title>"#) -}
+14ef83db7f8255087493d90eee71bad4
+  writeHtmlModules197 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules198 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+9bf3809f3ec3f49d193f11f2000148e2
+  writeHtmlModules198 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules199) -}
+3b9344993647ae9417c4a98c3341f554
+  writeHtmlModules199 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<title"#) -}
+aed5d1fc0b0ac1f9d938b6a7aad51c61
+  writeHtmlModules2 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules3 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+b5e87cd46cbf17d649b651a662382709
+  writeHtmlModules20 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules21) -}
+6980c20becfefda48d589b81cdccfac3
+  writeHtmlModules200 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules201 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+f212d3905cb2bcdfe124104b8bfcf395
+  writeHtmlModules201 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules202) -}
+faee2b38110087aa6c52f9976dabe1e3
+  writeHtmlModules202 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("title"#) -}
+396e0c8f8da97fb50c80e861cf082b92
+  writeHtmlModules203 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules220
+                   Command.Docs.Html.writeHtmlModules217
+                   Command.Docs.Html.writeHtmlModules214
+                   Command.Docs.Html.writeHtmlModules204) -}
+3dd4322196c92ae0648ba36d8f1a5c5a
+  writeHtmlModules204 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules211
+                   Command.Docs.Html.writeHtmlModules208
+                   Command.Docs.Html.writeHtmlModules205
+                   Text.Blaze.Html5.meta) -}
+1c372de3483736d70ee50ece26264de0
+  writeHtmlModules205 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules206) -}
+d84ae350ee642fd5876030b9ae880e87
+  writeHtmlModules206 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules207) -}
+b0bd515124ed90ba254dc5147aba7596
+  writeHtmlModules207 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("viewport"#) -}
+939dd9f88cbf5513ce3f1993dc1a5584
+  writeHtmlModules208 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules209 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+90d840fe5480b11e3006f046e4baa4a0
+  writeHtmlModules209 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules210) -}
+57ef8029ae953a4639a38a989e2ceab5
+  writeHtmlModules21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules22) -}
+24eec336a1fe8eebcd0b6b813ba944a5
+  writeHtmlModules210 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" name=\""#) -}
+07b14c8f199841b95b619a860092253a
+  writeHtmlModules211 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules212 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+c5846d240d19e89e148d08d0febdedd3
+  writeHtmlModules212 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules213) -}
+d4d05c880257dbe78d3a5f16e246ff4a
+  writeHtmlModules213 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("name"#) -}
+500fc6f585d012b8e3c24aeee293b62c
+  writeHtmlModules214 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules215) -}
+e82731beb3382a8972bcb34c67679627
+  writeHtmlModules215 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules216) -}
+b7a687fca4cbb3f2d0e55f99c7d5cf17
+  writeHtmlModules216 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("width=device-width, initial-scale=1"#) -}
+2679c30cb4c40f04faf18605788986e2
+  writeHtmlModules217 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules218 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+7c9b36b5e935fda21190aeeb5b9526c2
+  writeHtmlModules218 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules219) -}
+1b88b671fa9babd4a424d76eaa44d1ad
+  writeHtmlModules219 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" content=\""#) -}
+65ad93512fb3df0bba8ebde33fe2e0a2
+  writeHtmlModules22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("col col--main"#) -}
+424374ba2c54675907de7d8d0d17f760
+  writeHtmlModules220 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules221 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+e89ad22354253ed799b1a0215f0900db
+  writeHtmlModules221 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules222) -}
+f7b6e22a855b4a05745a0f1080440a2f
+  writeHtmlModules222 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("content"#) -}
+3b7f3572369b52c2e8d87166a50d1b81
+  writeHtmlModules223 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules220
+                   Command.Docs.Html.writeHtmlModules217
+                   Command.Docs.Html.writeHtmlModules234
+                   Command.Docs.Html.writeHtmlModules224) -}
+bf9211a6a5b422f872039e2ac0a378ce
+  writeHtmlModules224 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules231
+                   Command.Docs.Html.writeHtmlModules228
+                   Command.Docs.Html.writeHtmlModules225
+                   Text.Blaze.Html5.meta) -}
+51608f99a729b69edeb49eaf58d92877
+  writeHtmlModules225 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules226) -}
+d06c8fc673149cc09414b8d8b2f27c1e
+  writeHtmlModules226 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules227) -}
+bb49d799497958e3eafd75f2f36e320b
+  writeHtmlModules227 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("X-UA-Compatible"#) -}
+070d7806e05251b01f6ead8e0b37e3ce
+  writeHtmlModules228 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules229 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+e175a7827197944226c9d998d349e05a
+  writeHtmlModules229 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules230) -}
+a99802e12f9595ab3b892eb18b6e9529
+  writeHtmlModules23 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules24 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+dbbc2e0d324a70d9a7dacc474be318a5
+  writeHtmlModules230 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" http-equiv=\""#) -}
+aa0578313808ed5b168ffde4a82b90d0
+  writeHtmlModules231 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules232 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+62ce2a643e7df9abc2f93dab6d58b79d
+  writeHtmlModules232 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules233) -}
+c519f43a273a265199596a1783522b07
+  writeHtmlModules233 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("http-equiv"#) -}
+3f11bf16b1e43569d73eacfa80418e3f
+  writeHtmlModules234 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules235) -}
+8422c89c674878ec2ea5c7e7e2d06442
+  writeHtmlModules235 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules236) -}
+453dfb85f4a3e6dc10be751d9447595a
+  writeHtmlModules236 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("IE=edge"#) -}
+e4114e03c18879db8e1afe4c7e7dec4b
+  writeHtmlModules237 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules244
+                   Command.Docs.Html.writeHtmlModules241
+                   Command.Docs.Html.writeHtmlModules238
+                   Text.Blaze.Html5.meta) -}
+f5467104102d0a6c90d7be7cb3c6b94c
+  writeHtmlModules238 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules239) -}
+b30b5a85706d04927ebcd103e9493c4c
+  writeHtmlModules239 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules240) -}
+a319b98d837e4a402a78d2eef1e34189
+  writeHtmlModules24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules25) -}
+4f23300d396b43bba3d160a9b7d28cc3
+  writeHtmlModules240 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("utf-8"#) -}
+83d87ba76ee467bb4c2fa0a7c57c11a2
+  writeHtmlModules241 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules242 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+0b5f92de222aa0d6cbe31f4c4c495fe8
+  writeHtmlModules242 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules243) -}
+f392307c0d85f05af0db8c1ab1c5de7d
+  writeHtmlModules243 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" charset=\""#) -}
+2c2ff143fce00527e3d5345f52d62498
+  writeHtmlModules244 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules245 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+c6e0a98b3d1f0e36e56a68c529a7de21
+  writeHtmlModules245 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules246) -}
+e4fda5ddf495b3b93923e453d6bc0318
+  writeHtmlModules246 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("charset"#) -}
+a2b9fb6d64327a9a86e28b16c9cb29df
+  writeHtmlModules247 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules248 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+73337b2f64b36135ee9a260613560e8b
+  writeHtmlModules248 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules249) -}
+94daf53a6b90303fc79d0a7ae3fc791b
+  writeHtmlModules249 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</head>"#) -}
+b23c2a22319b7dcfdd6e57a8f8b5931a
+  writeHtmlModules25 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" class=\""#) -}
+b2214dfcc3a3b9b0547dff0486662af6
+  writeHtmlModules250 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules251 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+47cdb9acf141ea0b3f9610aba7be049c
+  writeHtmlModules251 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules252) -}
+3428b722afb5a80635c73251b51606a9
+  writeHtmlModules252 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<head"#) -}
+4a2496c78b9e5c52b9b5dea954c590a6
+  writeHtmlModules253 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules254 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+93ba07dc2ef49e33dcf5a6326afeb75e
+  writeHtmlModules254 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules255) -}
+b380a4d9e131b778996371a5bb7212c7
+  writeHtmlModules255 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("head"#) -}
+9198079a5643753f2938fc44ecb2620e
+  writeHtmlModules256 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules257 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+11a7875161b70df20b274c1815244ae2
+  writeHtmlModules257 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules258) -}
+c863eb852424d905461721f2d84a76ff
+  writeHtmlModules258 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</html>"#) -}
+4c64ccc8127f5dca0937d2b17daa2864
+  writeHtmlModules259 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules260 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+4256cd4034f123505b4e76f43eda8ce8
+  writeHtmlModules26 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules27 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+c3f2d27f9942c48638b7bf61d9ae9752
+  writeHtmlModules260 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules261) -}
+658d7152656ed12b2cf57a867359c6fd
+  writeHtmlModules261 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<html"#) -}
+56165876565a2600b8d41f220ad2fbd6
+  writeHtmlModules262 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules263 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+3fbdacba3739d734f9f2e9b34c3f9e58
+  writeHtmlModules263 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules264) -}
+acd9a062049e7ba7a318c2966705dacb
+  writeHtmlModules264 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("html"#) -}
+b6622e0e5d473e997830bb47f6756016
+  writeHtmlModules265 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules266) -}
+0c65a8d3068f1f7fb4380dac21d670c8
+  writeHtmlModules266 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/index.html"#) -}
+2a9afe0affe16d17903738787ab3b2f5
+  writeHtmlModules267 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules268) -}
+31d130dbdee3943f709e92cf508cd928
+  writeHtmlModules268 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/*.html"#) -}
+87027d4e78da069080a416df781b79c2
+  writeHtmlModules27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules28) -}
+0b6488ee44d26453d253af8be10190e6
+  writeHtmlModules28 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("class"#) -}
+6f34ce4c51c5b5c12f79a8d26f8564e9
+  writeHtmlModules29 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules49
+                   Command.Docs.Html.writeHtmlModules30) -}
+e315252a79344ab54de3dc64206454de
+  writeHtmlModules3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules4) -}
+12c423ae97cef05430a259b7bdf967cb
+  writeHtmlModules30 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules31) -}
+79c5f2f854c13c76e7ca428244b0c510
+  writeHtmlModules31 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules46
+                   Command.Docs.Html.writeHtmlModules32) -}
+78fbdb0271bfe2b6251b693bdfb069fa
+  writeHtmlModules32 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules43
+                   Command.Docs.Html.writeHtmlModules40
+                   Command.Docs.Html.writeHtmlModules37
+                   Command.Docs.Html.writeHtmlModules33) -}
+40048f41a70f83bc698a614c524cc038
+  writeHtmlModules33 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m5,
+     Unfolding: (Text.Blaze.Internal.Content
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules34
+                   GHC.Tuple.()) -}
+1530f4440a0646005cb1583d4ee7fa73
+  writeHtmlModules34 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules35) -}
+d8a4bbc4758f123883a80119b691d2a5
+  writeHtmlModules35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules36) -}
+1be0b0f2352d8d2df0e0f359b212bf4d
+  writeHtmlModules36 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Index"#) -}
+48d3c5540c3e74a2859eb119a2284375
+  writeHtmlModules37 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules38 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+4ae4dd90f048e2500e98ab5ad32d7800
+  writeHtmlModules38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules39) -}
+8d1cae53dc205d9a90a557d3e49109f7
+  writeHtmlModules39 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</h1>"#) -}
+21907bbc152a16dd661833f354d6c7df
+  writeHtmlModules4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</ul>"#) -}
+fcb2264564ab94059f442eace73e353a
+  writeHtmlModules40 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules41 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+36890a2cf9976929d12dc0979a307ae5
+  writeHtmlModules41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules42) -}
+f72d2eb1bde6771be848d85f50d4d201
+  writeHtmlModules42 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<h1"#) -}
+e2a4dadca5e49f3f30f265c375d1afec
+  writeHtmlModules43 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules44 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+3cad2ea31719c547dc0191adc6618f4b
+  writeHtmlModules44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules45) -}
+8f3d0a15fccc340b654c3f54a3f88a6b
+  writeHtmlModules45 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("h1"#) -}
+1909a16be57f2a598841dc5b2eae4523
+  writeHtmlModules46 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules47) -}
+e1195aaa5266bc9b5fb619e895d4ff7c
+  writeHtmlModules47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules48) -}
+fbdeb8c8551440de84c11eebf480a1f8
+  writeHtmlModules48 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("page-title__title"#) -}
+9d4020b556f4b7079b11aa31976b9580
+  writeHtmlModules49 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules50) -}
+39c38f8c944e33962607c671ae0507b6
+  writeHtmlModules5 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules6 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+bb0e3517a8e452bd221299f2153e5604
+  writeHtmlModules50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules51) -}
+e9b357935931bbdd7393417f906661ac
+  writeHtmlModules51 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("page-title clearfix"#) -}
+cba8cfc022cc584444545d66d415987d
+  writeHtmlModules52 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Command.Docs.Html.writeHtmlModules53) -}
+406e7cb392808726a886af1fe89b6a44
+  writeHtmlModules53 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PureScript API documentation"#) -}
+4685e9798ef2b027796c208044be62d0
+  writeHtmlModules54 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules70
+                   Command.Docs.Html.writeHtmlModules55) -}
+381b0df36ce0dce30b4dafbe61895112
+  writeHtmlModules55 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules56) -}
+54354256a47a0e9965607ad60946c32f
+  writeHtmlModules56 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules67
+                   Command.Docs.Html.writeHtmlModules64
+                   Command.Docs.Html.writeHtmlModules61
+                   Command.Docs.Html.writeHtmlModules57) -}
+7ec1c1a742552408a4cf82e1cef8dc6e
+  writeHtmlModules57 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m5,
+     Unfolding: (Text.Blaze.Internal.Content
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules58
+                   GHC.Tuple.()) -}
+3a83dfca33cc7eb45e2bb3c3776af5d8
+  writeHtmlModules58 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules59) -}
+89d73c6151646efcfcb3988956d848ae
+  writeHtmlModules59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Command.Docs.Html.writeHtmlModules60
+                   Version.versionString) -}
+c690143ec2fcef253a4d6a9059c99f2a
+  writeHtmlModules6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules7) -}
+0eccbfc16bb59f40e866585b141d07c2
+  writeHtmlModules60 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Generated by purs "#) -}
+2c6aa0c142fcc2104c1aef5283799330
+  writeHtmlModules61 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules62 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+8ffa736d7861f6a415a9a0802693d25a
+  writeHtmlModules62 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules63) -}
+8ebbb19f19165dc81ed614c92a99cebf
+  writeHtmlModules63 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</p>"#) -}
+f4515966ecb5b70e46a82456b744f949
+  writeHtmlModules64 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules65 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+c20a145c3eb711661783861f346c2e55
+  writeHtmlModules65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules66) -}
+62b50ab6a6e0396b0d9f0c5813ef7d57
+  writeHtmlModules66 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<p"#) -}
+7cb04518a6bc94ed1b8c1f880c192fa7
+  writeHtmlModules67 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules68 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+190d2d56d7aecf75acf1a5b97449a7c9
+  writeHtmlModules68 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules69) -}
+5849e33b811e729c1ce450d47df2d943
+  writeHtmlModules69 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("p"#) -}
+d4c962eee43203d85b46d3e64644f52d
+  writeHtmlModules7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<ul"#) -}
+575a86aaaa53e3080f774036215b1bac
+  writeHtmlModules70 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules71) -}
+52269d6f879b105ac316611654b3ad13
+  writeHtmlModules71 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules72) -}
+a14cd9e6add5566bcb5e70de7bd137bd
+  writeHtmlModules72 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("footer clearfix"#) -}
+1ca6850f651cf28fc40368f802c07250
+  writeHtmlModules73 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules74 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+1e0f025e6d520fdb277e4e74a60e2bc4
+  writeHtmlModules74 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules75) -}
+19a78a72b0f39906e4e4256c6b4e41b3
+  writeHtmlModules75 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("</main>"#) -}
+7adc7aad69e055a567b69373167ae2f4
+  writeHtmlModules76 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules77 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+7b2d9e6b3bbc356e30b7449b2ccf1dcc
+  writeHtmlModules77 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules78) -}
+90838547b72020e6d718a68692539cd6
+  writeHtmlModules78 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("<main"#) -}
+c9b851a85c53d4af3d0a96e8e2210723
+  writeHtmlModules79 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules80 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+f005a2bf766b2601af9f8ef18e261d45
+  writeHtmlModules8 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules9 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+d6f8f32f9580080c07f6e4b6d3c1af75
+  writeHtmlModules80 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.$trModule4) -}
+fb6a7fba9e013f07c372eede4b2fa528
+  writeHtmlModules81 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules82) -}
+7ade858dd80065ce24e1c7810a9ca61e
+  writeHtmlModules82 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules83) -}
+4e5ba3c3f85b4b8f03d3f9df1730003c
+  writeHtmlModules83 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("container clearfix"#) -}
+af974a1da3c8b15cee13ccbe5d28eaa0
+  writeHtmlModules84 :: Text.Blaze.Internal.ChoiceString
+  {- Strictness: m2,
+     Unfolding: (Text.Blaze.Internal.String
+                   Command.Docs.Html.writeHtmlModules80) -}
+8488692a8c137add46ccb03d93779933
+  writeHtmlModules85 :: Text.Blaze.Internal.ChoiceString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules86 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.Static ww1 ww2 ww3 }) -}
+bed486888ed59728d4f6d07b2bb563cc
+  writeHtmlModules86 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules87) -}
+6a5d19ddfcf9dbdb9cb43df954f88746
+  writeHtmlModules87 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("role"#) -}
+82727af65fa888602a95c454d48daea2
+  writeHtmlModules88 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules137
+                   Command.Docs.Html.writeHtmlModules89) -}
+aca458759e40172796883455ce158833
+  writeHtmlModules89 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules90) -}
+d782927df5f55be3101e37548fbe9190
+  writeHtmlModules9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Command.Docs.Html.writeHtmlModules10) -}
+c6afbdbf3ea39061b5481e0cf1a8d52c
+  writeHtmlModules90 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules81
+                   Command.Docs.Html.writeHtmlModules91) -}
+5773aa2e817659abadabaaceadf8ac76
+  writeHtmlModules91 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules92) -}
+d2430fdfaff4a95b546cebf81fe351e5
+  writeHtmlModules92 :: Text.Blaze.Internal.MarkupM ()
+  {- Unfolding: (Text.Blaze.Internal.Append
+                   @ ()
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules123
+                   Command.Docs.Html.writeHtmlModules93) -}
+92482773b1b970abed3e869cecd5f658
+  writeHtmlModules93 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules120
+                   Command.Docs.Html.writeHtmlModules94) -}
+a9a31b729094110dd3f9f2475cfafcfb
+  writeHtmlModules94 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules95) -}
+f2e3dd5330fd62435833e38ed09f2156
+  writeHtmlModules95 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules26
+                   Command.Docs.Html.writeHtmlModules23
+                   Command.Docs.Html.writeHtmlModules117
+                   Command.Docs.Html.writeHtmlModules96) -}
+4797bb957446ee522d084bf79d8fba3b
+  writeHtmlModules96 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules17
+                   Command.Docs.Html.writeHtmlModules14
+                   Command.Docs.Html.writeHtmlModules11
+                   Command.Docs.Html.writeHtmlModules97) -}
+090bba070bc1c1b8963cc4e953dbf8d9
+  writeHtmlModules97 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m8,
+     Unfolding: (Text.Blaze.Internal.AddAttribute
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules114
+                   Command.Docs.Html.writeHtmlModules111
+                   Command.Docs.Html.writeHtmlModules108
+                   Command.Docs.Html.writeHtmlModules98) -}
+aa40f75e808293bff7f79fa68012f8a2
+  writeHtmlModules98 :: Text.Blaze.Internal.MarkupM ()
+  {- Strictness: m1,
+     Unfolding: (Text.Blaze.Internal.Parent
+                   @ ()
+                   Command.Docs.Html.writeHtmlModules105
+                   Command.Docs.Html.writeHtmlModules102
+                   Command.Docs.Html.writeHtmlModules99
+                   Command.Docs.Html.writeHtmlModules33) -}
+51df41f3c33e8c473610b124747784ac
+  writeHtmlModules99 :: Text.Blaze.Internal.StaticString
+  {- Unfolding: (case Text.Blaze.Internal.$w$cfromString
+                        Command.Docs.Html.writeHtmlModules100 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Text.Blaze.Internal.StaticString ww1 ww2 ww3 }) -}
+02019cd218186fb35734606407e528a2
+  writeHtmlModules_go ::
+    [Language.PureScript.Names.ModuleName]
+    -> Text.Blaze.Internal.MarkupM ()
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

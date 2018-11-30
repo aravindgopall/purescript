@@ -1,0 +1,658 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:26:15.787934 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label [family instance module] 8043
+  interface hash: 8650ecdba1ead2b637bdb54535d16ccc
+  ABI hash: ac3bc484eb8b3b2ccf228cc34cdb537c
+  export-list hash: 62e65d694c1e96c81750d9cacc93e898
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c44f56fa568975ec54fde669ad1add1f
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Label.Label{Language.PureScript.Label.Label runLabel}
+module dependencies: Language.PureScript.PSString
+package dependencies: aeson-1.3.1.1 array-0.5.2.0
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1 primitive-0.6.3.0
+                      random-1.1 scientific-0.3.6.2 tagged-0.8.5
+                      template-haskell-2.13.0.0 text-1.2.3.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 uuid-types-1.0.3 vector-0.12.0.1
+orphans: attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.3.1.1:Data.Aeson 108dfb08de41cf77aad4693ac1dc3d44
+import  -/  aeson-1.3.1.1:Data.Aeson.Encoding.Internal f04efae65181ca66f15bea14741e502d
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.FromJSON 1ea0c919856f0d29f12e53cd074d532c
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.Internal df76c21edff000f9355bfb6fb0dbf3e6
+import  -/  aeson-1.3.1.1:Data.Aeson.Types.ToJSON 587c7d8b9444e85253d7faf5f824f568
+import  -/  base-4.11.1.0:Data.Monoid c40cd435d79b84293ce5503253ee6d44
+import  -/  base-4.11.1.0:Data.String 1b97cff5f9627e73898d75997a9ccf7f
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Generics 4d1469b3e29804a05a1be33d11accff6
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 171f1f567c47ef82860df4ad686d11b1
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
+  exports: 41608caf7cc5b51f34de641c9952ab6d
+  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fEqLabel :: GHC.Classes.Eq Language.PureScript.Label.Label
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.PSString.$fEqPSString1
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Bool>_R)
+                  Language.PureScript.PSString.$fEqPSString_$s$fEq[]_$c/=
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Bool>_R) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fFromJSONLabel ::
+    Data.Aeson.Types.FromJSON.FromJSON Language.PureScript.Label.Label
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.PSString.$fFromJSONPSString_$cparseJSON
+                    `cast`
+                  (<Data.Aeson.Types.Internal.Value>_R
+                   ->_R (Data.Aeson.Types.Internal.Parser
+                           (Sym (Language.PureScript.Label.N:Label[0])))_R)
+                  Language.PureScript.PSString.$fFromJSONPSString_$cparseJSONList
+                    `cast`
+                  (<Data.Aeson.Types.Internal.Value>_R
+                   ->_R (Data.Aeson.Types.Internal.Parser
+                           ([Sym (Language.PureScript.Label.N:Label[0])])_R)_R) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fGenericLabel ::
+    GHC.Generics.Generic Language.PureScript.Label.Label
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.Label.$fGenericLabel2
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <Language.PureScript.Label.Label>_R
+                   ->_R Language.PureScript.Label.N:Label[0] ; (Sym (GHC.Generics.N:K1[0]
+                                                                         <*>_N
+                                                                         <GHC.Generics.R>_P
+                                                                         <Language.PureScript.PSString.PSString>_R
+                                                                         <x>_P) ; (Sym (GHC.Generics.N:M1[0]
+                                                                                            <*>_N
+                                                                                            <GHC.Generics.S>_P
+                                                                                            <'GHC.Generics.MetaSel
+                                                                                               ('GHC.Base.Just
+                                                                                                  "runLabel")
+                                                                                               'GHC.Generics.NoSourceUnpackedness
+                                                                                               'GHC.Generics.NoSourceStrictness
+                                                                                               'GHC.Generics.DecidedLazy>_P
+                                                                                            <GHC.Generics.K1
+                                                                                               GHC.Generics.R
+                                                                                               Language.PureScript.PSString.PSString>_R) ; (Sym (GHC.Generics.N:M1[0]
+                                                                                                                                                     <*>_N
+                                                                                                                                                     <GHC.Generics.C>_P
+                                                                                                                                                     <'GHC.Generics.MetaCons
+                                                                                                                                                        "Label"
+                                                                                                                                                        'GHC.Generics.PrefixI
+                                                                                                                                                        'GHC.Types.True>_P
+                                                                                                                                                     <GHC.Generics.M1
+                                                                                                                                                        GHC.Generics.S
+                                                                                                                                                        ('GHC.Generics.MetaSel
+                                                                                                                                                           ('GHC.Base.Just
+                                                                                                                                                              "runLabel")
+                                                                                                                                                           'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                           'GHC.Generics.NoSourceStrictness
+                                                                                                                                                           'GHC.Generics.DecidedLazy)
+                                                                                                                                                        (GHC.Generics.K1
+                                                                                                                                                           GHC.Generics.R
+                                                                                                                                                           Language.PureScript.PSString.PSString)>_R) ; (Sym (GHC.Generics.N:M1[0]
+                                                                                                                                                                                                                  <*>_N
+                                                                                                                                                                                                                  <GHC.Generics.D>_P
+                                                                                                                                                                                                                  <'GHC.Generics.MetaData
+                                                                                                                                                                                                                     "Label"
+                                                                                                                                                                                                                     "Language.PureScript.Label"
+                                                                                                                                                                                                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                                                                                                                                                     'GHC.Types.True>_P
+                                                                                                                                                                                                                  <GHC.Generics.M1
+                                                                                                                                                                                                                     GHC.Generics.C
+                                                                                                                                                                                                                     ('GHC.Generics.MetaCons
+                                                                                                                                                                                                                        "Label"
+                                                                                                                                                                                                                        'GHC.Generics.PrefixI
+                                                                                                                                                                                                                        'GHC.Types.True)
+                                                                                                                                                                                                                     (GHC.Generics.M1
+                                                                                                                                                                                                                        GHC.Generics.S
+                                                                                                                                                                                                                        ('GHC.Generics.MetaSel
+                                                                                                                                                                                                                           ('GHC.Base.Just
+                                                                                                                                                                                                                              "runLabel")
+                                                                                                                                                                                                                           'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                                                           'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                                                           'GHC.Generics.DecidedLazy)
+                                                                                                                                                                                                                        (GHC.Generics.K1
+                                                                                                                                                                                                                           GHC.Generics.R
+                                                                                                                                                                                                                           Language.PureScript.PSString.PSString))>_R) ; Sub (Sym (Language.PureScript.Label.Rep_Label[0]))))) <x>_N))
+                  Language.PureScript.Label.$fGenericLabel1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <GHC.Generics.Rep Language.PureScript.Label.Label x>_R
+                   ->_R (Sub (Language.PureScript.Label.Rep_Label[0]) ; (GHC.Generics.N:M1[0]
+                                                                             <*>_N
+                                                                             <GHC.Generics.D>_P
+                                                                             <'GHC.Generics.MetaData
+                                                                                "Label"
+                                                                                "Language.PureScript.Label"
+                                                                                "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                'GHC.Types.True>_P
+                                                                             <GHC.Generics.M1
+                                                                                GHC.Generics.C
+                                                                                ('GHC.Generics.MetaCons
+                                                                                   "Label"
+                                                                                   'GHC.Generics.PrefixI
+                                                                                   'GHC.Types.True)
+                                                                                (GHC.Generics.M1
+                                                                                   GHC.Generics.S
+                                                                                   ('GHC.Generics.MetaSel
+                                                                                      ('GHC.Base.Just
+                                                                                         "runLabel")
+                                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                                      'GHC.Generics.NoSourceStrictness
+                                                                                      'GHC.Generics.DecidedLazy)
+                                                                                   (GHC.Generics.K1
+                                                                                      GHC.Generics.R
+                                                                                      Language.PureScript.PSString.PSString))>_R ; (GHC.Generics.N:M1[0]
+                                                                                                                                        <*>_N
+                                                                                                                                        <GHC.Generics.C>_P
+                                                                                                                                        <'GHC.Generics.MetaCons
+                                                                                                                                           "Label"
+                                                                                                                                           'GHC.Generics.PrefixI
+                                                                                                                                           'GHC.Types.True>_P
+                                                                                                                                        <GHC.Generics.M1
+                                                                                                                                           GHC.Generics.S
+                                                                                                                                           ('GHC.Generics.MetaSel
+                                                                                                                                              ('GHC.Base.Just
+                                                                                                                                                 "runLabel")
+                                                                                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                              'GHC.Generics.NoSourceStrictness
+                                                                                                                                              'GHC.Generics.DecidedLazy)
+                                                                                                                                           (GHC.Generics.K1
+                                                                                                                                              GHC.Generics.R
+                                                                                                                                              Language.PureScript.PSString.PSString)>_R ; GHC.Generics.N:M1[0]
+                                                                                                                                                                                              <*>_N
+                                                                                                                                                                                              <GHC.Generics.S>_P
+                                                                                                                                                                                              <'GHC.Generics.MetaSel
+                                                                                                                                                                                                 ('GHC.Base.Just
+                                                                                                                                                                                                    "runLabel")
+                                                                                                                                                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                                                                                                                                                 'GHC.Generics.NoSourceStrictness
+                                                                                                                                                                                                 'GHC.Generics.DecidedLazy>_P
+                                                                                                                                                                                              <GHC.Generics.K1
+                                                                                                                                                                                                 GHC.Generics.R
+                                                                                                                                                                                                 Language.PureScript.PSString.PSString>_R))) <x>_N ; (GHC.Generics.N:K1[0]
+                                                                                                                                                                                                                                                          <*>_N
+                                                                                                                                                                                                                                                          <GHC.Generics.R>_P
+                                                                                                                                                                                                                                                          <Language.PureScript.PSString.PSString>_R
+                                                                                                                                                                                                                                                          <x>_P ; Sym (Language.PureScript.Label.N:Label[0]))) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fGenericLabel1 ::
+    GHC.Generics.Rep Language.PureScript.Label.Label x
+    -> GHC.Generics.Rep Language.PureScript.Label.Label x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ x
+                   (ds :: GHC.Generics.Rep Language.PureScript.Label.Label x) ->
+                 ds) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fGenericLabel2 ::
+    Language.PureScript.Label.Label -> Language.PureScript.Label.Label
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ x (x1 :: Language.PureScript.Label.Label) -> x1) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fIsStringLabel ::
+    Data.String.IsString Language.PureScript.Label.Label
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.PureScript.PSString.$fIsStringPSString1
+                  `cast`
+                ((<[GHC.Types.Char]>_R
+                  ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0])) ; Sym (Data.String.N:IsString[0]) <Language.PureScript.Label.Label>_N) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fMonoidLabel :: GHC.Base.Monoid Language.PureScript.Label.Label
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.Label.$fSemigroupLabel
+                  (GHC.Types.[] @ GHC.Word.Word16)
+                    `cast`
+                  (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                  (GHC.Base.++ @ GHC.Word.Word16)
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                  (GHC.Base.$fMonoid[]_$cmconcat @ GHC.Word.Word16)
+                    `cast`
+                  (([Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0])])_R
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0])) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fNFDataLabel ::
+    Control.DeepSeq.NFData Language.PureScript.Label.Label
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.PureScript.PSString.$fNFDataPSString_go
+                  `cast`
+                (((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                  ->_R <()>_R) ; Sym (Control.DeepSeq.N:NFData[0]
+                                          <Language.PureScript.Label.Label>_N)) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fOrdLabel :: GHC.Classes.Ord Language.PureScript.Label.Label
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.Label.$fEqLabel
+                  Language.PureScript.PSString.$fOrdPSString7
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Ordering>_R)
+                  Language.PureScript.PSString.$fOrdPSString6
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Bool>_R)
+                  Language.PureScript.PSString.$fOrdPSString5
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Bool>_R)
+                  Language.PureScript.PSString.$fOrdPSString4
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Bool>_R)
+                  Language.PureScript.PSString.$fOrdPSString3
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R <GHC.Types.Bool>_R)
+                  Language.PureScript.PSString.$fOrdPSString2
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                  Language.PureScript.PSString.$fOrdPSString1
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0])) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fSemigroupLabel ::
+    GHC.Base.Semigroup Language.PureScript.Label.Label
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  (GHC.Base.++ @ GHC.Word.Word16)
+                    `cast`
+                  ((Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                  (GHC.Base.$fSemigroup[]_$csconcat @ GHC.Word.Word16)
+                    `cast`
+                  ((GHC.Base.NonEmpty
+                      (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0])))_R
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                  Language.PureScript.PSString.$fSemigroupPSString1
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Real.Integral b>_R
+                   ->_R <b>_R
+                   ->_R (Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0]))
+                   ->_R Sym (Language.PureScript.PSString.N:PSString[0]) ; Sym (Language.PureScript.Label.N:Label[0])) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fShowLabel :: GHC.Show.Show Language.PureScript.Label.Label
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.Label.$fShowLabel_$cshowsPrec
+                  Language.PureScript.Label.$fShowLabel_$cshow
+                  Language.PureScript.Label.$fShowLabel_$cshowList -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fShowLabel1 :: Language.PureScript.Label.Label -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ (w :: Language.PureScript.Label.Label)
+                   (w1 :: GHC.Base.String) ->
+                 Language.PureScript.Label.$w$cshowsPrec 0# w w1) -}
+b1362f93c0d04c8838c98d65a624e6dd
+  $fShowLabel2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+4c293f6dbcfbc05aad3377232bff5020
+  $fShowLabel3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("runLabel = "#) -}
+6372aaca73c5aa463fd80f53bfa15c9a
+  $fShowLabel4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Label {"#) -}
+5ef7671fcec20cd2104beae40abfc0b2
+  $fShowLabel5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.PureScript.Label.$fShowLabel2) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fShowLabel_$cshow ::
+    Language.PureScript.Label.Label -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: Language.PureScript.Label.Label) ->
+                 GHC.CString.unpackAppendCString#
+                   Language.PureScript.Label.$fShowLabel4
+                   (GHC.CString.unpackAppendCString#
+                      Language.PureScript.Label.$fShowLabel3
+                      (GHC.Base.++_$s++
+                         @ GHC.Types.Char
+                         Language.PureScript.Label.$fShowLabel5
+                         GHC.Show.$fShow(,)3
+                         (GHC.Show.showLitString
+                            (GHC.Base.map
+                               @ (Data.Either.Either GHC.Word.Word16 GHC.Types.Char)
+                               @ GHC.Types.Char
+                               Language.PureScript.PSString.$fShowPSString2
+                               (Language.PureScript.PSString.$fShowPSString_go
+                                  x `cast`
+                                  (Language.PureScript.Label.N:Label[0] ; Language.PureScript.PSString.N:PSString[0])))
+                            GHC.Show.$fShow[]1)))) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fShowLabel_$cshowList ::
+    [Language.PureScript.Label.Label] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Language.PureScript.Label.Label])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Label.Label
+                   Language.PureScript.Label.$fShowLabel1
+                   ls
+                   s) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fShowLabel_$cshowsPrec ::
+    GHC.Types.Int -> Language.PureScript.Label.Label -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.PureScript.Label.Label)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.PureScript.Label.$w$cshowsPrec ww1 w1 w2 }) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $fToJSONLabel ::
+    Data.Aeson.Types.ToJSON.ToJSON Language.PureScript.Label.Label
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Label.Label
+                  Language.PureScript.PSString.$fToJSONPSString_$ctoJSON
+                    `cast`
+                  (Sym (Language.PureScript.Label.N:Label[0])
+                   ->_R <Data.Aeson.Types.Internal.Value>_R)
+                  Language.PureScript.PSString.$fToJSONPSString_$ctoEncoding
+                    `cast`
+                  (Sym (Language.PureScript.Label.N:Label[0])
+                   ->_R <Data.Aeson.Encoding.Internal.Encoding'
+                           Data.Aeson.Types.Internal.Value>_R)
+                  Language.PureScript.PSString.$fToJSONPSString_$ctoJSONList
+                    `cast`
+                  (([Sym (Language.PureScript.Label.N:Label[0])])_R
+                   ->_R <Data.Aeson.Types.Internal.Value>_R)
+                  Language.PureScript.PSString.$fToJSONPSString_$ctoEncodingList
+                    `cast`
+                  (([Sym (Language.PureScript.Label.N:Label[0])])_R
+                   ->_R <Data.Aeson.Encoding.Internal.Encoding'
+                           Data.Aeson.Types.Internal.Value>_R) -}
+85628c0ad9acd31d0cd9a0bc441e50c5
+  $tc'Label :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5550480493667420211##
+                   16727778585331175288##
+                   Language.PureScript.Label.$trModule
+                   Language.PureScript.Label.$tc'Label2
+                   0#
+                   Language.PureScript.Label.$tc'Label1) -}
+c656b6a9c0d1145ee66000a944904f0a
+  $tc'Label1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b3afc9b4b6f5a530b9360ee8405a2b41
+  $tc'Label2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Label.$tc'Label3) -}
+a8b9bc90e89d7558e487fc1eb11db3e1
+  $tc'Label3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Label"#) -}
+2f7e014f65eefcee164afdd9fd5d4764
+  $tcLabel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14225977928316746314##
+                   1178089047775597891##
+                   Language.PureScript.Label.$trModule
+                   Language.PureScript.Label.$tcLabel1
+                   0#
+                   GHC.Types.krep$*) -}
+09e111ccabde1d0d1be2325213c0f117
+  $tcLabel1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Label.$tcLabel2) -}
+a23d4fbb2968f9e797570dd9fe9e57f2
+  $tcLabel2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Label"#) -}
+5208feca18880e52b4cf5c2a624c470f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Label.$trModule3
+                   Language.PureScript.Label.$trModule1) -}
+d05aae73e577ef8f5bcf311e7fc51672
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Label.$trModule2) -}
+e6d8b0b12fdf6a6c778152a67b4fa1e1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Label"#) -}
+e3be4c581dc7f6f7e786df20806d4708
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Label.$trModule4) -}
+90ec4ca083fe71b7b01943cda826c3ef
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.PureScript.Label.Label
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Language.PureScript.Label.Label)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        Language.PureScript.Label.$fShowLabel4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.Label.$fShowLabel3
+                           (GHC.Base.++_$s++
+                              @ GHC.Types.Char
+                              (GHC.CString.unpackAppendCString#
+                                 Language.PureScript.Label.$fShowLabel2
+                                 w1)
+                              GHC.Show.$fShow(,)3
+                              (GHC.Show.showLitString
+                                 (GHC.Base.map
+                                    @ (Data.Either.Either GHC.Word.Word16 GHC.Types.Char)
+                                    @ GHC.Types.Char
+                                    Language.PureScript.PSString.$fShowPSString2
+                                    (Language.PureScript.PSString.$fShowPSString_go
+                                       w `cast`
+                                       (Language.PureScript.Label.N:Label[0] ; Language.PureScript.PSString.N:PSString[0])))
+                                 GHC.Show.$fShow[]1)))
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           Language.PureScript.Label.$fShowLabel4
+                           (GHC.CString.unpackAppendCString#
+                              Language.PureScript.Label.$fShowLabel3
+                              (GHC.Base.++_$s++
+                                 @ GHC.Types.Char
+                                 (GHC.CString.unpackAppendCString#
+                                    Language.PureScript.Label.$fShowLabel2
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))
+                                 GHC.Show.$fShow(,)3
+                                 (GHC.Show.showLitString
+                                    (GHC.Base.map
+                                       @ (Data.Either.Either GHC.Word.Word16 GHC.Types.Char)
+                                       @ GHC.Types.Char
+                                       Language.PureScript.PSString.$fShowPSString2
+                                       (Language.PureScript.PSString.$fShowPSString_go
+                                          w `cast`
+                                          (Language.PureScript.Label.N:Label[0] ; Language.PureScript.PSString.N:PSString[0])))
+                                    GHC.Show.$fShow[]1)))) }) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  newtype Label
+    = Label {runLabel :: Language.PureScript.PSString.PSString}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  axiom Language.PureScript.Label.Rep_Label::
+      GHC.Generics.Rep Language.PureScript.Label.Label
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "Label"
+               "Language.PureScript.Label"
+               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               'GHC.Types.True)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Label" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "runLabel")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Language.PureScript.PSString.PSString)))
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  runLabel ::
+    Language.PureScript.Label.Label
+    -> Language.PureScript.PSString.PSString
+  RecSel Left Language.PureScript.Label.Label
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.PureScript.Label.runLabel1
+                  `cast`
+                (<Language.PureScript.Label.Label>_R
+                 ->_R Language.PureScript.Label.N:Label[0]) -}
+61523a5f4fc28a2f2f6f00cce17ce1bb
+  runLabel1 ::
+    Language.PureScript.Label.Label -> Language.PureScript.Label.Label
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.PureScript.Label.Label) -> ds) -}
+instance GHC.Classes.Eq [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fEqLabel
+instance Data.Aeson.Types.FromJSON.FromJSON [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fFromJSONLabel
+instance GHC.Generics.Generic [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fGenericLabel
+instance Data.String.IsString [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fIsStringLabel
+instance GHC.Base.Monoid [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fMonoidLabel
+instance Control.DeepSeq.NFData [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fNFDataLabel
+instance GHC.Classes.Ord [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fOrdLabel
+instance GHC.Base.Semigroup [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fSemigroupLabel
+instance GHC.Show.Show [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fShowLabel
+instance Data.Aeson.Types.ToJSON.ToJSON [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.$fToJSONLabel
+family instance GHC.Generics.Rep [Language.PureScript.Label.Label]
+  = Language.PureScript.Label.Rep_Label
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

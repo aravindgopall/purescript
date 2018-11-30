@@ -1,0 +1,1414 @@
+
+==================== FINAL INTERFACE ====================
+2018-11-30 19:29:15.416376 UTC
+
+interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.AsHtml 8043
+  interface hash: af4e923c3f983e5c89324ba6a53e0f58
+  ABI hash: d6ccb9fe5d7b7534c07fe4dfb4212876
+  export-list hash: b44362469684e27daa706121cf18f0e9
+  orphan hash: cb5cac45e9136c02cc453294afe172c0
+  flag hash: 94f2816997904b752beedc19c412f025
+  opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.PureScript.Docs.AsHtml.declNamespace
+  Language.PureScript.Docs.AsHtml.makeFragment
+  Language.PureScript.Docs.AsHtml.moduleAsHtml
+  Language.PureScript.Docs.AsHtml.nullRenderContext
+  Language.PureScript.Docs.AsHtml.packageAsHtml
+  Language.PureScript.Docs.AsHtml.renderMarkdown
+  Language.PureScript.Docs.AsHtml.HtmlOutput{Language.PureScript.Docs.AsHtml.HtmlOutput htmlIndex htmlModules}
+  Language.PureScript.Docs.AsHtml.HtmlOutputModule{Language.PureScript.Docs.AsHtml.HtmlOutputModule htmlOutputModuleLocals htmlOutputModuleReExports}
+  Language.PureScript.Docs.AsHtml.HtmlRenderContext{Language.PureScript.Docs.AsHtml.HtmlRenderContext buildDocLink currentModuleName renderDocLink renderSourceLink}
+module dependencies: Control.Monad.Logger Control.Monad.Supply
+                     Control.Monad.Supply.Class Language.PureScript
+                     Language.PureScript.AST Language.PureScript.AST.Binders
+                     Language.PureScript.AST.Declarations
+                     Language.PureScript.AST.Exported Language.PureScript.AST.Literals
+                     Language.PureScript.AST.Operators Language.PureScript.AST.SourcePos
+                     Language.PureScript.AST.Traversals Language.PureScript.Bundle
+                     Language.PureScript.CodeGen.JS
+                     Language.PureScript.CodeGen.JS.Common
+                     Language.PureScript.CodeGen.JS.Printer Language.PureScript.Comments
+                     Language.PureScript.Constants Language.PureScript.CoreFn
+                     Language.PureScript.CoreFn.Ann Language.PureScript.CoreFn.Binders
+                     Language.PureScript.CoreFn.Desugar Language.PureScript.CoreFn.Expr
+                     Language.PureScript.CoreFn.Meta Language.PureScript.CoreFn.Module
+                     Language.PureScript.CoreFn.Optimizer
+                     Language.PureScript.CoreFn.ToJSON
+                     Language.PureScript.CoreFn.Traversals
+                     Language.PureScript.CoreImp.AST
+                     Language.PureScript.CoreImp.Optimizer
+                     Language.PureScript.CoreImp.Optimizer.Blocks
+                     Language.PureScript.CoreImp.Optimizer.Common
+                     Language.PureScript.CoreImp.Optimizer.Inliner
+                     Language.PureScript.CoreImp.Optimizer.MagicDo
+                     Language.PureScript.CoreImp.Optimizer.TCO
+                     Language.PureScript.CoreImp.Optimizer.Unused
+                     Language.PureScript.Crash Language.PureScript.Docs.Render
+                     Language.PureScript.Docs.RenderedCode
+                     Language.PureScript.Docs.RenderedCode.RenderKind
+                     Language.PureScript.Docs.RenderedCode.RenderType
+                     Language.PureScript.Docs.RenderedCode.Types
+                     Language.PureScript.Docs.Types
+                     Language.PureScript.Docs.Utils.MonoidExtras
+                     Language.PureScript.Environment Language.PureScript.Errors
+                     Language.PureScript.Externs Language.PureScript.Kinds
+                     Language.PureScript.Label Language.PureScript.Linter
+                     Language.PureScript.Linter.Exhaustive
+                     Language.PureScript.Linter.Imports Language.PureScript.Make
+                     Language.PureScript.Make.Actions Language.PureScript.Make.BuildPlan
+                     Language.PureScript.Make.Monad
+                     Language.PureScript.ModuleDependencies Language.PureScript.Names
+                     Language.PureScript.Options Language.PureScript.PSString
+                     Language.PureScript.Parser Language.PureScript.Parser.Common
+                     Language.PureScript.Parser.Declarations
+                     Language.PureScript.Parser.Kinds Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State Language.PureScript.Parser.Types
+                     Language.PureScript.Pretty Language.PureScript.Pretty.Common
+                     Language.PureScript.Pretty.Kinds Language.PureScript.Pretty.Types
+                     Language.PureScript.Pretty.Values
+                     Language.PureScript.Publish.BoxesHelpers
+                     Language.PureScript.Renamer Language.PureScript.Sugar
+                     Language.PureScript.Sugar.AdoNotation
+                     Language.PureScript.Sugar.BindingGroups
+                     Language.PureScript.Sugar.CaseDeclarations
+                     Language.PureScript.Sugar.DoNotation
+                     Language.PureScript.Sugar.LetPattern
+                     Language.PureScript.Sugar.Names
+                     Language.PureScript.Sugar.Names.Common
+                     Language.PureScript.Sugar.Names.Env
+                     Language.PureScript.Sugar.Names.Exports
+                     Language.PureScript.Sugar.Names.Imports
+                     Language.PureScript.Sugar.ObjectWildcards
+                     Language.PureScript.Sugar.Operators
+                     Language.PureScript.Sugar.Operators.Binders
+                     Language.PureScript.Sugar.Operators.Common
+                     Language.PureScript.Sugar.Operators.Expr
+                     Language.PureScript.Sugar.Operators.Types
+                     Language.PureScript.Sugar.TypeClasses
+                     Language.PureScript.Sugar.TypeClasses.Deriving
+                     Language.PureScript.Sugar.TypeDeclarations
+                     Language.PureScript.Traversals Language.PureScript.TypeChecker
+                     Language.PureScript.TypeChecker.Entailment
+                     Language.PureScript.TypeChecker.Kinds
+                     Language.PureScript.TypeChecker.Monad
+                     Language.PureScript.TypeChecker.Skolems
+                     Language.PureScript.TypeChecker.Subsumption
+                     Language.PureScript.TypeChecker.Synonyms
+                     Language.PureScript.TypeChecker.TypeSearch
+                     Language.PureScript.TypeChecker.Types
+                     Language.PureScript.TypeChecker.Unify
+                     Language.PureScript.TypeClassDictionaries Language.PureScript.Types
+                     Paths_purescript
+package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
+                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 blaze-html-0.9.1.1 blaze-markup-0.8.2.1
+                      bower-json-1.0.0.1 boxes-0.1.5 bytestring-0.10.8.2 cheapskate-0.1.1
+                      colour-2.3.4 containers-0.5.11.0 css-text-0.1.3.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 data-ordlist-0.4.7.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
+                      microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
+                      monad-control-1.0.2.3 mtl-2.2.2 network-uri-2.6.1.0
+                      old-locale-1.0.0.7 parallel-3.2.1.1 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 safe-0.3.17 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      tagsoup-0.14.6 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 transformers-base-0.4.5.2 uniplate-1.6.12
+                      unix-2.7.2.2 unordered-containers-0.2.9.0 utf8-string-1.0.1.1
+                      uuid-types-1.0.3 vector-0.12.0.1 xss-sanitize-0.3.6
+orphans: cheapskate-0.1.1:Cheapskate
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         uniplate-1.6.12:Data.Generics.Uniplate.Data
+         syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC stm-2.4.5.0:Control.Monad.STM
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         bower-json-1.0.0.1:Web.Bower.PackageMeta.Internal
+                         cheapskate-0.1.1:Cheapskate.Types containers-0.5.11.0:Data.Graph
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.Types
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.11.1.0:Control.Category b839bca5d85319b86c37d29f1613a5a2
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Char 3e89818e2b8ef1a2cc5393163484da72
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.String 1b97cff5f9627e73898d75997a9ccf7f
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:GHC.Unicode 8234c40b59f035e845832a42e8725a00
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html 987774b84440e0b0caf7ed1c6bbb9e89
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html5 56f4a271c220d3536adfa3fb19fe90bd
+import  -/  blaze-html-0.9.1.1:Text.Blaze.Html5.Attributes 99fe12b019c4f76838f500eeebf341e7
+import  -/  blaze-markup-0.8.2.1:Text.Blaze ce47656392c1274369c4af48179cbff9
+import  -/  blaze-markup-0.8.2.1:Text.Blaze.Internal 1eb704f9e0aaeb62fcb84cf9f0c7c699
+import  -/  cheapskate-0.1.1:Cheapskate 39326b7e9ee10d1317ff3e8540d8b78f
+import  -/  cheapskate-0.1.1:Cheapskate.Parse 169fdf1dff1a5673c5d0e8a95a4fdd2d
+import  -/  cheapskate-0.1.1:Cheapskate.Types 874ccb6e4eda7e5b42438447da90c2fe
+import  -/  data-default-class-0.1.2.0:Data.Default.Class a39e689fe2e8c378666d66c458dc0d1f
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  parsec-3.1.13.0:Text.Parsec 963cbe7b4116cef91451434dc005a011
+import  -/  parsec-3.1.13.0:Text.Parsec.Combinator 86d872425bd48a2d67c0d1ce1a8ccc8b
+import  -/  Language.PureScript 055283757289375c92e0f1e11d744c0e
+  exports: 01fc85db00ce4cf253ba5c16e07330e5
+import  -/  Language.PureScript.AST.Operators be736e316462ef3abce53315e7361a17
+  Fixity b54dc78c2a40564b4aeb547cc4004cc2
+  Fixity 17f2097426b72eb751701f86cd97792c
+  Infix 48da7304e58a5ef64ef55f219a639205
+  Infixl c355232652b8d07dc6f4cc3d968cd69f
+  Infixr e374de6c2504281f30a71346ea589bed
+import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
+  SourceSpan 73c071552214b3f18e94970349d3affc
+import  -/  Language.PureScript.Docs.Render 3f6aa4f9c29883ff1fbb4ef80651b450
+  exports: 3d1445f50d2b9141ec0d6a16f0361334
+  renderChildDeclaration 2ce4ad2228de5f2f98d66420f4b650c7
+  renderDeclaration cf88398420b4ca343495abf84f58a83f
+import  -/  Language.PureScript.Docs.RenderedCode c7a77d8f9da9461d9b7b1607c98cc98a
+  exports: bdff998a873c7d4afd4c5b1970194d83
+import  -/  Language.PureScript.Docs.RenderedCode.Types 043476f1219ebaba7bef38f3035bc7df
+  ContainingModule 7fd78b3d6be6c8453ba17c402b4bd2a1
+  FixityAlias 6f960a06e738e49e9ff5eee34182b501
+  Keyword 3e05053bbc8a936be5d536e066ea02ea
+  KindLevel 2453a59bc1de0fb5442465f2d5aee924
+  Link 57107cd3acce8260120bf5733b798156
+  Namespace 0bf68f95cc438605559d4d420b903a78
+  NoLink 6e05dae2c23e6e40b2eaf5dd20fb7eb9
+  RenderedCode 4660ea0ffbba09617bc864a10b08d72f
+  Space 0a63150921f42c5267754bbe069af2f0
+  Symbol ef806f3592ad9cbec9dba9fbd6790cc5
+  Syntax d01bc8fa1625de8d27bcfec317a31293
+  TypeLevel 0032ddd9162116de18c15ac50fdae6a1
+  ValueLevel ae131370711ae80779ba3e7032d01684
+  outputWith 571a394cd6325194e6bd8112427d5a3e
+import  -/  Language.PureScript.Docs.Types f3dabfa61d83d3270ed9cf5a3f1e8614
+  exports: 49d03c0d410b46f9a363053ec495bd39
+  AliasDeclaration c7a9d57639e01196f9266b24e32eaee6
+  BuiltinModule 2a65f41ae0ee50cab7bbfef36b79e0a4
+  ChildDataConstructor e3f74c1ce910ff9b2dadd1fd5417981d
+  ChildDeclaration 8e63d40d255dc7777120ed694edffc05
+  ChildInstance 2767c57f9a4542cd3c0e3520d6721df9
+  ChildTypeClassMember d087ffdff794295523841c19891079d0
+  Declaration d9b6668cba3af1eb075a8829f69a1ca7
+  Declaration 8e63d40d255dc7777120ed694edffc05
+  DepsModule 4ab56688c48722e83625254bb5f2f13c
+  DocLink c62074555637e073b0db79439c644d76
+  DocLink 59159f7e969faee78eb3443f7f777e21
+  InPackage c20d45fcf12c7c706cdd677c619cd645
+  Local c188aad839d0d21d68d9aa830880403c
+  LocalModule c79db35b0b5e2f8a5652a007168d0885
+  Module 4b9f60ec266d7daf9641f4f125b8a703
+  Module 8e63d40d255dc7777120ed694edffc05
+  Package 97a760e09dac571b5eea2ffcf22dc007
+  Package 15392606004557971f6394abf491a56b
+  SameModule 4689f6b1b10cf2739d0cfd96514806c6
+  cdeclComments 8e63d40d255dc7777120ed694edffc05
+  cdeclInfo 8e63d40d255dc7777120ed694edffc05
+  cdeclTitle 8e63d40d255dc7777120ed694edffc05
+  childDeclInfoNamespace c456206b55c05d6f7f2e829b0742fc72
+  declChildren 8e63d40d255dc7777120ed694edffc05
+  declComments 8e63d40d255dc7777120ed694edffc05
+  declInfo 8e63d40d255dc7777120ed694edffc05
+  declInfoNamespace 5b0fb4d021fa4100b99a3cc2842465bc
+  declSourceSpan 8e63d40d255dc7777120ed694edffc05
+  declTitle 8e63d40d255dc7777120ed694edffc05
+  linkLocation 59159f7e969faee78eb3443f7f777e21
+  linkNamespace 59159f7e969faee78eb3443f7f777e21
+  linkTitle 59159f7e969faee78eb3443f7f777e21
+  modComments 8e63d40d255dc7777120ed694edffc05
+  modDeclarations 8e63d40d255dc7777120ed694edffc05
+  modName 8e63d40d255dc7777120ed694edffc05
+  modReExports 8e63d40d255dc7777120ed694edffc05
+  pkgCompilerVersion 15392606004557971f6394abf491a56b
+  pkgGithub 15392606004557971f6394abf491a56b
+  pkgMeta 15392606004557971f6394abf491a56b
+  pkgModuleMap 15392606004557971f6394abf491a56b
+  pkgModules 15392606004557971f6394abf491a56b
+  pkgResolvedDependencies 15392606004557971f6394abf491a56b
+  pkgTagTime 15392606004557971f6394abf491a56b
+  pkgUploader 15392606004557971f6394abf491a56b
+  pkgVersion 15392606004557971f6394abf491a56b
+  pkgVersionTag 15392606004557971f6394abf491a56b
+import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
+  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
+  runIdent bc5cc3d3ba9d105c169eb6038c65d1a8
+  runModuleName e07c63fa3ece350e6976663ef993edbb
+  runProperName 29f101e190cc99df85623423972e606f
+  showQualified 3c507c3595affc1e0cc61d34a906a736
+import  -/  Language.PureScript.Parser.Common cd9daf83419acf425eed3583730b480a
+  runTokenParser 22c139ae6db58097fa5b3743e91aefec
+import  -/  Language.PureScript.Parser.Lexer db153cafc807e1fa539fece18593da12
+  TokenParser 187b24d9915c74f6cd19336cd3ce961b
+  lex 8cc273ef9ffe00ce51529fc0c7f44874
+  symbol 7dd8c55c092324ed2efcd817d6c7248f
+import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
+import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
+333dd013c5e789510a70893c6280360d
+  $fFunctorHtmlOutput ::
+    GHC.Base.Functor Language.PureScript.Docs.AsHtml.HtmlOutput
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Docs.AsHtml.HtmlOutput
+                  Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput_$cfmap
+                  Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput_$c<$ -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fFunctorHtmlOutputModule ::
+    GHC.Base.Functor Language.PureScript.Docs.AsHtml.HtmlOutputModule
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                  Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput_$cfmap1
+                  Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput_$c<$1 -}
+333dd013c5e789510a70893c6280360d
+  $fFunctorHtmlOutput_$c<$ ::
+    a
+    -> Language.PureScript.Docs.AsHtml.HtmlOutput b
+    -> Language.PureScript.Docs.AsHtml.HtmlOutput a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(1*U,1*U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (w :: a)
+                   (w1 :: Language.PureScript.Docs.AsHtml.HtmlOutput b) ->
+                 case w1 of ww { Language.PureScript.Docs.AsHtml.HtmlOutput ww1 ww2 ->
+                 case Language.PureScript.Docs.AsHtml.$w$c<$
+                        @ a
+                        @ b
+                        w
+                        ww1
+                        ww2 of ww3 { (#,#) ww4 ww5 ->
+                 Language.PureScript.Docs.AsHtml.HtmlOutput @ a ww4 ww5 } }) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fFunctorHtmlOutput_$c<$1 ::
+    a
+    -> Language.PureScript.Docs.AsHtml.HtmlOutputModule b
+    -> Language.PureScript.Docs.AsHtml.HtmlOutputModule a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(A,1*U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (z :: a)
+                   (ds :: Language.PureScript.Docs.AsHtml.HtmlOutputModule b) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlOutputModule a1 a2 ->
+                 Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                   @ a
+                   z
+                   (GHC.Base.build
+                      @ (Language.PureScript.Docs.Types.InPackage
+                           Language.PureScript.Names.ModuleName,
+                         a)
+                      (\ @ b1
+                         (c :: (Language.PureScript.Docs.Types.InPackage
+                                  Language.PureScript.Names.ModuleName,
+                                a)
+                               -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ (Language.PureScript.Docs.Types.InPackage
+                              Language.PureScript.Names.ModuleName,
+                            b)
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ (Language.PureScript.Docs.Types.InPackage
+                                 Language.PureScript.Names.ModuleName,
+                               a)
+                            @ b1
+                            @ (Language.PureScript.Docs.Types.InPackage
+                                 Language.PureScript.Names.ModuleName,
+                               b)
+                            c
+                            (\ (b4 :: (Language.PureScript.Docs.Types.InPackage
+                                         Language.PureScript.Names.ModuleName,
+                                       b)) ->
+                             case b4 of wild1 { (,) a4 a5 -> (a4, z) }))
+                         n
+                         a2)) }) -}
+333dd013c5e789510a70893c6280360d
+  $fFunctorHtmlOutput_$cfmap ::
+    (a -> b)
+    -> Language.PureScript.Docs.AsHtml.HtmlOutput a
+    -> Language.PureScript.Docs.AsHtml.HtmlOutput b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U(1*U,1*U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (w :: a -> b)
+                   (w1 :: Language.PureScript.Docs.AsHtml.HtmlOutput a) ->
+                 case w1 of ww { Language.PureScript.Docs.AsHtml.HtmlOutput ww1 ww2 ->
+                 case Language.PureScript.Docs.AsHtml.$w$cfmap
+                        @ a
+                        @ b
+                        w
+                        ww1
+                        ww2 of ww3 { (#,#) ww4 ww5 ->
+                 Language.PureScript.Docs.AsHtml.HtmlOutput @ b ww4 ww5 } }) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fFunctorHtmlOutput_$cfmap1 ::
+    (a -> b)
+    -> Language.PureScript.Docs.AsHtml.HtmlOutputModule a
+    -> Language.PureScript.Docs.AsHtml.HtmlOutputModule b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U(U,1*U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (w :: a -> b)
+                   (w1 :: Language.PureScript.Docs.AsHtml.HtmlOutputModule a) ->
+                 case w1 of ww { Language.PureScript.Docs.AsHtml.HtmlOutputModule ww1 ww2 ->
+                 Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                   @ b
+                   (w ww1)
+                   (GHC.Base.map
+                      @ (Language.PureScript.Docs.Types.InPackage
+                           Language.PureScript.Names.ModuleName,
+                         a)
+                      @ (Language.PureScript.Docs.Types.InPackage
+                           Language.PureScript.Names.ModuleName,
+                         b)
+                      (\ (b2 :: (Language.PureScript.Docs.Types.InPackage
+                                   Language.PureScript.Names.ModuleName,
+                                 a)) ->
+                       case b2 of wild { (,) a1 a2 -> (a1, w a2) })
+                      ww2) }) -}
+333dd013c5e789510a70893c6280360d
+  $fShowHtmlOutput ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Language.PureScript.Docs.AsHtml.HtmlOutput a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Language.PureScript.Docs.AsHtml.HtmlOutput a)
+                  (Language.PureScript.Docs.AsHtml.$fShowHtmlOutput_$cshowsPrec
+                     @ a
+                     v)
+                  (Language.PureScript.Docs.AsHtml.$fShowHtmlOutput_$cshow @ a v)
+                  (Language.PureScript.Docs.AsHtml.$fShowHtmlOutput_$cshowList
+                     @ a
+                     v) -}
+44ec18171d800e3397f9ad40cad9ee1d
+  $fShowHtmlOutput1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fShowHtmlOutputModule ::
+    GHC.Show.Show a =>
+    GHC.Show.Show (Language.PureScript.Docs.AsHtml.HtmlOutputModule a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (Language.PureScript.Docs.AsHtml.HtmlOutputModule a)
+                  (Language.PureScript.Docs.AsHtml.$fShowHtmlOutputModule_$cshowsPrec
+                     @ a
+                     v)
+                  (Language.PureScript.Docs.AsHtml.$fShowHtmlOutputModule_$cshow
+                     @ a
+                     v)
+                  (Language.PureScript.Docs.AsHtml.$fShowHtmlOutputModule_$cshowList
+                     @ a
+                     v) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fShowHtmlOutputModule_$cshow ::
+    GHC.Show.Show a =>
+    Language.PureScript.Docs.AsHtml.HtmlOutputModule a
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Language.PureScript.Docs.AsHtml.HtmlOutputModule a) ->
+                 Language.PureScript.Docs.AsHtml.$fShowHtmlOutputModule_$cshowsPrec
+                   @ a
+                   $dShow
+                   Language.PureScript.Docs.AsHtml.$fShowHtmlOutput1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fShowHtmlOutputModule_$cshowList ::
+    GHC.Show.Show a =>
+    [Language.PureScript.Docs.AsHtml.HtmlOutputModule a]
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Language.PureScript.Docs.AsHtml.HtmlOutputModule a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Language.PureScript.Docs.AsHtml.HtmlOutputModule a)
+                   (Language.PureScript.Docs.AsHtml.$fShowHtmlOutputModule_$cshowsPrec
+                      @ a
+                      $dShow
+                      Language.PureScript.Docs.AsHtml.$fShowHtmlOutput1)
+                   ls
+                   s) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  $fShowHtmlOutputModule_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Language.PureScript.Docs.AsHtml.HtmlOutputModule a
+    -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Language.PureScript.Docs.AsHtml.HtmlOutputModule a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Language.PureScript.Docs.AsHtml.HtmlOutputModule ww3 ww4 ->
+                 Language.PureScript.Docs.AsHtml.$w$cshowsPrec1
+                   @ a
+                   w
+                   ww1
+                   ww3
+                   ww4 } }) -}
+333dd013c5e789510a70893c6280360d
+  $fShowHtmlOutput_$cshow ::
+    GHC.Show.Show a =>
+    Language.PureScript.Docs.AsHtml.HtmlOutput a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: Language.PureScript.Docs.AsHtml.HtmlOutput a) ->
+                 Language.PureScript.Docs.AsHtml.$fShowHtmlOutput_$cshowsPrec
+                   @ a
+                   $dShow
+                   Language.PureScript.Docs.AsHtml.$fShowHtmlOutput1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+333dd013c5e789510a70893c6280360d
+  $fShowHtmlOutput_$cshowList ::
+    GHC.Show.Show a =>
+    [Language.PureScript.Docs.AsHtml.HtmlOutput a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Language.PureScript.Docs.AsHtml.HtmlOutput a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Language.PureScript.Docs.AsHtml.HtmlOutput a)
+                   (Language.PureScript.Docs.AsHtml.$fShowHtmlOutput_$cshowsPrec
+                      @ a
+                      $dShow
+                      Language.PureScript.Docs.AsHtml.$fShowHtmlOutput1)
+                   ls
+                   s) -}
+333dd013c5e789510a70893c6280360d
+  $fShowHtmlOutput_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int
+    -> Language.PureScript.Docs.AsHtml.HtmlOutput a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Language.PureScript.Docs.AsHtml.HtmlOutput a)
+                   (w3 :: GHC.Base.String) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Language.PureScript.Docs.AsHtml.HtmlOutput ww3 ww4 ->
+                 Language.PureScript.Docs.AsHtml.$w$cshowsPrec
+                   @ a
+                   w
+                   ww1
+                   ww3
+                   ww4
+                   w3 } }) -}
+849f711655d1eb96917fbefb3c4f247e
+  $s$fBiplateab_$cbiplate_$s$fDataSeq ::
+    Data.Data.Data (Data.Sequence.Internal.Seq Cheapskate.Types.Inline)
+  {- Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Sequence.Internal.Seq Cheapskate.Types.Inline)
+                  (Data.Typeable.Internal.mkTrApp
+                     @ *
+                     @ *
+                     @ Data.Sequence.Internal.Seq
+                     @ Cheapskate.Types.Inline
+                     Data.Sequence.Internal.$fDataSeq6
+                     Cheapskate.Types.$fDataInline3)
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Data.Sequence.Internal.Seq
+                                                                       Cheapskate.Types.Inline>_N)
+                  (Data.Sequence.Internal.$fDataSeq_$cgfoldl
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgunfold
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (\ (xs :: Data.Sequence.Internal.Seq Cheapskate.Types.Inline) ->
+                   case xs
+                          `cast`
+                        (Data.Sequence.Internal.N:Seq[0]
+                             <Cheapskate.Types.Inline>_R) of wild {
+                     DEFAULT -> Data.Sequence.Internal.consConstr
+                     Data.Sequence.Internal.EmptyT
+                     -> Data.Sequence.Internal.emptyConstr })
+                  (\ (ds :: Data.Sequence.Internal.Seq Cheapskate.Types.Inline) ->
+                   Data.Sequence.Internal.seqDataType)
+                  (Data.Sequence.Internal.$fDataSeq_$cdataCast1
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (\ @ t :: * -> * -> *
+                     @ c :: * -> *
+                     ($dTypeable :: Data.Typeable.Internal.Typeable t)
+                     (ds :: forall d e.
+                            (Data.Data.Data d, Data.Data.Data e) =>
+                            c (t d e)) ->
+                   GHC.Base.Nothing
+                     @ (c (Data.Sequence.Internal.Seq Cheapskate.Types.Inline)))
+                  (Data.Sequence.Internal.$fDataSeq1
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                    `cast`
+                  (<forall b. Data.Data.Data b => b -> b>_R
+                   ->_R <Data.Sequence.Internal.Seq Cheapskate.Types.Inline>_R
+                   ->_R Data.Functor.Identity.N:Identity[0]
+                            <Data.Sequence.Internal.Seq Cheapskate.Types.Inline>_R)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapQl
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapQr
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapQ
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapQi
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapM
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapMp
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline)
+                  (Data.Sequence.Internal.$fDataSeq_$cgmapMo
+                     @ Cheapskate.Types.Inline
+                     Cheapskate.Types.$fDataInline) -}
+460bdd784ad2feb383ce20d653023281
+  $s$fDataSeq5 ::
+    Data.Typeable.Internal.TypeRep
+      (Data.Sequence.Internal.Seq Cheapskate.Types.Inline)
+  {- Unfolding: InlineRule (0, True, False)
+                (Data.Typeable.Internal.mkTrApp
+                   @ *
+                   @ *
+                   @ Data.Sequence.Internal.Seq
+                   @ Cheapskate.Types.Inline
+                   Data.Sequence.Internal.$fDataSeq6
+                   Cheapskate.Types.$fDataInline3) -}
+e13820885cec22f5e02c793aaff48036
+  $s$fStream[]mtok ::
+    Text.Parsec.Prim.Stream [tok] Data.Functor.Identity.Identity tok
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ tok.
+                  @ [tok]
+                  @ Data.Functor.Identity.Identity
+                  @ tok
+                  Data.Functor.Identity.$fMonadIdentity
+                  (Language.PureScript.Docs.AsHtml.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+                     @ tok) -}
+dc9d3854292dfee7f0fe7369fec3f5ab
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok (ds :: [tok]) ->
+                 case ds of wild {
+                   []
+                   -> (GHC.Base.Nothing @ (tok, [tok]))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R))
+                   : t ts
+                   -> (GHC.Base.Just @ (tok, [tok]) (t, ts))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Base.Maybe (tok, [tok])>_R)) }) -}
+5218cab00d3d4aad0b2013b3c2b40814
+  $tc'HtmlOutput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13137128203086064632##
+                   15222984278314069653##
+                   Language.PureScript.Docs.AsHtml.$trModule
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlOutput2
+                   1#
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlOutput1) -}
+8660f2a3ba38e9eb51d0da9e753f4d96
+  $tc'HtmlOutput1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bcdfe4439f0f31752ccb5bf4d650dfd4
+  $tc'HtmlOutput2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlOutput3) -}
+40a1c239e0f52a9607c2019cda350879
+  $tc'HtmlOutput3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HtmlOutput"#) -}
+fc96133567d60936c81c93c4753240cd
+  $tc'HtmlOutputModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3639637855454714466##
+                   13998750955448711472##
+                   Language.PureScript.Docs.AsHtml.$trModule
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlOutputModule2
+                   1#
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlOutputModule1) -}
+96e6a0cb12ef9556c423d02e451da04a
+  $tc'HtmlOutputModule1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+49041b74b8b2b4cdf0b39976e2780423
+  $tc'HtmlOutputModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlOutputModule3) -}
+3f1b146e0ce8a235dca86821ce270cd1
+  $tc'HtmlOutputModule3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HtmlOutputModule"#) -}
+681868ed83b9b0ca2f4e4e9d709d1284
+  $tc'HtmlRenderContext :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12763422860986654651##
+                   5556453445213221264##
+                   Language.PureScript.Docs.AsHtml.$trModule
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlRenderContext2
+                   0#
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlRenderContext1) -}
+a026cd5f46b603e2544dcae436bed4b0
+  $tc'HtmlRenderContext1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ce517b4dfe16bf3bb592501ffca7f910
+  $tc'HtmlRenderContext2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$tc'HtmlRenderContext3) -}
+40d383470b5e29584b8176987dba7144
+  $tc'HtmlRenderContext3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HtmlRenderContext"#) -}
+c9c54fc865705bc6aa1bf1df9e726579
+  $tcHtmlOutput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16937054227472767247##
+                   17582790395207239115##
+                   Language.PureScript.Docs.AsHtml.$trModule
+                   Language.PureScript.Docs.AsHtml.$tcHtmlOutput1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+720985b7a52703b7022a1c99d9ffc401
+  $tcHtmlOutput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$tcHtmlOutput2) -}
+8c93a36a936f89ebff833611463c6eda
+  $tcHtmlOutput2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HtmlOutput"#) -}
+b7fc60c4daaef1e48d3d33936a518b07
+  $tcHtmlOutputModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16389650770677590640##
+                   168472162224171473##
+                   Language.PureScript.Docs.AsHtml.$trModule
+                   Language.PureScript.Docs.AsHtml.$tcHtmlOutputModule1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+4041193a0dcb053e4b21f2f61b3e47fe
+  $tcHtmlOutputModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$tcHtmlOutputModule2) -}
+f7ed03e6a768bc7f7641498f0f3c7997
+  $tcHtmlOutputModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HtmlOutputModule"#) -}
+e2d843c337d54e81a20a6d9621a769d5
+  $tcHtmlRenderContext :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11455142916207694307##
+                   6019187521534759828##
+                   Language.PureScript.Docs.AsHtml.$trModule
+                   Language.PureScript.Docs.AsHtml.$tcHtmlRenderContext1
+                   0#
+                   GHC.Types.krep$*) -}
+16b90a4c159cf3e83ea90d162cdb7a9f
+  $tcHtmlRenderContext1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$tcHtmlRenderContext2) -}
+18372276f300effa1edcd0def89580db
+  $tcHtmlRenderContext2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HtmlRenderContext"#) -}
+3c59464158c112ea56b9cac7689f7f43
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.PureScript.Docs.AsHtml.$trModule3
+                   Language.PureScript.Docs.AsHtml.$trModule1) -}
+3dd98fbe44c69c964a320474b10bef8b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$trModule2) -}
+df6e7e3cbf8f964c42d149b8308d8623
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.PureScript.Docs.AsHtml"#) -}
+abc60765b587896aaaf692d0083db324
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Docs.AsHtml.$trModule4) -}
+44466861bfb37c63c92dfd05f7cef492
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+ddfbfc55ca31eb8e1ac86a74de723664
+  $w$c<$ ::
+    a
+    -> [(GHC.Base.Maybe GHC.Types.Char, b)]
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.Docs.AsHtml.HtmlOutputModule b)]
+    -> (# [(GHC.Base.Maybe GHC.Types.Char, a)],
+          [(Language.PureScript.Names.ModuleName,
+            Language.PureScript.Docs.AsHtml.HtmlOutputModule a)] #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a)
+                   (ww :: [(GHC.Base.Maybe GHC.Types.Char, b)])
+                   (ww1 :: [(Language.PureScript.Names.ModuleName,
+                             Language.PureScript.Docs.AsHtml.HtmlOutputModule b)]) ->
+                 (# GHC.Base.map
+                      @ (GHC.Base.Maybe GHC.Types.Char, b)
+                      @ (GHC.Base.Maybe GHC.Types.Char, a)
+                      (\ (b3 :: (GHC.Base.Maybe GHC.Types.Char, b)) ->
+                       case b3 of wild { (,) a1 a2 -> (a1, w) })
+                      ww,
+                    GHC.Base.map
+                      @ (Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Docs.AsHtml.HtmlOutputModule b)
+                      @ (Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Docs.AsHtml.HtmlOutputModule a)
+                      (\ (b6 :: (Language.PureScript.Names.ModuleName,
+                                 Language.PureScript.Docs.AsHtml.HtmlOutputModule b)) ->
+                       case b6 of wild { (,) a1 a2 ->
+                       (a1,
+                        Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput_$c<$1
+                          @ a
+                          @ b
+                          w
+                          a2) })
+                      ww1 #)) -}
+2074bbd6dbda2f329044ddcb955bd532
+  $w$cfmap ::
+    (a -> b)
+    -> [(GHC.Base.Maybe GHC.Types.Char, a)]
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.Docs.AsHtml.HtmlOutputModule a)]
+    -> (# [(GHC.Base.Maybe GHC.Types.Char, b)],
+          [(Language.PureScript.Names.ModuleName,
+            Language.PureScript.Docs.AsHtml.HtmlOutputModule b)] #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(U)><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b)
+                   (ww :: [(GHC.Base.Maybe GHC.Types.Char, a)])
+                   (ww1 :: [(Language.PureScript.Names.ModuleName,
+                             Language.PureScript.Docs.AsHtml.HtmlOutputModule a)]) ->
+                 (# GHC.Base.map
+                      @ (GHC.Base.Maybe GHC.Types.Char, a)
+                      @ (GHC.Base.Maybe GHC.Types.Char, b)
+                      (\ (b2 :: (GHC.Base.Maybe GHC.Types.Char, a)) ->
+                       case b2 of wild { (,) a1 a2 -> (a1, w a2) })
+                      ww,
+                    GHC.Base.map
+                      @ (Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Docs.AsHtml.HtmlOutputModule a)
+                      @ (Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Docs.AsHtml.HtmlOutputModule b)
+                      (\ (b4 :: (Language.PureScript.Names.ModuleName,
+                                 Language.PureScript.Docs.AsHtml.HtmlOutputModule a)) ->
+                       case b4 of wild { (,) a1 a2 ->
+                       (a1,
+                        Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput_$cfmap1
+                          @ a
+                          @ b
+                          w
+                          a2) })
+                      ww1 #)) -}
+2b32b561c920d39e9e88a7416a35d803
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int#
+    -> [(GHC.Base.Maybe GHC.Types.Char, a)]
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.Docs.AsHtml.HtmlOutputModule a)]
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S,U><L,1*U><L,1*U><L,U>,
+     Inline: [0] -}
+02b69b28048493574da8a853e07126d4
+  $w$cshowsPrec1 ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int#
+    -> a
+    -> [(Language.PureScript.Docs.Types.InPackage
+           Language.PureScript.Names.ModuleName,
+         a)]
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <L,U(C(C1(C(U))),A,A)><S,U><L,U><L,U>,
+     Inline: [0] -}
+b2f25498e2c593447a364c5a2d336992
+  $wdeclAsHtml ::
+    Language.PureScript.Docs.AsHtml.HtmlRenderContext
+    -> Data.Text.Internal.Text
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan
+    -> [Language.PureScript.Docs.Types.ChildDeclaration]
+    -> Language.PureScript.Docs.Types.DeclarationInfo
+    -> (# Text.Blaze.Internal.StaticString,
+          Text.Blaze.Internal.StaticString, Text.Blaze.Internal.ChoiceString,
+          Text.Blaze.Internal.MarkupM () #)
+  {- Arity: 6,
+     Strictness: <L,U(U,C(C1(C1(U))),C(U(U,U,1*U)),1*C1(U))><L,U(U,U,U)><L,1*U><L,1*U><L,U><L,U>,
+     Inline: [0] -}
+ad35103b55904bfe110ebbdf1a59d5a4
+  $wmakeFragment ::
+    Language.PureScript.Docs.RenderedCode.Types.Namespace
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+  {- Arity: 4, Strictness: <S,1*U><L,U><S,U><S,U>, Inline: [0] -}
+d74c30dd3b520139f0540147a3ebe1ab
+  $wmoduleAsHtml ::
+    (Language.PureScript.Docs.Types.InPackage
+       Language.PureScript.Names.ModuleName
+     -> GHC.Base.Maybe
+          Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+    -> Language.PureScript.Names.ModuleName
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+    -> [Language.PureScript.Docs.Types.Declaration]
+    -> [(Language.PureScript.Docs.Types.InPackage
+           Language.PureScript.Names.ModuleName,
+         [Language.PureScript.Docs.Types.Declaration])]
+    -> (# Language.PureScript.Names.ModuleName,
+          Language.PureScript.Docs.AsHtml.HtmlOutputModule
+            Text.Blaze.Html.Html #)
+  {- Arity: 5, Strictness: <L,C(U)><L,U><L,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Language.PureScript.Docs.Types.InPackage
+                           Language.PureScript.Names.ModuleName
+                         -> GHC.Base.Maybe
+                              Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+                   (ww :: Language.PureScript.Names.ModuleName)
+                   (ww1 :: GHC.Base.Maybe Data.Text.Internal.Text)
+                   (ww2 :: [Language.PureScript.Docs.Types.Declaration])
+                   (ww3 :: [(Language.PureScript.Docs.Types.InPackage
+                               Language.PureScript.Names.ModuleName,
+                             [Language.PureScript.Docs.Types.Declaration])]) ->
+                 let {
+                   lvl250 :: Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                   = Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                       ww
+                       Language.PureScript.Docs.AsHtml.moduleAsHtml4
+                       Language.PureScript.Docs.AsHtml.moduleAsHtml3
+                       Language.PureScript.Docs.AsHtml.moduleAsHtml2
+                 } in
+                 (# ww,
+                    Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                      @ (Text.Blaze.Internal.MarkupM ())
+                      (Text.Blaze.Internal.Append
+                         @ ()
+                         @ ()
+                         (case ww1 of wild {
+                            GHC.Base.Nothing -> Language.PureScript.Docs.AsHtml.moduleAsHtml1
+                            GHC.Base.Just x
+                            -> Text.Blaze.Internal.Append
+                                 @ ()
+                                 @ ()
+                                 (Language.PureScript.Docs.AsHtml.renderMarkdown x)
+                                 Language.PureScript.Docs.AsHtml.moduleAsHtml1 })
+                         (let {
+                            f2 :: Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                            = case w (Language.PureScript.Docs.Types.Local
+                                        @ Language.PureScript.Names.ModuleName
+                                        ww) of wild {
+                                GHC.Base.Nothing -> lvl250 GHC.Base.Just v -> v }
+                          } in
+                          letrec {
+                            go :: [Language.PureScript.Docs.Types.Declaration]
+                                  -> Text.Blaze.Internal.MarkupM ()
+                              {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ds :: [Language.PureScript.Docs.Types.Declaration]) ->
+                              case ds of wild {
+                                [] -> Language.PureScript.Docs.AsHtml.moduleAsHtml1
+                                : y ys
+                                -> Text.Blaze.Internal.Append
+                                     @ ()
+                                     @ ()
+                                     (Language.PureScript.Docs.AsHtml.declAsHtml f2 y)
+                                     (go ys) }
+                          } in
+                          go ww2))
+                      (GHC.Base.map
+                         @ (Language.PureScript.Docs.Types.InPackage
+                              Language.PureScript.Names.ModuleName,
+                            [Language.PureScript.Docs.Types.Declaration])
+                         @ (Language.PureScript.Docs.Types.InPackage
+                              Language.PureScript.Names.ModuleName,
+                            Text.Blaze.Html.Html)
+                         (\ (ds :: (Language.PureScript.Docs.Types.InPackage
+                                      Language.PureScript.Names.ModuleName,
+                                    [Language.PureScript.Docs.Types.Declaration])) ->
+                          case ds of wild { (,) pkg decls ->
+                          (pkg,
+                           let {
+                             f2 :: Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                             = case w pkg of wild1 {
+                                 GHC.Base.Nothing -> lvl250 GHC.Base.Just v -> v }
+                           } in
+                           letrec {
+                             go :: [Language.PureScript.Docs.Types.Declaration]
+                                   -> Text.Blaze.Html.Html
+                               {- Arity: 1, Strictness: <S,1*U> -}
+                             = \ (ds1 :: [Language.PureScript.Docs.Types.Declaration]) ->
+                               case ds1 of wild1 {
+                                 [] -> Language.PureScript.Docs.AsHtml.moduleAsHtml1
+                                 : y ys
+                                 -> Text.Blaze.Internal.Append
+                                      @ ()
+                                      @ ()
+                                      (Language.PureScript.Docs.AsHtml.declAsHtml f2 y)
+                                      (go ys) }
+                           } in
+                           go decls) })
+                         ww3) #)) -}
+333dd013c5e789510a70893c6280360d
+  data HtmlOutput a
+    = HtmlOutput {htmlIndex :: [(GHC.Base.Maybe GHC.Types.Char, a)],
+                  htmlModules :: [(Language.PureScript.Names.ModuleName,
+                                   Language.PureScript.Docs.AsHtml.HtmlOutputModule a)]}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  data HtmlOutputModule a
+    = HtmlOutputModule {htmlOutputModuleLocals :: a,
+                        htmlOutputModuleReExports :: [(Language.PureScript.Docs.Types.InPackage
+                                                         Language.PureScript.Names.ModuleName,
+                                                       a)]}
+a5d905d3692e9749662e2604f156dd73
+  data HtmlRenderContext
+    = HtmlRenderContext {currentModuleName :: Language.PureScript.Names.ModuleName,
+                         buildDocLink :: Language.PureScript.Docs.RenderedCode.Types.Namespace
+                                         -> Data.Text.Internal.Text
+                                         -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
+                                         -> GHC.Base.Maybe Language.PureScript.Docs.Types.DocLink,
+                         renderDocLink :: Language.PureScript.Docs.Types.DocLink
+                                          -> Data.Text.Internal.Text,
+                         renderSourceLink :: Language.PureScript.AST.SourcePos.SourceSpan
+                                             -> GHC.Base.Maybe Data.Text.Internal.Text}
+a5d905d3692e9749662e2604f156dd73
+  buildDocLink ::
+    Language.PureScript.Docs.AsHtml.HtmlRenderContext
+    -> Language.PureScript.Docs.RenderedCode.Types.Namespace
+    -> Data.Text.Internal.Text
+    -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
+    -> GHC.Base.Maybe Language.PureScript.Docs.Types.DocLink
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlRenderContext
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Docs.AsHtml.HtmlRenderContext) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlRenderContext ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+a5d905d3692e9749662e2604f156dd73
+  currentModuleName ::
+    Language.PureScript.Docs.AsHtml.HtmlRenderContext
+    -> Language.PureScript.Names.ModuleName
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlRenderContext
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Docs.AsHtml.HtmlRenderContext) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlRenderContext ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+3d9151c61590a9fd2cdc2df998a0a5a8
+  declAsHtml ::
+    Language.PureScript.Docs.AsHtml.HtmlRenderContext
+    -> Language.PureScript.Docs.Types.Declaration
+    -> Text.Blaze.Html.Html
+  {- Arity: 2,
+     Strictness: <L,U(U,C(C1(C1(U))),C(U(U,U,1*U)),C(U))><S,1*U(U(U,U,U),1*U,1*U,U,U)>m8,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+                   (w1 :: Language.PureScript.Docs.Types.Declaration) ->
+                 case w1 of ww { Language.PureScript.Docs.Types.Declaration ww1 ww2 ww3 ww4 ww5 ->
+                 case Language.PureScript.Docs.AsHtml.$wdeclAsHtml
+                        w
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5 of ww6 { (#,,,#) ww7 ww8 ww9 ww10 ->
+                 Text.Blaze.Internal.AddAttribute @ () ww7 ww8 ww9 ww10 } }) -}
+046f8b90a9ca7b9a32e8e578721a13dd
+  declNamespace ::
+    Language.PureScript.Docs.Types.Declaration
+    -> Language.PureScript.Docs.RenderedCode.Types.Namespace
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLLS),1*U(A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Docs.Types.Declaration) ->
+                 case x of wild { Language.PureScript.Docs.Types.Declaration ds1 ds2 ds3 ds4 ds5 ->
+                 Language.PureScript.Docs.Types.declInfoNamespace ds5 }) -}
+333dd013c5e789510a70893c6280360d
+  htmlIndex ::
+    Language.PureScript.Docs.AsHtml.HtmlOutput a
+    -> [(GHC.Base.Maybe GHC.Types.Char, a)]
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlOutput
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Language.PureScript.Docs.AsHtml.HtmlOutput a) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlOutput ds1 ds2 ->
+                 ds1 }) -}
+333dd013c5e789510a70893c6280360d
+  htmlModules ::
+    Language.PureScript.Docs.AsHtml.HtmlOutput a
+    -> [(Language.PureScript.Names.ModuleName,
+         Language.PureScript.Docs.AsHtml.HtmlOutputModule a)]
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlOutput
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Language.PureScript.Docs.AsHtml.HtmlOutput a) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlOutput ds1 ds2 ->
+                 ds2 }) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  htmlOutputModuleLocals ::
+    Language.PureScript.Docs.AsHtml.HtmlOutputModule a -> a
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlOutputModule
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   (ds :: Language.PureScript.Docs.AsHtml.HtmlOutputModule a) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlOutputModule ds1 ds2 ->
+                 ds1 }) -}
+e6c8e429f1f43d69c45ca76bf3bd312f
+  htmlOutputModuleReExports ::
+    Language.PureScript.Docs.AsHtml.HtmlOutputModule a
+    -> [(Language.PureScript.Docs.Types.InPackage
+           Language.PureScript.Names.ModuleName,
+         a)]
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlOutputModule
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a
+                   (ds :: Language.PureScript.Docs.AsHtml.HtmlOutputModule a) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlOutputModule ds1 ds2 ->
+                 ds2 }) -}
+147e7debbc3fc75129eb5b224f69d769
+  makeFragment ::
+    Language.PureScript.Docs.RenderedCode.Types.Namespace
+    -> Data.Text.Internal.Text -> Data.Text.Internal.Text
+  {- Arity: 2, Strictness: <S,1*U><S(SSS),1*U(U,U,U)>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Docs.RenderedCode.Types.Namespace)
+                   (w1 :: Data.Text.Internal.Text) ->
+                 case w1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Language.PureScript.Docs.AsHtml.$wmakeFragment w ww1 ww2 ww3 }) -}
+b1b9fd04aad1e3b454179a802a259cc2
+  moduleAsHtml ::
+    (Language.PureScript.Docs.Types.InPackage
+       Language.PureScript.Names.ModuleName
+     -> GHC.Base.Maybe
+          Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+    -> Language.PureScript.Docs.Types.Module
+    -> (Language.PureScript.Names.ModuleName,
+        Language.PureScript.Docs.AsHtml.HtmlOutputModule
+          Text.Blaze.Html.Html)
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U(U,1*U,1*U,1*U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.Docs.Types.InPackage
+                           Language.PureScript.Names.ModuleName
+                         -> GHC.Base.Maybe
+                              Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+                   (w1 :: Language.PureScript.Docs.Types.Module) ->
+                 case w1 of ww { Language.PureScript.Docs.Types.Module ww1 ww2 ww3 ww4 ->
+                 case Language.PureScript.Docs.AsHtml.$wmoduleAsHtml
+                        w
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww5 { (#,#) ww6 ww7 ->
+                 (ww6, ww7) } }) -}
+f23a8031d78368dcd1acc37b1bcb8874
+  moduleAsHtml1 :: Text.Blaze.Internal.MarkupM ()
+  {- HasNoCafRefs, Strictness: m10,
+     Unfolding: (Text.Blaze.Internal.Empty @ () GHC.Tuple.()) -}
+32a4d04220f8279c872dd465a04aa128
+  moduleAsHtml2 ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 GHC.Base.Nothing @ Data.Text.Internal.Text) -}
+4401b47843b58476c0232d702eecd394
+  moduleAsHtml3 ::
+    Language.PureScript.Docs.Types.DocLink -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.PureScript.Docs.Types.DocLink) ->
+                 Data.Text.Internal.empty_) -}
+00cd5b7060d2a570e9a3738661fe1a34
+  moduleAsHtml4 ::
+    Language.PureScript.Docs.RenderedCode.Types.Namespace
+    -> Data.Text.Internal.Text
+    -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
+    -> GHC.Base.Maybe Language.PureScript.Docs.Types.DocLink
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ (ds :: Language.PureScript.Docs.RenderedCode.Types.Namespace)
+                   (eta :: Data.Text.Internal.Text)
+                   (eta1 :: Language.PureScript.Docs.RenderedCode.Types.ContainingModule) ->
+                 GHC.Base.Nothing @ Language.PureScript.Docs.Types.DocLink) -}
+daac0cef8a3bf51370cd4d512b96d3ec
+  nullRenderContext ::
+    Language.PureScript.Names.ModuleName
+    -> Language.PureScript.Docs.AsHtml.HtmlRenderContext
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (mn :: Language.PureScript.Names.ModuleName) ->
+                 Language.PureScript.Docs.AsHtml.HtmlRenderContext
+                   mn
+                   Language.PureScript.Docs.AsHtml.moduleAsHtml4
+                   Language.PureScript.Docs.AsHtml.moduleAsHtml3
+                   Language.PureScript.Docs.AsHtml.moduleAsHtml2) -}
+d409839fdacd323d1d9cd1fb5747853c
+  packageAsHtml ::
+    (Language.PureScript.Docs.Types.InPackage
+       Language.PureScript.Names.ModuleName
+     -> GHC.Base.Maybe
+          Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+    -> Language.PureScript.Docs.Types.Package a
+    -> Language.PureScript.Docs.AsHtml.HtmlOutput Text.Blaze.Html.Html
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U(A,A,A,A,1*U,A,A,A,A,A)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (getHtmlCtx :: Language.PureScript.Docs.Types.InPackage
+                                    Language.PureScript.Names.ModuleName
+                                  -> GHC.Base.Maybe
+                                       Language.PureScript.Docs.AsHtml.HtmlRenderContext)
+                   (ds :: Language.PureScript.Docs.Types.Package a) ->
+                 case ds of wild { Language.PureScript.Docs.Types.Package ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 Language.PureScript.Docs.AsHtml.HtmlOutput
+                   @ Text.Blaze.Html.Html
+                   (GHC.Types.[]
+                      @ (GHC.Base.Maybe GHC.Types.Char, Text.Blaze.Html.Html))
+                   (GHC.Base.build
+                      @ (Language.PureScript.Names.ModuleName,
+                         Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                           Text.Blaze.Html.Html)
+                      (\ @ b1
+                         (c :: (Language.PureScript.Names.ModuleName,
+                                Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                  Text.Blaze.Html.Html)
+                               -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ Language.PureScript.Docs.Types.Module
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ (Language.PureScript.Names.ModuleName,
+                               Language.PureScript.Docs.AsHtml.HtmlOutputModule
+                                 Text.Blaze.Html.Html)
+                            @ b1
+                            @ Language.PureScript.Docs.Types.Module
+                            c
+                            (Language.PureScript.Docs.AsHtml.moduleAsHtml getHtmlCtx))
+                         n
+                         ds5)) }) -}
+a5d905d3692e9749662e2604f156dd73
+  renderDocLink ::
+    Language.PureScript.Docs.AsHtml.HtmlRenderContext
+    -> Language.PureScript.Docs.Types.DocLink
+    -> Data.Text.Internal.Text
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlRenderContext
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Docs.AsHtml.HtmlRenderContext) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlRenderContext ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+f65a022fb777bffbcd395e701df290a9
+  renderMarkdown :: Data.Text.Internal.Text -> Text.Blaze.Html.Html
+  {- Arity: 1, Strictness: <L,1*U(U,U,U)>,
+     Unfolding: (\ (x :: Data.Text.Internal.Text) ->
+                 case Data.Generics.Uniplate.Data.$w$cbiplate
+                        @ Cheapskate.Types.Doc
+                        @ Cheapskate.Types.Inlines
+                        Cheapskate.Types.$fDataDoc
+                        Language.PureScript.Docs.AsHtml.$s$fBiplateab_$cbiplate_$s$fDataSeq
+                        (Cheapskate.Parse.$wmarkdown
+                           GHC.Types.True
+                           GHC.Types.False
+                           GHC.Types.False
+                           GHC.Types.False
+                           x) of wild { (,) current generate ->
+                 case generate
+                        (Language.PureScript.Docs.AsHtml.renderMarkdown_$sg2
+                           current) of ww { Cheapskate.Types.Doc ww1 ww2 ->
+                 case ww1 of ww3 { Cheapskate.Types.Options ww4 ww5 ww6 ww7 ->
+                 Cheapskate.Html.$wrenderDoc ww4 ww5 ww6 ww2 } } }) -}
+d84684aa3b1f8db62cf25c95de276668
+  renderMarkdown_$sg2 ::
+    Data.Generics.Str.Str
+      (Data.Sequence.Internal.Seq Cheapskate.Types.Inline)
+    -> Data.Generics.Str.Str Cheapskate.Types.Inlines
+  {- Arity: 1, Strictness: <S,1*U> -}
+a5d905d3692e9749662e2604f156dd73
+  renderSourceLink ::
+    Language.PureScript.Docs.AsHtml.HtmlRenderContext
+    -> Language.PureScript.AST.SourcePos.SourceSpan
+    -> GHC.Base.Maybe Data.Text.Internal.Text
+  RecSel Left Language.PureScript.Docs.AsHtml.HtmlRenderContext
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.PureScript.Docs.AsHtml.HtmlRenderContext) ->
+                 case ds of wild { Language.PureScript.Docs.AsHtml.HtmlRenderContext ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+instance GHC.Base.Functor [Language.PureScript.Docs.AsHtml.HtmlOutput]
+  = Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutput
+instance GHC.Base.Functor [Language.PureScript.Docs.AsHtml.HtmlOutputModule]
+  = Language.PureScript.Docs.AsHtml.$fFunctorHtmlOutputModule
+instance GHC.Show.Show [Language.PureScript.Docs.AsHtml.HtmlOutput]
+  = Language.PureScript.Docs.AsHtml.$fShowHtmlOutput
+instance GHC.Show.Show [Language.PureScript.Docs.AsHtml.HtmlOutputModule]
+  = Language.PureScript.Docs.AsHtml.$fShowHtmlOutputModule
+"SPEC/Language.PureScript.Docs.AsHtml $fDataSeq @ Inline" [orphan] forall (v :: Data.Data.Data
+                                                                                  Cheapskate.Types.Inline)
+  Data.Sequence.Internal.$fDataSeq @ Cheapskate.Types.Inline v
+  = Language.PureScript.Docs.AsHtml.$s$fBiplateab_$cbiplate_$s$fDataSeq
+"SPEC/Language.PureScript.Docs.AsHtml $fDataSeq5 @ Inline" [orphan] forall ($dData :: Data.Data.Data
+                                                                                        Cheapskate.Types.Inline)
+  Data.Sequence.Internal.$fDataSeq5 @ Cheapskate.Types.Inline $dData
+  = Language.PureScript.Docs.AsHtml.$s$fDataSeq5
+"SPEC/Language.PureScript.Docs.AsHtml $fStream[]mtok @ Identity _" [orphan] forall @ tok
+                                                                                   (v :: GHC.Base.Monad
+                                                                                           Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok @ Data.Functor.Identity.Identity
+                                  @ tok
+                                  v
+  = Language.PureScript.Docs.AsHtml.$s$fStream[]mtok @ tok
+"SPEC/Language.PureScript.Docs.AsHtml $fStream[]mtok_$cuncons @ Identity _" [orphan] forall @ tok
+                                                                                            ($dMonad :: GHC.Base.Monad
+                                                                                                          Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ Data.Functor.Identity.Identity
+                                           @ tok
+                                           $dMonad
+  = Language.PureScript.Docs.AsHtml.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons
+      @ tok
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
