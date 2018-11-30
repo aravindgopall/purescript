@@ -4,7 +4,7 @@
 module Language.PureScript.Interactive.Types
   ( PSCiConfig(..)
   , psciEnvironment
-  , PSCiState -- constructor is not exported, to prevent psciImports and psciExports from
+  , PSCiState(..) -- constructor is not exported, to prevent psciImports and psciExports from
               -- becoming inconsistent with importedModules, letBindings and loadedExterns
   , ImportedModule
   , psciExports
@@ -15,6 +15,7 @@ module Language.PureScript.Interactive.Types
   , initialPSCiState
   , psciImportedModuleNames
   , updateImportedModules
+  , updateImportExports
   , updateLoadedExterns
   , updateLets
   , Command(..)
@@ -181,6 +182,8 @@ data Command
   | PasteLines
   -- | Return auto-completion output as if pressing <tab>
   | CompleteStr String
+  
+  | ReloadVariableState P.Expr 
   deriving Show
 
 data ReplQuery
@@ -215,4 +218,5 @@ data Directive
   | Show
   | Paste
   | Complete
+  | ReloadV
   deriving (Eq, Show)

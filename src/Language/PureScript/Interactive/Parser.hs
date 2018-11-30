@@ -84,6 +84,7 @@ parseDirective cmd =
     Type     -> TypeOf <$> parseRest P.parseValue arg
     Kind     -> KindOf <$> parseRest P.parseType arg
     Complete -> return (CompleteStr arg)
+    ReloadV  -> ReloadVariableState <$> parseRest P.parseValue arg
 
 -- |
 -- Parses expressions entered at the PSCI repl.
@@ -100,6 +101,15 @@ psciImport = do
 
 -- | Any declaration that we don't need a 'special case' parser for
 -- (like import declarations).
+psciDeclarationRest :: P.TokenParser [P.Declaration]
+psciDeclarationRest = mark $ fmap join (many1 $ same *>
+  (traverse accept =<< P.parseDeclaration))
+  where
+  accept decl
+    | acceptable decl = return decl
+    | otherwise = fail "this kind of declaration is not supported in psci"
+
+
 psciDeclaration :: P.TokenParser Command
 psciDeclaration = fmap Decls $ mark $ fmap join (many1 $ same *>
   (traverse accept =<< P.parseDeclaration))

@@ -33,6 +33,7 @@ directiveStrings =
     , (Show      , ["show"])
     , (Paste     , ["paste"])
     , (Complete  , ["complete"])
+    , (ReloadV   , ["reloadv"])
     ]
 
 -- |
@@ -105,5 +106,6 @@ help =
   , (Show,     "loaded",    "Show all loaded modules")
   , (Paste,    "paste",     "Enter multiple lines, terminated by ^D")
   , (Complete, "<prefix>",  "Show completions for <prefix> as if pressing tab")
+  , (ReloadV, "reload"   ,   "reloads the varaible")
   ]
 

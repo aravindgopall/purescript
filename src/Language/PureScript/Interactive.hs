@@ -43,6 +43,7 @@ import           System.Directory (getCurrentDirectory)
 import           System.FilePath ((</>))
 import           System.FilePath.Glob (glob)
 
+
 -- | Pretty-print errors
 printErrors :: MonadIO m => P.MultipleErrors -> m ()
 printErrors errs = liftIO $ do
@@ -112,7 +113,33 @@ handleCommand _ _ p (BrowseModule moduleName) = handleBrowse p moduleName
 handleCommand _ _ p (ShowInfo QueryLoaded)    = handleShowLoadedModules p
 handleCommand _ _ p (ShowInfo QueryImport)    = handleShowImportedModules p
 handleCommand _ _ p (CompleteStr prefix)      = handleComplete p prefix
+handleCommand _ _ p (ReloadVariableState val) = handleReloadVariableState p val 
 handleCommand _ _ _ _                         = P.internalError "handleCommand: unexpected command"
+handleReloadVariableState
+  :: (MonadReader PSCiConfig m, MonadState PSCiState m, MonadIO m)
+  => (String -> m ())
+  -> P.Expr
+  -> m ()
+handleReloadVariableState print' expr = do
+    let itdecl = P.ValueDecl (internalSpan, []) (P.Ident "it") P.Public [] [P.MkUnguarded expr]
+        eval = P.Var internalSpan (P.Qualified (Just (P.ModuleName [P.ProperName "$Support"])) (P.Ident "eval"))
+        mainValue = P.App eval (P.Var internalSpan (P.Qualified Nothing (P.Ident "it")))
+        typeDecl = P.TypeDeclaration
+                      (P.TypeDeclarationData (internalSpan, []) (P.Ident "$main")
+                             (P.TypeApp
+                                 (P.TypeConstructor
+                                     (P.Qualified (Just (P.ModuleName [P.ProperName "$Effect"])) (P.ProperName "Effect")))
+                                         (P.TypeWildcard internalSpan)))
+        mainDecl = P.ValueDecl (internalSpan, []) (P.Ident "$main") P.Public [] [P.MkUnguarded mainValue]
+    (Interactive.PSCiState a b x c d) <- get
+    let newS = Interactive.updateImportExports (Interactive.PSCiState a (removeItem [itdecl] b) x c d)
+    put newS
+    print' ""
+
+removeItem :: [P.Declaration] -> [P.Declaration] -> [P.Declaration]
+removeItem [] y= y
+removeItem _ [] = []
+removeItem x y = filter (`notElem` x) y
 
 -- | Reload the application state
 handleReloadState
@@ -318,3 +345,4 @@ handleComplete print' prefix = do
   let act = liftCompletionM (completion' (reverse prefix, ""))
   results <- evalStateT act st
   print' $ unlines (formatCompletions results)
+

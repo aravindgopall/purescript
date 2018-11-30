@@ -189,12 +189,6 @@ primExports :: Exports
 primExports = mkPrimExports primTypes primClasses primKinds
 
 -- |
--- The exported types from the @Prim.Boolean@ module
---
-primBooleanExports :: Exports
-primBooleanExports = mkPrimExports primBooleanTypes mempty primBooleanKinds
-
--- |
 -- The exported types from the @Prim.Ordering@ module
 --
 primOrderingExports :: Exports
@@ -248,9 +242,6 @@ primEnv :: Env
 primEnv = M.fromList
   [ ( C.Prim
     , (internalModuleSourceSpan "<Prim>", nullImports, primExports)
-    )
-  , ( C.PrimBoolean
-    , (internalModuleSourceSpan "<Prim.Boolean>", nullImports, primBooleanExports)
     )
   , ( C.PrimOrdering
     , (internalModuleSourceSpan "<Prim.Ordering>", nullImports, primOrderingExports)
