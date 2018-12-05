@@ -122,15 +122,6 @@ handleReloadVariableState
   -> m ()
 handleReloadVariableState print' expr = do
     let itdecl = P.ValueDecl (internalSpan, []) (P.Ident "it") P.Public [] [P.MkUnguarded expr]
-        eval = P.Var internalSpan (P.Qualified (Just (P.ModuleName [P.ProperName "$Support"])) (P.Ident "eval"))
-        mainValue = P.App eval (P.Var internalSpan (P.Qualified Nothing (P.Ident "it")))
-        typeDecl = P.TypeDeclaration
-                      (P.TypeDeclarationData (internalSpan, []) (P.Ident "$main")
-                             (P.TypeApp
-                                 (P.TypeConstructor
-                                     (P.Qualified (Just (P.ModuleName [P.ProperName "$Effect"])) (P.ProperName "Effect")))
-                                         (P.TypeWildcard internalSpan)))
-        mainDecl = P.ValueDecl (internalSpan, []) (P.Ident "$main") P.Public [] [P.MkUnguarded mainValue]
     (Interactive.PSCiState a b x c d) <- get
     let newS = Interactive.updateImportExports (Interactive.PSCiState a (removeItem [itdecl] b) x c d)
     put newS

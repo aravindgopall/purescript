@@ -533,7 +533,7 @@ data Declaration
   | TypeInstanceDeclaration SourceAnn [Ident] Integer Ident [Constraint] (Qualified (ProperName 'ClassName)) [Type] TypeInstanceBody
   deriving (Show)
 
-instance Eq(Declaration) where d1 == (ValueDeclaration (ValueDeclarationData {valdeclExpression=[GuardedExpr _ (PositionedValue _ _ (Var _ (Qualified m d2)))]})) =  (declName d1) == (Just (IdentName d2 ))
+instance Eq(Declaration) where d1 == (ValueDeclaration (ValueDeclarationData {valdeclExpression=[GuardedExpr _ (PositionedValue _ _ (Var _ (Qualified _ d2)))]})) =  (declName d1) == (Just (IdentName d2 ))
 
 data ValueFixity = ValueFixity Fixity (Qualified (Either Ident (ProperName 'ConstructorName))) (OpName 'ValueOpName)
   deriving (Eq, Ord, Show)
