@@ -92,7 +92,7 @@ rebracketFiltered pred_ externs modules = do
           $ concatMap externsFixities externs
           ++ concatMap collectFixities modules
 
-  -- ensureNoDuplicates' MultipleValueOpFixities valueFixities
+  ensureNoDuplicates' MultipleValueOpFixities valueFixities
   ensureNoDuplicates' MultipleTypeOpFixities typeFixities
 
   let valueOpTable = customOperatorTable' valueFixities
