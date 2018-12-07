@@ -291,6 +291,9 @@ kindSymbol = primKind C.symbol
 kindDoc :: Kind
 kindDoc = primSubKind C.typeError C.doc
 
+kindBoolean :: Kind
+kindBoolean = primSubKind C.moduleBoolean C.kindBoolean
+
 kindOrdering :: Kind
 kindOrdering = primSubKind C.moduleOrdering C.kindOrdering
 
@@ -356,6 +359,12 @@ primKinds = S.fromList
   , primName C.symbol
   ]
 
+-- | Kinds in @Prim.Boolean@
+primBooleanKinds :: S.Set (Qualified (ProperName 'KindName))
+primBooleanKinds = S.fromList
+  [ primSubName C.moduleBoolean C.kindBoolean
+  ]
+
 -- | Kinds in @Prim.Ordering@
 primOrderingKinds :: S.Set (Qualified (ProperName 'KindName))
 primOrderingKinds = S.fromList
@@ -378,6 +387,7 @@ primTypeErrorKinds = S.fromList
 allPrimKinds :: S.Set (Qualified (ProperName 'KindName))
 allPrimKinds = fold
   [ primKinds
+  , primBooleanKinds
   , primOrderingKinds
   , primRowListKinds
   , primTypeErrorKinds
@@ -403,12 +413,20 @@ primTypes = M.fromList
 allPrimTypes :: M.Map (Qualified (ProperName 'TypeName)) (Kind, TypeKind)
 allPrimTypes = M.unions
   [ primTypes
+  , primBooleanTypes
   , primOrderingTypes
   , primRowTypes
   , primRowListTypes
   , primSymbolTypes
   , primTypeErrorTypes
   ]
+
+primBooleanTypes :: M.Map (Qualified (ProperName 'TypeName)) (Kind, TypeKind)
+primBooleanTypes =
+  M.fromList
+    [ (primSubName C.moduleBoolean "True", (kindBoolean, ExternData))
+    , (primSubName C.moduleBoolean "False", (kindBoolean, ExternData))
+    ]
 
 primOrderingTypes :: M.Map (Qualified (ProperName 'TypeName)) (Kind, TypeKind)
 primOrderingTypes =
