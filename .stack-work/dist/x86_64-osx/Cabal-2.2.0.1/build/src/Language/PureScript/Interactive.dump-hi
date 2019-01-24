@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2019-01-24 14:17:38.524253 UTC
+2019-01-24 14:25:04.607901 UTC
 
 interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Interactive 8043
-  interface hash: 44433189d8029f04fd6dd8d289ab4a10
-  ABI hash: 3fd904461a7445d7c728d6926158dc75
-  export-list hash: bf99ba9e72de112c537c8b9bddb312a2
-  orphan hash: e79d09f37a93458bb72575b609c87275
+  interface hash: 313cf4f8c6a76e419428cd3bb95946d9
+  ABI hash: 02c09036df23086a5d870539eec040e0
+  export-list hash: adec698c57413fbad539075708f2aca9
+  orphan hash: 2237957b92fc344995b52df377540f19
   flag hash: 2ae478d21823b7c739b1b08c46262eb0
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -335,10 +335,10 @@ import  -/  Language.PureScript.Interactive.IO 33ca8876dd13899a31566d98915b8bcb
   exports: 68142b9a4eb8a5ac583606d644c791b4
   findNodeProcess a35c69141916ad6fc6274a025f342b3a
   getHistoryFilename f7de335e908018e1b81e47c17dd9251c
-import  -/  Language.PureScript.Interactive.Message 70b4e47eedaebdadda7d9c80cfd4311e
+import  -/  Language.PureScript.Interactive.Message 3ba6d47ec3ebba2950fc00a5d4b99caa
   exports: 661f34152b20bc80d5223c4efa747124
   guideURL 33c0384b6e1d5fd048ac8c3920a11136
-  helpMessage 551dd0969f320cb5ebb86843740ad53e
+  helpMessage 829f836b2c1ef598da24d85b8dd586bc
   noInputMessage 35538353b5cb48434bcf8b4d8e011dc0
   prologueMessage 31ebdaea56529eb5dbe5afe3de3f51d1
   quitMessage 8f3d5757e9fe245d0f6dd402c0dbab90
@@ -470,7 +470,7 @@ import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.Except 1cac4acbba7f36bd732fcc993d3cc20d
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.State.Strict 04b71a3f25b12af5c8b92a12d96be4c4
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.Writer.Strict 1cbd139bf8e92032997c41b58cb8e1af
-860dc10cd3c23be8661a1872b92edf25
+18ea2caabe2d233302cf36fdaa462b25
   $s$fApplicativeStateT ::
     GHC.Base.Applicative
       (Control.Monad.Trans.State.Strict.StateT
@@ -553,7 +553,7 @@ import  -/  transformers-0.5.5.0:Control.Monad.Trans.Writer.Strict 1cbd139bf8e92
                                     (Control.Monad.Trans.Writer.Strict.Writer
                                        Language.PureScript.Errors.MultipleErrors)>_R
                                  <a>_N)) -}
-78c55b24aaddc283e87cc910680fccf1
+b993684ef53620548188afa94a88bddb
   $s$fApplicativeStateT_$s$fApplicativeStateT1 ::
     Control.Monad.Trans.State.Strict.StateT
       s
@@ -686,90 +686,85 @@ import  -/  transformers-0.5.5.0:Control.Monad.Trans.Writer.Strict 1cbd139bf8e92
                                                                          Language.PureScript.Errors.MultipleErrors
                                                                          (b, s),
                                                                        Language.PureScript.Errors.MultipleErrors)>_R)) of wild3 { (,) a3 w2 ->
+                      let {
+                        $j :: Data.Either.Either
+                                Language.PureScript.Errors.MultipleErrors (a, s)
+                              -> Language.PureScript.Errors.MultipleErrors
+                              -> Control.Monad.Trans.Except.ExceptT
+                                   Language.PureScript.Errors.MultipleErrors
+                                   (Control.Monad.Trans.Writer.Strict.Writer
+                                      Language.PureScript.Errors.MultipleErrors)
+                                   (a, s)
+                          <join 2> {- Arity: 2 -}
+                        = \ (b1 :: Data.Either.Either
+                                     Language.PureScript.Errors.MultipleErrors (a, s))[OneShot]
+                            (w' :: Language.PureScript.Errors.MultipleErrors)[OneShot] ->
+                          (b1,
+                           (GHC.Base.augment
+                              @ Language.PureScript.AST.Declarations.ErrorMessage
+                              (\ @ b2
+                                 (c :: Language.PureScript.AST.Declarations.ErrorMessage
+                                       -> b2 -> b2)[OneShot]
+                                 (n :: b2)[OneShot] ->
+                               GHC.Base.foldr
+                                 @ Language.PureScript.AST.Declarations.ErrorMessage
+                                 @ b2
+                                 c
+                                 n
+                                 w1 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
+                              (GHC.Base.augment
+                                 @ Language.PureScript.AST.Declarations.ErrorMessage
+                                 (\ @ b2
+                                    (c :: Language.PureScript.AST.Declarations.ErrorMessage
+                                          -> b2 -> b2)[OneShot]
+                                    (n :: b2)[OneShot] ->
+                                  GHC.Base.foldr
+                                    @ Language.PureScript.AST.Declarations.ErrorMessage
+                                    @ b2
+                                    c
+                                    n
+                                    w2 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
+                                 w' `cast` (Language.PureScript.Errors.N:MultipleErrors[0])))
+                             `cast`
+                           (Sym (Language.PureScript.Errors.N:MultipleErrors[0])))
+                            `cast`
+                          (Sym (Data.Functor.Identity.N:Identity[0]
+                                    <(Data.Either.Either
+                                        Language.PureScript.Errors.MultipleErrors (a, s),
+                                      Language.PureScript.Errors.MultipleErrors)>_R) ; (Sym (Control.Monad.Trans.Writer.Strict.N:WriterT[0]
+                                                                                                 <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                 <Data.Functor.Identity.Identity>_R
+                                                                                                 <Data.Either.Either
+                                                                                                    Language.PureScript.Errors.MultipleErrors
+                                                                                                    (a,
+                                                                                                     s)>_N) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                       <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                       <Control.Monad.Trans.Writer.Strict.WriterT
+                                                                                                                          Language.PureScript.Errors.MultipleErrors
+                                                                                                                          Data.Functor.Identity.Identity>_R
+                                                                                                                       <(a,
+                                                                                                                         s)>_N)))
+                      } in
                       case a3 of wild4 {
                         Data.Either.Left e1
-                        -> (Data.Either.Left
-                              @ Language.PureScript.Errors.MultipleErrors
-                              @ (a, s)
-                              e1,
-                            (GHC.Base.build
-                               @ Language.PureScript.AST.Declarations.ErrorMessage
-                               (\ @ b1
-                                  (c :: Language.PureScript.AST.Declarations.ErrorMessage
-                                        -> b1 -> b1)[OneShot]
-                                  (n :: b1)[OneShot] ->
-                                GHC.Base.foldr
-                                  @ Language.PureScript.AST.Declarations.ErrorMessage
-                                  @ b1
-                                  c
-                                  (GHC.Base.foldr
-                                     @ Language.PureScript.AST.Declarations.ErrorMessage
-                                     @ b1
-                                     c
-                                     n
-                                     w2 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
-                                  w1 `cast` (Language.PureScript.Errors.N:MultipleErrors[0])))
-                              `cast`
-                            (Sym (Language.PureScript.Errors.N:MultipleErrors[0])))
-                             `cast`
-                           (Sym (Data.Functor.Identity.N:Identity[0]
-                                     <(Data.Either.Either
-                                         Language.PureScript.Errors.MultipleErrors (a, s),
-                                       Language.PureScript.Errors.MultipleErrors)>_R) ; (Sym (Control.Monad.Trans.Writer.Strict.N:WriterT[0]
-                                                                                                  <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                  <Data.Functor.Identity.Identity>_R
-                                                                                                  <Data.Either.Either
-                                                                                                     Language.PureScript.Errors.MultipleErrors
-                                                                                                     (a,
-                                                                                                      s)>_N) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
-                                                                                                                        <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                                        <Control.Monad.Trans.Writer.Strict.WriterT
-                                                                                                                           Language.PureScript.Errors.MultipleErrors
-                                                                                                                           Data.Functor.Identity.Identity>_R
-                                                                                                                        <(a,
-                                                                                                                          s)>_N)))
+                        -> $j
+                             (Data.Either.Left
+                                @ Language.PureScript.Errors.MultipleErrors
+                                @ (a, s)
+                                e1)
+                             (GHC.Types.[] @ Language.PureScript.AST.Declarations.ErrorMessage)
+                               `cast`
+                             (Sym (Language.PureScript.Errors.N:MultipleErrors[0]))
                         Data.Either.Right x1
                         -> case x1 of wild5 { (,) x2 s'' ->
-                           (Data.Either.Right
-                              @ Language.PureScript.Errors.MultipleErrors
-                              @ (a, s)
-                              (a2, s''),
-                            (GHC.Base.build
-                               @ Language.PureScript.AST.Declarations.ErrorMessage
-                               (\ @ b1
-                                  (c :: Language.PureScript.AST.Declarations.ErrorMessage
-                                        -> b1 -> b1)[OneShot]
-                                  (n :: b1)[OneShot] ->
-                                GHC.Base.foldr
-                                  @ Language.PureScript.AST.Declarations.ErrorMessage
-                                  @ b1
-                                  c
-                                  (GHC.Base.foldr
-                                     @ Language.PureScript.AST.Declarations.ErrorMessage
-                                     @ b1
-                                     c
-                                     n
-                                     w2 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
-                                  w1 `cast` (Language.PureScript.Errors.N:MultipleErrors[0])))
-                              `cast`
-                            (Sym (Language.PureScript.Errors.N:MultipleErrors[0])))
-                             `cast`
-                           (Sym (Data.Functor.Identity.N:Identity[0]
-                                     <(Data.Either.Either
-                                         Language.PureScript.Errors.MultipleErrors (a, s),
-                                       Language.PureScript.Errors.MultipleErrors)>_R) ; (Sym (Control.Monad.Trans.Writer.Strict.N:WriterT[0]
-                                                                                                  <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                  <Data.Functor.Identity.Identity>_R
-                                                                                                  <Data.Either.Either
-                                                                                                     Language.PureScript.Errors.MultipleErrors
-                                                                                                     (a,
-                                                                                                      s)>_N) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
-                                                                                                                        <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                                        <Control.Monad.Trans.Writer.Strict.WriterT
-                                                                                                                           Language.PureScript.Errors.MultipleErrors
-                                                                                                                           Data.Functor.Identity.Identity>_R
-                                                                                                                        <(a,
-                                                                                                                          s)>_N))) } } } } } }) -}
+                           $j
+                             (Data.Either.Right
+                                @ Language.PureScript.Errors.MultipleErrors
+                                @ (a, s)
+                                (a2, s''))
+                             (GHC.Types.[] @ Language.PureScript.AST.Declarations.ErrorMessage)
+                               `cast`
+                             (Sym (Language.PureScript.Errors.N:MultipleErrors[0])) } } } } } }) -}
 2a4eb89ae24dfea497522c939e7f5a86
   $s$fApplicativeStateT_$s$fApplicativeStateT_$c*> ::
     Control.Monad.Trans.State.Strict.StateT
@@ -961,7 +956,7 @@ import  -/  transformers-0.5.5.0:Control.Monad.Trans.Writer.Strict 1cbd139bf8e92
                                   (Control.Monad.Trans.Writer.Strict.Writer
                                      Language.PureScript.Errors.MultipleErrors)>_R
                                <b>_N)) -}
-21c85da18d1ac518e7d56ba981bef222
+f6f71f4650a342e99ab7dcdd6dbaa22d
   $s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> ::
     Control.Monad.Trans.State.Strict.StateT
       s
@@ -1098,90 +1093,85 @@ import  -/  transformers-0.5.5.0:Control.Monad.Trans.Writer.Strict 1cbd139bf8e92
                                                                          Language.PureScript.Errors.MultipleErrors
                                                                          (a, s),
                                                                        Language.PureScript.Errors.MultipleErrors)>_R)) of wild3 { (,) a2 w2 ->
+                      let {
+                        $j :: Data.Either.Either
+                                Language.PureScript.Errors.MultipleErrors (b, s)
+                              -> Language.PureScript.Errors.MultipleErrors
+                              -> Control.Monad.Trans.Except.ExceptT
+                                   Language.PureScript.Errors.MultipleErrors
+                                   (Control.Monad.Trans.Writer.Strict.Writer
+                                      Language.PureScript.Errors.MultipleErrors)
+                                   (b, s)
+                          <join 2> {- Arity: 2 -}
+                        = \ (b1 :: Data.Either.Either
+                                     Language.PureScript.Errors.MultipleErrors (b, s))[OneShot]
+                            (w' :: Language.PureScript.Errors.MultipleErrors)[OneShot] ->
+                          (b1,
+                           (GHC.Base.augment
+                              @ Language.PureScript.AST.Declarations.ErrorMessage
+                              (\ @ b2
+                                 (c :: Language.PureScript.AST.Declarations.ErrorMessage
+                                       -> b2 -> b2)[OneShot]
+                                 (n :: b2)[OneShot] ->
+                               GHC.Base.foldr
+                                 @ Language.PureScript.AST.Declarations.ErrorMessage
+                                 @ b2
+                                 c
+                                 n
+                                 w1 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
+                              (GHC.Base.augment
+                                 @ Language.PureScript.AST.Declarations.ErrorMessage
+                                 (\ @ b2
+                                    (c :: Language.PureScript.AST.Declarations.ErrorMessage
+                                          -> b2 -> b2)[OneShot]
+                                    (n :: b2)[OneShot] ->
+                                  GHC.Base.foldr
+                                    @ Language.PureScript.AST.Declarations.ErrorMessage
+                                    @ b2
+                                    c
+                                    n
+                                    w2 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
+                                 w' `cast` (Language.PureScript.Errors.N:MultipleErrors[0])))
+                             `cast`
+                           (Sym (Language.PureScript.Errors.N:MultipleErrors[0])))
+                            `cast`
+                          (Sym (Data.Functor.Identity.N:Identity[0]
+                                    <(Data.Either.Either
+                                        Language.PureScript.Errors.MultipleErrors (b, s),
+                                      Language.PureScript.Errors.MultipleErrors)>_R) ; (Sym (Control.Monad.Trans.Writer.Strict.N:WriterT[0]
+                                                                                                 <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                 <Data.Functor.Identity.Identity>_R
+                                                                                                 <Data.Either.Either
+                                                                                                    Language.PureScript.Errors.MultipleErrors
+                                                                                                    (b,
+                                                                                                     s)>_N) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                                                                       <Language.PureScript.Errors.MultipleErrors>_N
+                                                                                                                       <Control.Monad.Trans.Writer.Strict.WriterT
+                                                                                                                          Language.PureScript.Errors.MultipleErrors
+                                                                                                                          Data.Functor.Identity.Identity>_R
+                                                                                                                       <(b,
+                                                                                                                         s)>_N)))
+                      } in
                       case a2 of wild4 {
                         Data.Either.Left e1
-                        -> (Data.Either.Left
-                              @ Language.PureScript.Errors.MultipleErrors
-                              @ (b, s)
-                              e1,
-                            (GHC.Base.build
-                               @ Language.PureScript.AST.Declarations.ErrorMessage
-                               (\ @ b1
-                                  (c :: Language.PureScript.AST.Declarations.ErrorMessage
-                                        -> b1 -> b1)[OneShot]
-                                  (n :: b1)[OneShot] ->
-                                GHC.Base.foldr
-                                  @ Language.PureScript.AST.Declarations.ErrorMessage
-                                  @ b1
-                                  c
-                                  (GHC.Base.foldr
-                                     @ Language.PureScript.AST.Declarations.ErrorMessage
-                                     @ b1
-                                     c
-                                     n
-                                     w2 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
-                                  w1 `cast` (Language.PureScript.Errors.N:MultipleErrors[0])))
-                              `cast`
-                            (Sym (Language.PureScript.Errors.N:MultipleErrors[0])))
-                             `cast`
-                           (Sym (Data.Functor.Identity.N:Identity[0]
-                                     <(Data.Either.Either
-                                         Language.PureScript.Errors.MultipleErrors (b, s),
-                                       Language.PureScript.Errors.MultipleErrors)>_R) ; (Sym (Control.Monad.Trans.Writer.Strict.N:WriterT[0]
-                                                                                                  <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                  <Data.Functor.Identity.Identity>_R
-                                                                                                  <Data.Either.Either
-                                                                                                     Language.PureScript.Errors.MultipleErrors
-                                                                                                     (b,
-                                                                                                      s)>_N) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
-                                                                                                                        <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                                        <Control.Monad.Trans.Writer.Strict.WriterT
-                                                                                                                           Language.PureScript.Errors.MultipleErrors
-                                                                                                                           Data.Functor.Identity.Identity>_R
-                                                                                                                        <(b,
-                                                                                                                          s)>_N)))
+                        -> $j
+                             (Data.Either.Left
+                                @ Language.PureScript.Errors.MultipleErrors
+                                @ (b, s)
+                                e1)
+                             (GHC.Types.[] @ Language.PureScript.AST.Declarations.ErrorMessage)
+                               `cast`
+                             (Sym (Language.PureScript.Errors.N:MultipleErrors[0]))
                         Data.Either.Right x1
                         -> case x1 of wild5 { (,) x2 s'' ->
-                           (Data.Either.Right
-                              @ Language.PureScript.Errors.MultipleErrors
-                              @ (b, s)
-                              (f x2, s''),
-                            (GHC.Base.build
-                               @ Language.PureScript.AST.Declarations.ErrorMessage
-                               (\ @ b1
-                                  (c :: Language.PureScript.AST.Declarations.ErrorMessage
-                                        -> b1 -> b1)[OneShot]
-                                  (n :: b1)[OneShot] ->
-                                GHC.Base.foldr
-                                  @ Language.PureScript.AST.Declarations.ErrorMessage
-                                  @ b1
-                                  c
-                                  (GHC.Base.foldr
-                                     @ Language.PureScript.AST.Declarations.ErrorMessage
-                                     @ b1
-                                     c
-                                     n
-                                     w2 `cast` (Language.PureScript.Errors.N:MultipleErrors[0]))
-                                  w1 `cast` (Language.PureScript.Errors.N:MultipleErrors[0])))
-                              `cast`
-                            (Sym (Language.PureScript.Errors.N:MultipleErrors[0])))
-                             `cast`
-                           (Sym (Data.Functor.Identity.N:Identity[0]
-                                     <(Data.Either.Either
-                                         Language.PureScript.Errors.MultipleErrors (b, s),
-                                       Language.PureScript.Errors.MultipleErrors)>_R) ; (Sym (Control.Monad.Trans.Writer.Strict.N:WriterT[0]
-                                                                                                  <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                  <Data.Functor.Identity.Identity>_R
-                                                                                                  <Data.Either.Either
-                                                                                                     Language.PureScript.Errors.MultipleErrors
-                                                                                                     (b,
-                                                                                                      s)>_N) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
-                                                                                                                        <Language.PureScript.Errors.MultipleErrors>_N
-                                                                                                                        <Control.Monad.Trans.Writer.Strict.WriterT
-                                                                                                                           Language.PureScript.Errors.MultipleErrors
-                                                                                                                           Data.Functor.Identity.Identity>_R
-                                                                                                                        <(b,
-                                                                                                                          s)>_N))) } } } } } })
+                           $j
+                             (Data.Either.Right
+                                @ Language.PureScript.Errors.MultipleErrors
+                                @ (b, s)
+                                (f x2, s''))
+                             (GHC.Types.[] @ Language.PureScript.AST.Declarations.ErrorMessage)
+                               `cast`
+                             (Sym (Language.PureScript.Errors.N:MultipleErrors[0])) } } } } } })
                   `cast`
                 (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
                  <Control.Monad.Trans.State.Strict.StateT
@@ -1949,7 +1939,7 @@ c9c00b609f4bdc393e1ac336020ae87f
                                                                                          <Data.Functor.Identity.Identity>_R
                                                                                          <b
                                                                                           -> a>_N))) -}
-1db4b1946fbae275a1b54d20ee3d061f
+ad6ef46a93af5c6a373e2921e2f54bfc
   $s$fMonadErroreStateT ::
     Control.Monad.Error.Class.MonadError
       Language.PureScript.Errors.MultipleErrors
@@ -2344,7 +2334,7 @@ c9c00b609f4bdc393e1ac336020ae87f
                                                                                                                       Data.Functor.Identity.Identity>_R
                                                                                                                    <(a,
                                                                                                                      s)>_N))) } }) -}
-04138abed1c3121c2172bd132cfbd6f8
+e48d31a6fe78a9b9b1742b971958fac3
   $s$fMonadErroreStateT_$s$fMonadStateT ::
     GHC.Base.Monad
       (Control.Monad.Trans.State.Strict.StateT
@@ -2830,7 +2820,7 @@ ed52b18030c32ef11826030986adb053
                                                                                       (Control.Monad.Trans.Writer.Strict.Writer
                                                                                          Language.PureScript.Errors.MultipleErrors)>_R
                                                                                    <a>_N)) -}
-f32c873f71dfbd5bac677dab9e8415e5
+25107320aa4bbe08000daa195c9ffd49
   $s$fMonadStatesStateT ::
     Control.Monad.State.Class.MonadState
       s
@@ -3310,7 +3300,7 @@ efc95242873b43da702a4201c5c27190
   {- Arity: 8,
      Strictness: <S,1*U><L,U><L,U><L,U><L,U><L,U><L,U><L,U>m,
      Inline: [0] -}
-37953393042a2855beeb86f3fb542948
+97cccc64073d00091934731d41063981
   handleCommand ::
     (Control.Monad.Reader.Class.MonadReader
        Language.PureScript.Interactive.Types.PSCiConfig m,
@@ -3323,8 +3313,8 @@ efc95242873b43da702a4201c5c27190
     -> Language.PureScript.Interactive.Types.Command
     -> m ()
   {- Arity: 3,
-     Strictness: <L,U(U(A,C(C1(U)),C(C1(U)),C(U),A),A,A,C(U))><L,U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),A),1*U,C(U),C(U))><L,U(1*U(A,C(C1(U)),A,C(U),A),C(U))> -}
-fa8ae8e9f0172f588664192da55e8d76
+     Strictness: <L,U(U(A,C(C1(U)),C(C1(U)),C(U),A),A,A,C(U))><L,U(1*U(U(U(C(C1(U)),A),1*C1(U),A,A,A,A),C(C1(U)),C(C1(U)),C(U),A),1*U,C(U),C(U))><L,U(1*U(A,C(C1(U)),A,C(U),A),C(U))> -}
+eb2731438b9cdaf3aad62edd8363ed96
   make ::
     [(GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)]
     -> Language.PureScript.Make.Monad.Make
@@ -3334,7 +3324,7 @@ fa8ae8e9f0172f588664192da55e8d76
      Unfolding: (\ (ms :: [(GHC.IO.FilePath,
                             Language.PureScript.AST.Declarations.Module)]) ->
                  let {
-                   lvl99 :: [Language.PureScript.AST.Declarations.Module]
+                   lvl117 :: [Language.PureScript.AST.Declarations.Module]
                    = GHC.Base.map
                        @ (GHC.IO.FilePath, Language.PureScript.AST.Declarations.Module)
                        @ Language.PureScript.AST.Declarations.Module
@@ -3444,7 +3434,7 @@ fa8ae8e9f0172f588664192da55e8d76
                                      ww4
                                      ww5
                                      ww6)
-                                  lvl99)
+                                  lvl117)
                                  `cast`
                                (Language.PureScript.Make.Monad.N:Make[0] <[Language.PureScript.Externs.ExternsFile]>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
                                                                                                                              <*>_N

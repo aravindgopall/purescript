@@ -112,26 +112,7 @@ handleCommand _ _ p (KindOf typ)              = handleKindOf p typ
 handleCommand _ _ p (BrowseModule moduleName) = handleBrowse p moduleName
 handleCommand _ _ p (ShowInfo QueryLoaded)    = handleShowLoadedModules p
 handleCommand _ _ p (ShowInfo QueryImport)    = handleShowImportedModules p
-handleCommand _ _ p (CompleteStr prefix)      = handleComplete p prefix
 handleCommand _ _ p (ReloadVariableState val) = handleReloadVariableState p val 
-handleCommand _ _ _ _                         = P.internalError "handleCommand: unexpected command"
-handleReloadVariableState
-  :: (MonadReader PSCiConfig m, MonadState PSCiState m, MonadIO m)
-  => (String -> m ())
-  -> P.Expr
-  -> m ()
-handleReloadVariableState print' expr = do
-    let itdecl = P.ValueDecl (internalSpan, []) (P.Ident "it") P.Public [] [P.MkUnguarded expr]
-    (Interactive.PSCiState a b x c d) <- get
-    let newS = Interactive.updateImportExports (Interactive.PSCiState a (removeItem [itdecl] b) x c d)
-    put newS
-    print' ""
-
-removeItem :: [P.Declaration] -> [P.Declaration] -> [P.Declaration]
-removeItem [] y= y
-removeItem _ [] = []
-removeItem x y = filter (`notElem` x) y
-
 handleCommand _ _ p (ShowInfo QueryPrint)     = handleShowPrint p
 handleCommand _ _ p (CompleteStr prefix)      = handleComplete p prefix
 handleCommand _ _ p (SetInteractivePrint ip)  = handleSetInteractivePrint p ip
