@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:47:24.880026 UTC
+2019-01-24 14:15:30.302913 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeChecker.Skolems 8043
-  interface hash: 32338b5e1019a4df3ff21625d57be21c
-  ABI hash: f177d1401fc0e1a8b89ef83cdae40ba1
-  export-list hash: 96cf1a567f2e8b0e83ff8cd880c3e6bb
-  orphan hash: 923b0ba86d52fbb4da13817c7fddbeed
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeChecker.Skolems 8043
+  interface hash: 4812d5f5429ab706cbf225ffbf7e32da
+  ABI hash: d6f507247d13250d325e185be25fccdf
+  export-list hash: 301c96fa595b923bfcf06694e88d029f
+  orphan hash: 69eba6f42c3c65475db60f0b63f4553e
   flag hash: 16532b0f9807287e7d68a156c2412cf2
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -40,17 +40,18 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.TypeChecker.Monad
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
-                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
-                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
+                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
                       time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
@@ -59,18 +60,21 @@ orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -89,21 +93,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -127,61 +136,64 @@ import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
 import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
 import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
 import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.Binders 9d60985147b34b89300370e810fed430
-  Binder 50aa153193e190eabd8ac7530e604f9c
-  TypedBinder f780e44b8446316aee6b532b3afc4341
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  DeferredDictionary 7a56aac6dc1b7f4256df8373658d67a5
-  ErrorInExpression 358d86f3d7f781558b2b7efc3f66ec3a
-  ErrorMessage bc889ae8d74a01dbbd95e220faa4631d
-  ErrorMessage cebd18718f7c34278cac50a2f0ab0386
-  EscapedSkolem f37e734bbe28d00cd39992993f1e8b25
-  Expr b31d94d0c7b90700d40f9ba6ec420e41
-  PositionedValue ce9f35ccf631ea46c29b12e823f5cdda
-  TypedValue d9e4565826b9abbfd5d9b0aba42f2e58
-import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
-  SourceSpan 73c071552214b3f18e94970349d3affc
-import  -/  Language.PureScript.AST.Traversals a3d1a9b4309f1aa3055f23e3fb101c5e
-  everythingWithContextOnValues 96100f22de180f7be1760582c2409ed4
-  everywhereWithContextOnValuesM 4fdd13188200e3f571550d8ad6f3de86
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
-  exports: 142ea650dec62642d1cff09ef1eee74e
-  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
-  positionedError d8ca57e35818a7e93c5200eeb190e167
-  singleError 8cdec4403bbf7ee5542ebca436a64fe1
-import  -/  Language.PureScript.Traversals 0b1167883a6d6cc72496ff4af9cd7535
-  exports: ff3aac3cd7b378c02751a42ba037de7e
-  defS 6ddff71af3ee79c0e480484d77dbcf66
-import  -/  Language.PureScript.TypeChecker.Monad 36a86b5cfef989dae17621bbace19db6
-  exports: 9d9d275b045efb93172c1bb44957da47
-  CheckState 5c23016b2e80baec4bdda0c92644cfa1
-  checkNextSkolem 5c23016b2e80baec4bdda0c92644cfa1
-  checkNextSkolemScope 5c23016b2e80baec4bdda0c92644cfa1
-import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
-  exports: ae97bc75fcebc59f59c970736847a827
-  ForAll 8e5cfabdac15777ed3387d8a0029598b
-  Skolem e2f87ac818d8dc245fc6ff263c6e89ee
-  SkolemScope 1bf86ad2a24dfb6f1cc38c159a9c7293
-  SkolemScope a310b02c3c8476040cc9bad12d250769
-  Type 93223f8afa90d0facc05a03f863dc72d
-  everythingOnTypes ba4f3716db899e239fbb16fb1fa82a8f
-  everywhereOnTypesM 46428778ed53c5878c6229be3528079b
-  replaceTypeVars 8aa821bc3a9244ffb7cf21d6ffc31f22
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.Binders 482af52ec934a93b1ca6ec424fbe30f2
+  Binder c96edaac3b5fcb24a174f6f4b3f084d4
+  TypedBinder 69e3490135b9eb76e3f2c68250002721
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  DeferredDictionary 4767b924c347cb558c8259d23777dc47
+  ErrorInExpression 6be781a6c814a2ac5a163f17629faf53
+  ErrorMessage b0470a74191782e72607e7c5b87318de
+  ErrorMessage 7268a73b9f5bbe5a70110aa90f7e1194
+  EscapedSkolem f75939254730ec13cf7427aa6a78667b
+  Expr e92f6ee78a22c0eadc3566d7d1f48d5b
+  PositionedValue b90293950702fd6b659d7cd86d309f72
+  TypedValue 0acc3ace791a36484dcda3706df33cef
+import  -/  Language.PureScript.AST.SourcePos 63acacac5b7be73d04e5be0047a9a89a
+  SourceAnn f5708ed135df009dfa0254486771ef74
+  SourceSpan 1e0cf2bd3ea18f97a2ff152297f09219
+  nonEmptySpan 232f686ce9eaef22a6239187f1de0ae3
+import  -/  Language.PureScript.AST.Traversals f5adaf844c5e9d0f0678a8b574a32aa6
+  everythingWithContextOnValues b6cfbe573edb2754803b960a4d02edab
+  everywhereWithContextOnValuesM 8b088f6a1ad3879e25631321bc5daeec
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.Errors 3c1ad933587510f8b20a8c9ec2e86ce9
+  exports: 8e61484c4664eceb943d9fc4820c721b
+  MultipleErrors e1ef6a17348ccfe3ef65185d3c5f9026
+  positionedError 294ba93655a5845067da4cbeb75d1347
+  singleError a36dd8bcfe054c062a952f4ca37285fa
+import  -/  Language.PureScript.Traversals e97764d7972cc6ba421a6be0a3ce6bda
+  exports: cbb821b2ee7c6d00cdf62285e1dbe432
+  defS d63aa97f74d8b43282d6090aabe13394
+import  -/  Language.PureScript.TypeChecker.Monad 5c6d6cca9d9f5acb98ab527615b54d6d
+  exports: 64079f93a7ca5d81f53055abc7f8ac53
+  CheckState 9cc3cef00c43c0c2ac24a31e9b521e29
+  checkNextSkolem 9cc3cef00c43c0c2ac24a31e9b521e29
+  checkNextSkolemScope 9cc3cef00c43c0c2ac24a31e9b521e29
+import  -/  Language.PureScript.Types 80a51f62cb3e6c71f024289b88f07b7f
+  exports: 229bb7528146da886cffbefad5822e19
+  ForAll 0750974c4b3c816f0559c95f8418f903
+  Skolem aef73915115b060ec7781cdd3859082f
+  SkolemScope b015529f7bcbe6a104cccde46fddc544
+  SkolemScope 539a3045fa86d0049af7d21bd583b961
+  SourceType 0ac818517c14fedd280ef5885ae0cdc3
+  Type d5fc19231e8a71936895da17eade4f5b
+  everythingOnTypes a337a56452e37b7c1eabcf74ce7ae28d
+  everywhereOnTypesM 3778d2154e8de7bd894aef40e0e2cb61
+  replaceTypeVars 8488f0f4aa30ef197cec44bf58c83ec2
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
-545fbbc6b77a8463ab3f2455fe9ff94d
+059054ef8184dda7a4e9310686c9dfe9
   $s$wsplitS ::
     Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> (# Data.Set.Internal.Set Language.PureScript.Types.SkolemScope,
           Data.Set.Internal.Set Language.PureScript.Types.SkolemScope #)
   {- Arity: 2, Strictness: <L,1*U(U)><S,1*U>, Inline: [~] -}
-4b8df1c117e0c32b38ec8475814b2911
+608c5364e8df20050a9201e752661fc3
   $sfromList ::
     [Language.PureScript.Types.SkolemScope]
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
@@ -230,7 +242,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                                      (Data.Set.Internal.Tip @ Language.PureScript.Types.SkolemScope)
                                      (Data.Set.Internal.Tip
                                         @ Language.PureScript.Types.SkolemScope)) } } } } }) -}
-891df90b368488e93b021111bad69c52
+ec11f5066b254d79583c6fa30ada8b1f
   $sfromList_$s$wgo3 ::
     Language.PureScript.Types.SkolemScope
     -> [Language.PureScript.Types.SkolemScope]
@@ -238,14 +250,14 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
     -> GHC.Prim.Int#
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
   {- Arity: 4, Strictness: <S,1*U(U)><S,1*U><S,1*U><L,U> -}
-009db3242ffca372b43736c4373f46b7
+29e1015b76e7d102d6a40ba1871cc908
   $sfromList_$sgo4 ::
     Language.PureScript.Types.SkolemScope
     -> [Language.PureScript.Types.SkolemScope]
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
   {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><S,1*U> -}
-d5cfca4ef2c6db9a99f2188af7e51a8e
+24ea678405189b5145e685c13297508e
   $sinsert_$s$w$sgo3 ::
     GHC.Prim.Int#
     -> Language.PureScript.Types.SkolemScope
@@ -255,69 +267,72 @@ d5cfca4ef2c6db9a99f2188af7e51a8e
     -> Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
   {- Arity: 6, Strictness: <L,U><S(S),1*U(U)><L,U><L,U><S,U><L,U> -}
-baf1f85ac183b3175c9111b2a10d5dcf
+2c2692baa4ae6f5c25d41d9b950a1e2a
   $sunion ::
     Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
   {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
-d4bb865389d8649a9ac83c21acbcabc7
+88753b70438a766505158807582eeb97
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.TypeChecker.Skolems.$trModule3
                    Language.PureScript.TypeChecker.Skolems.$trModule1) -}
-eff065895b20dbd9658a6cae52d67d4c
+b51436ad2f476275b871feca51195e0f
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Skolems.$trModule2) -}
-75ec050139845836940a248776a10ad9
+f6077b250108ad0411264637d7d1ee0e
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.TypeChecker.Skolems"#) -}
-1a3cc4590f889f5731b47a0fe8916c2a
+56be46e3ebcb8fc99e15211f1231a9b7
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Skolems.$trModule4) -}
-3dfa663262c8aa4e697202c7e636e9e3
+3b6edb9cc428d30b098aa8619337438d
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-12ff6f31bd9bc47a2370d24997059998
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+9e74e52779a3c3856630b596a520cc77
   $w$sgo1 ::
     Language.PureScript.Types.SkolemScope
     -> GHC.Prim.Int#
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
   {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
-cc7cef78b2b18f48476e4fa31e27f481
+d1d47b29106328f11c116c140af92dbf
   $w$sgo3 ::
     Language.PureScript.Types.SkolemScope
     -> GHC.Prim.Int#
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
   {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
-3f696d6d555103176e620040be78f975
+48c5a9549241046625f82b1c0af186e3
   $wgo3 ::
     GHC.Prim.Int#
     -> Data.Set.Internal.Set Language.PureScript.Types.SkolemScope
     -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
-80e9b7ccd3f749b385f0a6b18602483d
+cbd26872f4b44871d4fb8d52b6845a3d
   introduceSkolemScope ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
-    Language.PureScript.Types.Type -> m Language.PureScript.Types.Type
+    Language.PureScript.Types.Type a
+    -> m (Language.PureScript.Types.Type a)
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><S,1*U>,
      Unfolding: (\ @ m :: * -> *
+                   @ a
                    ($dMonadState :: Control.Monad.State.Class.MonadState
                                       Language.PureScript.TypeChecker.Monad.CheckState m)
-                   (eta :: Language.PureScript.Types.Type) ->
+                   (eta :: Language.PureScript.Types.Type a) ->
                  Language.PureScript.Types.everywhereOnTypesM
                    @ m
+                   @ a
                    (Control.Monad.State.Class.$p1MonadState
                       @ Language.PureScript.TypeChecker.Monad.CheckState
                       @ m
@@ -348,32 +363,32 @@ cc7cef78b2b18f48476e4fa31e27f481
                              @ m
                              $dMonadState)
                     } in
-                    \ (ds :: Language.PureScript.Types.Type) ->
+                    \ (ds :: Language.PureScript.Types.Type a) ->
                     case ds of wild {
                       DEFAULT
                       -> GHC.Base.return
                            @ m
                            $dMonad
-                           @ Language.PureScript.Types.Type
+                           @ (Language.PureScript.Types.Type a)
                            wild
-                      Language.PureScript.Types.ForAll ident ty ds1
+                      Language.PureScript.Types.ForAll ann ident ty ds1
                       -> case ds1 of wild1 {
                            GHC.Base.Nothing
                            -> GHC.Base.fmap
                                 @ m
                                 $dFunctor1
                                 @ (GHC.Base.Maybe Language.PureScript.Types.SkolemScope)
-                                @ Language.PureScript.Types.Type
-                                (Language.PureScript.Types.ForAll ident ty)
+                                @ (Language.PureScript.Types.Type a)
+                                (Language.PureScript.Types.ForAll @ a ann ident ty)
                                 lvl19
                            GHC.Base.Just ipv
                            -> GHC.Base.return
                                 @ m
                                 $dMonad
-                                @ Language.PureScript.Types.Type
+                                @ (Language.PureScript.Types.Type a)
                                 wild } })
                    eta) -}
-5b6080edfec8521657cf465342cd5618
+91bed389ec61482f5cc2507a66413032
   newSkolemConstant ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -440,7 +455,7 @@ cc7cef78b2b18f48476e4fa31e27f481
                              ds6
                              ds7 })))
                       (GHC.Base.return @ m $dMonad @ GHC.Types.Int s))) -}
-231e08acc836c43563bcf9a64cc2874f
+5099e483af3809deab291383bcf017ed
   newSkolemScope ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -511,7 +526,7 @@ cc7cef78b2b18f48476e4fa31e27f481
                          $dMonad
                          @ Language.PureScript.Types.SkolemScope
                          s `cast` (Sym (Language.PureScript.Types.N:SkolemScope[0]))))) -}
-1ac509a82ed60beaab1278ae93e533d1
+f45ac30ef4f4772f46e9f82eb5dd08f0
   skolemEscapeCheck ::
     Control.Monad.Error.Class.MonadError
       Language.PureScript.Errors.MultipleErrors m =>
@@ -574,7 +589,7 @@ cc7cef78b2b18f48476e4fa31e27f481
                         GHC.Types.True
                         -> case Language.PureScript.TypeChecker.Skolems.skolemEscapeCheck1 of wild2 { (,,,,) ds4 toSkolemErrors ds5 ds6 ds7 ->
                            go (toSkolemErrors wild) } } }) -}
-9e09cc74ec06c787e95840beb756f233
+43a556cb6b765b5a552b08a688a2a40e
   skolemEscapeCheck1 ::
     (Language.PureScript.AST.Declarations.Declaration
      -> [Language.PureScript.AST.Declarations.ErrorMessage],
@@ -615,7 +630,7 @@ cc7cef78b2b18f48476e4fa31e27f481
                            @ Language.PureScript.AST.Declarations.DoNotationElement
                            @ Language.PureScript.AST.Declarations.ErrorMessage) of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-fbffebb057f25527a92e7eeff1ed4cb3
+1b132975b60a11b988c72f1d1efd363b
   skolemEscapeCheck2 ::
     (Data.Set.Internal.Set Language.PureScript.Types.SkolemScope,
      GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
@@ -664,20 +679,18 @@ fbffebb057f25527a92e7eeff1ed4cb3
                                         @ Language.PureScript.AST.Declarations.ErrorMessageHint)) }
                        } in
                        letrec {
-                         go :: [(Data.Text.Internal.Text,
-                                 Language.PureScript.Types.SkolemScope,
-                                 GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)]
+                         go :: [(Language.PureScript.AST.SourcePos.SourceAnn,
+                                 Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope)]
                                -> [Language.PureScript.AST.Declarations.ErrorMessage]
                            {- Arity: 1, Strictness: <S,1*U> -}
-                         = \ (ds5 :: [(Data.Text.Internal.Text,
-                                       Language.PureScript.Types.SkolemScope,
-                                       GHC.Base.Maybe
-                                         Language.PureScript.AST.SourcePos.SourceSpan)]) ->
+                         = \ (ds5 :: [(Language.PureScript.AST.SourcePos.SourceAnn,
+                                       Data.Text.Internal.Text,
+                                       Language.PureScript.Types.SkolemScope)]) ->
                            case ds5 of wild2 {
                              []
                              -> GHC.Types.[] @ Language.PureScript.AST.Declarations.ErrorMessage
                              : y ys
-                             -> case y of wild3 { (,,) name scope ssBound ->
+                             -> case y of wild3 { (,,) ssBound name scope ->
                                 case scope
                                        `cast`
                                      (Language.PureScript.Types.N:SkolemScope[0]) of ww { GHC.Types.I# ww1 ->
@@ -691,18 +704,20 @@ fbffebb057f25527a92e7eeff1ed4cb3
                                           lvl19
                                           (Language.PureScript.AST.Declarations.EscapedSkolem
                                              name
-                                             ssBound
+                                             (Language.PureScript.AST.SourcePos.nonEmptySpan
+                                                ssBound)
                                              ty))
                                        (go ys)
                                   GHC.Types.True -> go ys } } } }
                        } in
                        go
                          (Language.PureScript.Types.everythingOnTypes
-                            @ [(Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope,
-                                GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)]
+                            @ [(Language.PureScript.AST.SourcePos.SourceAnn,
+                                Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope)]
+                            @ Language.PureScript.AST.SourcePos.SourceAnn
                             (GHC.Base.++
-                               @ (Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope,
-                                  GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan))
+                               @ (Language.PureScript.AST.SourcePos.SourceAnn,
+                                  Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope))
                             Language.PureScript.TypeChecker.Skolems.skolemEscapeCheck3
                             ty))
                    Language.PureScript.AST.Declarations.PositionedValue ss ds3 ds4
@@ -710,29 +725,31 @@ fbffebb057f25527a92e7eeff1ed4cb3
                         GHC.Base.Just @ Language.PureScript.AST.SourcePos.SourceSpan ss),
                        GHC.Types.[]
                          @ Language.PureScript.AST.Declarations.ErrorMessage) } }) -}
-8c931afd2beadbae46e99cea0af60476
+11e0f2d85614bca2a5e21d19cfa19dea
   skolemEscapeCheck3 ::
     Language.PureScript.Types.Type
-    -> [(Data.Text.Internal.Text,
-         Language.PureScript.Types.SkolemScope,
-         GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)]
+      Language.PureScript.AST.SourcePos.SourceAnn
+    -> [(Language.PureScript.AST.SourcePos.SourceAnn,
+         Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope)]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Language.PureScript.Types.Type) ->
+                (\ (ds :: Language.PureScript.Types.Type
+                            Language.PureScript.AST.SourcePos.SourceAnn) ->
                  case ds of wild {
                    DEFAULT
                    -> GHC.Types.[]
-                        @ (Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope,
-                           GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
-                   Language.PureScript.Types.Skolem name ds1 scope srcSpan
+                        @ (Language.PureScript.AST.SourcePos.SourceAnn,
+                           Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope)
+                   Language.PureScript.Types.Skolem ss name ds1 scope
                    -> GHC.Types.:
-                        @ (Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope,
-                           GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
-                        (name, scope, srcSpan)
+                        @ (Language.PureScript.AST.SourcePos.SourceAnn,
+                           Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope)
+                        (ss, name, scope)
                         (GHC.Types.[]
-                           @ (Data.Text.Internal.Text, Language.PureScript.Types.SkolemScope,
-                              GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)) }) -}
-76c1c3d2e6e511af823ffcdbd84addde
+                           @ (Language.PureScript.AST.SourcePos.SourceAnn,
+                              Data.Text.Internal.Text,
+                              Language.PureScript.Types.SkolemScope)) }) -}
+b684c1cd9111280c064ab903119d012e
   skolemEscapeCheck4 ::
     (Data.Set.Internal.Set Language.PureScript.Types.SkolemScope,
      GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
@@ -741,48 +758,51 @@ fbffebb057f25527a92e7eeff1ed4cb3
                     @ Language.PureScript.Types.SkolemScope,
                   GHC.Base.Nothing
                     @ Language.PureScript.AST.SourcePos.SourceSpan)) -}
-839595ea2d59c5907f0a82ab9c31b6bf
+3a6050ad1249ab765336d82adf745175
   skolemEscapeCheck5 :: m ()
   {- Strictness: x -}
-b612eb8437d0525f2ca3fd0ce20c8614
+b88ab0c57b0179f0def5ceba2c6cc75c
   skolemEscapeCheck_collectScopes ::
-    Language.PureScript.Types.Type
+    Language.PureScript.Types.SourceType
     -> [Language.PureScript.Types.SkolemScope]
   {- Arity: 1, Strictness: <S,1*U> -}
-966d2037898c80abb26c69f89c4cd964
+82bcde709512d9f0f0a1fdce089119e1
   skolemEscapeCheck_def :: a1 -> p -> (a1, [a2])
   {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m,
      Unfolding: InlineRule (2, True, True)
                 (\ @ a @ p @ a1 (s :: a) (ds :: p) -> (s, GHC.Types.[] @ a1)) -}
-de5aa18c557b3d076ec90257b3b337ae
+ab7369b4aafebf4d012bef1d822de302
   skolemize ::
-    Data.Text.Internal.Text
+    a
+    -> Data.Text.Internal.Text
     -> GHC.Types.Int
     -> Language.PureScript.Types.SkolemScope
-    -> GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan
-    -> Language.PureScript.Types.Type
-    -> Language.PureScript.Types.Type
+    -> Language.PureScript.Types.Type a
+    -> Language.PureScript.Types.Type a
   {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><S,1*U>,
      Unfolding: InlineRule (5, True, False)
-                (\ (ident :: Data.Text.Internal.Text)
+                (\ @ a
+                   (ann :: a)
+                   (ident :: Data.Text.Internal.Text)
                    (sko :: GHC.Types.Int)
                    (scope :: Language.PureScript.Types.SkolemScope)
-                   (ss :: GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
-                   (eta :: Language.PureScript.Types.Type) ->
+                   (eta :: Language.PureScript.Types.Type a) ->
                  Language.PureScript.Types.replaceAllTypeVars_go
+                   @ a
+                   @ a
                    (GHC.Types.[] @ Data.Text.Internal.Text)
                    (GHC.Types.:
-                      @ (Data.Text.Internal.Text, Language.PureScript.Types.Type)
-                      (ident, Language.PureScript.Types.Skolem ident sko scope ss)
+                      @ (Data.Text.Internal.Text, Language.PureScript.Types.Type a)
+                      (ident, Language.PureScript.Types.Skolem @ a ann ident sko scope)
                       (GHC.Types.[]
-                         @ (Data.Text.Internal.Text, Language.PureScript.Types.Type)))
+                         @ (Data.Text.Internal.Text, Language.PureScript.Types.Type a)))
                    eta) -}
-9186408ce4aee258d393a5c011057a7b
+68ed51015701e37d503a57703ecb4eda
   skolemizeTypesInValue ::
-    Data.Text.Internal.Text
+    Language.PureScript.AST.SourcePos.SourceAnn
+    -> Data.Text.Internal.Text
     -> GHC.Types.Int
     -> Language.PureScript.Types.SkolemScope
-    -> GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.Declarations.Expr
     -> Language.PureScript.AST.Declarations.Expr
   {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U> -}

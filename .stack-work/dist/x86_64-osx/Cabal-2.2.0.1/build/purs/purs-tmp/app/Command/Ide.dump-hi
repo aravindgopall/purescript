@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:48:46.561115 UTC
+2019-01-24 14:18:11.603303 UTC
 
 interface main:Command.Ide 8043
-  interface hash: dc12e18f4b792a63b2f19faadba5ae30
-  ABI hash: e947ee7c45297d00155a3541c0645867
-  export-list hash: e8e9724b3c7465f9fdc869100e998073
-  orphan hash: 21628a173ba404dd2183bf8fc5b198e6
-  flag hash: 8909fe533866dddb37a786dc1c93a70d
+  interface hash: 24a9313622061ddd4982612b8efa5a88
+  ABI hash: d6cca3a97691e618549fca8f5ad987f3
+  export-list hash: 4098c6f14be30bbf00b3543391d7bfa0
+  orphan hash: f093885e030cefd46b059d17f1d2e12f
+  flag hash: 8d22a2f3c18ce9233ef9cbac450ab669
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
@@ -35,7 +35,7 @@ package dependencies: Glob-0.9.2 aeson-1.3.1.1
                       monad-loops-0.4.3 mtl-2.2.2 network-2.6.3.6 old-locale-1.0.0.7
                       old-time-1.1.0.3 optparse-applicative-0.14.2.0 parallel-3.2.1.1
                       parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
-                      primitive-0.6.3.0 process-1.6.3.0 protolude-0.2.2 purescript-0.12.1
+                      primitive-0.6.3.0 process-1.6.3.0 protolude-0.2.2 purescript-0.12.2
                       random-1.1 regex-base-0.93.2 regex-tdfa-1.2.3.1 resourcet-1.2.1
                       safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
                       stm-2.4.5.0 stm-chans-3.0.0.4 stringsearch-0.3.6.6 syb-0.7
@@ -102,22 +102,23 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1:Control.Monad.Logger
-                         purescript-0.12.1:Language.PureScript.AST.Declarations
-                         purescript-0.12.1:Language.PureScript.AST.Operators
-                         purescript-0.12.1:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types
-                         purescript-0.12.1:Language.PureScript.Docs.Types
-                         purescript-0.12.1:Language.PureScript.Environment
-                         purescript-0.12.1:Language.PureScript.Ide.Reexports
-                         purescript-0.12.1:Language.PureScript.Ide.Types
-                         purescript-0.12.1:Language.PureScript.Kinds
-                         purescript-0.12.1:Language.PureScript.Label
-                         purescript-0.12.1:Language.PureScript.Make.Monad
-                         purescript-0.12.1:Language.PureScript.Names
-                         purescript-0.12.1:Language.PureScript.PSString
-                         purescript-0.12.1:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1:Language.PureScript.Types
+                         purescript-0.12.2:Control.Monad.Logger
+                         purescript-0.12.2:Language.PureScript.AST.Declarations
+                         purescript-0.12.2:Language.PureScript.AST.Operators
+                         purescript-0.12.2:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2:Language.PureScript.Comments
+                         purescript-0.12.2:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.2:Language.PureScript.Docs.Types
+                         purescript-0.12.2:Language.PureScript.Environment
+                         purescript-0.12.2:Language.PureScript.Ide.Reexports
+                         purescript-0.12.2:Language.PureScript.Ide.Types
+                         purescript-0.12.2:Language.PureScript.Kinds
+                         purescript-0.12.2:Language.PureScript.Label
+                         purescript-0.12.2:Language.PureScript.Make.Monad
+                         purescript-0.12.2:Language.PureScript.Names
+                         purescript-0.12.2:Language.PureScript.PSString
+                         purescript-0.12.2:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2:Language.PureScript.Types
                          resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
@@ -181,13 +182,13 @@ import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Types 7d35983d2990
 import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
 import  -/  protolude-0.2.2:Protolude.Bool cdac0e1e4ccf4064999c851029bcfcb2
 import  -/  protolude-0.2.2:Protolude.Show 647c8eca43b2ee3522a904f63ff69e38
-import  -/  purescript-0.12.1:Language.PureScript.Ide 1c03236304585155d3c007a453a57f6d
-import  -/  purescript-0.12.1:Language.PureScript.Ide.Command d38eaf022d7c29fdc23a0f03ad78630f
-import  -/  purescript-0.12.1:Language.PureScript.Ide.Error cef67e67cd2fefdfbab7f8e5964385b2
-import  -/  purescript-0.12.1:Language.PureScript.Ide.Logging 502eef995fef3c7a1a41c5ba470e9af8
-import  -/  purescript-0.12.1:Language.PureScript.Ide.Types d9d9fd4c2b6a1fdeece731a5e8479937
-import  -/  purescript-0.12.1:Language.PureScript.Ide.Util 28758b8888c6917067d0548bee7740c5
-import  -/  purescript-0.12.1:Language.PureScript.Ide.Watcher caf460fbf09c4ddd4cd8e31180fe58ad
+import  -/  purescript-0.12.2:Language.PureScript.Ide a6160c6a598660676b7c65cedeaa018f
+import  -/  purescript-0.12.2:Language.PureScript.Ide.Command a515164b4f34d128fa16c63e93566e2b
+import  -/  purescript-0.12.2:Language.PureScript.Ide.Error b6eb0f8da112a6cbb4342061d1afef05
+import  -/  purescript-0.12.2:Language.PureScript.Ide.Logging 7a72afda66c50413f726f7fcff793207
+import  -/  purescript-0.12.2:Language.PureScript.Ide.Types 4bb81e9de3788f7f63a68a23e190eb73
+import  -/  purescript-0.12.2:Language.PureScript.Ide.Util 23feade20e7d884b8e398315c4ffa11e
+import  -/  purescript-0.12.2:Language.PureScript.Ide.Watcher 52e18ed70b9336109f5829f4f239455b
 import  -/  stm-2.4.5.0:Control.Concurrent.STM 5ec97830246fb15a85b4d8cd8209f698
 import  -/  template-haskell-2.13.0.0:Language.Haskell.TH.Syntax 3e32e309555ba250b4e64084f1389487
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
@@ -195,7 +196,7 @@ import  -/  text-1.2.3.0:Data.Text.IO f7dcaf653a3b760ece6adefe76040164
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.Except 1cac4acbba7f36bd732fcc993d3cc20d
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.Reader 42962052353a5a0f766912058b765b5d
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   $fShowServerOptions :: GHC.Show.Show Command.Ide.ServerOptions
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -204,7 +205,7 @@ b9982b5244173c2567000829f672f8b7
                   Command.Ide.$fShowServerOptions_$cshowsPrec
                   Command.Ide.$fShowServerOptions_$cshow
                   Command.Ide.$fShowServerOptions_$cshowList -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   $fShowServerOptions1 :: Command.Ide.ServerOptions -> GHC.Show.ShowS
   {- Arity: 1, Strictness: <S,1*U(1*U,U,U,1*U(U),U,U,U,U)>,
      Unfolding: (\ (w :: Command.Ide.ServerOptions) ->
@@ -213,7 +214,7 @@ b9982b5244173c2567000829f672f8b7
 ad21999f525273c25550c35f9fa5a26a
   $fShowServerOptions2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   $fShowServerOptions_$cshow ::
     Command.Ide.ServerOptions -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,U,U,1*U(U),U,U,U,U)>,
@@ -223,7 +224,7 @@ b9982b5244173c2567000829f672f8b7
                    Command.Ide.$fShowServerOptions2
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   $fShowServerOptions_$cshowList ::
     [Command.Ide.ServerOptions] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -234,7 +235,7 @@ b9982b5244173c2567000829f672f8b7
                    Command.Ide.$fShowServerOptions1
                    ls
                    s) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   $fShowServerOptions_$cshowsPrec ::
     GHC.Types.Int -> Command.Ide.ServerOptions -> GHC.Show.ShowS
   {- Arity: 2,
@@ -254,7 +255,7 @@ b9982b5244173c2567000829f672f8b7
                    ww8
                    ww9
                    ww10 } }) -}
-2d1dcafe374d279a31a971ec3db6d11d
+f45ec02803199f9bb97e8ddfa90abe19
   $s$fApplicativeExceptT ::
     GHC.Base.Applicative
       (Control.Monad.Trans.Except.ExceptT
@@ -286,7 +287,7 @@ b9982b5244173c2567000829f672f8b7
                      @ e)
                   (Command.Ide.$s$fApplicativeExceptT_$s$fApplicativeExceptT_$c<*
                      @ e) -}
-11b4790ef0c7837055dae6a8c6fbcad1
+81e526dc81451c0f7a260cce536dc4a4
   $s$fApplicativeExceptT_$c<*> ::
     Control.Monad.Trans.Except.ExceptT
       e
@@ -334,7 +335,7 @@ b9982b5244173c2567000829f672f8b7
                    @ b
                    w2
                    w3) -}
-cb940cc1d1021a257f0d2ef86c91babb
+d03831e4c61655090954c8ebcb987f74
   $s$fApplicativeExceptT_$s$fApplicativeExceptT_$c*> ::
     Control.Monad.Trans.Except.ExceptT
       e
@@ -464,7 +465,7 @@ cb940cc1d1021a257f0d2ef86c91babb
                                                         (Control.Monad.Logger.LoggingT
                                                            GHC.Types.IO)>_R
                                                      <b>_N)) -}
-b3fd244057ce06299712793bc8162224
+d559527598c28103a3869c023b0f5fb9
   $s$fApplicativeExceptT_$s$fApplicativeExceptT_$c<* ::
     Control.Monad.Trans.Except.ExceptT
       e
@@ -567,7 +568,7 @@ b3fd244057ce06299712793bc8162224
                                                              (Control.Monad.Logger.LoggingT
                                                                 GHC.Types.IO)>_R
                                                           <b -> a>_N))) -}
-dbd77ce67b71c3cfde4386ee8fd7fd3f
+c0df5d65366cf87f161bb08037128b66
   $s$fApplicativeExceptT_$s$fApplicativeExceptT_$cliftA2 ::
     (a -> b -> c)
     -> Control.Monad.Trans.Except.ExceptT
@@ -674,7 +675,7 @@ dbd77ce67b71c3cfde4386ee8fd7fd3f
                                                              (Control.Monad.Logger.LoggingT
                                                                 GHC.Types.IO)>_R
                                                           <b -> c>_N))) -}
-0dee1ff2808b542d3dd87863a69a8ecd
+dfd0ceeae0ab0dda3b214fc21262e862
   $s$fApplicativeExceptT_$s$fApplicativeExceptT_$cpure ::
     a
     -> Control.Monad.Trans.Except.ExceptT
@@ -929,7 +930,7 @@ a5eaf89b7e2e7a07f6620aef2e99ad38
                        ->_R Sym (GHC.Types.N:IO[0]
                                      <b>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
                                                         <GHC.Types.IO>_R <b>_N)) -}
-49a203bd4cf696405973e4016cc5aec7
+da51f486263c2dc2aa851fda81414a35
   $s$fApplicativeExceptT_$s$fFunctorExceptT ::
     GHC.Base.Functor
       (Control.Monad.Trans.Except.ExceptT
@@ -1214,7 +1215,7 @@ fe32e8dc53988d326e4d1efa360193d7
                      @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
                      @ r
                      Command.Ide.$s$fApplicativeExceptT_$s$fMonadLoggingT) -}
-37c3fe97f3f2cf2dcf6e6ddb033b7095
+e69841adeed934b1d2a9c1e2bae34398
   $s$fApplicativeExceptT_v ::
     GHC.Base.Functor
       (Control.Monad.Trans.Reader.ReaderT
@@ -1224,7 +1225,7 @@ fe32e8dc53988d326e4d1efa360193d7
                    @ (Control.Monad.Logger.LoggingT GHC.Types.IO)
                    @ Language.PureScript.Ide.Types.IdeEnvironment
                    Command.Ide.$s$fApplicativeExceptT_$s$fFunctorLoggingT) -}
-1587aab3a05aaf839eda0f35315e0562
+4ab78819c73ebeb396e59b06f74bc938
   $s$fMonadErroreExceptT ::
     Control.Monad.Error.Class.MonadError
       e
@@ -1306,7 +1307,7 @@ fe32e8dc53988d326e4d1efa360193d7
                      @ e
                      (Command.Ide.$s$fApplicativeExceptT_$s$fMonadReaderT
                         @ Language.PureScript.Ide.Types.IdeEnvironment)) -}
-1d2d60d05e68846bae727acdd9225a7f
+59a27da0f8d8ecb591f1748eb7b9aac3
   $s$fMonadErroreExceptT_$s$fMonadExceptT ::
     GHC.Base.Monad
       (Control.Monad.Trans.Except.ExceptT
@@ -1335,7 +1336,7 @@ fe32e8dc53988d326e4d1efa360193d7
                                     (Control.Monad.Logger.LoggingT GHC.Types.IO)>_R
                                  <a>_N))
                   (Command.Ide.$s$fMonadErroreExceptT_$s$fMonadExceptT_$cfail @ e) -}
-916ffbf297f67086d51831137270d54e
+aee220d6f6d37e6cddc357ccc073b7a5
   $s$fMonadErroreExceptT_$s$fMonadExceptT1 ::
     a
     -> Control.Monad.Trans.Reader.ReaderT
@@ -1389,7 +1390,7 @@ fe32e8dc53988d326e4d1efa360193d7
                                                                                       GHC.Types.IO>_R
                                                                                    <Data.Either.Either
                                                                                       e a>_N))) -}
-033192eadcca987dbb4397dcf14890c2
+c86b022f622301a6af3fa61405b7b3c8
   $s$fMonadErroreExceptT_$s$fMonadExceptT_$c>> ::
     Control.Monad.Trans.Except.ExceptT
       e
@@ -1519,7 +1520,7 @@ fe32e8dc53988d326e4d1efa360193d7
                                                         (Control.Monad.Logger.LoggingT
                                                            GHC.Types.IO)>_R
                                                      <b>_N)) -}
-5582167770af312e8bbacf3e488ff907
+3428ef7256bf6d3784ed07ec3fa41386
   $s$fMonadErroreExceptT_$s$fMonadExceptT_$c>>= ::
     Control.Monad.Trans.Except.ExceptT
       e
@@ -1653,7 +1654,7 @@ fe32e8dc53988d326e4d1efa360193d7
                                                         (Control.Monad.Logger.LoggingT
                                                            GHC.Types.IO)>_R
                                                      <b>_N)) -}
-c3f40aa06ae4ccd43a9c60c4dc86d073
+77d02c2d76248adbf7c4d4cb7fbc6959
   $s$fMonadErroreExceptT_$s$fMonadExceptT_$cfail ::
     GHC.Base.String
     -> Control.Monad.Trans.Except.ExceptT
@@ -1691,7 +1692,7 @@ c3f40aa06ae4ccd43a9c60c4dc86d073
                                   Language.PureScript.Ide.Types.IdeEnvironment
                                   (Control.Monad.Logger.LoggingT GHC.Types.IO)>_R
                                <a>_N)) -}
-666e35c69abd3038f9088f0c7786c0d0
+2d186fe50f186f0c57c004eb4b12b67b
   $s$fMonadIOExceptT ::
     Control.Monad.IO.Class.MonadIO
       (Control.Monad.Trans.Except.ExceptT
@@ -1784,7 +1785,7 @@ f96937c0c07826e0eae4e7483f9e08c1
                                                       <r>_R
                                                       <Control.Monad.Logger.LoggingT GHC.Types.IO>_R
                                                       <a>_N))) -}
-826809525a7ff71220bea427697c7e8d
+bab6bd019675d1513fa1bd6b27e02ed1
   $s$fMonadLoggerExceptT ::
     Control.Monad.Logger.MonadLogger
       (Control.Monad.Trans.Except.ExceptT
@@ -1880,7 +1881,7 @@ b33b4718c1e23b316a78b2282192b573
                    ->_R Sym (GHC.Types.N:IO[0]
                                  <a>_R)) ; Sym (Control.Monad.Logger.N:LoggingT[0]
                                                     <GHC.Types.IO>_R <a>_N))) -}
-131ce084a4fe8e5c0e4ee52a4a0fda7a
+dcd4a8b8d9feecfeeba6b6db6975f1c5
   $s$fMonadReaderrExceptT ::
     Control.Monad.Reader.Class.MonadReader
       Language.PureScript.Ide.Types.IdeEnvironment
@@ -2092,7 +2093,7 @@ f1e915480c4cb93412d662565240d13d
 d280cf9d2ecaac6170e010e445bf78f2
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-cfbd236d70afd4c945157337e7ed1059
+4790ef27334b5b8f1a189bcb2952283e
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> GHC.Base.Maybe GHC.IO.FilePath
@@ -2120,7 +2121,7 @@ dfc27b2bafdcaae2147f996a5314968f
      Inline: [0] -}
 bed4043c6f728f2d90fc6cf029bfa6bf
   data ClientOptions = ClientOptions {clientPort :: Network.PortID}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   data ServerOptions
     = ServerOptions {_serverDirectory :: GHC.Base.Maybe
                                            GHC.IO.FilePath,
@@ -2131,7 +2132,7 @@ b9982b5244173c2567000829f672f8b7
                      _serverPolling :: GHC.Types.Bool,
                      _serverLoglevel :: Language.PureScript.Ide.Types.IdeLogLevel,
                      _serverEditorMode :: GHC.Types.Bool}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverDirectory ::
     Command.Ide.ServerOptions -> GHC.Base.Maybe GHC.IO.FilePath
   RecSel Left Command.Ide.ServerOptions
@@ -2141,7 +2142,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds1 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverEditorMode :: Command.Ide.ServerOptions -> GHC.Types.Bool
   RecSel Left Command.Ide.ServerOptions
   {- Arity: 1, HasNoCafRefs,
@@ -2150,7 +2151,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds8 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverGlobs :: Command.Ide.ServerOptions -> [GHC.IO.FilePath]
   RecSel Left Command.Ide.ServerOptions
   {- Arity: 1, HasNoCafRefs,
@@ -2159,7 +2160,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds2 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverLoglevel ::
     Command.Ide.ServerOptions
     -> Language.PureScript.Ide.Types.IdeLogLevel
@@ -2170,7 +2171,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds7 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverNoWatch :: Command.Ide.ServerOptions -> GHC.Types.Bool
   RecSel Left Command.Ide.ServerOptions
   {- Arity: 1, HasNoCafRefs,
@@ -2179,7 +2180,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds5 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverOutputPath :: Command.Ide.ServerOptions -> GHC.IO.FilePath
   RecSel Left Command.Ide.ServerOptions
   {- Arity: 1, HasNoCafRefs,
@@ -2188,7 +2189,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds3 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverPolling :: Command.Ide.ServerOptions -> GHC.Types.Bool
   RecSel Left Command.Ide.ServerOptions
   {- Arity: 1, HasNoCafRefs,
@@ -2197,7 +2198,7 @@ b9982b5244173c2567000829f672f8b7
                 (\ (ds :: Command.Ide.ServerOptions) ->
                  case ds of wild { Command.Ide.ServerOptions ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds6 }) -}
-b9982b5244173c2567000829f672f8b7
+3fa568a2a7b48c2a77277d0015870b64
   _serverPort ::
     Command.Ide.ServerOptions -> Network.Socket.Types.PortNumber
   RecSel Left Command.Ide.ServerOptions
@@ -2214,14 +2215,14 @@ bed4043c6f728f2d90fc6cf029bfa6bf
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Command.Ide.ClientOptions) ->
                  case ds of wild { Command.Ide.ClientOptions ds1 -> ds1 }) -}
-087878e16c596788bf170453098f235e
+525f81c91254f822b3ca254d2de6cd3e
   command :: Options.Applicative.Types.Parser (GHC.Types.IO ())
   {- Unfolding: (Options.Applicative.Types.MultP
                    @ (GHC.Types.IO ())
                    @ (GHC.Types.IO ())
                    (Options.Applicative.Extra.helper @ (GHC.Types.IO ()))
                    Command.Ide.command1) -}
-0f89505a5a4098dc12c3dbc6608af702
+e07f08023c1ceac9af182fe2285f192b
   command1 :: Options.Applicative.Types.Parser (GHC.Types.IO ())
   {- Unfolding: (case Command.Ide.command_$s$wgo
                         Command.Ide.command26
@@ -2254,7 +2255,7 @@ e0d70f2b6d97d0aebca0f2577d834885
 4457a5f27bc6f53ad3925a4d6f27c23e
   command101 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("output-directory"#) -}
-b8ade5cc9a82862ab382cc9b41860fdf
+966d437eaa04c42f8b84028beec8ee73
   command102 ::
     Options.Applicative.Types.Parser
       (GHC.IO.FilePath
@@ -2334,7 +2335,7 @@ b7502237e3d0ee0b2d20f76cf7568bea
      Unfolding: (GHC.Base.Just
                    @ GHC.Integer.Type.Integer
                    Command.Ide.command12) -}
-9b20ee47f714607cb3bd7275c0bcfee7
+97d01c80d33cf1571a68060e2b5200a9
   command110 ::
     Options.Applicative.Types.Parser
       ([GHC.IO.FilePath]
@@ -2439,7 +2440,7 @@ daac147a0e477643a0140a3c0b58f889
 af5b9efc0233ea105b9ae58c961281cb
   command122 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("directory"#) -}
-1dea3b803963ddaee40c619c1ab444e5
+6a308c094f9f2663262ab263c2b60e41
   command123 ::
     Command.Ide.ServerOptions
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2574,7 +2575,7 @@ e30c628059095295d137e52ad900fa68
 df0b30275404f0cc58f1f84eb7372dce
   command25 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("client"#) -}
-bf9e8e23efb677134890ae6a8c071f68
+c334bb7e836b33c2bcd98f4bdeb6e695
   command26 ::
     Options.Applicative.Builder.Internal.CommandFields
       (GHC.Types.IO ())
@@ -2601,7 +2602,7 @@ bf9e8e23efb677134890ae6a8c071f68
 68d4b0d2ca720b9e36c0bf08429a2ff4
   command28 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Start a server process"#) -}
-73fedf8d44295bc6008b5e6db6ae27bb
+5077c9412071f8c5cc3da70c601fe349
   command29 :: Options.Applicative.Types.Parser (GHC.Types.IO ())
   {- Unfolding: (Options.Applicative.Types.MultP
                    @ (GHC.Types.IO ())
@@ -2621,7 +2622,7 @@ bf9e8e23efb677134890ae6a8c071f68
                    (Options.Applicative.Builder.Internal.$fMonoidDefaultProp_$cmempty
                       @ (GHC.Types.IO ()))
                    (GHC.Base.id @ Options.Applicative.Types.OptProperties)) -}
-53b2db7c2ce77c387014833b5cc01239
+dbd53579eb3b4a32359780bf30aedbeb
   command30 ::
     Options.Applicative.Types.Parser
       ((GHC.Types.IO () -> GHC.Types.IO ()) -> GHC.Types.IO ())
@@ -2636,7 +2637,7 @@ bf9e8e23efb677134890ae6a8c071f68
                         `cast`
                       (<Command.Ide.ServerOptions>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
                       Command.Ide.command31)) -}
-aaafe5f5a324e7537ebfc83e51969879
+714e72a79ebb59ea781a2a2573cabd1e
   command31 ::
     Options.Applicative.Types.Parser Command.Ide.ServerOptions
   {- Unfolding: (Options.Applicative.Types.MultP
@@ -2723,7 +2724,7 @@ c60f1465039eb203a2440f4c1cc2bddb
 a9ed372cf6b05108c02a1da129d73578
   command40 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("editor-mode"#) -}
-afb7023e03e3a2de30cf7137750cbd7e
+07183cbe6f5e55000314e0778cabdaf1
   command41 ::
     Options.Applicative.Types.Parser
       (GHC.Types.Bool -> Command.Ide.ServerOptions)
@@ -2732,7 +2733,7 @@ afb7023e03e3a2de30cf7137750cbd7e
                    @ Language.PureScript.Ide.Types.IdeLogLevel
                    Command.Ide.command65
                    Command.Ide.command42) -}
-2676aa8f3a0ce57f60c8764182dc2200
+7ea6985863649960bc8ff9386b56c0a2
   command42 ::
     Options.Applicative.Types.Parser
       Language.PureScript.Ide.Types.IdeLogLevel
@@ -2872,7 +2873,7 @@ cc1e2d6150b85f7dad4764d171fada2f
 38c93a8de679f6a3cf8a739aa94133e9
   command55 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("log-level"#) -}
-1b02bec7653ef1eccb46df4e03589aff
+64802c198b2d9c50f60ee5c27c14ffd9
   command56 ::
     Data.Text.Internal.Text
     -> Language.PureScript.Ide.Types.IdeLogLevel
@@ -3004,7 +3005,7 @@ cf3891e6f46303f52a027f89464c3d91
 bf1898befd909e4849c62a87b8fcfbb2
   command64 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("debug"#) -}
-fc0237bf445e8b3499d083926122d4dc
+e4b1bd09f4fd0ab717fbb89a319ec8f4
   command65 ::
     Options.Applicative.Types.Parser
       (Language.PureScript.Ide.Types.IdeLogLevel
@@ -3087,7 +3088,7 @@ c5a2308b80f49bd667c1d2dbe9dac900
 b9eadf2a360c73e3d5c28aa6b2f89078
   command76 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("mingw32"#) -}
-308aeee1287ba1c6dc0b99c3d10c4dce
+f8ff7043c4a58f165d5179641a329d72
   command77 ::
     Options.Applicative.Types.Parser
       (GHC.Types.Bool
@@ -3169,7 +3170,7 @@ a80384cbc6abc0011df80d53eab7e8fc
 f2adaaba95ebd8c3964b5d911c097583
   command85 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("no-watch"#) -}
-45ae0b484e138e02d5d67663ce67b928
+6fb4de726c53bd714a6daa5194fb29a9
   command86 ::
     Options.Applicative.Types.Parser
       (GHC.Types.Bool
@@ -3209,7 +3210,7 @@ f1458212844693845e287fcd1b9f3ec2
                  (GHC.Word.W16# (GHC.Prim.narrow16Word# ds1))
                    `cast`
                  (Sym (Network.Socket.Types.N:PortNumber[0])) } }) -}
-373e419d412021539041bafc330cb509
+baffe08b68520c7d0647d234f464ace8
   command89 ::
     Options.Applicative.Types.Parser
       (Network.Socket.Types.PortNumber
@@ -3352,7 +3353,7 @@ f7a1a4dfcb67cf44b883edc52dff1e0e
   {- Strictness: m,
      Unfolding: ((Command.Ide.command_cmd,
                   Command.Ide.command_pinfo)) -}
-466b682d0254535099bb4ceee5b4a07c
+608be36fa093bad15eca980551b05ad9
   command_lvl1 ::
     (GHC.Base.String,
      Options.Applicative.Types.ParserInfo (GHC.Types.IO ()))
@@ -3425,7 +3426,7 @@ ebc4ac813e1342f9a361993514709e74
                    (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
                    Options.Applicative.Builder.info1
                    Options.Applicative.Types.Intersperse) -}
-8095acc9006cf0dfc2e1271083039cf8
+2410083e7085519d3dcd5efcc92b48ae
   command_pinfo1 ::
     Options.Applicative.Types.ParserInfo (GHC.Types.IO ())
   {- Strictness: m,

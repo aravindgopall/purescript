@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:28:21.517511 UTC
+2019-01-24 14:16:17.500503 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Docs.RenderedCode.Types [family instance module] 8043
-  interface hash: e8125dfe348e0cf54035c629601b42af
-  ABI hash: 043476f1219ebaba7bef38f3035bc7df
-  export-list hash: 5c846e39a8e35d0cd82e369fdbd93a5f
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Docs.RenderedCode.Types [family instance module] 8043
+  interface hash: 08c38286d9412fdfb35e6b73edf0e8ff
+  ABI hash: a63cc6a5cb22a8a549b2d76ebcbc879a
+  export-list hash: e93c760d312b3c7e461ee610e748ebba
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 38a54ede511c0f64849c216068b06e96
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -70,9 +70,11 @@ package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
                       bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
                       dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
                       hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
-                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+                      language-javascript-0.6.0.11 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 mtl-2.2.2 parsec-3.1.13.0 pretty-1.1.3.6
+                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
+                      sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
                       time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
@@ -81,18 +83,21 @@ orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -111,21 +116,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -157,39 +167,39 @@ import  -/  deepseq-1.4.3.0:Control.DeepSeq 171f1f567c47ef82860df4ad686d11b1
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
 import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.Operators be736e316462ef3abce53315e7361a17
-  Associativity 17f2097426b72eb751701f86cd97792c
-  Infix 48da7304e58a5ef64ef55f219a639205
-  Infixl c355232652b8d07dc6f4cc3d968cd69f
-  Infixr e374de6c2504281f30a71346ea589bed
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
-  Ident 0ccd7f2221de64569e50634367691253
-  Ident ab98a56ffa88760dad1380079e8ee35a
-  KindName 681d490d18bc7da009f3503010a994f8
-  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
-  OpName 1522672b880b192c6e05e6cf8a45712d
-  ProperName 9eb330c84db102abf2d0f2652fe4a144
-  ProperName 29f101e190cc99df85623423972e606f
-  Qualified d600a7f01c8203cf5504999de99c923c
-  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
-  TypeName da42c92f73f4f363c63ecaf77b6335b9
-  TypeOpName 34023316af2b751c6196ece0b5420c6b
-  moduleNameFromString 79d26c792a293f252a003f5d0f01ddc4
-  runIdent bc5cc3d3ba9d105c169eb6038c65d1a8
-  runModuleName e07c63fa3ece350e6976663ef993edbb
-  runOpName 1522672b880b192c6e05e6cf8a45712d
-  runProperName 29f101e190cc99df85623423972e606f
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.Operators 615a873c5f62908f354b9d4840cbeb63
+  Associativity 228a0ef1b3774b11d1a92fae92fb43a0
+  Infix acee26fe4e59790dddcfdcb22d39c630
+  Infixl 7a053ccfe48a809d0f2fd5ed84616765
+  Infixr bbdac94db5d55a0387eb84cc7a57bedf
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  ConstructorName 84054a8bbbe827ba2ce7da83056a95ee
+  Ident 71f167265716f619863a793fa311e198
+  Ident bad3562aa6138b6192713ac281080869
+  KindName 7782d66ce60bd67282cf566485701e07
+  ModuleName 1b2ddf0c04464d2fa2588925f10c1966
+  OpName 9af301165f72160425c5e0dde6525338
+  ProperName f69d3801241fcb4773f1284cd28f2dee
+  ProperName a7268334e0b909381550b9329cb80fcc
+  Qualified b6e1bc9e7244a41d3c6149c9b5c2d6d8
+  Qualified 1b2ddf0c04464d2fa2588925f10c1966
+  TypeName 40ce511c66a72431b4e87351210f7b03
+  TypeOpName db73fc39fef75f034a0b4a8074947dd9
+  moduleNameFromString 58dbc4d6b97c8eb6012ccda72d203acf
+  runIdent f4727e6f001b3b7d933fd4e8122af572
+  runModuleName 58b788b37f600c0f34fa85241d7748ad
+  runOpName 9af301165f72160425c5e0dde6525338
+  runProperName a7268334e0b909381550b9329cb80fcc
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Encoding 8e60367b574d8e5016309aaea7dc2100
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fEqContainingModule ::
     GHC.Classes.Eq
       Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -199,7 +209,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                   Language.PureScript.Docs.RenderedCode.Types.$fEqContainingModule_$c==
                   Language.PureScript.Docs.RenderedCode.Types.$fEqContainingModule_$c/= -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fEqContainingModule_$c/= ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -230,7 +240,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              GHC.Types.False -> GHC.Types.True
                              GHC.Types.True -> GHC.Types.False } } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fEqContainingModule_$c== ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -257,7 +267,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                                 @ 'Language.PureScript.Names.Namespace)
                              a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                              b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fEqLink ::
     GHC.Classes.Eq Language.PureScript.Docs.RenderedCode.Types.Link
   DFunId
@@ -266,7 +276,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.Docs.RenderedCode.Types.Link
                   Language.PureScript.Docs.RenderedCode.Types.$fEqLink_$c==
                   Language.PureScript.Docs.RenderedCode.Types.$fEqLink_$c/= -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fEqLink_$c/= ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -311,7 +321,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                                             (Language.PureScript.Names.N:ModuleName[0]) of wild4 {
                                        GHC.Types.False -> GHC.Types.True
                                        GHC.Types.True -> GHC.Types.False } } } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fEqLink_$c== ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -335,7 +345,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                         -> Language.PureScript.Docs.RenderedCode.Types.$fEqContainingModule_$c==
                              a1
                              b1 } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fEqNamespace ::
     GHC.Classes.Eq
       Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -345,7 +355,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                   Language.PureScript.Docs.RenderedCode.Types.$fEqNamespace_$c==
                   Language.PureScript.Docs.RenderedCode.Types.$fEqNamespace_$c/= -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fEqNamespace_$c/= ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -371,7 +381,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                         DEFAULT -> GHC.Types.True
                         Language.PureScript.Docs.RenderedCode.Types.KindLevel
                         -> GHC.Types.False } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fEqNamespace_$c== ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -396,7 +406,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                         DEFAULT -> GHC.Types.False
                         Language.PureScript.Docs.RenderedCode.Types.KindLevel
                         -> GHC.Types.True } }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fEqRenderedCode ::
     GHC.Classes.Eq
       Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -414,7 +424,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
                    ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
                    ->_R <GHC.Types.Bool>_R) -}
-785ea6585d3b21aec191f1d0ccd56a88
+4089ae468f8d822bd4ae0d6e7949d401
   $fEqRenderedCode1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -423,7 +433,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
      Unfolding: (GHC.Classes.$fEq[]_$c==
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    Language.PureScript.Docs.RenderedCode.Types.$fEqRenderedCodeElement) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fEqRenderedCodeElement ::
     GHC.Classes.Eq
       Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -433,7 +443,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                   Language.PureScript.Docs.RenderedCode.Types.$fEqRenderedCodeElement_$c==
                   Language.PureScript.Docs.RenderedCode.Types.$fEqRenderedCodeElement_$c/= -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fEqRenderedCodeElement_$c/= ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -448,7 +458,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                         y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fEqRenderedCodeElement_$c== ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -520,7 +530,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                                   DEFAULT -> GHC.Types.False
                                   Language.PureScript.Docs.RenderedCode.Types.KindLevel
                                   -> $j } } } }) -}
-7d495009e0b1a6db980541613b188f86
+d1987e82f376cd3aa52fde3a0f312460
   $fEqRenderedCode_$s$fEq[]_$c/= ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -537,7 +547,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                         y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fFromJSONContainingModule ::
     Data.Aeson.Types.FromJSON.FromJSON
       Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -547,16 +557,16 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                   Language.PureScript.Docs.RenderedCode.Types.$fFromJSONContainingModule_$cparseJSON
                   Language.PureScript.Docs.RenderedCode.Types.$fFromJSONContainingModule_$cparseJSONList -}
-29b5deecab4b1e010e3b60b694daab95
+18296807ec7e37d2eec8167c1853c583
   $fFromJSONContainingModule1 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: (", encountered "#) -}
-f673c82bfe7d49701d09dc6c2d9a0bba
+ff46eb6bcca471f3fedc126a4d0e48fd
   $fFromJSONContainingModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("[a]"#) -}
-209d5950e9fa9a276d5fb843e1a7910b
+6076901763fd3cd085d2cb2e4a06897f
   $fFromJSONContainingModule3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("expected "#) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fFromJSONContainingModule_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -567,7 +577,7 @@ f673c82bfe7d49701d09dc6c2d9a0bba
                    @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                    (GHC.Base.id @ Data.Text.Internal.Text)
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fFromJSONContainingModule_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -631,14 +641,14 @@ f673c82bfe7d49701d09dc6c2d9a0bba
                       Language.PureScript.Docs.RenderedCode.Types.$fFromJSONContainingModule_go
                         0#
                         ($wgo 0#) } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fFromJSONContainingModule_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser
          [Language.PureScript.Docs.RenderedCode.Types.ContainingModule]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink ::
     Data.Aeson.Types.FromJSON.FromJSON
       Language.PureScript.Docs.RenderedCode.Types.Link
@@ -648,7 +658,7 @@ f673c82bfe7d49701d09dc6c2d9a0bba
                   @ Language.PureScript.Docs.RenderedCode.Types.Link
                   Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink_$cparseJSON
                   Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink_$cparseJSONList -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink1 ::
     [Data.Aeson.BetterErrors.Internal.Parse
        Data.Text.Internal.Text
@@ -676,21 +686,21 @@ f673c82bfe7d49701d09dc6c2d9a0bba
                                                                                                                                                                        <Data.Text.Internal.Text>_N
                                                                                                                                                                        <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.Link>_N))
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink2) -}
-2151cb7feaf34937edada1776d18a27e
+0894325acbee501235ac1e5445dff8fd
   $fFromJSONLink10 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink11) -}
-c3627b4a23cd5250c2b50567b8218218
+bc8289dbaef15a00718209f3d112a627
   $fFromJSONLink11 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("NoLink"#) -}
-85c6ca3b5f1ad91146c978caa118e053
+b0833528ddc1570b2f289ef97fb64aa7
   $fFromJSONLink12 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink13) -}
-f61698a17b4f9434a171670f9b36073d
+6841594e4443d519e489819f301eae3c
   $fFromJSONLink13 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("link"#) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink2 ::
     [Data.Aeson.BetterErrors.Internal.Parse
        Data.Text.Internal.Text
@@ -721,7 +731,7 @@ f61698a17b4f9434a171670f9b36073d
                       @ (Data.Aeson.BetterErrors.Internal.Parse
                            Data.Text.Internal.Text
                            Language.PureScript.Docs.RenderedCode.Types.Link))) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink3 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -754,7 +764,7 @@ f61698a17b4f9434a171670f9b36073d
                                                                                                                                                                          <Language.PureScript.Docs.RenderedCode.Types.Link>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                                                                                                                                                           <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                           <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.Link>_N))) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink4 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -793,14 +803,14 @@ f61698a17b4f9434a171670f9b36073d
                              Data.Text.Internal.Text)
                         @ Language.PureScript.Docs.RenderedCode.Types.Link
                         (Language.PureScript.Docs.RenderedCode.Types.Link y) }) -}
-c56e34e274c68ee6bdb20b600384c917
+b3ba111ad9723e1d538567b2f569f8eb
   $fFromJSONLink5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink6) -}
-b17912cb39ff4f77ff6a63320870c5c2
+b3f81847d911b2fd6431e259f1b2b2f6
   $fFromJSONLink6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Link"#) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink7 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -833,7 +843,7 @@ b17912cb39ff4f77ff6a63320870c5c2
                                                                                                                                                                          <Language.PureScript.Docs.RenderedCode.Types.Link>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                                                                                                                                                           <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                           <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.Link>_N))) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink8 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -843,7 +853,7 @@ b17912cb39ff4f77ff6a63320870c5c2
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
      Unfolding: (\ (ds :: Data.Aeson.BetterErrors.Internal.ParseReader) ->
                  Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink9) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink9 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -855,7 +865,7 @@ b17912cb39ff4f77ff6a63320870c5c2
                         Data.Text.Internal.Text)
                    @ Language.PureScript.Docs.RenderedCode.Types.Link
                    Language.PureScript.Docs.RenderedCode.Types.NoLink) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -866,7 +876,7 @@ b17912cb39ff4f77ff6a63320870c5c2
                    @ Language.PureScript.Docs.RenderedCode.Types.Link
                    (GHC.Base.id @ Data.Text.Internal.Text)
                    Language.PureScript.Docs.RenderedCode.Types.asLink) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -928,14 +938,14 @@ b17912cb39ff4f77ff6a63320870c5c2
                       Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink_go
                         0#
                         ($wgo 0#) } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fFromJSONLink_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser
          [Language.PureScript.Docs.RenderedCode.Types.Link]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace ::
     Data.Aeson.Types.FromJSON.FromJSON
       Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -945,7 +955,7 @@ b17912cb39ff4f77ff6a63320870c5c2
                   @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                   Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace_$cparseJSON
                   Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace_$cparseJSONList -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace1 ::
     [Data.Aeson.BetterErrors.Internal.Parse
        Data.Text.Internal.Text
@@ -976,21 +986,21 @@ b17912cb39ff4f77ff6a63320870c5c2
                       @ (Data.Aeson.BetterErrors.Internal.Parse
                            Data.Text.Internal.Text
                            Language.PureScript.Docs.RenderedCode.Types.Namespace))) -}
-0b23de6c156910f0888be56d3cfcf5aa
+d2a33c28912bb69e35771d8e56d541b1
   $fFromJSONNamespace10 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace11) -}
-a0ef7cb1d59ece7793961a5c38371a36
+cfa7f0417fa6f0e419a032942c967574
   $fFromJSONNamespace11 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ValueLevel"#) -}
-7d6b38e54fa6cf63073cbb1a6a9e3249
+c019054c323c0c1df6c20b85dcbfff94
   $fFromJSONNamespace12 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace13) -}
-d24d04b7b143ef31df05a3809c44d172
+053678d11158ce09c71f0515ecc8436b
   $fFromJSONNamespace13 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("namespace"#) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace2 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -1167,7 +1177,7 @@ d24d04b7b143ef31df05a3809c44d172
                                              (Data.Aeson.BetterErrors.Internal.ParseError
                                                 Data.Text.Internal.Text)
                                              Language.PureScript.Docs.RenderedCode.Types.Namespace>_R)) } } } } } } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace3 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -1179,7 +1189,7 @@ d24d04b7b143ef31df05a3809c44d172
                         Data.Text.Internal.Text)
                    @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                    Language.PureScript.Docs.RenderedCode.Types.ValueLevel) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace4 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -1191,7 +1201,7 @@ d24d04b7b143ef31df05a3809c44d172
                         Data.Text.Internal.Text)
                    @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                    Language.PureScript.Docs.RenderedCode.Types.TypeLevel) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace5 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -1203,21 +1213,21 @@ d24d04b7b143ef31df05a3809c44d172
                         Data.Text.Internal.Text)
                    @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                    Language.PureScript.Docs.RenderedCode.Types.KindLevel) -}
-3f8193b1086854c0a529bbe4d42bd051
+4123ca110944b2b48a99bf08be094b70
   $fFromJSONNamespace6 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace7) -}
-e9a20482bcb67586e82e423cd597765e
+3c8e23e5be38c0e20e9388954d700a23
   $fFromJSONNamespace7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("KindLevel"#) -}
-5480b3834d517f7931cc3d5c8487edce
+8c4e5a8e4ea015252edcb50a0c3cb2c3
   $fFromJSONNamespace8 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace9) -}
-3c28881fc9a29d2bd0cad878f4b6940b
+79789c506510adcc65fcf6091d529de0
   $fFromJSONNamespace9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("TypeLevel"#) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -1228,7 +1238,7 @@ e9a20482bcb67586e82e423cd597765e
                    @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                    (GHC.Base.id @ Data.Text.Internal.Text)
                    Language.PureScript.Docs.RenderedCode.Types.asNamespace) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -1290,14 +1300,14 @@ e9a20482bcb67586e82e423cd597765e
                       Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace_go
                         0#
                         ($wgo 0#) } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fFromJSONNamespace_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser
          [Language.PureScript.Docs.RenderedCode.Types.Namespace]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fGenericNamespace ::
     GHC.Generics.Generic
       Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -1315,7 +1325,7 @@ e9a20482bcb67586e82e423cd597765e
                                   <'GHC.Generics.MetaData
                                      "Namespace"
                                      "Language.PureScript.Docs.RenderedCode.Types"
-                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                     "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                                      'GHC.Types.False>_P
                                   <GHC.Generics.M1
                                      GHC.Generics.C
@@ -1337,7 +1347,7 @@ e9a20482bcb67586e82e423cd597765e
                                                                            'GHC.Types.False)
                                                                         GHC.Generics.U1)>_R) ; Sub (Sym (Language.PureScript.Docs.RenderedCode.Types.Rep_Namespace[0]))) <x>_N)
                   Language.PureScript.Docs.RenderedCode.Types.$fGenericNamespace_$cto -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fGenericNamespace1 ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> (GHC.Generics.:+:)
@@ -1371,7 +1381,7 @@ e9a20482bcb67586e82e423cd597765e
                    Language.PureScript.Docs.RenderedCode.Types.KindLevel
                    -> Language.PureScript.Docs.RenderedCode.Types.$fGenericNamespace2
                         @ x }) -}
-e004cc7c7312595782417fda77901364
+3da10c3b3654664fd8afb6ec45e50589
   $fGenericNamespace2 ::
     (GHC.Generics.:+:)
       (GHC.Generics.M1
@@ -1412,7 +1422,7 @@ e004cc7c7312595782417fda77901364
                    @ x
                    (Language.PureScript.Docs.RenderedCode.Types.$fGenericNamespace3
                       @ x)) -}
-fce4418d745751ad3fffbca211ea33e2
+5e9af84116e15747607f7f62434f929f
   $fGenericNamespace3 ::
     (GHC.Generics.:+:)
       (GHC.Generics.M1
@@ -1449,7 +1459,7 @@ fce4418d745751ad3fffbca211ea33e2
                              <'GHC.Generics.MetaCons
                                 "KindLevel" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
                              <GHC.Generics.U1>_R) <x>_N)) -}
-95ff6468f0dd70e6fbffaec426eaad83
+38c117beec336055bfd20c2af04fb61b
   $fGenericNamespace4 ::
     (GHC.Generics.:+:)
       (GHC.Generics.M1
@@ -1490,7 +1500,7 @@ fce4418d745751ad3fffbca211ea33e2
                    @ x
                    (Language.PureScript.Docs.RenderedCode.Types.$fGenericNamespace5
                       @ x)) -}
-ed8eff777ad55b06b040c39f2344ba5d
+e37e851d509c038aa108ce874e806ae0
   $fGenericNamespace5 ::
     (GHC.Generics.:+:)
       (GHC.Generics.M1
@@ -1527,7 +1537,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                              <'GHC.Generics.MetaCons
                                 "TypeLevel" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
                              <GHC.Generics.U1>_R) <x>_N)) -}
-76bc74ab91cc1523d01c3d65f81547a4
+e93ddd5bb2deb2babc3186e0eb2772c3
   $fGenericNamespace6 ::
     (GHC.Generics.:+:)
       (GHC.Generics.M1
@@ -1574,7 +1584,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                              <'GHC.Generics.MetaCons
                                 "ValueLevel" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
                              <GHC.Generics.U1>_R) <x>_N)) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fGenericNamespace_$cto ::
     GHC.Generics.Rep
       Language.PureScript.Docs.RenderedCode.Types.Namespace x
@@ -1592,7 +1602,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                                                                                  <'GHC.Generics.MetaData
                                                                                                     "Namespace"
                                                                                                     "Language.PureScript.Docs.RenderedCode.Types"
-                                                                                                    "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                                    "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                                                                                                     'GHC.Types.False>_P
                                                                                                  <GHC.Generics.M1
                                                                                                     GHC.Generics.C
@@ -1647,7 +1657,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                         "KindLevel" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
                                      <GHC.Generics.U1>_R <x>_N) of wild2 { GHC.Generics.U1 ->
                            Language.PureScript.Docs.RenderedCode.Types.KindLevel } } }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fMonoidRenderedCode ::
     GHC.Base.Monoid
       Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -1671,7 +1681,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                     `cast`
                   (([Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])])_R
                    ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fNFDataNamespace ::
     Control.DeepSeq.NFData
       Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -1683,14 +1693,14 @@ ed8eff777ad55b06b040c39f2344ba5d
                   `cast`
                 (Sym (Control.DeepSeq.N:NFData[0]
                           <Language.PureScript.Docs.RenderedCode.Types.Namespace>_N)) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fNFDataNamespace_$crnf ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace -> ()
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (x :: Language.PureScript.Docs.RenderedCode.Types.Namespace) ->
                  case x of wild { DEFAULT -> GHC.Tuple.() }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule ::
     GHC.Classes.Ord
       Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1706,7 +1716,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdContainingModule_$c>=
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdContainingModule_$cmax
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdContainingModule_$cmin -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$c< ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1730,7 +1740,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         -> Language.PureScript.Names.$fOrdModuleName6
                              a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                              b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$c<= ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1758,7 +1768,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$c> ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1770,7 +1780,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                  Language.PureScript.Docs.RenderedCode.Types.$fOrdContainingModule_$c<
                    b
                    a) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$c>= ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1798,7 +1808,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$ccompare ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1825,7 +1835,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                 @ 'Language.PureScript.Names.Namespace)
                              a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                              b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$cmax ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1847,7 +1857,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              DEFAULT -> wild GHC.Types.LT -> wild1 } } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fOrdContainingModule_$cmin ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -1872,7 +1882,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              DEFAULT -> wild1 GHC.Types.LT -> wild } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink ::
     GHC.Classes.Ord Language.PureScript.Docs.RenderedCode.Types.Link
   DFunId
@@ -1887,7 +1897,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdLink_$c>=
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdLink_$cmax
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdLink_$cmin -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$c< ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -1911,7 +1921,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         -> Language.PureScript.Docs.RenderedCode.Types.$fOrdContainingModule_$c<
                              a1
                              b1 } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$c<= ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -1954,7 +1964,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                             (Language.PureScript.Names.N:ModuleName[0]) of wild4 {
                                        DEFAULT -> GHC.Types.True
                                        GHC.Types.LT -> GHC.Types.False } } } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$c> ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -1964,7 +1974,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                 (\ (a :: Language.PureScript.Docs.RenderedCode.Types.Link)
                    (b :: Language.PureScript.Docs.RenderedCode.Types.Link) ->
                  Language.PureScript.Docs.RenderedCode.Types.$fOrdLink_$c< b a) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$c>= ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -2007,7 +2017,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                             (Language.PureScript.Names.N:ModuleName[0]) of wild4 {
                                        DEFAULT -> GHC.Types.True
                                        GHC.Types.LT -> GHC.Types.False } } } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$ccompare ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -2029,7 +2039,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         -> Language.PureScript.Docs.RenderedCode.Types.$fOrdContainingModule_$ccompare
                              a1
                              b1 } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$cmax ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -2063,7 +2073,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                               `cast`
                                             (Language.PureScript.Names.N:ModuleName[0]) of wild4 {
                                        DEFAULT -> wild GHC.Types.LT -> wild1 } } } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fOrdLink_$cmin ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -2100,7 +2110,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                                               `cast`
                                             (Language.PureScript.Names.N:ModuleName[0]) of wild4 {
                                        DEFAULT -> wild1 GHC.Types.LT -> wild } } } } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace ::
     GHC.Classes.Ord
       Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2116,7 +2126,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdNamespace_$c>=
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdNamespace_$cmax
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdNamespace_$cmin -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$c< ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2141,7 +2151,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         -> GHC.Types.True }
                    Language.PureScript.Docs.RenderedCode.Types.KindLevel
                    -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$c<= ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2169,7 +2179,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                    Language.PureScript.Docs.RenderedCode.Types.TypeLevel -> $j 1#
                    Language.PureScript.Docs.RenderedCode.Types.KindLevel
                    -> $j 2# }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$c> ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2181,7 +2191,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                  Language.PureScript.Docs.RenderedCode.Types.$fOrdNamespace_$c<
                    b
                    a) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$c>= ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2209,7 +2219,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                    Language.PureScript.Docs.RenderedCode.Types.TypeLevel -> $j 1#
                    Language.PureScript.Docs.RenderedCode.Types.KindLevel
                    -> $j 2# }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$ccompare ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2239,7 +2249,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         DEFAULT -> GHC.Types.GT
                         Language.PureScript.Docs.RenderedCode.Types.KindLevel
                         -> GHC.Types.EQ } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$cmax ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2252,7 +2262,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         x
                         y of wild {
                    GHC.Types.False -> x GHC.Types.True -> y }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fOrdNamespace_$cmin ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2265,7 +2275,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         x
                         y of wild {
                    GHC.Types.False -> y GHC.Types.True -> x }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fOrdRenderedCode ::
     GHC.Classes.Ord
       Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -2309,7 +2319,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                   (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
                    ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
                    ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-435bad8fba05640813c8c938387f458f
+9b1f65d513cd2be7547f947f356c44a4
   $fOrdRenderedCode1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2324,7 +2334,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         x
                         y of wild {
                    DEFAULT -> x GHC.Types.GT -> y }) -}
-3fe88f1a714f570330e5546914d54e18
+91e1b3149bc5fcb1c0cdff49255ef739
   $fOrdRenderedCode2 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2339,7 +2349,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         x
                         y of wild {
                    DEFAULT -> y GHC.Types.GT -> x }) -}
-09b5247076ab37ca82cd06b6606ab616
+5071216eea9755933a4496d48b42ac60
   $fOrdRenderedCode3 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2354,7 +2364,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
-642e60949125b9709f61f18ad2becbad
+6d18d3f59753de71d67209a491dd3f51
   $fOrdRenderedCode4 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2369,7 +2379,7 @@ ed8eff777ad55b06b040c39f2344ba5d
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
-c6465803a992222d003f88d65999c3ca
+974c98c850aee954133c1ef945a54b58
   $fOrdRenderedCode5 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2384,7 +2394,7 @@ c6465803a992222d003f88d65999c3ca
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
-400c40e5ca3745a036022446d64d62e3
+3e43e4f59f99c50010d30b41831dc3a4
   $fOrdRenderedCode6 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2399,7 +2409,7 @@ c6465803a992222d003f88d65999c3ca
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
-b42091e7ce6fe42ac2fdba7659a8106c
+47a09c99a7bd9dfb4d91d5cb73549e32
   $fOrdRenderedCode7 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -2408,7 +2418,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
      Unfolding: (GHC.Classes.$fOrd[]_$ccompare
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    Language.PureScript.Docs.RenderedCode.Types.$fOrdRenderedCodeElement) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement ::
     GHC.Classes.Ord
       Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2424,7 +2434,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdRenderedCodeElement_$c>=
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdRenderedCodeElement_$cmax
                   Language.PureScript.Docs.RenderedCode.Types.$fOrdRenderedCodeElement_$cmin -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$c< ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2437,7 +2447,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$c<= ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2450,7 +2460,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$c> ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2463,7 +2473,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$c>= ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2476,7 +2486,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                         x
                         y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$ccompare ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2539,7 +2549,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                                   DEFAULT -> GHC.Types.GT
                                   Language.PureScript.Docs.RenderedCode.Types.KindLevel
                                   -> $j } } } }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$cmax ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2552,7 +2562,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                         x
                         y of wild {
                    DEFAULT -> y GHC.Types.GT -> x }) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fOrdRenderedCodeElement_$cmin ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2565,7 +2575,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                         x
                         y of wild {
                    DEFAULT -> x GHC.Types.GT -> y }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fSemigroupRenderedCode ::
     GHC.Base.Semigroup
       Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -2592,7 +2602,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                    ->_R <b>_R
                    ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])
                    ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-90db9a079fd77777d22705dd186dcedd
+e44e4ca934b4271e1b7af7dac3d93bd1
   $fSemigroupRenderedCode1 ::
     GHC.Real.Integral b =>
     b
@@ -2607,7 +2617,7 @@ b42091e7ce6fe42ac2fdba7659a8106c
                    @ b
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    $dIntegral) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fShowContainingModule ::
     GHC.Show.Show
       Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -2618,21 +2628,21 @@ b42091e7ce6fe42ac2fdba7659a8106c
                   Language.PureScript.Docs.RenderedCode.Types.$fShowContainingModule_$cshowsPrec
                   Language.PureScript.Docs.RenderedCode.Types.$fShowContainingModule_$cshow
                   Language.PureScript.Docs.RenderedCode.Types.$fShowContainingModule_$cshowList -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fShowContainingModule1 ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.$fShowContainingModule_$cshowsPrec
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule15) -}
-03405bda7a8588e80a913177a04cae42
+bed5a1625fdae6c95426aedde0c9f2b2
   $fShowContainingModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("OtherModule "#) -}
-cddfec9ad98754740be38bbade96c824
+1255bc9bb7782193625e5315414dbaef
   $fShowContainingModule3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule19) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fShowContainingModule_$cshow ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> GHC.Base.String
@@ -2648,7 +2658,7 @@ cddfec9ad98754740be38bbade96c824
                            11#
                            b1
                            (GHC.Types.[] @ GHC.Types.Char)) }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fShowContainingModule_$cshowList ::
     [Language.PureScript.Docs.RenderedCode.Types.ContainingModule]
     -> GHC.Show.ShowS
@@ -2661,7 +2671,7 @@ cddfec9ad98754740be38bbade96c824
                    Language.PureScript.Docs.RenderedCode.Types.$fShowContainingModule1
                    ls
                    s) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fShowContainingModule_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -2696,7 +2706,7 @@ cddfec9ad98754740be38bbade96c824
                                       @ GHC.Types.Char
                                       GHC.Show.$fShow(,)2
                                       eta))) } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fShowLink ::
     GHC.Show.Show Language.PureScript.Docs.RenderedCode.Types.Link
   DFunId
@@ -2706,34 +2716,34 @@ cddfec9ad98754740be38bbade96c824
                   Language.PureScript.Docs.RenderedCode.Types.$fShowLink_$cshowsPrec
                   Language.PureScript.Docs.RenderedCode.Types.$fShowLink_$cshow
                   Language.PureScript.Docs.RenderedCode.Types.$fShowLink_$cshowList -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fShowLink1 ::
     Language.PureScript.Docs.RenderedCode.Types.Link -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.$fShowLink_$cshowsPrec
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule15) -}
-ce33c186369a243d3394f61a346be31b
+3661a9d2af89c2eff2cca994805e3947
   $fShowLink2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
-d34688389d65ef92d10d989304d412ea
+0fabffd0ca797ce7e832af2aea9b1e77
   $fShowLink3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fShowLink4) -}
-0e1c198d2e0af2206cd9644a4a8cde74
+8f86b72cd7b9ccaed90b570a677d11b1
   $fShowLink4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Link "#) -}
-f51c12bd23cbec1bbd397ba2fd2ecc4d
+1ceaff64d74150530f47202f34325797
   $fShowLink5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink11) -}
-b92e7f6543b081c32581618f03036e5b
+26d1073c8c674834141a97c5efb868fe
   $fShowLink6 :: [GHC.Types.Char]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
                    GHC.Show.$fShow(,)2
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fShowLink_$cshow ::
     Language.PureScript.Docs.RenderedCode.Types.Link -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -2758,7 +2768,7 @@ b92e7f6543b081c32581618f03036e5b
                                       11#
                                       b2
                                       Language.PureScript.Docs.RenderedCode.Types.$fShowLink6)) }) }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fShowLink_$cshowList ::
     [Language.PureScript.Docs.RenderedCode.Types.Link]
     -> GHC.Show.ShowS
@@ -2771,7 +2781,7 @@ b92e7f6543b081c32581618f03036e5b
                    Language.PureScript.Docs.RenderedCode.Types.$fShowLink1
                    ls
                    s) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fShowLink_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.Docs.RenderedCode.Types.Link
@@ -2811,7 +2821,7 @@ b92e7f6543b081c32581618f03036e5b
                                       @ GHC.Types.Char
                                       GHC.Show.$fShow(,)2
                                       eta))) } } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fShowNamespace ::
     GHC.Show.Show Language.PureScript.Docs.RenderedCode.Types.Namespace
   DFunId
@@ -2821,19 +2831,19 @@ b92e7f6543b081c32581618f03036e5b
                   Language.PureScript.Docs.RenderedCode.Types.$fShowNamespace_$cshowsPrec
                   Language.PureScript.Docs.RenderedCode.Types.$fShowNamespace_$cshow
                   Language.PureScript.Docs.RenderedCode.Types.$fShowNamespace_$cshowList -}
-5ff28a0c4df9693279268843c7cfb11b
+cd482027fad1eed24a8450e3ce9af8d3
   $fShowNamespace1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace7) -}
-99ad0b4ef1c0b8f0ac04ecaf2da4ec7d
+e6ee76c723ea9d65b6aeebbc502cda58
   $fShowNamespace2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace9) -}
-dbca9fdba50ae0647b4c7e9ee853c8b9
+9d59daadceb8f25e2e8ea17197256aa9
   $fShowNamespace3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace11) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fShowNamespace_$cshow ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> GHC.Base.String
@@ -2847,7 +2857,7 @@ dbca9fdba50ae0647b4c7e9ee853c8b9
                    -> Language.PureScript.Docs.RenderedCode.Types.$fShowNamespace2
                    Language.PureScript.Docs.RenderedCode.Types.KindLevel
                    -> Language.PureScript.Docs.RenderedCode.Types.$fShowNamespace1 }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fShowNamespace_$cshowList ::
     [Language.PureScript.Docs.RenderedCode.Types.Namespace]
     -> GHC.Show.ShowS
@@ -2860,7 +2870,7 @@ dbca9fdba50ae0647b4c7e9ee853c8b9
                    Language.PureScript.Docs.RenderedCode.Types.$w$cshowsPrec
                    ls
                    s) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fShowNamespace_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -2871,7 +2881,7 @@ dbca9fdba50ae0647b4c7e9ee853c8b9
                    (w1 :: Language.PureScript.Docs.RenderedCode.Types.Namespace)
                    (w2 :: GHC.Base.String) ->
                  Language.PureScript.Docs.RenderedCode.Types.$w$cshowsPrec w1 w2) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fShowRenderedCode ::
     GHC.Show.Show
       Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -2882,7 +2892,7 @@ dbca9fdba50ae0647b4c7e9ee853c8b9
                   Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCode_$cshowsPrec1
                   Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCode_$cshow
                   Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCode_$cshowList -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fShowRenderedCode1 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> GHC.Show.ShowS
@@ -2893,16 +2903,16 @@ dbca9fdba50ae0647b4c7e9ee853c8b9
                    0#
                    w
                    w1) -}
-ea395744a9cc5d6ac20fcf3fed71efac
+13e4601bcb74376659ce4343bb158bc3
   $fShowRenderedCode2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("}"#) -}
-cc0caa4f65ef24cc071b1655a1975f9f
+4b90b62b0cb45c40508ea924971d3e89
   $fShowRenderedCode3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("unRC = "#) -}
-ff7a919ab24671962c3d259249434ef1
+0bb40f2df3b6f6d89783013f5072cefe
   $fShowRenderedCode4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("RC {"#) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fShowRenderedCodeElement ::
     GHC.Show.Show
       Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -2913,14 +2923,14 @@ ff7a919ab24671962c3d259249434ef1
                   Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCode_$cshowsPrec
                   Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCodeElement_$cshow
                   Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCodeElement_$cshowList -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fShowRenderedCodeElement1 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCode_$cshowsPrec
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule15) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fShowRenderedCodeElement_$cshow ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> GHC.Base.String
@@ -2931,7 +2941,7 @@ ff7a919ab24671962c3d259249434ef1
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule15
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fShowRenderedCodeElement_$cshowList ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> GHC.Show.ShowS
@@ -2944,7 +2954,7 @@ ff7a919ab24671962c3d259249434ef1
                    Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCodeElement1
                    ls
                    s) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fShowRenderedCode_$cshow ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> GHC.Base.String
@@ -2955,7 +2965,7 @@ ff7a919ab24671962c3d259249434ef1
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule15
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fShowRenderedCode_$cshowList ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCode]
     -> GHC.Show.ShowS
@@ -2968,13 +2978,13 @@ ff7a919ab24671962c3d259249434ef1
                    Language.PureScript.Docs.RenderedCode.Types.$fShowRenderedCode1
                    ls
                    s) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fShowRenderedCode_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fShowRenderedCode_$cshowsPrec1 ::
     GHC.Types.Int
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -2989,7 +2999,7 @@ ff7a919ab24671962c3d259249434ef1
                    ww1
                    w1
                    w2 }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fToJSONContainingModule ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -3001,20 +3011,20 @@ ff7a919ab24671962c3d259249434ef1
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONContainingModule_$ctoEncoding
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONContainingModule_$ctoJSONList
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONContainingModule_$ctoEncodingList -}
-853f289175c8cd32c047a8afa54f5e7b
+3a1fc6fc326685f030e43919ec745379
   $fToJSONContainingModule1 :: Data.Aeson.Types.Internal.Value
   {- Strictness: m3,
      Unfolding: (Data.Aeson.Types.Internal.String
                    Language.PureScript.Names.runModuleName1) -}
-04f994baa18173dff04c9d4c4e1bc7ba
+1f0658cad37a4b273d57ad3f8dde1ae6
   $fToJSONContainingModule2 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Language.PureScript.Docs.RenderedCode.Types.asContainingModule10 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-a348bae6cc35e0b9416460bb1eab3cf9
+1efd8febc47db11ad6a0b01816e0703b
   $fToJSONContainingModule3 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Language.PureScript.Docs.RenderedCode.Types.asContainingModule18 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fToJSONContainingModule_$ctoEncoding ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -3028,7 +3038,7 @@ a348bae6cc35e0b9416460bb1eab3cf9
                 (<Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fToJSONContainingModule_$ctoEncodingList ::
     [Language.PureScript.Docs.RenderedCode.Types.ContainingModule]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -3037,7 +3047,7 @@ a348bae6cc35e0b9416460bb1eab3cf9
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONContainingModule_$ctoEncoding) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fToJSONContainingModule_$ctoJSON ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> Data.Aeson.Types.Internal.Value
@@ -3047,7 +3057,7 @@ a348bae6cc35e0b9416460bb1eab3cf9
                  case Language.PureScript.Docs.RenderedCode.Types.$w$ctoJSON
                         w of ww { Unit# ww1 ->
                  Data.Aeson.Types.Internal.Array ww1 }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $fToJSONContainingModule_$ctoJSONList ::
     [Language.PureScript.Docs.RenderedCode.Types.ContainingModule]
     -> Data.Aeson.Types.Internal.Value
@@ -3085,7 +3095,7 @@ a348bae6cc35e0b9416460bb1eab3cf9
                                      Language.PureScript.Docs.RenderedCode.Types.$fToJSONContainingModule_$ctoJSON)
                                   n1
                                   x)))))) -}
-76847cfab1be7439cf232766641a0b44
+aabb6e4db50c4224594838b56bfbe290
   $fToJSONContainingModule_$s$wfoldlM_loop ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> Data.Aeson.Types.Internal.Value
@@ -3371,7 +3381,7 @@ a348bae6cc35e0b9416460bb1eab3cf9
                                      <Data.Aeson.Types.Internal.Value>_R)_R
                                   n#
                                   0# } } } } } }) -}
-b573a82b94d09d19a40c671598265fab
+593bca6ec1c7293feead8f9e3c95b57b
   $fToJSONContainingModule_$s$wfoldlM_loop1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> Data.Aeson.Types.Internal.Value
@@ -3653,7 +3663,7 @@ b573a82b94d09d19a40c671598265fab
                                      0#
                                      y
                                      ipv3 #) } } } } } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fToJSONLink ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.Docs.RenderedCode.Types.Link
@@ -3665,12 +3675,12 @@ b573a82b94d09d19a40c671598265fab
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONLink_$ctoEncoding
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONLink_$ctoJSONList
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONLink_$ctoEncodingList -}
-484d154827587abecd0dc78a15f90faf
+82ef4fed528b14a8eb948f5db0799c17
   $fToJSONLink1 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink6 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-ce40891dc1f9465186a89879cd5f1747
+c36625e275615c44289a833be9903c33
   $fToJSONLink2 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case GHC.Magic.runRW#
                         @ ('GHC.Types.TupleRep
@@ -3680,7 +3690,7 @@ ce40891dc1f9465186a89879cd5f1747
                         Language.PureScript.Docs.RenderedCode.Types.$fToJSONLink3 of ds1 { (#,#) ipv1 ipv2 ->
                  case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                  Data.Aeson.Types.Internal.Array dt } }) -}
-a748bcff17731439d29dea99d7ba434e
+a271430a65e67de16b0e2e7169693af6
   $fToJSONLink3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -3715,12 +3725,12 @@ a748bcff17731439d29dea99d7ba434e
                       <Data.Aeson.Types.Internal.Value>_R)_R
                    0#
                    0# }) -}
-d1fcc87544057651aad60b19c13d2e58
+1c5cb44f6929237c4d1ff5b509a072ca
   $fToJSONLink4 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink11 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fToJSONLink_$ctoEncoding ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -3734,7 +3744,7 @@ d1fcc87544057651aad60b19c13d2e58
                 (<Language.PureScript.Docs.RenderedCode.Types.Link>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fToJSONLink_$ctoEncodingList ::
     [Language.PureScript.Docs.RenderedCode.Types.Link]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -3743,7 +3753,7 @@ d1fcc87544057651aad60b19c13d2e58
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.Docs.RenderedCode.Types.Link
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONLink_$ctoEncoding) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fToJSONLink_$ctoJSON ::
     Language.PureScript.Docs.RenderedCode.Types.Link
     -> Data.Aeson.Types.Internal.Value
@@ -3792,7 +3802,7 @@ d1fcc87544057651aad60b19c13d2e58
                                 0# }) of ds1 { (#,#) ipv1 ipv2 ->
                       case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                       Data.Aeson.Types.Internal.Array dt } } }) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   $fToJSONLink_$ctoJSONList ::
     [Language.PureScript.Docs.RenderedCode.Types.Link]
     -> Data.Aeson.Types.Internal.Value
@@ -3830,7 +3840,7 @@ d1fcc87544057651aad60b19c13d2e58
                                      Language.PureScript.Docs.RenderedCode.Types.$fToJSONLink_$ctoJSON)
                                   n1
                                   x)))))) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fToJSONNamespace ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -3842,7 +3852,7 @@ d1fcc87544057651aad60b19c13d2e58
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONNamespace_$ctoEncoding
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONNamespace_$ctoJSONList
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONNamespace_$ctoEncodingList -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fToJSONNamespace_$ctoEncoding ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -3869,7 +3879,7 @@ d1fcc87544057651aad60b19c13d2e58
                 (<Language.PureScript.Docs.RenderedCode.Types.Namespace>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fToJSONNamespace_$ctoEncodingList ::
     [Language.PureScript.Docs.RenderedCode.Types.Namespace]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -3878,7 +3888,7 @@ d1fcc87544057651aad60b19c13d2e58
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONNamespace_$ctoEncoding) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fToJSONNamespace_$ctoJSON ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> Data.Aeson.Types.Internal.Value
@@ -3898,7 +3908,7 @@ d1fcc87544057651aad60b19c13d2e58
                    -> case Data.Text.Show.unpackCString#
                              Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace7 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                       Data.Aeson.Types.Internal.String dt } }) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   $fToJSONNamespace_$ctoJSONList ::
     [Language.PureScript.Docs.RenderedCode.Types.Namespace]
     -> Data.Aeson.Types.Internal.Value
@@ -3936,7 +3946,7 @@ d1fcc87544057651aad60b19c13d2e58
                                      Language.PureScript.Docs.RenderedCode.Types.$fToJSONNamespace_$ctoJSON)
                                   n1
                                   x)))))) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fToJSONRenderedCode ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -3948,26 +3958,26 @@ d1fcc87544057651aad60b19c13d2e58
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode_$ctoEncoding
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode_$ctoJSONList
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode_$ctoEncodingList -}
-e7e462a028f02331f5c9d47766d13a2f
+ce7373978b4c1b6d5b432cf9c1775ab4
   $fToJSONRenderedCode1 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode2 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-82ec53265c67464fba63a4f621d7e653
+1838c79e6bb77bee6893892e51b6ad35
   $fToJSONRenderedCode10 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode11 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-7be2dfb266d0d6a6f246859f974f5ce9
+d523a1b98148aee66427543ff8b214cd
   $fToJSONRenderedCode11 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode12) -}
-c398acd9042f0a727c3449d2c37b7b1a
+f59c50fc9fea0187ae803249438433de
   $fToJSONRenderedCode12 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("syntax"#) -}
-d09f13499b6a37de200d94450f9fd303
+c47a62d57b669635d25efea4b67ca744
   $fToJSONRenderedCode2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("symbol"#) -}
-24d4b61a2f65ed7b816005dc5153bd1b
+3a327e75b268645e62ac2840da1f1fed
   $fToJSONRenderedCode3 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case GHC.Magic.runRW#
                         @ ('GHC.Types.TupleRep
@@ -3977,7 +3987,7 @@ d09f13499b6a37de200d94450f9fd303
                         Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode4 of ds1 { (#,#) ipv1 ipv2 ->
                  case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                  Data.Aeson.Types.Internal.Array dt } }) -}
-19749d157151de9f337b42726da361b0
+1c4cfc7d525dfa6fb2304560e7975478
   $fToJSONRenderedCode4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -4012,26 +4022,26 @@ d09f13499b6a37de200d94450f9fd303
                       <Data.Aeson.Types.Internal.Value>_R)_R
                    0#
                    0# }) -}
-bcfc568edbe60a25807cad5332afe059
+55f71306f8d6803cec3c8bb5c36a3b81
   $fToJSONRenderedCode5 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode6 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-fb3df758ba75eed7ef9dec1032c2a6f2
+b73ea20b4913b1463e88c80a58e14dee
   $fToJSONRenderedCode6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("space"#) -}
-ac6982db4e69f5ef7dcfdddf39ff9a58
+18c71bba555d544b748e89e3c1f7c1b6
   $fToJSONRenderedCode7 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode8 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt }) -}
-5da68c0b42745ff4d280e2acfae7757c
+24718ca286d19356fba7a2ba27d0c92b
   $fToJSONRenderedCode8 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode9) -}
-7fcb64dc7e931676af31cd40ec7e01d1
+9407e955851b3be9082e0aebc3afa105
   $fToJSONRenderedCode9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("keyword"#) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fToJSONRenderedCodeElement ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -4043,7 +4053,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCodeElement_$ctoEncoding
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCodeElement_$ctoJSONList
                   Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCodeElement_$ctoEncodingList -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fToJSONRenderedCodeElement_$ctoEncoding ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -4057,7 +4067,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                 (<Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fToJSONRenderedCodeElement_$ctoEncodingList ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -4066,7 +4076,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCodeElement_$ctoEncoding) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fToJSONRenderedCodeElement_$ctoJSONList ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
     -> Data.Aeson.Types.Internal.Value
@@ -4104,7 +4114,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                                      Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode_$ctoJSON)
                                   n1
                                   x)))))) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fToJSONRenderedCode_$ctoEncoding ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -4148,7 +4158,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                 (<Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fToJSONRenderedCode_$ctoEncodingList ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCode]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -4157,7 +4167,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode_$ctoEncoding) -}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   $fToJSONRenderedCode_$ctoJSON ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
     -> Data.Aeson.Types.Internal.Value
@@ -4348,7 +4358,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                                 0# } } } } } } }) of ds1 { (#,#) ipv1 ipv2 ->
                       case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                       Data.Aeson.Types.Internal.Array dt } } }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fToJSONRenderedCode_$ctoJSON1 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> Data.Aeson.Types.Internal.Value
@@ -4358,7 +4368,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                  case Language.PureScript.Docs.RenderedCode.Types.$w$ctoJSON1
                         w of ww { Unit# ww1 ->
                  Data.Aeson.Types.Internal.Array ww1 }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $fToJSONRenderedCode_$ctoJSONList ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCode]
     -> Data.Aeson.Types.Internal.Value
@@ -4396,7 +4406,7 @@ ac6982db4e69f5ef7dcfdddf39ff9a58
                                      Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode_$ctoJSON1)
                                   n1
                                   x)))))) -}
-f3ffe2be5a30dcb830a18ecf8a7c2356
+7dfd63c8b3a76dcebf221c8fc45aad83
   $fToJSONRenderedCode_$s$wfoldlM_loop ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> [Data.Aeson.Types.Internal.Value]
@@ -4408,361 +4418,361 @@ f3ffe2be5a30dcb830a18ecf8a7c2356
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.Vector.Vector Data.Aeson.Types.Internal.Value #)
   {- Arity: 6, Strictness: <S,U><S,1*U><L,U><S,U><L,U><L,U> -}
-5a509b31ae56f6c5a829bbf6e7d03edd
+e0c9f678459550b178abb263264d08e6
   $tc'Keyword :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   1368651407644356038##
-                   18386668088571681886##
+                   16598520982162659201##
+                   12522637768754171944##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Keyword2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Keyword1) -}
-74fa7a4cc1b0a20a568e49bb29188941
+218b2bae688229fb6b15c72d26c9ae7b
   $tc'Keyword1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-f53847e485405c55c055eaf6c08f4827
+d8fe0d2799961440b964829b5ce725e0
   $tc'Keyword2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Keyword3) -}
-af511a746479b260c8471a6669fab3bc
+716acf6401d732003a250f5f185a4655
   $tc'Keyword3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Keyword"#) -}
-a2be7b15f66c72116ff6377e5bda88e4
+f58f07f00ba46a31c0faef4a58b6842d
   $tc'KindLevel :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   9753730026985310276##
-                   3118193858826853354##
+                   5458743857024962189##
+                   4129424924609517681##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'KindLevel2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'KindLevel1) -}
-6bc82a44979658df508827bc6f1d147b
+90fae5f949b575f53171b7c556936411
   $tc'KindLevel1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
-03aa500133512937c55261054410ad36
+f6d2ac9924394d95f6daad59246b79d2
   $tc'KindLevel2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'KindLevel3) -}
-ffa4ab9f44309d3c0f5fbf21e4a34489
+46fb080648d75d5602dc338e5680e37e
   $tc'KindLevel3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'KindLevel"#) -}
-10562d0f6b7f6384998b2d5ef2441804
+a2eafad6096a3b548037ec64535bc348
   $tc'Link :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   1060713643546781673##
-                   8363307577954912180##
+                   7939392050253751108##
+                   6424570253430965015##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Link2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Link1) -}
-795ad9cd46f6ab82cb37e0cc2b9e5d3a
+4a4496844b76c57af4690584c0628904
   $tc'Link1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-d43f4d6a9676a9d2440b318da4a926bb
+dec12a56d94515694af2947cf875dcbe
   $tc'Link2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Link3) -}
-8a3ec24698eb77ea1a023ce440526484
+c4e63729bacde81aee58238c53853c79
   $tc'Link3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Link"#) -}
-ef99481c381f4e6c5c650e460449e24b
+902bbf40a244d87485e4317d6e8de58f
   $tc'NoLink :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5517171356786839102##
-                   16152218722268882414##
+                   1242171855764408754##
+                   527275302080370833##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'NoLink2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'NoLink1) -}
-0996eff7d7633541d3dd38b014d1d012
+3e413b257026decbdaf047695ce86a87
   $tc'NoLink1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
-34269674a9d18c16edc812aeb5040158
+5a249f3aef2dab1ee10ba58e7fb67b38
   $tc'NoLink2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'NoLink3) -}
-4208021d50be8cd434318d9339c2c578
+076f2a5a2bcf1653f96260573ee83d24
   $tc'NoLink3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'NoLink"#) -}
-7f63f1361c527a89002a54ace139f234
+34e87b7a9c5d4e84d20971bcea94a5de
   $tc'OtherModule :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   17016102378054062517##
-                   11616272191786610421##
+                   9517069218883173663##
+                   7219779118064293116##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'OtherModule2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'OtherModule1) -}
-179ea059ec5e9f9996ebb8ffc0185141
+87e8368e8a1782e888208443e00fc0c2
   $tc'OtherModule1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-628e99cef450a08175acc2aee7536a97
+5f3a6d98933bdc44a9f19e81ce6db264
   $tc'OtherModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'OtherModule3) -}
-f2c33b45613817d61e9df5ce6b40cfb9
+324c251a1bab4b2acc64d5a81904296a
   $tc'OtherModule3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'OtherModule"#) -}
-794c9c1fe3804b72565c88410679781c
+73573f5c72c2f47bd552e5b6f3f9d06b
   $tc'RC :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   13220031406215012007##
-                   8082627853522084064##
+                   12942873025358574914##
+                   10825590736765110919##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'RC2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'RC1) -}
-d64a05ee6e452e3c6babb31188f0e04d
+3d1e4ecf1d8cb4441b5e2160c82cdbad
   $tc'RC1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-d577200fce84e6394696227fc598371e
+181994371ee7a047c80bb741f4169f39
   $tc'RC2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'RC3) -}
-65e77683aac9830ea59baa76100bc225
+9f09777cf92b9b2f38b6d69255c8d1e7
   $tc'RC3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'RC"#) -}
-47c81e3c2b830041fbd02845107a6d64
+03220a7b6deea9ef75a12acea4ac6b12
   $tc'Space :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   617174156411816228##
-                   18429814156780483686##
+                   8967808042892267509##
+                   14117227503436084824##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Space2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Space1) -}
-8b11008af6a019f5c192d81a259edbff
+736423a759d1f66c748443157e9bd4b3
   $tc'Space1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
-e8ff0fdbb5a3d398cb357387fbed0c2c
+03aa99b9e823b47bda52f59766e4aa3e
   $tc'Space2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Space3) -}
-4aa177cc8c019a6f965d6a8f769dce5d
+9419f6e1ca7e0ae259f8a04d1d1ddb2f
   $tc'Space3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Space"#) -}
-9ee74decec784cde04fd49559d5d1dc4
+1d38ba5dd4aeda5ba7afbf2de54e036a
   $tc'Symbol :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   14997831049797156642##
-                   10014231191637551036##
+                   15614763639200462710##
+                   14861996707736143737##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Symbol2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Symbol1) -}
-1c0b3ffddf12709f0c6f648fcc2bd54d
+25fcbbbd3198fee61a3d3e43eb8bb217
   $tc'Symbol1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-8ef3480c07b5f66e730d7609364837e5
+d615122da266e8f9deb23a746a87a977
   $tc'Symbol2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Symbol3) -}
-fc81152c9d5fe495473717ae0d76acfe
+419eaac70776b606fb5ca596356207fd
   $tc'Symbol3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Symbol"#) -}
-c388e0c5f98098225f11a59d745e5f23
+c199bcf89637d3774e6e6e085eb45198
   $tc'Syntax :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   9434125694879616837##
-                   8132043970333757326##
+                   1717793148857133890##
+                   236900438624686747##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Syntax1
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Keyword1) -}
-585a35832870079d940eb7d8e4b00a54
+a39205dffacdc1743c19044c29e2d777
   $tc'Syntax1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'Syntax2) -}
-23adf96fc0d2b68cc7229657569daa84
+29310a74f9c5836f52fdc6d640756b50
   $tc'Syntax2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Syntax"#) -}
-dcff7c85e9d27712e951253052329be2
+2024644577d7a1cc9c6a179e3cf87905
   $tc'ThisModule :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5307968982611978089##
-                   16723445466877590584##
+                   17535406994404773404##
+                   7689137541442736691##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'ThisModule2
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'ThisModule1) -}
-25dfd45075905ac701e46d4df807f7a8
+30c505ca5bf331f1c56030a99157ac50
   $tc'ThisModule1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
-8f3ab754e75852d1a28cef5ffc27a073
+222aa7d2c17078824ac539d8acfc309c
   $tc'ThisModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'ThisModule3) -}
-f38a67bf7c7188c970e5e86e24165787
+509dda3c26e189ef2f2bb9f8e5419983
   $tc'ThisModule3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'ThisModule"#) -}
-b801bf7599547bc6173fecbb2ffe2fd3
+a285eace1b51071c7105e47674b0b969
   $tc'TypeLevel :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   1199428453076484735##
-                   6020147757608815567##
+                   10875395168046762152##
+                   17759802340090471227##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'TypeLevel1
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'KindLevel1) -}
-5f1bbdd6ccaddde340d33ddd83950634
+0115e7d0137c0f6332cae11707b194d9
   $tc'TypeLevel1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'TypeLevel2) -}
-873a23a678759f346c2a16d21b88d93a
+eb75f420e3e6a031d97fa21d77d39f27
   $tc'TypeLevel2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'TypeLevel"#) -}
-2285cc8ef3800968db3e5a1a0080105e
+20ab790a02783c07d7d5e68d8b543955
   $tc'ValueLevel :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   6023597006324729578##
-                   9667613268483647364##
+                   113912527203587704##
+                   10970484860333729049##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tc'ValueLevel1
                    0#
                    Language.PureScript.Docs.RenderedCode.Types.$tc'KindLevel1) -}
-c000340494c50567bbd643e08f18b7e0
+b0d4d42ce5a5a8a8b722171307d69447
   $tc'ValueLevel1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tc'ValueLevel2) -}
-7cb0e92f88639e996ba86f9abf0abe3a
+8f19c184a4081dba1c087f8e7d550415
   $tc'ValueLevel2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'ValueLevel"#) -}
-f30e51aa6e5bffeefb67574a3a6730af
+a5704a22b6f453a2b359b1c0e6264b06
   $tcContainingModule :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   678207125430102048##
-                   13973992730775677019##
+                   10640785467900045021##
+                   12103144184294839115##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tcContainingModule1
                    0#
                    GHC.Types.krep$*) -}
-30f35cf825ad5693049aa863524caefe
+ff1b9aa32d9514a9a7940108d84ed914
   $tcContainingModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tcContainingModule2) -}
-ba721482cdb94825370fa907b415c06f
+dec07061f236cd060fc4ea5c648dc807
   $tcContainingModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ContainingModule"#) -}
-644eb586dc62699bb56b639f41bc32f6
+84627b96216d20c6389ddd8aea7813e4
   $tcLink :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   7499419122586586223##
-                   2563856195915967470##
+                   10043816533234675189##
+                   65199706698433410##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tcLink1
                    0#
                    GHC.Types.krep$*) -}
-ecd0b84bc2deae3c6d2557486229491a
+2b0b12ae7febb2fae7583ae0ea596100
   $tcLink1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink6) -}
-34277581a03a3bacd1cf327fa05902a3
+adb6683e04359622096e7c5d9ae386bb
   $tcNamespace :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   3869825517265989017##
-                   12303966659691239979##
+                   8868423931635565030##
+                   3439067282838737925##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tcNamespace1
                    0#
                    GHC.Types.krep$*) -}
-31e9989df336e4a370394e71580b6612
+6efa49333ad38aeec97d37fdbb04fa8e
   $tcNamespace1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tcNamespace2) -}
-562cecadc5313d17a2664b93191cc965
+3283753707bcf74e01d962512869af6a
   $tcNamespace2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Namespace"#) -}
-ff05dccc11e7543c6af50400e767639d
+9cbda91b28278410ccfde4e4e99cafef
   $tcRenderedCode :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   16224996375122753812##
-                   14485965782673035395##
+                   4770525693056769432##
+                   12981704319372207843##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tcRenderedCode1
                    0#
                    GHC.Types.krep$*) -}
-26ac5343e10bd99b4b3c2c44e5ba863d
+d05987e8b661570ef26d6924e0388df8
   $tcRenderedCode1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tcRenderedCode2) -}
-e3f7ca0a6bbfb04fadc7a7c2e138783d
+464dbb03bff93f085453cd3c1ecb02e6
   $tcRenderedCode2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("RenderedCode"#) -}
-acf4a95c929afe417919a53251a096f9
+19d02f5c0300054e2a15e1965a97749d
   $tcRenderedCodeElement :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   14445009016881240271##
-                   646649362286571644##
+                   6076452643385753361##
+                   8780740279043351550##
                    Language.PureScript.Docs.RenderedCode.Types.$trModule
                    Language.PureScript.Docs.RenderedCode.Types.$tcRenderedCodeElement1
                    0#
                    GHC.Types.krep$*) -}
-fd9a530bd33c85c8fb80d3d7d9b825cb
+a5007e5bb935c7cf2b385e47f8d1951f
   $tcRenderedCodeElement1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$tcRenderedCodeElement2) -}
-22096179dc4fb6596563a4c67cc72e8f
+586d7ba7520d3edec201cd1528441c60
   $tcRenderedCodeElement2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("RenderedCodeElement"#) -}
-98c66879c4ab813ae5a7c9aac461ed18
+86b17772989513234c16f4c4e5f59b3e
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Docs.RenderedCode.Types.$trModule3
                    Language.PureScript.Docs.RenderedCode.Types.$trModule1) -}
-3cf848120347466e532ac5ee71845fcd
+a8706471dc60634f660af2411ba62864
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$trModule2) -}
-11d6b0a153bb09937fd749f756c5e0e4
+e3c71c237e2df7ee103067bd10fafe5b
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.Docs.RenderedCode.Types"#) -}
-c606c72a227a2c3b9e73a846579d6a7e
+80cb186ac9bc867432035dd9071bc9fa
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Docs.RenderedCode.Types.$trModule4) -}
-5ddf1877c6b2d47301a3757ef9c53b04
+96acf63f2141ef7a2d5658a4720ff826
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-0bf68f95cc438605559d4d420b903a78
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+e686c6add7c243d229f3b74d733eb7d2
   $w$cshowsPrec ::
     Language.PureScript.Docs.RenderedCode.Types.Namespace
     -> GHC.Base.String -> GHC.Base.String
@@ -4785,7 +4795,7 @@ c606c72a227a2c3b9e73a846579d6a7e
                         @ GHC.Types.Char
                         Language.PureScript.Docs.RenderedCode.Types.$fShowNamespace1
                         w1 }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -4847,7 +4857,7 @@ c606c72a227a2c3b9e73a846579d6a7e
                         @ GHC.Types.Char
                         GHC.Show.$fShow(,)4
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1)) }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   $w$ctoJSON ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> (# Data.Aeson.Types.Internal.Array #)
@@ -4923,7 +4933,7 @@ c606c72a227a2c3b9e73a846579d6a7e
                                 0# } }) of ds1 { (#,#) ipv1 ipv2 ->
                  case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                  (# dt #) } }) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   $w$ctoJSON1 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> (# Data.Aeson.Types.Internal.Array #)
@@ -4969,7 +4979,7 @@ c606c72a227a2c3b9e73a846579d6a7e
                            0# }) of ds1 { (#,#) ipv1 ipv2 ->
                  case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                  (# dt #) } }) -}
-f607103fd1844c7581c17d25cc0185fb
+0c0b5f6c163aa9a27ee90816254869d3
   $walias ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> Data.Either.Either
@@ -5053,7 +5063,7 @@ f607103fd1844c7581c17d25cc0185fb
                                  @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
                              `cast`
                            (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) } }) -}
-da2d44e90dafe98abe37d8e43219609b
+6f38799c277b219ac60fb11e2ce9367b
   $waliasName ::
     Data.Either.Either
       (Language.PureScript.Names.ProperName
@@ -5066,7 +5076,7 @@ da2d44e90dafe98abe37d8e43219609b
     -> (# Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement,
           [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement] #)
   {- Arity: 2, Strictness: <S,1*U><L,1*U(U,U,U)>, Inline: [0] -}
-29cc0e893ca22c68269fcca446f8d643
+bc8cb2c788184b6965df637d44e87b99
   $wasModuleName ::
     Data.DList.DList Data.Aeson.BetterErrors.Internal.PathPiece
     -> Data.Aeson.Types.Internal.Value
@@ -5105,7 +5115,7 @@ da2d44e90dafe98abe37d8e43219609b
                            ww5)
                           `cast`
                         (Sym (Language.PureScript.Names.N:ModuleName[0])) } }) -}
-f9baa68ce033e870cc820535f6b47c6e
+06feeeeb1d17e6476cb9818e962d64b8
   $wm1 ::
     Data.DList.DList Data.Aeson.BetterErrors.Internal.PathPiece
     -> Data.Aeson.Types.Internal.Value
@@ -5162,10 +5172,10 @@ f9baa68ce033e870cc820535f6b47c6e
                                                                              Data.Text.Internal.Text>_N
                                                                           <Data.Functor.Identity.Identity>_R
                                                                           <Data.Text.Internal.Text>_N)) }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   data ContainingModule
     = ThisModule | OtherModule Language.PureScript.Names.ModuleName
-6f960a06e738e49e9ff5eee34182b501
+122fdd14b482e92974e48cc6ae5de54a
   type FixityAlias =
     Language.PureScript.Names.Qualified
       (Data.Either.Either
@@ -5175,16 +5185,16 @@ f9baa68ce033e870cc820535f6b47c6e
             Language.PureScript.Names.Ident
             (Language.PureScript.Names.ProperName
                'Language.PureScript.Names.ConstructorName)))
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   data Link
     = NoLink
     | Link Language.PureScript.Docs.RenderedCode.Types.ContainingModule
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   data Namespace = ValueLevel | TypeLevel | KindLevel
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   newtype RenderedCode
     = RC {unRC :: [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]}
-171153e7e2ed40b7058dbb86502105f3
+8d7e5831b8ea3cae37734f270bdcdcc0
   data RenderedCodeElement
     = Syntax Data.Text.Internal.Text
     | Keyword Data.Text.Internal.Text
@@ -5192,7 +5202,7 @@ f9baa68ce033e870cc820535f6b47c6e
     | Symbol Language.PureScript.Docs.RenderedCode.Types.Namespace
              Data.Text.Internal.Text
              Language.PureScript.Docs.RenderedCode.Types.Link
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   axiom Language.PureScript.Docs.RenderedCode.Types.Rep_Namespace::
       GHC.Generics.Rep
         Language.PureScript.Docs.RenderedCode.Types.Namespace
@@ -5200,7 +5210,7 @@ f9baa68ce033e870cc820535f6b47c6e
             ('GHC.Generics.MetaData
                "Namespace"
                "Language.PureScript.Docs.RenderedCode.Types"
-               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -5216,7 +5226,7 @@ f9baa68ce033e870cc820535f6b47c6e
                                                      'GHC.Generics.PrefixI
                                                      'GHC.Types.False)
                                                   GHC.Generics.U1))
-264048896fdb8d7a984d226df5320be8
+58d75aa2b5508cb21207566ae9a7014c
   alias ::
     Language.PureScript.Docs.RenderedCode.Types.FixityAlias
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -5225,7 +5235,7 @@ f9baa68ce033e870cc820535f6b47c6e
                 (\ (w :: Language.PureScript.Docs.RenderedCode.Types.FixityAlias) ->
                  case w of ww { Language.PureScript.Names.Qualified ww1 ww2 ->
                  Language.PureScript.Docs.RenderedCode.Types.$walias ww1 ww2 }) -}
-593c367aaa601cd6ab3acff96ef73bcc
+85d8615320542d07f02eacf9efef3791
   alias1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Unfolding: (GHC.Base.++_$s++
@@ -5234,20 +5244,20 @@ f9baa68ce033e870cc820535f6b47c6e
                    Language.PureScript.Docs.RenderedCode.Types.alias2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-82449f20f9994222211d34236869325c
+2495fe503707deb5bcd7b30ca0f22cd0
   alias2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.alias3) -}
-d780cab1494f532a5ceb54bdbd933baa
+da160e3fb25a7bf8a2a5780544fd0f2d
   alias3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.alias4) -}
-1062d67eb573d425a59c135faa8638c9
+ab833f16bf386e391f538411287d25b5
   alias4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("type"#) -}
-6c114b59f86730861cee950f82f6d05a
+4533a55fe53778df197324b7fc334aab
   alias5 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- HasNoCafRefs, Strictness: m2,
@@ -5256,7 +5266,7 @@ d780cab1494f532a5ceb54bdbd933baa
                    Language.PureScript.Docs.RenderedCode.Types.Space
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-93660e9a6a57956739cb37ae8fc4ef17
+38fb313582a77e9ced0a064e7c1961f1
   aliasName ::
     Language.PureScript.Docs.RenderedCode.Types.FixityAlias
     -> Data.Text.Internal.Text
@@ -5276,7 +5286,7 @@ d780cab1494f532a5ceb54bdbd933baa
                     ww5)
                    `cast`
                  (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule ::
     Data.Aeson.BetterErrors.Internal.Parse
       Data.Text.Internal.Text
@@ -5285,7 +5295,7 @@ d780cab1494f532a5ceb54bdbd933baa
                    @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule20
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule1) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule1 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -5315,14 +5325,14 @@ d780cab1494f532a5ceb54bdbd933baa
                                                                                                                                                                                                <Data.Text.Internal.Text>_N
                                                                                                                                                                                                <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule2) -}
-eb3a191e14eeafc106b5505fece34059
+12a0058bf46a8fa666e54a5e74e995a2
   asContainingModule10 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule11) -}
-05e2039d6f5db2bc651aa32e28405f0b
+22965f71c6d882ed2cbb47340e472bdc
   asContainingModule11 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("OtherModule"#) -}
-5a3f140ddc793134e4bbd358fa62853e
+39cab7d0540c58b65f3e5efa45dafdb2
   asContainingModule12 ::
     Data.Text.Internal.Text
     -> Data.Aeson.BetterErrors.Internal.Parse Data.Text.Internal.Text a
@@ -5497,7 +5507,7 @@ eb3a191e14eeafc106b5505fece34059
                               Data.Text.Internal.Text>_N
                            <Data.Functor.Identity.Identity>_R
                            <a>_N) }) -}
-ae317c580eddf5e733a14f08d234fe28
+6262f8add7edc27debb851747823cc7b
   asContainingModule13 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -5509,7 +5519,7 @@ ae317c580eddf5e733a14f08d234fe28
                         Data.Text.Internal.Text)
                    @ ()
                    GHC.Tuple.()) -}
-8e7d1f6739f4e77804b4b7e2d7586b7c
+af7fd95465ac1b187ac67398ca635b89
   asContainingModule14 ::
     Data.Aeson.BetterErrors.Internal.ErrorSpecifics
       Data.Text.Internal.Text
@@ -5517,10 +5527,10 @@ ae317c580eddf5e733a14f08d234fe28
      Unfolding: (Data.Aeson.BetterErrors.Internal.CustomError
                    @ Data.Text.Internal.Text
                    Data.Text.Internal.empty_) -}
-119e5f0d5d9635dfcfe07d7ea6009739
+55b7f4760b99f0c9562745860fefbfb1
   asContainingModule15 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule16 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -5553,7 +5563,7 @@ ae317c580eddf5e733a14f08d234fe28
                                                                                                                                                                                                  <Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                                                                                                                                                                                               <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                                                               <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_N))) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule17 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -5563,14 +5573,14 @@ ae317c580eddf5e733a14f08d234fe28
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
      Unfolding: (\ (ds :: Data.Aeson.BetterErrors.Internal.ParseReader) ->
                  Language.PureScript.Docs.RenderedCode.Types.asContainingModule5) -}
-6ccec21240a22bd72dc76b25863a55ab
+fad0950c1e4132342436cac6f0fa5105
   asContainingModule18 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule19) -}
-90675ecea8d4836f25c655b7ae85657a
+2c9e2f79d41841420e9744652611ce9f
   asContainingModule19 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ThisModule"#) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule2 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -5600,14 +5610,14 @@ ae317c580eddf5e733a14f08d234fe28
                                                                                                                                                                                                <Data.Text.Internal.Text>_N
                                                                                                                                                                                                <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule3) -}
-be8dfceab9165b6ce9a61952eab8c0cf
+f71bf53f22c5b6d96019f1d998665ac8
   asContainingModule20 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asContainingModule21) -}
-b018550064ee8735fbc86ffd11fd3278
+29a1664548d3532b249123f0aa2a700c
   asContainingModule21 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("containing module"#) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule3 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -5645,7 +5655,7 @@ b018550064ee8735fbc86ffd11fd3278
                            Data.Text.Internal.Text
                            Data.Functor.Identity.Identity
                            Language.PureScript.Docs.RenderedCode.Types.ContainingModule))) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule4 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -5688,7 +5698,7 @@ b018550064ee8735fbc86ffd11fd3278
                            (Sym (Language.PureScript.Names.N:ModuleName[0]))) }
                    Data.Aeson.Types.Internal.Null
                    -> Language.PureScript.Docs.RenderedCode.Types.asContainingModule5 } }) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule5 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -5700,7 +5710,7 @@ b018550064ee8735fbc86ffd11fd3278
                         Data.Text.Internal.Text)
                    @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                    Language.PureScript.Docs.RenderedCode.Types.ThisModule) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule6 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -5733,7 +5743,7 @@ b018550064ee8735fbc86ffd11fd3278
                                                                                                                                                                                                  <Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                                                                                                                                                                                               <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                                                               <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.ContainingModule>_N))) -}
-7fd78b3d6be6c8453ba17c402b4bd2a1
+5e9b2b25a94f6bc04ac9258fb2be1c52
   asContainingModule7 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -5793,7 +5803,7 @@ b018550064ee8735fbc86ffd11fd3278
                              Data.Text.Internal.Text)
                         @ Language.PureScript.Docs.RenderedCode.Types.ContainingModule
                         (Language.PureScript.Docs.RenderedCode.Types.OtherModule y) }) -}
-3eec7527ef94960e626154d5d9ea7752
+da6579cec2edad8c54f28caee65bb232
   asContainingModule8 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -5807,10 +5817,10 @@ b018550064ee8735fbc86ffd11fd3278
                    @ err
                    ww1
                    ww2 }) -}
-101d95652643e0287895e0d3301eee17
+2ab2e8bf5eb8ad1051ce88daea854c07
   asContainingModule9 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
-5e36da664b08e623162b4c76cb76fcf5
+646c8e664a7ad59f4599a12adf022c29
   asLink ::
     Data.Aeson.BetterErrors.Internal.Parse
       Data.Text.Internal.Text
@@ -5819,7 +5829,7 @@ b018550064ee8735fbc86ffd11fd3278
                    @ Language.PureScript.Docs.RenderedCode.Types.Link
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink12
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONLink1) -}
-0bf68f95cc438605559d4d420b903a78
+e686c6add7c243d229f3b74d733eb7d2
   asNamespace ::
     Data.Aeson.BetterErrors.Internal.Parse
       Data.Text.Internal.Text
@@ -5828,7 +5838,7 @@ b018550064ee8735fbc86ffd11fd3278
                    @ Language.PureScript.Docs.RenderedCode.Types.Namespace
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace12
                    Language.PureScript.Docs.RenderedCode.Types.$fFromJSONNamespace1) -}
-6058947f1f23fe9eaa0cae5cad314873
+90a261fbc98a867b411e086f7dba08c7
   asRenderedCode ::
     Data.Aeson.BetterErrors.Internal.Parse
       Data.Text.Internal.Text
@@ -5856,7 +5866,7 @@ b018550064ee8735fbc86ffd11fd3278
                                                                                                                                                                                       <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                                                                                                                                                                                <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                                                <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_N)) -}
-7510cd899566fdf73211bfce19b85764
+d90df97d57a10b41d92b4663e1df3991
   asRenderedCode1 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -5902,7 +5912,7 @@ b018550064ee8735fbc86ffd11fd3278
                         @ Language.PureScript.Docs.RenderedCode.Types.RenderedCode
                         y `cast`
                         (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-aad7f72672cc62ea4af4a905ef1d5915
+219786a474d8817bc772bd868165a47a
   asRenderedCode2 ::
     Data.Aeson.BetterErrors.Internal.ParseT
       Data.Text.Internal.Text
@@ -5914,7 +5924,7 @@ aad7f72672cc62ea4af4a905ef1d5915
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    Data.Functor.Identity.$fMonadIdentity
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement) -}
-860c3bd007c3bc6e78d5490f530478fa
+cef3b418ac32aa002eda0badfbb2ffdd
   asRenderedCodeElement ::
     Data.Aeson.BetterErrors.Internal.Parse
       Data.Text.Internal.Text
@@ -5923,7 +5933,7 @@ aad7f72672cc62ea4af4a905ef1d5915
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement36
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement1) -}
-b7e61851bb8a65c34b250748c4b655a3
+e30a28b46a0e083a1816defe338b41c1
   asRenderedCodeElement1 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -5953,13 +5963,13 @@ b7e61851bb8a65c34b250748c4b655a3
                                                                                                                                                                                                      <Data.Text.Internal.Text>_N
                                                                                                                                                                                                      <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement2) -}
-33a2fa963a80a42dd36f06f83ef474b7
+c9e273ec0108db58f376a74fd6fefc36
   asRenderedCodeElement10 ::
     Language.PureScript.Docs.RenderedCode.Types.Link
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Link
                    Language.PureScript.Docs.RenderedCode.Types.ThisModule) -}
-f3b4f9b6c28f811c11976ea339ec98cc
+af999dece0dfa59e923415bb8361968a
   asRenderedCodeElement11 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Control.Monad.Trans.Except.ExceptT
@@ -5973,14 +5983,14 @@ f3b4f9b6c28f811c11976ea339ec98cc
                 (\ (w :: Data.Aeson.BetterErrors.Internal.ParseReader) ->
                  case w of ww { Data.Aeson.BetterErrors.Internal.ParseReader ww1 ww2 ->
                  Language.PureScript.Docs.RenderedCode.Types.$wm1 ww1 ww2 }) -}
-9ce90ef94a159ba953e26cb645a00b17
+5eb63455a825c75402124fa900bdfc70
   asRenderedCodeElement12 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement13) -}
-0e6922fd63e296f88deec1ab1986e441
+951ee3e70ba5e82154b5b4545298185c
   asRenderedCodeElement13 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("kind"#) -}
-aa6389645d0ca6f7c23ba187ee49658d
+2eb9fb4f2143e36d6018e21f5d4aecb0
   asRenderedCodeElement14 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6004,7 +6014,7 @@ aa6389645d0ca6f7c23ba187ee49658d
                              <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                              <Data.Text.Internal.Text>_N
                                                                                                              <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) -}
-11d13fe57f3ea8d53e77326001e41ddf
+7e302e7319d81a77785788b6d5995030
   asRenderedCodeElement15 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Control.Monad.Trans.Except.ExceptT
@@ -6133,7 +6143,7 @@ aa6389645d0ca6f7c23ba187ee49658d
                                                                                                                           Data.Text.Internal.Text>_N
                                                                                                                        <Data.Functor.Identity.Identity>_R
                                                                                                                        <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) } }) -}
-9549ea0306891864d1f3dcc4f3619a37
+2a265b98eff77ed146837ea14db97e77
   asRenderedCodeElement16 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -6178,17 +6188,17 @@ aa6389645d0ca6f7c23ba187ee49658d
                              Data.Text.Internal.Text)
                         @ Language.PureScript.Docs.RenderedCode.Types.Link
                         (Language.PureScript.Docs.RenderedCode.Types.Link y) }) -}
-683bd09ca661ed44d06790e886d8687a
+6ce728e2adb01b40cd1164c9968f9bc6
   asRenderedCodeElement17 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
-750e0a116c04d4d7f351775cd21ab7ec
+74a034acee35e760102838f7ae696356
   asRenderedCodeElement18 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement19) -}
-9852c2e2a30f90659cf0d585b6287112
+a34fef3ed2c16bd8c6f9ef7277059cf0
   asRenderedCodeElement19 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ctor"#) -}
-30797066cc792f2feb304f85e050f7b5
+676c987adafdc6fe3221ad59a1922132
   asRenderedCodeElement2 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -6218,7 +6228,7 @@ aa6389645d0ca6f7c23ba187ee49658d
                                                                                                                                                                                                      <Data.Text.Internal.Text>_N
                                                                                                                                                                                                      <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement3) -}
-58a83f80d5213bb4ad23dc4f79f05a64
+925881e5b8397368e9ddf3a203a0dd3e
   asRenderedCodeElement20 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6242,7 +6252,7 @@ aa6389645d0ca6f7c23ba187ee49658d
                              <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                              <Data.Text.Internal.Text>_N
                                                                                                              <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) -}
-b92bc0528f330503ebc47e27d9bfcf10
+ab20757d3b76b68527baa84b36a754b7
   asRenderedCodeElement21 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Control.Monad.Trans.Except.ExceptT
@@ -6371,14 +6381,14 @@ b92bc0528f330503ebc47e27d9bfcf10
                                                                                                                           Data.Text.Internal.Text>_N
                                                                                                                        <Data.Functor.Identity.Identity>_R
                                                                                                                        <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) } }) -}
-90e8a4be28f0ae47ffbb70de448ccb34
+41f88a14a8b51569143bd64200b055f0
   asRenderedCodeElement22 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement23) -}
-701ce88d0fb7e19ef3091d7040372351
+4c873df8a674b0b1c6f28f113e26b1b8
   asRenderedCodeElement23 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ident"#) -}
-38d60ee46dae5423438dd71a7fefd31b
+ce6009182ca4da1c05a8ad5d6cafc184
   asRenderedCodeElement24 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6402,7 +6412,7 @@ b92bc0528f330503ebc47e27d9bfcf10
                              <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                              <Data.Text.Internal.Text>_N
                                                                                                              <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) -}
-86e1dd2fb50354070c3f50a0c9ce1b78
+c1f067377ec140b1517c8315933d0836
   asRenderedCodeElement25 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Control.Monad.Trans.Except.ExceptT
@@ -6543,14 +6553,14 @@ b92bc0528f330503ebc47e27d9bfcf10
                                                                                                                                Data.Text.Internal.Text>_N
                                                                                                                             <Data.Functor.Identity.Identity>_R
                                                                                                                             <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) } } }) -}
-22d53a2c64e5fa809a9c511f81e3c5fd
+e27418a7125f9172f70398d9855398d9
   asRenderedCodeElement26 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
-4a17d220c3f2385fe2085454db30cd71
+aa665c49738605b874519ebf86dfb94e
   asRenderedCodeElement27 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode2) -}
-cb7ad622a67e2dbb7fadfb098ee493fb
+23dbfe811136d200baa7f8d696b96877
   asRenderedCodeElement28 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6583,7 +6593,7 @@ cb7ad622a67e2dbb7fadfb098ee493fb
                                                                                                                                                                                                        <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                                                                                                                                                                                                        <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                                                                        <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))) -}
-67324350a896d716a3e4f04aa36f40d2
+096c93e83fc75c3051f3059a99b9fa24
   asRenderedCodeElement29 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -6593,7 +6603,7 @@ cb7ad622a67e2dbb7fadfb098ee493fb
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
      Unfolding: (\ (ds :: Data.Aeson.BetterErrors.Internal.ParseReader) ->
                  Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement30) -}
-08cdf7ce7cbabf7c65657e93b1404267
+ed216c8fa3045433c1a21da54f968159
   asRenderedCodeElement3 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -6623,7 +6633,7 @@ cb7ad622a67e2dbb7fadfb098ee493fb
                                                                                                                                                                                                      <Data.Text.Internal.Text>_N
                                                                                                                                                                                                      <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement4) -}
-9c7331c80146dbdfea4cccb9e067e1bb
+4d19cdb8c119fa989392473b06697056
   asRenderedCodeElement30 ::
     Data.Either.Either
       (Data.Aeson.BetterErrors.Internal.ParseError
@@ -6635,11 +6645,11 @@ cb7ad622a67e2dbb7fadfb098ee493fb
                         Data.Text.Internal.Text)
                    @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                    Language.PureScript.Docs.RenderedCode.Types.Space) -}
-8a17e634e1ae70dffe5330d0c9c5fb28
+637cefec1c2de93e6934ec344e00dcca
   asRenderedCodeElement31 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$fToJSONRenderedCode6) -}
-73250fc3253e751d3faa10e0660b5131
+5efbd64a7272f06591cb5358c1e8ed3e
   asRenderedCodeElement32 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6674,7 +6684,7 @@ cb7ad622a67e2dbb7fadfb098ee493fb
                                                                                                                                                                                                                                                                                        <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                                                                        <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    eta) -}
-2398e83f38de0f0c53db371984a23ce1
+8af027eb0bf787a02457c41924d3a342
   asRenderedCodeElement33 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -6724,7 +6734,7 @@ cb7ad622a67e2dbb7fadfb098ee493fb
                              Data.Text.Internal.Text)
                         @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                         (Language.PureScript.Docs.RenderedCode.Types.Keyword y) }) -}
-edd529cc579264a66e1244a9b2ca4634
+c42f35f9eaeb13c175d72d677d81e446
   asRenderedCodeElement34 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6759,7 +6769,7 @@ edd529cc579264a66e1244a9b2ca4634
                                                                                                                                                                                                                                                                                        <Data.Text.Internal.Text>_N
                                                                                                                                                                                                                                                                                        <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    eta) -}
-04fbee361f39ec5ff94f4bb60e44461d
+8b6f7f9ce5db9708f1b4e3b275b1aae6
   asRenderedCodeElement35 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Either.Either
@@ -6809,11 +6819,11 @@ edd529cc579264a66e1244a9b2ca4634
                              Data.Text.Internal.Text)
                         @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
                         (Language.PureScript.Docs.RenderedCode.Types.Syntax y) }) -}
-2200cd63c1792ef7f8430311b2c278c1
+71a9b85ea9a9695f3fc00b626d7c761f
   asRenderedCodeElement36 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.$tcRenderedCodeElement2) -}
-7d634996a1532f7bf3a394efa9d0e4e0
+3121b35e18976f22d8a6061f97f1562a
   asRenderedCodeElement4 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -6843,7 +6853,7 @@ edd529cc579264a66e1244a9b2ca4634
                                                                                                                                                                                                      <Data.Text.Internal.Text>_N
                                                                                                                                                                                                      <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement5) -}
-75924960799794940e43cff510d8b5ba
+0b9cea2a05f64bca6be3a50c98b90abb
   asRenderedCodeElement5 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -6873,7 +6883,7 @@ edd529cc579264a66e1244a9b2ca4634
                                                                                                                                                                                                      <Data.Text.Internal.Text>_N
                                                                                                                                                                                                      <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement6) -}
-cb0395e46675b7964bd008ca595a2ca8
+3b5e8dfaa252b86fe7c632696fafb0bd
   asRenderedCodeElement6 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -6903,7 +6913,7 @@ cb0395e46675b7964bd008ca595a2ca8
                                                                                                                                                                                                      <Data.Text.Internal.Text>_N
                                                                                                                                                                                                      <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N))
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement7) -}
-2bfbcbed7cdbe26842f475c814c59460
+08d8196ae376cadad6d74b752f36bf54
   asRenderedCodeElement7 ::
     [Data.Aeson.BetterErrors.Internal.ParseT
        Data.Text.Internal.Text
@@ -6937,7 +6947,7 @@ cb0395e46675b7964bd008ca595a2ca8
                            Data.Text.Internal.Text
                            Data.Functor.Identity.Identity
                            Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))) -}
-29552a2243a54612579b0a8507c5955b
+177e3ce1582268cf926325c3afd1ab14
   asRenderedCodeElement8 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Data.Functor.Identity.Identity
@@ -6961,7 +6971,7 @@ cb0395e46675b7964bd008ca595a2ca8
                              <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N) ; Sym (Data.Aeson.BetterErrors.Internal.N:ParseT[0]
                                                                                                              <Data.Text.Internal.Text>_N
                                                                                                              <Data.Functor.Identity.Identity>_R) <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) -}
-c2caf61707eb0150325c58812454b2b7
+dc799635d99ed2a069e6b357f709be64
   asRenderedCodeElement9 ::
     Data.Aeson.BetterErrors.Internal.ParseReader
     -> Control.Monad.Trans.Except.ExceptT
@@ -7035,7 +7045,7 @@ c2caf61707eb0150325c58812454b2b7
                                                                                                                      Data.Text.Internal.Text>_N
                                                                                                                   <Data.Functor.Identity.Identity>_R
                                                                                                                   <Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement>_N)) }) -}
-d4c018c41e49fa76958505ed2ca8a9d9
+35c099eacf64e099ef1defcf539b3138
   containingModuleToMaybe ::
     Language.PureScript.Docs.RenderedCode.Types.ContainingModule
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
@@ -7047,7 +7057,7 @@ d4c018c41e49fa76958505ed2ca8a9d9
                    -> GHC.Base.Nothing @ Language.PureScript.Names.ModuleName
                    Language.PureScript.Docs.RenderedCode.Types.OtherModule mn
                    -> GHC.Base.Just @ Language.PureScript.Names.ModuleName mn }) -}
-55d937c1ada98630a10a24c5fa4e6195
+0753c0f6add800bbdc0c0830b9fbbd4a
   dataCtor ::
     Language.PureScript.Names.Qualified
       (Language.PureScript.Names.ProperName
@@ -7073,7 +7083,7 @@ d4c018c41e49fa76958505ed2ca8a9d9
                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
                    `cast`
                  (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-6c94d76ead6272f7111c45f99e1d1162
+bb30cc5c6f89c2cc4640322319d0b479
   fromContainingModule ::
     Language.PureScript.Names.ModuleName
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -7086,7 +7096,7 @@ d4c018c41e49fa76958505ed2ca8a9d9
                    Language.PureScript.Docs.RenderedCode.Types.ThisModule -> def
                    Language.PureScript.Docs.RenderedCode.Types.OtherModule mn
                    -> mn }) -}
-e3078abbf028fac3bda9a6f35b357441
+b74733da6f2480dec74eec94d9fc0d4b
   fromQualified ::
     Language.PureScript.Names.Qualified a
     -> (Language.PureScript.Docs.RenderedCode.Types.ContainingModule,
@@ -7098,7 +7108,7 @@ e3078abbf028fac3bda9a6f35b357441
                  (Language.PureScript.Docs.RenderedCode.Types.maybeToContainingModule
                     mn,
                   x) }) -}
-1edc6188e1543cc534039e129ed205e2
+b4ceceb1bb021e5dd0568321d8e35fa2
   ident ::
     Language.PureScript.Names.Qualified Language.PureScript.Names.Ident
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -7119,7 +7129,7 @@ e3078abbf028fac3bda9a6f35b357441
                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
                    `cast`
                  (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-f1aae0f6ee3d35bf6919f5ba7223e983
+d7fff1d5203ffe3dddf7bebc09698eb7
   keyword ::
     Data.Text.Internal.Text
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -7129,7 +7139,7 @@ f1aae0f6ee3d35bf6919f5ba7223e983
                   `cast`
                 (<Data.Text.Internal.Text>_R
                  ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-d935a84e841dc1121239d2de58a2070f
+2373879769f5ffc13d8042d8d277c6af
   keyword1 ::
     Data.Text.Internal.Text
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -7141,7 +7151,7 @@ d935a84e841dc1121239d2de58a2070f
                    (Language.PureScript.Docs.RenderedCode.Types.Keyword kw)
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-07177d96fd9c86af218318beac9e40c6
+a408a8f3f99d273c94351be1fbacd876
   keywordAs ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7149,7 +7159,7 @@ d935a84e841dc1121239d2de58a2070f
                 Language.PureScript.Docs.RenderedCode.Types.keywordAs1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-0be08fae2cf94d9f41804433c15ff399
+467d6fb3683d614835b7244bd50ffabc
   keywordAs1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7158,20 +7168,20 @@ d935a84e841dc1121239d2de58a2070f
                    Language.PureScript.Docs.RenderedCode.Types.keywordAs2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-e538ca2fb9540ff3938d0a3dcf9f8eff
+71bd70d966c6eff4efc67b9b7fb8b295
   keywordAs2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordAs3) -}
-735008a88f01ce51c1197cd2c4b577cb
+ab33e41c401a18651f1655e9621439c1
   keywordAs3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordAs4) -}
-90d3379d355eb1b594daa8c88a91bec6
+bbd76a14d669aebf9454b5f15682088a
   keywordAs4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("as"#) -}
-6c863eaac5c66722ab79934c0ddff415
+b4846c3ecab46e2deb0f87e39d1356de
   keywordClass ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7179,7 +7189,7 @@ e538ca2fb9540ff3938d0a3dcf9f8eff
                 Language.PureScript.Docs.RenderedCode.Types.keywordClass1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-ced6dbf4f4d4a674a967a19fe6c6bcb9
+05ac8a327ca2a039745f155fc8f961ad
   keywordClass1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7188,20 +7198,20 @@ ced6dbf4f4d4a674a967a19fe6c6bcb9
                    Language.PureScript.Docs.RenderedCode.Types.keywordClass2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-bd9f23ed86a834ce00b86e0637deb9f5
+a953f18e9570f1797bd749797d9791fe
   keywordClass2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordClass3) -}
-bc82c61753189838b3a368552a494180
+31ba3a735b84c2c04cce92a3d5f56082
   keywordClass3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordClass4) -}
-3c66b3afd77dc68ee621af1cf1f72fc1
+68492f401f201e1fb747531ab3229332
   keywordClass4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("class"#) -}
-64474e9d7dfd465954644b9df6a8feac
+fcf6ac5b0d8124b4183309f8d7e09972
   keywordData ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7209,7 +7219,7 @@ bc82c61753189838b3a368552a494180
                 Language.PureScript.Docs.RenderedCode.Types.keywordData1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-5b48d083ead59a832c6d905d199d32f8
+dc22858a84cce6b93dc326f0b2385c16
   keywordData1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7218,20 +7228,20 @@ bc82c61753189838b3a368552a494180
                    Language.PureScript.Docs.RenderedCode.Types.keywordData2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-87de6ad30dd7cecb777af7cf3cb7f55a
+272a546dce18b8af2acdf8c1629ae72c
   keywordData2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordData3) -}
-a62f3f73a35743862077135b0e374acb
+f686f4aae797426eb6d735afb3dc2544
   keywordData3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordData4) -}
-30eb613f0ea7b7049e0921e44fec6fc8
+619c741126a99a9acc35ac53cc5eb679
   keywordData4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("data"#) -}
-2251146ecf774cfff36ec014a0b3f4e6
+beb4371395245f91b547e78917a46320
   keywordFixity ::
     Language.PureScript.AST.Operators.Associativity
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -7251,7 +7261,7 @@ a62f3f73a35743862077135b0e374acb
                    -> Language.PureScript.Docs.RenderedCode.Types.keywordFixity1
                         `cast`
                       (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-d996d5ff57879bdfa16511a9b613fb0f
+3c82674b0e1cd2ab518ff829bbd1290f
   keywordFixity1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7260,33 +7270,33 @@ d996d5ff57879bdfa16511a9b613fb0f
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-ada1c4c934adbb65c9639f79cd57c999
+3f61aa211179447c955a50e4774ef663
   keywordFixity10 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity11) -}
-716e6b63fddbf783d58f56b673c243ec
+0f0fc6911c6fb36c359f26aa63bc8b57
   keywordFixity11 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity12) -}
-5e2b44235fa945cebe693d359e103548
+06e50452a725d2512961f5f0c2571848
   keywordFixity12 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("infixl"#) -}
-5c04f12c3d47de3aa727f8e81c7fd277
+f96d9927969cafbcf476b3e300536036
   keywordFixity2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity3) -}
-14d0d62e5d3075e6f3ce48c0f6ef6b65
+713f0e900aeb7837ff1e70dd8fe1b310
   keywordFixity3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity4) -}
-6e97851a6962f459dd53721463d01919
+9f4697136395a8449fa047a2a60c86b7
   keywordFixity4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("infix"#) -}
-d5aa75d8f42b65593a7a5efa84e5316b
+04bd5231f8fcab242f7dac001adecde2
   keywordFixity5 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7295,20 +7305,20 @@ d5aa75d8f42b65593a7a5efa84e5316b
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity6
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-4bb5b016113915b211affa4e8ce73b2c
+28f8eeac95219d376fc5557cb6d1863d
   keywordFixity6 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity7) -}
-ab483ce926c9c42da5aa748ca3ddd5f0
+9f7a80aeedf140d4ffbdfb72336f99a2
   keywordFixity7 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity8) -}
-95bb48654e2e68642e7e7a48ebd3d6f0
+8733059b01ce7901f598f0d2740ab366
   keywordFixity8 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("infixr"#) -}
-23345e6ac686ac81c88fbaac86b18ec0
+931cdaae8a247987065fc956b5c3a18f
   keywordFixity9 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7317,7 +7327,7 @@ ab483ce926c9c42da5aa748ca3ddd5f0
                    Language.PureScript.Docs.RenderedCode.Types.keywordFixity10
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-a24777c5cd08c7ec239709f63a66077b
+018134480888568412524573f0b20b87
   keywordForall ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7325,7 +7335,7 @@ a24777c5cd08c7ec239709f63a66077b
                 Language.PureScript.Docs.RenderedCode.Types.keywordForall1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-1ee522afd9d08e205f581ba10ca93a4b
+37992070f9363959538291e080cc74c3
   keywordForall1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7334,20 +7344,20 @@ a24777c5cd08c7ec239709f63a66077b
                    Language.PureScript.Docs.RenderedCode.Types.keywordForall2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-e6d0ab96a0b143f6c1f4912ae7014330
+ccbf1a782ccdb091a19e05fdf8fe4cb7
   keywordForall2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordForall3) -}
-89a5f7f4b92380866f0a5a94df93bccc
+1ce8f893dc20319cd170fceeebde2dd4
   keywordForall3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordForall4) -}
-ef3ee58e90662fe8ac65ba33e67c5a60
+5b6bfd8b184c6fd7c48ed6897af23c54
   keywordForall4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("forall"#) -}
-8279dbfe041508986257a64136678e67
+6bec7252c6f097b637c6ec20d86bf408
   keywordInstance ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7355,7 +7365,7 @@ ef3ee58e90662fe8ac65ba33e67c5a60
                 Language.PureScript.Docs.RenderedCode.Types.keywordInstance1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-226dc425136d6084418e7e0342f9dc73
+9ccd781fe2b7ba2ec0a79b6400227163
   keywordInstance1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7364,20 +7374,20 @@ ef3ee58e90662fe8ac65ba33e67c5a60
                    Language.PureScript.Docs.RenderedCode.Types.keywordInstance2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-08a594a3789a4ae69f4987386c29823b
+1b1672522f10836162d872fe70038234
   keywordInstance2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordInstance3) -}
-5494bc4cb4cf2974d1ea68a022f03adf
+a04406e6f060a45bbb8768f6e4252522
   keywordInstance3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordInstance4) -}
-a15bf6863c12c292cf675752cb96f63a
+9aadd63e3dfa8de2b789924789b80d06
   keywordInstance4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("instance"#) -}
-f1d9e5d7c98c110289dfbd8b3eec8697
+b33ba98da249373160f8e4fa4564f2c6
   keywordKind ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7385,7 +7395,7 @@ f1d9e5d7c98c110289dfbd8b3eec8697
                 Language.PureScript.Docs.RenderedCode.Types.keywordKind1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-934ea33dc1ae8a3069f82891e9459129
+b00d6958ad307563cc3c8bac0ea73a1e
   keywordKind1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7394,13 +7404,13 @@ f1d9e5d7c98c110289dfbd8b3eec8697
                    Language.PureScript.Docs.RenderedCode.Types.keywordKind2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-49252bd833427eb2b471aaf20cf13e5b
+9cce9f47d83999d8818e6015682d7474
   keywordKind2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.asRenderedCodeElement12) -}
-b889adf6b92320ad56008a216cc6f2ee
+2b2b260a7ca2e2036ddf103b2be6f024
   keywordNewtype ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7408,7 +7418,7 @@ b889adf6b92320ad56008a216cc6f2ee
                 Language.PureScript.Docs.RenderedCode.Types.keywordNewtype1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-1508fa1a8c3914d12b759e19aa58255d
+c07331902fbc06cf5c734a4a9c165aeb
   keywordNewtype1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7417,20 +7427,20 @@ b889adf6b92320ad56008a216cc6f2ee
                    Language.PureScript.Docs.RenderedCode.Types.keywordNewtype2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-b4478e8a6f96d60eeb2d9764a228c7e8
+461848963469057315073d27006b4fc5
   keywordNewtype2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordNewtype3) -}
-fc81a09f979b493dccc2aabff0a60d6a
+b085fc66d4769014939a47040c38e2ba
   keywordNewtype3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordNewtype4) -}
-c8df516914de2071bca8637ee9e4f327
+dcdb37fd5b5ea663ed13e9a829f8baf6
   keywordNewtype4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("newtype"#) -}
-3f3ac34c1543fa96adcb27db726783b6
+41d8e6d528ede3db6e35b727f7b45aa4
   keywordType ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7438,7 +7448,7 @@ c8df516914de2071bca8637ee9e4f327
                 Language.PureScript.Docs.RenderedCode.Types.keywordType1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-3ef599ac1d5715333babb181f6f3a123
+2d19a0725ee376191226f7134d03f052
   keywordType1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7447,7 +7457,7 @@ c8df516914de2071bca8637ee9e4f327
                    Language.PureScript.Docs.RenderedCode.Types.alias2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-ebdeaf56a7806ca9667d2c92efa46d90
+c120934366a01997d07e0879393f2af0
   keywordWhere ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
@@ -7455,7 +7465,7 @@ ebdeaf56a7806ca9667d2c92efa46d90
                 Language.PureScript.Docs.RenderedCode.Types.keywordWhere1
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-54282a4e9811510a344ebba128425271
+c41ea0291e8913cba719d83a895723f8
   keywordWhere1 ::
     [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
   {- Strictness: m2,
@@ -7464,20 +7474,20 @@ ebdeaf56a7806ca9667d2c92efa46d90
                    Language.PureScript.Docs.RenderedCode.Types.keywordWhere2
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-b9dce528f3632fa88795de9c31548035
+1df203fec7de5cd61605e365679be6d2
   keywordWhere2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m2,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Keyword
                    Language.PureScript.Docs.RenderedCode.Types.keywordWhere3) -}
-f8c16229b1621414525a007f51b103da
+c95d6439461b66b31c90ddf385401ebc
   keywordWhere3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.keywordWhere4) -}
-00cf0c9ea7d5c3d89b0ed008aab5d804
+ed0403dbaf11149eeb80692993d22d93
   keywordWhere4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("where"#) -}
-c8c3bb5f95f1f9a3537e6f9dde0cc09b
+55f997f6bd0a4fed4cedd17eba370d04
   kind ::
     Language.PureScript.Names.Qualified
       (Language.PureScript.Names.ProperName
@@ -7503,7 +7513,7 @@ c8c3bb5f95f1f9a3537e6f9dde0cc09b
                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
                    `cast`
                  (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-dff6a7ebec2a311bffecb7ed7a9d97d0
+a5faa8d6374c2e49b90070dd17e30bd2
   maybeToContainingModule ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> Language.PureScript.Docs.RenderedCode.Types.ContainingModule
@@ -7515,7 +7525,7 @@ dff6a7ebec2a311bffecb7ed7a9d97d0
                    -> Language.PureScript.Docs.RenderedCode.Types.ThisModule
                    GHC.Base.Just mn
                    -> Language.PureScript.Docs.RenderedCode.Types.OtherModule mn }) -}
-571a394cd6325194e6bd8112427d5a3e
+a498c2ab6fddedd3074c27f5bd0b57f8
   outputWith ::
     GHC.Base.Monoid a =>
     (Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
@@ -7543,7 +7553,7 @@ dff6a7ebec2a311bffecb7ed7a9d97d0
                    eta
                      `cast`
                    (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-f2e211d79a20aa037a181942905db0ee
+349b56c782c281bee07f0bc66f7a09f2
   parens ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -7553,7 +7563,7 @@ f2e211d79a20aa037a181942905db0ee
                   `cast`
                 (<Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_R
                  ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-d57b92b2dff84ca8ce16ab873540779c
+1f517794589176405a03ac76654c8db5
   parens1 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -7581,40 +7591,40 @@ d57b92b2dff84ca8ce16ab873540779c
                          Language.PureScript.Docs.RenderedCode.Types.parens2
                          (GHC.Types.[]
                             @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)))) -}
-e5ced4affd0a828adce5e5658db8c1f2
+ee7dd87e4890122416d9abb4340f6ba7
   parens2 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m1,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
                    Language.PureScript.Docs.RenderedCode.Types.parens3) -}
-95c1dc84ed1fa83b3c00cfabfeb72c4d
+cb7872da58b86ee277376077f2507fcf
   parens3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.parens4) -}
-c5e0b44cae716d8fd8ed81ed078fe4c8
+12689d83f3dd1fa448ea6327c3169879
   parens4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: (")"#) -}
-4e254a9c3fe0a801472bc1f81f0b9d37
+a2835175e773a4613286127661107330
   parens5 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement
   {- Strictness: m1,
      Unfolding: (Language.PureScript.Docs.RenderedCode.Types.Syntax
                    Language.PureScript.Docs.RenderedCode.Types.parens6) -}
-e9bd5c427b63f07d75f6d0f4b419a4cf
+0b6a6c0fdbcb4da91c0de45c3860b070
   parens6 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Docs.RenderedCode.Types.parens7) -}
-ce1a4b92a509eb515a15b75323cad282
+f4a1fda7fd01851676a7a88f4fca2adf
   parens7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("("#) -}
-39b968598114288ef3f090bf19abc506
+36a8eaafc38970ad0ba81b96ac1c8a6b
   sp :: Language.PureScript.Docs.RenderedCode.Types.RenderedCode
   {- Strictness: m2,
      Unfolding: InlineRule (0, True, True)
                 Language.PureScript.Docs.RenderedCode.Types.alias5
                   `cast`
                 (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-1dcaacc9dbea946d419bd10faec44aed
+56404943757616c81318673508c45bb1
   syntax ::
     Data.Text.Internal.Text
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -7624,7 +7634,7 @@ ce1a4b92a509eb515a15b75323cad282
                   `cast`
                 (<Data.Text.Internal.Text>_R
                  ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-f94329e2bd5a4a447cb12756f0b2e406
+0c450fe659efcc3695645014e967b48d
   syntax1 ::
     Data.Text.Internal.Text
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -7636,14 +7646,14 @@ f94329e2bd5a4a447cb12756f0b2e406
                    (Language.PureScript.Docs.RenderedCode.Types.Syntax x)
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-d1573489692aac2de6c8be1b0ac234d4
+82f294fa8c907c3e2bb50f5ef715bdb2
   tryParse ::
     Data.Text.Internal.Text
     -> [Data.Aeson.BetterErrors.Internal.Parse
           Data.Text.Internal.Text a]
     -> Data.Aeson.BetterErrors.Internal.Parse Data.Text.Internal.Text a
   {- Arity: 2, Strictness: <L,1*U(U,U,U)><L,U> -}
-640b2fa6077da5d954e11bcf1438f389
+ef3ec807a21424113cddfe0cdc6538b8
   typeCtor ::
     Language.PureScript.Names.Qualified
       (Language.PureScript.Names.ProperName
@@ -7669,7 +7679,7 @@ d1573489692aac2de6c8be1b0ac234d4
                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
                    `cast`
                  (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-bacc39255084273fa8fde2f03d488c74
+8cf44ddb463d30a57fb828a49ca0517f
   typeOp ::
     Language.PureScript.Names.Qualified
       (Language.PureScript.Names.OpName
@@ -7695,7 +7705,7 @@ bacc39255084273fa8fde2f03d488c74
                        @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement))
                    `cast`
                  (Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) }) -}
-22b530447c9cd534f2f7d44d4bf20fb8
+7c8f1b67989521c64e611feb53a08c00
   typeVar ::
     Data.Text.Internal.Text
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode
@@ -7705,7 +7715,7 @@ bacc39255084273fa8fde2f03d488c74
                   `cast`
                 (<Data.Text.Internal.Text>_R
                  ->_R Sym (Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0])) -}
-970098e8ea769002e5beba29c69ec57b
+7f439c3ea745d17e358d51929c7c9dc9
   typeVar1 ::
     Data.Text.Internal.Text
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -7720,7 +7730,7 @@ bacc39255084273fa8fde2f03d488c74
                       Language.PureScript.Docs.RenderedCode.Types.NoLink)
                    (GHC.Types.[]
                       @ Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement)) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   unRC ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> [Language.PureScript.Docs.RenderedCode.Types.RenderedCodeElement]
@@ -7731,7 +7741,7 @@ bacc39255084273fa8fde2f03d488c74
                   `cast`
                 (<Language.PureScript.Docs.RenderedCode.Types.RenderedCode>_R
                  ->_R Language.PureScript.Docs.RenderedCode.Types.N:RenderedCode[0]) -}
-4660ea0ffbba09617bc864a10b08d72f
+b76660a0424da31964a78f3df8712e5d
   unRC1 ::
     Language.PureScript.Docs.RenderedCode.Types.RenderedCode
     -> Language.PureScript.Docs.RenderedCode.Types.RenderedCode

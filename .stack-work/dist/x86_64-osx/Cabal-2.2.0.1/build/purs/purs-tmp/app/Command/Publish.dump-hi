@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:48:47.199141 UTC
+2019-01-24 14:18:12.320187 UTC
 
 interface main:Command.Publish 8043
-  interface hash: e5ac76667b58e5b01754e26c51d9d2a8
-  ABI hash: b0118b03e223c1d85b4bd1eff175c0ba
-  export-list hash: 3d1f5a545546f1320ea5298629b02a55
+  interface hash: b6fd7646c0838199429a9280af6f797a
+  ABI hash: 008e23b298abe98c8e71fb68ea14960b
+  export-list hash: 461fd9a1d51fc14aef4ae58250f696ac
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: 6e0e2f1331cf6f0f4d57650b25f4ff17
+  flag hash: c0a1165362e2ad5dc9c7cdc57ea62298
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
@@ -31,7 +31,7 @@ package dependencies: Cabal-2.2.0.1 Glob-0.9.2 aeson-1.3.1.1
                       microlens-th-0.4.2.1 monad-control-1.0.2.3 mtl-2.2.2
                       optparse-applicative-0.14.2.0 parallel-3.2.1.1 parsec-3.1.13.0
                       pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
-                      process-1.6.3.0 protolude-0.2.2 purescript-0.12.1 random-1.1
+                      process-1.6.3.0 protolude-0.2.2 purescript-0.12.2 random-1.1
                       safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3
                       stm-2.4.5.0 stringsearch-0.3.6.6 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
@@ -39,8 +39,9 @@ package dependencies: Cabal-2.2.0.1 Glob-0.9.2 aeson-1.3.1.1
                       transformers-base-0.4.5.2 unix-2.7.2.2 unordered-containers-0.2.9.0
                       utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
+         stm-2.4.5.0:Control.Monad.STM
          microlens-platform-0.3.10:Lens.Micro.Platform
-         microlens-ghc-0.4.9:Lens.Micro.GHC stm-2.4.5.0:Control.Monad.STM
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -93,20 +94,21 @@ family instance modules: Cabal-2.2.0.1:Distribution.CabalSpecVersion
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1:Control.Monad.Logger
-                         purescript-0.12.1:Language.PureScript.AST.Declarations
-                         purescript-0.12.1:Language.PureScript.AST.Operators
-                         purescript-0.12.1:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types
-                         purescript-0.12.1:Language.PureScript.Docs.Types
-                         purescript-0.12.1:Language.PureScript.Environment
-                         purescript-0.12.1:Language.PureScript.Kinds
-                         purescript-0.12.1:Language.PureScript.Label
-                         purescript-0.12.1:Language.PureScript.Make.Monad
-                         purescript-0.12.1:Language.PureScript.Names
-                         purescript-0.12.1:Language.PureScript.PSString
-                         purescript-0.12.1:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1:Language.PureScript.Types
+                         purescript-0.12.2:Control.Monad.Logger
+                         purescript-0.12.2:Language.PureScript.AST.Declarations
+                         purescript-0.12.2:Language.PureScript.AST.Operators
+                         purescript-0.12.2:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2:Language.PureScript.Comments
+                         purescript-0.12.2:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.2:Language.PureScript.Docs.Types
+                         purescript-0.12.2:Language.PureScript.Environment
+                         purescript-0.12.2:Language.PureScript.Kinds
+                         purescript-0.12.2:Language.PureScript.Label
+                         purescript-0.12.2:Language.PureScript.Make.Monad
+                         purescript-0.12.2:Language.PureScript.Names
+                         purescript-0.12.2:Language.PureScript.PSString
+                         purescript-0.12.2:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -133,8 +135,8 @@ import  -/  optparse-applicative-0.14.2.0:Options.Applicative d95e0b32490502bba5
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Builder c6546faa9e09bef2ac2df9eff4a77f61
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Extra b48c7bfd920b8a9e933e034981589447
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Types 7d35983d2990cf2ee861dc28ddfea4a2
-import  -/  purescript-0.12.1:Language.PureScript.Publish 7f9a8efa8b7da2b9e6a9e1f513691a7d
-import  -/  purescript-0.12.1:Language.PureScript.Publish.ErrorsWarnings 4023aa29c27481d4884110bdf92187be
+import  -/  purescript-0.12.2:Language.PureScript.Publish 24eef4f0715eeea40e24f1da97ef1fa4
+import  -/  purescript-0.12.2:Language.PureScript.Publish.ErrorsWarnings 7d546205d690a0da40e24149d14f7d25
 import  -/  time-1.8.0.2:Data.Time.Clock 38823c785626821df1f9ec84dba1c4d7
 import  -/  time-1.8.0.2:Data.Time.Clock.POSIX 99d43d3f2db488fcbee82dc4781c8d1c
 a065ec525233ee78f32d0ff2b5f533d4
@@ -157,7 +159,7 @@ a065ec525233ee78f32d0ff2b5f533d4
 dbf65f8abd0d0f512427ba37ac65b3a5
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-7656c3c163bae28687466c550bea561a
+410da6a2eaa18651d130dd284d7f379a
   command :: Options.Applicative.Types.Parser (GHC.Types.IO ())
   {- Unfolding: (Options.Applicative.Types.MultP
                    @ (GHC.Types.IO ())
@@ -178,7 +180,7 @@ dbf65f8abd0d0f512427ba37ac65b3a5
 a26af6f1fff7b455d264503ae56126d3
   command11 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("dry-run"#) -}
-4af03217a651bfac2140ad0ec146788d
+c9e31eda374ac420c08aa4afa1f94f11
   command12 ::
     Options.Applicative.Types.Parser
       (GHC.Types.Bool -> GHC.Types.IO ())
@@ -281,7 +283,7 @@ e65d834c556e25bf8d7a526f9626a57f
 4eb0f72b785452782166f205fd02f060
   command23 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("resolutions"#) -}
-edafdb9495b6ab54ce64fac409c0176b
+b46f992b4340075e134e542e52eadbbd
   command24 ::
     Options.Applicative.Types.Parser
       (GHC.IO.FilePath -> GHC.Types.Bool -> GHC.Types.IO ())
@@ -360,7 +362,7 @@ f5b89c51109b825ccfc588b3d5af350f
 292ee2b6ff6d733dbae845bf850a775b
   command33 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("manifest"#) -}
-5b7cd51cb07710870d2f4a1dbc8fb1d2
+66b36bb567033dc148b53fed5bfa16cd
   command34 ::
     GHC.IO.FilePath
     -> GHC.IO.FilePath
@@ -410,7 +412,7 @@ f5b89c51109b825ccfc588b3d5af350f
 1182e7d32067a8a0493a1b75f38ee1c7
   command36 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Dry run completed, no errors."#) -}
-b87d68e445b4bb2340fb1ab887357076
+cd4b70d6221265fce6e07d6353011ab8
   command37 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -431,7 +433,7 @@ b87d68e445b4bb2340fb1ab887357076
                          Language.PureScript.Publish.ErrorsWarnings.DirtyWorkingTree_Warn
                          (GHC.Types.[]
                             @ Language.PureScript.Publish.ErrorsWarnings.PackageWarning)) #)) -}
-a328a574a593142293f471afb6f7f38b
+442774437e559721b4a2cf222ade5126
   command38 ::
     Data.Text.Internal.Text
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -507,7 +509,7 @@ a62d0bc1f8911d4ec92e9f87c5e02312
      Unfolding: (Options.Applicative.Types.OptP
                    @ GHC.Types.Bool
                    Command.Publish.command5) -}
-abf1acfeb06de5e423939fbb08799758
+7d1f1ee85b0259e610e19c2bc848b707
   command40 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -518,7 +520,7 @@ abf1acfeb06de5e423939fbb08799758
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  (# s, Command.Publish.command41 #)) -}
-f06655874fe2e6924a462bd7a85d3ccd
+6de3a233d1aaf4dcefa7090b00b4c720
   command41 ::
     Data.Either.Either
       Language.PureScript.Publish.ErrorsWarnings.PackageError
@@ -530,7 +532,7 @@ f06655874fe2e6924a462bd7a85d3ccd
                    @ ((Data.Text.Internal.Text, Data.Version.Version),
                       [Language.PureScript.Publish.ErrorsWarnings.PackageWarning])
                    Command.Publish.command42) -}
-aa13686d60299302d7acee877dbdeedb
+d43e3e2fb1f94df284a650a171a20703
   command42 ::
     ((Data.Text.Internal.Text, Data.Version.Version),
      [Language.PureScript.Publish.ErrorsWarnings.PackageWarning])
@@ -653,7 +655,7 @@ f938a8145e046105123ac7975c0f9b17
   command_var :: GHC.Base.String
   {- Unfolding: (GHC.CString.unpackCString#
                    Command.Publish.command17) -}
-3ad14455c3619c181e3756fc4dd21a01
+39f80d519e2573193b2f2652dd67458c
   dryRunOptions :: Language.PureScript.Publish.PublishOptions
   {- Strictness: m,
      Unfolding: (Language.PureScript.Publish.PublishOptions

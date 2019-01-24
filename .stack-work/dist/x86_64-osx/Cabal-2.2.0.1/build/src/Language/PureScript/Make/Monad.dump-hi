@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:47:46.977137 UTC
+2019-01-24 14:16:01.996765 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad [family instance module] 8043
-  interface hash: 08824b3bd454e7c42da2d611fc4b82d0
-  ABI hash: 0cf50a6714897adf0be9853da80fce0b
-  export-list hash: 8d0a2d6b070f225b4a8d6fee61814383
-  orphan hash: 2205edfbf9e2d88819cd9edbe6721838
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Make.Monad [family instance module] 8043
+  interface hash: be306b14eecc1d25276183f6a6074b3f
+  ABI hash: 31242626e8d67103dbe8824cd3d4896a
+  export-list hash: 41e56279602585a94789ab2db04fcf5f
+  orphan hash: fa608d717e2dda4d42614555f7bbc411
   flag hash: 964ca6959d8816591051842cb80443f3
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -38,17 +38,19 @@ module dependencies: Control.Monad.Logger Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 monad-control-1.0.2.3 mtl-2.2.2
-                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
-                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
-                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
+                      monad-control-1.0.2.3 mtl-2.2.2 parsec-3.1.13.0
+                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
+                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
+                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
                       time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       transformers-base-0.4.5.2 unordered-containers-0.2.9.0
@@ -57,12 +59,14 @@ orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle colour-2.3.4:Data.Colour
          text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
          binary-0.8.5.1:Data.Binary.Generic
@@ -88,23 +92,28 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Control.Monad.Logger
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -132,27 +141,27 @@ import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
 import  -/  mtl-2.2.2:Control.Monad.Reader a496a2f5c2c54feee0ad154b4fe8533d
 import  -/  mtl-2.2.2:Control.Monad.Reader.Class a5ac59953d953ab8532b5c11f5e8e0b0
 import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
-import  -/  Control.Monad.Logger 6a73d687216af879d8ea091fe68fc2d0
-  exports: e8f8f1773f117be4556dc4826c5d72b7
-  Logger 1f34a77b548e00109c402b46b25d90ee
-  runLogger' dd008480b5d4475b1df61b0e46f5eb13
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  CannotReadFile bf83034dadcb55abb40fc0b3ef02c899
-  ErrorMessage bc889ae8d74a01dbbd95e220faa4631d
-  ErrorMessage cebd18718f7c34278cac50a2f0ab0386
-import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
-  exports: 142ea650dec62642d1cff09ef1eee74e
-  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
-  singleError 8cdec4403bbf7ee5542ebca436a64fe1
-import  -/  Language.PureScript.Options 41178707a96359e93f10aa9345b25f64
-  exports: 0c988ddc260707f6c03a83826c104ef5
-  Options 3d4c612f0e93f04d7e7834ac0f92767f
+import  -/  Control.Monad.Logger 7ce28f5655d854c20c31601b5979a9bd
+  exports: 3f3ab269c0ac18f7e4ca63a6b0fe7337
+  Logger f4473efc589a46d9d0cdaec9bf6774cf
+  runLogger' 8b92479f02f6dbc6ea9156395e779867
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  CannotReadFile 14dc16d8c2f8a03a9a3da680e342d754
+  ErrorMessage b0470a74191782e72607e7c5b87318de
+  ErrorMessage 7268a73b9f5bbe5a70110aa90f7e1194
+import  -/  Language.PureScript.Errors 3c1ad933587510f8b20a8c9ec2e86ce9
+  exports: 8e61484c4664eceb943d9fc4820c721b
+  MultipleErrors e1ef6a17348ccfe3ef65185d3c5f9026
+  singleError a36dd8bcfe054c062a952f4ca37285fa
+import  -/  Language.PureScript.Options 2e36bd5fcc2b2ebbc36ff47b336cef60
+  exports: 95606a481170637dfadecf960e8d7bae
+  Options 43e82b7ea0c416dc61c77c04548dbdd3
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.Except 1cac4acbba7f36bd732fcc993d3cc20d
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.Reader 42962052353a5a0f766912058b765b5d
 import  -/  transformers-base-0.4.5.2:Control.Monad.Base 0525bddaf47f5bace6a58bd35649c995
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fApplicativeMake ::
     GHC.Base.Applicative Language.PureScript.Make.Monad.Make
   DFunId
@@ -221,7 +230,7 @@ import  -/  transformers-base-0.4.5.2:Control.Monad.Base 0525bddaf47f5bace6a58bd
                    Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N
                    ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <b>_N
                    ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N) -}
-71f45a92b1f18e4ac0098345aa4ccf65
+26e5d1695ed2113c14face1c14742806
   $fApplicativeMake1 ::
     (a -> b -> c)
     -> Control.Monad.Trans.Reader.ReaderT
@@ -368,7 +377,7 @@ import  -/  transformers-base-0.4.5.2:Control.Monad.Base 0525bddaf47f5bace6a58bd
                                                                            <Control.Monad.Logger.Logger
                                                                               Language.PureScript.Errors.MultipleErrors>_R
                                                                            <c>_N)))) -}
-94c8ac23dac348b34dcb27a5feaf8149
+85b49af834f068dac6a311c7683a019c
   $fApplicativeMake2 ::
     a
     -> Language.PureScript.Options.Options
@@ -388,7 +397,7 @@ import  -/  transformers-base-0.4.5.2:Control.Monad.Base 0525bddaf47f5bace6a58bd
                       @ Language.PureScript.Errors.MultipleErrors
                       @ a
                       x #)) -}
-c5e3f3fa11b4ec9fc3a3d16c15a81646
+307bb813af450847143ce06b5f0f6b67
   $fApplicativeMake_$s$fApplicativeLogger ::
     GHC.Base.Applicative
       (Control.Monad.Logger.Logger
@@ -556,7 +565,7 @@ c5e3f3fa11b4ec9fc3a3d16c15a81646
                                        <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
                                                           <Language.PureScript.Errors.MultipleErrors>_R
                                                           <a>_R)) -}
-30468a00bf2a6ea2bf680101bfa4f6d9
+ea98ae6ef9590f2b314e26c1a0159fee
   $fApplicativeMake_$s$fApplicativeReaderT_$c*> ::
     Control.Monad.Trans.Reader.ReaderT
       r
@@ -713,7 +722,7 @@ c5e3f3fa11b4ec9fc3a3d16c15a81646
                                   (Control.Monad.Logger.Logger
                                      Language.PureScript.Errors.MultipleErrors)>_R
                                <b>_N)) -}
-cade69f5fb7f2bbde000a2869cf3f3c5
+0b7a547b7b73fd329dcaeeb55e20e610
   $fApplicativeMake_$s$fApplicativeReaderT_$c<* ::
     Control.Monad.Trans.Reader.ReaderT
       r
@@ -857,7 +866,7 @@ cade69f5fb7f2bbde000a2869cf3f3c5
                                   (Control.Monad.Logger.Logger
                                      Language.PureScript.Errors.MultipleErrors)>_R
                                <a>_N)) -}
-08a3f06a2014e895e51bac8c716cfb73
+ef4acf85cae41cf03a38dfab0c9de557
   $fApplicativeMake_$s$fApplicativeReaderT_$c<*> ::
     Control.Monad.Trans.Reader.ReaderT
       r
@@ -955,7 +964,7 @@ cade69f5fb7f2bbde000a2869cf3f3c5
                                   (Control.Monad.Logger.Logger
                                      Language.PureScript.Errors.MultipleErrors)>_R
                                <b>_N)) -}
-0c45cd45cd4d030b85defebb4321d06f
+6a041d9959f382a86822ad2a05f891e0
   $fApplicativeMake_$s$fMonadLogger ::
     GHC.Base.Monad
       (Control.Monad.Logger.Logger
@@ -1021,7 +1030,7 @@ cade69f5fb7f2bbde000a2869cf3f3c5
                      @ 'GHC.Types.LiftedRep
                      @ (Control.Monad.Logger.Logger
                           Language.PureScript.Errors.MultipleErrors a)) -}
-50e277c9fb12f7656aef7fd01a5491c9
+fec508cc8507f16df346ffa8c4101309
   $fApplicativeMake_$s$fMonadLogger_$c>> ::
     Control.Monad.Logger.Logger
       Language.PureScript.Errors.MultipleErrors a
@@ -1067,7 +1076,7 @@ cade69f5fb7f2bbde000a2869cf3f3c5
                                      <b>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
                                                         <Language.PureScript.Errors.MultipleErrors>_R
                                                         <b>_R)) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fFunctorMake ::
     GHC.Base.Functor Language.PureScript.Make.Monad.Make
   DFunId
@@ -1088,7 +1097,7 @@ cade69f5fb7f2bbde000a2869cf3f3c5
                    <a>_R
                    ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <b>_N
                    ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N) -}
-c6649cd0eeebbef8e82f52a2b5499b43
+144a3ea6e563cd5bc8f1f03dc939753b
   $fFunctorMake_$s$fFunctorExceptT_$cfmap ::
     (a -> b)
     -> Control.Monad.Trans.Except.ExceptT
@@ -1144,7 +1153,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                                                                                  <Control.Monad.Logger.Logger
                                                                                     Language.PureScript.Errors.MultipleErrors>_R
                                                                                  <b>_N))) -}
-7b6455680923c62d0a5045df7b36d40f
+9d3e9033fdad7ec55d9d8555a751d251
   $fFunctorMake_$s$fFunctorReaderT_$c<$ ::
     a
     -> Control.Monad.Trans.Reader.ReaderT
@@ -1251,7 +1260,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                               (Control.Monad.Logger.Logger
                                  Language.PureScript.Errors.MultipleErrors)>_R
                            <a>_N))) -}
-1c85189722d25976bb0a1a952ffa66cd
+a0a9e25b92daa6932545845d97b73813
   $fFunctorMake_$s$fFunctorReaderT_$cfmap ::
     (a -> b)
     -> Control.Monad.Trans.Reader.ReaderT
@@ -1292,7 +1301,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                       @ a
                       @ b
                       f)) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadBaseControlIOMake ::
     Control.Monad.Trans.Control.MonadBaseControl
       GHC.Types.IO Language.PureScript.Make.Monad.Make
@@ -1362,7 +1371,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                                                                                                                                                  (Control.Monad.Logger.Logger
                                                                                                                                                     Language.PureScript.Errors.MultipleErrors)>_R
                                                                                                                                               <a>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N)) -}
-9558af37da4590c32a4f0d5bfae69702
+432e327883232b0a394fa92cb1aec949
   $fMonadBaseControlIOMake1 ::
     Data.Either.Either Language.PureScript.Errors.MultipleErrors a
     -> Language.PureScript.Options.Options
@@ -1396,7 +1405,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                                                                       (Control.Monad.Trans.Reader.ReaderT
                                                                          Language.PureScript.Options.Options)
                                                                       a>_N))) #)) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadBaseControlIOMake2 ::
     (Control.Monad.Trans.Control.RunInBase
        Language.PureScript.Make.Monad.Make GHC.Types.IO
@@ -1473,7 +1482,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                       @ Language.PureScript.Errors.MultipleErrors
                       @ a
                       ipv1 #) }) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadBaseIOMake ::
     Control.Monad.Base.MonadBase
       GHC.Types.IO Language.PureScript.Make.Monad.Make
@@ -1511,7 +1520,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                                                                                                                (Control.Monad.Logger.Logger
                                                                                                                   Language.PureScript.Errors.MultipleErrors)>_R
                                                                                                             <a>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N)) -}
-8bd7e09c2949aadf88d5360a5c01b262
+1b7f37a73269a916f020796e57a5f6ac
   $fMonadBaseIOMake1 ::
     GHC.Types.IO a
     -> Language.PureScript.Options.Options
@@ -1534,7 +1543,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                       @ Language.PureScript.Errors.MultipleErrors
                       @ a
                       ipv1 #) }) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadErrorMake ::
     Control.Monad.Error.Class.MonadError
       Language.PureScript.Errors.MultipleErrors
@@ -1584,7 +1593,7 @@ c6649cd0eeebbef8e82f52a2b5499b43
                                     (Control.Monad.Logger.Logger
                                        Language.PureScript.Errors.MultipleErrors)>_R
                                  <a>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N) -}
-da9d33b00ef0eba51f56114ac7744e3b
+e742bd96a33a906d13489139c6879c99
   $fMonadErrorMake1 ::
     Control.Monad.Trans.Reader.ReaderT
       Language.PureScript.Options.Options
@@ -1703,7 +1712,7 @@ da9d33b00ef0eba51f56114ac7744e3b
                                                                            <Control.Monad.Logger.Logger
                                                                               Language.PureScript.Errors.MultipleErrors>_R
                                                                            <a>_N)))) -}
-f32710b9dcad3e25301054df8d6786f5
+5a99ef64f2bd08ea5d04447fbb7079e0
   $fMonadErrorMake2 ::
     Language.PureScript.Errors.MultipleErrors
     -> Language.PureScript.Options.Options
@@ -1723,7 +1732,7 @@ f32710b9dcad3e25301054df8d6786f5
                       @ Language.PureScript.Errors.MultipleErrors
                       @ a
                       eta #)) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadIOMake ::
     Control.Monad.IO.Class.MonadIO Language.PureScript.Make.Monad.Make
   DFunId
@@ -1756,7 +1765,7 @@ f32710b9dcad3e25301054df8d6786f5
                                                                                                                (Control.Monad.Logger.Logger
                                                                                                                   Language.PureScript.Errors.MultipleErrors)>_R
                                                                                                             <a>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N)) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadMake :: GHC.Base.Monad Language.PureScript.Make.Monad.Make
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -1809,7 +1818,7 @@ f32710b9dcad3e25301054df8d6786f5
                   (forall (a :: <*>_N).
                    <[GHC.Types.Char]>_R
                    ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N) -}
-a68fb15402d866d14bb56c1bbca6aa2d
+7ec6e542626bd265c1673b793005399b
   $fMonadMake_$s$fMonadReaderT_$c>>= ::
     Control.Monad.Trans.Reader.ReaderT
       r
@@ -1964,7 +1973,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                                   (Control.Monad.Logger.Logger
                                      Language.PureScript.Errors.MultipleErrors)>_R
                                <b>_N)) -}
-8526e6100211b69685a4bdc549db7883
+5962855ad5ecce19c063c9d927e41f14
   $fMonadMake_$s$fMonadReaderT_$cfail ::
     GHC.Base.String
     -> Control.Monad.Trans.Reader.ReaderT
@@ -2004,7 +2013,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                                                        (Control.Monad.Logger.Logger
                                                           Language.PureScript.Errors.MultipleErrors)>_R
                                                     <a>_N))) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadReaderMake ::
     Control.Monad.Reader.Class.MonadReader
       Language.PureScript.Options.Options
@@ -2058,7 +2067,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                   (forall (a :: <*>_N).
                    <Language.PureScript.Options.Options -> a>_R
                    ->_R Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N) -}
-060ba2da3304829499ae9d0127a31ce3
+a9580f5484f2aa47ddede4ddde24c701
   $fMonadReaderMake1 ::
     Language.PureScript.Options.Options
     -> GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors
@@ -2077,7 +2086,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                       @ Language.PureScript.Errors.MultipleErrors
                       @ Language.PureScript.Options.Options
                       eta #)) -}
-3c9cf0a4e7989a4934b094b7b775c022
+b59bd376148010bb422a726b6970c8b8
   $fMonadReaderMake_$sreader ::
     (r -> a)
     -> Control.Monad.Trans.Reader.ReaderT
@@ -2131,7 +2140,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                                   (Control.Monad.Logger.Logger
                                      Language.PureScript.Errors.MultipleErrors)>_R
                                <a>_N)) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   $fMonadWriterMake ::
     Control.Monad.Writer.Class.MonadWriter
       Language.PureScript.Errors.MultipleErrors
@@ -2225,7 +2234,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                                                               (Control.Monad.Logger.Logger
                                                                  Language.PureScript.Errors.MultipleErrors)>_R
                                                            <a>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N)) -}
-43a7e88e7bcbc56f60cd7555b94afef0
+b393f567d090ec302afa00ea3c7b4419
   $fMonadWriterMake1 ::
     Control.Monad.Trans.Reader.ReaderT
       Language.PureScript.Options.Options
@@ -2273,7 +2282,7 @@ a68fb15402d866d14bb56c1bbca6aa2d
                            Language.PureScript.Errors.MultipleErrors
                            -> Language.PureScript.Errors.MultipleErrors)>_N)
                       eta1)) -}
-b6537796335e7e57fbca7d8bfabccd8a
+45f3701299362e7f08d2d13fa7d5b2d3
   $fMonadWriterMake2 ::
     Control.Monad.Trans.Reader.ReaderT
       Language.PureScript.Options.Options
@@ -2317,7 +2326,7 @@ b6537796335e7e57fbca7d8bfabccd8a
                                Language.PureScript.Errors.MultipleErrors)>_R
                          <a>_N)
                       eta1)) -}
-e629bc8681effb3722fcee48e563218a
+d7f4fddb5fdab111dd257bc4f00384bc
   $fMonadWriterMake3 ::
     Language.PureScript.Errors.MultipleErrors
     -> Language.PureScript.Options.Options
@@ -2366,7 +2375,7 @@ e629bc8681effb3722fcee48e563218a
                       @ Language.PureScript.Errors.MultipleErrors
                       @ ()
                       GHC.Tuple.() #) } } }) -}
-c5f0dd7d9daad049543898a9aed15655
+0c599ac6977e5810a47f060553957872
   $fMonadWriterMake4 ::
     (a, Language.PureScript.Errors.MultipleErrors)
     -> Language.PureScript.Options.Options
@@ -2386,7 +2395,7 @@ c5f0dd7d9daad049543898a9aed15655
                         `cast`
                       (GHC.IORef.N:IORef[0] <Language.PureScript.Errors.MultipleErrors>_N) of ww { GHC.STRef.STRef ww1 ->
                  Language.PureScript.Make.Monad.$w$cwriter @ a w ww1 w3 }) -}
-a857448beddbd456859177396319c845
+7e478d80f55071876002b4081094c8e9
   $fMonadWriterMake_$s$fMonadWriterwLogger ::
     Control.Monad.Writer.Class.MonadWriter
       Language.PureScript.Errors.MultipleErrors
@@ -2477,7 +2486,7 @@ a857448beddbd456859177396319c845
                                        <a>_R)) ; Sym (Control.Monad.Logger.N:Logger[0]
                                                           <Language.PureScript.Errors.MultipleErrors>_R
                                                           <a>_R)) -}
-93b0c6bbfbab87a5a9b18fbb2f303092
+56202f1bc4eb493c6d4aff17b300e795
   $s$fApplicativeExceptT_$c<*>1 ::
     Control.Monad.Trans.Except.ExceptT
       e
@@ -2542,7 +2551,7 @@ a857448beddbd456859177396319c845
                         Data.Either.Left e1 -> (# ipv2, Data.Either.Left @ e @ b e1 #)
                         Data.Either.Right x
                         -> (# ipv2, Data.Either.Right @ e @ b (k x) #) } } } }) -}
-35b797fca54974938fbbf5b441fbf1ed
+2e77dc0907e01d76a662e5ec6cf3e506
   $s$fApplicativeLogger1 ::
     (a -> b -> c)
     -> Control.Monad.Logger.Logger
@@ -2581,7 +2590,7 @@ a857448beddbd456859177396319c845
                       (GHC.Types.N:IO[0] <b>_R)
                         ipv of ds1 { (#,#) ipv2 ipv3 ->
                  (# ipv2, f1 ipv1 ipv3 #) } }) -}
-2e768ea789d571a4a7cdda2a190b3b94
+7df9867d462a73e40f756cd0d925ef89
   $s$fApplicativeLogger2 ::
     Control.Monad.Logger.Logger
       Language.PureScript.Errors.MultipleErrors (a -> b)
@@ -2618,7 +2627,7 @@ a857448beddbd456859177396319c845
                       (GHC.Types.N:IO[0] <a>_R)
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
                  (# ipv2, ipv1 ipv3 #) } }) -}
-c67a83d6a077d17a6f8c5951a9eaeb30
+42f02732453c12223150b0e5379d9bf5
   $s$fMonadWriterwLogger3 ::
     Language.PureScript.Errors.MultipleErrors
     -> GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors
@@ -2657,69 +2666,69 @@ c67a83d6a077d17a6f8c5951a9eaeb30
                           GHC.Tuple.()) })
                         s of ds1 { (#,#) ipv ipv1 ->
                  case ipv1 of b1 { () -> (# ipv, GHC.Tuple.() #) } } }) -}
-8f13a9b95a0f1e201acef7aa58ae6d9c
+8a1f752fc2daedb9dcc20430e2a31e8d
   $tc'Make :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   960418695829144768##
-                   8684237166814363410##
+                   15200028788335488738##
+                   13641983198174119053##
                    Language.PureScript.Make.Monad.$trModule
                    Language.PureScript.Make.Monad.$tc'Make2
                    1#
                    Language.PureScript.Make.Monad.$tc'Make1) -}
-d14f639a7f51c72307bb77fda0fe119f
+1c2fd48e32f1a3596600a36ab9343201
   $tc'Make1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-8c5fc919d605189c4486c44af9d4ab73
+2e8adfe83c4fe065c0fdbefdcc793568
   $tc'Make2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.Monad.$tc'Make3) -}
-36ada5bf8093a5e255cfd6adfba01be0
+d0072626e60404b148d9123bb623d615
   $tc'Make3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Make"#) -}
-bdc7abdb0460dfda90f73557f8773fdf
+28f483f8fdb32e32ee556069a67f0513
   $tcMake :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   14829114614188917167##
-                   5006432219615730975##
+                   2355018467753470627##
+                   17003995873524656694##
                    Language.PureScript.Make.Monad.$trModule
                    Language.PureScript.Make.Monad.$tcMake1
                    0#
                    GHC.Types.krep$*Arr*) -}
-f1798054020616f6f67a035160b2f52c
+001668cfed2a928fecdce83a6ff6d87d
   $tcMake1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.Monad.$tcMake2) -}
-1c3c7f25e9948e679c3aa8d506159de8
+98f3bc1c58ce2ba17158500b79acf540
   $tcMake2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Make"#) -}
-c3621e3e63a38d1426d73e2729407941
+e766f9c1cbfe7e3be250ce9b1c15049b
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Make.Monad.$trModule3
                    Language.PureScript.Make.Monad.$trModule1) -}
-08bc0e967ab277ec5d5c97d70a45288a
+265747d5508e361fbbaf1857650898d6
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.Monad.$trModule2) -}
-756c37bc6404eaea17872223be0ea293
+6134e4c7fd4ce7cb85be7ead04841838
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Language.PureScript.Make.Monad"#) -}
-9420458a007df359d19938ace96fbe8a
+fb3ec6edc3e3df8d18a1acc6aa94b4c6
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.Monad.$trModule4) -}
-3fea08fe057438f058dd0be157df90f1
+d09a3304f8dce84a7d832d2ddf61acf2
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-2c8b98760f9b847aa2772a111da8bc4d
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+6ae7da7fcd2e22fae3a56315a40fa26c
   $w$cwriter ::
     (a, Language.PureScript.Errors.MultipleErrors)
     -> GHC.Prim.MutVar#
@@ -2760,7 +2769,7 @@ c3621e3e63a38d1426d73e2729407941
                       @ Language.PureScript.Errors.MultipleErrors
                       @ a
                       (case w of wild { (,) a1 w5 -> a1 }) #) } }) -}
-eabc01963aeba226db7b2caa9a4bf6b3
+c312defee06543f207653c194060a49b
   $wreadTextFile ::
     GHC.IO.FilePath
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2812,12 +2821,12 @@ eabc01963aeba226db7b2caa9a4bf6b3
                            @ Language.PureScript.Errors.MultipleErrors
                            @ Data.ByteString.Lazy.Internal.ByteString
                            y #) } }) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   axiom Language.PureScript.Make.Monad.D:R:StMMakea::
       Control.Monad.Trans.Control.StM
         Language.PureScript.Make.Monad.Make a
         = Data.Either.Either Language.PureScript.Errors.MultipleErrors a
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   type role Make nominal
   newtype Make a
     = Make {unMake :: Control.Monad.Trans.Reader.ReaderT
@@ -2827,7 +2836,7 @@ eabc01963aeba226db7b2caa9a4bf6b3
                            (Control.Monad.Logger.Logger
                               Language.PureScript.Errors.MultipleErrors))
                         a}
-00cc90af9817d7c7b877b2ad73f023f0
+57242a678839a970dd53909b7207d2e8
   makeIO ::
     (GHC.IO.Exception.IOError
      -> Language.PureScript.AST.Declarations.ErrorMessage)
@@ -2862,7 +2871,7 @@ eabc01963aeba226db7b2caa9a4bf6b3
                                                                                                              (Control.Monad.Logger.Logger
                                                                                                                 Language.PureScript.Errors.MultipleErrors)>_R
                                                                                                           <a>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <a>_N)) -}
-937192c80c26dea21563e175575c4be4
+0d7e5c6df4a6c8a39b24f0829493772e
   makeIO1 ::
     (GHC.IO.Exception.IOError
      -> Language.PureScript.AST.Declarations.ErrorMessage)
@@ -2909,7 +2918,7 @@ eabc01963aeba226db7b2caa9a4bf6b3
                            @ Language.PureScript.Errors.MultipleErrors
                            @ a
                            y #) } }) -}
-263a09e2be3cabd481a9394cd39eb184
+831c92e7074ddb1aeca50e6c8d41a6bc
   readTextFile ::
     GHC.IO.FilePath
     -> Language.PureScript.Make.Monad.Make
@@ -2940,7 +2949,7 @@ eabc01963aeba226db7b2caa9a4bf6b3
                                                                                                                                                                                                                                   (Control.Monad.Logger.Logger
                                                                                                                                                                                                                                      Language.PureScript.Errors.MultipleErrors)>_R
                                                                                                                                                                                                                                <Data.ByteString.Lazy.Internal.ByteString>_N) ; Sym (Language.PureScript.Make.Monad.N:Make[0]) <Data.ByteString.Lazy.Internal.ByteString>_N)) -}
-db7d5f9229cfb269e0e6a8778272fa30
+cb255b4b2a6e6538fbd05577f2393b53
   readTextFile1 ::
     GHC.IO.FilePath
     -> Language.PureScript.Options.Options
@@ -2957,7 +2966,7 @@ db7d5f9229cfb269e0e6a8778272fa30
                    (w2 :: GHC.IORef.IORef Language.PureScript.Errors.MultipleErrors)
                    (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  Language.PureScript.Make.Monad.$wreadTextFile w w3) -}
-8977069e35c039b39b7cc3a8ba1933f5
+ab2867f8bdf000c620b889012835e285
   runMake ::
     Language.PureScript.Options.Options
     -> Language.PureScript.Make.Monad.Make a
@@ -2975,7 +2984,7 @@ db7d5f9229cfb269e0e6a8778272fa30
                  ->_R Sym (GHC.Types.N:IO[0]
                                <(Data.Either.Either Language.PureScript.Errors.MultipleErrors a,
                                  Language.PureScript.Errors.MultipleErrors)>_R)) -}
-ffecbafeee9c9f6c54a22699666af4a4
+1476c56b9114097f5bb204db9d80b7a2
   runMake1 ::
     Language.PureScript.Options.Options
     -> Language.PureScript.Make.Monad.Make a
@@ -3033,7 +3042,7 @@ ffecbafeee9c9f6c54a22699666af4a4
                         ipv1
                         ipv2 of ds2 { (#,#) ipv4 ipv5 ->
                  (# ipv4, (ipv3, ipv5) #) } } }) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   unMake ::
     Language.PureScript.Make.Monad.Make a
     -> Control.Monad.Trans.Reader.ReaderT
@@ -3051,7 +3060,7 @@ ffecbafeee9c9f6c54a22699666af4a4
                 (forall (a :: <*>_N).
                  <Language.PureScript.Make.Monad.Make a>_R
                  ->_R Language.PureScript.Make.Monad.N:Make[0] <a>_N) -}
-3e3b14b08c410e5ba3c590f1d3af7206
+2384e2052993ac0b8b29c8eccd939cb5
   unMake1 ::
     Language.PureScript.Make.Monad.Make a
     -> Language.PureScript.Make.Monad.Make a

@@ -43,7 +43,6 @@ import           System.Directory (getCurrentDirectory)
 import           System.FilePath ((</>))
 import           System.FilePath.Glob (glob)
 
-
 -- | Pretty-print errors
 printErrors :: MonadIO m => P.MultipleErrors -> m ()
 printErrors errs = liftIO $ do
@@ -115,6 +114,11 @@ handleCommand _ _ p (ShowInfo QueryImport)    = handleShowImportedModules p
 handleCommand _ _ p (CompleteStr prefix)      = handleComplete p prefix
 handleCommand _ _ p (ReloadVariableState val) = handleReloadVariableState p val 
 handleCommand _ _ _ _                         = P.internalError "handleCommand: unexpected command"
+
+handleCommand _ _ p (ShowInfo QueryPrint)     = handleShowPrint p
+handleCommand _ _ p (CompleteStr prefix)      = handleComplete p prefix
+handleCommand _ _ p (SetInteractivePrint ip)  = handleSetInteractivePrint p ip
+handleCommand _ _ _ _                         = P.internalError "handleCommand: unexpected command"
 handleReloadVariableState
   :: (MonadReader PSCiConfig m, MonadState PSCiState m, MonadIO m)
   => (String -> m ())
@@ -124,15 +128,9 @@ handleReloadVariableState print' expr = do
     let itdecl = P.ValueDecl (internalSpan, []) (P.Ident "it") P.Public [] [P.MkUnguarded expr]
         eval = P.Var internalSpan (P.Qualified (Just (P.ModuleName [P.ProperName "$Support"])) (P.Ident "eval"))
         mainValue = P.App eval (P.Var internalSpan (P.Qualified Nothing (P.Ident "it")))
-        typeDecl = P.TypeDeclaration
-                      (P.TypeDeclarationData (internalSpan, []) (P.Ident "$main")
-                             (P.TypeApp
-                                 (P.TypeConstructor
-                                     (P.Qualified (Just (P.ModuleName [P.ProperName "$Effect"])) (P.ProperName "Effect")))
-                                         (P.TypeWildcard internalSpan)))
         mainDecl = P.ValueDecl (internalSpan, []) (P.Ident "$main") P.Public [] [P.MkUnguarded mainValue]
-    (Interactive.PSCiState a b x c d) <- get
-    let newS = Interactive.updateImportExports (Interactive.PSCiState a (removeItem [itdecl] b) x c d)
+    (Interactive.PSCiState a b x c d e) <- get
+    let newS = Interactive.updateImportExports (Interactive.PSCiState a (removeItem [itdecl] b) x c d e)
     put newS
     print' ""
 
@@ -140,7 +138,6 @@ removeItem :: [P.Declaration] -> [P.Declaration] -> [P.Declaration]
 removeItem [] y= y
 removeItem _ [] = []
 removeItem x y = filter (`notElem` x) y
-
 -- | Reload the application state
 handleReloadState
   :: (MonadReader PSCiConfig m, MonadState PSCiState m, MonadIO m)
@@ -254,6 +251,24 @@ handleShowImportedModules print' = do
   commaList :: [Text] -> Text
   commaList = T.intercalate ", "
 
+handleShowPrint
+  :: (MonadState PSCiState m, MonadIO m)
+  => (String -> m ())
+  -> m ()
+handleShowPrint print' = do
+  current <- psciInteractivePrint <$> get
+  if current == initialInteractivePrint
+    then
+      print' $
+        "The interactive print function is currently set to the default (`" ++ showPrint current ++ "`)"
+    else
+      print' $
+        "The interactive print function is currently set to `" ++ showPrint current ++ "`\n" ++
+        "The default can be restored with `:print " ++ showPrint initialInteractivePrint ++ "`"
+
+  where
+  showPrint (mn, ident) = T.unpack (N.runModuleName mn <> "." <> N.runIdent ident)
+
 -- | Imports a module, preserving the initial state on failure.
 handleImport
   :: (MonadReader PSCiConfig m, MonadState PSCiState m, MonadIO m)
@@ -288,7 +303,7 @@ handleTypeOf print' val = do
 handleKindOf
   :: (MonadReader PSCiConfig m, MonadState PSCiState m, MonadIO m)
   => (String -> m ())
-  -> P.Type
+  -> P.SourceType
   -> m ()
 handleKindOf print' typ = do
   st <- get
@@ -346,3 +361,25 @@ handleComplete print' prefix = do
   results <- evalStateT act st
   print' $ unlines (formatCompletions results)
 
+-- | Attempt to set the interactive print function. Note that the state will
+-- only be updated if the interactive print function exists and appears to
+-- work; we test it by attempting to evaluate '0'.
+handleSetInteractivePrint
+  :: (MonadState PSCiState m, MonadIO m)
+  => (String -> m ())
+  -> (P.ModuleName, P.Ident)
+  -> m ()
+handleSetInteractivePrint print' new = do
+  current <- gets psciInteractivePrint
+  modify (setInteractivePrint new)
+  st <- get
+  let expr = P.Literal internalSpan (P.NumericLiteral (Left 0))
+  let m = createTemporaryModule True st expr
+  e <- liftIO . runMake $ rebuild (map snd (psciLoadedExterns st)) m
+  case e of
+    Left errs -> do
+      modify (setInteractivePrint current)
+      print' "Unable to set the repl's printing function:"
+      printErrors errs
+    Right _ ->
+      pure ()

@@ -34,6 +34,7 @@ directiveStrings =
     , (Paste     , ["paste"])
     , (Complete  , ["complete"])
     , (ReloadV   , ["reloadv"])
+    , (Print     , ["print"])
     ]
 
 -- |
@@ -104,8 +105,10 @@ help =
   , (Kind,     "<type>",    "Show the kind of <type>")
   , (Show,     "import",    "Show all imported modules")
   , (Show,     "loaded",    "Show all loaded modules")
+  , (ReloadV, "reload"   ,   "reloads the varaible")
+  , (Show,     "print",     "Show the repl's current printing function")
   , (Paste,    "paste",     "Enter multiple lines, terminated by ^D")
   , (Complete, "<prefix>",  "Show completions for <prefix> as if pressing tab")
-  , (ReloadV, "reload"   ,   "reloads the varaible")
+  , (Print,    "<fn>",      "Set the repl's printing function to <fn> (which must be fully qualified)")
   ]
 

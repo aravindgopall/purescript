@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:46:32.350737 UTC
+2019-01-24 14:14:12.907822 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST 8043
-  interface hash: 6c36ec47fee82ac04c535a99c648ee5f
-  ABI hash: 7ed0e74bfed5b6489b8a5eabab5c0241
-  export-list hash: 0d53d92339536cd6d8d7dcfcad8e7c7e
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST 8043
+  interface hash: 8f4c86121f080a2768d1fadb3c262de3
+  ABI hash: e89b59f8e201961eafd3ff905a683659
+  export-list hash: be73d3bb7d4ebe5df082453f6d572075
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 2ae478d21823b7c739b1b08c46262eb0
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -65,11 +65,19 @@ exports:
   Language.PureScript.AST.Exported.isExported
   Language.PureScript.AST.Operators.readAssoc
   Language.PureScript.AST.Operators.showAssoc
+  Language.PureScript.AST.SourcePos.NullSourceAnn
+  Language.PureScript.AST.SourcePos.NullSourceSpan
   Language.PureScript.AST.SourcePos.displaySourcePos
+  Language.PureScript.AST.SourcePos.displaySourcePosShort
   Language.PureScript.AST.SourcePos.displaySourceSpan
   Language.PureScript.AST.SourcePos.displayStartEndPos
+  Language.PureScript.AST.SourcePos.displayStartEndPosShort
   Language.PureScript.AST.SourcePos.internalModuleSourceSpan
+  Language.PureScript.AST.SourcePos.nonEmptySpan
+  Language.PureScript.AST.SourcePos.nullSourceAnn
   Language.PureScript.AST.SourcePos.nullSourceSpan
+  Language.PureScript.AST.SourcePos.widenSourceAnn
+  Language.PureScript.AST.SourcePos.widenSourceSpan
   Language.PureScript.AST.Traversals.accumKinds
   Language.PureScript.AST.Traversals.accumTypes
   Language.PureScript.AST.Traversals.everythingOnValues
@@ -130,35 +138,39 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
-                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
-                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
-                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
-                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
-                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
-                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2
+                      random-1.1 scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -177,21 +189,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -204,401 +221,409 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          vector-0.12.0.1:Data.Vector.Storable
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
-import  -/  Language.PureScript.AST.Binders 9d60985147b34b89300370e810fed430
-  exports: 052659e0ac5b7424bfe7dc118cef8c0d
-  BinaryNoParensBinder 0a9649b4372c6e05d173870dfa1006fa
-  Binder 50aa153193e190eabd8ac7530e604f9c
-  ConstructorBinder a80ed0550c5d3abdd1e6249cec7ebb29
-  LiteralBinder fb24b5107abb72eda0b4f926a357d676
-  NamedBinder b48e1eb9e717d35392ab81ba6112a0c5
-  NullBinder d74abae0f95c6b96e50712c73008469c
-  OpBinder 8c4232ee53e2707d427c05940eb3b3a1
-  ParensInBinder d5e3e2b30a59f234cee3c52dcb18b9a6
-  PositionedBinder 882f8081b0418fe44d4a7e237a20b9bb
-  TypedBinder f780e44b8446316aee6b532b3afc4341
-  VarBinder 2a223807b33e6f190799aea12e8ed5d7
-  binderNames 02df671f437cb8e44f39ef8bc1273f3b
-  isIrrefutable 740c816cedc66b3e1cadc13999353f80
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  exports: 576360d4491bba45e29e263c5de23a07
-  Abs d07c7c6c44b48a3411184d34629a601e
-  Accessor efce1a21efe3a6d2f322942575a5ad70
-  AdditionalProperty 92ad56b21da7218a29c9d508e9576e62
-  Ado 37d00c1fafdcb3ef01dc19068c5ac23a
-  AmbiguousTypeVariables 2fa7b55254155c8d312143bec49cd38d
-  AnonymousArgument 00cfc7b8f07b27936a2121d4b1833126
-  App 60282620a1433a146ffafd0d8773af87
-  ArgListLengthsDiffer 019d2f571964fba17266bbfbb0af3355
-  AssocList 39fcde5015a592f021697e813166a819
-  AssocList 6bb793796adb411b63074cabb1cd2dc5
-  BinaryNoParens 74f8609dfb4850c239012b6c7f3f2502
-  BindingGroupDeclaration d3c1d83dc1fbac7412bbc6e3b0fc8e06
-  BoundValueDeclaration 2a1064417e2b13bd8230beec138bd3f3
-  Branch 4e0ab8be808547ff6ab7f7473734521d
-  CannotDefinePrimModules 0d33d937665b0004f64495328849f2bf
-  CannotDerive 12002926ebee8124afe483ac0457151e
-  CannotDeriveNewtypeForData e9efded074a416097f15509db0395634
-  CannotFindDerivingType e0be076bb1ef5200dc1e3b5877ba9eda
-  CannotGeneralizeRecursiveFunction b6644cd3878a7a4da0ce874c9f363ed2
-  CannotGetFileInfo bccd08da8b44786e185afb19001c7ae6
-  CannotReadFile bf83034dadcb55abb40fc0b3ef02c899
-  CannotUseBindWithDo e532c8b51d49307ef5fc5071eccea469
-  CannotWriteFile e62624cd56ba2286c2e8fb199761c478
-  Case 26360a43049b71a59ced6dc5180ab8d3
-  CaseAlternative 53d0b5fb91e3184ce5b575a7cf70b18d
-  CaseAlternative b31d94d0c7b90700d40f9ba6ec420e41
-  CaseBinderLengthDiffers d91749d5a8d6fc0a15a8901f67d9fd97
-  CheckHint c2ffc8a57fd817a43cc11b3dbeeb0e21
-  ClassInstanceArityMismatch 44d7fbf748c78a19cc298679fb77be43
-  ConditionGuard 2db62e1fae4ae7a464999119c33e7329
-  ConstrainedTypeUnified 943ab40382b61b5ceb1eb9c125dff42b
-  Constructor bb7c3f03ee8743dfc68d80ee99f8c1e3
-  Context c827e63ac539a5076a60fc8c74223610
-  CycleInDeclaration 67af7f72c42808d9f19fc5097d3ab5da
-  CycleInModules 5b05ad783f47450cdabd6fc8a4ee82af
-  CycleInTypeSynonym b85c61fb17e7fc58efc369fedcc4cc8b
-  DataBindingGroupDeclaration 6581515de193582450a8e6e01c902ba4
-  DataDeclaration db5935397ffc86d7f21188808af5170e
-  DeclConflict cb5b52b3ab1024c0145e35bbf5573c65
-  Declaration b31d94d0c7b90700d40f9ba6ec420e41
-  DeclarationRef 9de74e8b46bfd07e044a72617cc5da5c
-  DeferredDictionary 7a56aac6dc1b7f4256df8373658d67a5
-  DerivedInstance 75fe0998f1f44a98f35c594b934817d5
-  Do b8fad0bebe96a0626d89acbd41a552b3
-  DoNotationBind fec991d5ab40627d0cce74b30ebfede6
-  DoNotationElement b31d94d0c7b90700d40f9ba6ec420e41
-  DoNotationLet 6feff6a200614ac607daa94006ad3ed5
-  DoNotationValue cc0f2bc0eef838fad83abc6d1864b17c
-  DuplicateExportRef 4958fdce9a7a00cfa0d12002366d5ada
-  DuplicateImport 91ee875abde4688d127d09cb7341865f
-  DuplicateImportRef 986275ea0ced79279cbad170298f8188
-  DuplicateInstance 750245cb65a52c2a8f29060cb7c2618e
-  DuplicateLabel 5e790f3cd6611674118c2e08c4ff0702
-  DuplicateModule 302ea58f4e4496b0b1aad98ae25a4e07
-  DuplicateSelectiveImport db882007c51946da07b0a477057869db
-  DuplicateTypeArgument 19423f81bc06d4682c7a1de6fdce8ba8
-  DuplicateTypeClass 8ee16a03aebad4b4671ac3817933ea5a
-  DuplicateValueDeclaration 0e2ac1d3629e07831ae753120e9cbe07
-  ErrorCheckingAccessor c2e6f9395c9189bd2784d578603bc166
-  ErrorCheckingGuard 6e7525bd1f3f19356433a7f67b8e0031
-  ErrorCheckingKind 3b40723499a9a90b36a4b2b947609173
-  ErrorCheckingType b88eb4d9d12f930534ef339bb4c2aa4a
-  ErrorInApplication 9289ca1610bbf320a346e9d84ec657ec
-  ErrorInBindingGroup ee8574f2c7e361c2e45ea26dfec4430d
-  ErrorInDataBindingGroup 99b4fd674b2e0bec75114d470336fc8c
-  ErrorInDataConstructor 7de25176b1816893ebf5b16d3ec80e28
-  ErrorInExpression 358d86f3d7f781558b2b7efc3f66ec3a
-  ErrorInForeignImport d9dd8101c1f4f9ef49d5302db30c000c
-  ErrorInInstance 1865dd1ca2c6437b6ff5256c6f91770d
-  ErrorInModule 30c97edb8a43314700377edb3b90ccc8
-  ErrorInSubsumption dd3f47392501540365e39b4f0f23ab70
-  ErrorInTypeClassDeclaration fe41cd6558f6f50671b4603fbc076d7d
-  ErrorInTypeConstructor 8b85de840fa185c242b0934e147ca3b9
-  ErrorInTypeDeclaration ae6d7c8f274e48295c5b6b770128b277
-  ErrorInTypeSynonym fd846cdb7cd01d77b178a7caa7bf1369
-  ErrorInValueDeclaration 96315a484ea1e4913f77262a86d2ad0d
-  ErrorInferringType 8e1de70d36b8960f0f9daa9a0f4c3906
-  ErrorMessage bc889ae8d74a01dbbd95e220faa4631d
-  ErrorMessage cebd18718f7c34278cac50a2f0ab0386
-  ErrorMessageHint b31d94d0c7b90700d40f9ba6ec420e41
-  ErrorParsingFFIModule d3c01586d758e8345e918afbfb471538
-  ErrorParsingModule 17f7ea545193606e314be46edd7a48ba
-  ErrorSolvingConstraint fdde8ff66aefb0c3dbf6601383befc4d
-  ErrorUnifyingTypes 2fd0706e76b416d4f08065799b10740f
-  EscapedSkolem f37e734bbe28d00cd39992993f1e8b25
-  ExpectedType 631de33f66ecc4d30e2234356694588b
-  ExpectedTypeConstructor f67cdb09228fbf526d1f675d204e6f0f
-  ExpectedWildcard bf76baa092912cbbeedfcb0c2b60a825
-  Explicit b1c38eaf46155af7f2da52da8f5861c4
-  ExplicitInstance 566045ea839404c561f5bf2109dbe534
-  ExportConflict d314b1811c95dfbea35f529d02d2cbae
-  Expr b31d94d0c7b90700d40f9ba6ec420e41
-  ExprDoesNotHaveType 8ceb9887d0f4ac63b00d62ec5a1bfa9d
-  ExprHint 160e085a2cf3bb3c5f971c117bec8a4c
-  ExternDataDeclaration 55a53b09584ed2ea4b573ea27aa0f4e4
-  ExternDeclaration 4969f865c6e08f5324b31f68ef85d043
-  ExternKindDeclaration fdf7ad04c416fe681db015f254431a3c
-  ExtraneousClassMember 5d936d2bb2c089cee8bf4ba501eb81b5
-  FixityDeclaration ae83bbbeb0bf1b73467c4234bd14b77f
-  FromLet 90dae67e7b749d252ac78837cb39cc5c
-  FromWhere c84b3c6b3ef5e335709e19ad3dacaa71
-  Guard b31d94d0c7b90700d40f9ba6ec420e41
-  GuardedExpr 27042b32d879f10c681888a144cccbf4
-  GuardedExpr b31d94d0c7b90700d40f9ba6ec420e41
-  Hiding 8116598858a7036038611cde115d4da3
-  HidingImport 1b9cb459f7de05f122cf213e908805ab
-  HintCategory 5a4eef1c21520364cf5b424feb83c38c
-  Hole e9e194ceaad4c99fef537ec8e2bb0f3e
-  HoleInferredType a1ba3e2a6f31ea7404f9d606f8065b52
-  IfThenElse 861db5e7c442fcad4ef6b09852058a52
-  Implicit 850358a1da5071d49098050ad7d1227d
-  ImplicitImport 407208787f8b3b3133edd0bf43c50c67
-  ImplicitQualifiedImport a8d651a1fdeef948b6902269fdbb4bd5
-  ImplicitQualifiedImportReExport 1d16f13998b0bc8bbf53ada4f4ff6284
-  ImportDeclaration 0c2bc2f3ca892343473f34859c93a6e3
-  ImportDeclarationType f900e8c96b49d573d3e54286bc8fd980
-  ImportHidingModule bb6be7a0509de1b07063e99736b70b09
-  IncompleteExhaustivityCheck 8aec391e679b45efa2075ff627fff071
-  IncorrectAnonymousArgument 65c3c48d2ef21e705e4d89cad034f314
-  IncorrectConstructorArity e3a0546a82bede0119ac2ad5d24cc14b
-  InfiniteKind fa55e1c76dbd360e4681ee3fa0d2626c
-  InfiniteType 9b34f8dfe13790d8f0edf3d13c627296
-  IntOutOfRange 36c1c825bcc504de2916d16a29fed316
-  InvalidDerivedInstance da339179d662ee730093b29e0416fcbb
-  InvalidDoBind 5e7b61f2abd12ad0978f887d38573fd2
-  InvalidDoLet aad7677b53d7dfae4bf945a587ec663b
-  InvalidFFIIdentifier 06849bd73a647feca66eefc4bed14bc4
-  InvalidInstanceHead 4d5bf2cabde37a614f5db3fb2deec801
-  InvalidNewtype 0b00ffd386eaec0febd2e61753f3a11d
-  InvalidNewtypeInstance 6165c7d79e3531500278edc285895e77
-  InvalidOperatorInBinder b83c65663c2d922ee8fabb93f0ee69ec
-  KindHint ed1823d6984f94b920e88d815b7a3d36
-  KindRef 8245863d9321690e594853e7ff0fdb63
-  KindsDoNotUnify 1b0f77113f20fe072593f35f7c937472
-  Leaf 9a42cb9f6c50a64f9ad877bf952e0413
-  Let 1e154f741d98347f87a436fe079b9677
-  Literal 25fe050a9db328cb74b9c2f7e7994889
-  MisleadingEmptyTypeImport 14b3a95421634e7af9ff811f42f6bd7d
-  MissingClassMember ac5d6747c4a4d6129994f9c5d0b093ad
-  MissingFFIImplementations 7dce9f6cf4969010ad8633867a328b17
-  MissingFFIModule 17f063658d2d06bebf4df38e5ac29537
-  MissingNewtypeSuperclassInstance d4fc49ab972aa91bee2af36ad7e63bee
-  MissingTypeDeclaration c833a1252ea3267668f51cc415751668
-  MixedAssociativityError 0d6e29625cc0749462ef88e6a94a5f08
-  MkUnguarded b86897bed7e8aa9bc4f5498c0c74ad91
-  Module b9e5d519f3251f7053b581e4ecd9e6bf
-  Module 7cf4b96f7d4b51b446726a099ab87bb6
-  ModuleNotFound c101418e68b6f071d1da8cea61bf23ae
-  ModuleRef 9bebdcb4233f1d570107d6e7f75034d7
-  MultipleTypeOpFixities b286f89f3b7830b506cfd4fff2da9fcb
-  MultipleValueOpFixities ae9ab6180ec24b98839567ecc722eff4
-  NameIsUndefined 9d817d271b064b6e392acd388ca5c97f
-  NewtypeInstance eefeabcd731381919d00bd863d5e75f0
-  NewtypeInstanceWithDictionary 2949dae5d307350f24e9fb4b0ff79def
-  NoInstanceFound f67a7a96bcbeebf6527502254c020c6d
-  NonAssociativeError f1b45362b7b0e203d7fe62782d6f32b6
-  ObjectUpdate 6ecfa64620245159f62232366ffa0b51
-  ObjectUpdateNested f0f594d942338e4c5632d561472ff5f5
-  Op 4d49590d9b87d07686937c6859e5ae47
-  OrphanInstance 81603c4e765dea52b74132e7e91dfcb3
-  OrphanTypeDeclaration 7a37da5d0d9a15bd3acfbfab7717d8a1
-  OtherHint 3abd0f602ec43b181187e9db020e01e6
-  OverlappingArgNames a455bf72377dcdab235dff5dee7c7884
-  OverlappingInstances d0861719ca18abc4281df0691195db8c
-  OverlappingNamesInLet 3e4ae571cd30e5429fd2ceab0386c54c
-  OverlappingPattern 3a1f9d572a63a674f5bbb753e8324d77
-  Parens d8b532f50bb6822d72d510f7cf291c86
-  PartiallyAppliedSynonym 4f8cf2b7993745234bb2d43286d85d6a
-  PathNode 927a4a1acceccbe5ab77b4ee8603376a
-  PathTree 1ec618e92677df1c0945827efcbe201c
-  PathTree 927a4a1acceccbe5ab77b4ee8603376a
-  PatternGuard 8f00c4347b1f607cbe6ab09d14685d9d
-  PositionHint 4b7438781ab1578c6eb626a0f664315f
-  PositionedDoNotationElement c12364668936cfdcd1fd6a9966e8f1cd
-  PositionedError 1a06bb4c398f7c5e8de6f5fb8fd37088
-  PositionedValue ce9f35ccf631ea46c29b12e823f5cdda
-  PossiblyInfiniteInstance 8d4d3557a0758bed20a87e515a1110c1
-  PropertyIsMissing 237b3879f5f204ab58e49865a12e1003
-  ReExportRef f67e2c43a2cbc62a4a950b387e3ed943
-  RedefinedIdent 4529a4115663255b4154a1bfecdd69a0
-  ScopeConflict d7365087342503d7bc453cbf94362f04
-  ScopeShadowing 65a89bf3e4004f4b48e4dd098baecdc9
-  ShadowedName 7f09e2812f01f70871eec84f8f816b13
-  ShadowedTypeVar d4a3c585e98afd60b41ec6774c6409e8
-  SimpleErrorMessage 33c1a345bb3f2be69a13531f80c78fbd
-  SolverHint 40f9b5a80fdd6026b1e765c2b4803cd8
-  TSAfter adbcd96638ff0f958a5cce3bcdfbd229
-  TSBefore c064af45c24dfbb0bcb67a82955a8c81
-  TransitiveDctorExportError a5175dc7214c264d90a6faf93b234f92
-  TransitiveExportError e29bbd988591c5392e7ebded7eda7181
-  TypeClassDeclaration d4771a111b012cbefca253f911afd776
-  TypeClassDictionary 9f4047c1c1ff9eeef0292c33d9ecb17c
-  TypeClassDictionaryAccessor d00df144de09556bbac171169b1608a8
-  TypeClassDictionaryConstructorApp e1cd14c07fae64c9cd8679680a21319e
-  TypeClassRef 93a0e32770563d43fa3f04289a54725f
-  TypeDeclaration a12f822b0dbc597658a7d1e27db5ac22
-  TypeDeclarationData 99fd3317c24e020d90e98686ac5a9cec
-  TypeDeclarationData 73dd7603bbe7fadce9f5fc48c4dc58fb
-  TypeFixity 64291ec6ff5adfe62c3609f4ee3518e7
-  TypeFixity 0d8e4197926d6b0160725c9c154c1438
-  TypeFixityDeclaration 442ba50b491e46b095a0fd0218f236ad
-  TypeInstanceBody b31d94d0c7b90700d40f9ba6ec420e41
-  TypeInstanceDeclaration c99b2ac93a5feb1209c747921a9e548b
-  TypeInstanceRef 850b5eee032f7eade911f65aaca47804
-  TypeOpRef 9ae3d7bbee64a9887c8d95defd65b0b0
-  TypeRef f23e4bfa1c94ce55e9357e5fb97176c4
-  TypeSearch 9f93487d1a91f557ef94e379878c19dd
-  TypeSynonymDeclaration b022b78d38da14b3619ada244eaf9299
-  TypeSynonymInstance 99b4ebaadfb28ad228c47e4fdf69dc0e
-  TypedValue d9e4565826b9abbfd5d9b0aba42f2e58
-  TypesDoNotUnify 4a76f9bf2ffcba41714628ed0a8b3bf6
-  UnaryMinus a219b7d00bf9c8706678ac90686eba33
-  UndefinedTypeVariable 618567e3392059402b3fa9282160ade5
-  UnknownClass 22302842385f514b8ad289bd1b19e402
-  UnknownExport 5ba63d23280331d135bc79a6cc7f51db
-  UnknownExportDataConstructor bf285148b2ea1fa2c8279a986bc8c64e
-  UnknownImport 7980c76c2367bb4a76296906eff5eb25
-  UnknownImportDataConstructor 6171e2d6f06e91b139eacfb3e940f789
-  UnknownName 0628ac315dcabeec4442b9d03a3d0b84
-  UnnecessaryFFIModule cbe3ee04a2fcfa9a3d89e22bc85e696f
-  UnusableDeclaration a266f015519ca268789c0cbc1b245e52
-  UnusedDctorExplicitImport 072cd589c2c4044d86ae240bc4154879
-  UnusedDctorImport b9e1f7e8e169a2e719c139ab2026c33c
-  UnusedExplicitImport 1a56a0421aab0fb41bedab47a8e42a4f
-  UnusedFFIImplementations bbc70805a421143cbfb5176e99ae94c5
-  UnusedImport 6c3a94947383a5e30fee3bbf986d90f7
-  UnusedTypeVar 135de1b81ee1032211dd3f613ddd0d52
-  UnverifiableSuperclassInstance 7c6c4372b3eac8d044923bdd87fe0968
-  UserDefinedWarning 5946e75cb44a6c9c8eee94cd5ed4789e
-  ValueDecl ccaaa682babb730c1361bddf2c5eee25
-  ValueDeclaration 12e8a69dfeaef3b3a7e4d8343e12683e
-  ValueDeclarationData 72033fd9413bf8066fce62a304ad15a4
-  ValueDeclarationData 0c2d915175f1072d8eeca07af2b73e20
-  ValueFixity 521665e029a7bb45169e478d9aced723
-  ValueFixity a6d87ffa7a2578d28c7ac8f367bf0cf5
-  ValueFixityDeclaration eb9c8f0bb082690f8aa4e758b5751212
-  ValueOpRef 340c88beba94c802cc00b112ca1ce8ae
-  ValueRef 984b564c7d121e5297a91fc424d0970b
-  Var 0202d242cce06e67fa6944b3c05a8982
-  WhereProvenance 65c0e50d69c9739c7a05491cae312524
-  WildcardInferredType 3ad94b9b99330b1babbc72e2ccff856a
-  addDefaultImport 35ff328750a3ec4b6f57a72d359a0bf6
-  caseAlternativeBinders b31d94d0c7b90700d40f9ba6ec420e41
-  caseAlternativeResult b31d94d0c7b90700d40f9ba6ec420e41
-  compDecRef e6b9ede356764ec70bdeb002d83e4f15
-  declName e5f550546a379316c2a828bc4bea491c
-  declRefName 088fcb4e3edc129f809097a23b6de3c2
-  declRefSourceSpan 48358271e032660f4b36f2c8b2ccb034
-  declSourceAnn e369e234b56621b5ead544cee7b1e586
-  declSourceSpan 901cd3587e8d9e55060bf90daca551d7
-  flattenDecls 49bcc2e170bd98aa1cb4c655d447837b
-  getFixityDecl d7bc7564b568f06a5f232daf0d83a6b1
-  getKindRef 169d4cac4d05cba42539e2862c95b3db
-  getModuleDeclarations 063e7db4cff83aa459c1c17d5048f5d2
-  getModuleName 578b1d81b22244b5aeca14680df8f57d
-  getModuleSourceSpan 1047991bfe9f810dab3d8fd03d3b2cf6
-  getTypeClassRef 4a5cb731417baeb982ffa07d84f048ab
-  getTypeDeclaration 59a0ca54505755f1fa0fc34ff5d66706
-  getTypeOpRef c807c0d47029b8283509ed31e6fc3ff1
-  getTypeRef 42ae9903e046664143824d50598f73c8
-  getValueDeclaration ef64f0b12c753d90369287393976ca51
-  getValueOpRef be7af64c7f2421e5081867b94579e0a9
-  getValueRef 94912d263388bc977447f55c96bc921e
-  importPrim a2ce5f6d1eda15c678f4b02aae653c68
-  isDataDecl 4f20142d2169f2dcb68971dbb50efa1e
-  isExplicit c43a0a53610d48db0933cf215a04e210
-  isExternDataDecl 3ad8aa11d561a89123c76ef60c9d372c
-  isExternDecl b3bd6c91aaac0522ff3c259e7d5beccb
-  isExternKindDecl a89dc87707d299fc373370f6631a2085
-  isFixityDecl b592576afb9be763cc362039fa8b14a7
-  isImplicit 9f343b64df822f92c07e3199a3b2fded
-  isImportDecl 1d21ef2480c9e223de992229b1d2d9ef
-  isModuleRef 8269dde3a1e3ea44b18ed7f930f87a16
-  isTrueExpr d58fb92abf9394b13231c5d40f42232a
-  isTypeClassDeclaration 2dffac571768d89c1520ba80ce6a50d9
-  isTypeClassInstanceDeclaration 156b7bc741b880eb775ca32915c80061
-  isValueDecl 882e68af7a310fc848b5e94c3ce09b47
-  mapTypeInstanceBody 1826036fea52f25657e6111625d52b7a
-  onTypeSearchTypes 26ed5ea6cf9bf67b20006f6e76c30b8b
-  onTypeSearchTypesM 4d5d253a595efbf2d353476a96d73de9
-  overTypeDeclaration b9a1a9bce63f1924055aa891a13e92a9
-  overValueDeclaration 9810c7d022732f62d93cb27952904bcd
-  runAssocList 6bb793796adb411b63074cabb1cd2dc5
-  traverseTypeInstanceBody 0b0b6c668555518d768d4dfdaf4d710b
-  tsAfterIdentifiers 9f93487d1a91f557ef94e379878c19dd
-  tsAfterRecordFields 9f93487d1a91f557ef94e379878c19dd
-  tydeclIdent 73dd7603bbe7fadce9f5fc48c4dc58fb
-  tydeclSourceAnn 73dd7603bbe7fadce9f5fc48c4dc58fb
-  tydeclType 73dd7603bbe7fadce9f5fc48c4dc58fb
-  unwrapTypeDeclaration cd3190b939e5767c5dbe58848d9227e3
-  valdeclBinders 0c2d915175f1072d8eeca07af2b73e20
-  valdeclExpression 0c2d915175f1072d8eeca07af2b73e20
-  valdeclIdent 0c2d915175f1072d8eeca07af2b73e20
-  valdeclName 0c2d915175f1072d8eeca07af2b73e20
-  valdeclSourceAnn 0c2d915175f1072d8eeca07af2b73e20
-import  -/  Language.PureScript.AST.Exported 2444000289cac04d19a71464030d0c24
-  exports: e8ab74b82024cfc9db679ef9a73c7b1c
-  exportedDeclarations ee1a287c153102856a0d13b5ba61c74b
-  isExported bfe6c67c45e2549140f143ba88e6412b
-import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
-  exports: a6d23ec6b024fefaa1b9450acf6240d0
-  ArrayLiteral 5b23e15244983cff3a7817389b5e2212
-  BooleanLiteral 242415ff3d034091eec7910a2e553d43
-  CharLiteral 7acabe059e85dca07eb45a9c79e63a50
-  Literal 9e9b6c02bfac90a56d53685e90c059b8
-  NumericLiteral 9e8d18add8f8b3f13014ed6441c4254a
-  ObjectLiteral 6a79fd56232b94e65385c3eab269a6a5
-  StringLiteral 7a0f920d0282cd028b99b76b270f4906
-import  -/  Language.PureScript.AST.Operators be736e316462ef3abce53315e7361a17
-  exports: e51e64160c99c756a027910b5259d686
-  Associativity 17f2097426b72eb751701f86cd97792c
-  Fixity b54dc78c2a40564b4aeb547cc4004cc2
-  Fixity 17f2097426b72eb751701f86cd97792c
-  Infix 48da7304e58a5ef64ef55f219a639205
-  Infixl c355232652b8d07dc6f4cc3d968cd69f
-  Infixr e374de6c2504281f30a71346ea589bed
-  Precedence bcd61162407eaf77832b70b749dfb2a6
-  readAssoc 17f2097426b72eb751701f86cd97792c
-  showAssoc f54fef35940752b58d0952abd939cff2
-import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
-  exports: cd99f4b22e2d3cec892dcb31686df02f
-  SourceAnn cab2aecd85882b7f3973d54e49bcad4f
-  SourcePos b32bf71fd97066221fb5294f6129d546
-  SourcePos 73c071552214b3f18e94970349d3affc
-  SourceSpan 80f1a6322ef7d45c295094f0b69c34ea
-  SourceSpan 73c071552214b3f18e94970349d3affc
-  displaySourcePos 2b1fba7cce08e66b9db97bd18aed510f
-  displaySourceSpan 86fb202939b4257c0979ce3b310133e1
-  displayStartEndPos d3293742657e1c673712c890a1911c16
-  internalModuleSourceSpan 5f91a656f056fa441b3ec6940306d87a
-  nullSourceSpan 24686a17cbb8e08b60ddb2b502e97316
-  sourcePosColumn 73c071552214b3f18e94970349d3affc
-  sourcePosLine 73c071552214b3f18e94970349d3affc
-  spanEnd 73c071552214b3f18e94970349d3affc
-  spanName 73c071552214b3f18e94970349d3affc
-  spanStart 73c071552214b3f18e94970349d3affc
-import  -/  Language.PureScript.AST.Traversals a3d1a9b4309f1aa3055f23e3fb101c5e
-  exports: 5f95b86b1ffc20ac260993dc77fff788
-  LocalIdent 2663dd39c5a9f4f47625aeed98b864bc
-  ScopedIdent fd1c63950c5ecf1a17f0b7742333850b
-  ToplevelIdent 49ddb46e2087510f9c9e30bf6ac118cb
-  accumKinds 34a02c7a8bb803687d93352bdff88b6a
-  accumTypes 57de83595e87d9fa4f8615bb6ea4d7cf
-  everythingOnValues c357e31af2a9709a2f6a4005be39c3f1
-  everythingWithContextOnValues 96100f22de180f7be1760582c2409ed4
-  everythingWithScope 299173827d0ece19df542f918941d0da
-  everywhereOnValues ad4625d6eef7aa4388eb405da834d508
-  everywhereOnValuesM 01a8d95490ca25e5157bbf2f4092d320
-  everywhereOnValuesTopDownM eeb56e921678602b009af2041c8eba21
-  everywhereWithContextOnValuesM 4fdd13188200e3f571550d8ad6f3de86
-  guardedExprM 78bf5315840d518118f221b5678e37e0
-  inScope 2ecdce1893ec3507816e8bc88c2fcb29
-  litM f0cfc068760981c7cbd590be7d721279
-  mapGuardedExpr f3496f057922e0cd7b9ce09305bf9712
-  overTypes abfbcc4ac387d3565fd77fe0109b088c
-dc88d6cbb5e5c07ccc30bb091d8c1aa1
+import  -/  Language.PureScript.AST.Binders 482af52ec934a93b1ca6ec424fbe30f2
+  exports: 21ca217e42d8560f3b797ca3690c6ebc
+  BinaryNoParensBinder fa245b4b20e4d00bda41b59e19ae05a3
+  Binder c96edaac3b5fcb24a174f6f4b3f084d4
+  ConstructorBinder 82c410a4d9e21c325ba3e1527c50daff
+  LiteralBinder 0a5559e7d3aabf0cf9c897b797edff85
+  NamedBinder 0800b3be0f9ce7a64f901e627e87a982
+  NullBinder d9d32ade0d56992460bb4b700e4464a4
+  OpBinder a4e859ef3c8b2681b04a2dfae6eb0fb8
+  ParensInBinder 5997f08e343521a086fe234687cfa21a
+  PositionedBinder a6b770e5a8f88247c6ef23a04722a775
+  TypedBinder 69e3490135b9eb76e3f2c68250002721
+  VarBinder 2e20c3df0430901107dc9b8bd4a6015c
+  binderNames 810a1bcb74988444206bd4c3a504cf72
+  isIrrefutable e4e6a566ec833cb43d9ab9e0488c7483
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  exports: ca3189140688cddb12d34cdf2c0663e4
+  Abs dae9a514c0c54a50406a57cd533f800a
+  Accessor 75238d8cd32188d181bffb473f6c4802
+  AdditionalProperty 8cc5bbff50321b1c6faa495114d0e5d1
+  Ado aa51ec093a5d30de9008b28e35a2b3e8
+  AmbiguousTypeVariables 32c9ff2da492cd27596b0460f325bfa1
+  AnonymousArgument 1ad1b3db7194ff91451b9c62133033f7
+  App ae4e12e545757da5fb62189548835120
+  ArgListLengthsDiffer 5a1231cd1afd5ae274d33e3a3ed922bc
+  AssocList bf5966f84a9fd3e8e225cc99068a5a6b
+  AssocList 5252f47280702e464243816d50efc247
+  BinaryNoParens fcc835654893b3cf82da9962f92ae61e
+  BindingGroupDeclaration fe3c1705a7a0108b856351d712879737
+  BoundValueDeclaration c15036e292c80286a90dbb25f336202d
+  Branch d787000b149f61b309db177cce643145
+  CannotDefinePrimModules 442dbb6eb5d534de0b1a5557a047f354
+  CannotDerive bf50a2ba123bdefcc4175ba94380f372
+  CannotDeriveNewtypeForData 5b955692e5773e4eb11bd2352562d8c9
+  CannotFindDerivingType 526d71f1ccb2a6688a39b47612a0a331
+  CannotGeneralizeRecursiveFunction 27f37994cf841dc091a8ecfb761d858e
+  CannotGetFileInfo 00441a2081d95e7fed8268777edabaad
+  CannotReadFile 14dc16d8c2f8a03a9a3da680e342d754
+  CannotUseBindWithDo 8943749a428b93671be0fde1ef1300eb
+  CannotWriteFile 182cf94a21f6ae610bfae1e998054ae7
+  Case dbf8d0b5ac1a603149b8bb1459575de0
+  CaseAlternative 8464f1c9f0c33f15833817399a071704
+  CaseAlternative e92f6ee78a22c0eadc3566d7d1f48d5b
+  CaseBinderLengthDiffers 522e8b990cc5720807ff762cc761d675
+  CheckHint df81614c4636702fbc92cda4379967c3
+  ClassInstanceArityMismatch 5336dd18a300e4af059fd0c3e2533863
+  ConditionGuard de13c04599b5971ac3f21a1186c6e658
+  ConstrainedTypeUnified 68b349f446a11480294fdc6e451f3186
+  Constructor ea2b7d92995197a177f6abf42269c377
+  Context 44dd7830663f65e1b8791f79a13f4cc0
+  CycleInDeclaration e0dfc89422b1ddae332185ecc0077f4a
+  CycleInModules 0af9e32ca1a469832094fae4e417174f
+  CycleInTypeSynonym c41cd90aea3f14dfdae7bbe821a93a65
+  DataBindingGroupDeclaration dd96274a1938234d4bfdc2a1d4e8e0ff
+  DataDeclaration 2fcba6ad709595ed3c4d0926de54bc2c
+  DeclConflict 4784ba482b28096b8a67353e4572e17f
+  Declaration e92f6ee78a22c0eadc3566d7d1f48d5b
+  DeclarationRef 1ef988d2f8db98f35f578bde9282f468
+  DeferredDictionary 4767b924c347cb558c8259d23777dc47
+  DerivedInstance 049e605b376a0b07eb640a4746618932
+  Do 61408a6943b45292f7b373e76e9ffa63
+  DoNotationBind 3860cb3df901dc1a4468bed348d53a88
+  DoNotationElement e92f6ee78a22c0eadc3566d7d1f48d5b
+  DoNotationLet cb7748a003aec3a844b46797cc9f3089
+  DoNotationValue 8d573316807fe6334d3059181f3f010a
+  DuplicateExportRef 2bc416d714a3132513c65fb115834354
+  DuplicateImport 31f16e44385b2d00c67246f7434649af
+  DuplicateImportRef 1a231a3c60f89a209268a2adc8fd01fc
+  DuplicateInstance d6ce1d56981f24c5c738bf3578231015
+  DuplicateLabel 8feaf7d623d5540590d68d31f0515182
+  DuplicateModule 649213ca3938edf908a57b63818242b7
+  DuplicateSelectiveImport 5534e34769da216b074f9fbce29850d0
+  DuplicateTypeArgument 1dd3a867cfcb69332abcfb7dc9e9fd08
+  DuplicateTypeClass a6fd946c6e800e6b57dff689d241240f
+  DuplicateValueDeclaration 69e1dd10264823a972f6de1d23191235
+  ErrorCheckingAccessor 72882f6c65176d04bcb28838744a5d3d
+  ErrorCheckingGuard 14ee2584b4ccd745e0203b96f4ae9b1a
+  ErrorCheckingKind a8e33adfba1fbf2cf4ffc292464a1363
+  ErrorCheckingType 2eb9962f5589e0b297acb417d9acab76
+  ErrorInApplication e280abbf2add98d167ba4cbf86682490
+  ErrorInBindingGroup 2a332e5dc93ee8ae9fd1a76b70d2335b
+  ErrorInDataBindingGroup 4e35b147ca975984c4c7c56d6c0a820a
+  ErrorInDataConstructor 172043f820f67271f9b57e680e4414d6
+  ErrorInExpression 6be781a6c814a2ac5a163f17629faf53
+  ErrorInForeignImport 5cda31e408caaf5ddccab9b5d74cfcca
+  ErrorInInstance 3f5fd04062107e7cfa6b465b93bd0079
+  ErrorInModule fa705731a479914ad1b2d8aff2d06ff6
+  ErrorInSubsumption 5d6c6f0ec0cd979a817e9c5890c91b72
+  ErrorInTypeClassDeclaration 646a902488f0b9a1a46ee5f5c7063457
+  ErrorInTypeConstructor 20a30789b5f11e3a3165ca50ff3138d6
+  ErrorInTypeDeclaration 2112f70ad8fe0f06e0173bc417ba39b8
+  ErrorInTypeSynonym eef1254e4c4d8e8fc0d8f54e0a205bcf
+  ErrorInValueDeclaration b4d5773974cb3c247524eed712a032a5
+  ErrorInferringType 6edd0bcc0ac0701140b4f26a3edd4a7d
+  ErrorMessage b0470a74191782e72607e7c5b87318de
+  ErrorMessage 7268a73b9f5bbe5a70110aa90f7e1194
+  ErrorMessageHint e92f6ee78a22c0eadc3566d7d1f48d5b
+  ErrorParsingFFIModule 995f795a4388db3ef8492c2c3a840810
+  ErrorParsingModule 86b45a047817a32fc34ea35c834adb0d
+  ErrorSolvingConstraint 11ab9039b50040d25e3f4f035aeb141e
+  ErrorUnifyingTypes edab054a8bacddb8d896e88d9265b15d
+  EscapedSkolem f75939254730ec13cf7427aa6a78667b
+  ExpectedType 7a31bdb4cb0936757920cf70f374b411
+  ExpectedTypeConstructor b752a30671422440d53bbf2351fe8e5e
+  ExpectedWildcard 6e6e4e6e59fe15e5573be31041331478
+  Explicit 0e7d786f7f26f8b40dc941854a989937
+  ExplicitInstance 7626e63238a07a99c1bae428b77d3f66
+  ExportConflict a964bbcd47281dc93ced690ab4d6f61d
+  Expr e92f6ee78a22c0eadc3566d7d1f48d5b
+  ExprDoesNotHaveType 2b6d380ece0eabf01b29df66dd561c32
+  ExprHint 0b5a37c321383027c366f248a8ca470d
+  ExternDataDeclaration 45e3d2e61e8f85403449183876d3af2f
+  ExternDeclaration 180e172298441327dfef1022795a10e0
+  ExternKindDeclaration 88852d174ecb6f9a3f22350e4bed5723
+  ExtraneousClassMember eac2645deec7e543a609702e560a3f0b
+  FixityDeclaration 95c5fd24977a7e9400ec16a2317bcd12
+  FromLet bc7f79cdfc21eeb3e926d750f1216f83
+  FromWhere 57f175353ef14f2790049c689ea914b0
+  Guard e92f6ee78a22c0eadc3566d7d1f48d5b
+  GuardedExpr 811952f37a620b8d78cc4a6176d99a2c
+  GuardedExpr e92f6ee78a22c0eadc3566d7d1f48d5b
+  Hiding 14af127ef57cd3e7808a207407b44158
+  HidingImport b89b6387492f92801a46c239b962a5a8
+  HintCategory 67a26b6b435418eb0468ab415e41d2f5
+  Hole 65afb0f996a13cb636ce84111153af7c
+  HoleInferredType 785c100e33c3249a5b102046be9d34f6
+  IfThenElse 8071f8c4795174e5283a3ecdaa8b3c8f
+  Implicit 3dec7010cde86de5e211cd1c4e2e7a9d
+  ImplicitImport f46372b3303599a61ce56fb83b392d10
+  ImplicitQualifiedImport 4626c43503de0d794c412d0a06e5f787
+  ImplicitQualifiedImportReExport 99e1f1a554e020978c5d59c34e90137d
+  ImportDeclaration b98a8b3e9f19a9a91825a99d72954601
+  ImportDeclarationType ee54accdb974d8b355eb58984489a7af
+  ImportHidingModule 5847caa6d81d248bc9080b4e6b53bf9b
+  IncompleteExhaustivityCheck a94c2403060b3cddff039c4fb5ac6a3d
+  IncorrectAnonymousArgument b18ba3c6cf1b726250739a3d78fd7886
+  IncorrectConstructorArity 88cdf8016d2adea5107417413375a255
+  InfiniteKind a3c9bfc4aa5a1d0b645ddf94cea2e9a1
+  InfiniteType e2f4250f10f710caa807fa33adae8ad5
+  IntOutOfRange 7e6f04f7e6c29c03cdd8d2d08c5112dc
+  InvalidDerivedInstance 2850bb655a67c7b11c2abbc0a797324f
+  InvalidDoBind e6a9193795f9c718c0bb8b3ee1d5007b
+  InvalidDoLet 30d467057cb08d1a48bc45da98eddc94
+  InvalidFFIIdentifier 1644089749df6b45d4e9fbf3319ed8ca
+  InvalidInstanceHead 8b910cd07b3dfbe718c34545a7bfeef1
+  InvalidNewtype 7b68333d588ba85eeef1ad0ea8fc2255
+  InvalidNewtypeInstance 60deec26444e8cfc21c81a0f10872c25
+  InvalidOperatorInBinder bb615f103eb53d9736f59c500b929de4
+  KindHint 1f72de8b24fb27807ae5480a493daafb
+  KindRef fdcf7f61e078f63d583e2e92289fb303
+  KindsDoNotUnify 5eff4abdff15c722fce13c399150e3be
+  Leaf a3cc7dfc810d7c4443ac2eb4be143512
+  Let 5843430a3e31a1977aadcfb94efa8312
+  Literal bdcf4b137a448fe7c2ed57fe33a72cd3
+  MisleadingEmptyTypeImport 90b8813ca2e01430cccbe01e6bc6dc45
+  MissingClassMember e01160d2e4b38da5d861a682e142ab70
+  MissingFFIImplementations 471364375c7b113af9f9006bbad04a16
+  MissingFFIModule 40159f8540b6290e57ee6090196f38c1
+  MissingNewtypeSuperclassInstance 76c919104baa721f9f381a32aedf4230
+  MissingTypeDeclaration fcd36d2a4c29a7a9bdad6b3c5794d9e6
+  MixedAssociativityError 1d14d5929573da82d4205da8fc45cc8f
+  MkUnguarded d9deae30ea78016a4bdb453d9978bfa3
+  Module 305128e30e200d34d712365aa2d509df
+  Module 3342e00ee072addfd009ee61e87fb865
+  ModuleNotFound 7d08cbb5754760a5207e995e4aaee1c8
+  ModuleRef 2ff9e8ed233e41ffb08c38dcae5865c0
+  MultipleTypeOpFixities 17f52b303ca5418809e6ef3776320ec8
+  MultipleValueOpFixities f0acf205081fb137d77ccba857846c71
+  NameIsUndefined 95fff85d3aa32709f78982493966418a
+  NewtypeInstance 43b0450709caa9cc5a685085197cb773
+  NewtypeInstanceWithDictionary eddb3e7c62714e662f7945c8899ae4d1
+  NoInstanceFound c5c9bc41add21c6bc4602b8371723def
+  NonAssociativeError 826c4decdc006663e21a3ae7e60e3ed8
+  ObjectUpdate 14b4ffe7d1b68ac321d3f2c2a27a17eb
+  ObjectUpdateNested fdcbd615f1a1d120ea9765eaceb58198
+  Op bbe2a0a58ceeace944ccf429f680f6bc
+  OrphanInstance 5bb77f0e3d60fac3b55bf469df93e4be
+  OrphanTypeDeclaration 1c7950c65a36e805e80c4880567e8aea
+  OtherHint 15866329838ebdbeab9427ca7a2de6b5
+  OverlappingArgNames 4abe87f1b7aaf0437e5be2df295bd221
+  OverlappingInstances 6b43960ee47cf5e470909fb750ecd2ec
+  OverlappingNamesInLet 085f9e30de57cd4f95a01e47912680cb
+  OverlappingPattern 43b904c51414e626de65130b2baec4ff
+  Parens ce804ea11612979be1464b51c74c24ab
+  PartiallyAppliedSynonym f26cabb54c63740fea0e1444787e4fd4
+  PathNode 0a046fc00d6584c1eeaef0123d3be18e
+  PathTree 9e677c667044da338e6138c022cc791b
+  PathTree 0a046fc00d6584c1eeaef0123d3be18e
+  PatternGuard a27d707167917ad112543851031e65f9
+  PositionHint 4d20bc875f53ea33a0d9723dbee216b7
+  PositionedDoNotationElement dae30f378bb2ebb85464560daefe1b0b
+  PositionedError c387f6033b140fe80063a1c6ade0cde7
+  PositionedValue b90293950702fd6b659d7cd86d309f72
+  PossiblyInfiniteInstance 764510a68b73540beb5c16f73e86041a
+  PropertyIsMissing 7bd6a3b98e181ecb93fd20dfbbd43eb4
+  ReExportRef 2fef75d8ce745db15f225b0cb5e0c76d
+  RedefinedIdent e6dda0b5782c2bdcfc7c01cc908f16b1
+  ScopeConflict 9f1446b4bee542b6895bd34446e09a8f
+  ScopeShadowing e501b0fc235ceb98506dc1582e6469e3
+  ShadowedName 6f8d35e7d7889e98ed7ad908b490ab39
+  ShadowedTypeVar 4c52be86526b8358b21559ef04c405da
+  SimpleErrorMessage 85049d3cbfbe9dc15f83f3061172f760
+  SolverHint a9cc4da18a209555dac939e769583171
+  TSAfter 3632e66d118941cae7ca81a4c9abccf6
+  TSBefore 6b997cb4232ef55e62a34134149f518d
+  TransitiveDctorExportError 9c72f8e85accb21ae307dbab45a1b7b2
+  TransitiveExportError f05abdd432541d03ea993eba5ab2ffee
+  TypeClassDeclaration 19936abcaf3693a6825ccbc13b2590dc
+  TypeClassDictionary 531ed710fa3e0860894127586614f844
+  TypeClassDictionaryAccessor 69c555dd17e3808e47bbd0baec81a1b6
+  TypeClassDictionaryConstructorApp f15387264e84e75b0e5ed1f08eacb958
+  TypeClassRef 0dfae6fa12be94e312c419132246a1f3
+  TypeDeclaration 28394461dbd073cca9cdbd263dbb4335
+  TypeDeclarationData 3e894c7cbf790244173310e6e620d669
+  TypeDeclarationData c947d6d8aff56f68d1789e1833a9fcd2
+  TypeFixity 422dbbc62f61e8d72aabe0ec3c32e2e8
+  TypeFixity 298ce78be10d4367819875773ca00d0b
+  TypeFixityDeclaration 5a4e2ba83bf57ee4021fdafe70b4eb9a
+  TypeInstanceBody e92f6ee78a22c0eadc3566d7d1f48d5b
+  TypeInstanceDeclaration 46d66658dd5a30ba03e36fc960162f20
+  TypeInstanceRef 1a4ec4636edef4ba31547e9816ff48da
+  TypeOpRef cd0b4bf0e37e512f28be11229ab2e497
+  TypeRef 7b2aa9fe81ad40f64c659855da835def
+  TypeSearch f66c915ceaf19a8b40bffcd6eb7d5cc6
+  TypeSynonymDeclaration 1cfe9af195a40456074b96ff0ca4519c
+  TypeSynonymInstance 368c737fcf239094eecb7825f3b821f2
+  TypedValue 0acc3ace791a36484dcda3706df33cef
+  TypesDoNotUnify 8366c89ce370f5cc8b8094dd4b727eaf
+  UnaryMinus 00e8f54110f0049331236b115b108a07
+  UndefinedTypeVariable 753aa04f581392bbd8dc7e51e2d8b736
+  UnknownClass dccc9c75fce07f8065906de397b7fbbd
+  UnknownExport c747030be48721fffbd54032523877f2
+  UnknownExportDataConstructor 73b7f8a07075315e950e2247042eafab
+  UnknownImport b58a7b0ddb7ba5431ab45c2c1db062c6
+  UnknownImportDataConstructor 286c5ed7e9b332eb3aac1e426959e22a
+  UnknownName 4183c70ff29ad805571bed2cb1e6b9e3
+  UnnecessaryFFIModule f69963b37caa85cc0192500bcf206fd6
+  UnusableDeclaration ed45eb8f984cb8e4da92d0834d894b1e
+  UnusedDctorExplicitImport 61dabf77cfa792ae850406edee5667c1
+  UnusedDctorImport e8b03809905af7b859f51c3534ce00be
+  UnusedExplicitImport 3fad800c5eaf9c9c9ee39efe05c090c2
+  UnusedFFIImplementations bf60bc9f2725ca66a0a79feae586d397
+  UnusedImport 0ad58ebfa54b5782101a13c49bfacf89
+  UnusedTypeVar 95ae612e3e3b25671c707e3403d88e92
+  UnverifiableSuperclassInstance 3de05066922d1edec32da1840426a7c9
+  UserDefinedWarning 4a7f6856d3ce3f16f9f5468151bfbbda
+  ValueDecl 97b38919d86cd9182cb8d86b6f4ae734
+  ValueDeclaration 3d506e6b33aef3e239802bd27220a2e5
+  ValueDeclarationData fa2f49166ba51f7f4c31391bc9d776ce
+  ValueDeclarationData dc3fe29a39c3efd97807e85c8c5dc302
+  ValueFixity 9e475bb09c95e859fc062456332129d5
+  ValueFixity 2b8c14ef4445d3b3d67c80ed60c831ef
+  ValueFixityDeclaration 6da09cca72fc0dd8bafa2b8ed78d033e
+  ValueOpRef 08efa0d335ba46b69b381a343c739614
+  ValueRef 78dee2d86cdf935e8811ecdd18c169d3
+  Var 5fd1e80d993ab2f76a4e002bbbfc9990
+  WhereProvenance bfce38a8b694557bc33268834d37a7dc
+  WildcardInferredType 387efde14cc07acdcea42bcae7f2e8c8
+  addDefaultImport a9f33004e1174e39a513d2fa90d4a835
+  caseAlternativeBinders e92f6ee78a22c0eadc3566d7d1f48d5b
+  caseAlternativeResult e92f6ee78a22c0eadc3566d7d1f48d5b
+  compDecRef 7ecd10c2cb7709fffc36d9d993e281f2
+  declName 346365fb28af384d04391dc396f98282
+  declRefName a467a4d4938967e35bf0f7f0e0d07090
+  declRefSourceSpan 9d093733881fe15ce20b105d529f0011
+  declSourceAnn 5d4803f8f30e53025f1e80c48cd481b1
+  declSourceSpan 56c2d6f201f67f106a4f2e1dc3f0bb49
+  flattenDecls f5b36690439fd53d08448e92938999ee
+  getFixityDecl 37948c177690d6e92f7f8c057c91b5f1
+  getKindRef e3282980e675c7ad2175d21e599edc5c
+  getModuleDeclarations 77bbf79d27e1a58f6883cbe40cb44e01
+  getModuleName 7aa2ed3fa39338f5edb2f1938e29c924
+  getModuleSourceSpan 9836f61824b534227aa948fd618b76f6
+  getTypeClassRef ea53048ed8eefd170e41dcd88fa96d29
+  getTypeDeclaration eea7233e2bcca06180e0fde9a4729425
+  getTypeOpRef f544549c7044502c660701544ec93b94
+  getTypeRef 49d73504ee072e8c2fbd37f35c16fbff
+  getValueDeclaration f4b5979539c3f43c9aac0104c9b38c92
+  getValueOpRef 47a2050f95b57da4a8d94869a8fe7a30
+  getValueRef 1fbe007758d53e3ecefa02005d694679
+  importPrim 31ae0c55d3f2ad87be9893d84154e47e
+  isDataDecl f9549daf5155cce3c930a968397a7afc
+  isExplicit 7250ed047a60c57e774f73259cedd1d2
+  isExternDataDecl c9ab061920499352f1d59ffdd3d1f80d
+  isExternDecl dd5bf568456765ea4de3002134577d4d
+  isExternKindDecl c8709b62905f1d8a52c5722d67855ffe
+  isFixityDecl c04bd8d067304ee9a0b4788bfd047d98
+  isImplicit 829ab788c574d0d4fa85725bfb45845a
+  isImportDecl 64406b87a7f4a18bafdbc5bcb5a9f598
+  isModuleRef e813ecefaf7692c4fa135ceea4ce559c
+  isTrueExpr 68fdb6c54a1f333df017643f6dac7699
+  isTypeClassDeclaration 7b108c8da44aa47fd4ec89829bd2208d
+  isTypeClassInstanceDeclaration b777faacf0637e97b3f90ecebf237e06
+  isValueDecl ec9808b5e7bdda595bcb228b10c9fef0
+  mapTypeInstanceBody 8c10e95933c92cb479ab081da10c3627
+  onTypeSearchTypes febdeb74c42c15f011c690652e6ae616
+  onTypeSearchTypesM adc87a42966a873eb4c33a990e8956bb
+  overTypeDeclaration e5ea580a2e6fb7ffeb2f6d21ba7a9289
+  overValueDeclaration 957ede040169306777269b6b86e1fa8c
+  runAssocList 5252f47280702e464243816d50efc247
+  traverseTypeInstanceBody b3dc0429061d0ff256d8d3e4cc7c9512
+  tsAfterIdentifiers f66c915ceaf19a8b40bffcd6eb7d5cc6
+  tsAfterRecordFields f66c915ceaf19a8b40bffcd6eb7d5cc6
+  tydeclIdent c947d6d8aff56f68d1789e1833a9fcd2
+  tydeclSourceAnn c947d6d8aff56f68d1789e1833a9fcd2
+  tydeclType c947d6d8aff56f68d1789e1833a9fcd2
+  unwrapTypeDeclaration 348c99c29975a5b33457904ffa9aebcc
+  valdeclBinders dc3fe29a39c3efd97807e85c8c5dc302
+  valdeclExpression dc3fe29a39c3efd97807e85c8c5dc302
+  valdeclIdent dc3fe29a39c3efd97807e85c8c5dc302
+  valdeclName dc3fe29a39c3efd97807e85c8c5dc302
+  valdeclSourceAnn dc3fe29a39c3efd97807e85c8c5dc302
+import  -/  Language.PureScript.AST.Exported 35d5252d09ea4b599a53ca5936193681
+  exports: 5fa2c4aa32577711abcd5514495ff3ca
+  exportedDeclarations a778de38fea1ad931bb5793b1c0929a2
+  isExported 1091ffd5e19d5d0065f855d778ee28cd
+import  -/  Language.PureScript.AST.Literals da2ec269f063125450b272321f85468a
+  exports: ab5af4e7482c5a8cbf79fdfd52ee94e2
+  ArrayLiteral 7cbd15adda8a5ed2a81035be22e2eae2
+  BooleanLiteral 98d9c7b89f9a5dcc4796fae1c45898e6
+  CharLiteral 463423afe7528a93062eb5622a63a8e9
+  Literal 4b6b35be8d89b746a77fcd3d0c0a71d4
+  NumericLiteral 660c8129bba11812cfd17a4819557d36
+  ObjectLiteral d17d3a090fe8a89f303c679b0a417ae9
+  StringLiteral 8514cef90500430ad3602ee97b69b883
+import  -/  Language.PureScript.AST.Operators 615a873c5f62908f354b9d4840cbeb63
+  exports: 442eb27d876f3e9fba041fa53b38caeb
+  Associativity 228a0ef1b3774b11d1a92fae92fb43a0
+  Fixity 141f87a59136c90c1be577c19942dfd4
+  Fixity 228a0ef1b3774b11d1a92fae92fb43a0
+  Infix acee26fe4e59790dddcfdcb22d39c630
+  Infixl 7a053ccfe48a809d0f2fd5ed84616765
+  Infixr bbdac94db5d55a0387eb84cc7a57bedf
+  Precedence ea481cf59a404ab1d4264846eb495580
+  readAssoc 228a0ef1b3774b11d1a92fae92fb43a0
+  showAssoc 703104148426196acec9a54732601094
+import  -/  Language.PureScript.AST.SourcePos 63acacac5b7be73d04e5be0047a9a89a
+  exports: a1e32a05596348684f99f9072c553e2b
+  NullSourceAnn 5a0bced03127a02790cb165450e72c45
+  NullSourceSpan fad53a2b37b7f02c9f2e1151d4bf9347
+  SourceAnn f5708ed135df009dfa0254486771ef74
+  SourcePos 1f89874c7dcd77e53f0f74e4d28f0a8c
+  SourcePos 1e0cf2bd3ea18f97a2ff152297f09219
+  SourceSpan 153dcf157f0acf76a2cdcf153aac30d3
+  SourceSpan 1e0cf2bd3ea18f97a2ff152297f09219
+  displaySourcePos cf9281da6eff56b2fc110fdaa8187669
+  displaySourcePosShort e883474c4872f3867ae5ba77c85e4e19
+  displaySourceSpan 11d4c6c7c27182d917b65dca3e11c4bf
+  displayStartEndPos e5c46604f74bcadb3bc4a400eacda553
+  displayStartEndPosShort 95a3d0cb80b7e85f6ff2d774252c312c
+  internalModuleSourceSpan f13de72620ea3980769d3252f1949a4a
+  nonEmptySpan 232f686ce9eaef22a6239187f1de0ae3
+  nullSourceAnn f2dcb0c4d24a9cde0192cde9ecb60353
+  nullSourceSpan d3ce9e45794cd4f5ddfad4b02b318f51
+  sourcePosColumn 1e0cf2bd3ea18f97a2ff152297f09219
+  sourcePosLine 1e0cf2bd3ea18f97a2ff152297f09219
+  spanEnd 1e0cf2bd3ea18f97a2ff152297f09219
+  spanName 1e0cf2bd3ea18f97a2ff152297f09219
+  spanStart 1e0cf2bd3ea18f97a2ff152297f09219
+  widenSourceAnn 2e2c7096d7706bbf13b659eb261cbe79
+  widenSourceSpan 4b532ffaa51152e81f9e696cfeb2a4fc
+import  -/  Language.PureScript.AST.Traversals f5adaf844c5e9d0f0678a8b574a32aa6
+  exports: a3387abb8e15fc740358f1f69c313aad
+  LocalIdent bb84b4c96bd109d06b41acf4d65ddce6
+  ScopedIdent a9386d37e7ebee7cdf58474c3889e380
+  ToplevelIdent 385b77e95d89985d110388bfbf949e7e
+  accumKinds 2c08759b6d6e363e3d39db46e55510eb
+  accumTypes e488d62caf91c6b0af9b2261ad19da8d
+  everythingOnValues d1f804aed21f7e21280e0cf1f8ea4257
+  everythingWithContextOnValues b6cfbe573edb2754803b960a4d02edab
+  everythingWithScope 569a5e5bf677f3eba029adc5853b1579
+  everywhereOnValues f4659f155225bd0f038ec5ce751367f9
+  everywhereOnValuesM 1c0cb3e06c4593fe6cb03329a6249e6d
+  everywhereOnValuesTopDownM 75fdf2701c3b1d9ebfea98053cfea0c4
+  everywhereWithContextOnValuesM 8b088f6a1ad3879e25631321bc5daeec
+  guardedExprM 5b1f6760ac0efff4fc97873db2fa9a2e
+  inScope 4071e4e3e23b5d4575aa2c5345069566
+  litM 22c057d6921be8440814b92979717a96
+  mapGuardedExpr a2524c33840358be0ec96b6f41c2df4f
+  overTypes c5ba43021920ffb02d62737e1c4527b2
+59c505a725d5f927fc62341ae8340ec4
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.AST.$trModule3
                    Language.PureScript.AST.$trModule1) -}
-b75916e59b9f7726c2c9373731480f23
+8b40fe440b389f5cc5c9005643806704
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.$trModule2) -}
-860cd6927a8e631685e17d1fef095ef6
+71add4d9317e6f596477c60a14ee81ce
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Language.PureScript.AST"#) -}
-fa5ef3411496e3c91a78862e3dbff7e4
+4cc82ec34867bead08303dddff01e133
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.$trModule4) -}
-25599c86679f2557e9792d98c7ac7fe8
+20466af72883182a3a06926cd7dc2ebb
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

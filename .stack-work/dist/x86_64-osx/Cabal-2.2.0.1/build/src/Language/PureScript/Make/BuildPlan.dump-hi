@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:48:02.141569 UTC
+2019-01-24 14:16:41.579966 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.BuildPlan 8043
-  interface hash: 382b89642fdc46aa26ad91d7bb57b26c
-  ABI hash: 640f8b05133cc6ade51cec17f387809a
-  export-list hash: 25942a3b82d30a6c32da2637f7ba4704
-  orphan hash: bfca03bde5c5600e036a9b8645118d1d
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Make.BuildPlan 8043
+  interface hash: eb7fc7abe36c905ef8208d146d37572d
+  ABI hash: 923324684f1b35512d1102d92fc5a38a
+  export-list hash: daeb27ff797905fc2d9c0015b626bbb4
+  orphan hash: 67ac1cf4ffd8f3cb862bc5bec21f1773
   flag hash: c8d8f450ed10350d849cb7e71446cfa1
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -66,14 +66,16 @@ module dependencies: Control.Monad.Logger Control.Monad.Supply
                      Language.PureScript.TypeChecker.Monad
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4
-                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
                       integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 lifted-base-0.2.3.12
+                      language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
+                      microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1
                       monad-control-1.0.2.3 mtl-2.2.2 parallel-3.2.1.1 parsec-3.1.13.0
                       pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
                       protolude-0.2.2 random-1.1 safe-0.3.17 scientific-0.3.6.2
@@ -84,6 +86,8 @@ package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
                       utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: colour-2.3.4:Data.Colour syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -116,24 +120,29 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Control.Monad.Logger
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Make.Monad
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Control.Monad.Logger
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Make.Monad
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -166,45 +175,45 @@ import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
 import  -/  lifted-base-0.2.3.12:Control.Concurrent.Lifted 2f16a4f6aacf1afd0e80d872cbbdf622
 import  -/  lifted-base-0.2.3.12:Control.Concurrent.MVar.Lifted e3b39ade6c1fdc125d23c90bdb4874f2
 import  -/  monad-control-1.0.2.3:Control.Monad.Trans.Control 82c27f877a1c7cc212232dcea6f7b8e9
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  Module 7cf4b96f7d4b51b446726a099ab87bb6
-  getModuleName 578b1d81b22244b5aeca14680df8f57d
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
-  exports: 142ea650dec62642d1cff09ef1eee74e
-  MultipleErrors f5c9696f41d58d6dc3fa501d3874e5a8
-  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
-import  -/  Language.PureScript.Externs 17598d5385c46f650a2a55de08912a53
-  exports: f9fc7fa26f69a655fd896d8cccd21570
-  ExternsFile b2e76f24ecba17bf3b946e078a8414b6
-  efVersion b2e76f24ecba17bf3b946e078a8414b6
-import  -/  Language.PureScript.Make.Actions e063664ba4322d93370f5867c4f87435
-  exports: d998e1a87fad141f5852b5461efef53d
-  Externs a2569f2ca1d89749337a0025ed19849d
-  MakeActions 0037ff7a939b4cb40b9ecea3cb8ef902
-  MakeActions 3d0bef297a2110ab738574f1f980a96f
-  RebuildNever 6d09577c081a9cde2328f20783c437dd
-  codegen 3d0bef297a2110ab738574f1f980a96f
-  ffiCodegen 3d0bef297a2110ab738574f1f980a96f
-  getInputTimestamp 3d0bef297a2110ab738574f1f980a96f
-  getOutputTimestamp 3d0bef297a2110ab738574f1f980a96f
-  progress 3d0bef297a2110ab738574f1f980a96f
-  readExterns 3d0bef297a2110ab738574f1f980a96f
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
-import  -/  Paths_purescript a1929913cfb69ecc53654efc3b17c6b3
-  exports: 2c455cd4735d13a5fa8e95701f74bbba
-  version 36e47562f1510cc9eab6b4cc20db5d32
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  Module 3342e00ee072addfd009ee61e87fb865
+  getModuleName 7aa2ed3fa39338f5edb2f1938e29c924
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.Errors 3c1ad933587510f8b20a8c9ec2e86ce9
+  exports: 8e61484c4664eceb943d9fc4820c721b
+  MultipleErrors e10d32697d8bc85ed39c4a4d256bc383
+  MultipleErrors e1ef6a17348ccfe3ef65185d3c5f9026
+import  -/  Language.PureScript.Externs cf933be49760ec7d1e991d8ad7f6146f
+  exports: caea0e8e36630f9e250d475ec2e68707
+  ExternsFile c010c09fe85776adf7c6787c7d79c898
+  efVersion c010c09fe85776adf7c6787c7d79c898
+import  -/  Language.PureScript.Make.Actions d964d3443f97c4366835ba8624e5a3fb
+  exports: 8913ee8e4ed0b29132c4ad60e50fbfbd
+  Externs 4ffb2ad8a609a80bf7b3b56eaf9b3c54
+  MakeActions a59a0d13211c77743184dfb57c13526c
+  MakeActions b3e64d282c220fb028af7420464074c0
+  RebuildNever 306e5560b003dd223369de07d39c6a11
+  codegen b3e64d282c220fb028af7420464074c0
+  ffiCodegen b3e64d282c220fb028af7420464074c0
+  getInputTimestamp b3e64d282c220fb028af7420464074c0
+  getOutputTimestamp b3e64d282c220fb028af7420464074c0
+  progress b3e64d282c220fb028af7420464074c0
+  readExterns b3e64d282c220fb028af7420464074c0
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  ModuleName 1b2ddf0c04464d2fa2588925f10c1966
+import  -/  Paths_purescript b471cb3641a3834bb1f308b27437a78a
+  exports: 011ad501fbfaff6e4e651a7af4df7ce9
+  version 3901654c5f764cf9b152bdbd41b845d0
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
 import  -/  time-1.8.0.2:Data.Time.Clock 38823c785626821df1f9ec84dba1c4d7
 import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536acb5e422cc
-1f747311bad1bc3e4b45615aa9edb311
+bcec9ef6c97f4f8f38a00aef1071fec5
   $s$wsplit_$s$wpoly_go13 ::
     GHC.Prim.Int#
     -> Language.PureScript.Names.ModuleName
@@ -215,7 +224,7 @@ import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536
     -> (# Data.Map.Internal.Map Language.PureScript.Names.ModuleName a,
           Data.Map.Internal.Map Language.PureScript.Names.ModuleName a #)
   {- Arity: 6, Strictness: <L,A><S,U><L,U><L,U><L,U><S,U> -}
-43b30a7d1d4303bf8111e27a2dc72480
+eb1b53b57513cc292186cf8241180f4b
   $sinsertR_$sgo13 ::
     Language.PureScript.Names.ModuleName
     -> Language.PureScript.Names.ModuleName
@@ -223,7 +232,7 @@ import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
   {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
-50aa59b481339d3e1fec52630d2a841b
+0d8bb151130f745559aedb88d3f23416
   $sinsert_$s$sgo13 ::
     GHC.Prim.Int#
     -> Language.PureScript.Names.ModuleName
@@ -236,7 +245,7 @@ import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
   {- Arity: 8,
      Strictness: <L,U><S,U><L,U><L,U><L,U><L,U><S,1*U><L,U> -}
-51300da907146ba99deebbb0729fa885
+80b80b79d5c97b20a054b9e467ed609e
   $sinsert_$sgo13 ::
     Language.PureScript.Names.ModuleName
     -> Language.PureScript.Names.ModuleName
@@ -244,166 +253,166 @@ import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCTime 509e80f9ead2e875ca9536
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a1
   {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
-32ba4539f8d0b9320d24a974bcab8130
+51e189d3cb3919c695e2dfb59b52064d
   $slookup1 ::
     Language.PureScript.Names.ModuleName
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
     -> GHC.Base.Maybe a
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-ddf3f859aca538a236f9899fc987c673
+a90c1d0b26e61539c8334eb173b44b1a
   $smember1 ::
     Language.PureScript.Names.ModuleName
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
     -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-8b75d928636033ff9cb5c0b602a64665
+170a26b0098f60d04113a0d516f4d3cb
   $sunion ::
     Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
   {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
-509f0f6f676d52f63b4c0db86b40a135
+3bb635cfa140fe90a16038c9ae921af4
   $tc'BuildJob :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   13576967324161994086##
-                   16401370920484309188##
+                   8997149174736663318##
+                   6785552538893477731##
                    Language.PureScript.Make.BuildPlan.$trModule
                    Language.PureScript.Make.BuildPlan.$tc'BuildJob2
                    0#
                    Language.PureScript.Make.BuildPlan.$tc'BuildJob1) -}
-4761e78b2405fc3ecd2711e4f8ebfcaa
+508f3421391db041399aecc910401162
   $tc'BuildJob1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-0990d6b3ad308878ffd37104e2840731
+a43f976fd7d4d26560c45c57cd09233f
   $tc'BuildJob2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$tc'BuildJob3) -}
-8673121cdae559bdc5a9634e216a7a49
+250fcbf774613eb7043e2eb9767bac81
   $tc'BuildJob3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'BuildJob"#) -}
-02c8dd3074a34439e263fd882ff8e4b2
+80d1159b70d828ae992e27dd4b381ed3
   $tc'BuildPlan :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   2956679729254469509##
-                   12484537796050005329##
+                   11365768979679170202##
+                   16361659948474343538##
                    Language.PureScript.Make.BuildPlan.$trModule
                    Language.PureScript.Make.BuildPlan.$tc'BuildPlan2
                    0#
                    Language.PureScript.Make.BuildPlan.$tc'BuildPlan1) -}
-879d3268a7c883efdaf453d667e67ca4
+ea189ab7dc1c7a2de384cd73bdb6b94f
   $tc'BuildPlan1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-8a7be06cc46d8ed0516bdad953d0cea6
+1dbf068810c2a0b45db8cb5498fdec89
   $tc'BuildPlan2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$tc'BuildPlan3) -}
-8840a0f94228eab892983e19567f68a3
+a556696dafa47b3d1153f2fc0af5270a
   $tc'BuildPlan3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'BuildPlan"#) -}
-72d43eb3be73000152a685883fd72b97
+c22dcb764bd2119fdebe1e03e6454308
   $tc'Prebuilt :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   16253903004113196119##
-                   5470429067639815220##
+                   5018636920691226754##
+                   4986986342395376752##
                    Language.PureScript.Make.BuildPlan.$trModule
                    Language.PureScript.Make.BuildPlan.$tc'Prebuilt2
                    0#
                    Language.PureScript.Make.BuildPlan.$tc'Prebuilt1) -}
-e80a51ac4e5a29d07941df1438102da5
+1b509b3a5b66eb5504ec5673c5c1577e
   $tc'Prebuilt1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-87ae3215bb59bf15dfd2062bffd842af
+de824dc202d0da15014018a410423941
   $tc'Prebuilt2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$tc'Prebuilt3) -}
-0730035133ccfead6dbd2e82c21152b6
+34e1f0d5bcf65de90adc68501471eae1
   $tc'Prebuilt3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Prebuilt"#) -}
-2bf5d57ac4885f86b17dfc2b13ce2445
+7a3b2276ca127c6788ac07f68d55d7a0
   $tcBuildJob :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5726231491521958302##
-                   7278230996558105101##
+                   6209159575724360886##
+                   7402422143097266749##
                    Language.PureScript.Make.BuildPlan.$trModule
                    Language.PureScript.Make.BuildPlan.$tcBuildJob1
                    0#
                    GHC.Types.krep$*) -}
-3dbc0fbe8630b37e07901da7a2f93347
+4976e60df311919a17d7aef13ac7a432
   $tcBuildJob1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$tcBuildJob2) -}
-ea898ccae18956d50769b2281dbf5402
+c8c43ad1c986c89c8c751d322f63e05c
   $tcBuildJob2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("BuildJob"#) -}
-26b26ae6ef41a046f48e6a62c9952f9b
+44a10ae38d743f717f5e9b0d66f70bd9
   $tcBuildPlan :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   5426325307243713051##
-                   14494079455422213537##
+                   379009766717729149##
+                   14621033287304265062##
                    Language.PureScript.Make.BuildPlan.$trModule
                    Language.PureScript.Make.BuildPlan.$tcBuildPlan1
                    0#
                    GHC.Types.krep$*) -}
-f480d23055ab6608b0f111bf11571e57
+8e9e48f33011c1f1901356d856d12a26
   $tcBuildPlan1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$tcBuildPlan2) -}
-15c52cfc75bc3224a4eaf178461f3371
+fe12687d4110cb4f93802d4b14303a20
   $tcBuildPlan2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("BuildPlan"#) -}
-0c719a1d5f40c75fb27e89b8e9415140
+bcdf5db51e7d468f18f56a8864061058
   $tcPrebuilt :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   14070294443064896463##
-                   6858804907554537691##
+                   12988243944396192125##
+                   16608186729215470290##
                    Language.PureScript.Make.BuildPlan.$trModule
                    Language.PureScript.Make.BuildPlan.$tcPrebuilt1
                    0#
                    GHC.Types.krep$*) -}
-867dd9267929ace853ae40f2a47a2ac2
+c994d540c86d7910a1a7bae95dfb2b87
   $tcPrebuilt1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$tcPrebuilt2) -}
-82bb7f7a1d85019a322241071de82bb5
+0d97aadd89a2744605fa766077111022
   $tcPrebuilt2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Prebuilt"#) -}
-50965c2c85d4c627ce3a1c291c32d358
+b1757e790bc2e524a0ab56857632caec
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Make.BuildPlan.$trModule3
                    Language.PureScript.Make.BuildPlan.$trModule1) -}
-c3347a0bd8d937c6e4ef22b39d0d3882
+24ecbf019047f77ba0ee8a7a7fd1d830
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$trModule2) -}
-6d2d31aa38cb4102ec494665b1344899
+8edd06f52fec5962930991727b568353
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.Make.BuildPlan"#) -}
-c14c9c24a24d1ef6622529b7cb88ac8b
+6777b8c76c18d2cd23cc94abd328d385
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Make.BuildPlan.$trModule4) -}
-a4b4257e491f93310f5199ada0590b51
+2d425d1a9b55c9ed10f2ae07da01e448
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-74180056f1dc47e132d4a2b2f996b9e4
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+ec25fd2fd0cf4d8066e39fe0301768ab
   $wconstruct ::
     (GHC.Base.Monad m,
      Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m) =>
@@ -422,7 +431,7 @@ a4b4257e491f93310f5199ada0590b51
   {- Arity: 7,
      Strictness: <L,1*U(1*U(1*U(C(C1(U)),A),C(U),A,A,A,A),A,A,A,A)><S(S(LLLS(LC(C(S))LLL)L)LL),1*U(1*U(A,1*U(1*U(1*C1(C1(U)),A),C(U),1*C1(C1(U)),A,A,A),A,1*U(A,C(C1(U)),A,U,A),C(U)),A,A)><L,C(U)><L,C(U)><L,C(U)><L,U><L,U>,
      Inline: [0] -}
-de7b042d5c4f7973707fc2ac4d4ec021
+93c69ef9f3ed5ccef72f72d8ba2f3e24
   $wgetResult ::
     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
     Data.Map.Internal.Map
@@ -510,14 +519,14 @@ de7b042d5c4f7973707fc2ac4d4ec021
                             (Sym (Language.PureScript.Errors.N:MultipleErrors[0])),
                             case es of wild1 { Language.PureScript.Make.BuildPlan.Prebuilt ds ds1 ->
                             ds1 })) }) -}
-c9f1c0ff88e129da68eb40ff0b5b28de
+1527ef76c38484faaceae26294ed2733
   $wpoly_go13 ::
     Language.PureScript.Names.ModuleName
     -> Data.Map.Internal.Map Language.PureScript.Names.ModuleName a
     -> (# Data.Map.Internal.Map Language.PureScript.Names.ModuleName a,
           Data.Map.Internal.Map Language.PureScript.Names.ModuleName a #)
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
-70e83e040ee74bfa6fed274d545ea61e
+c8cf62e0c07c6a42d85c83aeec4a5f2d
   data BuildJob
     = BuildJob {bjResult :: GHC.MVar.MVar
                               (GHC.Base.Maybe
@@ -525,7 +534,7 @@ c9f1c0ff88e129da68eb40ff0b5b28de
                                   Language.PureScript.Externs.ExternsFile)),
                 bjErrors :: GHC.MVar.MVar
                               (GHC.Base.Maybe Language.PureScript.Errors.MultipleErrors)}
-fd94fb7b1f46e222632dbdabb28778dc
+1784c2f09a85aa812174619b584a41d2
   data BuildPlan
     = BuildPlan {bpPrebuilt :: Data.Map.Internal.Map
                                  Language.PureScript.Names.ModuleName
@@ -533,11 +542,11 @@ fd94fb7b1f46e222632dbdabb28778dc
                  bpBuildJobs :: Data.Map.Internal.Map
                                   Language.PureScript.Names.ModuleName
                                   Language.PureScript.Make.BuildPlan.BuildJob}
-583f45c891ab2cdfe1dd161e7d82af01
+716c8dc94144e0f2aeb29033a34f3d25
   data Prebuilt
     = Prebuilt {pbModificationTime :: Data.Time.Clock.Internal.UTCTime.UTCTime,
                 pbExternsFile :: Language.PureScript.Externs.ExternsFile}
-70e83e040ee74bfa6fed274d545ea61e
+c8cf62e0c07c6a42d85c83aeec4a5f2d
   bjErrors ::
     Language.PureScript.Make.BuildPlan.BuildJob
     -> GHC.MVar.MVar
@@ -548,7 +557,7 @@ fd94fb7b1f46e222632dbdabb28778dc
                 (\ (ds :: Language.PureScript.Make.BuildPlan.BuildJob) ->
                  case ds of wild { Language.PureScript.Make.BuildPlan.BuildJob ds1 ds2 ->
                  ds2 }) -}
-70e83e040ee74bfa6fed274d545ea61e
+c8cf62e0c07c6a42d85c83aeec4a5f2d
   bjResult ::
     Language.PureScript.Make.BuildPlan.BuildJob
     -> GHC.MVar.MVar
@@ -561,7 +570,7 @@ fd94fb7b1f46e222632dbdabb28778dc
                 (\ (ds :: Language.PureScript.Make.BuildPlan.BuildJob) ->
                  case ds of wild { Language.PureScript.Make.BuildPlan.BuildJob ds1 ds2 ->
                  ds1 }) -}
-fd94fb7b1f46e222632dbdabb28778dc
+1784c2f09a85aa812174619b584a41d2
   bpBuildJobs ::
     Language.PureScript.Make.BuildPlan.BuildPlan
     -> Data.Map.Internal.Map
@@ -573,7 +582,7 @@ fd94fb7b1f46e222632dbdabb28778dc
                 (\ (ds :: Language.PureScript.Make.BuildPlan.BuildPlan) ->
                  case ds of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds1 ds2 ->
                  ds2 }) -}
-fd94fb7b1f46e222632dbdabb28778dc
+1784c2f09a85aa812174619b584a41d2
   bpPrebuilt ::
     Language.PureScript.Make.BuildPlan.BuildPlan
     -> Data.Map.Internal.Map
@@ -585,7 +594,7 @@ fd94fb7b1f46e222632dbdabb28778dc
                 (\ (ds :: Language.PureScript.Make.BuildPlan.BuildPlan) ->
                  case ds of wild { Language.PureScript.Make.BuildPlan.BuildPlan ds1 ds2 ->
                  ds1 }) -}
-817ce435c9616b122d4040618d3493c7
+f0a757ecb29a2a60be15ec2eea576595
   collectErrors ::
     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
     Language.PureScript.Make.BuildPlan.BuildPlan
@@ -674,7 +683,7 @@ fd94fb7b1f46e222632dbdabb28778dc
                       (Data.Maybe.catMaybes1
                          @ Language.PureScript.Errors.MultipleErrors
                          errors))) -}
-72f9afc9f0ff26dd810052ba32dcbb24
+bf1a8520a880a8c6376c1bbf4e9e6a71
   collectResults ::
     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
     Language.PureScript.Make.BuildPlan.BuildPlan
@@ -683,7 +692,7 @@ fd94fb7b1f46e222632dbdabb28778dc
             Language.PureScript.Externs.ExternsFile)
   {- Arity: 2,
      Strictness: <S(S(LLLS(LC(C(S))LLL)L)LL),1*U(1*U(A,1*U(1*U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),A,1*U(A,1*C1(C1(U)),A,A,A),C(U)),A,A)><L,U(1*U,1*U)> -}
-b2e95301d97ab6457e6c04f5f58db2fd
+7d53db57d9de07e7b8dba939e8334168
   construct ::
     (GHC.Base.Monad m,
      Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m) =>
@@ -714,7 +723,7 @@ b2e95301d97ab6457e6c04f5f58db2fd
                    ww3
                    ww8
                    ww9 } }) -}
-b2c7cafd88f8701474962d0c29420727
+dc9a5541d8a5abf9cfd3a3bf8c64e98c
   getResult ::
     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
     Language.PureScript.Make.BuildPlan.BuildPlan
@@ -737,10 +746,10 @@ b2c7cafd88f8701474962d0c29420727
                    ww1
                    ww2
                    w2 }) -}
-12033c01a9164ab90f37028f6bf26e1d
+5f4903b6dccde5df1a6dbe657d76b4ed
   getResult1 :: Language.PureScript.Make.BuildPlan.BuildJob
   {- Strictness: x -}
-d90dc9d26f808c5d68f603ed65060e87
+6f3cb6c73db955854093d13073ae5743
   markComplete ::
     Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
     Language.PureScript.Make.BuildPlan.BuildPlan
@@ -821,10 +830,10 @@ d90dc9d26f808c5d68f603ed65060e87
                        (# s2#, GHC.Tuple.() #) } } })
                         `cast`
                       (Sym (GHC.Types.N:IO[0] <()>_R)))) -}
-09c4e35b2aad3e14d0bd9c63307c914d
+267ffef0bb1c7699580a845c6b88b49a
   markComplete1 :: Language.PureScript.Make.BuildPlan.BuildJob
   {- Strictness: x -}
-0f2ee93a50bcc8bd0cbdda0c347acfb2
+b549aee4d7993623f1b4c624db544b7d
   needsRebuild ::
     Language.PureScript.Make.BuildPlan.BuildPlan
     -> Language.PureScript.Names.ModuleName -> GHC.Types.Bool
@@ -837,7 +846,7 @@ d90dc9d26f808c5d68f603ed65060e87
                    @ Language.PureScript.Make.BuildPlan.BuildJob
                    moduleName
                    ds1 }) -}
-583f45c891ab2cdfe1dd161e7d82af01
+716c8dc94144e0f2aeb29033a34f3d25
   pbExternsFile ::
     Language.PureScript.Make.BuildPlan.Prebuilt
     -> Language.PureScript.Externs.ExternsFile
@@ -848,7 +857,7 @@ d90dc9d26f808c5d68f603ed65060e87
                 (\ (ds :: Language.PureScript.Make.BuildPlan.Prebuilt) ->
                  case ds of wild { Language.PureScript.Make.BuildPlan.Prebuilt ds1 ds2 ->
                  ds2 }) -}
-583f45c891ab2cdfe1dd161e7d82af01
+716c8dc94144e0f2aeb29033a34f3d25
   pbModificationTime ::
     Language.PureScript.Make.BuildPlan.Prebuilt
     -> Data.Time.Clock.Internal.UTCTime.UTCTime

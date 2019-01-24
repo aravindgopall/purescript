@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:28:23.891485 UTC
+2019-01-24 14:16:20.784621 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreImp.Optimizer.Common 8043
-  interface hash: ac024b5316f01acf5c90d9adc0a298dd
-  ABI hash: d1b700c07ed6677e35c7d0ef5c1d797a
-  export-list hash: 6b4d83e29381b01143d015e4188e1b4a
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.CoreImp.Optimizer.Common 8043
+  interface hash: 1ce146cb4ba5540fe75d6c2bce93be93
+  ABI hash: f77cc52a6dde77bba5df16c20fb29fac
+  export-list hash: 35654d9237eb883ff052c1e1ed279bb1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: bec0ba85914d2da9e0a4be22213f6c78
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -39,21 +39,24 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.PSString Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
-                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
-                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
-                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
-                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
-                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
-                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2
+                      random-1.1 scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -86,21 +89,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -120,53 +128,53 @@ import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
-import  -/  Language.PureScript.CoreImp.AST 66108f8b83c9a1c508a34f2e6114094e
-  exports: 1da27be6d04935ab665d52ac441d8230
-  AST 2d7016401e08dc68af93e9a4339f76ff
-  Assignment 96ad8db50ba48c6225a174431baf9676
-  Block ae40450aa1df093ea2f6b6a0b6380186
-  For 81a7750edd95cb398263d8f3ac1dcf04
-  ForIn 31053d303f2e985ae6bed80d42b67e41
-  Function 6a0d4d5d81b982f4c8eca9b6610fca93
-  Indexer 76027cc8e466bea1311cd2770f494b34
-  StringLiteral a6ff0f5bf676b04b36c1bcbec4e8d804
-  Var c3d3709a7644965f92d8326eb3be56cf
-  VariableIntroduction 47f714cb8440f55c999364abbec8bff7
-  everything 985b55d9675ee599ae2b170dd43f9772
-  everywhere 8ce9417ee75b74710133c4483c16425a
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
-  exports: 41608caf7cc5b51f34de641c9952ab6d
-  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+import  -/  Language.PureScript.CoreImp.AST e13d2052141e50eca2a5dfdad2a67d5a
+  exports: d4ba1e9a31e7dde56b84028e789bb579
+  AST 27e474366a6164e874a6d4e5cad82745
+  Assignment 2e4cb577a1928495b663b23c83a20417
+  Block 7fbe9eae8f7ef21e5be6cd4f87dbd7bb
+  For aa0b5c32e6a9797f40e678cc70c73aeb
+  ForIn c75cadf99554876e98286956580c490e
+  Function 2710f3d739ccf31052f17a06deb026c1
+  Indexer b754e3d8b497f4ad29c8bd5817cd1f9c
+  StringLiteral 60beb3f92e5b8969f2f1b00baaaee73d
+  Var 22edb01eb085c313bbae6149799eeeee
+  VariableIntroduction 564ecc61882b20dd946b2a6b65aaab39
+  everything 2db98064b3dee88f5ae4efc31c39a098
+  everywhere b72aec4edb3793e6cf984fe7c0beffe3
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.PSString 482bcd39d274b3e3efbde5749bd9d797
+  exports: dedd5d31dc509736134f041863efd1d4
+  PSString 96ffea2472d48cda76cc39d47ab7bb82
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
-97b7d149bad6427dbac108e68937fdf8
+f5a25ebf449af7601ac2b78c15f09b9a
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.CoreImp.Optimizer.Common.$trModule3
                    Language.PureScript.CoreImp.Optimizer.Common.$trModule1) -}
-17aff91521f154c69a5054075c16ffd8
+e33a5e510ae828ffc6a64bbb6542f7e3
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreImp.Optimizer.Common.$trModule2) -}
-4ec1ed1aea081c9340f216695a4f8b76
+5ac23cfe9e4f74635898297fb0da6fa1
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.CoreImp.Optimizer.Common"#) -}
-5987b0b95b96af6b9d58712c1b7a3d6b
+cf1d566a444ac4d985f6487d383afc27
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreImp.Optimizer.Common.$trModule4) -}
-866810de1f1574952d54cbc36b225d2c
+0429b5e417a68eebcee7d136d3b80185
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-ecb90082c85bdb84e168e5006d4b9d4e
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+0cd0d85821f9306bd3e3925da0d3d464
   $wisDict ::
     Data.Text.Internal.Text
     -> Language.PureScript.PSString.PSString
@@ -195,7 +203,7 @@ ecb90082c85bdb84e168e5006d4b9d4e
                                        (Language.PureScript.PSString.N:PSString[0]) of wild3 {
                                   GHC.Types.False -> GHC.Types.False
                                   GHC.Types.True -> Data.Text.$fEqText_$c== y ww } } } }) -}
-08a668726537f334aa8c502e17246480
+3363d918d9a2ed790eb2715c7758fea9
   applyAll :: [a -> a] -> a -> a
   {- Arity: 1, HasNoCafRefs,
      Unfolding: (\ @ a ->
@@ -204,7 +212,7 @@ ecb90082c85bdb84e168e5006d4b9d4e
                    @ (a -> a)
                    (GHC.Base.. @ a @ a @ a)
                    (GHC.Base.id @ a)) -}
-ed8e6ae6890dfcc089e7b80eb521297a
+ee71858a411ace591c46a330339c5634
   isDict ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
     -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
@@ -219,7 +227,7 @@ ed8e6ae6890dfcc089e7b80eb521297a
                    ww1
                    ww2
                    w1 }) -}
-3168dd94b4f73b7315062090fee0d79c
+a86047b1df479257652aae2b493d2f19
   isDict' ::
     [(Data.Text.Internal.Text, Language.PureScript.PSString.PSString)]
     -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
@@ -231,7 +239,7 @@ ed8e6ae6890dfcc089e7b80eb521297a
                     Language.PureScript.PSString.PSString)]>_R
                  ->_R <Language.PureScript.CoreImp.AST.AST>_R
                  ->_R Data.Semigroup.Internal.N:Any[0]) -}
-9e600dcb48564b43f6ebde15ac293cd0
+90e98718cc0b45fc93070808de74cbea
   isDict'1 ::
     [(Data.Text.Internal.Text, Language.PureScript.PSString.PSString)]
     -> Language.PureScript.CoreImp.AST.AST
@@ -262,7 +270,7 @@ ed8e6ae6890dfcc089e7b80eb521297a
                                (Sym (Data.Semigroup.Internal.N:Any[0])) } }
                  } in
                  go xs) -}
-d05ad96780973c00c709a3e8f98c4ee9
+f297005aa3b2c99542686f76d1b0f394
   isReassigned ::
     Data.Text.Internal.Text
     -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
@@ -293,7 +301,7 @@ d05ad96780973c00c709a3e8f98c4ee9
                       Language.PureScript.CoreImp.AST.ForIn ds1 arg ds2 ds3
                       -> Data.Text.$fEqText_$c== var1 arg })
                    eta) -}
-afe79a9faef69d36b5eed8390fa5d02b
+2a608c9b953027c723ee28cd977d1ba9
   isRebound ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
@@ -304,7 +312,7 @@ afe79a9faef69d36b5eed8390fa5d02b
                 (<Language.PureScript.CoreImp.AST.AST>_R
                  ->_R <Language.PureScript.CoreImp.AST.AST>_R
                  ->_R Data.Semigroup.Internal.N:Any[0]) -}
-5f83cdf0bff90b9520bb9c5945abc751
+70da2853f91cca64bf03ac8673fd5b52
   isRebound1 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -341,7 +349,7 @@ afe79a9faef69d36b5eed8390fa5d02b
                       (GHC.Base.++ @ Data.Text.Internal.Text)
                       Language.PureScript.CoreImp.Optimizer.Common.isRebound2
                       js)) -}
-b9fbb0d69101d5157ded43647f4c21d4
+cffdc75ad289979ef18e15ff4b3430cb
   isRebound2 ::
     Language.PureScript.CoreImp.AST.AST -> [Data.Text.Internal.Text]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
@@ -354,7 +362,7 @@ b9fbb0d69101d5157ded43647f4c21d4
                         @ Data.Text.Internal.Text
                         var
                         (GHC.Types.[] @ Data.Text.Internal.Text) }) -}
-8f09dd8940858e686de52dfa56a49e4d
+acf3f9de0e5d7b5be99a5d6739a85e91
   isUpdated ::
     Data.Text.Internal.Text
     -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
@@ -392,7 +400,7 @@ b9fbb0d69101d5157ded43647f4c21d4
                               case GHC.Prim.narrow32Int# ds4 of wild3 {
                                 DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } } } })
                    eta) -}
-d25c2f85017839ebf200197ade6e0dec
+44465718b00b47148105a31d0b97f7bf
   isUsed ::
     Data.Text.Internal.Text
     -> Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
@@ -432,7 +440,7 @@ d25c2f85017839ebf200197ade6e0dec
                               case GHC.Prim.narrow32Int# ds4 of wild3 {
                                 DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } } } })
                    eta) -}
-281994b35a4fd4cb5eceb2b42d1e5d18
+0157b87fb5bd12f4148618d6af3406a1
   removeFromBlock ::
     ([Language.PureScript.CoreImp.AST.AST]
      -> [Language.PureScript.CoreImp.AST.AST])
@@ -447,7 +455,7 @@ d25c2f85017839ebf200197ade6e0dec
                    DEFAULT -> wild
                    Language.PureScript.CoreImp.AST.Block ss sts
                    -> Language.PureScript.CoreImp.AST.Block ss (go sts) }) -}
-4bcd508bd97f20da235c609cf5c794b4
+6b7f7aeb3c0c280576b5070f6f2c2d32
   replaceIdent ::
     Data.Text.Internal.Text
     -> Language.PureScript.CoreImp.AST.AST
@@ -485,7 +493,7 @@ d25c2f85017839ebf200197ade6e0dec
                               case GHC.Prim.narrow32Int# ds3 of wild3 {
                                 DEFAULT -> wild 0# -> js } } } } } })
                    eta) -}
-b4f7daa1aa369c8e6cab34fa4406a534
+16f8035b8032093a965026a0eaff7a5e
   replaceIdents ::
     [(Data.Text.Internal.Text, Language.PureScript.CoreImp.AST.AST)]
     -> Language.PureScript.CoreImp.AST.AST
@@ -507,7 +515,7 @@ b4f7daa1aa369c8e6cab34fa4406a534
                                 vars of wild1 {
                            GHC.Base.Nothing -> wild GHC.Base.Just v1 -> v1 } })
                    eta) -}
-2ecb7ab677ce53abf2e578b2299dc3ee
+9286b5238844c6fafa4be0403609bbd0
   targetVariable ::
     Language.PureScript.CoreImp.AST.AST -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <S,1*U> -}

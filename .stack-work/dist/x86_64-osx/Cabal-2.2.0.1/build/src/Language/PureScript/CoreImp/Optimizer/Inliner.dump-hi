@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:28:24.754807 UTC
+2019-01-24 14:16:21.827559 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreImp.Optimizer.Inliner 8043
-  interface hash: c37a452e03830d1d499c7a0927f2f801
-  ABI hash: 94a95d1faf913ea900666cb0a9bd36cb
-  export-list hash: cd9c4a1d20eac08cccd5ddf6e37421e3
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.CoreImp.Optimizer.Inliner 8043
+  interface hash: 29b8655796cfd154ac49322d0d085de1
+  ABI hash: 3b14b1d80f4c19ad45b7f526e4f3b930
+  export-list hash: afeba31d14fa511bef4287e8d33b43ba
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: bec0ba85914d2da9e0a4be22213f6c78
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -39,21 +39,24 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
-                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
-                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
-                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
-                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
-                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
-                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2
+                      random-1.1 scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -86,21 +89,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -123,182 +131,182 @@ import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
 import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
-import  -/  Control.Monad.Supply.Class a5ac88ebb2786fa0ca39c7248b7c5b8f
-  exports: 91d489aaf16020272ece745e2b32bd17
-  MonadSupply 6a9f80f28cc3fad47a987fee945f2fd2
-  freshName c7b156bc37f8ecaaa383d28184cd1960
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
-  SourceSpan 73c071552214b3f18e94970349d3affc
-import  -/  Language.PureScript.Constants d290cccb0db8657cab5f1253ab0da1ee
-  exports: cd83a0f5b6591e5c66c598e34359260d
-  add 07a6e0e5307af6ac6c6cb39144224b3e
-  and 4750702e0b009376bd5a972ad34b5737
-  append 8a2a295b394233233460f66d1be1b5db
-  apply 1b3870406d0b271d04e51bc1c492b249
-  applyFlipped 12f341ea59e1ee33641a725d656e5ec6
-  bottom 7b2ab8eaa99ab570f3b4746f815e5d50
-  boundedBoolean 03c673ee96e983b04358895c9fae3553
-  complement d4778ae519ac1ab665e876b963183db9
-  compose e88b91e19e7e44a03bfb4490e650fe70
-  composeFlipped 3fd06d9e7faac5331184b8a2ad67840c
-  conj c0d86c82691ffc3459145b8fce70ae99
-  controlMonadEffUncurried 31784bd62e24d078063cb838b1f1b2fd
-  controlSemigroupoid 0913ade347e1cd99cc73ee362005d4b8
-  dataArray 2575ec3882fdc78d6d1862be7791b5d5
-  dataBounded 8decb64881f188cc0d8e9eb736f4a81e
-  dataEq 476bd793c1a492cf4c94206bdd121831
-  dataEuclideanRing 2d89c11f64028389631e7fb4e4addb2a
-  dataFunction 36f06366d854ac821b52597ae92dfbc4
-  dataFunctionUncurried 0ecd266398f91e512862a1a824a1e2da
-  dataHeytingAlgebra e49fbe52258b38d902404538b4cc9b50
-  dataIntBits 1837bf54b633552f2520c982ea878221
-  dataOrd 9df12f5acf79d7c5cebf9d55dfdfd506
-  dataRing 83bf92df355fdad644a9c772128125e5
-  dataSemigroup b3292bcdde2bc30c6af136078e416fbc
-  dataSemiring 728e964916156737ca9e29743df60e70
-  disj eef71ed336f6115c85694fbf34a89476
-  div 470add851aa7382de4b712edbbf3d3f0
-  effectUncurried d82eb212a82ebe3820e6103351920f0d
-  eq 54fce466423bcf0eeb91d3af0175f601
-  eqBoolean fe8b6b337c6d144aec1141d26b2b9fd7
-  eqChar 3b338b89c6d2eb0e0e23b324f5bf974a
-  eqInt 0c917913975381bcfbaf7248cbd4a53a
-  eqNumber 5c87331a392e22c8ee83881849603b2f
-  eqString acb847db11ac758adfb9eecb383c3310
-  euclideanRingNumber db7eb91e6637a79d581bd6fb9507d812
-  greaterThan fe77b46846c1b90d89c66594fbc8ea83
-  greaterThanOrEq bea583171ad9c688f1cafac7ad00fc7c
-  heytingAlgebraBoolean 1f1084392b615201440485f137b55861
-  lessThan a99670c8da61a9c228e865a95c09270c
-  lessThanOrEq 6c6b688a114d85bfa712afd89e9c1eaf
-  mkEffFn 29900fbb2c6c228374d53af3ff7323f5
-  mkEffectFn 6b053877428ab7c1bbcbeda4765dc541
-  mkFn cc24f8530d8ac0254d03fd510ce2ce35
-  mul 6bf6b20a38af1cf9da89913a96014896
-  negate e1b56b28dd4e93b9bdbc393809b558a0
-  not 131d7e92ac9d1f8e08c22efed858ca98
-  notEq b1ad73ff37e023b890e9ffb3e3fa3d5f
-  one 8da5e1db6530abbd3823bc107b3ab352
-  or 66d74837799bdec7031ebcda893b4f2d
-  ordBoolean fbd4aa98978b7f9e0b8bd7fcbd2339f5
-  ordChar 96fa655f02208f95917dc15935cb9ffa
-  ordInt 2645ec2ecfdf0e839455ded2341da162
-  ordNumber 5b5f8d198abc51b2342632dac17ac0e9
-  ordString dd91503ee4182416eb40d35a7c70b806
-  partialUnsafe e96e347f8d3b5f9e0ed36b28ee0955ef
-  ringInt 4f9edcd1f0006ebfd575733879d4ed74
-  ringNumber d3b4f8f42381dfd2aa4947b7941f37e4
-  runEffFn 0f8f05e28080fd6ddad8f51061654361
-  runEffectFn ce0996c2ba92684edbb31988398a2ff6
-  runFn 77b20863594c320186949163795b0d34
-  semigroupString 5228c40f9e52838eea65edc4d5dea935
-  semigroupoidFn b7199de3acf0152f7427088c15605169
-  semiringInt 645de9472e106ee948494c15c5725c7d
-  semiringNumber ea2e695041ab9e6f95cfbc01a3a39eb2
-  shl 829d2d0f612cd1bf3469efd3131f27c0
-  shr 551b89b8499e311bef46561f443a92bf
-  sub c2167ccfa9101a7ae6e83db6ce7ce562
-  top d6eb79bbe757b0ae47c44aa3647d61a6
-  undefined e59818a4be78c1acaccdcd57ca5c2293
-  unsafeCoerce d18b813e88b47a1c8284d98109aaf4fd
-  unsafeCoerceFn c8b0b7f5bfad86ae1f6c4341691618b2
-  unsafeIndex c8eed047561a1377e4a06fa3599fab86
-  unsafePartial be9e7e502aef2cbb016893c3d5c6cb17
-  xor 4227b2ec0a00301d30ac41a967461eca
-  zero 988a511b65375c52dd25bea1cef15fff
-  zshr 306c20b7b631c8d9c7324918991432f8
-import  -/  Language.PureScript.CoreImp.AST 66108f8b83c9a1c508a34f2e6114094e
-  exports: 1da27be6d04935ab665d52ac441d8230
-  AST 2d7016401e08dc68af93e9a4339f76ff
-  Add 7e5d84007ab9036383a6a6cccbc68513
-  And d78a5f0a6e4f1787fe8a41b415f31603
-  App d468a52c8340e49be5e7e3a8742c9aaf
-  Binary 2a933ca609152651cc6896eb3ba9b36d
-  BinaryOperator 18df6e381ca5d528fdf9b14543c09e16
-  BitwiseAnd cdd6abef165defefc5ffeba2e8ccdc24
-  BitwiseNot eb38db08b4302db666085b0e52874036
-  BitwiseOr 8d485c9ed22e1bc9522a8f246781c0c8
-  BitwiseXor 0d8bebc2c343ce6026506cdefc4158fc
-  Block ae40450aa1df093ea2f6b6a0b6380186
-  BooleanLiteral de16554a89d0104f6ca2ec3a3baff8bf
-  Divide 2b4c3e127a3610947dab982bf98855aa
-  EqualTo 274afe96e7e36c5dafe0f078e4e80022
-  Function 6a0d4d5d81b982f4c8eca9b6610fca93
-  GreaterThan a2765932b03b7b071e9fc5dd723b1830
-  GreaterThanOrEqualTo 4dab2f9dda7f9e5224e3842d0891f0c8
-  Indexer 76027cc8e466bea1311cd2770f494b34
-  LessThan f8e4c8c0271a3ea5dffe08d0b8471887
-  LessThanOrEqualTo aab372a1785ae43ddfd46f0ef153e28a
-  Multiply bb28e9c7e2b42f22ac3d2786213917d3
-  Negate 8b646499e2f6df1786796d7df426ed64
-  Not 415bbec2eee01da016123628f437e861
-  NotEqualTo 10cc5dd0d94665da69c109d2c3260882
-  NumericLiteral 189ef67e3cc2b6814f48cdba36b2c258
-  Or 7806b23607b9a3069168d5c50873e50c
-  Return cbec3880ff1a27efbadc035339cd78c6
-  ShiftLeft 06b2de7c0923eaa2cc584a5cebc28ae3
-  ShiftRight f7fd0c3e6e2663210cc79e2152f9d2ac
-  StringLiteral a6ff0f5bf676b04b36c1bcbec4e8d804
-  Subtract cad7adf2e0be0be6486ebcc0e0d24a5e
-  Unary 63c6298165339fcc21548384afa4c9f1
-  UnaryOperator 279962a5f124fddd93c8f8b35bde7cce
-  Var c3d3709a7644965f92d8326eb3be56cf
-  VariableIntroduction 47f714cb8440f55c999364abbec8bff7
-  ZeroFillShiftRight f107272cdb021598da4fa232df31ed15
-  everywhere 8ce9417ee75b74710133c4483c16425a
-  everywhereTopDown 9b50355bc857aa97a5e517d27220201c
-  everywhereTopDownM 5f88f494ab702b2ebcab457ec4859609
-import  -/  Language.PureScript.CoreImp.Optimizer.Common d1b700c07ed6677e35c7d0ef5c1d797a
-  exports: 6b4d83e29381b01143d015e4188e1b4a
-  applyAll 08a668726537f334aa8c502e17246480
-  isDict ed8e6ae6890dfcc089e7b80eb521297a
-  isDict' 3168dd94b4f73b7315062090fee0d79c
-  isReassigned d05ad96780973c00c709a3e8f98c4ee9
-  isRebound afe79a9faef69d36b5eed8390fa5d02b
-  isUpdated 8f09dd8940858e686de52dfa56a49e4d
-  removeFromBlock 281994b35a4fd4cb5eceb2b42d1e5d18
-  replaceIdent 4bcd508bd97f20da235c609cf5c794b4
-  replaceIdents b4f7daa1aa369c8e6cab34fa4406a534
-import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
-  exports: 41608caf7cc5b51f34de641c9952ab6d
-  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
+import  -/  Control.Monad.Supply.Class 4b0577d8897e2d48cd4fc324f0e8c355
+  exports: 9b5454b78bf2751cecd07ba41d8b4d51
+  MonadSupply 6fd5e162006451a17cf4a7ae2eb71bd2
+  freshName 3b42bd990d5e852928ea9f3f20a8c018
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.SourcePos 63acacac5b7be73d04e5be0047a9a89a
+  SourceSpan 1e0cf2bd3ea18f97a2ff152297f09219
+import  -/  Language.PureScript.Constants 69f48af5637c1cbbd07a6f85918359c3
+  exports: 9c458e31ccbc9e07ff15471cf48a55ee
+  add bc75330939bbdb0372a244a6d1213f36
+  and e43791a8a0d780c01beffeb04696877e
+  append fb527f4c5c460f597512daa24dea6309
+  apply 2965ad4d4a930a7136541d13817769db
+  applyFlipped db2fdd8ed168d53999a885c30d931f5a
+  bottom 28bf3b98ed5f9176957d82b44e467201
+  boundedBoolean 63dd05c310328435df05cbcb36f359e6
+  complement 1c77ba0fdf2e10b783871f847975f687
+  compose 29cdf472891adf8e8823f7f88105413a
+  composeFlipped 343e7ca99ba6921a7fc13dfe8a2c6051
+  conj 82f49a3d788cce8f918ed52038a33482
+  controlMonadEffUncurried 71a2385bd852903f020aba3174e33a8a
+  controlSemigroupoid a59870e3403c568c9cab4d87d53d6d24
+  dataArray 4e70940442d0072625e8cafa9973aaed
+  dataBounded c81aca5cfaea54a92f5123e3e4693e2d
+  dataEq 5a4e993b467928d86fa5cc85ac5bcd9c
+  dataEuclideanRing ed3ca2f8ef4b898452b0fc76b8b9382c
+  dataFunction 8d864d52c9be9ee646ee03db4368e7a4
+  dataFunctionUncurried ea5782602cbf4513b65e91e77c657763
+  dataHeytingAlgebra e2672a46611ab91453ec419b45a05e3f
+  dataIntBits 1259e6fec0549f14211c767e0b023173
+  dataOrd 809e14af05308feb48d3d8e631cc098c
+  dataRing 10596d38849da57891d20da3184ab2c2
+  dataSemigroup 0c5fb6817cb581312062d369dff33d17
+  dataSemiring e58e18cb310d7ccea383e37b71b9e2b6
+  disj fc32d34f19917fb5008e871568596f8c
+  div 93e092698a92a6af030645efa965e6c2
+  effectUncurried 28e67be309d165bfe7f20fe072c231b2
+  eq 75a29caf169679f02ace1903e716411f
+  eqBoolean 5d2ac078be93eece6818572cdac6b6be
+  eqChar a1d1b4aadd681a0b12ef0d5be193e87d
+  eqInt 75893ceb1d35d90dfc0460dfafcf82bc
+  eqNumber 4a7ff71645911044dbcac4fca60aea5c
+  eqString d8b90d3eb29d8c342604b26f4c43f104
+  euclideanRingNumber 4469082092d9dbc2a7d8a771cc7ac9ca
+  greaterThan ad63c4c1176f92a3070a12ee11f0bdf9
+  greaterThanOrEq cd2e59723a03a7ada96425fff59635f4
+  heytingAlgebraBoolean f0e2af4831196ce285081ad63f77edb4
+  lessThan 155e79391204f531bb1866fb28a28a5f
+  lessThanOrEq 24e0256d4d79ba00a0a0cd681ba29e17
+  mkEffFn ae996f9991512441af772f0153456aaf
+  mkEffectFn c4c8b2e4e4b7731b1506fd5764404656
+  mkFn 353f0eaa5442d7194b181f648c56f2d2
+  mul 03a7c1d6db30329a74b6f814ff9dba42
+  negate f20a91ad9d930a40924d2c7851e42a34
+  not 3a61f0b021f4103bb802de2382a3034e
+  notEq 4c79ba1d8cc950390aeca62574cd5aa9
+  one 1c4a21fb959ddebef28df9610df4da58
+  or ba667d8c2325fe01daaf239bc6477711
+  ordBoolean cb44df3e45ec19548de25c893e123039
+  ordChar 496cef7f2afb795c7cc69eb474fc16d9
+  ordInt 233495a6d0530257d6f3b1c7529ac5d7
+  ordNumber 3816ac7f4c66e6392f8014c48c7460ec
+  ordString 26b2376a5c1879d5a631cacbbe84ec15
+  partialUnsafe 11bf7b4478d4d3990999f71ced356339
+  ringInt 67c4a20ce55c983a5c7466d551c81c7f
+  ringNumber 2a25986bd0bef4b5bca19fa1db451d47
+  runEffFn 57d1d908bc26cf635aab6fddee198350
+  runEffectFn 9cededbaf4e4bddcb88920e28d0561fe
+  runFn 53d53c8c91dbf8972c0720e289c65935
+  semigroupString 519cb884fef1c0e6ceda4c1f2d76cc19
+  semigroupoidFn 6fcbb2908945fcb1888d06f3d5147030
+  semiringInt cba7c0c57da2d3daeefb67679f072d3c
+  semiringNumber 8acb95354fc73236590d44765ead5b65
+  shl 16067eb5693809f6d661037b729749af
+  shr 5b94dbd32a75da0cf7bae5da72ba3056
+  sub e0fcaf992855b3514c7e23756e4a6782
+  top 6ef390262a0ee3df612a942b1f7245ad
+  undefined b36b119b983e0cdb9453c1f408720756
+  unsafeCoerce 02c046c873fa7a0a2c1ce48e006fd86e
+  unsafeCoerceFn 63460ed21d334e9ff0d0df65fbb194b6
+  unsafeIndex c3c6cc9bcd0b8f8188d30325114b9f29
+  unsafePartial 57a2402a4fe19c5d2f262f447a276a86
+  xor 754fd6ac744b83d50a46a4c73fb52b27
+  zero e3308d06e8b90b23ebc4122b0c5c4945
+  zshr 98f0b811d01035bc61304b20846c30bd
+import  -/  Language.PureScript.CoreImp.AST e13d2052141e50eca2a5dfdad2a67d5a
+  exports: d4ba1e9a31e7dde56b84028e789bb579
+  AST 27e474366a6164e874a6d4e5cad82745
+  Add ee8a15bf68727ba38e3259f9d38ce000
+  And 8f00816debfa32cad0f15ad059f34f40
+  App 5abf9416415bc5ba651add3314a10fff
+  Binary 080096309bcbab903b0217978ad73d77
+  BinaryOperator 489f0b1ed508c6f848c3aae91aed6e07
+  BitwiseAnd ca64e038dc66df8563e163ba5053c42d
+  BitwiseNot c08141fcf210a6db833377173a21718c
+  BitwiseOr 626103fe48287518ea90198749c2453b
+  BitwiseXor 4d030de10ca2e2e941f3e7d550fef2f4
+  Block 7fbe9eae8f7ef21e5be6cd4f87dbd7bb
+  BooleanLiteral a84a7866637474e546180785e6edb816
+  Divide 92442e545926606e3ed41eac81269c09
+  EqualTo 0f986cc7cd79b0c38c6426e5ba77a2b4
+  Function 2710f3d739ccf31052f17a06deb026c1
+  GreaterThan c71ccf28ed4f4c93878d2a24d76eff35
+  GreaterThanOrEqualTo 82aa847ea3678ad3d8206089c32630cf
+  Indexer b754e3d8b497f4ad29c8bd5817cd1f9c
+  LessThan 075ac47b6d209105b9ef9ea3b4f60ae9
+  LessThanOrEqualTo 2890fb71be83399206ab06ef76cfd832
+  Multiply f8c939955ba418da8e70b5d9544273f1
+  Negate a398f8e5dcba8ddc9e41581101e5d959
+  Not fca5f655c10c599b512c4ffda42ebc61
+  NotEqualTo ffbe690215f48015d0d0e23fb00aa8b1
+  NumericLiteral e38711d9d729f5ebddad949c20bcac53
+  Or 58ced2b047db68c8d5ebe8cf67c0f61e
+  Return 8563204060a8b0a3f8d4adff3485df46
+  ShiftLeft 28c4707ec0257a78d05e065f8d46f35b
+  ShiftRight 2e644adac5ad8b5171dde047773390c0
+  StringLiteral 60beb3f92e5b8969f2f1b00baaaee73d
+  Subtract cf9d313242a222bc2b4b5981f4fed9c9
+  Unary 356b8c86a9d1db6d32ffd8003aeb3e81
+  UnaryOperator 25c18297338795f6f1b7341e3c4ca5dd
+  Var 22edb01eb085c313bbae6149799eeeee
+  VariableIntroduction 564ecc61882b20dd946b2a6b65aaab39
+  ZeroFillShiftRight 63466398f8e63366293629c88f7b1a97
+  everywhere b72aec4edb3793e6cf984fe7c0beffe3
+  everywhereTopDown 01ac618ec3874485a8c28a970ba13ab8
+  everywhereTopDownM 4b71f6abad916f1f31f0c3fb21573bdc
+import  -/  Language.PureScript.CoreImp.Optimizer.Common f77cc52a6dde77bba5df16c20fb29fac
+  exports: 35654d9237eb883ff052c1e1ed279bb1
+  applyAll 3363d918d9a2ed790eb2715c7758fea9
+  isDict ee71858a411ace591c46a330339c5634
+  isDict' a86047b1df479257652aae2b493d2f19
+  isReassigned f297005aa3b2c99542686f76d1b0f394
+  isRebound 2a608c9b953027c723ee28cd977d1ba9
+  isUpdated acf3f9de0e5d7b5be99a5d6739a85e91
+  removeFromBlock 0157b87fb5bd12f4148618d6af3406a1
+  replaceIdent 6b7f7aeb3c0c280576b5070f6f2c2d32
+  replaceIdents 16f8035b8032093a965026a0eaff7a5e
+import  -/  Language.PureScript.PSString 482bcd39d274b3e3efbde5749bd9d797
+  exports: dedd5d31dc509736134f041863efd1d4
+  PSString 96ffea2472d48cda76cc39d47ab7bb82
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
 import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
-2c339ecf80366632e7a3ed1d1e659b26
+13a7b7f9267bd1f70bb600c06383f0f8
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.CoreImp.Optimizer.Inliner.$trModule3
                    Language.PureScript.CoreImp.Optimizer.Inliner.$trModule1) -}
-c5314143cc6df366c20029354b3b4ceb
+dc5d6d94381a13b5e8e0e3c29072543d
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreImp.Optimizer.Inliner.$trModule2) -}
-55fdb8b9a227d8c3c4548876121c40bd
+cd017fb616714a0be00dce9d44ad441e
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.CoreImp.Optimizer.Inliner"#) -}
-b3aa8b1bbbc373bce2a10170c520e687
+fcfaa54ad987aee4c94f7ee4a5dc68ca
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreImp.Optimizer.Inliner.$trModule4) -}
-aed669639953b789f2f0dfdbf323913a
+64932213d7f780846db64a99b0931634
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-a14e47c49fd0a918dafd454b0014031b
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+daea0ffcb5055b19453f6622d397ee80
   etaConvert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 1,
      Unfolding: (Language.PureScript.CoreImp.AST.everywhere
                    Language.PureScript.CoreImp.Optimizer.Inliner.etaConvert_convert) -}
-cc5993576eb2d7145c03be14cdd21cb0
+3eefaa25f2d3118bd0869e6bf8248c70
   etaConvert_convert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -432,18 +440,18 @@ cc5993576eb2d7145c03be14cdd21cb0
                                                          go4 args
                                                       : ipv ipv1 -> wild } }
                                             GHC.Base.Just ipv -> wild } } } } } }) -}
-672c2c9e6ba91d3770639a25dd205c24
+908f2f54095481fda58bafc099ec3f7e
   evaluateIifes ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 1,
      Unfolding: (Language.PureScript.CoreImp.AST.everywhere
                    Language.PureScript.CoreImp.Optimizer.Inliner.evaluateIifes_convert) -}
-4df432593086cf91f77bc4e1eff67307
+51e77a449952957a76cd2e5acfad2dbe
   evaluateIifes1 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.undefined2) -}
-324031af8d8737451523bf9de8f16f34
+238a2f800e53f656291b1022ed6054b3
   evaluateIifes_convert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -531,7 +539,7 @@ cc5993576eb2d7145c03be14cdd21cb0
                                                       : ipv ipv1 -> fail GHC.Prim.void# } } } }
                                   : ipv ipv1 -> fail GHC.Prim.void# }
                              GHC.Base.Just ipv -> wild } } }) -}
-87200bb9628796cce19d5cb1d0b48bf1
+3eb3aa359666fccfa1605db8b9045acf
   inlineCommonOperators ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -542,7 +550,7 @@ cc5993576eb2d7145c03be14cdd21cb0
                 (<Language.PureScript.CoreImp.AST.AST>_R
                  ->_R Data.Functor.Identity.N:Identity[0]
                           <Language.PureScript.CoreImp.AST.AST>_R) -}
-0bb9801163c4df520838549b82065de2
+b43afece40a8008d7d9ffd73e1d3880e
   inlineCommonOperators1 ::
     Language.PureScript.CoreImp.AST.AST
     -> Data.Functor.Identity.Identity
@@ -557,7 +565,7 @@ cc5993576eb2d7145c03be14cdd21cb0
                     ->_R Sym (Data.Functor.Identity.N:Identity[0]
                                   <Language.PureScript.CoreImp.AST.AST>_R))
                    eta) -}
-848fdada04c9bb6b9081955f27adc57c
+c0a089de5ad17b184fd70b92d71cc100
   inlineCommonOperators10 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -567,7 +575,7 @@ cc5993576eb2d7145c03be14cdd21cb0
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators147
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators11) -}
-74cd4814386c3ba9939a72021aa596a1
+2d99759152d45a59e1426dcfe1a22f50
   inlineCommonOperators100 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -576,7 +584,7 @@ cc5993576eb2d7145c03be14cdd21cb0
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators95
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators101
                    Language.PureScript.CoreImp.AST.LessThanOrEqualTo) -}
-7aa95040e061f370a803afccc2e6bb82
+f5a88af20acd36da64b0442e73c00e72
   inlineCommonOperators101 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -584,11 +592,11 @@ cc5993576eb2d7145c03be14cdd21cb0
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators102
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-cfde5fccf4d51423d4609b1c3aaac8e9
+2ded45ea42dc8451c6349982620bb864
   inlineCommonOperators102 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.lessThanOrEq1) -}
-e9bbd9a86879bdc4b9d2e38ee2d12a38
+5d6dada20df6688c86558802fb8b8bfd
   inlineCommonOperators103 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -597,7 +605,7 @@ e9bbd9a86879bdc4b9d2e38ee2d12a38
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators95
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators104
                    Language.PureScript.CoreImp.AST.LessThan) -}
-3aa69fdd6197b83c4c9de1e5604ef389
+cfede9f79b6c400cadd6cb9b28779370
   inlineCommonOperators104 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -605,11 +613,11 @@ e9bbd9a86879bdc4b9d2e38ee2d12a38
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators105
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-e33dd6432361ac722d09279c3f3a8b79
+9d2e707bed0943e611266dd321f1f521
   inlineCommonOperators105 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.lessThan1) -}
-2ebc68c505c3f44f3bbc1d59f0c50af1
+ad2843e2b303609264ae6fe393eb3d62
   inlineCommonOperators106 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -618,7 +626,7 @@ e33dd6432361ac722d09279c3f3a8b79
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators107
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators92
                    Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo) -}
-a7b3c9fb2bf11e9380d432892702a044
+c99c615e22a4ff009962fd943f2b8805
   inlineCommonOperators107 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -626,11 +634,11 @@ a7b3c9fb2bf11e9380d432892702a044
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators108
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-94891fba627ca9672fc7131c540ca7a2
+cd44052e32700256457d32ac160b62aa
   inlineCommonOperators108 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.ordNumber1) -}
-557151bfe4082bdcb1d72dfbc221cb60
+9f745e378cc759561ddc19a9ebb3f88b
   inlineCommonOperators109 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -639,7 +647,7 @@ a7b3c9fb2bf11e9380d432892702a044
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators107
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators98
                    Language.PureScript.CoreImp.AST.GreaterThan) -}
-bb71ccf91067ec2b59101c3752a507b8
+2fb065d3f78e4711698e81bb938e83d1
   inlineCommonOperators11 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -649,7 +657,7 @@ bb71ccf91067ec2b59101c3752a507b8
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators146
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators12) -}
-f7708e5a9354d9c17c9f6f12b30f06c1
+f0399412dc54d25854d5e35317d581e5
   inlineCommonOperators110 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -658,7 +666,7 @@ f7708e5a9354d9c17c9f6f12b30f06c1
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators107
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators101
                    Language.PureScript.CoreImp.AST.LessThanOrEqualTo) -}
-5e9c000b2b5be5b43d3c0ae229c5c65b
+007c2b53ab3f96e5a0fea041bb099fb7
   inlineCommonOperators111 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -667,7 +675,7 @@ f7708e5a9354d9c17c9f6f12b30f06c1
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators107
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators104
                    Language.PureScript.CoreImp.AST.LessThan) -}
-add7c94c010ac2b36a60a206c3b4a685
+e921389f7347d36b8a41b1c68cce67d6
   inlineCommonOperators112 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -676,7 +684,7 @@ add7c94c010ac2b36a60a206c3b4a685
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators113
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators92
                    Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo) -}
-e7bf019cef28de8ac8f59bc0b341cec5
+6e0c514c542d3e73864f7717b4189514
   inlineCommonOperators113 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -684,11 +692,11 @@ e7bf019cef28de8ac8f59bc0b341cec5
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators114
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-039e8738556da5d8826dd2743bfab37d
+2e1d89d6b605fe7b0f603fd84c685b16
   inlineCommonOperators114 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.ordInt1) -}
-d7d608f588db208defc0db28d93b47bd
+9d3ab810f75fa20d70abe483b4cf170f
   inlineCommonOperators115 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -697,7 +705,7 @@ d7d608f588db208defc0db28d93b47bd
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators113
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators98
                    Language.PureScript.CoreImp.AST.GreaterThan) -}
-fb27bc2a6a478b845d20a9a951ee0f2f
+4fb7951b7c1a6bbd1d3ba57772b408f5
   inlineCommonOperators116 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -706,7 +714,7 @@ fb27bc2a6a478b845d20a9a951ee0f2f
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators113
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators101
                    Language.PureScript.CoreImp.AST.LessThanOrEqualTo) -}
-e8239ab67e7e304747dc45f6992456a3
+f8bf6d2c087dd7dd1f539c10e29f2561
   inlineCommonOperators117 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -715,7 +723,7 @@ e8239ab67e7e304747dc45f6992456a3
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators113
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators104
                    Language.PureScript.CoreImp.AST.LessThan) -}
-b92e210e73e33b77c99e03f60f986dfe
+5b43da1ca939625fb513a5be79398be6
   inlineCommonOperators118 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -724,7 +732,7 @@ b92e210e73e33b77c99e03f60f986dfe
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators119
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators92
                    Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo) -}
-b43458a02d3d3b86d593fd88c65c3d41
+7628df48403a92e10a88ee6ac0c74c82
   inlineCommonOperators119 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -732,7 +740,7 @@ b43458a02d3d3b86d593fd88c65c3d41
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators120
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-7da2cd25aebdd40499323a259e3d8ed9
+b22448c3e85f353b2bd06669903bbe6f
   inlineCommonOperators12 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -742,11 +750,11 @@ b43458a02d3d3b86d593fd88c65c3d41
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators143
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators13) -}
-d6215c2f1f822d9754e1d696e39e4221
+74252d7c834496a09d51bad17d4cbb7e
   inlineCommonOperators120 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.ordChar1) -}
-a027739a5907fc79ec5a17c74037e01c
+a6164576378ecef6718208fbaf82c3da
   inlineCommonOperators121 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -755,7 +763,7 @@ a027739a5907fc79ec5a17c74037e01c
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators119
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators98
                    Language.PureScript.CoreImp.AST.GreaterThan) -}
-e12f615f6ad8fd79c41f24f141d7b2bb
+917e6194c7a4eaeef3eb7a340683a81c
   inlineCommonOperators122 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -764,7 +772,7 @@ e12f615f6ad8fd79c41f24f141d7b2bb
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators119
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators101
                    Language.PureScript.CoreImp.AST.LessThanOrEqualTo) -}
-ca19f7849e7d53a2c7439b423ead6e89
+3f34f1bbed01bb9bdc204717a60b9ddd
   inlineCommonOperators123 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -773,7 +781,7 @@ ca19f7849e7d53a2c7439b423ead6e89
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators119
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators104
                    Language.PureScript.CoreImp.AST.LessThan) -}
-0861f587a3379660f84397adeb80c00f
+4987176c5d9461049ce27618afa62a1d
   inlineCommonOperators124 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -782,7 +790,7 @@ ca19f7849e7d53a2c7439b423ead6e89
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators125
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators92
                    Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo) -}
-59695943c2f582302cc35404262f964b
+314458d717490a59233d2d227fa3ed04
   inlineCommonOperators125 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -790,11 +798,11 @@ ca19f7849e7d53a2c7439b423ead6e89
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators126
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-dc8574c6dfd22fcd81060b7a7e236e45
+c2d784521905571620fb83f3c806e80b
   inlineCommonOperators126 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.ordBoolean1) -}
-927643b7aa816f7af504c1bbbb51f930
+1e0d92413fa66f850189049b690b1f6a
   inlineCommonOperators127 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -803,7 +811,7 @@ dc8574c6dfd22fcd81060b7a7e236e45
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators125
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators98
                    Language.PureScript.CoreImp.AST.GreaterThan) -}
-b816ee670463c771ad64703df2205f9d
+f7972bb81ec835ed27a935ae62151b7b
   inlineCommonOperators128 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -812,7 +820,7 @@ b816ee670463c771ad64703df2205f9d
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators125
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators101
                    Language.PureScript.CoreImp.AST.LessThanOrEqualTo) -}
-e3c5f3840fa9dd30d8219caef782ce5a
+c5e623c40558cb47d303fac994a583ab
   inlineCommonOperators129 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -821,7 +829,7 @@ e3c5f3840fa9dd30d8219caef782ce5a
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators125
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators104
                    Language.PureScript.CoreImp.AST.LessThan) -}
-94609f005a10e58bcfe4efe3c10c5976
+86b0e0d7ab51fe90582cb80728b3f111
   inlineCommonOperators13 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -831,7 +839,7 @@ e3c5f3840fa9dd30d8219caef782ce5a
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators142
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators14) -}
-7f94743dc950853bed8f923799ab8a5d
+2b4a0ee850445277f1f8dc02526faf74
   inlineCommonOperators130 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -840,7 +848,7 @@ e3c5f3840fa9dd30d8219caef782ce5a
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators134
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators131
                    Language.PureScript.CoreImp.AST.NotEqualTo) -}
-e167bcd657f9e80935216b80465aafea
+0f8f6e1219a470bd66a26fbe4a971039
   inlineCommonOperators131 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -848,15 +856,15 @@ e167bcd657f9e80935216b80465aafea
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators132
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-ae7c24bd8424b0b6f91915fd0ab94489
+a7c2110e13592235b87597d3fcba3279
   inlineCommonOperators132 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.notEq1) -}
-6ac2b6b130f490ac3d0073e81465ee49
+bbda72d6f4ac24200a951ae379dbeeae
   inlineCommonOperators133 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataEq2) -}
-3feb835bd0135671e7181a5be3bc848d
+97d1ec50d48ca665bd8fdab1de058d1b
   inlineCommonOperators134 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -864,11 +872,11 @@ ae7c24bd8424b0b6f91915fd0ab94489
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators135
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-f0f142752007ad62def5a7d8c87060d3
+2b322234e4f309744121b39af1403671
   inlineCommonOperators135 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.eqBoolean1) -}
-651420490274f57680ac436022da9baf
+f8e6ced0557c48aefaedc8a8cf2de9d6
   inlineCommonOperators136 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -877,7 +885,7 @@ f0f142752007ad62def5a7d8c87060d3
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators134
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators137
                    Language.PureScript.CoreImp.AST.EqualTo) -}
-de338eb22ce10d27abd3d6851898a425
+10b7160cf39c13d952d7f27b7ea73c8a
   inlineCommonOperators137 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -885,11 +893,11 @@ de338eb22ce10d27abd3d6851898a425
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators138
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-7f5802febccbf74c8d497d230b5fd9c4
+5b4d55b3523eb90941bed47d48f78f38
   inlineCommonOperators138 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.eq2) -}
-a25648a28a568fff7501c473a5d946ac
+b7cf2432cbaf3ee6cdfc6753868dc4bb
   inlineCommonOperators139 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -898,7 +906,7 @@ a25648a28a568fff7501c473a5d946ac
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators140
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators131
                    Language.PureScript.CoreImp.AST.NotEqualTo) -}
-2b7ab9d3d7d3d0bb4f1e68da2997f54f
+f0cdc9f4a4a577f6bf56071dcf4b0435
   inlineCommonOperators14 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -908,7 +916,7 @@ a25648a28a568fff7501c473a5d946ac
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators139
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators15) -}
-47ff54ae5bded71ce45357efc5905bf7
+1f29ca539d92b575ff7c137dc9af704c
   inlineCommonOperators140 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -916,11 +924,11 @@ a25648a28a568fff7501c473a5d946ac
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators141
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-05dfeb3cfa242255080ff6960363e578
+c9871545bd43356c5ecdd470a6bfd484
   inlineCommonOperators141 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.eqChar1) -}
-dd69de43396cd95fc97358a9d7f80426
+7b9833e0183c1531e9e8bc3d6750de06
   inlineCommonOperators142 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -929,7 +937,7 @@ dd69de43396cd95fc97358a9d7f80426
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators140
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators137
                    Language.PureScript.CoreImp.AST.EqualTo) -}
-32866ce55632a748a0c0e359152d0478
+5c7cbb0292c1f71284345222461c8675
   inlineCommonOperators143 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -938,7 +946,7 @@ dd69de43396cd95fc97358a9d7f80426
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators144
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators131
                    Language.PureScript.CoreImp.AST.NotEqualTo) -}
-63baa8c6c801d52f200508f71acdaf18
+528738bc47e4ad3eebe391ef3d62abe4
   inlineCommonOperators144 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -946,11 +954,11 @@ dd69de43396cd95fc97358a9d7f80426
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators145
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-09213489b9c93b3f465f6470875a1509
+0b982119546102730fd2df854f2b2fc0
   inlineCommonOperators145 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.eqString1) -}
-69d42d6312c5375d871c7db60fcb2ad7
+c2417c30b8748b8689981bf596bd259b
   inlineCommonOperators146 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -959,7 +967,7 @@ dd69de43396cd95fc97358a9d7f80426
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators144
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators137
                    Language.PureScript.CoreImp.AST.EqualTo) -}
-a5deca6d1a95042463c7354ed7656a0b
+1d55cc46d6fb3da49ac2a5794a777d34
   inlineCommonOperators147 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -968,7 +976,7 @@ a5deca6d1a95042463c7354ed7656a0b
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators148
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators131
                    Language.PureScript.CoreImp.AST.NotEqualTo) -}
-f6f262dfb25c37fa9bf5a36633fa76e0
+54de61a021a814e8d8adadd8e196197b
   inlineCommonOperators148 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -976,11 +984,11 @@ f6f262dfb25c37fa9bf5a36633fa76e0
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators149
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-004f73379790bcf4c239fcee4727eb03
+b392946c84a335af74fc6526a67da4a2
   inlineCommonOperators149 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.eqInt1) -}
-5d2adb65df8e1a4571a7b1ab3ccd40ef
+d1f2fd8fe8115e05a262b3767d5120ef
   inlineCommonOperators15 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -990,7 +998,7 @@ f6f262dfb25c37fa9bf5a36633fa76e0
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators136
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators16) -}
-a608584871bc2e8fa6bbf7be764e5c2b
+8b28dbe16c2c286684c53a12698bfcb9
   inlineCommonOperators150 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -999,7 +1007,7 @@ a608584871bc2e8fa6bbf7be764e5c2b
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators148
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators137
                    Language.PureScript.CoreImp.AST.EqualTo) -}
-16d65d9085fe9f5b61537f7e32e5117a
+cefb43aa952dab0b6ae164001c03aa85
   inlineCommonOperators151 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1008,7 +1016,7 @@ a608584871bc2e8fa6bbf7be764e5c2b
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators152
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators131
                    Language.PureScript.CoreImp.AST.NotEqualTo) -}
-e44ce3dd2b349870072c94ea199bebec
+110d5b2cefe0fc009864cdc708fefdf0
   inlineCommonOperators152 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1016,11 +1024,11 @@ e44ce3dd2b349870072c94ea199bebec
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators153
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-d38f79da64cd8ecaa931c81eae580ce7
+a3843ccfb5346221d0fb8d21769c82c1
   inlineCommonOperators153 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.eqNumber1) -}
-ad87999c8a55cddb2467538205047fcc
+4d6c113dca1809745e6aabd625c0f100
   inlineCommonOperators154 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1029,7 +1037,7 @@ ad87999c8a55cddb2467538205047fcc
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators152
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators137
                    Language.PureScript.CoreImp.AST.EqualTo) -}
-4a6e99b21c39684b1e453cee08a30beb
+86a3f128c0707b2eb1c1d1d804f4eef1
   inlineCommonOperators155 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1038,7 +1046,7 @@ ad87999c8a55cddb2467538205047fcc
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators159
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators156
                    Language.PureScript.CoreImp.AST.Divide) -}
-537cc1854f6c10f416dcc3fdc0401927
+6ff6336da95b4b6814a50da455871a6a
   inlineCommonOperators156 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1046,15 +1054,15 @@ ad87999c8a55cddb2467538205047fcc
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators157
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-a31d21c6ed6c71f05b8beaaae718569d
+60e7fe5ed055add265eefda347a94df1
   inlineCommonOperators157 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.div1) -}
-57e262e952f7cf345ab2038566888c3e
+c12dc7fecdb256b228d1e956222fde81
   inlineCommonOperators158 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataEuclideanRing2) -}
-61b6f6ce1e2104cf6dee6572f6898564
+3100b0ee27714cb1806e12c88bcd8ec7
   inlineCommonOperators159 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1062,7 +1070,7 @@ a31d21c6ed6c71f05b8beaaae718569d
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators160
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-d0f7e23a72cfe4bd5e00d3d5e4f05faa
+fe48f8cf2e7039a3df5edf3d3ec8d904
   inlineCommonOperators16 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1072,11 +1080,11 @@ d0f7e23a72cfe4bd5e00d3d5e4f05faa
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators130
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators17) -}
-a8b6f9f1312f0979619dd7312c9b1e86
+4fade25eed508244bb08a6ff23a9edd9
   inlineCommonOperators160 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.euclideanRingNumber1) -}
-2c4fd35ed0387afdf2aa7e0d532eb70a
+beb626e03cc93d870a962ba59313a27b
   inlineCommonOperators161 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1085,7 +1093,7 @@ a8b6f9f1312f0979619dd7312c9b1e86
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators165
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators162
                    Language.PureScript.CoreImp.AST.Negate) -}
-9ddca57e39b085a88766dfb5310b51b6
+3ebf614f49a134f8b2005c879dd3ea5e
   inlineCommonOperators162 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1093,15 +1101,15 @@ a8b6f9f1312f0979619dd7312c9b1e86
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators163
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-59e7d4058aa0b9b96da7cc408e1b44c3
+84de6b3e2ccd27f683d701ad9de66c0c
   inlineCommonOperators163 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.negate1) -}
-8e66eeca8dde12d490583fc7d2edc62b
+41377fd08df42bd9fc8d1a1e08fe4658
   inlineCommonOperators164 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataRing2) -}
-403867b02e20791ff0e2879e79aaf81c
+2dd51341051f3761cb2e3394d7d145d2
   inlineCommonOperators165 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1109,11 +1117,11 @@ a8b6f9f1312f0979619dd7312c9b1e86
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators166
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-0918aab5033d1f7d447740f666cda17b
+177367b121db338e312e31acaffef19f
   inlineCommonOperators166 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.ringNumber1) -}
-c8bdf17020ba408eb5f3b6d38a352d12
+20fc62a2cbc01946b0f274f0b88b9f4a
   inlineCommonOperators167 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1122,7 +1130,7 @@ c8bdf17020ba408eb5f3b6d38a352d12
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators165
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators168
                    Language.PureScript.CoreImp.AST.Subtract) -}
-d63f22b4d6952cff4e316d675b0aad76
+90c2444f6a39af65c7d6c68c202afaa0
   inlineCommonOperators168 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1130,11 +1138,11 @@ d63f22b4d6952cff4e316d675b0aad76
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators169
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-35fe68ae9ef43b6d1241db170611a874
+0fc473cee4bcea9bf7a5abf45dd76f50
   inlineCommonOperators169 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.sub1) -}
-a4d80ff5049b28d8ba310098904a2e8d
+5a212ff2bac5cc53f9e9350bae922bb2
   inlineCommonOperators17 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1144,7 +1152,7 @@ a4d80ff5049b28d8ba310098904a2e8d
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators129
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators18) -}
-88246bffe30f1a40a4df8ee3bdadf3cb
+23854c87773f47586442bf07b53423f2
   inlineCommonOperators170 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1153,7 +1161,7 @@ a4d80ff5049b28d8ba310098904a2e8d
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators174
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators171
                    Language.PureScript.CoreImp.AST.Multiply) -}
-e9b1e72d5497328ed185dc7fc5620001
+eefbffd6b3bd9dd514442564581f9e57
   inlineCommonOperators171 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1161,15 +1169,15 @@ e9b1e72d5497328ed185dc7fc5620001
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators172
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-5f14f349ff12ce62bfbd71b937794622
+095c23af6c90cc52fdf54cb24e5d1cf6
   inlineCommonOperators172 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.mul1) -}
-3a64f48ecb645fa387a7240c4033c349
+b26f6e9cd462d0f38afa40935e53f909
   inlineCommonOperators173 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataSemiring2) -}
-52d833a029597a2c67318874fd9d0ccc
+1f5f6604bceaff57de5f6a94c07ec41a
   inlineCommonOperators174 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -1177,11 +1185,11 @@ e9b1e72d5497328ed185dc7fc5620001
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators175
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-44913bfe014231fff2f09947197ed715
+36a820be8b93024c8431d4aa5a792a13
   inlineCommonOperators175 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.semiringNumber1) -}
-2ae9fc2be5be8495bb5a3d6812ba3425
+d6e26abb0551c6323e1bfb8d291ad0fa
   inlineCommonOperators18 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1191,7 +1199,7 @@ e9b1e72d5497328ed185dc7fc5620001
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators128
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators19) -}
-774ac5aab81116db76e40ec58f33a6b6
+9ad427ad66b38755d9dd51d2d6eb2a4f
   inlineCommonOperators19 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1201,7 +1209,7 @@ e9b1e72d5497328ed185dc7fc5620001
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators127
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators20) -}
-de41a175749c3a60b35fe04214a73bc0
+165bdfeddc984d61ad18e4bb8c6472d5
   inlineCommonOperators2 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1210,7 +1218,7 @@ de41a175749c3a60b35fe04214a73bc0
                 (\ (x :: Language.PureScript.CoreImp.AST.AST) ->
                  Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators_f10
                    x) -}
-203b93e257496b0a154ab20f86c7e2bb
+2ac95347d4cb499bfb06014148c4b019
   inlineCommonOperators20 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1220,7 +1228,7 @@ de41a175749c3a60b35fe04214a73bc0
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators124
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators21) -}
-41add0c2ed7172d025ef4bbaab41cd87
+86b2cc4843e7525e0a8b9e078a430584
   inlineCommonOperators21 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1230,7 +1238,7 @@ de41a175749c3a60b35fe04214a73bc0
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators123
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators22) -}
-2ee138e6732420be8b82844a1495e584
+8e6795a4116afe9223bfd0607ab0390a
   inlineCommonOperators22 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1240,7 +1248,7 @@ de41a175749c3a60b35fe04214a73bc0
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators122
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators23) -}
-bddce4b633283cb5b968f350ee0fd34d
+ac4786eb5d0bcbda57cccd0aee5d7261
   inlineCommonOperators23 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1250,7 +1258,7 @@ bddce4b633283cb5b968f350ee0fd34d
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators121
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators24) -}
-dbb61a8b1a0982735de40b34fae1427b
+426a0daa5418b05259152b5fb3001157
   inlineCommonOperators24 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1260,7 +1268,7 @@ dbb61a8b1a0982735de40b34fae1427b
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators118
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators25) -}
-8d34368a8d3bd29923a485f5f9ff4df8
+3154763942dd48ab83fff31811bb0f62
   inlineCommonOperators25 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1270,7 +1278,7 @@ dbb61a8b1a0982735de40b34fae1427b
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators117
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators26) -}
-773da16d89a41bb3bd706daa7f632021
+60ec2a14471cffba28f9b07e5438dfec
   inlineCommonOperators26 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1280,7 +1288,7 @@ dbb61a8b1a0982735de40b34fae1427b
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators116
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators27) -}
-c94c457b90b727cc99db2d2d515fe88e
+e3a8ead17c7738badd1d42454324805b
   inlineCommonOperators27 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1290,7 +1298,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators115
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators28) -}
-19919f92838b43e7bad51124c284299c
+b18199b1701beafc1190b62ad72fe4c6
   inlineCommonOperators28 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1300,7 +1308,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators112
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators29) -}
-037b9d8658ef92969005a0d999072909
+1e79a82d8fa5eaa066f7c44d4d495793
   inlineCommonOperators29 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1310,7 +1318,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators111
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators30) -}
-9cd121a9fccc13d93e31f42386954f97
+2a1a41b7d1cc60752a09082c20b170b9
   inlineCommonOperators3 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1320,7 +1328,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators170
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators4) -}
-1015b612ad89dff2d257902ce2638d6e
+9722791ccf3b71b581a38d826f1b1d4b
   inlineCommonOperators30 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1330,7 +1338,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators110
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators31) -}
-16b4c0c29a3aa4f6406d554d85fcfda4
+f925d1ae60fbdca8f86dd2add8a92d99
   inlineCommonOperators31 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1340,7 +1348,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators109
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators32) -}
-62c7ba9fdb7004080d01e4eef48bde8f
+c5179c16b8e78a872c69834553667a12
   inlineCommonOperators32 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1350,7 +1358,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators106
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators33) -}
-4bc78456c671e4c4da2241f6e064c387
+649de73a72fdf938ebd9917365684fd3
   inlineCommonOperators33 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1360,7 +1368,7 @@ c94c457b90b727cc99db2d2d515fe88e
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators103
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators34) -}
-df8a32bae76ee392e8d4c1c797829557
+b2ea826dcc11b4b8923ad66e33e9d1e4
   inlineCommonOperators34 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1370,7 +1378,7 @@ df8a32bae76ee392e8d4c1c797829557
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators100
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators35) -}
-e8db3a9663e6c411b3887d2ed5ea18b6
+ebc02aad7bba29439b6e6ce1b7f521a5
   inlineCommonOperators35 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1380,7 +1388,7 @@ e8db3a9663e6c411b3887d2ed5ea18b6
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators97
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators36) -}
-89cba2b7914f7cc53a68c9efe7a2a92e
+9942ea6ad7486d3262cc48f8769b9bf4
   inlineCommonOperators36 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1390,7 +1398,7 @@ e8db3a9663e6c411b3887d2ed5ea18b6
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators91
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators37) -}
-aea6aab8ff4ec922a604e1953266bba1
+8bb8fca261bbb288ec9f73adb982373d
   inlineCommonOperators37 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1400,7 +1408,7 @@ aea6aab8ff4ec922a604e1953266bba1
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators85
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators38) -}
-a540de98453bc0c2b798a193949613a9
+45c54e1629fffdd530b14c030c43e6aa
   inlineCommonOperators38 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1410,7 +1418,7 @@ a540de98453bc0c2b798a193949613a9
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators82
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators39) -}
-d0e89445acb333aa88f6fd532e231628
+925c4b539a0c2a1f46e8e3cb92abb5de
   inlineCommonOperators39 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1420,7 +1428,7 @@ d0e89445acb333aa88f6fd532e231628
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators79
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators40) -}
-7bea36826c07b51f64b93979007ba4bd
+f831f45991d7c60243b8eb02262f60c8
   inlineCommonOperators4 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1430,7 +1438,7 @@ d0e89445acb333aa88f6fd532e231628
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators167
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators5) -}
-cc63e63f80606522f0f5d3dc431aea87
+e99d66d6b4dc32a028b3237d1a5f7412
   inlineCommonOperators40 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1440,7 +1448,7 @@ cc63e63f80606522f0f5d3dc431aea87
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators73
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators41) -}
-4059069391854bc6e3086e0646eba04a
+7cf848cc2d5c409eb6f7be29c0834104
   inlineCommonOperators41 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1450,7 +1458,7 @@ cc63e63f80606522f0f5d3dc431aea87
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators71
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators42) -}
-9cd0c9d62c419c586fbc215f789693dd
+e18009fb09a0455604542aa177aa8117
   inlineCommonOperators42 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1460,7 +1468,7 @@ cc63e63f80606522f0f5d3dc431aea87
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators69
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators43) -}
-3ee3f4431bbbc9893d128b1ff97bbbc6
+d16db24c249ba48d2fd10f3e5d8d0964
   inlineCommonOperators43 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1470,7 +1478,7 @@ cc63e63f80606522f0f5d3dc431aea87
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators67
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators44) -}
-89abb2904fa5d033d49b4483cb9a1da3
+626c9da553a02e2203d9f1a8ec58b5c9
   inlineCommonOperators44 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1480,7 +1488,7 @@ cc63e63f80606522f0f5d3dc431aea87
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators65
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators45) -}
-b7aa49f40aa0aefb84f62e4fe3753d30
+e1b3ed0735cbe10c10941dc84d0637d4
   inlineCommonOperators45 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1490,7 +1498,7 @@ b7aa49f40aa0aefb84f62e4fe3753d30
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators63
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators46) -}
-3670a42d82b81fc7b40d2853f97b8403
+803c11539a2ba948f20c7693a13904f6
   inlineCommonOperators46 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1500,7 +1508,7 @@ b7aa49f40aa0aefb84f62e4fe3753d30
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators61
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators47) -}
-c80c7c92df195c12870c0d5516963943
+9c66a944b05e62765279cd071f2cf501
   inlineCommonOperators47 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1510,7 +1518,7 @@ c80c7c92df195c12870c0d5516963943
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators59
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators48) -}
-733d609369a55053b0d84407e0eed083
+e716d83351a9112f42fc5ad8d30f07a9
   inlineCommonOperators48 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1520,7 +1528,7 @@ c80c7c92df195c12870c0d5516963943
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators57
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators49) -}
-9e5ee70dd3efb0b18f6cab97894ddc0a
+996e08137ddc45786163a6f7a0c9e6f0
   inlineCommonOperators49 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1530,7 +1538,7 @@ c80c7c92df195c12870c0d5516963943
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators54
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators50) -}
-4171e9242168006a31e4228c89cbc740
+d242f19f21692afcf8f30b3a267603ee
   inlineCommonOperators5 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1540,7 +1548,7 @@ c80c7c92df195c12870c0d5516963943
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators161
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators6) -}
-aaf918395116284e012ff2beb5e7e742
+8d1356e7d755e1be397b25506a2bee6c
   inlineCommonOperators50 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1552,7 +1560,7 @@ aaf918395116284e012ff2beb5e7e742
                    (GHC.Types.[]
                       @ (Language.PureScript.CoreImp.AST.AST
                          -> Language.PureScript.CoreImp.AST.AST))) -}
-8be842a683530bd577732b14370926b6
+abf2b3e2ffae94d6ae4ec67de647d4f0
   inlineCommonOperators51 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1644,15 +1652,15 @@ aaf918395116284e012ff2beb5e7e742
                                                                                -> wild } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-c2c1dd20d2012addb78d04293a934be6
+a130276efef0bc5acad9a73c7bc21d50
   inlineCommonOperators52 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.unsafeIndex1) -}
-2e3d32ef0922e77d3fc19cd2e31445c6
+ea89d815bfa73d89f69bb94d3a0cdc39
   inlineCommonOperators53 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataArray2) -}
-8a24def118826c7039d50a67e77f5d45
+defe0189108f8936641a931630c44ef0
   inlineCommonOperators54 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1728,15 +1736,15 @@ c2c1dd20d2012addb78d04293a934be6
                                                                                      @ Language.PureScript.CoreImp.AST.AST)) } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-0bb40804e0328c5240b43324dd0758b6
+07379510abd7d8493c3c5ab8d82e4e5c
   inlineCommonOperators55 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.applyFlipped1) -}
-317454c311a9f9d0f545dfbd777230e6
+bdc0a319f5ff1b3a6d02f620b7203376
   inlineCommonOperators56 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataFunction2) -}
-9cd4ab9924ca12bf39b7c03f63232a94
+0e571c1c54299cc6cabde85555ea598a
   inlineCommonOperators57 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1812,11 +1820,11 @@ c2c1dd20d2012addb78d04293a934be6
                                                                                      @ Language.PureScript.CoreImp.AST.AST)) } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-4e42bb42eb58aa44761bdc0ef5173a22
+d8fa8541b16bbba4996ba6e84d38ef9d
   inlineCommonOperators58 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.apply1) -}
-528ff30b3da15029ae909594c1cb1fcf
+3e7ab01f7ed5d6be8b898b033f6b7b00
   inlineCommonOperators59 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1877,7 +1885,7 @@ c2c1dd20d2012addb78d04293a934be6
                                                                 Language.PureScript.CoreImp.AST.BitwiseNot
                                                                 x } } } } } } } } }
                              : ipv ipv1 -> wild } } }) -}
-e4d79560dc7b13d5b3b163a72ecfa1a2
+c124da2d8fbd878268bc30c458f51262
   inlineCommonOperators6 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -1887,11 +1895,11 @@ e4d79560dc7b13d5b3b163a72ecfa1a2
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators155
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators7) -}
-4d4b573fa1f3eeaf910297493189f7a5
+4513c715edb425d4f468cf900f4b4f23
   inlineCommonOperators60 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.complement1) -}
-681a979a32574c1929d2a407d766daba
+3ac3d00fab70901ca898e7ca7b205575
   inlineCommonOperators61 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -1968,11 +1976,11 @@ e4d79560dc7b13d5b3b163a72ecfa1a2
                                                                                y } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-a7e8d20cdc13fc554bb9085d78c1ae1b
+0a7a8728b87a496cb4f0137d149bf0b5
   inlineCommonOperators62 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.zshr1) -}
-2d83fa9e7f54dbef1801f5835690c021
+8f5eb0500366cd09390f0bc84f700ef3
   inlineCommonOperators63 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2049,11 +2057,11 @@ a7e8d20cdc13fc554bb9085d78c1ae1b
                                                                                y } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-421d4a1e4e432d89a734c135b0eba266
+2c50adfb1fd10166ea823f7a7bb07bb5
   inlineCommonOperators64 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.shr1) -}
-409bbf22e84bc06482e616818ccb6348
+d9f248187855a5d62ad45e8a88d14e78
   inlineCommonOperators65 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2130,11 +2138,11 @@ a7e8d20cdc13fc554bb9085d78c1ae1b
                                                                                y } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-4b1e78bc8d4f6073ef9a58f7f3e46afb
+7c1ec02aff674b28a9beeb3b6ba24ae3
   inlineCommonOperators66 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.shl1) -}
-5f9f264f550b1257fcbcc395f77f299e
+f984d5c10a6616acc0aa5cdfcf0f6191
   inlineCommonOperators67 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2211,11 +2219,11 @@ a7e8d20cdc13fc554bb9085d78c1ae1b
                                                                                y } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-abb20cb7af4febcdecd78408b91e6603
+9ffb29c75106e6de1a4251fce04dba67
   inlineCommonOperators68 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.xor1) -}
-29476081c4ed929fa557956aa3f58ca6
+abdb5abffe16c8ad368f332bbf1993ef
   inlineCommonOperators69 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2292,7 +2300,7 @@ abb20cb7af4febcdecd78408b91e6603
                                                                                y } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-a60401710ef3ba618a2f7c6e822fa5a7
+2699355c2855d2fbaec86f5c9a0ca4e0
   inlineCommonOperators7 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -2302,11 +2310,11 @@ a60401710ef3ba618a2f7c6e822fa5a7
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators154
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators8) -}
-fb76804aea19d264631326400c8bd2f4
+ca0fa8c7ce97e69bdcb1a95d9c76b34c
   inlineCommonOperators70 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.and1) -}
-51ec22402d3ebfe1fece84fc610f922d
+e57b57b280f7a5a2a1a710bc0c83397f
   inlineCommonOperators71 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2383,11 +2391,11 @@ fb76804aea19d264631326400c8bd2f4
                                                                                y } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-82619ca5d502989d11ac5ec9be44323b
+a31e1f5628184d338237ab1c869fadad
   inlineCommonOperators72 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.or1) -}
-a952b7c3967aab099837b6d8d392aca5
+61d29c770f2903b40cfa8d655092d427
   inlineCommonOperators73 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2396,7 +2404,7 @@ a952b7c3967aab099837b6d8d392aca5
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators77
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators74
                    Language.PureScript.CoreImp.AST.Not) -}
-f072408986acf71fa42e4fd44826afe3
+3f4f2b9003382f615a5386086d1fc31e
   inlineCommonOperators74 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2404,15 +2412,15 @@ f072408986acf71fa42e4fd44826afe3
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators75
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-60f96067edb59f6e747c26cf0071b210
+792b951572ccf4910389fa9c6a4c247b
   inlineCommonOperators75 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.not1) -}
-de246d4154e3ea89970bc62c5cc1563b
+81b2240fb3b79d97b7001a52ea6bcfae
   inlineCommonOperators76 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataHeytingAlgebra2) -}
-89479bf70c955537d1f0cad1934becfe
+101456b3647e2cda765091d654f8b0e5
   inlineCommonOperators77 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2420,11 +2428,11 @@ de246d4154e3ea89970bc62c5cc1563b
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators78
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-88f1af7e33dd2fe45dcb44d3a4315b73
+a99db54c1174ea43bd5793fed42d3387
   inlineCommonOperators78 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.heytingAlgebraBoolean1) -}
-6a78a6ea62e099eead829a08d34ed51d
+3ecc873b7d4d766dfe8d3589040ba10f
   inlineCommonOperators79 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2433,7 +2441,7 @@ de246d4154e3ea89970bc62c5cc1563b
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators77
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators80
                    Language.PureScript.CoreImp.AST.Or) -}
-c39c65d7449de06f28b89947850cf090
+b511ac3f73060bb2a1eb04213ac10478
   inlineCommonOperators8 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -2443,7 +2451,7 @@ c39c65d7449de06f28b89947850cf090
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators151
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators9) -}
-3f747f56a7ae2507afc717f12114a21b
+fb89f9a0745121d563fd54fc1866a842
   inlineCommonOperators80 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2451,11 +2459,11 @@ c39c65d7449de06f28b89947850cf090
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators81
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-3cbc37c2178cdcb7019d28234ba4b77d
+aec056ee678cb636ee440c01cc034524
   inlineCommonOperators81 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.disj1) -}
-4fc014c64bad46d44ac118787be46af2
+ccfd735e1078d83c3cc2424b63d6deae
   inlineCommonOperators82 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2464,7 +2472,7 @@ c39c65d7449de06f28b89947850cf090
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators77
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators83
                    Language.PureScript.CoreImp.AST.And) -}
-68f626aea38b2efeba300c05ed29a01a
+b1ea632fccfbabba2ff5d407ab29086e
   inlineCommonOperators83 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2472,11 +2480,11 @@ c39c65d7449de06f28b89947850cf090
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators84
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-62dc7ef6a73b61d30f3d0586b177dc2c
+ae49297d273cff859f1076ea445bbdf3
   inlineCommonOperators84 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.conj1) -}
-d917d6f0781bc60f5ada7ff0f246ae19
+49ce6be030b6635502b6da41f63348da
   inlineCommonOperators85 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2485,7 +2493,7 @@ d917d6f0781bc60f5ada7ff0f246ae19
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators89
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators86
                    Language.PureScript.CoreImp.AST.Add) -}
-9e85f3623e72774d6fe0c49022f9d20f
+cd98bd9762c01cf514e2a78cb2091a31
   inlineCommonOperators86 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2493,15 +2501,15 @@ d917d6f0781bc60f5ada7ff0f246ae19
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators87
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-5a722f11289c390ab49021636e779118
+fc22fa43c404e759ca90f43141d2fa42
   inlineCommonOperators87 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.append1) -}
-3f1ef6fc0582c8e6dfcaa1a4da739c36
+eb127dc5324914f692e84087487ae9c2
   inlineCommonOperators88 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataSemigroup2) -}
-e7e088857ac4fb7a0128e3e282ffaa1f
+af9b2c1e0af9c580636517bddd9d3bc7
   inlineCommonOperators89 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2509,7 +2517,7 @@ e7e088857ac4fb7a0128e3e282ffaa1f
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators90
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-3660e8b6a032228e865e5bd6eb096068
+06dd86562325a53df3caf10517a09d8f
   inlineCommonOperators9 ::
     [Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST]
@@ -2519,11 +2527,11 @@ e7e088857ac4fb7a0128e3e282ffaa1f
                       -> Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators150
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators10) -}
-88be3ec812791c1020159650bb917f78
+c556c770e3e6e6a6ebda940381b4fa07
   inlineCommonOperators90 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.semigroupString1) -}
-2ed3bd954444deb47dcba298d80e4d51
+95003c29f264b0386f0c72c70f782e4c
   inlineCommonOperators91 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2532,7 +2540,7 @@ e7e088857ac4fb7a0128e3e282ffaa1f
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators95
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators92
                    Language.PureScript.CoreImp.AST.GreaterThanOrEqualTo) -}
-a056a4f43c6b3c21d99b7b9203b59a06
+1b2b3c93f1aae279b5d2a2561f323ba6
   inlineCommonOperators92 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2540,15 +2548,15 @@ a056a4f43c6b3c21d99b7b9203b59a06
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators93
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-6a58fdbcd31869539975e35cd5d85438
+c9291a99384d62a1152c5ab964ad6962
   inlineCommonOperators93 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.greaterThanOrEq1) -}
-56706462649b01a106a0dfdc8bca361f
+69a1f0de88839fd0b12169ded6444ef9
   inlineCommonOperators94 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataOrd2) -}
-2964860face60c399bbb5d95b078dc54
+1c54208e3b87b6404e4d28cc901ff05b
   inlineCommonOperators95 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2556,11 +2564,11 @@ a056a4f43c6b3c21d99b7b9203b59a06
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators96
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-0b6e93f84d7d574118e5292ddc934b13
+0b8c5d7a01435a39b78c29973612b742
   inlineCommonOperators96 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.ordString1) -}
-40783b7f4e0aa0ba574dff3b1ea7c0c9
+3f8e17139528131ede5217bb0af4a150
   inlineCommonOperators97 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2569,7 +2577,7 @@ a056a4f43c6b3c21d99b7b9203b59a06
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators95
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators98
                    Language.PureScript.CoreImp.AST.GreaterThan) -}
-f77582543de4a6e348ca2c3ac607790f
+06e81102599c5a0b02f35cac19c793ae
   inlineCommonOperators98 ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
   {- Strictness: m,
@@ -2577,11 +2585,11 @@ f77582543de4a6e348ca2c3ac607790f
                   Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators99
                     `cast`
                   (Sym (Language.PureScript.PSString.N:PSString[0])))) -}
-102158de5a6ce0185d75ff2b0867236b
+eb22b168305822307a258abe083bbbe2
   inlineCommonOperators99 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.greaterThan1) -}
-5cd4d6aa1b06f5d1e5300adea4e9ebc3
+189d1666659f5174f3989a991dd276b6
   inlineCommonOperators_$sgo ::
     (Language.PureScript.CoreImp.AST.AST
      -> Language.PureScript.CoreImp.AST.AST)
@@ -2590,7 +2598,7 @@ f77582543de4a6e348ca2c3ac607790f
     -> Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
-117bba7a8e3e6cb06351283ee9d16ee9
+0c17c4efe494c1d34c76abd12c3a198a
   inlineCommonOperators_binary ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
     -> (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
@@ -2747,18 +2755,18 @@ f77582543de4a6e348ca2c3ac607790f
                                                            : ipv ipv1 -> wild } }
                                                  : ipv ipv1 -> wild } }
                                        : ipv ipv1 -> wild } } } } }) -}
-a44daf1e100c27c668b2d02c97be0bf5
+d012f7548fe64910f36157d8ee6b90cb
   inlineCommonOperators_f10 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Unfolding: (Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators_$sgo
                    (GHC.Base.id @ Language.PureScript.CoreImp.AST.AST)
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonOperators3) -}
-4a3f2cbb0482d55734ea42782e5bbb16
+05f965f8b296bfe7774ca723c3b23aca
   inlineCommonOperators_moduleName :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.dataIntBits2) -}
-2b739435e7e16d9948585eb294b43c8c
+ecb7e12c7ae7574e854a76a03a2240c4
   inlineCommonOperators_unary ::
     (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
     -> (Data.Text.Internal.Text, Language.PureScript.PSString.PSString)
@@ -2901,26 +2909,26 @@ a44daf1e100c27c668b2d02c97be0bf5
                                                                                                              x } } } } } } } } } } } } } } } } } } } }
                                             : ipv ipv1 -> wild } }
                                   : ipv ipv1 -> wild } } } }) -}
-7fc17936279f21a3797d00ed5c9cf004
+1546fccc0bbb9816085728b2e2878c96
   inlineCommonValues ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 1,
      Unfolding: (Language.PureScript.CoreImp.AST.everywhere
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineCommonValues_convert) -}
-8e50909850f5033fc149a465c4e658a2
+7f16e84e1c75754c8c76999a875a5a32
   inlineCommonValues_convert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 1, Strictness: <S,1*U> -}
-a35150853dcb45d36b37e64faba55d9e
+9b208a3bb67df4eea8d35355900fee48
   inlineFnComposition ::
     Control.Monad.Supply.Class.MonadSupply m =>
     Language.PureScript.CoreImp.AST.AST
     -> m Language.PureScript.CoreImp.AST.AST
   {- Arity: 2,
      Strictness: <S(S(LC(C(S))LLL)LL),U(U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,C(U),A),U,A)><L,U> -}
-2e1caeaf9b6f39a12b76d16ee7977123
+43e16a7b66de9b1553b5916d932d4f93
   inlineUnsafeCoerce ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -2931,7 +2939,7 @@ a35150853dcb45d36b37e64faba55d9e
                 (<Language.PureScript.CoreImp.AST.AST>_R
                  ->_R Data.Functor.Identity.N:Identity[0]
                           <Language.PureScript.CoreImp.AST.AST>_R) -}
-07ab7194edeee481de11b1256b10432f
+00f31879f246d25924f6d50bc11c2ec7
   inlineUnsafeCoerce1 ::
     Language.PureScript.CoreImp.AST.AST
     -> Data.Functor.Identity.Identity
@@ -2946,15 +2954,15 @@ a35150853dcb45d36b37e64faba55d9e
                     ->_R Sym (Data.Functor.Identity.N:Identity[0]
                                   <Language.PureScript.CoreImp.AST.AST>_R))
                    eta) -}
-8da2758baffba073bc6c3662708121f9
+6ef4b7cc6f8968e230a99ea6aa746b05
   inlineUnsafeCoerce2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.unsafeCoerce2) -}
-82a74ce075cfd8fec4d2989f7e0b731b
+31df9507b0c01d18b6c2b9ae0b2bc054
   inlineUnsafeCoerce3 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.unsafeCoerceFn1) -}
-8665837ab9d6bf9638aa24c8d5b746d2
+edf1bc997684fecd547639a580dcf982
   inlineUnsafeCoerce_convert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -3010,7 +3018,7 @@ a35150853dcb45d36b37e64faba55d9e
                                                          case GHC.Prim.narrow32Int# ds17 of wild10 {
                                                            DEFAULT -> wild 0# -> comp } } } } } }
                                             : ipv ipv1 -> wild } } } } } }) -}
-27b56ffaa28355d06f7f77d32dcb631d
+a0bfffd7cdaa1c458702fc8d653c0511
   inlineUnsafePartial ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -3021,7 +3029,7 @@ a35150853dcb45d36b37e64faba55d9e
                 (<Language.PureScript.CoreImp.AST.AST>_R
                  ->_R Data.Functor.Identity.N:Identity[0]
                           <Language.PureScript.CoreImp.AST.AST>_R) -}
-40fb1446df0ed71562e03e6c2a6b2c35
+ed0f0520fff91c6a285130c848a0441c
   inlineUnsafePartial1 ::
     Language.PureScript.CoreImp.AST.AST
     -> Data.Functor.Identity.Identity
@@ -3036,15 +3044,15 @@ a35150853dcb45d36b37e64faba55d9e
                     ->_R Sym (Data.Functor.Identity.N:Identity[0]
                                   <Language.PureScript.CoreImp.AST.AST>_R))
                    eta) -}
-c194f18b0f97204c8871268ecdc3f65a
+b8f8c84336a812104dcb0a4002eb6d9c
   inlineUnsafePartial2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.Constants.partialUnsafe2) -}
-710524ee44967ddb61193b5bbc8bf190
+1304bbd7cebd3eff5762aaaf2aa9e696
   inlineUnsafePartial3 :: [GHC.Word.Word16]
   {- Unfolding: (Language.PureScript.PSString.$fIsStringPSString_go
                    Language.PureScript.Constants.unsafePartial1) -}
-eba8c270c3555e084f006227817d49c4
+6817b5494205581910fa4071e2151964
   inlineUnsafePartial_convert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -3111,14 +3119,14 @@ eba8c270c3555e084f006227817d49c4
                                                                    (GHC.Types.[]
                                                                       @ Language.PureScript.CoreImp.AST.AST)) } } } } } }
                                             : ipv ipv1 -> wild } } } } } }) -}
-c31b430c55e8ce4c0972df682801bdca
+c018a4657d69037e6f86dd973eac77b1
   inlineVariables ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 1,
      Unfolding: (Language.PureScript.CoreImp.AST.everywhere
                    Language.PureScript.CoreImp.Optimizer.Inliner.inlineVariables1) -}
-fea40f6cbe8af30dc6a240c5f63854d8
+55e20f75a1c8023bf641acde3ebf5772
   inlineVariables1 ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
@@ -3132,23 +3140,23 @@ fea40f6cbe8af30dc6a240c5f63854d8
                         ss
                         (Language.PureScript.CoreImp.Optimizer.Inliner.inlineVariables_go
                            sts) }) -}
-17ef0d4a669e5bc2b93c0887673db96d
+a80ea8a7f8d446958013014d322a8f09
   inlineVariables_go ::
     [Language.PureScript.CoreImp.AST.AST]
     -> [Language.PureScript.CoreImp.AST.AST]
   {- Arity: 1, Strictness: <S,1*U> -}
-bd3e4c63e560c15fc8932bf7e6470767
+5f13148ab9e6a4d2e33159592625ee4e
   shouldInline ::
     Language.PureScript.CoreImp.AST.AST -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-8855fbc5e426bd8664ffa5fc0b3da7bb
+5958d7afb9a3d44dcf7ff61b3a053aa6
   unThunk ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST
   {- Arity: 1,
      Unfolding: (Language.PureScript.CoreImp.AST.everywhere
                    Language.PureScript.CoreImp.Optimizer.Inliner.unThunk_convert) -}
-89fa19c850e3f516d137275502dc5520
+85d42b2b8ad0ea11f7532f50c783b307
   unThunk_convert ::
     Language.PureScript.CoreImp.AST.AST
     -> Language.PureScript.CoreImp.AST.AST

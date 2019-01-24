@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:47:46.223628 UTC
+2019-01-24 14:16:00.722603 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Parser 8043
-  interface hash: cc677aa638dd4532774638ee0736655d
-  ABI hash: 1b692a755e4923ec071834c79ee69c88
-  export-list hash: ef38a8271746ca1dd5aed3e5bcb3e65b
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Parser 8043
+  interface hash: 7a82f0d0617d507bb0488d5fd5acf395
+  ABI hash: bc742b65ed1657f4aad0d05eb2bd920e
+  export-list hash: 3d7c8ec535fb33ab60b62f5949666b86
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 2ae478d21823b7c739b1b08c46262eb0
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -138,23 +138,26 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parallel-3.2.1.1
-                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
-                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
-                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
-                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parallel-3.2.1.1 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0
+                      syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
          stm-2.4.5.0:Control.Monad.STM
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -188,21 +191,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -215,151 +223,151 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          vector-0.12.0.1:Data.Vector.Storable
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
-import  -/  Language.PureScript.Parser.Common cd9daf83419acf425eed3583730b480a
-  exports: 46bd02a8c6d64be727c6d765fa3bb721
-  augment e9f411f22e4ed15223df18eb1d48864e
-  buildPostfixParser 0bd2e87c8916f4bf57e37d9b9eed33c4
-  checkIndentation a29237dfc6479563d6167512c8403906
-  dataConstructorName c673423726cdeac709a9b8a94b91d2d5
-  fold c86dc0abad51b21aee480b0569ce7c41
-  indented bc6c10485ef3bfbad029ca5a263a854b
-  kindName 85c59bdb688906d737599621e944754c
-  mark 2ad046408a3c133048b49f3cd5cd27f0
-  moduleName a4b3dc7f1f6a0f3f18a171cce5dad912
-  parseIdent 955eb3247a0ae016694c4b540be1ad3c
-  parseLabel 5d5f0c60f50fdd7734a4bd8d2727fe88
-  parseOperator 0f9ad6f2b0ed49a70d76eb8788742d31
-  parseQualified ac9710478dd7246a70e7f3c6aa1c0eda
-  properName 0e6e637731d45ae3c8a5e4efcad68e14
-  readComments 4f4d95fb63de1698482287acd63d2ead
-  runTokenParser 22c139ae6db58097fa5b3743e91aefec
-  same f899cc54828f4d66d21063bc6fd9a8de
-  toSourcePos 71cf21379f9fd1b46ee2659589f2b56e
-  typeName ae3f3b3362cf8cb09f694b81d7def8b1
-  withSourceAnnF 84117a8980c6ce2bda979df2553ad121
-  withSourceSpan c64753ccc1f09925712afdb91cea8bb9
-  withSourceSpan' aa5f8079b29a1c75acc68e838ced81c3
-  withSourceSpanF b4f5349a85067feb202053d8eb0a2e4a
-import  -/  Language.PureScript.Parser.Declarations daa54c419c9085317ab3aee8fcf82eb2
-  exports: 8faed9c261210df111336f7d448e8368
-  parseBinder f127c2ed93af728c15859f7ab7b85f57
-  parseBinderNoParens 1a3bff440b5b75f6790eab9123d0c037
-  parseDeclaration 94d04bc8f4adac26438632bb58babfaa
-  parseDeclarationRef 0e1ab7fe0ead77e7d84afaa1370fd62c
-  parseGuard 7d8e0441b3e99c3e3dde3e9e8415a21d
-  parseImportDeclaration' fea0e58110d6854e5602b763985f4906
-  parseLocalDeclaration 80545d237df288c4263ec19f6fef72f5
-  parseModule e14bb98ce90ba24cbcfacb28393aeecb
-  parseModuleDeclaration 27901071699f8e311dd48d3e7924e87f
-  parseModuleFromFile 307699faeffc033195a42b2ff5bc65d3
-  parseModulesFromFiles 403e045e2e60467afb2ade6a3ac38642
-  parseValue 4b010ea60e0bb288098254fb9e096aaa
-  toPositionedError 60bc256c19913918bf53c1f451249ca1
-import  -/  Language.PureScript.Parser.Kinds 2fcc087f8cc2cd5e46d0be39dad8d447
-  exports: ba6aa7a1497db23f7cfdff00d0cc23c1
-  parseKind 9c499990453aee5e8555ac7989adf1fb
-import  -/  Language.PureScript.Parser.Lexer db153cafc807e1fa539fece18593da12
-  exports: 698a81285a16040f24e674c5083daf63
-  PositionedToken b362e3bc547e5f75b21f4ab812c86648
-  PositionedToken 015da505ab7d9bcbf17b066347ec1288
-  Token bd047d26d792e100b7cef064aba1e7f6
-  TokenParser 187b24d9915c74f6cd19336cd3ce961b
-  anyToken 13ff47b18f74925c023f931286c55ea9
-  at 275a946428a4a6aa71a319f60d570be8
-  braces b26ec2b99dfa76b3b95a07e0b9efe061
-  charLiteral 9895db113a76865049e7e79ad83bb873
-  colon b143968510ff6fbe8b56445c23e770f1
-  comma 791c67369d64a7957db4c9296a5f4536
-  commaSep d353b58fd203544763c113c2ba09a113
-  commaSep1 b322b1c526c474b09842312f0b11d610
-  dconsname c62058e002a41518edc5eb7a4d74a0a4
-  dot fe83d7033cfab2127f9b28818ba3c35a
-  doubleColon 294dc4fa850a55a85acd8909ea86e45d
-  equals 2988535b336fd44374b9bedc6c505004
-  holeLit a9347910938bbb19fa2d464a536314c4
-  identifier 71517dd1b5165f695e88eab2aaf7b72d
-  indent 5bd238e46eab8404e4dd5b108d4496b8
-  indentAt ba57a51b52323895b895544163150056
-  isSymbolChar 1f2a5ed9da6180be8c6a5c78fed0933b
-  isUnquotedKey f245417816e78fa9b894878e6e53fb67
-  kiname b07c2a02fa459e73e061eb95704400ed
-  larrow eb0d6bbf837ccfe9a289c159d851c717
-  lbrace b2224ab5909c74837c4f6d880d1d8520
-  lex 8cc273ef9ffe00ce51529fc0c7f44874
-  lexLenient 68552e3e6929d952f8af88426d1a4b3a
-  lfatArrow da33b36664b93f644a6dff765dae264b
-  lname 6e1d4b4ef234a78f7b87fd5f992b70f0
-  lname' ddbc74234ff5893caea93ffd0d384ff0
-  lparen d22aae6e16dfc68c424dfc08f6166610
-  lsquare 8e3600d740e1cb9ebccf7feb7a0bf0c9
-  match 47e916397fe2d1e084336a5c6c1783b7
-  mname 70083b67af3d0ef40a356c978f24a512
-  natural cc2f624eb796f5bf7f8c3ba013e49aa2
-  number d88b152b54a60439c2dc595cbdb56e8d
-  parens cf084ae74dc27c8c9070bf462d824e6e
-  pipe 5b3096c272c057a0a415cb07ea4ab678
-  ptComments 015da505ab7d9bcbf17b066347ec1288
-  ptEndPos 015da505ab7d9bcbf17b066347ec1288
-  ptPrevEndPos 015da505ab7d9bcbf17b066347ec1288
-  ptSourcePos 015da505ab7d9bcbf17b066347ec1288
-  ptToken 015da505ab7d9bcbf17b066347ec1288
-  qualifier 73e20023a6cb1181c833e27f5af4d00c
-  rarrow 6ff8539bff2e21d2fc59f86fe8f0d442
-  rbrace edd5d8c3e5c15e170977fb765ec8652f
-  reserved 01d5938beb4343cb6453f0c465ad02c7
-  reservedPsNames 400d417738afd5ca45175466117bea63
-  reservedTypeNames 4bc98bac8b82b49720d283817c837094
-  rfatArrow 5ab8ee2cfbcabb5bfd66b2533861e390
-  rparen 526bf94b06d3d64ec6a63e9c53ddb2ab
-  rsquare 551a0c49e48bbc8f3bad8f4a3744b356
-  semi 5390183b18a1b591954e06ca4793633a
-  semiSep 19fad2ccc5fb5dc916a4f17b27786ddf
-  semiSep1 74162ebfb0fa439b23204a820236209a
-  squares f06e23d6a1ec5d566668267ec2acb8b1
-  stringLiteral 5b013bddd8e088b3207ee7aa6d991705
-  symbol 7dd8c55c092324ed2efcd817d6c7248f
-  symbol' d1fd86a62b72396f3e5973cba6978c34
-  tick c48b67402017ba67b1ca2142f31e7279
-  token 04d991d6ee781b8b6c3e0a9a6f50789a
-  tyname 8d496fac787139075602f87ff093888b
-  uname e63804a86f0d5e1d671b1d3e63489e75
-  uname' e77afc4a70585bcab81d006dbfe77e26
-  underscore 69c9526f4aba04813bc9cc79358acdd6
-import  -/  Language.PureScript.Parser.State fe9f4bd063cadaf6e6254f56db69a432
-  exports: d5f29085816fb1aaafdee8f3aac13901
-  ParseState d7215492860b72be92c0ba0d393262cb
-  ParseState 5abb98cffc35c1788f12e72c56b8d4dd
-  indentationLevel 5abb98cffc35c1788f12e72c56b8d4dd
-import  -/  Language.PureScript.Parser.Types 0003ea2e7708083e46a73a3f8d83c4fd
-  exports: 5c797e54649989cbb48b10f7461b61ad
-  noForAll 1c5e1a5ae8ab4669f0836ff93dec02f8
-  noWildcards b1d8af495c321030b7104d298e53f6ee
-  parsePolyType abc9c75a45c53b843ec77bfafacecd6c
-  parseType dfb8e22eaa6e8a851dee99b338831007
-  parseTypeAtom 0ca7414db2665d9b56e9030b5aba633e
-d9b9f8da1fb4ba6e792592b06b3d24fc
+import  -/  Language.PureScript.Parser.Common d20a7af8a890a4e56d3068b2fdbe8def
+  exports: d3c94bc3b21495d0d5e265869136cfdc
+  augment b0edc0207a63731535725006cf8bb489
+  buildPostfixParser 0028a0425b67ec725fd838daa9893fd2
+  checkIndentation 3e03a70b0bc15276f31306755da25033
+  dataConstructorName 8e54fd0d7db06a38f6099219b412c1ab
+  fold 32d39dd8db2c980cf199fa151211cb61
+  indented 220f6fa1c62819e97598e6353a4b65e1
+  kindName bbed90a701b4e22259fa4ef795a896a3
+  mark 83d35623fe4be371bfcc0211f3ba9f7c
+  moduleName a83926d1edbe8e436623c0a918e65628
+  parseIdent 6a6e6dc3aa2d481c9710a1965b07c4fa
+  parseLabel 43be08075001e75d4ae738ed6bf8164a
+  parseOperator f5962e1a380a460d4b830d99b141a9dd
+  parseQualified b47db6f48fd0bee3e9e160f31046eb17
+  properName 63562594bd59f85cfa83885dc7f1b0dd
+  readComments e2dc65750bc1cc3664308377b00ccabd
+  runTokenParser 9dae932fdac5969d57d0bce79e0d461b
+  same 568fb570455053ebd4f0317b8229f51c
+  toSourcePos 44fc0f937b14652cbd83de755ae4c717
+  typeName 380540cd608e01be72e14a2ed47ee295
+  withSourceAnnF 40307b0e4ea19d81c349792c48a8f907
+  withSourceSpan 400076cd3e88a80ac3e6c4190539d64b
+  withSourceSpan' b6db8cc4ce577974b82c682cee81e08e
+  withSourceSpanF 8db3c867b926face9075b4326b48effc
+import  -/  Language.PureScript.Parser.Declarations 4331277871d8b757c9139b8595a399c8
+  exports: 54b8d0a9818800e0c1d95af2b8a40ca4
+  parseBinder 5d0197898d7c248d7cbbd5b0d92fbc61
+  parseBinderNoParens 97788f2ddc2937fd41f4b546d1050eb1
+  parseDeclaration 13508eb374f76c19b420f5bc305cfedf
+  parseDeclarationRef 1a2f69808ffce2d881b504ff367f6050
+  parseGuard 5732fd6481dbdac9cc77c200f99e2781
+  parseImportDeclaration' 8a7d826550f35590da48cf6298c1b535
+  parseLocalDeclaration 0f46ea01e88d1e3ad6a0929a0e360c59
+  parseModule fc8506de0469e25061ee5096591098a6
+  parseModuleDeclaration d38e908e035bf3d799f24593f1ed81c3
+  parseModuleFromFile a5e431f010c7cf005e06404183762fa6
+  parseModulesFromFiles f849ead8a3b408b8a391e7de4f708aa4
+  parseValue 69b68d24a2d6c004825e1478337b57de
+  toPositionedError c8dd5bf67db305236521a3f81e384d2f
+import  -/  Language.PureScript.Parser.Kinds b635ea75e7ff86a085a7ead0c499a648
+  exports: 60a7198377e8b96092dd1c3f0ccdca52
+  parseKind 285d5ef86de850b9cc8389a55b3214f8
+import  -/  Language.PureScript.Parser.Lexer ea857194274ee8b3812ad62bbb2c9ed1
+  exports: ca7efc854dfe3379de291b0f8c8d7ea0
+  PositionedToken d0080c027414fca9f9a80c218943a87c
+  PositionedToken bc5773f44100b87481d9bda3f9e246b7
+  Token bfca495d98b2e792a78f6b37fc87fcb4
+  TokenParser 6e8d7b68c7546ba407a16e8526c7556f
+  anyToken 9a9b6cc76ec3dbbf67d6554ce65f36b2
+  at 4583bf023837ea7f761b9fd5a1e6fb6a
+  braces 2aef1f8effaa82424b998862c34e06ab
+  charLiteral 5a592564852c039d596e33d11ef78a9e
+  colon 0f0cb61fe317b60daa06f8f230f69470
+  comma 52ff63f9da68caea93f8dbe50c070988
+  commaSep eb2688c2d4650f36f9e2956a5175779a
+  commaSep1 370ade44ebf28ca0ea4e39090759c92d
+  dconsname d4e1a14321595b7f35da211d957677b6
+  dot e34ec3ff7d1c1f0364c0678896f18f4d
+  doubleColon 05b6cfb8f46b56e88737d68e35a22068
+  equals 35eb066ad0b667ec5a0ef3672c1f5c35
+  holeLit d128f2ea8cc360ec08b3ecb90951500a
+  identifier 694a9255e1b6cb3d8c5e23ccd5c0704b
+  indent 5e15bca08d9cebece5df1a171959247b
+  indentAt 52b8971894fb2369d80d84edaad06220
+  isSymbolChar b88848d8ff741526e8260cef1d5c3ede
+  isUnquotedKey 99c36d6ee62cf0e9f1cb07f067722f16
+  kiname 3d9765d6ed6aa1077d78b41f3ed8217e
+  larrow bda6cd537e95497467b620a84d8684a4
+  lbrace a36867a5e84e41329f8d19141dcbbfe9
+  lex 2288b6151bebf7b01b4d73039b433c5f
+  lexLenient 04037475ff800ffd3538c5f78c35b5ca
+  lfatArrow 6add5a6ecd453b66182c8f1fcb016cd2
+  lname e6d2248b6cef9835fc21ed990a9a9f5a
+  lname' 7a4cb2585f8ce0816fb7104b2c5cbbda
+  lparen 21204f8e335c4cce6e69a16a21d990c6
+  lsquare ae7ca44cd95949caf46aa72ad7d9a2ae
+  match c7799d8c0dae200e937243a93bb9e486
+  mname ddb7a12738546f3d739d4eae51236357
+  natural 12b58cf860886eed904b838d83bc4667
+  number fcb4800a1d23aa2f7711b8499f312aca
+  parens 537455fc7f82a6049320a8434f7b3d11
+  pipe 54b83fcd00e53bf35b33618e963bdab7
+  ptComments bc5773f44100b87481d9bda3f9e246b7
+  ptEndPos bc5773f44100b87481d9bda3f9e246b7
+  ptPrevEndPos bc5773f44100b87481d9bda3f9e246b7
+  ptSourcePos bc5773f44100b87481d9bda3f9e246b7
+  ptToken bc5773f44100b87481d9bda3f9e246b7
+  qualifier 10d4e9a621b54ed0a86368b9d31aa39c
+  rarrow b1890175eb712a279e1082f12de6600e
+  rbrace 553d5fd3ed9921a7f0c995ce30a0bc07
+  reserved ec1bcb71bd3278035364d5b23f87537a
+  reservedPsNames 739f1ca5d96f908c4e6634a8ecca62a4
+  reservedTypeNames c94792c617ae9c1884d6047d34859737
+  rfatArrow ed0b513d8da554887e6e09347f94d534
+  rparen abce595f7004f2566281f858f165d45b
+  rsquare f9a70c0a4ad24785119602da8a838629
+  semi 2f7b4f7b4904f66e099015d9867fd10a
+  semiSep 1ee094a5f5284541e42355424b8cc75e
+  semiSep1 f098d8e7a61ec61f38ceabc445a169ac
+  squares acecedad9206ee0b0b93a3769b02859a
+  stringLiteral 07d9c3a7dcb697ede90a3401e8d445d0
+  symbol 99f9bd1c3cc328461c9c3f0e625dbd70
+  symbol' df4ff0c7873c69ba6cef310524845e94
+  tick c831d224c40a1a9f24679a2d19fa416a
+  token 78479706c9b14cf7d1e54f86591729d2
+  tyname bad2b5d5088002f28817c15bc5b31705
+  uname d26aa9b1095a33d7b2bed5c0902c7f7c
+  uname' fa0890052e720dcce691f585f5098170
+  underscore 92d06e5c179717e78ed1fbf4834f5cc5
+import  -/  Language.PureScript.Parser.State 30ecb6d393d258ed6a43e1772eca1abf
+  exports: dd6ef157d2027be1acaee486dc7fca19
+  ParseState 9509774a216185e71910825a8de6b17e
+  ParseState 62a6f136821eff488575d67f3b51d3ef
+  indentationLevel 62a6f136821eff488575d67f3b51d3ef
+import  -/  Language.PureScript.Parser.Types cbcf6c1c4dcb74cf974e558488459059
+  exports: ec48e706caa8fb986c4981bbde27ac14
+  noForAll 0135d2b07448cbca4f5c5078665886c1
+  noWildcards 0125083fcb8746e529bba809628880d8
+  parsePolyType 10b8dbaa1e3772f2899b31ce5b79c951
+  parseType 994351acbe6b124844e25787b418d673
+  parseTypeAtom 354bd435b91c701558451c65d0b9878a
+b0d0568f5ccd0d8272d2b46ba7a43bf3
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Parser.$trModule3
                    Language.PureScript.Parser.$trModule1) -}
-8619ffdbf708e7bffe18bc943ac53e3e
+c4d3400dcc2592fe1b63c16303e98216
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Parser.$trModule2) -}
-037160c5442abb88e1f51a6c6cd4195d
+c79949d59b9e08cdcbcf1688a69ac928
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Language.PureScript.Parser"#) -}
-053a19c162c720462d5769d5a06f8eb8
+173e31cccb10fdb21000ca4f58ea0fb1
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Parser.$trModule4) -}
-525b1ea9ad50579cc217bc962c07911d
+7d745a55d8b3d5a1ed6d3c5182b076aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

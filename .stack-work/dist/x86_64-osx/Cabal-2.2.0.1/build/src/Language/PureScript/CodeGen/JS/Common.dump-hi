@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:26:13.977978 UTC
+2019-01-24 14:13:37.125505 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CodeGen.JS.Common 8043
-  interface hash: 2621eb3510b0ef32d57d3496f1175d3f
-  ABI hash: bdee9561194e856495e64c9a0ac9a9ac
-  export-list hash: badf0cfa8ade3e63497f85dc5174fefc
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.CodeGen.JS.Common 8043
+  interface hash: c3a2922f2be456fb7be3f63add07eab2
+  ABI hash: 5dda0c89dfcedc0739b091493c994444
+  export-list hash: c985daee9b62b07d9c274723225bd2c2
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f5ca57f3e9526b715c95ddec19f2ba97
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -14,9 +14,10 @@ interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CodeGen.J
   used TH splices: False
   where
 exports:
+  Language.PureScript.CodeGen.JS.Common.anyNameToJs
   Language.PureScript.CodeGen.JS.Common.identCharToText
-  Language.PureScript.CodeGen.JS.Common.identNeedsEscaping
   Language.PureScript.CodeGen.JS.Common.identToJs
+  Language.PureScript.CodeGen.JS.Common.isValidJsIdentifier
   Language.PureScript.CodeGen.JS.Common.jsAnyReserved
   Language.PureScript.CodeGen.JS.Common.jsFutureReserved
   Language.PureScript.CodeGen.JS.Common.jsFutureReservedStrict
@@ -77,7 +78,7 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -97,46 +98,52 @@ import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
 import  -/  base-4.11.1.0:GHC.Unicode 8234c40b59f035e845832a42e8725a00
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  GenIdent b24b10553b46fa06c1a68c4a91cc2198
-  Ident 0ccd7f2221de64569e50634367691253
-  Ident ab98a56ffa88760dad1380079e8ee35a
-  ModuleName 0cb2c8b6c90c347a41315bf0e0fd925c
-  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
-  UnusedIdent 054d24daf49a85444a23e09c0885fe16
-  runProperName 29f101e190cc99df85623423972e606f
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  GenIdent ee4cd9bd4570298e92da1d7c98aef59d
+  Ident 71f167265716f619863a793fa311e198
+  Ident bad3562aa6138b6192713ac281080869
+  ModuleName e77bf9e056798332a9668212060e8e06
+  ModuleName 1b2ddf0c04464d2fa2588925f10c1966
+  ProperName a7268334e0b909381550b9329cb80fcc
+  UnusedIdent 57c338f8a1023bf312d293d7cd04b9e5
+  runProperName a7268334e0b909381550b9329cb80fcc
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
 import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
-44914e9a4619b10d26ed98ced351e02c
+fe4c80744496d9be1156e8bc0a79d4f8
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.CodeGen.JS.Common.$trModule3
                    Language.PureScript.CodeGen.JS.Common.$trModule1) -}
-a5e26a2dfe25650a2da3cdcef4f8ed93
+e08d05ea0802bd99ca79113344915110
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CodeGen.JS.Common.$trModule2) -}
-aada0fee3748d651ed7d2117a0cd0562
+8bb17ea79093d832e8924d5913d974b6
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.CodeGen.JS.Common"#) -}
-b5e34f53db788f17fbcf060bb6bcdafe
+a14bfce7cfb707d6a0c24790af713e08
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CodeGen.JS.Common.$trModule4) -}
-4fea7d62f1452c74bd2dd544c38109d4
+88f88899979438bcbe1f4345ca27d6fd
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-b8655c5bba5d085c96018edeb32e04a1
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+3fcf3072ac94fdbfcd7bc7420a31e8b5
+  $wanyNameToJs ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+  {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
+99062346b12bf5fc626c8a4f7b7c985d
   $widentCharToText :: GHC.Prim.Char# -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <S,U>, Inline: [0],
      Unfolding: (\ (ww :: GHC.Prim.Char#) ->
@@ -200,42 +207,83 @@ b8655c5bba5d085c96018edeb32e04a1
                         '|'# -> Language.PureScript.CodeGen.JS.Common.identCharToText3
                         '~'#
                         -> Language.PureScript.CodeGen.JS.Common.identCharToText1 } } }) -}
-5f8d623ed3b798b402bb469ed236c550
-  $widentNeedsEscaping ::
+059cd4daf380ad17baf2ce609ccddf59
+  $wisValidJsIdentifier ::
     GHC.Prim.ByteArray#
     -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.Bool
-  {- Arity: 3, Strictness: <S,U><S,U><S,U>, Inline: [0],
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>, Inline: [0],
      Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
                    (ww1 :: GHC.Prim.Int#)
                    (ww2 :: GHC.Prim.Int#) ->
-                 case Language.PureScript.CodeGen.JS.Common.$wproperToJs
-                        ww
-                        ww1
-                        ww2 of wild1 { Data.Text.Internal.Text dt3 dt4 dt5 ->
-                 case GHC.Prim.==# ww2 dt5 of lwild {
-                   DEFAULT -> GHC.Types.True
-                   1#
-                   -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
-                                                     -> GHC.Prim.Word#
-                                                     -> GHC.Prim.ByteArray#
-                                                     -> GHC.Prim.Word#
-                                                     -> GHC.Prim.Word#
-                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
-                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-                                                           GHC.Prim.Int# #)}
-                             ww
-                             (GHC.Prim.int2Word# ww1)
-                             dt3
-                             (GHC.Prim.int2Word# dt4)
-                             (GHC.Prim.int2Word# ww2)
-                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
-                      case GHC.Prim.narrow32Int# ds3 of wild {
-                        DEFAULT -> GHC.Types.True
-                        0#
-                        -> GHC.Prim.tagToEnum#
-                             @ GHC.Types.Bool
-                             (GHC.Prim.<=# ww2 0#) } } } }) -}
-96e22a764b338dc5b4e7c6931f615f1d
+                 case GHC.Prim.<=# ww2 0# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.>=# ww1 (GHC.Prim.+# ww1 ww2) of lwild1 {
+                        DEFAULT
+                        -> case GHC.Prim.indexWord16Array# ww ww1 of r# { DEFAULT ->
+                           let {
+                             $w$j :: GHC.Prim.Char# -> GHC.Types.Bool
+                               <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                             = \ (ww3 :: GHC.Prim.Char#)[OneShot] ->
+                               case {__pkg_ccall base-4.11.1.0 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Int# #)}
+                                      (GHC.Prim.ord# ww3)
+                                      GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                               case ds1 of wild2 {
+                                 DEFAULT
+                                 -> case Language.PureScript.CodeGen.JS.Common.$wanyNameToJs
+                                           ww
+                                           ww1
+                                           ww2 of wild4 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                                    case GHC.Prim.==# ww2 dt5 of lwild2 {
+                                      DEFAULT -> GHC.Types.False
+                                      1#
+                                      -> case {__pkg_ccall text-1.2.3.0 GHC.Prim.ByteArray#
+                                                                        -> GHC.Prim.Word#
+                                                                        -> GHC.Prim.ByteArray#
+                                                                        -> GHC.Prim.Word#
+                                                                        -> GHC.Prim.Word#
+                                                                        -> GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld
+                                                                        -> (# GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld,
+                                                                              GHC.Prim.Int# #)}
+                                                ww
+                                                (GHC.Prim.int2Word# ww1)
+                                                dt3
+                                                (GHC.Prim.int2Word# dt4)
+                                                (GHC.Prim.int2Word# ww2)
+                                                GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                                         case GHC.Prim.narrow32Int# ds3 of wild {
+                                           DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } } }
+                                 0# -> GHC.Types.False } }
+                           } in
+                           case GHC.Prim.geWord# r# 55296## of lwild2 {
+                             DEFAULT -> $w$j (GHC.Prim.chr# (GHC.Prim.word2Int# r#))
+                             1#
+                             -> case GHC.Prim.leWord# r# 56319## of lwild3 {
+                                  DEFAULT -> $w$j (GHC.Prim.chr# (GHC.Prim.word2Int# r#))
+                                  1#
+                                  -> case GHC.Prim.indexWord16Array#
+                                            ww
+                                            (GHC.Prim.+# ww1 1#) of r#1 { DEFAULT ->
+                                     $w$j
+                                       (GHC.Prim.chr#
+                                          (GHC.Prim.+#
+                                             (GHC.Prim.+#
+                                                (GHC.Prim.uncheckedIShiftL#
+                                                   (GHC.Prim.-# (GHC.Prim.word2Int# r#) 55296#)
+                                                   10#)
+                                                (GHC.Prim.-# (GHC.Prim.word2Int# r#1) 56320#))
+                                             65536#)) } } } }
+                        1#
+                        -> case Data.Text.Internal.Fusion.Common.head_empty
+                           ret_ty GHC.Types.Bool
+                           of {} }
+                   1# -> GHC.Types.False }) -}
+25340b4ee46ff49615f5b99c4d3a6694
   $wouter ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -246,183 +294,178 @@ b8655c5bba5d085c96018edeb32e04a1
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-1fd2076803d088daa288097992591899
-  $wproperToJs ::
-    GHC.Prim.ByteArray#
-    -> GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
-  {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
-f93616a1d877fddefe2bca87f083194b
+7a3c7f092534e7ebd0c5c549097f00f9
+  anyNameToJs :: Data.Text.Internal.Text -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Language.PureScript.CodeGen.JS.Common.$wanyNameToJs
+                   ww1
+                   ww2
+                   ww3 }) -}
+e869aab8d31b4f15324b6a975563e5e8
   identCharToText :: GHC.Types.Char -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: GHC.Types.Char) ->
                  case w of ww { GHC.Types.C# ww1 ->
                  Language.PureScript.CodeGen.JS.Common.$widentCharToText ww1 }) -}
-7a980715e283ba5296a4b53cfdaade9d
+596eed10713d9d843caab01a4ff8d295
   identCharToText1 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText2) -}
-a7be928a5deb0f5299ea217fdce3b5f3
+6b92e67aeb98035aabd2663fa1f3e5e9
   identCharToText10 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$bslash"#) -}
-9e84dea9391f10f35dd0aab14205f0df
+6dad32685b941680162a86cc80c5d2aa
   identCharToText11 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText12) -}
-0dd0c18b5ef3f8f12a65c99dc739c450
+760b434c5fecf40ed1859e33c2872c3c
   identCharToText12 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$at"#) -}
-82c726ab6b2499f5bf5a9956361e3e63
+8231aeefd161f20fb1fde6c570e19e7a
   identCharToText13 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText14) -}
-ce0b75f8053ec03baacf46fdd6f89bc3
+71ddc2ae416b0a1fd2241eff024fdd96
   identCharToText14 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$qmark"#) -}
-d12413e9cc6a6367d1cfcea67b2b845d
+a6032726ddde3aaab1ec5cb707c443c2
   identCharToText15 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText16) -}
-ec6dce85a00515b5b2c4bd29c6e9f19e
+ef3fbce648497a776e6f2b0b6d58b31d
   identCharToText16 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$greater"#) -}
-4bf505cbf5521902352bd82ad77689d1
+87d522368e5ef7cbae34a781480e802e
   identCharToText17 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText18) -}
-a2090e50e5ff35a151a0bb61da80f79b
+a840f2380e79342600e7aa926e177272
   identCharToText18 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$eq"#) -}
-87a7e56e3f0636f6a667f2194d8b7117
+44f7dc62965618321c1d171156428451
   identCharToText19 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText20) -}
-a3ae24495ad36dffe18b32fc87a52932
+962ca05d0073966009a98a0dc4808c39
   identCharToText2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$tilde"#) -}
-e70cf8b002aea307f47d7e4e12ae1804
+542089c7cf26c848379e38b9153a5749
   identCharToText20 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$less"#) -}
-6915c391232fe3b49f4341e7d90e96ca
+2903bd2ab9f7d2425b407e2bdb96680f
   identCharToText21 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText22) -}
-5dcd5a605ffe66ef328546e544a4a886
+fb4baf3900ab24fb98e255ab9a721667
   identCharToText22 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$colon"#) -}
-2fab37f5e71ff1e3d450db20685f15c3
+789bee7aa6ef72d94009ad259d5141c4
   identCharToText23 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText24) -}
-983908189add7785f7e77ede99ddb86c
+d0c7c61d600846091beb3d3c7e4d0e2f
   identCharToText24 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$div"#) -}
-1384c822e71a8e3c21ff46eb26984c65
+a9395f145dd5f12f7298781560f759de
   identCharToText25 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText26) -}
-2429ff63838eef9aba1643107b0d46fb
+8006d263525bf27803cd47eccdc97fdf
   identCharToText26 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$dot"#) -}
-f789fad49a116de6cdaae3628f00dd85
+c17911a4cd93ea167bd73dfe8e03ca90
   identCharToText27 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText28) -}
-77fb207d58b9f8b03a1f8eefefe821e2
+7788a3df2076012a80d0fee524294c10
   identCharToText28 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$minus"#) -}
-48be52c2f461e6e835acd2e9ba54fc93
+f90d3c6bca5397fb7124f101a90d0742
   identCharToText29 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText30) -}
-4773b59d68455feda66a2a0c51dffc32
+f82f0a205a224c436cb445f28465343b
   identCharToText3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText4) -}
-058616cabb4036840897bf5f4666318f
+eb23f1acd985295963a307cfbaa3b12c
   identCharToText30 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$plus"#) -}
-79fd45a2def545597dadbe08b40ee46f
+4f971613b5261ded92f6a52ff849ab73
   identCharToText31 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText32) -}
-f5ef4949b888543d4ec9702368195129
+1697033bd6be1921af48cf508b8de586
   identCharToText32 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$times"#) -}
-f32d7ef7b750acac2e200d2f9396fecc
+bbd1e41ff8923a5b9ea272cfdf20d85b
   identCharToText33 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText34) -}
-ef8c1e14807d0768e4233444c3cc2b7a
+13ac55089b8817863522c7ef4567a6d2
   identCharToText34 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$prime"#) -}
-6c8761a0089aab29267b3302bfc17c45
+27a3cc342be1cb1fdbb14aa2a9e31803
   identCharToText35 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText36) -}
-4728ab0bc3edeb0132e4add120239236
+e43f78d3966b897658b9b575c1839e7f
   identCharToText36 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$amp"#) -}
-a0278ec21a28b59a2242ce12252109d5
+d1793dff83b69255c203c3ebb5952165
   identCharToText37 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText38) -}
-53f5c688100b572c49b5b2a762007eef
+22255f671b2363a1268cf75fb09f0f1d
   identCharToText38 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$percent"#) -}
-8113be5b91142f93f315559513904051
+b057fd913e921a6664981ab2e22664c7
   identCharToText39 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText40) -}
-e0a4d59d42a59c23e7178fee4dbd41ab
+9b9d31e04a33cb8cf0ade91717b6722d
   identCharToText4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$bar"#) -}
-d674c87435b94751a78e9de89a833930
+bdc37827bb7770e73f680863a0286e9f
   identCharToText40 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$dollar"#) -}
-f989f6cb783a651646bbc619b8129b9f
+e8f99c3df048c36c549343ac78af9288
   identCharToText41 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText42) -}
-9bda0caf839f4c54b86faaa4104f63ee
+98faea84f14e14eabb331fd69b37b738
   identCharToText42 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$hash"#) -}
-e4d190e4d7ef7968c7e3ad13046dff20
+6bb54a21e79089ea282b4558c370e801
   identCharToText43 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText44) -}
-53dcd157b5ac375fce7193a839f97594
+1b6527f95a2f6974e3da6fbf3ca19e0d
   identCharToText44 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$bang"#) -}
-ee09eeaf932804b43e63cdc5fca77e8e
+00eeab8dbd31994cadcf2d0d21aba362
   identCharToText5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText6) -}
-6dd652a80500c99b7d770105c37afbac
+167a11a32ffa52227769afa6c31b1f3c
   identCharToText6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("_"#) -}
-8f0c1b6bfe346b8ed435b0c4498b0398
+8e2bae0fe4183a1b6820e101b1e11caa
   identCharToText7 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText8) -}
-77e97023dded08d7edc72b0e7b83b072
+feaf6212865d727bb510fd794f183bba
   identCharToText8 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$up"#) -}
-25ca902b174d9197126a09c58b47fb1b
+d482ee32109c4b4d0127c10307acd754
   identCharToText9 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identCharToText10) -}
-4a0f62f78a45f1c822cc1905a5964dcb
-  identNeedsEscaping :: Data.Text.Internal.Text -> GHC.Types.Bool
-  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [0],
-     Unfolding: InlineRule (1, True, False)
-                (\ (w :: Data.Text.Internal.Text) ->
-                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
-                 Language.PureScript.CodeGen.JS.Common.$widentNeedsEscaping
-                   ww1
-                   ww2
-                   ww3 }) -}
-e4938d44c9be6ad852cb750c92489826
+86f432aaf74963c1454d656891f45a5c
   identToJs ::
     Language.PureScript.Names.Ident -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <S,1*U>,
@@ -430,925 +473,935 @@ e4938d44c9be6ad852cb750c92489826
                 (\ (ds :: Language.PureScript.Names.Ident) ->
                  case ds of wild {
                    Language.PureScript.Names.Ident name
-                   -> Language.PureScript.CodeGen.JS.Common.properToJs name
+                   -> Language.PureScript.CodeGen.JS.Common.anyNameToJs name
                    Language.PureScript.Names.GenIdent ds1 ds2
                    -> Language.PureScript.CodeGen.JS.Common.identToJs3
                    Language.PureScript.Names.UnusedIdent
                    -> Language.PureScript.CodeGen.JS.Common.identToJs1 }) -}
-5b6806d8115634c76b645acc8bcfe3d4
+03ec90be04c310f16c4b8dfa7627769c
   identToJs1 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.identToJs2) -}
-d44aabf6bb2424492264428702648ea5
+4bbaae9de77eb253f876bba1fd636285
   identToJs2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("$__unused"#) -}
-c3796259512ad0375c3e8e725adede0a
+01d3fd29ea70369712388fafc2609cb4
   identToJs3 :: Data.Text.Internal.Text
   {- Strictness: x -}
-36ebe99991c8dfbaf8d7a716f764fe0f
+b8605c7de3f8b587585eddadf3d754eb
+  isValidJsIdentifier :: Data.Text.Internal.Text -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Language.PureScript.CodeGen.JS.Common.$wisValidJsIdentifier
+                   ww1
+                   ww2
+                   ww3 }) -}
+1f9815f1a2d6b845a7ba7738d84caf4b
   jsAnyReserved :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.++_$s++
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved96
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved94
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved1) -}
-0b97195550028e44e9d0c589d35e6cf2
+e33ef84603a3802af40024c7f2a4f7a5
   jsAnyReserved1 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved92
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved2) -}
-86732d3467806b7edd5f551f554fde1f
+c9ea413e83740f3ad24e18c7a962ca62
   jsAnyReserved10 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved74
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved11) -}
-4373643c783d5732d89402783f14823b
+8516aefe85cb4aaabf44801a9fa8b733
   jsAnyReserved100 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved101) -}
-963978c17dd0debecd004989411360ea
+8eec4328a7bfbd9818413fd41b06215b
   jsAnyReserved101 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("yield"#) -}
-51222e16610e161e70a6350bc8e38f24
+f9d4821fde9ec4b4d76a0b127cdf0089
   jsAnyReserved102 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved103) -}
-5fbcb711215ac0aabd1afdf4a78b7a6d
+bd99108381584f7e951eca4864cf57a4
   jsAnyReserved103 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("static"#) -}
-726ce7799f29af2bac6a8fb7aaee9adb
+ba1f81b45be1a062d0ee58bc69da93b9
   jsAnyReserved104 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved105) -}
-2a584f1a9c0cf8517932ec73871f93ed
+d0b6c5ecae386259ba01b9eb32101be6
   jsAnyReserved105 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("let"#) -}
-dd4a4d5f1bd16d0ffb3cffb157853e4c
+4c1d61ff10dbd364b13520b4160bbd79
   jsAnyReserved106 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved107) -}
-68917a7e9df1807aa1ec5deb54ec07e0
+3f27b5180a65245db24a4e644eb287a8
   jsAnyReserved107 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("await"#) -}
-02a60f4e2d0f83c399ba2c76e82f01aa
+27fb64811a80a805b4146865cfc9d890
   jsAnyReserved108 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.++_$s++
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved111
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved109
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-3691779e91ca72cad900e05f986ffe91
+fb35473401756dff7a36575c20cf9123
   jsAnyReserved109 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved110) -}
-ae1883bdd1c57332516566426c5d8961
+43aead76a637f6ce1fff15b8b3526d13
   jsAnyReserved11 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved72
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved12) -}
-a5f8b502b1cac368b9f95af690eb8080
+2802a975abfa403efbf23eab0ed3791f
   jsAnyReserved110 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("enum"#) -}
-adc3fc98eca4889cd7415b9b45fd6b67
+e69feb684e862dc9e7902a7cbf2b6e55
   jsAnyReserved111 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.++_$s++
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved129
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved127
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved112) -}
-d4231b2ed4bde686883d61e9151fb2ee
+5cd545881b2a67cb759db285ab154149
   jsAnyReserved112 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved125
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved113) -}
-3b8f23e908d4e44888f148807dc892b1
+daa74c894bcba597f567aa9da8ab9429
   jsAnyReserved113 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved123
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved114) -}
-283b9129d5351921d92a686d8cfaf9b6
+eb6b97689ff249c8a8bb0213612740ba
   jsAnyReserved114 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved121
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved115) -}
-2134f21110d5b57b4f82f9402691014e
+9d742b932362029a8d9540ee8f6b15da
   jsAnyReserved115 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved119
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved116) -}
-8f9e746c744b28d567549d4572e77158
+664e8e7240ed46348b337bff03c7bdc7
   jsAnyReserved116 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved117
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-b327080e4b66f2a7893f39a8f994a923
+ccd9a62fad232bc41466c08408f8d93a
   jsAnyReserved117 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved118) -}
-a34b1f81cd585ad54b5ec1e5c4cf32c0
+52c33494f64b7fbc3324183b19fde15d
   jsAnyReserved118 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("public"#) -}
-ced3cf7d2240919f406071732df1ab7f
+b96d9cb19b715ebe29cc6719afafdbe8
   jsAnyReserved119 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved120) -}
-566dc67816a9168968b598458f5f7a53
+77035f8c5a952acda343c2a40473ccef
   jsAnyReserved12 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved70
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved13) -}
-40cffb82afba153e9983db8c0566fdc6
+8cbbb3cec11cfd4298131c626caaba5f
   jsAnyReserved120 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("protected"#) -}
-a925fb8e2f41a84e1b28170fcc5c7b12
+e597bbd3551dffa7e467146f566fe73b
   jsAnyReserved121 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved122) -}
-0ccc2226f947ce7da0f5f40820c143b1
+47257e5da803667bf18e2afefb882b68
   jsAnyReserved122 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("private"#) -}
-f034dc1a329248bc9aabe644cb0de329
+ad7575ddc06c251a5da7e3576e761ec4
   jsAnyReserved123 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved124) -}
-dcc78e496af7a0cf7aced11d35b03786
+c9761f157904a7db5429a18fe0428262
   jsAnyReserved124 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("package"#) -}
-2c81fbc7e839fc6da4f55a0b3dc7386a
+9408db7af324397970d5104020a87b64
   jsAnyReserved125 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved126) -}
-4020c1f5d33c174d76fbd74fd848ff12
+d9f2e5e28594c09bc97538ea771d0ad5
   jsAnyReserved126 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("interface"#) -}
-458d7a44384f966abb3b97b70fccca82
+9275a64d228b7b083e7f36a5afc35125
   jsAnyReserved127 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved128) -}
-7da334d1190b2052600047a74dbd43ae
+2884f6b813c5216e39183f7e62d80d77
   jsAnyReserved128 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("implements"#) -}
-f56747086a5cf86ae1d469448ea0a5f3
+f7b911bc376c1a30c3662c9915e086d4
   jsAnyReserved129 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.++_$s++
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsLiterals
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved175
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved130) -}
-7cd1dfcafc2a1f5ea835e83b9184fa84
+edd12a8e0dff1155135bb624dc5eab29
   jsAnyReserved13 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved68
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved14) -}
-cda4763c078eb8e297c546d5ed3a1219
+68f11bdcb5e75c9678f8cd27dfa1e6dd
   jsAnyReserved130 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved173
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved131) -}
-69401dcf09274ac04d84ad988e155266
+a2390e6b31a97a9f24be3691637dd4c5
   jsAnyReserved131 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved171
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved132) -}
-28cb17117599a05a91d733903a07a41f
+05ad6db0d896182ea4363a79e627a2ba
   jsAnyReserved132 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved169
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved133) -}
-c04208b793707d6c8f3aa185e42c87cf
+85b24b2b9c7bf4475c33149ed82ada00
   jsAnyReserved133 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved167
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved134) -}
-d966cdd5f1c83ed94a5b5d50e782eb0d
+70ac028fb44a3a0e63f50f9b2dd8f389
   jsAnyReserved134 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved165
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved135) -}
-1e599e14ee64b99896d549b390d7c0a5
+c4225de29b7865f7b5be35c7bd0fc5b8
   jsAnyReserved135 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved163
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved136) -}
-9f01b9e982f2356e7c724e4034489c48
+62dd5d9d6e9d37fc287d54ad97c58810
   jsAnyReserved136 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved161
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved137) -}
-d8d699d815a2688cda1618ca3ae37bdb
+88920a81ad47380753c6a0cbf4230a36
   jsAnyReserved137 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved159
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved138) -}
-cab5519c8ef8fcdb00e114fda5560cc7
+6a6774f710b7892498c80456396191ef
   jsAnyReserved138 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved157
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved139) -}
-89281dcb65490681f124921bebbcf402
+5a66244c20b0fb5d3d7a5b717c475c12
   jsAnyReserved139 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved155
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved140) -}
-75718e55d4f718a4ed7b16b23b1b001d
+e852aae23aedc2134ca911d725d4b2a7
   jsAnyReserved14 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved66
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved15) -}
-862d33470d8122ec7ebf5b61120c63c9
+134631c014faa8953302997de28ef03a
   jsAnyReserved140 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved153
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved141) -}
-3bbad7081e15a6902ed71e3fb8fee363
+a8b7f764f86f842f043ca4fa4725cee7
   jsAnyReserved141 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved151
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved142) -}
-4703933fef6f46adcb3bfb4fb896cd12
+5dbac1c9128845f472b370cc317c939a
   jsAnyReserved142 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved149
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved143) -}
-11c6492e299fbfe8c32c885b18a32ab0
+1274cfd2db711d4a459e128c9a64538b
   jsAnyReserved143 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved147
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved144) -}
-87bc9fa2dbe9578ed64aae8aa62d31b1
+b6ec0a2ec69ed946fee4d4459db48148
   jsAnyReserved144 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved145
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-d0f4dbd1aec087cca723e883106883ed
+d8851374c30c20a66c09def23482b92e
   jsAnyReserved145 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved146) -}
-46ad7a2fdb423a6c6e31b4bbd6486466
+59b7cc889c01fea67376a861107e7dc4
   jsAnyReserved146 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("volatile"#) -}
-480cbaad8a4db2eb69eff7c44b963f0b
+49ad18b40c86af4e780a4cc404a84089
   jsAnyReserved147 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved148) -}
-96d09459937d4cd671908ee5a1c33bd1
+2af9e9234bb20a1544ca0381f9382b08
   jsAnyReserved148 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("transient"#) -}
-027d4a1a170ac6a875b3cd93609c5130
+941e8393bb1d7e9cc0188bc68eeb690d
   jsAnyReserved149 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved150) -}
-1cf811ae95c4467beff699316358f67d
+fe60796a9d2719569e53e5da8bccadf9
   jsAnyReserved15 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved64
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved16) -}
-db5066c6aa7d9efc05c2b7b3e6a2328f
+7b7947a0b2058929f0a6d861d64f175f
   jsAnyReserved150 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("throws"#) -}
-681e81c607e6a8fece59126672736c0b
+30e3ee866f968145fa02a07d8ea17204
   jsAnyReserved151 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved152) -}
-f7eaeaa99c90289a365847c6c0461871
+364ea16d65cb005477c69d81871ad553
   jsAnyReserved152 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("synchronized"#) -}
-18c6a9edaefcd7c46d00e91c4871cc15
+6e024805e50adaeffc2562210bdb5068
   jsAnyReserved153 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved154) -}
-d6d7535661c52ce4b4e5c797724dccf3
+43c2a1c8eab85aab064400c872266145
   jsAnyReserved154 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("short"#) -}
-3de532ad0088c40e4e27acbe0a2d70a3
+efac78f3337045eb76773bc74140ff51
   jsAnyReserved155 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved156) -}
-62b235ef4e0d07bc681d187414a8b735
+646d8d908bb8fd0325eba11465054d0a
   jsAnyReserved156 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("native"#) -}
-77a870bc60d6d6b5096a0913fb363ec5
+c868324c12b09279195f4054cd7e67cd
   jsAnyReserved157 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved158) -}
-71c1b98512ca3d7f18cf99bbce93daa3
+802ca20ee5532c0075253bbbfcdfaedf
   jsAnyReserved158 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("long"#) -}
-a26e8c992e765a604016a1171ea50ee7
+f3904ecc5751419241b7df2a1e770c69
   jsAnyReserved159 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved160) -}
-b89abf63aa313a0f0cb35699b884218b
+8f39e8081539b1592588a2e87000fde8
   jsAnyReserved16 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved62
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved17) -}
-da811731e176f2d5390f76188608b02b
+c79503e37642965401eaddaccc0571f6
   jsAnyReserved160 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("int"#) -}
-25dde1bfc8563de4b4909c383933fa66
+70785f4d5eb0f5e7fd017f20f9c2dcff
   jsAnyReserved161 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved162) -}
-2a3e64404cbed46ff38cbbc91e2f225d
+42ec69124fba50344efc7c8427ddf4aa
   jsAnyReserved162 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("goto"#) -}
-d3bd65ec985d46298e0c2be0ad79bbee
+defaff4ce91d41c65fefca6bea1986f1
   jsAnyReserved163 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved164) -}
-d0d63a8cd91c560f302488b3c47a600b
+38ef6d8b666fe1c9b9dcad65938fc5f7
   jsAnyReserved164 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("float"#) -}
-e2695b6c6c7dfac7c734d63bd413018a
+d9cf881373ccabb08e298c2d5fd5cac3
   jsAnyReserved165 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved166) -}
-3cd9a40de9a92589f2ce29cdd2e7e7a8
+ba039aa769586eb7334f2bbc1c4beddf
   jsAnyReserved166 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("final"#) -}
-c36a324dfa23e7f45b2070e4acecba30
+a81b99547537e3cf52656a95054fad98
   jsAnyReserved167 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved168) -}
-5ec424edc50d5df2d46c9922c9344a25
+18fb28ee5fb2bad4336cf16caeb9923e
   jsAnyReserved168 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("double"#) -}
-f57e2ec5538686361c3706c8e5fec451
+bba492ef6409d64a2afbe1298560f60f
   jsAnyReserved169 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved170) -}
-3570820cb613ed3d9df3813fb3e8154f
+7de647ed7ee39405633dc22294024924
   jsAnyReserved17 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved60
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved18) -}
-497a76b6593d04c978a8caec28e6f241
+adf896d6779d38b01ddca096fc7a1b09
   jsAnyReserved170 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("char"#) -}
-813bb4b75d51e57d8f40a6d883614eb8
+6aa2f5d763bece79d6e4cf079f033db5
   jsAnyReserved171 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved172) -}
-67e7aef642ded1c1f45e656fe8a2603d
+1745a549b2eb6981c331ef43b14e476c
   jsAnyReserved172 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("byte"#) -}
-012a0f186bccd36161b3a362f8c41c77
+b8f0576908e69da5a5f961b2c70e5e08
   jsAnyReserved173 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved174) -}
-626caabbcf7a74ec2d95179fa9c17ed4
+8661804c849cbaad4a8b281b818cf8f6
   jsAnyReserved174 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("boolean"#) -}
-252a648a9fb65f09d864030ad110cd52
+d2fe59cc41155056fbbd1c78d5765a10
   jsAnyReserved175 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved176) -}
-9303da7f66ac1fd3a2c6d21d2e95404e
+87c482b0c6e92992584ebbbfcd7d99ee
   jsAnyReserved176 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("abstract"#) -}
-8e7cf4a7d363f5bb35f2b4066c681b5c
+de89ae187a80594d6a1992d3ae429baf
   jsAnyReserved18 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved58
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved19) -}
-855080fce59582725a00ffc2ed85055f
+cca4c11263b5253fae4d75285ef35a7f
   jsAnyReserved19 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved56
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved20) -}
-4bcaeb1a2d061a64fd9a149149067a5b
+3da52bd3da72896e09e7fcba039f8854
   jsAnyReserved2 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved90
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved3) -}
-fbbcd38a9fb8e40783d1bb3eaa544aae
+ae03b5b7d9b3aaa920391708cf7272a9
   jsAnyReserved20 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved54
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved21) -}
-7e50e7d9ec39efa7b609edd70efd012f
+0ef5183fa8bbbc1a5a2e1b3e24897201
   jsAnyReserved21 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved52
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved22) -}
-594d0f19e6e4005978da2cbe2229562f
+5100a584c7c122e41129e524dd7cd30a
   jsAnyReserved22 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved50
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved23) -}
-6ba82cf05b654bd0f225e4372e0035a4
+04915b59affeccad8bed5890e70989f8
   jsAnyReserved23 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved48
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved24) -}
-95277fff5bb00a624fb7bd27709ef981
+1b5ca5bbcf3ec0d58ab96f19a582bcf7
   jsAnyReserved24 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved46
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved25) -}
-a4bebf5a789590d41456cd15c64b9b96
+c201413f725a73d30a3998b313784e2b
   jsAnyReserved25 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved44
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved26) -}
-15abf7b7f12ee97c9e21fe905473164e
+de18bff9914235f2c760e0f24be9212a
   jsAnyReserved26 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved42
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved27) -}
-552d8a949d661f8a1099b3e881d91f0e
+6cd680211e3bf6566be062a7fb8fac6e
   jsAnyReserved27 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved40
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved28) -}
-0e2331da43b023a37e07d2e0d5193cd9
+fd7a6a84900bfc95c5c451286c63cdb7
   jsAnyReserved28 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved38
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved29) -}
-03b80da626096f6834fb1391d153cc11
+f3201e67fdbab4dfe5fac60acc338806
   jsAnyReserved29 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved36
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved30) -}
-d0a2237ab26d9a3dbb0b0f4fce0f0e9d
+c66bddda1b593332dad8cc585d84201c
   jsAnyReserved3 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved88
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved4) -}
-2919454b22a1b81bac27caeec544b155
+cca90bcacf102203661383084f17ea2d
   jsAnyReserved30 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved34
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved31) -}
-e8258e175bcec8fba24e6c36ee8b8cbc
+aace94246a267e36d07cf1cdc5d99458
   jsAnyReserved31 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved32
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-882be7e8f74b9ac16587ffe410913b59
+e9786e54832558772a14e7a06b3847ae
   jsAnyReserved32 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved33) -}
-fb17a932d353f06ff5d3d4e70fe3b9b0
+5e3986dd608416421b2cd6ea1d7d5809
   jsAnyReserved33 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("with"#) -}
-5f85b88d774af2cf8a0441e3b9293a4a
+6fbf2b93cf0aea41349391d9da84b48d
   jsAnyReserved34 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved35) -}
-ef84bc300c541a524180c48509d4f802
+20acec858b6a8b107fcd0757baba9633
   jsAnyReserved35 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("while"#) -}
-c89bd8a9a463534237bed3aff35c930b
+258da78db2ef9ba05ce874cf0ac07cbd
   jsAnyReserved36 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved37) -}
-01995ed5201c23ea37d504af9421aa9f
+37c217baace18db1feadbe5684108276
   jsAnyReserved37 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("void"#) -}
-43723f9c51b114f59526b0c523173ae0
+8868ccea459c5d06afe2496957624f21
   jsAnyReserved38 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved39) -}
-ac7376d7da6589d46c0556a03ad18629
+e8b5a8bf3d194d3bc83d2ecf19cc3e0e
   jsAnyReserved39 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("var"#) -}
-bf233edb2ccf3c55cd56aedc154d3291
+358ecbcb65b8427edd7f263df4eca82c
   jsAnyReserved4 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved86
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved5) -}
-397209c9fe441a017666eea44e8ac826
+a5423f5d44c5559dfc1b12d92f1fb3ab
   jsAnyReserved40 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved41) -}
-b33ba8b756638df1e5a307830e7ccde9
+f925971b67cfe8b616367d48b33918a1
   jsAnyReserved41 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("typeof"#) -}
-3289b6a1d7f98ac38bcc9799faaa1abb
+62dbdfaeb43db733f7b7ad352f99de07
   jsAnyReserved42 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved43) -}
-b5d159986de4ab669d72d00db744b6d2
+c4b4bb77bbb176bc4d8337f629183278
   jsAnyReserved43 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("try"#) -}
-1582515581227bde49dae09b36db7ebf
+7bfc4f17bbd97ba3272eec635ef843b8
   jsAnyReserved44 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved45) -}
-01eaa89cc4801737fd9a4dacde31094f
+f6dda82ebeaab524ceaaf12e7947664c
   jsAnyReserved45 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("throw"#) -}
-19bf2a1097f4d042ecc3119d67eda539
+d95d93c75808772b7ef67b2e15516b16
   jsAnyReserved46 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved47) -}
-34b914953ca882e92a089a91fb857364
+933cbb4a6c8570ab920846117487dbfd
   jsAnyReserved47 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("this"#) -}
-824926ce17e05bb4680fc8bede2678fb
+8f9f0b3c753d7f5080d223439cd7fe77
   jsAnyReserved48 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved49) -}
-56223a31661b9512b52129f2e5ab3c83
+2210b670a53bb932685a67957130e079
   jsAnyReserved49 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("switch"#) -}
-7dd2e4a91a784b1b572134c49599561e
+f121c6f501821f646f883ebee533c419
   jsAnyReserved5 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved84
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved6) -}
-206fcbd6f55032ccefa34989d6cd68b6
+4f4e9c07f0c2cfd9a21f34130666603c
   jsAnyReserved50 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved51) -}
-35fa1a11ddd9d5601af77e8001f0bfdc
+f8598c66a14979843878c934f7584f28
   jsAnyReserved51 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("super"#) -}
-32d786f82c01b1765ae6067aeab276a6
+576ddacd0c565ba1680336113e5fe9db
   jsAnyReserved52 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved53) -}
-e555aa0012504abf8dfd4a0d01a88e67
+18e886dc6849731e900c2d9aa6a38f97
   jsAnyReserved53 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("return"#) -}
-caf49a29fa7954be2e03bfc3d64029ef
+b86eabc992f720b735bade7ca848a8f7
   jsAnyReserved54 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved55) -}
-5d57bd3ad5feac614509af5ec4796f42
+e85eb8790e6dab913a80bb42808aecd5
   jsAnyReserved55 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("new"#) -}
-0a64c49bd925fa419dbbb53786ff3a47
+daf4958dd82cddadc3d1d5fb87e0677d
   jsAnyReserved56 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved57) -}
-282f209f3338283c66452b22e7e28965
+91249069fabd993c1cc831ee03d191f1
   jsAnyReserved57 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("instanceof"#) -}
-b3cb91898be2a6606f398d0e38cb5438
+12ef362ea3a8096c879bd87a0ad5ea6c
   jsAnyReserved58 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved59) -}
-55e602edfe15ee3949116d253dcb44c9
+7a5667f4c2b25c3b34cc1d5676d5ae25
   jsAnyReserved59 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("in"#) -}
-fb2a3bebef39bc47562c79fbd8231e62
+aa190e3969bf6c0f9099c9349fb9f219
   jsAnyReserved6 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved82
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved7) -}
-e48f6b3b7f71bc455865da9c6b4a52fc
+aff2aa020594a77aee1f1415a128354f
   jsAnyReserved60 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved61) -}
-770f4087e954ed4546092af2830a3660
+3100a15d2ba5f23825854cc49be6d60b
   jsAnyReserved61 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("import"#) -}
-2e5af985674bf5474dad3cd487e44adc
+61428fe06a62a2e92dad269490f9582e
   jsAnyReserved62 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved63) -}
-af79a2c9cf88c29027a71998e6a0a9a2
+eebee0ebbe87a04d0cc3a6138d75f3d3
   jsAnyReserved63 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("if"#) -}
-91437bfb20fd56b9305192ed363cd9db
+de9219519cbcfe881524ba3cf937dc91
   jsAnyReserved64 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved65) -}
-7b3dc3e504ec303b0dee0734d726933d
+aa2e04b9d31ea6860b0dd74aab82caba
   jsAnyReserved65 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("function"#) -}
-5331a36c6802c37b871300b3ef21372a
+e9178a0ab46f6c0e7b11b20ca121a84c
   jsAnyReserved66 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved67) -}
-70c8519936d412995644c51ea0baf7c0
+8ce606700c72a96d1c400ecb5acc5a80
   jsAnyReserved67 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("for"#) -}
-6cd66c5a19cfa415a4fa4a9c934fc923
+a54da07c7ffb1968edac75de16570279
   jsAnyReserved68 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved69) -}
-0509a590330a0d4cfd4b506dc9400a92
+8dd189b461b7abf0e459e53f6918b3f3
   jsAnyReserved69 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("finally"#) -}
-93b04276ff750fb9f400fdbf7b250555
+48e3b692224ca39b85b41aa185e43eff
   jsAnyReserved7 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved80
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved8) -}
-bfc6ca038ee6940f9bf7b10f2ef724b5
+bebd025f3101ba96b785095b1d527328
   jsAnyReserved70 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved71) -}
-8b63373e1d8a33835c214c79f53450b3
+ac6eb952f84aabda36d09ba33d290fa6
   jsAnyReserved71 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("extends"#) -}
-1305a20598dcc5105b6d752cddd4b0dd
+e60effef27b53517143b64a1bf2e9e93
   jsAnyReserved72 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved73) -}
-2912a750479016b830e166f9d9a5d2f7
+80e9955f3059b344f81ef33a05a9e58b
   jsAnyReserved73 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("export"#) -}
-fca2599d47cb0d0baea71c65a7a33bf9
+16c6d14f8c48467fc6bc2fac99af7a01
   jsAnyReserved74 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved75) -}
-ce6504d63707ed3c4eac2b2211622b66
+bd30eb58d2de1ace7e3a413d8dc965ae
   jsAnyReserved75 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("else"#) -}
-0164ef538a6e814c4b46478841cc7f5a
+016106f8cccfd1c8c0027e7372ab80c4
   jsAnyReserved76 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved77) -}
-e77e96b0746d5ccbf56a2043c48acb2b
+62e31b4d65665ffc9cc941d083a039e2
   jsAnyReserved77 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("do"#) -}
-d7090deb67a1e18cefe2c583c6b0cd76
+b483b29772ff593cc2c260991b6ee0c6
   jsAnyReserved78 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved79) -}
-2c876a44ed7ed32f29510b8dc4c8b109
+0052a283c0ad656ad56f1ff54270a1a0
   jsAnyReserved79 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("delete"#) -}
-3144db31f746b6d295935f27926526bc
+1619737e68187fd5108633c59718371a
   jsAnyReserved8 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved78
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved9) -}
-0f6d530191d1b236f20d27e1faf499be
+c442f35ee24fb8b82792b409f7e36274
   jsAnyReserved80 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved81) -}
-0c6baf170d10271e1070a6e7869a0a33
+e9bed449755ae593dfa93cd4eec46549
   jsAnyReserved81 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("default"#) -}
-90efe2cfacd04a25af1a8881cde2d576
+757eb9114380e9f0cd62b8124d90dd46
   jsAnyReserved82 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved83) -}
-9aeb8bfcb336e21ff8a8d923aca902a7
+dccd53b9a071256313cd773ff20f4794
   jsAnyReserved83 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("debugger"#) -}
-b71cccde0005d3e54430e946526507ab
+db2f9bd741c315ca4b05a275a1c53df6
   jsAnyReserved84 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved85) -}
-a53edf296e7ee52bf3189891c932097c
+e1e363461ed0e81ab9d140cf3da7682b
   jsAnyReserved85 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("continue"#) -}
-7bb618d8b76c263f7ed517c3d2e6a6fa
+154a3b46c4e319b1a3ce37c55992d817
   jsAnyReserved86 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved87) -}
-38419da94c9315014a269e3f68ad73f0
+200870685303c4c3cc58c450efdffb3a
   jsAnyReserved87 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("const"#) -}
-ffd6f0484362d4a283dd5ffa6e639d63
+4675987c297e5234b2ac7cb2ee8a050f
   jsAnyReserved88 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved89) -}
-1c13eee4383e489fc141ac1ebb9c0076
+9e07b11da517073695176f8d319ff974
   jsAnyReserved89 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("class"#) -}
-b0bf3131c64d7184ca9ec43b254ac698
+4aeaa3cd23ce88efbd6aaf1023b8a10c
   jsAnyReserved9 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved76
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved10) -}
-d7fa41822b5caf73fc3fa30b5f4821b1
+8ce09c7670fc696779e95b676522e55a
   jsAnyReserved90 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved91) -}
-a24b5ffc0f354eb3e85d883c4c05a8dd
+e7f4c8fdbac78ba8883288c257e8150a
   jsAnyReserved91 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("catch"#) -}
-3b9d00ce7129edf255e578527f51bca5
+4a2127d3b156aa5cf7809f833f7157f8
   jsAnyReserved92 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved93) -}
-0927613fa3bb21cecfe3641e466dc87a
+983d713ab045a2e4b8f79a3064e550d9
   jsAnyReserved93 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("case"#) -}
-81e3870eb524c0b841fbe570c5a5610d
+67244ead3d29780d1a396acd94a37ab4
   jsAnyReserved94 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved95) -}
-e5d03a05f127ee8b47e0a213b875f94e
+877783c0e4ebce425eda5c35c624901c
   jsAnyReserved95 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("break"#) -}
-19dfacc5121df83963697b3e931b8139
+d3049a6e9c42801efaedc1821ecdfa62
   jsAnyReserved96 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Base.++_$s++
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved108
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved106
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved97) -}
-b09f3a784716a11316c494cf8568754f
+45bdd5e47c3413da6317e2b74f7f1967
   jsAnyReserved97 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved104
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved98) -}
-9cc99a2d42629688f3647bb778d027dc
+d8f0ccd2ce2bc8a5ca4b9bdefe108b6e
   jsAnyReserved98 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved102
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved99) -}
-22e0037550ebe680254f62f8eec9ccf3
+664618a4b6302e2b2678498fe199f05b
   jsAnyReserved99 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved100
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-b09fdb20aecda56b76d0cab74dee771c
+faf3fe2e1f89db72d31e57b199ff290e
   jsFutureReserved :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved109
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-d71374de64d6f361ee764dc4de22e24b
+52d5ad20853dcf3240ab9c3e31fc4b88
   jsFutureReservedStrict :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved127
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved112) -}
-b42c533322f56a0c9b06cb93ac8de5bf
+02e0c34eae7e2653446e7fd1337735dd
   jsKeywords :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved94
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved1) -}
-0d75ed341fd31c4d63ef75204d3892e1
+c802340f600327596ca6f1537f9a6839
   jsLiterals :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsLiterals7
                    Language.PureScript.CodeGen.JS.Common.jsLiterals1) -}
-d1f9687b245f8db3a5e0099b90137dea
+f8c83cc95582adce046e0717f3f488e8
   jsLiterals1 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsLiterals5
                    Language.PureScript.CodeGen.JS.Common.jsLiterals2) -}
-fe4e245d5cbce50b65fe1d775855e87a
+6c7b4135aeb1a10824342a70d322455a
   jsLiterals2 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsLiterals3
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-d7fde57ac92726d57eb4b0c47e10b65a
+c70af36430661559d9146db6a2fb270e
   jsLiterals3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsLiterals4) -}
-e3cf9dad68e2f7bd3e734651c716c13e
+ea408ef91255d439e00b98d30d024af0
   jsLiterals4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("false"#) -}
-bc644765d46232b365442ee4d93c2e80
+d7dd9fb59dc85c68f80724eb6209fd47
   jsLiterals5 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsLiterals6) -}
-65737d1ca07dfb0ef758af8248da2579
+226045265f123ce5c0af081fc082861c
   jsLiterals6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("true"#) -}
-c30944c4a5a1df079770ffa729a8aa2b
+7e27f0637f028401f898d26e0660a9f1
   jsLiterals7 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.jsLiterals8) -}
-9587c9da951603baeeb932b9ae8f084d
+7eadda02956a0d9d95e48009cb4e5111
   jsLiterals8 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("null"#) -}
-dd3b324f803a38eac5a54078d1a91ce3
+faa870bd7c4907d23439b808fafd95f0
   jsOldReserved :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved175
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved130) -}
-65dfa35ef4a42417cc05f1568f197aea
+a781da24abe92c316654df7b479ce827
   jsSometimesReserved :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved106
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved97) -}
-d2e67f77d702853bee1328f702fae5fb
+e5b57397a828cc547129ce68eca0af20
   moduleNameToJs ::
     Language.PureScript.Names.ModuleName -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <S,1*U>,
@@ -1371,20 +1424,20 @@ d2e67f77d702853bee1328f702fae5fb
                         ww1
                         ww2
                         ww3 } }) -}
-6cc78dfe017f740a081841624dca4b77
+f61f54367d4bb852548c70f59e10ce31
   moduleNameToJs1 ::
     GHC.Prim.ByteArray#
     -> GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
   {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
-1fc974ab243871130f6b99f627bb0067
+b5191e0bbeb7bcf60a512bbb1a98d112
   moduleNameToJs2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.concat
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-1bf31439a019a925c6158b99b6849787
+9aa7e1e77d1c2d36ee957c047927526c
   moduleNameToJs_go1 ::
     [Data.Text.Internal.Text] -> [Data.Text.Internal.Text]
   {- Arity: 1, Strictness: <S,1*U> -}
-845215138738a72e83ecfc2d8101c05d
+9209b83f37bce042cc5c811489c09cec
   nameIsJsBuiltIn :: Data.Text.Internal.Text -> GHC.Types.Bool
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (1, True, False)
@@ -1394,749 +1447,749 @@ d2e67f77d702853bee1328f702fae5fb
                    Data.Text.$fEqText
                    name
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn1) -}
-c8e7efa0d87ea6f8126d2cc759d6dcaa
+9e8810031de9d4ee1bbbc91ed8164625
   nameIsJsBuiltIn1 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn158
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn2) -}
-64610ca2e8c420b8dd8d02d19332f89b
+f308ae02415142b1b88bfe354647b291
   nameIsJsBuiltIn10 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn140
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn11) -}
-35d02d7802e9617c869a97ccc3e4b83a
+0a9915a2ff1fbb49ab35ae2d4254901e
   nameIsJsBuiltIn100 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn101) -}
-988d415d4905a50eb43ef5aa0ebbcefd
+3163f72436767f3833dbeb2c75f35db9
   nameIsJsBuiltIn101 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Object"#) -}
-9232c9f38750ffee908fd925ea6bc9e9
+5123a0d71a4b4aa8e8662784c6920897
   nameIsJsBuiltIn102 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn103) -}
-52986e566b4768f1ba3d63cfe9e03247
+f13f9f35b09275820ff1bc675c800779
   nameIsJsBuiltIn103 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Number"#) -}
-1dd0682f4994eb48963d46f3db3231b7
+ef8582493c26214b74ce10612478266a
   nameIsJsBuiltIn104 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn105) -}
-012d3fe9e891b3e450208f9296d2d280
+4a771304ba6a7782d9df5cbb1bf28fc7
   nameIsJsBuiltIn105 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("NaN"#) -}
-e8b9d11b5e8e246133e719073206db40
+331d74b085c0dea13648665462d130dc
   nameIsJsBuiltIn106 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn107) -}
-4b152e79139dca17c91aee860e05f32e
+9a6df52df09c6f3504de90ad51437beb
   nameIsJsBuiltIn107 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Math"#) -}
-265b700bc0773dc01078c37dd7e21d3f
+31bac6951a416dd261d33755c512b03b
   nameIsJsBuiltIn108 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn109) -}
-7a55e72bac1154a477ac87bcc60eb292
+c6abc916939e35b4b3df95b08556fe48
   nameIsJsBuiltIn109 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Map"#) -}
-15e7e9047e8740668f8e879670e2ef5c
+8220b7a0379d36abae2482111d7091c0
   nameIsJsBuiltIn11 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn138
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn12) -}
-3b3c9108bbc06602a2d2b5e0724ac24b
+9e50e5eceb0a4c94e60ba8cc5481ce3c
   nameIsJsBuiltIn110 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn111) -}
-7efe1f1f960b37513cb355903a928bb2
+b9bd58c0fe645a42f601c39ee1cd5e40
   nameIsJsBuiltIn111 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("JSON"#) -}
-0c2c0528c454df03514c25cf0a7e4758
+28f6b6df2265404eb48d3e6dcba49753
   nameIsJsBuiltIn112 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn113) -}
-018b2570d656d5e1d3c18e7acad3d75a
+c5a4b235fa6a77cae5a0e300b9168d88
   nameIsJsBuiltIn113 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("isNaN"#) -}
-62c4e39387d35be3500306611641359f
+6394be612befe74cac92e206ea2bba7a
   nameIsJsBuiltIn114 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn115) -}
-f7daf22e1d48f19d44d89cbe87e038fe
+4af7d807c2ca1fe457472ddb4df09e16
   nameIsJsBuiltIn115 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("isFinite"#) -}
-11ccd782e74e88b77c4c2d721dae9454
+2899229fe9393f78a48f477ec0cfadf6
   nameIsJsBuiltIn116 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn117) -}
-a72626a1dd54968b63f97a221cc0c619
+86d2a11fdec6e20f889f2961887369ed
   nameIsJsBuiltIn117 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Intl"#) -}
-a280c83f05aa6456b861d6abae35de00
+53ec70d837a12ca1c5f7756eb2520352
   nameIsJsBuiltIn118 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn119) -}
-be12a8a26f4ee4a76a6d1c4ea63277f5
+71c4351975cbe8a4a7fc33b6c71005e8
   nameIsJsBuiltIn119 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Int8Array"#) -}
-06684aaf38c543d43c0b7a575273b1e3
+a99c381f450b9a7fd43eb237bde83107
   nameIsJsBuiltIn12 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn136
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn13) -}
-d9f4241da852ca30b3535a6e46d22e82
+33cf62bd4697dced0613d96b7c5ccc20
   nameIsJsBuiltIn120 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn121) -}
-805d18889da5f56213412c84950b668b
+a6be298c99e25a61ef2d1bca18a8837a
   nameIsJsBuiltIn121 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Int32Array"#) -}
-87b72429df70ff4e890e8ee3cf44f27f
+e3b753896bea9f3832163c116791e1b8
   nameIsJsBuiltIn122 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn123) -}
-cd9a82dd90d3b224d0e95bb85ab98626
+d0e37fcb4c2ac5070e3a718ba8fd9e98
   nameIsJsBuiltIn123 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Int16Array"#) -}
-c0979eb860cdfa0f6597d95263d7e9fe
+354a45a0e00ef022081e7e2ef58b37ae
   nameIsJsBuiltIn124 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn125) -}
-839c5e0a2f69ca60aa9a8ed845b1cd9b
+5ea5a52ab229b90893d0aeb97f9040b1
   nameIsJsBuiltIn125 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Infinity"#) -}
-243e51786937d4e7d1258f070a6d0c61
+1a8ade09ebcb1a85cb72ef17d447b6eb
   nameIsJsBuiltIn126 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn127) -}
-d37f1744ea14fff5a6b30e8d1b4069dd
+f8c6328b800dc1372e1c4a4f5c3508a0
   nameIsJsBuiltIn127 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Function"#) -}
-9bf29fa8b765c9ff2602ca18fadabe9e
+f357d36e09a6c7e02b8b5c2f30b0a7da
   nameIsJsBuiltIn128 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn129) -}
-8ed23e8fe423b89c5aca332f1045fa37
+bf359dda19a35b99eec1f6034a8ed9b1
   nameIsJsBuiltIn129 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Float64Array"#) -}
-6a8d2c77bf89ba523d41a994a7232c09
+ed37e7b57bda7ee539ddee3516d89a10
   nameIsJsBuiltIn13 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn134
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn14) -}
-6b366daf3d50376b85c188aa3f31f332
+70e1c360c2663806a99210adf5f63610
   nameIsJsBuiltIn130 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn131) -}
-3ebecf162de5eea3d47a0e9ed6c9d87a
+e468dfcc235d2de5ccad34ef50237963
   nameIsJsBuiltIn131 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Float32Array"#) -}
-3d1fd20f4c568d075c185a0e4c93a918
+e51c888f1c18a36b5469805a48b12a3a
   nameIsJsBuiltIn132 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn133) -}
-42a485b58ce629c071e65bac57d32a56
+fd70434df2bd28aca32be1c97c5f69bc
   nameIsJsBuiltIn133 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("EvalError"#) -}
-e24158901b9fc870c8fea3460ec533c0
+a2a8fab8a3e762a009bf865e018cbda1
   nameIsJsBuiltIn134 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn135) -}
-7be70bb46be92e824936c071272785c5
+8483f50e08e9107765cc2946ab61d29d
   nameIsJsBuiltIn135 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("eval"#) -}
-88d5ce0ff2ece7c7956d7a650b48e5b3
+32aabf9546a2d2b76b21daeafd73d344
   nameIsJsBuiltIn136 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn137) -}
-cec9f8eda8865da33a3eeb70b2a21e87
+d82be2294a963bfe5a3ec87e3b3e678a
   nameIsJsBuiltIn137 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("escape"#) -}
-ffb08b57e70a157fca5dc09fb099892d
+202a4ea0e66b4e53b18e16df6fc8a6f3
   nameIsJsBuiltIn138 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn139) -}
-3ddaae91c797970eeb1ebc4025cb1090
+613b724f9df0c1b09049e6541d702ee8
   nameIsJsBuiltIn139 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Error"#) -}
-461a1ff7f400de5562adb6650b0a8ed5
+b31184e66724978a741e44ef7f6c6c51
   nameIsJsBuiltIn14 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn132
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn15) -}
-be44a7528316353aca7945b61a909e81
+8b757e945be72486096c6d9a1377d546
   nameIsJsBuiltIn140 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn141) -}
-0480e173240fb1bd2b2948c670811458
+7c60529ddaf59b160b8fb20f4ace1f54
   nameIsJsBuiltIn141 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("encodeURIComponent"#) -}
-3f8afb3090739cfad73d7d70d44fb2f2
+7fcfde46b7e9f2d67543b59f5383589a
   nameIsJsBuiltIn142 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn143) -}
-b68212b81b0702a39a958850ef655637
+e4ee35e4fa0adb2ab110f20f471a64a9
   nameIsJsBuiltIn143 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("encodeURI"#) -}
-4d00f02beda4b4dda8b422a7d263ede9
+0f943e985bbd8810ff8bc711142ab586
   nameIsJsBuiltIn144 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn145) -}
-913f36ad433a963bf4aa201ecf55bf53
+d7c1e38737ac0e102ae66c676675eabc
   nameIsJsBuiltIn145 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("decodeURIComponent"#) -}
-2250202db13bae1d4aa655201507185a
+6262dbf940d02b73a8e77a29df1af66d
   nameIsJsBuiltIn146 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn147) -}
-f21d359b57f3dad90509535e7ce0f72e
+37ad5dbe0aea81c3e4f2fdc511b95670
   nameIsJsBuiltIn147 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("decodeURI"#) -}
-909e83980275033eb3e328c017d41b8d
+af5f660a6b4b1fdb866c57cf370cb228
   nameIsJsBuiltIn148 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn149) -}
-dc62e97a9f3fef858d4f9d95f9fe8627
+db6cd7be7eeb1c6c7e7fb71859a7f556
   nameIsJsBuiltIn149 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Date"#) -}
-b4f1eeb9fe70bd11691c7884c2321100
+b9013e20cae94c0e0526c7bd9a324e23
   nameIsJsBuiltIn15 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn130
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn16) -}
-d1ed0e6922c595ecae71ef1030a779fb
+0071fe07fab33bdd68d0ce44efcf104a
   nameIsJsBuiltIn150 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn151) -}
-7165c793a367cee3dd3b3b36dd505637
+3074e8252cd6ec8c107844708033e625
   nameIsJsBuiltIn151 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("DataView"#) -}
-c1947b25b2e52fe0ed3f17e90083a49e
+e4162dbaec42b74c5d9971ac8ffb5471
   nameIsJsBuiltIn152 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn153) -}
-a233049783c5001410e544081fff9e52
+bb0517cf3cd463308568d4c96ace8e6c
   nameIsJsBuiltIn153 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Boolean"#) -}
-395db8cb40d48d7cca8348f4567e4d85
+4a9fe87a187d16b150310c98ae598f28
   nameIsJsBuiltIn154 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn155) -}
-f9c75e11ef6b5c9340ea607622395e1e
+9bfec50fae8b0733534952880c615783
   nameIsJsBuiltIn155 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ArrayBuffer"#) -}
-718d104c44071df333b803bd73d02fd1
+4ef1591f1f95e7c7d7b42187867b893b
   nameIsJsBuiltIn156 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn157) -}
-81f06fe1e8f5f5f1197f9922ccdce829
+85a3f035a9fab327635587e75a394fb1
   nameIsJsBuiltIn157 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Array"#) -}
-a2d2b3b2e909ced86072596ea961963d
+7e971c1a797e5149073c996428a5592e
   nameIsJsBuiltIn158 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn159) -}
-60e3d0d41e086fc1f6248b86d81042f9
+bd3c8e24e1ab791f9333bcd0aa542e8f
   nameIsJsBuiltIn159 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("arguments"#) -}
-0c17cb49ee9fc62ce078a22c2f38a788
+831e38b1aac10c0fadd0f636c9a0c80f
   nameIsJsBuiltIn16 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn128
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn17) -}
-fc73c8dd40bd9f9f616ada572254fdc3
+975b564cbaf8888b82803b2c274414eb
   nameIsJsBuiltIn17 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn126
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn18) -}
-d8c79cf3b18e8d9a8c698c561576d99b
+30a762ceba60c06027ec494485164f97
   nameIsJsBuiltIn18 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn124
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn19) -}
-13d765f6f5b9d5773a38001e4c9ec4f0
+f2a32f1d99646be377a53e8dc3c4db2d
   nameIsJsBuiltIn19 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn122
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn20) -}
-077ecc077350a2317a6fe653cf853fe7
+4c9877fe8d731e2f54fb7048a0b93f8f
   nameIsJsBuiltIn2 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn156
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn3) -}
-1e1c3a90003166baedb5860ec149a2ba
+7eddc1f16e52dc9dbb8d02c68f4125be
   nameIsJsBuiltIn20 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn120
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn21) -}
-43f1ee70f7d6e0151892c21727440d4c
+5aa3bea9bdc40b5187703c53f99102d7
   nameIsJsBuiltIn21 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn118
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn22) -}
-96b3d7f5f3bedc675e6036269f6a6dc1
+9ee20adcc2ec01ea3cab42a5310918c3
   nameIsJsBuiltIn22 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn116
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn23) -}
-169889dd23a00fdadb7688096146b6f6
+09ca9be6fae7ce0d68eac61945cb3efc
   nameIsJsBuiltIn23 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn114
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn24) -}
-ca4bf942eb4777db52985260ab1fbdd0
+730e0e0b2611b2c228a0b9fdd1e292fd
   nameIsJsBuiltIn24 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn112
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn25) -}
-b31a4b412fa11a1b50fc1ec332cd88fd
+b4055c81e44037a94c911a0262c63641
   nameIsJsBuiltIn25 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn110
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn26) -}
-fecac64bb426d875fc8949ba04ac8665
+d769f718d69ff9f755c8164e6227b1a8
   nameIsJsBuiltIn26 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn108
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn27) -}
-fe78436d31adf885a1ba8dfb81f9416d
+ec5afde7cdc5f90a7cae67bf2db16335
   nameIsJsBuiltIn27 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn106
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn28) -}
-fa1c7580bccd40526016a81872b68c08
+0639ffeb4122d60b29f9cfaac5e9d519
   nameIsJsBuiltIn28 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn104
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn29) -}
-aa3469ae53457c5fa04c9266d3b4adff
+c7467ba0e1c45c672fac83f3a3e06253
   nameIsJsBuiltIn29 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn102
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn30) -}
-0839b262aa124ca1de1221c214de4bc3
+3dac1704df740a3ead338fdb7cf4b4ef
   nameIsJsBuiltIn3 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn154
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn4) -}
-a79facf090f4048fe43947138fa7645d
+ee75892fa4c101151cd1fcc1441520e9
   nameIsJsBuiltIn30 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn100
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn31) -}
-871821140ab0ab181aec9525d9158662
+cf8cce99c54b7724cdea32ed8dfc788a
   nameIsJsBuiltIn31 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn98
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn32) -}
-a9ccfe203bf8e45bec783bca82df1767
+20fe0d9c467019a7b99ef3bbbdb1ce20
   nameIsJsBuiltIn32 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn96
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn33) -}
-76ffc6de9203da827b29536d720be805
+d6906b3fdec5eb11f12ce33e8018b10d
   nameIsJsBuiltIn33 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn94
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn34) -}
-24bde351d951575320863548e4d8084d
+7a798d313a68a17aefbfd9ba722d12f4
   nameIsJsBuiltIn34 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn92
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn35) -}
-a5e765d40507b6ee426050e97bbf4c1a
+7a3bce32f6d0eba1bfe6a75955a50610
   nameIsJsBuiltIn35 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn90
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn36) -}
-7aecad8f74ef44839b288b9cc0322e4b
+846a49a2a277431f8efb977f28876314
   nameIsJsBuiltIn36 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn88
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn37) -}
-4b05b85f4c5c235e785c677db42cef22
+b36abb8496b5567ff6021bd238a10ec5
   nameIsJsBuiltIn37 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn86
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn38) -}
-aa43d06dcf702e199c3c6dc2c1c2ce62
+8ab72136f2f12b294d2fd96e376c64ee
   nameIsJsBuiltIn38 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn84
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn39) -}
-fe9daddc0a341e26e29260f0ec75d1d7
+2599ffdf293fdd1dbb834dd1d33e60ab
   nameIsJsBuiltIn39 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn82
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn40) -}
-b2e6d23581cc3d22c56f2f681615a339
+954dde73ccd6b74f18c27b6dec806f8b
   nameIsJsBuiltIn4 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn152
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn5) -}
-3225be6fea3021abd994e347e072123d
+1a80d8b916c7dfaa9eb626bb69b7fa39
   nameIsJsBuiltIn40 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn80
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn41) -}
-6da56c8c471a4362ad73138c08bae50b
+0a6401f52bc7a0d0c740eafebce15980
   nameIsJsBuiltIn41 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn78
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn42) -}
-5eba8009adf79aa455d5fa85cafbd14c
+b7af169a6d551d9170a771e019a58451
   nameIsJsBuiltIn42 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn76
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn43) -}
-2ec93ad4a3c322d231a302575aa50b48
+c6993ac85ed400d783dc3209edc2a5e6
   nameIsJsBuiltIn43 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn74
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn44) -}
-fa1c0e3d7209f27bc90da57fc4f3ee54
+1f61f8727dad90e315450f0e0c57b077
   nameIsJsBuiltIn44 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn72
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn45) -}
-e9c598942e3fc38365604efea09262e3
+e2ea0208382d87fb299de12652047db2
   nameIsJsBuiltIn45 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn70
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn46) -}
-c84f38d885be2c76071d991bc8b92749
+7330a3771921bb59b2391ee86ecde43e
   nameIsJsBuiltIn46 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn68
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn47) -}
-20187db81ca6b566926dea3b06755f03
+c5a1fb38dfa519c51c49bc6138f1c459
   nameIsJsBuiltIn47 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn66
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn48) -}
-d65ac9894f74ffbf6ee5b8669d04798b
+b8255508f77ba4c22f540039b0e1e2a9
   nameIsJsBuiltIn48 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn64
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn49) -}
-345ebb6253192891f1088d09012b1203
+4349cf1730d845f30a9e33a88bee82d7
   nameIsJsBuiltIn49 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn62
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn50) -}
-6a0fce5ad00b00fa73de48da94a7e650
+c18662544a3dbddd40c2086acb68b56f
   nameIsJsBuiltIn5 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn150
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn6) -}
-e08e9e0f0ffeb14c4e8f4895cd58de2e
+69981e1abc3f6031dc2deaec614a3298
   nameIsJsBuiltIn50 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn60
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn51) -}
-06fbceaa942a668f6ddf2c9294cc09bd
+9890179fbaa2ca991cc2b8ebc1393b7b
   nameIsJsBuiltIn51 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn58
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn52) -}
-496f5e93c48c4b4fbd35d0ccad715877
+e8aed02d57ee0fd7dd196c4c61db3c35
   nameIsJsBuiltIn52 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn56
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn53) -}
-c5242ba7abc99639922ab4f780368d87
+46c19684b4007121d84aa1a5e81135dc
   nameIsJsBuiltIn53 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn54
                    (GHC.Types.[] @ Data.Text.Internal.Text)) -}
-b8ad63ade875aa134d7cc02f00e8d4c4
+334ef2f290998e6c3ca3e520339795a5
   nameIsJsBuiltIn54 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn55) -}
-3739b43ede8cd1b871985fd9be9defe5
+fd6a91e91b90d98281a10ccc6d18b8a4
   nameIsJsBuiltIn55 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("WeakSet"#) -}
-bf6c626f9366fce3579e80bbb862b408
+be910c1087e434fe5a807af29ffe45a1
   nameIsJsBuiltIn56 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn57) -}
-084285dd4a3eb979b3501b3bf3c1c6d9
+9ecd48f8eabaa571666930ad73301d3d
   nameIsJsBuiltIn57 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("WeakMap"#) -}
-9bc2e4f8b2fdb84038f1a79c5bdceaf6
+92125107bb513532abb5d669c75f7dd1
   nameIsJsBuiltIn58 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn59) -}
-b0df06686e407d2b815484f9c402eb2d
+147731bab30227ba1638837d42e948c7
   nameIsJsBuiltIn59 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("URIError"#) -}
-4feb1d7eda9935f13982e43606ab83aa
+8c833762a7a9a2fdd4afdbab7fafb356
   nameIsJsBuiltIn6 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn148
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn7) -}
-e5cfd8288c6981a0f4c3dc3c3756ae07
+b8a92ba04837658f3c268bb256ba2bde
   nameIsJsBuiltIn60 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn61) -}
-61e178258b696858a7bd86af7db4ab28
+b8e7068555016f597a3ae882fff4522a
   nameIsJsBuiltIn61 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("unescape"#) -}
-2f24504b01489d8bedde265d556196a4
+a538d0727ab080cf3350067bd997f95f
   nameIsJsBuiltIn62 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn63) -}
-d23d2a24027421d0ef400dbbc1608558
+daa28b39d9e7c8f804daa884b2d94b13
   nameIsJsBuiltIn63 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("undefined"#) -}
-12b4a260f5f2c5a16d4439b5be5531b0
+b007fe728e9d3332e816ecc49148ed38
   nameIsJsBuiltIn64 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn65) -}
-3ee365788830b06adaa98b1842f05887
+b7950c61f83574797f51888acfe42783
   nameIsJsBuiltIn65 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Uint8ClampedArray"#) -}
-9aba22b3ef4d7d60c6bf57a9b20bb176
+8ae5f583c77607c09961f318d5bb6227
   nameIsJsBuiltIn66 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn67) -}
-638dadaf52f8cd429a9760190bfa54da
+9a49fe30b72424818ad339cfab6f8b47
   nameIsJsBuiltIn67 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Uint8Array"#) -}
-a8991bf4bd0711d90a3d4fe149144e6e
+e23d93d9fb7cd5dc2b263e52cab4906a
   nameIsJsBuiltIn68 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn69) -}
-7b5be2ddc79ad5c93bc2ab8a65f88e5e
+dc1469c8853e21178941bbf7accc1e0f
   nameIsJsBuiltIn69 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Uint32Array"#) -}
-3700b6aa521fd002cdc794c3b18b3cdc
+54a087c152695d1e70ba7586b1b8b9d1
   nameIsJsBuiltIn7 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn146
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn8) -}
-cd261ba23334f3e8b714bc08308327e8
+892dc0d86cfc6524b0cfde2095b4d2d2
   nameIsJsBuiltIn70 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn71) -}
-c59b70697b1894871e3b3c09a15cab7d
+f3bcfe74fba77bce2712f8530f0f9f11
   nameIsJsBuiltIn71 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Uint16Array"#) -}
-133a5d7c03d4c0f89b5ded3b10e8c20e
+782e19019eddd0500d63ae09a012ae10
   nameIsJsBuiltIn72 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn73) -}
-c1c90921b48bc4a302fc67ff4153bd44
+94cdcf87e2e95b170fda1a1d97d07fcb
   nameIsJsBuiltIn73 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("TypeError"#) -}
-75c7690f5feb5d6de40c87fb08f12f81
+86d1d7a779f38ac7fc1700dbc9ee6808
   nameIsJsBuiltIn74 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn75) -}
-9ef3d527c02c759506fcb1a8892a630e
+6c1881a445b6782d70ef03a01c832309
   nameIsJsBuiltIn75 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SyntaxError"#) -}
-544d326dd960969fd41692326b3ad0b9
+479d26d988167313b16ff43fc01cf41d
   nameIsJsBuiltIn76 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn77) -}
-2d64c6668ac33390e4e2453d069049ae
+4987bb4bcd7cb2f231d8c4f08bbdee77
   nameIsJsBuiltIn77 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Symbol"#) -}
-7fef3e11689b44e5ef5647cec0932493
+0c3587cf476bcf49467b9db910d2ad5a
   nameIsJsBuiltIn78 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn79) -}
-fafe2b17f74013b35637dd6238ed1a69
+0baec3e9894d07fe41aff54e8083df8d
   nameIsJsBuiltIn79 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("String"#) -}
-4780f40cecac7b734be6730b91749815
+e074af862ab3f49bca4e7309684b5a6b
   nameIsJsBuiltIn8 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn144
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn9) -}
-514d5abc0e9cf3940255351435961777
+50214602762079b4907df000015a82ef
   nameIsJsBuiltIn80 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn81) -}
-888712e8e237c137f41428be2afc2fea
+aa9a83542c062bff97f4c71c34704ed9
   nameIsJsBuiltIn81 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SIMD"#) -}
-0a4b403f9158fa2cee96a2e2ec00e2d8
+691800e1cc58c88138bca39726c94b0d
   nameIsJsBuiltIn82 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn83) -}
-35aa22aefe56e84dad60000aab4d7897
+0ba5c1ae6261ebe2bd96cdc783ad882d
   nameIsJsBuiltIn83 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Set"#) -}
-9ca3753eec2676d25159703c2d82a646
+375e73ce7e0a4f8d2bc3b72170faeedb
   nameIsJsBuiltIn84 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn85) -}
-593b59dc7583066dcfecd6106ce146f0
+290885f4ec3d110f179b8d300e4932e9
   nameIsJsBuiltIn85 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("RegExp"#) -}
-690a92bfaf21fe3575192e9b3a481e69
+4391f4753548e9dd8fcf45d2ef4ff154
   nameIsJsBuiltIn86 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn87) -}
-afc8f8b531337f8a05409c0551ba6717
+1c794f1bd26360362cf7489559cad261
   nameIsJsBuiltIn87 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Reflect"#) -}
-7913b865a798f1cdf4880000415b407c
+3d2a89882a0632c667a4fcdcc07a8c08
   nameIsJsBuiltIn88 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn89) -}
-d7082d2c7a30e6823570b362b33573e0
+c42a9f5ed47fe92f11dce110c2e214ab
   nameIsJsBuiltIn89 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ReferenceError"#) -}
-7308356eed23ae0d589f5ff228ac3052
+8c9fe2ee11a18f78895fffd07e1c6fa6
   nameIsJsBuiltIn9 :: [Data.Text.Internal.Text]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn142
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn10) -}
-1a0b44d10023ee72d7d41b7509c70636
+bee7561aec6278ee252392e6770ab4c8
   nameIsJsBuiltIn90 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn91) -}
-7ad464381c181be6b99ea4fe698ec6c9
+7cc09f1a5900c48f93015284b8e7b655
   nameIsJsBuiltIn91 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("RangeError"#) -}
-65696e909983d63c8e5bbb9f305be334
+67c02ae3f6b8a4301a2ce23d7fa94bb3
   nameIsJsBuiltIn92 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn93) -}
-dd894949ecf9043e53feaea9dc5f4f61
+11acefafc494e8e0ce229c2cf87b33c1
   nameIsJsBuiltIn93 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Proxy"#) -}
-8e55fd9910caf7e8f2e9b88a262127ac
+d4c1e70aeda2a146384b743958b32f9e
   nameIsJsBuiltIn94 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn95) -}
-416fad6742c2e49de53bb1f9ece8863e
+dfcf740a869f262ec439e87bb0bd7b63
   nameIsJsBuiltIn95 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Promise"#) -}
-337dedbd8d24b444a04f71ba5907c52b
+4674f9455f7d85deee7bd99bd1542ce0
   nameIsJsBuiltIn96 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn97) -}
-93e6ba9ccac36aaaeb4829cef3976409
+13f72367c6196c061f9ac2d30f18f8ed
   nameIsJsBuiltIn97 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("parseInt"#) -}
-30c3ed9e44be5977c5cf21745fb566ed
+47aff73d88e63bef019b63d20864312d
   nameIsJsBuiltIn98 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.CodeGen.JS.Common.nameIsJsBuiltIn99) -}
-7a12462acfdd109f4459b74e6f564e2e
+50d1ec394c2a9b0a748bf369beeb6b51
   nameIsJsBuiltIn99 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("parseFloat"#) -}
-5693e0ba6cfbf89ac96851ea98752a5b
+4a40f23aad7f09e142d0d5a7efdb5fd7
   nameIsJsReserved :: Data.Text.Internal.Text -> GHC.Types.Bool
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (1, True, False)
@@ -2146,16 +2199,17 @@ dd894949ecf9043e53feaea9dc5f4f61
                    Data.Text.$fEqText
                    name
                    Language.PureScript.CodeGen.JS.Common.jsAnyReserved) -}
-127635ce6faf134a588117054be3406a
-  properToJs :: Data.Text.Internal.Text -> Data.Text.Internal.Text
-  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [0],
-     Unfolding: InlineRule (1, True, False)
-                (\ (w :: Data.Text.Internal.Text) ->
-                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
-                 Language.PureScript.CodeGen.JS.Common.$wproperToJs
-                   ww1
-                   ww2
-                   ww3 }) -}
+dcda8ec60ec408dc0030f195fe9b73d1
+  properToJs ::
+    Language.PureScript.Names.ProperName a -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ a :: Language.PureScript.Names.ProperNameType ->
+                 Language.PureScript.CodeGen.JS.Common.anyNameToJs)
+                  `cast`
+                (forall (a :: <Language.PureScript.Names.ProperNameType>_N).
+                 Sym (Language.PureScript.Names.N:ProperName[0] <a>_P)
+                 ->_R <Data.Text.Internal.Text>_R) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

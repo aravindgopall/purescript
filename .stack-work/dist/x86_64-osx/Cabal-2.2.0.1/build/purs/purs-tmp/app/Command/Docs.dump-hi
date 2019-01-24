@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:48:49.233084 UTC
+2019-01-24 14:18:16.744833 UTC
 
 interface main:Command.Docs 8043
-  interface hash: 7b4c46dfd2509a9c19418a6251074c78
-  ABI hash: e01b2912d543378168ee6f6e862c2586
-  export-list hash: 9dddb413c668bf7ff16f5beec4475449
+  interface hash: 8e88861fbf62a68c5061dc821974985d
+  ABI hash: bb4119e1fcbe2bfd35a83b02b5ad6b74
+  export-list hash: 6399edc4018c2a366c5d83423d34b5e0
   orphan hash: f6293057149b2fe8e05e35eab7ee60fc
-  flag hash: b8bf76a4e499070f312618f3da385ad7
+  flag hash: 5a2e8af1da2a35d8f2cdab6dc779a6e8
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
@@ -29,15 +29,15 @@ package dependencies: Glob-0.9.2 aeson-1.3.1.1
                       data-default-instances-dlist-0.0.1
                       data-default-instances-old-locale-0.0.1 data-ordlist-0.4.7.0
                       deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 file-embed-0.0.10.1
-                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 gitrev-1.3.1
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
                       language-javascript-0.6.0.11 lifted-base-0.2.3.12 microlens-0.4.9.1
                       microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
                       microlens-platform-0.3.10 microlens-th-0.4.2.1
                       monad-control-1.0.2.3 mtl-2.2.2 network-uri-2.6.1.0
                       old-locale-1.0.0.7 optparse-applicative-0.14.2.0 parallel-3.2.1.1
                       parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
-                      primitive-0.6.3.0 process-1.6.3.0 protolude-0.2.2 purescript-0.12.1
+                      primitive-0.6.3.0 process-1.6.3.0 protolude-0.2.2 purescript-0.12.2
                       random-1.1 safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6
                       split-0.2.3.3 stm-2.4.5.0 stringsearch-0.3.6.6 syb-0.7 tagged-0.8.5
                       tagsoup-0.14.6 template-haskell-2.13.0.0 text-1.2.3.0
@@ -50,16 +50,17 @@ orphans: cheapskate-0.1.1:Cheapskate
          data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
          data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
          uniplate-1.6.12:Data.Generics.Uniplate.Data
-         microlens-platform-0.3.10:Lens.Micro.Platform
-         microlens-ghc-0.4.9:Lens.Micro.GHC syb-0.7:Data.Generics.Instances
-         stm-2.4.5.0:Control.Monad.STM
+         syb-0.7:Data.Generics.Instances stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
          vector-0.12.0.1:Data.Vector.Unboxed
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         colour-2.3.4:Data.Colour time-1.8.0.2:Data.Time.Format.Parse
+         text-1.2.3.0:Data.Text.Lazy colour-2.3.4:Data.Colour
+         time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian text-1.2.3.0:Data.Text
@@ -96,20 +97,21 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1:Control.Monad.Logger
-                         purescript-0.12.1:Language.PureScript.AST.Declarations
-                         purescript-0.12.1:Language.PureScript.AST.Operators
-                         purescript-0.12.1:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types
-                         purescript-0.12.1:Language.PureScript.Docs.Types
-                         purescript-0.12.1:Language.PureScript.Environment
-                         purescript-0.12.1:Language.PureScript.Kinds
-                         purescript-0.12.1:Language.PureScript.Label
-                         purescript-0.12.1:Language.PureScript.Make.Monad
-                         purescript-0.12.1:Language.PureScript.Names
-                         purescript-0.12.1:Language.PureScript.PSString
-                         purescript-0.12.1:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1:Language.PureScript.Types
+                         purescript-0.12.2:Control.Monad.Logger
+                         purescript-0.12.2:Language.PureScript.AST.Declarations
+                         purescript-0.12.2:Language.PureScript.AST.Operators
+                         purescript-0.12.2:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2:Language.PureScript.Comments
+                         purescript-0.12.2:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.2:Language.PureScript.Docs.Types
+                         purescript-0.12.2:Language.PureScript.Environment
+                         purescript-0.12.2:Language.PureScript.Kinds
+                         purescript-0.12.2:Language.PureScript.Label
+                         purescript-0.12.2:Language.PureScript.Make.Monad
+                         purescript-0.12.2:Language.PureScript.Names
+                         purescript-0.12.2:Language.PureScript.PSString
+                         purescript-0.12.2:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -153,26 +155,26 @@ import  -/  filepath-1.4.2:System.FilePath a538d436328dd004b88f7d29a8b244c0
 import  -/  filepath-1.4.2:System.FilePath.Posix c021b7a40cfcdd9b08724b5bb7566b59
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  Command.Docs.Html 4428cca42d016d89772111ffb4899c3d
-  exports: 43760124a4aa61d043f3947dae846e1e
-  asHtml 7fea1553ecebec293b236a0b4ae528fe
-  writeHtmlModules 44c038eab729f0397071315385dd1dc8
+import  -/  Command.Docs.Html 4532ddf9735669d71645cc7e681a0545
+  exports: 42e42f38f030cbb877c72de46e59f937
+  asHtml f267b749856cecfbafc15dc02bbf764f
+  writeHtmlModules 0394d9744f337faff7bcef54dd2380f7
 import  -/  mtl-2.2.2:Control.Monad.Writer b86905dc6b5d4d3a09dfa93d3ac3bb98
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative d95e0b32490502bba50f41d6948c00e0
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Builder c6546faa9e09bef2ac2df9eff4a77f61
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Extra b48c7bfd920b8a9e933e034981589447
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Types 7d35983d2990cf2ee861dc28ddfea4a2
-import  -/  purescript-0.12.1:Language.PureScript 055283757289375c92e0f1e11d744c0e
-import  -/  purescript-0.12.1:Language.PureScript.Docs 46c76393ed10ce047f1ff7fc97c85af9
-import  -/  purescript-0.12.1:Language.PureScript.Docs.AsMarkdown 9060efc6fdad02739808af659fa88ac1
-import  -/  purescript-0.12.1:Language.PureScript.Docs.Convert 0ff3b576d52bae937ee4df90e8c7a003
-import  -/  purescript-0.12.1:Language.PureScript.Docs.ParseInPackage 28a8e168a234e16d9ea50ede2ce2984f
-import  -/  purescript-0.12.1:Language.PureScript.Docs.Prim 7d365ebd1ff02fa424143ce6b800ec99
-import  -/  purescript-0.12.1:Language.PureScript.Docs.Tags 099fd0c82b3903efdf769c5ebd623c5e
-import  -/  purescript-0.12.1:Language.PureScript.Docs.Types f3dabfa61d83d3270ed9cf5a3f1e8614
-import  -/  purescript-0.12.1:Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
-import  -/  purescript-0.12.1:Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-import  -/  purescript-0.12.1:System.IO.UTF8 750082717040f0844ba6a864b87f2d07
+import  -/  purescript-0.12.2:Language.PureScript 4a24ccd892adbf021daf2410ebd61e22
+import  -/  purescript-0.12.2:Language.PureScript.Docs 1cb55721db11cb5667401ecaaa3dbc11
+import  -/  purescript-0.12.2:Language.PureScript.Docs.AsMarkdown 351777e35a025db8b7483032d310bcba
+import  -/  purescript-0.12.2:Language.PureScript.Docs.Convert 18435db02a56362a919e921e545058eb
+import  -/  purescript-0.12.2:Language.PureScript.Docs.ParseInPackage 19b78e5cc34d77ef5bb8b4cbb355de33
+import  -/  purescript-0.12.2:Language.PureScript.Docs.Prim 70f5b04e22ee666cd52b687c4289c336
+import  -/  purescript-0.12.2:Language.PureScript.Docs.Tags a39be45ba10fb9719cdccbaaad0b7ef1
+import  -/  purescript-0.12.2:Language.PureScript.Docs.Types 8ff7c3b28d1548ecbdf2d5a573cc163d
+import  -/  purescript-0.12.2:Language.PureScript.Errors 3c1ad933587510f8b20a8c9ec2e86ce9
+import  -/  purescript-0.12.2:Language.PureScript.Names 00f694509122478d97b327fbbccae327
+import  -/  purescript-0.12.2:System.IO.UTF8 1b807f4ae9bb108bad12de3c7965d740
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.IO f7dcaf653a3b760ece6adefe76040164
 import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
@@ -548,7 +550,7 @@ eb72d94b1b1b19e5921a8c1b914f5fa0
      Unfolding: InlineRule (2, True, True)
                 (\ (w :: GHC.Types.Int) (w1 :: GHC.Base.String) ->
                  Command.Docs.$w$creadsPrec w1) -}
-c6a09c6e8b99435a9f44ef872bea9cf8
+843cf40dab92ad84f93c518c64dc0777
   $fShowDocgenOutput :: GHC.Show.Show Command.Docs.DocgenOutput
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -557,12 +559,12 @@ c6a09c6e8b99435a9f44ef872bea9cf8
                   Command.Docs.$fShowDocgenOutput_$cshowsPrec
                   Command.Docs.$fShowDocgenOutput_$cshow
                   Command.Docs.$fShowDocgenOutput_$cshowList -}
-c6a09c6e8b99435a9f44ef872bea9cf8
+843cf40dab92ad84f93c518c64dc0777
   $fShowDocgenOutput1 :: Command.Docs.DocgenOutput -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (Command.Docs.$fShowDocgenOutput_$cshowsPrec
                    Command.Docs.$fReadFormat3) -}
-c6a09c6e8b99435a9f44ef872bea9cf8
+843cf40dab92ad84f93c518c64dc0777
   $fShowDocgenOutput_$cshow ::
     Command.Docs.DocgenOutput -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -572,7 +574,7 @@ c6a09c6e8b99435a9f44ef872bea9cf8
                    Command.Docs.$fReadFormat3
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-c6a09c6e8b99435a9f44ef872bea9cf8
+843cf40dab92ad84f93c518c64dc0777
   $fShowDocgenOutput_$cshowList ::
     [Command.Docs.DocgenOutput] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -583,7 +585,7 @@ c6a09c6e8b99435a9f44ef872bea9cf8
                    Command.Docs.$fShowDocgenOutput1
                    ls
                    s) -}
-c6a09c6e8b99435a9f44ef872bea9cf8
+843cf40dab92ad84f93c518c64dc0777
   $fShowDocgenOutput_$cshowsPrec ::
     GHC.Types.Int -> Command.Docs.DocgenOutput -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
@@ -653,7 +655,7 @@ f3a6eef5afc0ea362fcf0b95007d647b
                    (w1 :: Command.Docs.Format)
                    (w2 :: GHC.Base.String) ->
                  Command.Docs.$w$cshowsPrec w1 w2) -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   $fShowPSCDocsOptions :: GHC.Show.Show Command.Docs.PSCDocsOptions
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -662,7 +664,7 @@ f3a6eef5afc0ea362fcf0b95007d647b
                   Command.Docs.$fShowPSCDocsOptions_$cshowsPrec
                   Command.Docs.$fShowPSCDocsOptions_$cshow
                   Command.Docs.$fShowPSCDocsOptions_$cshowList -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   $fShowPSCDocsOptions1 ::
     Command.Docs.PSCDocsOptions -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(1*U,1*U,1*U)><L,U>,
@@ -685,7 +687,7 @@ f81ab0076fbebb04f1808f25931cdafd
 cb504e4664c9bd692e5e0cb70dfcddcc
   $fShowPSCDocsOptions6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("PSCDocsOptions {"#) -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   $fShowPSCDocsOptions_$cshow ::
     Command.Docs.PSCDocsOptions -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U)>,
@@ -695,7 +697,7 @@ cb504e4664c9bd692e5e0cb70dfcddcc
                    Command.Docs.$fReadFormat3
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   $fShowPSCDocsOptions_$cshowList ::
     [Command.Docs.PSCDocsOptions] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -706,7 +708,7 @@ cb504e4664c9bd692e5e0cb70dfcddcc
                    Command.Docs.$fShowPSCDocsOptions1
                    ls
                    s) -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   $fShowPSCDocsOptions_$cshowsPrec ::
     GHC.Types.Int -> Command.Docs.PSCDocsOptions -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U)><L,U>,
@@ -1357,7 +1359,7 @@ f5c80fae80854593abf140852f7bd601
                    -> GHC.Base.++ @ GHC.Types.Char Command.Docs.$fShowFormat3 w1
                    Command.Docs.Etags
                    -> GHC.Base.++ @ GHC.Types.Char Command.Docs.$fShowFormat1 w1 }) -}
-3223b990d21b2a663474d4e249136527
+16c463eb5eba3df459177801e7939620
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> Command.Docs.Format
@@ -1451,23 +1453,23 @@ f5c80fae80854593abf140852f7bd601
                         @ GHC.Types.Char
                         GHC.Show.$fShow(,)4
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)) }) -}
-c6a09c6e8b99435a9f44ef872bea9cf8
+843cf40dab92ad84f93c518c64dc0777
   data DocgenOutput
     = EverythingToStdOut
     | ToStdOut [Language.PureScript.Names.ModuleName]
     | ToFiles [(Language.PureScript.Names.ModuleName, GHC.IO.FilePath)]
-df1a161e06d6ab24d04fdc0f973c80c9
+60ad98c07f78d4516445a298f419ab1b
   data DocgenOutputItem
     = IToStdOut Language.PureScript.Names.ModuleName
     | IToFile (Language.PureScript.Names.ModuleName, GHC.IO.FilePath)
 893f5f4a63ef56b7f4c22202c7b01e4c
   data Format = Markdown | Html | Ctags | Etags
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   data PSCDocsOptions
     = PSCDocsOptions {_pscdFormat :: Command.Docs.Format,
                       _pscdInputFiles :: [GHC.IO.FilePath],
                       _pscdDocgen :: Command.Docs.DocgenOutput}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   _pscdDocgen ::
     Command.Docs.PSCDocsOptions -> Command.Docs.DocgenOutput
   RecSel Left Command.Docs.PSCDocsOptions
@@ -1476,7 +1478,7 @@ df1a161e06d6ab24d04fdc0f973c80c9
                 (\ (ds :: Command.Docs.PSCDocsOptions) ->
                  case ds of wild { Command.Docs.PSCDocsOptions ds1 ds2 ds3 ->
                  ds3 }) -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   _pscdFormat :: Command.Docs.PSCDocsOptions -> Command.Docs.Format
   RecSel Left Command.Docs.PSCDocsOptions
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
@@ -1484,7 +1486,7 @@ df1a161e06d6ab24d04fdc0f973c80c9
                 (\ (ds :: Command.Docs.PSCDocsOptions) ->
                  case ds of wild { Command.Docs.PSCDocsOptions ds1 ds2 ds3 ->
                  ds1 }) -}
-7960ea4544f3b444afccf140b44e9c10
+8fbb7f245b915527478025c21d63826f
   _pscdInputFiles :: Command.Docs.PSCDocsOptions -> [GHC.IO.FilePath]
   RecSel Left Command.Docs.PSCDocsOptions
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,

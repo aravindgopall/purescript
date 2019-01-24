@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:47:34.281227 UTC
+2019-01-24 14:15:44.206201 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Sugar.Operators.Types 8043
-  interface hash: 59a09556b300e75b3336800bafef3ed0
-  ABI hash: b2bd8796caef67fb5d46175edd802f6a
-  export-list hash: f9bbe7bcd867192b9ec56ca73e9d1c53
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Sugar.Operators.Types 8043
+  interface hash: 7cccdf857b033f8559057858d5addf2a
+  ABI hash: a2a4b60083e37658c6f1cf6c05a5af2b
+  export-list hash: 64dcfbfd715be2ce244c86e2678b5514
+  orphan hash: 2496c2473aff1a4e2f80412a1b3222d9
   flag hash: 4d9d5651992e23893b931ac76ed000be
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -35,17 +35,18 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
-                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
-                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
+                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
                       time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
@@ -54,18 +55,21 @@ orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -84,21 +88,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -115,55 +124,179 @@ import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
 import  -/  mtl-2.2.2:Control.Monad.Except a6fe75d3c5548ea9e926864b8cbfe1ee
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.Operators be736e316462ef3abce53315e7361a17
-  Associativity 17f2097426b72eb751701f86cd97792c
-import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
-  SourceSpan 73c071552214b3f18e94970349d3affc
-import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
-  exports: 142ea650dec62642d1cff09ef1eee74e
-  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  OpName 4117b59f1e3e7a358085069744f72313
-  OpName 1522672b880b192c6e05e6cf8a45712d
-  Qualified d600a7f01c8203cf5504999de99c923c
-  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
-  TypeOpName 34023316af2b751c6196ece0b5420c6b
-import  -/  Language.PureScript.Sugar.Operators.Common 33ce9b9de799c9a65f9a7c2299659f68
-  exports: b673449456dc16f56b992f0f5f568eb9
-  matchOperators 08720a5d94c009968d91d5520265816e
-import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
-  exports: ae97bc75fcebc59f59c970736847a827
-  BinaryNoParensType 107160e9c63cdf092e86906dc4d4938e
-  Type 93223f8afa90d0facc05a03f863dc72d
-  TypeOp ad0891db755477b54ad0870dc64917cc
-11923b650c33642b246468d3c2e743a7
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.Operators 615a873c5f62908f354b9d4840cbeb63
+  Associativity 228a0ef1b3774b11d1a92fae92fb43a0
+import  -/  Language.PureScript.AST.SourcePos 63acacac5b7be73d04e5be0047a9a89a
+  SourceSpan 1e0cf2bd3ea18f97a2ff152297f09219
+import  -/  Language.PureScript.Errors 3c1ad933587510f8b20a8c9ec2e86ce9
+  exports: 8e61484c4664eceb943d9fc4820c721b
+  MultipleErrors e1ef6a17348ccfe3ef65185d3c5f9026
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  OpName 1de386ff6f2b8aed453243e73483f454
+  OpName 9af301165f72160425c5e0dde6525338
+  Qualified b6e1bc9e7244a41d3c6149c9b5c2d6d8
+  Qualified 1b2ddf0c04464d2fa2588925f10c1966
+  TypeOpName db73fc39fef75f034a0b4a8074947dd9
+import  -/  Language.PureScript.Sugar.Operators.Common e88c8e400a261924d9af6cf01505736c
+  exports: 4b08e646ed124a30b98475a4e3fdf27e
+  matchOperators 0ed92771035f7cf97c3d107845e42b2f
+import  -/  Language.PureScript.Types 80a51f62cb3e6c71f024289b88f07b7f
+  exports: 229bb7528146da886cffbefad5822e19
+  BinaryNoParensType e0f6df16f0ffaf49053e71d305a7063a
+  SourceType 0ac818517c14fedd280ef5885ae0cdc3
+  TypeOp c293e95b09cf540c33c1d0b1480f5f80
+  srcBinaryNoParensType b2631a0d19be39174b0def8fd6ebeab1
+  srcTypeOp 9e7462b7a991eb34096ca69a2979fb7d
+dbf0721a931539d8e10e9d9987cbc3c8
+  $s$fShow(,) ::
+    GHC.Show.Show
+      (Language.PureScript.AST.SourcePos.SourceSpan,
+       [Language.PureScript.Comments.Comment])
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                     [Language.PureScript.Comments.Comment])
+                  (GHC.Show.$fShow(,)_$cshowsPrec
+                     @ Language.PureScript.AST.SourcePos.SourceSpan
+                     @ [Language.PureScript.Comments.Comment]
+                     Language.PureScript.AST.SourcePos.$fShowSourceSpan
+                     Language.PureScript.Sugar.Operators.Types.$s$fShow(,)_$s$fShow[])
+                  (\ (x :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                            [Language.PureScript.Comments.Comment])) ->
+                   GHC.Show.$fShow(,)_$cshowsPrec
+                     @ Language.PureScript.AST.SourcePos.SourceSpan
+                     @ [Language.PureScript.Comments.Comment]
+                     Language.PureScript.AST.SourcePos.$fShowSourceSpan
+                     Language.PureScript.Sugar.Operators.Types.$s$fShow(,)_$s$fShow[]
+                     GHC.Show.$fShow(,)1
+                     x
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [(Language.PureScript.AST.SourcePos.SourceSpan,
+                              [Language.PureScript.Comments.Comment])])
+                     (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                        [Language.PureScript.Comments.Comment])
+                     (GHC.Show.$fShow(,)_$cshowsPrec
+                        @ Language.PureScript.AST.SourcePos.SourceSpan
+                        @ [Language.PureScript.Comments.Comment]
+                        Language.PureScript.AST.SourcePos.$fShowSourceSpan
+                        Language.PureScript.Sugar.Operators.Types.$s$fShow(,)_$s$fShow[]
+                        GHC.Show.$fShow(,)1)
+                     ls
+                     s) -}
+8fdf310fc5cba63e2b8237283977a884
+  $s$fShow(,)_$s$fShow[] ::
+    GHC.Show.Show [Language.PureScript.Comments.Comment]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [Language.PureScript.Comments.Comment]
+                  (\ (ds :: GHC.Types.Int) ->
+                   Language.PureScript.Comments.$fShowComment_$cshowList)
+                  (\ (x :: [Language.PureScript.Comments.Comment]) ->
+                   GHC.Show.showList__
+                     @ Language.PureScript.Comments.Comment
+                     Language.PureScript.Comments.$fShowComment1
+                     x
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [[Language.PureScript.Comments.Comment]])
+                     (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ [Language.PureScript.Comments.Comment]
+                     Language.PureScript.Comments.$fShowComment_$cshowList
+                     ls
+                     s) -}
+2f0f645440933a9b44d050090176d15e
+  $s$fShowType ::
+    GHC.Show.Show
+      (Language.PureScript.Types.Type
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          [Language.PureScript.Comments.Comment]))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.PureScript.Types.Type
+                       (Language.PureScript.AST.SourcePos.SourceSpan,
+                        [Language.PureScript.Comments.Comment]))
+                  (Language.PureScript.Types.$fShowType_$cshowsPrec
+                     @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                        [Language.PureScript.Comments.Comment])
+                     Language.PureScript.Sugar.Operators.Types.$s$fShow(,))
+                  (\ (x :: Language.PureScript.Types.Type
+                             (Language.PureScript.AST.SourcePos.SourceSpan,
+                              [Language.PureScript.Comments.Comment])) ->
+                   Language.PureScript.Types.$fShowType_$cshowsPrec
+                     @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                        [Language.PureScript.Comments.Comment])
+                     Language.PureScript.Sugar.Operators.Types.$s$fShow(,)
+                     Language.PureScript.Types.$fFoldableConstraint4
+                     x
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [Language.PureScript.Types.Type
+                               (Language.PureScript.AST.SourcePos.SourceSpan,
+                                [Language.PureScript.Comments.Comment])])
+                     (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (Language.PureScript.Types.Type
+                          (Language.PureScript.AST.SourcePos.SourceSpan,
+                           [Language.PureScript.Comments.Comment]))
+                     (Language.PureScript.Types.$fShowType_$cshowsPrec
+                        @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                           [Language.PureScript.Comments.Comment])
+                        Language.PureScript.Sugar.Operators.Types.$s$fShow(,)
+                        Language.PureScript.Types.$fFoldableConstraint4)
+                     ls
+                     s) -}
+de8fc715661bef95f4dce41ec8594990
+  $s$fShow[]_$cshow ::
+    [Language.PureScript.Comments.Comment] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [Language.PureScript.Comments.Comment]) ->
+                 GHC.Show.showList__
+                   @ Language.PureScript.Comments.Comment
+                   Language.PureScript.Comments.$fShowComment1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1cd44cb12ff0e85ae2960a020c7b6098
+  $s$fShow[]_$cshowList ::
+    [[Language.PureScript.Comments.Comment]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [[Language.PureScript.Comments.Comment]])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [Language.PureScript.Comments.Comment]
+                   Language.PureScript.Comments.$fShowComment_$cshowList
+                   ls
+                   s) -}
+06ae9ff426003a735b89d3130fd4ebae
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Sugar.Operators.Types.$trModule3
                    Language.PureScript.Sugar.Operators.Types.$trModule1) -}
-1c74c01760c1c6595e3919b01d4f4f52
+6d4636c827c96419d2d2217649d6433c
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Sugar.Operators.Types.$trModule2) -}
-e3b96b77b956b4988240eeccf56205f2
+3c85706c2519d4f8d643a86f11a8d56c
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.Sugar.Operators.Types"#) -}
-bcd982a885ded4c804d814818c684292
+494986926d0c32f81cabf02cbb266149
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Sugar.Operators.Types.$trModule4) -}
-fad24866c076f2b5457d469561024cac
+b09a0a4387a47ed26f8ec2c492dd238f
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-96c4d1cd082249c513a8f787772bc6de
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+183fc7ed253816e7967f9bfeb6718f14
   matchTypeOperators ::
     Control.Monad.Error.Class.MonadError
       Language.PureScript.Errors.MultipleErrors m =>
@@ -172,8 +305,8 @@ fad24866c076f2b5457d469561024cac
             (Language.PureScript.Names.OpName
                'Language.PureScript.Names.TypeOpName),
           Language.PureScript.AST.Operators.Associativity)]]
-    -> Language.PureScript.Types.Type
-    -> m Language.PureScript.Types.Type
+    -> Language.PureScript.Types.SourceType
+    -> m Language.PureScript.Types.SourceType
   {- Arity: 2,
      Strictness: <L,U(U(U(A,C(U),A,A,A,A),A,A,A,A),C(U),A)><L,U>,
      Unfolding: (\ @ m :: * -> *
@@ -182,13 +315,14 @@ fad24866c076f2b5457d469561024cac
                    (ss :: Language.PureScript.AST.SourcePos.SourceSpan) ->
                  Language.PureScript.Sugar.Operators.Common.matchOperators
                    @ m
-                   @ Language.PureScript.Types.Type
+                   @ Language.PureScript.Types.SourceType
                    @ 'Language.PureScript.Names.TypeOpName
-                   Language.PureScript.Types.$fShowType
+                   Language.PureScript.Sugar.Operators.Types.$s$fShowType
                    $dMonadError
                    Language.PureScript.Sugar.Operators.Types.matchTypeOperators3
                    Language.PureScript.Sugar.Operators.Types.matchTypeOperators2
-                   (\ (ds :: Language.PureScript.Types.Type) ->
+                   (\ (ds :: Language.PureScript.Types.Type
+                               Language.PureScript.AST.SourcePos.SourceAnn) ->
                     case ds of wild {
                       DEFAULT
                       -> GHC.Base.Nothing
@@ -196,8 +330,8 @@ fad24866c076f2b5457d469561024cac
                               Language.PureScript.Names.Qualified
                                 (Language.PureScript.Names.OpName
                                    'Language.PureScript.Names.TypeOpName))
-                      Language.PureScript.Types.TypeOp q
-                      -> case q of wild1 { Language.PureScript.Names.Qualified ds1 ds2 ->
+                      Language.PureScript.Types.TypeOp ds1 q
+                      -> case q of wild1 { Language.PureScript.Names.Qualified ds2 ds3 ->
                          GHC.Base.Just
                            @ (Language.PureScript.AST.SourcePos.SourceSpan,
                               Language.PureScript.Names.Qualified
@@ -208,60 +342,112 @@ fad24866c076f2b5457d469561024cac
                    (GHC.Base.id
                       @ (Text.Parsec.Expr.OperatorTable
                            (Language.PureScript.Sugar.Operators.Common.Chain
-                              Language.PureScript.Types.Type)
+                              Language.PureScript.Types.SourceType)
                            ()
                            Data.Functor.Identity.Identity
-                           Language.PureScript.Types.Type))) -}
-2b735cc9d4e58e2356f6d5184531a26d
+                           Language.PureScript.Types.SourceType))) -}
+ab429710f4a02504f2886ef55bd53bf6
   matchTypeOperators1 ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.Names.Qualified
          (Language.PureScript.Names.OpName
             'Language.PureScript.Names.TypeOpName)
     -> Language.PureScript.Types.Type
+         Language.PureScript.AST.SourcePos.SourceAnn
     -> Language.PureScript.Types.Type
+         Language.PureScript.AST.SourcePos.SourceAnn
     -> Language.PureScript.Types.Type
-  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,U><L,U><L,U>m17,
+         Language.PureScript.AST.SourcePos.SourceAnn
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,U><L,U><L,U>m14,
      Unfolding: InlineRule (4, True, False)
                 (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan)
                    (x :: Language.PureScript.Names.Qualified
                            (Language.PureScript.Names.OpName
                               'Language.PureScript.Names.TypeOpName))
-                   (eta :: Language.PureScript.Types.Type)
-                   (eta1 :: Language.PureScript.Types.Type) ->
+                   (eta :: Language.PureScript.Types.Type
+                             Language.PureScript.AST.SourcePos.SourceAnn)
+                   (eta1 :: Language.PureScript.Types.Type
+                              Language.PureScript.AST.SourcePos.SourceAnn) ->
                  Language.PureScript.Types.BinaryNoParensType
-                   (Language.PureScript.Types.TypeOp x)
+                   @ Language.PureScript.AST.SourcePos.SourceAnn
+                   Language.PureScript.AST.SourcePos.$bNullSourceAnn
+                   (Language.PureScript.Types.TypeOp
+                      @ Language.PureScript.AST.SourcePos.SourceAnn
+                      Language.PureScript.AST.SourcePos.$bNullSourceAnn
+                      x)
                    eta
                    eta1) -}
-1c4ef4a03f33ef54e7ec53ab003a6b8c
+e02f7b2aa8c91d2698bb723926b37f9e
   matchTypeOperators2 ::
     Language.PureScript.Types.Type
+      Language.PureScript.AST.SourcePos.SourceAnn
     -> GHC.Base.Maybe
-         (Language.PureScript.Types.Type, Language.PureScript.Types.Type,
-          Language.PureScript.Types.Type)
+         (Language.PureScript.Types.SourceType,
+          Language.PureScript.Types.SourceType,
+          Language.PureScript.Types.SourceType)
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Language.PureScript.Types.Type) ->
+                (\ (ds :: Language.PureScript.Types.Type
+                            Language.PureScript.AST.SourcePos.SourceAnn) ->
                  case ds of wild {
                    DEFAULT
                    -> GHC.Base.Nothing
-                        @ (Language.PureScript.Types.Type, Language.PureScript.Types.Type,
-                           Language.PureScript.Types.Type)
-                   Language.PureScript.Types.BinaryNoParensType op l r
+                        @ (Language.PureScript.Types.SourceType,
+                           Language.PureScript.Types.SourceType,
+                           Language.PureScript.Types.SourceType)
+                   Language.PureScript.Types.BinaryNoParensType ds1 op l r
                    -> GHC.Base.Just
-                        @ (Language.PureScript.Types.Type, Language.PureScript.Types.Type,
-                           Language.PureScript.Types.Type)
+                        @ (Language.PureScript.Types.Type
+                             Language.PureScript.AST.SourcePos.SourceAnn,
+                           Language.PureScript.Types.Type
+                             Language.PureScript.AST.SourcePos.SourceAnn,
+                           Language.PureScript.Types.Type
+                             Language.PureScript.AST.SourcePos.SourceAnn)
                         (op, l, r) }) -}
-4c90fcbd87b4d7ceb48f10b0ee8653a2
+c06d315002feb36ab2924fedca7f37ac
   matchTypeOperators3 ::
-    Language.PureScript.Types.Type -> GHC.Types.Bool
+    Language.PureScript.Types.Type
+      Language.PureScript.AST.SourcePos.SourceAnn
+    -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Language.PureScript.Types.Type) ->
+                (\ (ds :: Language.PureScript.Types.Type
+                            Language.PureScript.AST.SourcePos.SourceAnn) ->
                  case ds of wild {
                    DEFAULT -> GHC.Types.False
-                   Language.PureScript.Types.BinaryNoParensType ds1 ds2 ds3
+                   Language.PureScript.Types.BinaryNoParensType ds1 ds2 ds3 ds4
                    -> GHC.Types.True }) -}
+"SPEC/Language.PureScript.Sugar.Operators.Types $fShow(,) @ SourceSpan @ [Comment]" [orphan] forall (v1 :: GHC.Show.Show
+                                                                                                             [Language.PureScript.Comments.Comment])
+                                                                                                    (v :: GHC.Show.Show
+                                                                                                            Language.PureScript.AST.SourcePos.SourceSpan)
+  GHC.Show.$fShow(,) @ Language.PureScript.AST.SourcePos.SourceSpan
+                     @ [Language.PureScript.Comments.Comment]
+                     v
+                     v1
+  = Language.PureScript.Sugar.Operators.Types.$s$fShow(,)
+"SPEC/Language.PureScript.Sugar.Operators.Types $fShowType @ (SourceSpan,
+                                                             [Comment])" [orphan] forall (v :: GHC.Show.Show
+                                                                                                                                                                           (Language.PureScript.AST.SourcePos.SourceSpan,
+                                                                                                                                                                            [Language.PureScript.Comments.Comment]))
+  Language.PureScript.Types.$fShowType @ (Language.PureScript.AST.SourcePos.SourceSpan,
+                                          [Language.PureScript.Comments.Comment])
+                                       v
+  = Language.PureScript.Sugar.Operators.Types.$s$fShowType
+"SPEC/Language.PureScript.Sugar.Operators.Types $fShow[] @ Comment" [orphan] forall (v :: GHC.Show.Show
+                                                                                            Language.PureScript.Comments.Comment)
+  GHC.Show.$fShow[] @ Language.PureScript.Comments.Comment v
+  = Language.PureScript.Sugar.Operators.Types.$s$fShow(,)_$s$fShow[]
+"SPEC/Language.PureScript.Sugar.Operators.Types $fShow[]_$cshow @ Comment" [orphan] forall ($dShow :: GHC.Show.Show
+                                                                                                        Language.PureScript.Comments.Comment)
+  GHC.Show.$fShow[]_$cshow @ Language.PureScript.Comments.Comment
+                           $dShow
+  = Language.PureScript.Sugar.Operators.Types.$s$fShow[]_$cshow
+"SPEC/Language.PureScript.Sugar.Operators.Types $fShow[]_$cshowList @ Comment" [orphan] forall ($dShow :: GHC.Show.Show
+                                                                                                            Language.PureScript.Comments.Comment)
+  GHC.Show.$fShow[]_$cshowList @ Language.PureScript.Comments.Comment
+                               $dShow
+  = Language.PureScript.Sugar.Operators.Types.$s$fShow[]_$cshowList
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

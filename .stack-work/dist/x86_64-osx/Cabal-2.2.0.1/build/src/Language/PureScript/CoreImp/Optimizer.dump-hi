@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:28:25.322111 UTC
+2019-01-24 14:16:22.446323 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreImp.Optimizer 8043
-  interface hash: 83f65c00f0c4826e848e14934821238c
-  ABI hash: 16d9f6c1a16949476ede88457f9338b5
-  export-list hash: 0a67b7fda870f6f09467be5c63570d2e
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.CoreImp.Optimizer 8043
+  interface hash: 82d6a7c226ec421636e1a95eba885b16
+  ABI hash: 0f08f1a29759611f7123b03a21c46f7f
+  export-list hash: a7294b6dbbad4120432a7d01ac180c2b
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 63844ea6b80cf0d4d69dc86afbf79aa6
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -36,21 +36,25 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
-                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
-                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
-                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
-                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
-                      safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7
-                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
-                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
-                      transformers-0.5.5.0 unordered-containers-0.2.9.0
-                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2
+                      random-1.1 safe-0.3.17 scientific-0.3.6.2 sourcemap-0.1.6
+                      stm-2.4.5.0 syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -83,21 +87,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -113,68 +122,68 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
-import  -/  Control.Monad.Supply.Class a5ac88ebb2786fa0ca39c7248b7c5b8f
-  exports: 91d489aaf16020272ece745e2b32bd17
-  MonadSupply 6a9f80f28cc3fad47a987fee945f2fd2
-import  -/  Language.PureScript.CoreImp.AST 66108f8b83c9a1c508a34f2e6114094e
-  exports: 1da27be6d04935ab665d52ac441d8230
-  AST 2d7016401e08dc68af93e9a4339f76ff
-import  -/  Language.PureScript.CoreImp.Optimizer.Blocks b98c3b2de5a24ea6265d8c4ded5ec0ff
-  exports: b0494e2135e7cf9076ee3d2fb6359d6a
-  collapseNestedBlocks 5369f4b35012e857b95073445fd52632
-  collapseNestedIfs 41e7839fd2bf33e0966a25d048ec1557
-import  -/  Language.PureScript.CoreImp.Optimizer.Common d1b700c07ed6677e35c7d0ef5c1d797a
-  exports: 6b4d83e29381b01143d015e4188e1b4a
-  applyAll 08a668726537f334aa8c502e17246480
-import  -/  Language.PureScript.CoreImp.Optimizer.Inliner 94a95d1faf913ea900666cb0a9bd36cb
-  exports: cd9c4a1d20eac08cccd5ddf6e37421e3
-  etaConvert a14e47c49fd0a918dafd454b0014031b
-  evaluateIifes 672c2c9e6ba91d3770639a25dd205c24
-  inlineCommonOperators 87200bb9628796cce19d5cb1d0b48bf1
-  inlineCommonValues 7fc17936279f21a3797d00ed5c9cf004
-  inlineFnComposition a35150853dcb45d36b37e64faba55d9e
-  inlineUnsafeCoerce 2e1caeaf9b6f39a12b76d16ee7977123
-  inlineUnsafePartial 27b56ffaa28355d06f7f77d32dcb631d
-  inlineVariables c31b430c55e8ce4c0972df682801bdca
-  unThunk 8855fbc5e426bd8664ffa5fc0b3da7bb
-import  -/  Language.PureScript.CoreImp.Optimizer.MagicDo 109777e33e1fc5024ffab5a909e43070
-  exports: 6a0f7b1c04feadd8551889b8aedf86b5
-  inlineST 41b3723a3d67705445a97f5dedfc856b
-  magicDoEff 2146a4cad7b95cc5d43741047b310930
-  magicDoEffect 5299d411bf35005b81a34458a23c66e9
-  magicDoST 2c3b8a19dffd8429317e018feeec6859
-import  -/  Language.PureScript.CoreImp.Optimizer.TCO 532a590f51bb684e82e0ca3036587cd6
-  exports: 2980aeb6212ba880a83c715a193b7dd0
-  tco 593f87589d9b4cb4fe5b02fc90af46ab
-import  -/  Language.PureScript.CoreImp.Optimizer.Unused 7bad22fcf813a228b3bc06cdb30e7836
-  exports: 286e74a3fdfa3048dec99dcb61f2932b
-  removeCodeAfterReturnStatements 1a88ea0121882712f895ae83bb866039
-  removeUndefinedApp d9e9525727009fae72be2b3947d258ac
-49e51d36164d6f953d4a09d2337dd9ec
+import  -/  Control.Monad.Supply.Class 4b0577d8897e2d48cd4fc324f0e8c355
+  exports: 9b5454b78bf2751cecd07ba41d8b4d51
+  MonadSupply 6fd5e162006451a17cf4a7ae2eb71bd2
+import  -/  Language.PureScript.CoreImp.AST e13d2052141e50eca2a5dfdad2a67d5a
+  exports: d4ba1e9a31e7dde56b84028e789bb579
+  AST 27e474366a6164e874a6d4e5cad82745
+import  -/  Language.PureScript.CoreImp.Optimizer.Blocks 3adad2b6ab3cdf2cf55b388857279145
+  exports: 189a08a5a59c1298e7337662b04eb62a
+  collapseNestedBlocks 8079641be0456573fba3a6cc00a499c6
+  collapseNestedIfs 5003ec63cc0b87615a11267eb99ab4d0
+import  -/  Language.PureScript.CoreImp.Optimizer.Common f77cc52a6dde77bba5df16c20fb29fac
+  exports: 35654d9237eb883ff052c1e1ed279bb1
+  applyAll 3363d918d9a2ed790eb2715c7758fea9
+import  -/  Language.PureScript.CoreImp.Optimizer.Inliner 3b14b1d80f4c19ad45b7f526e4f3b930
+  exports: afeba31d14fa511bef4287e8d33b43ba
+  etaConvert daea0ffcb5055b19453f6622d397ee80
+  evaluateIifes 908f2f54095481fda58bafc099ec3f7e
+  inlineCommonOperators 3eb3aa359666fccfa1605db8b9045acf
+  inlineCommonValues 1546fccc0bbb9816085728b2e2878c96
+  inlineFnComposition 9b208a3bb67df4eea8d35355900fee48
+  inlineUnsafeCoerce 43e16a7b66de9b1553b5916d932d4f93
+  inlineUnsafePartial a0bfffd7cdaa1c458702fc8d653c0511
+  inlineVariables c018a4657d69037e6f86dd973eac77b1
+  unThunk 5958d7afb9a3d44dcf7ff61b3a053aa6
+import  -/  Language.PureScript.CoreImp.Optimizer.MagicDo 2aebfc71584f1b454cbcab39d36dacae
+  exports: 3d879014797b39e7505dc08509735d46
+  inlineST 2924f409b4ea6ffcd76477a1fbf394a4
+  magicDoEff ffa7ddfa75c35e48dad10aa8c4c00372
+  magicDoEffect c4d3d79953bbdfc3087de9aa242efa9b
+  magicDoST e1fdcbf2833c6d68da6629eca0b96784
+import  -/  Language.PureScript.CoreImp.Optimizer.TCO 4ded170e3586685b788454b15b4cd431
+  exports: bbaaf05b5c08a19936906d0d35bd4f65
+  tco ae322b7d2a75fa45511e2f0ba7c9489b
+import  -/  Language.PureScript.CoreImp.Optimizer.Unused b7b09ab8da6a23777a4d194c3d82f5ae
+  exports: aaaa4a13f06bd9bbd4fe9d67ec52764c
+  removeCodeAfterReturnStatements 70e945d9a5c8d6fa0d9990d358791126
+  removeUndefinedApp 1b4d334b89e2f27c0537654f38079d67
+80f3eb0ce817dd043b5bf57769ef496c
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.CoreImp.Optimizer.$trModule3
                    Language.PureScript.CoreImp.Optimizer.$trModule1) -}
-976b02643b94e871418dacc63369923a
+451d1b864fdd0879c6f81be1fcb1afbc
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreImp.Optimizer.$trModule2) -}
-93ff57f6833bcdbee71fee7fc91ace58
+4ea896fcb81af7d3ae6a24650f9122f2
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.CoreImp.Optimizer"#) -}
-22e6742e85ad888d526f62eec9a8e2ec
+c79a26128fdbed2b97faa3f47eddbc31
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreImp.Optimizer.$trModule4) -}
-c70951ccac3165cf157e0428c2856175
+17fd17e47495ce9f91d231615cad1168
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-cd4cd755c2bea1d272f934d04488e2b8
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+45671aa512af53da46613a9e930b2390
   optimize ::
     Control.Monad.Supply.Class.MonadSupply m =>
     Language.PureScript.CoreImp.AST.AST

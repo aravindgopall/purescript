@@ -10,14 +10,16 @@ module Language.PureScript.Interactive.Types
   , psciExports
   , psciImports
   , psciLoadedExterns
+  , psciInteractivePrint
   , psciImportedModules
   , psciLetBindings
   , initialPSCiState
+  , initialInteractivePrint
   , psciImportedModuleNames
   , updateImportedModules
-  , updateImportExports
   , updateLoadedExterns
   , updateLets
+  , setInteractivePrint
   , Command(..)
   , ReplQuery(..)
   , replQueries
@@ -25,6 +27,7 @@ module Language.PureScript.Interactive.Types
   , showReplQuery
   , parseReplQuery
   , Directive(..)
+  , updateImportExports
   ) where
 
 import Prelude.Compat
@@ -47,7 +50,9 @@ newtype PSCiConfig = PSCiConfig
 
 -- | The PSCI state.
 --
--- Holds a list of imported modules, loaded files, and partial let bindings.
+-- Holds a list of imported modules, loaded files, and partial let bindings,
+-- plus the currently configured interactive printing function.
+--
 -- The let bindings are partial, because it makes more sense to apply the
 -- binding to the final evaluated expression.
 --
@@ -58,27 +63,35 @@ data PSCiState = PSCiState
   [ImportedModule]
   [P.Declaration]
   [(P.Module, P.ExternsFile)]
+  (P.ModuleName, P.Ident)
   P.Imports
   P.Exports
   deriving Show
 
 psciImportedModules :: PSCiState -> [ImportedModule]
-psciImportedModules (PSCiState x _ _ _ _) = x
+psciImportedModules (PSCiState x _ _ _ _ _) = x
 
 psciLetBindings :: PSCiState -> [P.Declaration]
-psciLetBindings (PSCiState _ x _ _ _) = x
+psciLetBindings (PSCiState _ x _ _ _ _) = x
 
 psciLoadedExterns :: PSCiState -> [(P.Module, P.ExternsFile)]
-psciLoadedExterns (PSCiState _ _ x _ _) = x
+psciLoadedExterns (PSCiState _ _ x _ _ _) = x
+
+psciInteractivePrint :: PSCiState -> (P.ModuleName, P.Ident)
+psciInteractivePrint (PSCiState _ _ _ x _ _) = x
 
 psciImports :: PSCiState -> P.Imports
-psciImports (PSCiState _ _ _ x _) = x
+psciImports (PSCiState _ _ _ _ x _) = x
 
 psciExports :: PSCiState -> P.Exports
-psciExports (PSCiState _ _ _ _ x) = x
+psciExports (PSCiState _ _ _ _ _ x) = x
 
 initialPSCiState :: PSCiState
-initialPSCiState = PSCiState [] [] [] nullImports primExports
+initialPSCiState = PSCiState [] [] [] initialInteractivePrint nullImports primExports
+
+-- | The default interactive print function.
+initialInteractivePrint :: (P.ModuleName, P.Ident)
+initialInteractivePrint = (P.moduleNameFromString "PSCI.Support", P.Ident "eval")
 
 psciEnvironment :: PSCiState -> P.Environment
 psciEnvironment st = foldl' (flip P.applyExternsFileToEnvironment) P.initEnvironment externs
@@ -105,12 +118,12 @@ psciImportedModuleNames st =
 -- handling completions. This function must be called whenever the PSCiState is modified to
 -- ensure that completions remain accurate.
 updateImportExports :: PSCiState -> PSCiState
-updateImportExports st@(PSCiState modules lets externs _ _) =
+updateImportExports st@(PSCiState modules lets externs iprint _ _) =
   case desugarModule [temporaryModule] of
     Left _          -> st -- TODO: can this fail and what should we do?
     Right (env, _)  ->
       case M.lookup temporaryName env of
-        Just (_, is, es)  -> PSCiState modules lets externs is es
+        Just (_, is, es)  -> PSCiState modules lets externs iprint is es
         _                 -> st -- impossible
   where
 
@@ -137,18 +150,24 @@ updateImportExports st@(PSCiState modules lets externs _ _) =
 
 -- | Updates the imported modules in the state record.
 updateImportedModules :: ([ImportedModule] -> [ImportedModule]) -> PSCiState -> PSCiState
-updateImportedModules f (PSCiState x a b c d) =
-  updateImportExports (PSCiState (f x) a b c d)
+updateImportedModules f (PSCiState x a b c d e) =
+  updateImportExports (PSCiState (f x) a b c d e)
 
 -- | Updates the loaded externs files in the state record.
 updateLoadedExterns :: ([(P.Module, P.ExternsFile)] -> [(P.Module, P.ExternsFile)]) -> PSCiState -> PSCiState
-updateLoadedExterns f (PSCiState a b x c d) =
-  updateImportExports (PSCiState a b (f x) c d)
+updateLoadedExterns f (PSCiState a b x c d e) =
+  updateImportExports (PSCiState a b (f x) c d e)
 
 -- | Updates the let bindings in the state record.
 updateLets :: ([P.Declaration] -> [P.Declaration]) -> PSCiState -> PSCiState
-updateLets f (PSCiState a x b c d) =
-  updateImportExports (PSCiState a (f x) b c d)
+updateLets f (PSCiState a x b c d e) =
+  updateImportExports (PSCiState a (f x) b c d e)
+
+-- | Replaces the interactive printing function in the state record with a new
+-- one.
+setInteractivePrint :: (P.ModuleName, P.Ident) -> PSCiState -> PSCiState
+setInteractivePrint iprint (PSCiState a b c _ d e) =
+  PSCiState a b c iprint d e
 
 -- * Commands
 
@@ -175,7 +194,7 @@ data Command
   -- | Find the type of an expression
   | TypeOf P.Expr
   -- | Find the kind of an expression
-  | KindOf P.Type
+  | KindOf P.SourceType
   -- | Shows information about the current state of the REPL
   | ShowInfo ReplQuery
   -- | Paste multiple lines
@@ -184,16 +203,19 @@ data Command
   | CompleteStr String
   
   | ReloadVariableState P.Expr 
+  -- | Set the interactive printing function
+  | SetInteractivePrint (P.ModuleName, P.Ident)
   deriving Show
 
 data ReplQuery
   = QueryLoaded
   | QueryImport
+  | QueryPrint
   deriving (Eq, Show)
 
 -- | A list of all ReplQuery values.
 replQueries :: [ReplQuery]
-replQueries = [QueryLoaded, QueryImport]
+replQueries = [QueryLoaded, QueryImport, QueryPrint]
 
 replQueryStrings :: [String]
 replQueryStrings = map showReplQuery replQueries
@@ -201,11 +223,12 @@ replQueryStrings = map showReplQuery replQueries
 showReplQuery :: ReplQuery -> String
 showReplQuery QueryLoaded = "loaded"
 showReplQuery QueryImport = "import"
+showReplQuery QueryPrint = "print"
 
 parseReplQuery :: String -> Maybe ReplQuery
 parseReplQuery "loaded" = Just QueryLoaded
 parseReplQuery "import" = Just QueryImport
-parseReplQuery _ = Nothing
+parseReplQuery "print" = Just QueryPrint
 
 data Directive
   = Help
@@ -219,4 +242,5 @@ data Directive
   | Paste
   | Complete
   | ReloadV
+  | Print
   deriving (Eq, Show)

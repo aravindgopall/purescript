@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:46:30.566415 UTC
+2019-01-24 14:14:11.239126 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Traversals 8043
-  interface hash: f7e6ba2cec426c2d41c89f1ad3f1adb4
-  ABI hash: a3d1a9b4309f1aa3055f23e3fb101c5e
-  export-list hash: 5f95b86b1ffc20ac260993dc77fff788
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Traversals 8043
+  interface hash: 7c32a197463ed88118430e9c4c46d4e4
+  ABI hash: f5adaf844c5e9d0f0678a8b574a32aa6
+  export-list hash: a3387abb8e15fc740358f1f69c313aad
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: de35dcd1d43076a5ced1b1f2744d7ead
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -41,35 +41,39 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
-                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0
-                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
-                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
-                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
-                      scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
-                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2
+                      random-1.1 scientific-0.3.6.2 sourcemap-0.1.6 stm-2.4.5.0 syb-0.7
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -88,21 +92,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -130,96 +139,96 @@ import  -/  containers-0.5.11.0:Data.Set 7d3c64a641be4cacbcd8119445bab919
 import  -/  containers-0.5.11.0:Data.Set.Internal 93fa3ef95853aa2a7aadf32d693bd451
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  Language.PureScript.AST.Binders 9d60985147b34b89300370e810fed430
-  exports: 052659e0ac5b7424bfe7dc118cef8c0d
-  BinaryNoParensBinder 0a9649b4372c6e05d173870dfa1006fa
-  Binder 50aa153193e190eabd8ac7530e604f9c
-  ConstructorBinder a80ed0550c5d3abdd1e6249cec7ebb29
-  LiteralBinder fb24b5107abb72eda0b4f926a357d676
-  NamedBinder b48e1eb9e717d35392ab81ba6112a0c5
-  ParensInBinder d5e3e2b30a59f234cee3c52dcb18b9a6
-  PositionedBinder 882f8081b0418fe44d4a7e237a20b9bb
-  TypedBinder f780e44b8446316aee6b532b3afc4341
-  binderNames 02df671f437cb8e44f39ef8bc1273f3b
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  exports: 576360d4491bba45e29e263c5de23a07
-  Abs d07c7c6c44b48a3411184d34629a601e
-  Accessor efce1a21efe3a6d2f322942575a5ad70
-  Ado 37d00c1fafdcb3ef01dc19068c5ac23a
-  App 60282620a1433a146ffafd0d8773af87
-  BinaryNoParens 74f8609dfb4850c239012b6c7f3f2502
-  BindingGroupDeclaration d3c1d83dc1fbac7412bbc6e3b0fc8e06
-  BoundValueDeclaration 2a1064417e2b13bd8230beec138bd3f3
-  Case 26360a43049b71a59ced6dc5180ab8d3
-  CaseAlternative 53d0b5fb91e3184ce5b575a7cf70b18d
-  CaseAlternative b31d94d0c7b90700d40f9ba6ec420e41
-  ConditionGuard 2db62e1fae4ae7a464999119c33e7329
-  DataBindingGroupDeclaration 6581515de193582450a8e6e01c902ba4
-  DataDeclaration db5935397ffc86d7f21188808af5170e
-  Declaration b31d94d0c7b90700d40f9ba6ec420e41
-  DeferredDictionary 7a56aac6dc1b7f4256df8373658d67a5
-  Do b8fad0bebe96a0626d89acbd41a552b3
-  DoNotationBind fec991d5ab40627d0cce74b30ebfede6
-  DoNotationElement b31d94d0c7b90700d40f9ba6ec420e41
-  DoNotationLet 6feff6a200614ac607daa94006ad3ed5
-  DoNotationValue cc0f2bc0eef838fad83abc6d1864b17c
-  ExplicitInstance 566045ea839404c561f5bf2109dbe534
-  Expr b31d94d0c7b90700d40f9ba6ec420e41
-  ExternDataDeclaration 55a53b09584ed2ea4b573ea27aa0f4e4
-  ExternDeclaration 4969f865c6e08f5324b31f68ef85d043
-  Guard b31d94d0c7b90700d40f9ba6ec420e41
-  GuardedExpr 27042b32d879f10c681888a144cccbf4
-  GuardedExpr b31d94d0c7b90700d40f9ba6ec420e41
-  IfThenElse 861db5e7c442fcad4ef6b09852058a52
-  Let 1e154f741d98347f87a436fe079b9677
-  Literal 25fe050a9db328cb74b9c2f7e7994889
-  ObjectUpdate 6ecfa64620245159f62232366ffa0b51
-  ObjectUpdateNested f0f594d942338e4c5632d561472ff5f5
-  Parens d8b532f50bb6822d72d510f7cf291c86
-  PatternGuard 8f00c4347b1f607cbe6ab09d14685d9d
-  PositionedDoNotationElement c12364668936cfdcd1fd6a9966e8f1cd
-  PositionedValue ce9f35ccf631ea46c29b12e823f5cdda
-  TypeClassDeclaration d4771a111b012cbefca253f911afd776
-  TypeClassDictionary 9f4047c1c1ff9eeef0292c33d9ecb17c
-  TypeClassDictionaryConstructorApp e1cd14c07fae64c9cd8679680a21319e
-  TypeDeclaration a12f822b0dbc597658a7d1e27db5ac22
-  TypeInstanceDeclaration c99b2ac93a5feb1209c747921a9e548b
-  TypeSynonymDeclaration b022b78d38da14b3619ada244eaf9299
-  TypedValue d9e4565826b9abbfd5d9b0aba42f2e58
-  UnaryMinus a219b7d00bf9c8706678ac90686eba33
-  ValueDecl ccaaa682babb730c1361bddf2c5eee25
-  ValueDeclaration 12e8a69dfeaef3b3a7e4d8343e12683e
-  caseAlternativeBinders b31d94d0c7b90700d40f9ba6ec420e41
-  caseAlternativeResult b31d94d0c7b90700d40f9ba6ec420e41
-  mapTypeInstanceBody 1826036fea52f25657e6111625d52b7a
-  traverseTypeInstanceBody 0b0b6c668555518d768d4dfdaf4d710b
-  tydeclIdent 73dd7603bbe7fadce9f5fc48c4dc58fb
-  tydeclType 73dd7603bbe7fadce9f5fc48c4dc58fb
-  valdeclBinders 0c2d915175f1072d8eeca07af2b73e20
-  valdeclExpression 0c2d915175f1072d8eeca07af2b73e20
-  valdeclIdent 0c2d915175f1072d8eeca07af2b73e20
-import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
-  exports: a6d23ec6b024fefaa1b9450acf6240d0
-  ArrayLiteral 5b23e15244983cff3a7817389b5e2212
-  Literal 9e9b6c02bfac90a56d53685e90c059b8
-  ObjectLiteral 6a79fd56232b94e65385c3eab269a6a5
-import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
-  exports: 2c2448e43e622d2466a59b9cd8f4db91
-  Kind 3e1e213eb647453235d33b0d1b36ec59
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  Ident ab98a56ffa88760dad1380079e8ee35a
-import  -/  Language.PureScript.Traversals 0b1167883a6d6cc72496ff4af9cd7535
-  exports: ff3aac3cd7b378c02751a42ba037de7e
-  sndM f92d028593bfff03fd7f7a06605574ae
-  thirdM 3976a24e9a12074f53555714d49531a3
-import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
-  exports: ae97bc75fcebc59f59c970736847a827
-  KindedType 0c5178e2942b7d198426b0539b6f6442
-  Type 93223f8afa90d0facc05a03f863dc72d
-  constraintArgs 93223f8afa90d0facc05a03f863dc72d
-  mapConstraintArgs 4c5821e8c0e3a903ec8fe07d5d289eaf
-fd1c63950c5ecf1a17f0b7742333850b
+import  -/  Language.PureScript.AST.Binders 482af52ec934a93b1ca6ec424fbe30f2
+  exports: 21ca217e42d8560f3b797ca3690c6ebc
+  BinaryNoParensBinder fa245b4b20e4d00bda41b59e19ae05a3
+  Binder c96edaac3b5fcb24a174f6f4b3f084d4
+  ConstructorBinder 82c410a4d9e21c325ba3e1527c50daff
+  LiteralBinder 0a5559e7d3aabf0cf9c897b797edff85
+  NamedBinder 0800b3be0f9ce7a64f901e627e87a982
+  ParensInBinder 5997f08e343521a086fe234687cfa21a
+  PositionedBinder a6b770e5a8f88247c6ef23a04722a775
+  TypedBinder 69e3490135b9eb76e3f2c68250002721
+  binderNames 810a1bcb74988444206bd4c3a504cf72
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  exports: ca3189140688cddb12d34cdf2c0663e4
+  Abs dae9a514c0c54a50406a57cd533f800a
+  Accessor 75238d8cd32188d181bffb473f6c4802
+  Ado aa51ec093a5d30de9008b28e35a2b3e8
+  App ae4e12e545757da5fb62189548835120
+  BinaryNoParens fcc835654893b3cf82da9962f92ae61e
+  BindingGroupDeclaration fe3c1705a7a0108b856351d712879737
+  BoundValueDeclaration c15036e292c80286a90dbb25f336202d
+  Case dbf8d0b5ac1a603149b8bb1459575de0
+  CaseAlternative 8464f1c9f0c33f15833817399a071704
+  CaseAlternative e92f6ee78a22c0eadc3566d7d1f48d5b
+  ConditionGuard de13c04599b5971ac3f21a1186c6e658
+  DataBindingGroupDeclaration dd96274a1938234d4bfdc2a1d4e8e0ff
+  DataDeclaration 2fcba6ad709595ed3c4d0926de54bc2c
+  Declaration e92f6ee78a22c0eadc3566d7d1f48d5b
+  DeferredDictionary 4767b924c347cb558c8259d23777dc47
+  Do 61408a6943b45292f7b373e76e9ffa63
+  DoNotationBind 3860cb3df901dc1a4468bed348d53a88
+  DoNotationElement e92f6ee78a22c0eadc3566d7d1f48d5b
+  DoNotationLet cb7748a003aec3a844b46797cc9f3089
+  DoNotationValue 8d573316807fe6334d3059181f3f010a
+  ExplicitInstance 7626e63238a07a99c1bae428b77d3f66
+  Expr e92f6ee78a22c0eadc3566d7d1f48d5b
+  ExternDataDeclaration 45e3d2e61e8f85403449183876d3af2f
+  ExternDeclaration 180e172298441327dfef1022795a10e0
+  Guard e92f6ee78a22c0eadc3566d7d1f48d5b
+  GuardedExpr 811952f37a620b8d78cc4a6176d99a2c
+  GuardedExpr e92f6ee78a22c0eadc3566d7d1f48d5b
+  IfThenElse 8071f8c4795174e5283a3ecdaa8b3c8f
+  Let 5843430a3e31a1977aadcfb94efa8312
+  Literal bdcf4b137a448fe7c2ed57fe33a72cd3
+  ObjectUpdate 14b4ffe7d1b68ac321d3f2c2a27a17eb
+  ObjectUpdateNested fdcbd615f1a1d120ea9765eaceb58198
+  Parens ce804ea11612979be1464b51c74c24ab
+  PatternGuard a27d707167917ad112543851031e65f9
+  PositionedDoNotationElement dae30f378bb2ebb85464560daefe1b0b
+  PositionedValue b90293950702fd6b659d7cd86d309f72
+  TypeClassDeclaration 19936abcaf3693a6825ccbc13b2590dc
+  TypeClassDictionary 531ed710fa3e0860894127586614f844
+  TypeClassDictionaryConstructorApp f15387264e84e75b0e5ed1f08eacb958
+  TypeDeclaration 28394461dbd073cca9cdbd263dbb4335
+  TypeInstanceDeclaration 46d66658dd5a30ba03e36fc960162f20
+  TypeSynonymDeclaration 1cfe9af195a40456074b96ff0ca4519c
+  TypedValue 0acc3ace791a36484dcda3706df33cef
+  UnaryMinus 00e8f54110f0049331236b115b108a07
+  ValueDecl 97b38919d86cd9182cb8d86b6f4ae734
+  ValueDeclaration 3d506e6b33aef3e239802bd27220a2e5
+  caseAlternativeBinders e92f6ee78a22c0eadc3566d7d1f48d5b
+  caseAlternativeResult e92f6ee78a22c0eadc3566d7d1f48d5b
+  mapTypeInstanceBody 8c10e95933c92cb479ab081da10c3627
+  traverseTypeInstanceBody b3dc0429061d0ff256d8d3e4cc7c9512
+  tydeclIdent c947d6d8aff56f68d1789e1833a9fcd2
+  tydeclType c947d6d8aff56f68d1789e1833a9fcd2
+  valdeclBinders dc3fe29a39c3efd97807e85c8c5dc302
+  valdeclExpression dc3fe29a39c3efd97807e85c8c5dc302
+  valdeclIdent dc3fe29a39c3efd97807e85c8c5dc302
+import  -/  Language.PureScript.AST.Literals da2ec269f063125450b272321f85468a
+  exports: ab5af4e7482c5a8cbf79fdfd52ee94e2
+  ArrayLiteral 7cbd15adda8a5ed2a81035be22e2eae2
+  Literal 4b6b35be8d89b746a77fcd3d0c0a71d4
+  ObjectLiteral d17d3a090fe8a89f303c679b0a417ae9
+import  -/  Language.PureScript.Kinds e26b9cf8211f7e72bb44fdd3faed066e
+  exports: fe71635ad7964c0d620fb0685614a050
+  SourceKind 4cdf50d4b2444221832ca704f3a0c468
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  Ident bad3562aa6138b6192713ac281080869
+import  -/  Language.PureScript.Traversals e97764d7972cc6ba421a6be0a3ce6bda
+  exports: cbb821b2ee7c6d00cdf62285e1dbe432
+  sndM c93ef73e127a3a54c4cd1e5e2194b237
+  thirdM ff8e8fc8ea147bba13179156ecb5143a
+import  -/  Language.PureScript.Types 80a51f62cb3e6c71f024289b88f07b7f
+  exports: 229bb7528146da886cffbefad5822e19
+  KindedType 7d9c2ac5dbbe89c236f431d3c9412617
+  SourceType 0ac818517c14fedd280ef5885ae0cdc3
+  constraintArgs d5fc19231e8a71936895da17eade4f5b
+  mapConstraintArgs 271f74f3dadd31332938099ff1d312ff
+a9386d37e7ebee7cdf58474c3889e380
   $fEqScopedIdent ::
     GHC.Classes.Eq Language.PureScript.AST.Traversals.ScopedIdent
   DFunId
@@ -228,7 +237,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                   @ Language.PureScript.AST.Traversals.ScopedIdent
                   Language.PureScript.AST.Traversals.$fEqScopedIdent_$c==
                   Language.PureScript.AST.Traversals.$fEqScopedIdent_$c/= -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fEqScopedIdent_$c/= ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
@@ -253,7 +262,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         -> case Language.PureScript.Names.$fEqIdent_$c== a1 b1 of wild2 {
                              GHC.Types.False -> GHC.Types.True
                              GHC.Types.True -> GHC.Types.False } } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fEqScopedIdent_$c== ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
@@ -273,7 +282,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         -> GHC.Types.False
                         Language.PureScript.AST.Traversals.ToplevelIdent b1
                         -> Language.PureScript.Names.$fEqIdent_$c== a1 b1 } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent ::
     GHC.Classes.Ord Language.PureScript.AST.Traversals.ScopedIdent
   DFunId
@@ -288,7 +297,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                   Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c>=
                   Language.PureScript.AST.Traversals.$fOrdScopedIdent_$cmax
                   Language.PureScript.AST.Traversals.$fOrdScopedIdent_$cmin -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$c< ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
@@ -308,7 +317,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         -> GHC.Types.False
                         Language.PureScript.AST.Traversals.ToplevelIdent b1
                         -> Language.PureScript.Names.$fOrdIdent_$c< a1 b1 } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$c<= ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
@@ -331,7 +340,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
                              GHC.Types.False -> GHC.Types.True
                              GHC.Types.True -> GHC.Types.False } } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$c> ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
@@ -340,7 +349,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                 (\ (a :: Language.PureScript.AST.Traversals.ScopedIdent)
                    (b :: Language.PureScript.AST.Traversals.ScopedIdent) ->
                  Language.PureScript.AST.Traversals.$fOrdScopedIdent_$c< b a) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$c>= ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Types.Bool
@@ -363,7 +372,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
                              GHC.Types.False -> GHC.Types.True
                              GHC.Types.True -> GHC.Types.False } } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$ccompare ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent
@@ -383,7 +392,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         Language.PureScript.AST.Traversals.LocalIdent ipv -> GHC.Types.GT
                         Language.PureScript.AST.Traversals.ToplevelIdent b1
                         -> Language.PureScript.Names.$fOrdIdent_$ccompare a1 b1 } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$cmax ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent
@@ -404,7 +413,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         Language.PureScript.AST.Traversals.ToplevelIdent b1
                         -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
                              GHC.Types.False -> wild GHC.Types.True -> wild1 } } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fOrdScopedIdent_$cmin ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent
@@ -425,7 +434,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                         Language.PureScript.AST.Traversals.ToplevelIdent b1
                         -> case Language.PureScript.Names.$fOrdIdent_$c< a1 b1 of wild2 {
                              GHC.Types.False -> wild1 GHC.Types.True -> wild } } }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fShowScopedIdent ::
     GHC.Show.Show Language.PureScript.AST.Traversals.ScopedIdent
   DFunId
@@ -435,30 +444,30 @@ fd1c63950c5ecf1a17f0b7742333850b
                   Language.PureScript.AST.Traversals.$fShowScopedIdent_$cshowsPrec
                   Language.PureScript.AST.Traversals.$fShowScopedIdent_$cshow
                   Language.PureScript.AST.Traversals.$fShowScopedIdent_$cshowList -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fShowScopedIdent1 ::
     Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Show.ShowS
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (w :: Language.PureScript.AST.Traversals.ScopedIdent) ->
                  Language.PureScript.AST.Traversals.$w$cshowsPrec 0# w) -}
-656175aa2f66650b721fd3ec0d622275
+69fd8b540a612baf09a2ded0ac8e777a
   $fShowScopedIdent2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.AST.Traversals.$fShowScopedIdent3) -}
-5f77145074839712c3e0ee589533cf7d
+52296425eabde460549ac33390a972dd
   $fShowScopedIdent3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ToplevelIdent "#) -}
-d68081ac60d1af24fececa3614987248
+f30c343bb7161290f3ef0ba4b36895fa
   $fShowScopedIdent4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.AST.Traversals.$fShowScopedIdent5) -}
-121b2f90f969ed6f9716a75152cb0943
+d0117798f9eabd38e3466849d86bc615
   $fShowScopedIdent5 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("LocalIdent "#) -}
-55e21467b159d547f75fb218319b682f
+58775cff0e6b68a1322cdf756dbaf971
   $fShowScopedIdent6 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fShowScopedIdent_$cshow ::
     Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
@@ -480,7 +489,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                            Language.PureScript.AST.Traversals.$fShowScopedIdent6
                            b1
                            (GHC.Types.[] @ GHC.Types.Char)) }) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fShowScopedIdent_$cshowList ::
     [Language.PureScript.AST.Traversals.ScopedIdent] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -492,7 +501,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                    Language.PureScript.AST.Traversals.$fShowScopedIdent1
                    ls
                    s) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   $fShowScopedIdent_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Show.ShowS
@@ -502,7 +511,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                    (w1 :: Language.PureScript.AST.Traversals.ScopedIdent) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  Language.PureScript.AST.Traversals.$w$cshowsPrec ww1 w1 }) -}
-36eb8fa85572ca32ec2b3c6a1acb4306
+56c302480bf4c344a73f89599ab2588a
   $s$wsplitS ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Data.Set.Internal.Set
@@ -512,7 +521,7 @@ fd1c63950c5ecf1a17f0b7742333850b
           Data.Set.Internal.Set
             Language.PureScript.AST.Traversals.ScopedIdent #)
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [~] -}
-1568fb1bdd9838a11f1148f0d18ed1f9
+0ec96c33b46b8653104549d2c9d8e6cc
   $sfromList ::
     [Language.PureScript.AST.Traversals.ScopedIdent]
     -> Data.Set.Internal.Set
@@ -620,7 +629,7 @@ fd1c63950c5ecf1a17f0b7742333850b
                                                (Data.Set.Internal.Tip
                                                   @ Language.PureScript.AST.Traversals.ScopedIdent))
                                             1# } } } } }) -}
-e3af48ff3d2081ca2272d0e7da95b0a1
+f457a9809f72a17fa45addd2b2832b46
   $sfromList_$s$wgo1 ::
     Language.PureScript.Names.Ident
     -> [Language.PureScript.AST.Traversals.ScopedIdent]
@@ -630,7 +639,7 @@ e3af48ff3d2081ca2272d0e7da95b0a1
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 4, Strictness: <L,U><S,1*U><S,1*U><L,U> -}
-fe9bc050c6b82da8df46d33cf2edb0e6
+77fd3cf230e9a1649869c39b4ccdbe36
   $sfromList_$s$wgo3 ::
     Language.PureScript.Names.Ident
     -> [Language.PureScript.AST.Traversals.ScopedIdent]
@@ -640,7 +649,7 @@ fe9bc050c6b82da8df46d33cf2edb0e6
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 4, Strictness: <L,U><S,1*U><S,1*U><L,U> -}
-f774b62ae4cd476eb7d481abfbe9b334
+eadef7009ab9cac71b4e410ba41f54b9
   $sfromList_$sgo4 ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> [Language.PureScript.AST.Traversals.ScopedIdent]
@@ -649,7 +658,7 @@ f774b62ae4cd476eb7d481abfbe9b334
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 3, Strictness: <S,U><S,1*U><S,1*U> -}
-f81b5a5ad5436699d61890e7d9bf3bc9
+3a7f88bed74d5aca1b752b76911081b1
   $sinsertR_$sgo3 ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent
@@ -658,7 +667,7 @@ f81b5a5ad5436699d61890e7d9bf3bc9
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
-2e4559ec49829fdf9bf63e5ecf505768
+5c35f1024bff9903b6319b4956ad77fa
   $sinsert_$s$sgo1 ::
     Data.Set.Internal.Set
       Language.PureScript.AST.Traversals.ScopedIdent
@@ -667,7 +676,7 @@ f81b5a5ad5436699d61890e7d9bf3bc9
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 3, Strictness: <S,1*U><L,U><L,U> -}
-f50593f2f0b81be57e5694a6037e058a
+55a9272e2c51fe46fe55680e98c34223
   $sinsert_$s$sgo2 ::
     Data.Set.Internal.Set
       Language.PureScript.AST.Traversals.ScopedIdent
@@ -676,7 +685,7 @@ f50593f2f0b81be57e5694a6037e058a
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 3, Strictness: <S,1*U><L,U><L,U> -}
-37ffa3f780cb21b33a588ffa4e3fa80a
+e92ced007d1ead15a0d1f8a12e4f1499
   $sinsert_$s$sgo3 ::
     GHC.Prim.Int#
     -> Language.PureScript.AST.Traversals.ScopedIdent
@@ -689,7 +698,7 @@ f50593f2f0b81be57e5694a6037e058a
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 6, Strictness: <L,U><S,U><L,U><L,U><S,1*U><L,U> -}
-4096c86d9bb77c3a342b3710bb6b424d
+7ae4b8a84ea7512e85913eb89d0fc2cb
   $sinsert_$sgo3 ::
     Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.AST.Traversals.ScopedIdent
@@ -698,19 +707,19 @@ f50593f2f0b81be57e5694a6037e058a
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
-164e9b3002243e25dec65fd55edb14e5
+f4936cde33349466a597bd6d68542063
   $smember_$sgo1 ::
     Data.Set.Internal.Set
       Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.Names.Ident -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
-56473e98b1e905962ab96c29dc628256
+255348738d2bb6f44e353b20288f54b9
   $smember_$sgo3 ::
     Data.Set.Internal.Set
       Language.PureScript.AST.Traversals.ScopedIdent
     -> Language.PureScript.Names.Ident -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
-3336c8aadc151a2c06ebe658675d62fb
+9994b56410ffc02641a06d160bb5e661
   $sunion ::
     Data.Set.Internal.Set
       Language.PureScript.AST.Traversals.ScopedIdent
@@ -719,88 +728,88 @@ f50593f2f0b81be57e5694a6037e058a
     -> Data.Set.Internal.Set
          Language.PureScript.AST.Traversals.ScopedIdent
   {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
-2cd2f79c45dddf4655dae17b1b148b12
+cf343fbaa57f824bded950937419a828
   $tc'LocalIdent :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10700866326930824690##
-                   7930449348064233925##
+                   1089513976252614936##
+                   11284945250555403417##
                    Language.PureScript.AST.Traversals.$trModule
                    Language.PureScript.AST.Traversals.$tc'LocalIdent2
                    0#
                    Language.PureScript.AST.Traversals.$tc'LocalIdent1) -}
-3475ab7e59a92f1049ee54a1fc2211d1
+7bf8d4bc11770afde74db1d1342ea73f
   $tc'LocalIdent1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-aaa7bc808790e297788b91da46df429a
+7ac74ed812eec1d10968bce42d76a221
   $tc'LocalIdent2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.Traversals.$tc'LocalIdent3) -}
-33952a4894f7a09d3266ec3fb8e05cad
+8f565ab66808a9c88ce96ebdc0b42092
   $tc'LocalIdent3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'LocalIdent"#) -}
-d7af2e465665f44c8867f2c058e75c7a
+1357c283b6a254accc02bb6e04cf8b0b
   $tc'ToplevelIdent :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   13016754896826322925##
-                   10062842599548190429##
+                   10060660324586292972##
+                   1438329454535084444##
                    Language.PureScript.AST.Traversals.$trModule
                    Language.PureScript.AST.Traversals.$tc'ToplevelIdent1
                    0#
                    Language.PureScript.AST.Traversals.$tc'LocalIdent1) -}
-e42764c0b5262ffb3395fc6a3a53d52b
+b6d6b891d01249159fb1b0c7bc3e2d71
   $tc'ToplevelIdent1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.Traversals.$tc'ToplevelIdent2) -}
-d5befbe4b9249e67fb2f18f51959592c
+7101ff381e103efb6d205be16f9c227b
   $tc'ToplevelIdent2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'ToplevelIdent"#) -}
-715947c30e72f27452003e325fd7b206
+01b35c56de73b406ccf91d52ac5c890f
   $tcScopedIdent :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   15221820959309315540##
-                   6869472355101584501##
+                   722705261964764726##
+                   12124064082942490346##
                    Language.PureScript.AST.Traversals.$trModule
                    Language.PureScript.AST.Traversals.$tcScopedIdent1
                    0#
                    GHC.Types.krep$*) -}
-d655181787a96e62cca6d0ae5194d110
+b997f553f6b26256c0c76d4d7dd5fedb
   $tcScopedIdent1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.Traversals.$tcScopedIdent2) -}
-49788ca3e89e203a25daf7e0fb29bd79
+9870d7b7d63a9dba1f2a3925c319dcbf
   $tcScopedIdent2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("ScopedIdent"#) -}
-b80b4b8bbb547d9e0f24cdffa6934bf0
+e3e9e5ed0f19127c7a3b6b416dbf034b
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.AST.Traversals.$trModule3
                    Language.PureScript.AST.Traversals.$trModule1) -}
-dbee4d28ab568fcc46201e22f779c582
+84dc93d4c7baafd81e21850054317bf1
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.Traversals.$trModule2) -}
-16e300a11434725d915d82ae7e9cd95a
+b1bcef365bdff3cdc62cc7e35441be73
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.AST.Traversals"#) -}
-dadc2ea6aa497a65e5f9a1e6a9cca79a
+576b31c8f4a7d7e2a5c07f549e81ec50
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.Traversals.$trModule4) -}
-cf2f3f559967ceb59bb6514b205f367a
+d8b13ce37a3c54288b48bc80e84b5881
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-fd1c63950c5ecf1a17f0b7742333850b
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+a9386d37e7ebee7cdf58474c3889e380
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> Language.PureScript.AST.Traversals.ScopedIdent -> GHC.Show.ShowS
@@ -854,10 +863,10 @@ fd1c63950c5ecf1a17f0b7742333850b
                                 @ GHC.Types.Char
                                 Language.PureScript.AST.Traversals.$fShowScopedIdent2
                                 (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) } }) -}
-f45a7333e38a5d329f5144a5b4ee18ae
+06ad8155f8fa03e096c4c72ece1c31f5
   $waccumKinds ::
     GHC.Base.Monoid r =>
-    (Language.PureScript.Kinds.Kind -> r)
+    (Language.PureScript.Kinds.SourceKind -> r)
     -> (# Language.PureScript.AST.Declarations.Declaration -> r,
           Language.PureScript.AST.Declarations.Expr -> r,
           Language.PureScript.AST.Binders.Binder -> r,
@@ -866,10 +875,10 @@ f45a7333e38a5d329f5144a5b4ee18ae
   {- Arity: 2,
      Strictness: <L,U(1*U(C(C1(U)),A,A),1*U,C(C1(U)),A)><L,C(U)>,
      Inline: [0] -}
-b871240aa37f0574baa2a52e83d9e1cf
+eaa40a6605a2bd1d475e2174d63e416e
   $waccumTypes ::
     GHC.Base.Monoid r =>
-    (Language.PureScript.Types.Type -> r)
+    (Language.PureScript.Types.SourceType -> r)
     -> (# Language.PureScript.AST.Declarations.Declaration -> r,
           Language.PureScript.AST.Declarations.Expr -> r,
           Language.PureScript.AST.Binders.Binder -> r,
@@ -878,7 +887,7 @@ b871240aa37f0574baa2a52e83d9e1cf
   {- Arity: 2,
      Strictness: <L,U(1*U(C(C1(U)),A,A),1*U,1*C(C1(U)),C(U))><L,C(U)>,
      Inline: [0] -}
-d896cd61827918ff94a1775b138a7dbe
+1755d2aad5f9e9c8d4820400b211a72f
   $weverythingOnValues ::
     (r -> r -> r)
     -> (Language.PureScript.AST.Declarations.Declaration -> r)
@@ -894,7 +903,7 @@ d896cd61827918ff94a1775b138a7dbe
   {- Arity: 6,
      Strictness: <L,C(C1(U))><L,C(U)><L,C(U)><L,C(U)><L,C(U)><L,C(U)>,
      Inline: [0] -}
-40abac1f31fcee9628b7688f1f07b663
+92efbaa58d90873561bf1664c05189ad
   $weverythingWithContextOnValues ::
     s
     -> r
@@ -916,7 +925,7 @@ d896cd61827918ff94a1775b138a7dbe
   {- Arity: 8,
      Strictness: <L,U><L,U><L,C(C1(U))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))><L,C(C1(U(1*U,1*U)))>,
      Inline: [0] -}
-2a98eb99fb4026af09d4626aaf3c8219
+b8b38d5a68ddd224799a69503b85ca89
   $weverythingWithScope ::
     GHC.Base.Monoid r =>
     (Data.Set.Internal.Set
@@ -952,7 +961,7 @@ d896cd61827918ff94a1775b138a7dbe
   {- Arity: 6,
      Strictness: <L,U(1*U(C(C1(U)),A,A),U,C(C1(U)),A)><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))><L,C(C1(U))>,
      Inline: [0] -}
-4481c34a79c980bf50e725406f4bf446
+9ffb00f98999d78b04396573e0fa554f
   $weverywhereOnValues ::
     (Language.PureScript.AST.Declarations.Declaration
      -> Language.PureScript.AST.Declarations.Declaration)
@@ -968,7 +977,7 @@ d896cd61827918ff94a1775b138a7dbe
           -> Language.PureScript.AST.Binders.Binder #)
   {- Arity: 3, HasNoCafRefs, Strictness: <L,C(U)><L,C(U)><L,C(U)>,
      Inline: [0] -}
-d37e3b81cc4ecb3bca457a163eeb27b5
+e51e86b681aab7186ae61c4267243bed
   $weverywhereOnValuesM ::
     GHC.Base.Monad m =>
     (Language.PureScript.AST.Declarations.Declaration
@@ -986,7 +995,7 @@ d37e3b81cc4ecb3bca457a163eeb27b5
   {- Arity: 4, HasNoCafRefs,
      Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,U><L,U><L,U>,
      Inline: [0] -}
-434d96a264df607491b6ce5317d07b06
+f6ac150fc82100fbdcb0288537756e1b
   $weverywhereOnValuesTopDownM ::
     GHC.Base.Monad m =>
     (Language.PureScript.AST.Declarations.Declaration
@@ -1004,7 +1013,7 @@ d37e3b81cc4ecb3bca457a163eeb27b5
   {- Arity: 4, HasNoCafRefs,
      Strictness: <L,U(U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,A,A)><L,C(U)><L,C(U)><L,C(U)>,
      Inline: [0] -}
-5b6879264409b9cd0532d7b6a347fd93
+7568f02fec936c0732ba1a733a08a525
   $weverywhereWithContextOnValuesM ::
     GHC.Base.Monad m =>
     s
@@ -1036,7 +1045,7 @@ d37e3b81cc4ecb3bca457a163eeb27b5
   {- Arity: 7, HasNoCafRefs,
      Strictness: <L,U(1*U(U(C(C1(U)),A),C(U),C(C1(U)),C(C1(C1(U))),A,A),C(C1(U)),A,C(U),A)><L,U><L,C(C(U))><L,C(C(U))><L,C(C(U))><L,C(C(U))><L,C(C(U))>,
      Inline: [0] -}
-11aa30887646cbdfefd3ab762fdeda74
+611a28c9a8339786f63d6db5cf22ad94
   $wguardedExprM ::
     GHC.Base.Applicative m =>
     (Language.PureScript.AST.Declarations.Guard
@@ -1097,14 +1106,14 @@ d37e3b81cc4ecb3bca457a163eeb27b5
                        } in
                        go5 ww))
                    (w2 ww1)) -}
-fd1c63950c5ecf1a17f0b7742333850b
+a9386d37e7ebee7cdf58474c3889e380
   data ScopedIdent
     = LocalIdent Language.PureScript.Names.Ident
     | ToplevelIdent Language.PureScript.Names.Ident
-34a02c7a8bb803687d93352bdff88b6a
+2c08759b6d6e363e3d39db46e55510eb
   accumKinds ::
     GHC.Base.Monoid r =>
-    (Language.PureScript.Kinds.Kind -> r)
+    (Language.PureScript.Kinds.SourceKind -> r)
     -> (Language.PureScript.AST.Declarations.Declaration -> r,
         Language.PureScript.AST.Declarations.Expr -> r,
         Language.PureScript.AST.Binders.Binder -> r,
@@ -1116,16 +1125,16 @@ fd1c63950c5ecf1a17f0b7742333850b
      Unfolding: InlineRule (2, True, False)
                 (\ @ r
                    (w :: GHC.Base.Monoid r)
-                   (w1 :: Language.PureScript.Kinds.Kind -> r) ->
+                   (w1 :: Language.PureScript.Kinds.SourceKind -> r) ->
                  case Language.PureScript.AST.Traversals.$waccumKinds
                         @ r
                         w
                         w1 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-57de83595e87d9fa4f8615bb6ea4d7cf
+e488d62caf91c6b0af9b2261ad19da8d
   accumTypes ::
     GHC.Base.Monoid r =>
-    (Language.PureScript.Types.Type -> r)
+    (Language.PureScript.Types.SourceType -> r)
     -> (Language.PureScript.AST.Declarations.Declaration -> r,
         Language.PureScript.AST.Declarations.Expr -> r,
         Language.PureScript.AST.Binders.Binder -> r,
@@ -1137,13 +1146,13 @@ fd1c63950c5ecf1a17f0b7742333850b
      Unfolding: InlineRule (2, True, False)
                 (\ @ r
                    (w :: GHC.Base.Monoid r)
-                   (w1 :: Language.PureScript.Types.Type -> r) ->
+                   (w1 :: Language.PureScript.Types.SourceType -> r) ->
                  case Language.PureScript.AST.Traversals.$waccumTypes
                         @ r
                         w
                         w1 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-c357e31af2a9709a2f6a4005be39c3f1
+d1f804aed21f7e21280e0cf1f8ea4257
   everythingOnValues ::
     (r -> r -> r)
     -> (Language.PureScript.AST.Declarations.Declaration -> r)
@@ -1177,7 +1186,7 @@ c357e31af2a9709a2f6a4005be39c3f1
                         w4
                         w5 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-96100f22de180f7be1760582c2409ed4
+b6cfbe573edb2754803b960a4d02edab
   everythingWithContextOnValues ::
     s
     -> r
@@ -1226,7 +1235,7 @@ c357e31af2a9709a2f6a4005be39c3f1
                         w6
                         w7 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-299173827d0ece19df542f918941d0da
+569a5e5bf677f3eba029adc5853b1579
   everythingWithScope ::
     GHC.Base.Monoid r =>
     (Data.Set.Internal.Set
@@ -1289,7 +1298,7 @@ c357e31af2a9709a2f6a4005be39c3f1
                         w4
                         w5 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-ad4625d6eef7aa4388eb405da834d508
+f4659f155225bd0f038ec5ce751367f9
   everywhereOnValues ::
     (Language.PureScript.AST.Declarations.Declaration
      -> Language.PureScript.AST.Declarations.Declaration)
@@ -1317,7 +1326,7 @@ ad4625d6eef7aa4388eb405da834d508
                         w1
                         w2 of ww { (#,,#) ww1 ww2 ww3 ->
                  (ww1, ww2, ww3) }) -}
-01a8d95490ca25e5157bbf2f4092d320
+1c0cb3e06c4593fe6cb03329a6249e6d
   everywhereOnValuesM ::
     GHC.Base.Monad m =>
     (Language.PureScript.AST.Declarations.Declaration
@@ -1351,7 +1360,7 @@ ad4625d6eef7aa4388eb405da834d508
                         w2
                         w3 of ww { (#,,#) ww1 ww2 ww3 ->
                  (ww1, ww2, ww3) }) -}
-eeb56e921678602b009af2041c8eba21
+75fdf2701c3b1d9ebfea98053cfea0c4
   everywhereOnValuesTopDownM ::
     GHC.Base.Monad m =>
     (Language.PureScript.AST.Declarations.Declaration
@@ -1385,7 +1394,7 @@ eeb56e921678602b009af2041c8eba21
                         w2
                         w3 of ww { (#,,#) ww1 ww2 ww3 ->
                  (ww1, ww2, ww3) }) -}
-4fdd13188200e3f571550d8ad6f3de86
+8b088f6a1ad3879e25631321bc5daeec
   everywhereWithContextOnValuesM ::
     GHC.Base.Monad m =>
     s
@@ -1449,7 +1458,7 @@ eeb56e921678602b009af2041c8eba21
                         w5
                         w6 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
                  (ww1, ww2, ww3, ww4, ww5) }) -}
-78bf5315840d518118f221b5678e37e0
+5b1f6760ac0efff4fc97873db2fa9a2e
   guardedExprM ::
     GHC.Base.Applicative m =>
     (Language.PureScript.AST.Declarations.Guard
@@ -1477,7 +1486,7 @@ eeb56e921678602b009af2041c8eba21
                    w2
                    ww1
                    ww2 }) -}
-2ecdce1893ec3507816e8bc88c2fcb29
+4071e4e3e23b5d4575aa2c5345069566
   inScope ::
     Language.PureScript.Names.Ident
     -> Data.Set.Internal.Set
@@ -1493,7 +1502,7 @@ eeb56e921678602b009af2041c8eba21
                    GHC.Types.False
                    -> Language.PureScript.AST.Traversals.$smember_$sgo3 s i
                    GHC.Types.True -> GHC.Types.True }) -}
-f0cfc068760981c7cbd590be7d721279
+22c057d6921be8440814b92979717a96
   litM ::
     GHC.Base.Monad m =>
     (a -> m a)
@@ -1593,7 +1602,7 @@ f0cfc068760981c7cbd590be7d721279
                                     (go5 ys) }
                          } in
                          go5 as) }) -}
-f3496f057922e0cd7b9ce09305bf9712
+a2524c33840358be0ec96b6f41c2df4f
   mapGuardedExpr ::
     (Language.PureScript.AST.Declarations.Guard
      -> Language.PureScript.AST.Declarations.Guard)
@@ -1629,14 +1638,15 @@ f3496f057922e0cd7b9ce09305bf9712
                          n
                          guards))
                    (g rhs) }) -}
-abfbcc4ac387d3565fd77fe0109b088c
+c5ba43021920ffb02d62737e1c4527b2
   overTypes ::
-    (Language.PureScript.Types.Type -> Language.PureScript.Types.Type)
+    (Language.PureScript.Types.SourceType
+     -> Language.PureScript.Types.SourceType)
     -> Language.PureScript.AST.Declarations.Expr
     -> Language.PureScript.AST.Declarations.Expr
   {- Arity: 1, HasNoCafRefs, Strictness: <L,C(U)>,
-     Unfolding: (\ (f :: Language.PureScript.Types.Type
-                         -> Language.PureScript.Types.Type) ->
+     Unfolding: (\ (f :: Language.PureScript.Types.SourceType
+                         -> Language.PureScript.Types.SourceType) ->
                  case Language.PureScript.AST.Traversals.$weverywhereOnValues
                         (GHC.Base.id @ Language.PureScript.AST.Declarations.Declaration)
                         (\ (ds :: Language.PureScript.AST.Declarations.Expr) ->
@@ -1649,15 +1659,19 @@ abfbcc4ac387d3565fd77fe0109b088c
                                 (f t)
                            Language.PureScript.AST.Declarations.TypeClassDictionary c sco hints
                            -> Language.PureScript.AST.Declarations.TypeClassDictionary
-                                (case c of wild1 { Language.PureScript.Types.Constraint ds1 ds2 ds3 ->
+                                (case c of wild1 { Language.PureScript.Types.Constraint ds1 ds2 ds3 ds4 ->
                                  Language.PureScript.Types.Constraint
+                                   @ Language.PureScript.AST.SourcePos.SourceAnn
                                    ds1
+                                   ds2
                                    (GHC.Base.map
-                                      @ Language.PureScript.Types.Type
-                                      @ Language.PureScript.Types.Type
+                                      @ (Language.PureScript.Types.Type
+                                           Language.PureScript.AST.SourcePos.SourceAnn)
+                                      @ (Language.PureScript.Types.Type
+                                           Language.PureScript.AST.SourcePos.SourceAnn)
                                       f
-                                      ds2)
-                                   ds3 })
+                                      ds3)
+                                   ds4 })
                                 sco
                                 hints })
                         (GHC.Base.id

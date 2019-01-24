@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:26:23.493183 UTC
+2019-01-24 14:13:32.631485 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Traversals 8043
-  interface hash: 75a4c5fbd3cd80a9bf11c761aac2ce18
-  ABI hash: 0b1167883a6d6cc72496ff4af9cd7535
-  export-list hash: ff3aac3cd7b378c02751a42ba037de7e
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Traversals 8043
+  interface hash: 65aa30fe9798f2d58e3d6c49fd69b72a
+  ABI hash: e97764d7972cc6ba421a6be0a3ce6bda
+  export-list hash: cbb821b2ee7c6d00cdf62285e1dbe432
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 2ae478d21823b7c739b1b08c46262eb0
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -35,30 +35,30 @@ import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
 import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
-49607cff279a425ec60736413d443fec
+d525a86087dbdd6b9bb0a66cc0872305
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Traversals.$trModule3
                    Language.PureScript.Traversals.$trModule1) -}
-4b0140bf22042369e3db996db753e434
+46f86d0c353e2fae9134f3675c5788b4
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Traversals.$trModule2) -}
-2564458428d2a469004d97d0ba1cd47d
+ceae7859cbe98e70146d1132e2387c97
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Language.PureScript.Traversals"#) -}
-a49b9726e1c6757042467b97c28d2532
+b33c69830991b41536e91075d984f318
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Traversals.$trModule4) -}
-13a75e94b06dbc6ce10c211da2ef7c0a
+6ccff275354a6b236ff10260a48b1219
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-026922435d047d6ccba4db8be488ad79
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+d863fb3389d8c05a6117bb7cdd4689c0
   $wpairM ::
     GHC.Base.Applicative f =>
     (a -> f c) -> (b -> f d) -> a -> b -> f (c, d)
@@ -88,7 +88,7 @@ a49b9726e1c6757042467b97c28d2532
                       (GHC.Tuple.(,) @ c @ d)
                       (w1 ww))
                    (w2 ww1)) -}
-6ddff71af3ee79c0e480484d77dbcf66
+d63aa97f74d8b43282d6090aabe13394
   defS :: GHC.Base.Monad m => st -> val -> m (st, val)
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S(LLLC(S)L),1*U(A,A,A,1*C1(U),A)><L,U><L,U>,
@@ -100,7 +100,7 @@ a49b9726e1c6757042467b97c28d2532
                    (s :: st)
                    (val1 :: val) ->
                  GHC.Base.return @ m $dMonad @ (st, val) (s, val1)) -}
-c4a2cff14570441e56c02b0c94e7fe40
+2af36357e3acd760921cb6efef427400
   eitherM ::
     GHC.Base.Applicative f =>
     (a -> f c)
@@ -135,7 +135,7 @@ c4a2cff14570441e56c02b0c94e7fe40
                         @ (Data.Either.Either c d)
                         (Data.Either.Right @ c @ d)
                         (eta1 b1) }) -}
-12c9043ca4643fd25017b678d6cdfb43
+939a2920ee4a9f251b6e0454b68c338c
   fstM :: GHC.Base.Functor f => (a -> f c) -> (a, b) -> f (c, b)
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U)>,
@@ -155,7 +155,7 @@ c4a2cff14570441e56c02b0c94e7fe40
                    @ (c, b)
                    (\ (y :: c) -> (y, b1))
                    (f1 a1) }) -}
-f1e2a58329a5e719d2f53bf29d8b0edb
+f454ac0e35a3433216159fb683e8d6ec
   maybeM ::
     GHC.Base.Applicative f =>
     (a -> f b) -> GHC.Base.Maybe a -> f (GHC.Base.Maybe b)
@@ -182,7 +182,7 @@ f1e2a58329a5e719d2f53bf29d8b0edb
                         @ (GHC.Base.Maybe b)
                         (GHC.Base.Just @ b)
                         (eta a1) }) -}
-0143056ce5ba7a658c917e8603d3f246
+f8a24624fde2d3fa102dce305c36545d
   pairM ::
     GHC.Base.Applicative f =>
     (a -> f c) -> (b -> f d) -> (a, b) -> f (c, d)
@@ -211,7 +211,7 @@ f1e2a58329a5e719d2f53bf29d8b0edb
                    w2
                    ww1
                    ww2 }) -}
-f92d028593bfff03fd7f7a06605574ae
+c93ef73e127a3a54c4cd1e5e2194b237
   sndM :: GHC.Base.Functor f => (b -> f c) -> (a, b) -> f (a, c)
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U)>,
@@ -231,7 +231,7 @@ f92d028593bfff03fd7f7a06605574ae
                    @ (a, c)
                    (GHC.Tuple.(,) @ a @ c a1)
                    (f1 b1) }) -}
-3976a24e9a12074f53555714d49531a3
+ff8e8fc8ea147bba13179156ecb5143a
   thirdM ::
     GHC.Base.Functor f => (c -> f d) -> (a, b, c) -> f (a, b, d)
   {- Arity: 3, HasNoCafRefs,

@@ -1,37 +1,54 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:31:29.126684 UTC
+2019-01-24 14:18:14.747028 UTC
 
 interface main:Version 8043
-  interface hash: 24dd9d199f06ac24a7495e7f552b2a64
-  ABI hash: 205fea00a01db65586a821f67bb0721e
-  export-list hash: 9173b8f45d2fe9b164fef8a6ae3d10ed
+  interface hash: ab863f4fcfab852be1312e5996ad3879
+  ABI hash: bb7aeade5cb4bf91042964a7bb755c1f
+  export-list hash: 19247bb1b4c893a5e72d6a7168213dde
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: a522d2a157888b725531d3d02273598f
+  flag hash: 73c55ccce1a31538fcdb1c015ea5b20d
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
-  used TH splices: False
+  used TH splices: True
   where
 exports:
   Version.versionString
 module dependencies: Paths_purescript
-package dependencies: base-4.11.1.0 ghc-prim-0.5.2.0
-                      integer-gmp-1.0.2.0
-orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+package dependencies: array-0.5.2.0 base-4.11.1.0
+                      base-compat-0.10.4 deepseq-1.4.3.0 directory-1.3.1.5 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 gitrev-1.3.1 integer-gmp-1.0.2.0
+                      pretty-1.1.3.6 process-1.6.3.0 template-haskell-2.13.0.0
+                      time-1.8.0.2 unix-2.7.2.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
                          base-4.11.1.0:Data.Functor.Const
-                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
                          base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
                          base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
 import  -/  base-4.11.1.0:Data.Version 26b96b3dd83a23703e0b8110475fc04a
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
-import  -/  Paths_purescript d4972e6d7d7cf51d76c4fcc5732065a0
+import  -/  gitrev-1.3.1:Development.GitRev 7332da2c5b1c91dc7fc8d9c5a27b7d3b
+import  -/  Paths_purescript 93fd652c77107fd97821aa3beb6826d9
   exports: 6e3a95d537b0d1edc0ebccac979bf187
-  version e10bb9b39b1fcb23469f804d3cce0c40
+  version a2c62486eff9122b5c1c93b8137a46c8
 addDependentFile "/Users/aravindmallapureddy/.stack/programs/x86_64-osx/ghc-8.4.3/lib/ghc-8.4.3/include/ghcversion.h" 61cc4580d32de09862d412848a79cd26
-addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/purs/autogen/cabal_macros.h" 94e821ea7a59c4572a762e2b1386e42e
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/purs/autogen/cabal_macros.h" cab73bfdb7b4b6b870b761d172731597
 c53ac53a704f64aecb14e032cda99d3c
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -52,11 +69,22 @@ c53ac53a704f64aecb14e032cda99d3c
 ba19d9771c1ab45528ccf036b97dcb31
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-902d0ca5f6b0f62111482446f57f31b5
+4729cd8bde3caaf9dbabfd7d7e8b9c13
   versionString :: GHC.Base.String
-  {- Unfolding: (Data.Version.$wshowVersion
-                   Paths_purescript.version1
-                   (GHC.Types.[] @ GHC.Base.String)) -}
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   (Data.Version.$wshowVersion
+                      Paths_purescript.version1
+                      (GHC.Types.[] @ GHC.Base.String))
+                   Version.versionString1) -}
+4ca7eeba3430bd288eb9a429217e016f
+  versionString1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Version.versionString2) -}
+4bcfebd57067d5c1c9fb56de87bbacde
+  versionString2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: (" [development build; commit: d807560f4e2f1bd9c5b42fb1373adb277249ff56 DIRTY]"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

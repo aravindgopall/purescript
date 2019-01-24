@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:26:08.479875 UTC
+2019-01-24 14:13:34.730015 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos [family instance module] 8043
-  interface hash: ed7bf0b5868b81bea71c72d965278888
-  ABI hash: b3f67f807f2dce79528bbb15bd9c7104
-  export-list hash: cd99f4b22e2d3cec892dcb31686df02f
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos [family instance module] 8043
+  interface hash: b37762f8264baaf7debf3735049b40c9
+  ABI hash: 63acacac5b7be73d04e5be0047a9a89a
+  export-list hash: a1e32a05596348684f99f9072c553e2b
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c3db7f6c387ef27e8d7dd7e5d6bd8948
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -14,11 +14,19 @@ interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Sourc
   used TH splices: False
   where
 exports:
+  Language.PureScript.AST.SourcePos.NullSourceAnn
+  Language.PureScript.AST.SourcePos.NullSourceSpan
   Language.PureScript.AST.SourcePos.displaySourcePos
+  Language.PureScript.AST.SourcePos.displaySourcePosShort
   Language.PureScript.AST.SourcePos.displaySourceSpan
   Language.PureScript.AST.SourcePos.displayStartEndPos
+  Language.PureScript.AST.SourcePos.displayStartEndPosShort
   Language.PureScript.AST.SourcePos.internalModuleSourceSpan
+  Language.PureScript.AST.SourcePos.nonEmptySpan
+  Language.PureScript.AST.SourcePos.nullSourceAnn
   Language.PureScript.AST.SourcePos.nullSourceSpan
+  Language.PureScript.AST.SourcePos.widenSourceAnn
+  Language.PureScript.AST.SourcePos.widenSourceSpan
   Language.PureScript.AST.SourcePos.SourceAnn
   Language.PureScript.AST.SourcePos.SourcePos{Language.PureScript.AST.SourcePos.SourcePos sourcePosColumn sourcePosLine}
   Language.PureScript.AST.SourcePos.SourceSpan{Language.PureScript.AST.SourcePos.SourceSpan spanEnd spanName spanStart}
@@ -68,7 +76,9 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
-                         primitive-0.6.3.0:Data.Primitive.ByteArray tagged-0.8.5:Data.Tagged
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
                          th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
@@ -95,12 +105,33 @@ import  -/  filepath-1.4.2:System.FilePath a538d436328dd004b88f7d29a8b244c0
 import  -/  filepath-1.4.2:System.FilePath.Posix c021b7a40cfcdd9b08724b5bb7566b59
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  Language.PureScript.Comments f344ceddf328cf61908be13dd1f90917
-  exports: b1904caad26a3e7c6a77f0a1156c2d62
-  Comment 23fbbb637db19d35ca8339b51dc9ecf5
+import  -/  Language.PureScript.Comments 1a682522a2f855328ca87bb68705794c
+  exports: 9921c985b3279420b3b7a2b7ccc8b32e
+  Comment 2e827a5b834f92cc9beef533348585fa
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
-73c071552214b3f18e94970349d3affc
+5fbb15836e08aab95aa1dd5ab8eeb65d
+  $bNullSourceAnn :: Language.PureScript.AST.SourcePos.SourceAnn
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Language.PureScript.AST.SourcePos.$bNullSourceSpan,
+                  GHC.Types.[] @ Language.PureScript.Comments.Comment)) -}
+13ee7acdc08a94d22278847a0cfbc82d
+  $bNullSourceSpan :: Language.PureScript.AST.SourcePos.SourceSpan
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.PureScript.AST.SourcePos.SourceSpan
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan1
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan1) -}
+8a5abe6dfb23b667ea44b726bee01f19
+  $bNullSourceSpan1 :: Language.PureScript.AST.SourcePos.SourcePos
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.PureScript.AST.SourcePos.SourcePos
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan2
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan2) -}
+178fb93648e988e9f87192f0a6811669
+  $bNullSourceSpan2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+1e0cf2bd3ea18f97a2ff152297f09219
   $fEqSourcePos ::
     GHC.Classes.Eq Language.PureScript.AST.SourcePos.SourcePos
   DFunId
@@ -109,7 +140,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.AST.SourcePos.SourcePos
                   Language.PureScript.AST.SourcePos.$fEqSourcePos_$c==
                   Language.PureScript.AST.SourcePos.$fEqSourcePos_$c/= -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fEqSourcePos_$c/= ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Bool
@@ -127,7 +158,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                    -> case GHC.Classes.eqInt a2 b2 of wild3 {
                         GHC.Types.False -> GHC.Types.True
                         GHC.Types.True -> GHC.Types.False } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fEqSourcePos_$c== ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Bool
@@ -146,7 +177,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                    ww2
                    ww9
                    ww7 } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fEqSourceSpan ::
     GHC.Classes.Eq Language.PureScript.AST.SourcePos.SourceSpan
   DFunId
@@ -155,7 +186,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.AST.SourcePos.SourceSpan
                   Language.PureScript.AST.SourcePos.$fEqSourceSpan_$c==
                   Language.PureScript.AST.SourcePos.$fEqSourceSpan_$c/= -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fEqSourceSpan_$c/= ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Types.Bool
@@ -170,7 +201,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                         y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fEqSourceSpan_$c== ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Types.Bool
@@ -189,7 +220,7 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                    ww5
                    ww6
                    ww7 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourcePos ::
     Data.Aeson.Types.FromJSON.FromJSON
       Language.PureScript.AST.SourcePos.SourcePos
@@ -199,20 +230,20 @@ import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
                   @ Language.PureScript.AST.SourcePos.SourcePos
                   Language.PureScript.AST.SourcePos.$fFromJSONSourcePos_$cparseJSON
                   Language.PureScript.AST.SourcePos.$fFromJSONSourcePos_$cparseJSONList -}
-405f7731335deeed04c93d71d5f9ba46
+8aa30f20bb29267000558a46ef260c4b
   $fFromJSONSourcePos1 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: (", encountered "#) -}
-531a218e78aa089dda988cb205d7d4f5
+831ca319d02dc57b1d128e81bb7eeea2
   $fFromJSONSourcePos2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("[a]"#) -}
-d70ae419574ae52022361ebd865f1a6a
+5959701b9ea4fe937164f725a0dc49bf
   $fFromJSONSourcePos3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("expected "#) -}
-b0ac92d1b0c4a9a9c0f3bdac6fcfc479
+82ee0b41c9b415346b2da29482b27d19
   $fFromJSONSourcePos4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("Pattern match failure in do expression at src/Language/PureScript/AST/SourcePos.hs:42:5-15"#) -}
-73c071552214b3f18e94970349d3affc
+     Unfolding: ("Pattern match failure in do expression at src/Language/PureScript/AST/SourcePos.hs:47:5-15"#) -}
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourcePos_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -230,7 +261,7 @@ b0ac92d1b0c4a9a9c0f3bdac6fcfc479
                     (ks :: Data.Aeson.Types.Internal.Success
                              Language.PureScript.AST.SourcePos.SourcePos f4 r) ->
                   let {
-                    lvl19 :: f4 r
+                    lvl25 :: f4 r
                     = kf
                         (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
                         Language.PureScript.AST.SourcePos.$fFromJSONSourcePos_msg
@@ -243,18 +274,18 @@ b0ac92d1b0c4a9a9c0f3bdac6fcfc479
                     kf
                     (\ (a1 :: [GHC.Types.Int]) ->
                      case a1 of wild {
-                       [] -> lvl19
+                       [] -> lvl25
                        : line ds
                        -> case ds of wild1 {
-                            [] -> lvl19
+                            [] -> lvl25
                             : col ds1
                             -> case ds1 of wild2 {
                                  [] -> ks (Language.PureScript.AST.SourcePos.SourcePos line col)
-                                 : ipv ipv1 -> lvl19 } } }))
+                                 : ipv ipv1 -> lvl25 } } }))
                    `cast`
                  (Sym (Data.Aeson.Types.Internal.N:Parser[0]
                            <Language.PureScript.AST.SourcePos.SourcePos>_R))) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourcePos_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -316,18 +347,18 @@ b0ac92d1b0c4a9a9c0f3bdac6fcfc479
                       Language.PureScript.AST.SourcePos.$fFromJSONSourcePos_go
                         0#
                         ($wgo 0#) } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourcePos_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser
          [Language.PureScript.AST.SourcePos.SourcePos]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-2875b405acb7e805d1e69ca9b4768cc4
+4a64ea398511d28e67d37fbb0ec2b9c3
   $fFromJSONSourcePos_msg :: GHC.Base.String
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.AST.SourcePos.$fFromJSONSourcePos4) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourceSpan ::
     Data.Aeson.Types.FromJSON.FromJSON
       Language.PureScript.AST.SourcePos.SourceSpan
@@ -337,20 +368,20 @@ b0ac92d1b0c4a9a9c0f3bdac6fcfc479
                   @ Language.PureScript.AST.SourcePos.SourceSpan
                   Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan_$cparseJSON
                   Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan_$cparseJSONList -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourceSpan1 ::
     Data.Aeson.Types.Internal.Object
     -> Data.Aeson.Types.Internal.Parser
          Language.PureScript.AST.SourcePos.SourceSpan
   {- Arity: 1, Strictness: <L,U> -}
-02b30abff15efb1ddd0a8c58f38a25d7
+2114f2b5bab53b3d69e7013947896bec
   $fFromJSONSourceSpan2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan3) -}
-a921953fbc12c1dac1573606e560c5f2
+74c8f57c96ce8b3c0529cff0d9fb0899
   $fFromJSONSourceSpan3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SourceSpan"#) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourceSpan_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -360,7 +391,7 @@ a921953fbc12c1dac1573606e560c5f2
                    @ Language.PureScript.AST.SourcePos.SourceSpan
                    Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan2
                    Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan1) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourceSpan_$cparseJSONList ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -422,14 +453,14 @@ a921953fbc12c1dac1573606e560c5f2
                       Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan_go
                         0#
                         ($wgo 0#) } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fFromJSONSourceSpan_go ::
     GHC.Prim.Int#
     -> [Data.Aeson.Types.Internal.Value]
     -> Data.Aeson.Types.Internal.Parser
          [Language.PureScript.AST.SourcePos.SourceSpan]
   {- Arity: 2, Strictness: <L,U><S,1*U> -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fGenericSourcePos ::
     GHC.Generics.Generic Language.PureScript.AST.SourcePos.SourcePos
   DFunId
@@ -446,7 +477,7 @@ a921953fbc12c1dac1573606e560c5f2
                                   <'GHC.Generics.MetaData
                                      "SourcePos"
                                      "Language.PureScript.AST.SourcePos"
-                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                     "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                                      'GHC.Types.False>_P
                                   <GHC.Generics.M1
                                      GHC.Generics.C
@@ -471,7 +502,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                             GHC.Generics.R
                                                             GHC.Types.Int))>_R) ; Sub (Sym (Language.PureScript.AST.SourcePos.Rep_SourcePos[0]))) <x>_N)
                   Language.PureScript.AST.SourcePos.$fGenericSourcePos_$cto -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fGenericSourcePos1 ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> GHC.Generics.M1
@@ -573,7 +604,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                   'GHC.Generics.DecidedLazy)
                                                (GHC.Generics.K1
                                                   GHC.Generics.R GHC.Types.Int)>_R) <x>_N) }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fGenericSourcePos_$cto ::
     GHC.Generics.Rep Language.PureScript.AST.SourcePos.SourcePos x
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -590,7 +621,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                                                         <'GHC.Generics.MetaData
                                                                                            "SourcePos"
                                                                                            "Language.PureScript.AST.SourcePos"
-                                                                                           "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                           "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                                                                                            'GHC.Types.False>_P
                                                                                         <GHC.Generics.M1
                                                                                            GHC.Generics.C
@@ -681,7 +712,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                                        <GHC.Generics.R>_P
                                                                        <GHC.Types.Int>_R
                                                                        <x>_P) }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fGenericSourceSpan ::
     GHC.Generics.Generic Language.PureScript.AST.SourcePos.SourceSpan
   DFunId
@@ -698,7 +729,7 @@ a921953fbc12c1dac1573606e560c5f2
                                   <'GHC.Generics.MetaData
                                      "SourceSpan"
                                      "Language.PureScript.AST.SourcePos"
-                                     "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                     "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                                      'GHC.Types.False>_P
                                   <GHC.Generics.M1
                                      GHC.Generics.C
@@ -734,7 +765,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                                               GHC.Generics.R
                                                                               Language.PureScript.AST.SourcePos.SourcePos)))>_R) ; Sub (Sym (Language.PureScript.AST.SourcePos.Rep_SourceSpan[0]))) <x>_N)
                   Language.PureScript.AST.SourcePos.$fGenericSourceSpan_$cto -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fGenericSourceSpan1 ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> GHC.Generics.M1
@@ -908,7 +939,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                                  (GHC.Generics.K1
                                                                     GHC.Generics.R
                                                                     Language.PureScript.AST.SourcePos.SourcePos))>_R) <x>_N) }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fGenericSourceSpan_$cto ::
     GHC.Generics.Rep Language.PureScript.AST.SourcePos.SourceSpan x
     -> Language.PureScript.AST.SourcePos.SourceSpan
@@ -925,7 +956,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                                                          <'GHC.Generics.MetaData
                                                                                             "SourceSpan"
                                                                                             "Language.PureScript.AST.SourcePos"
-                                                                                            "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+                                                                                            "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                                                                                             'GHC.Types.False>_P
                                                                                          <GHC.Generics.M1
                                                                                             GHC.Generics.C
@@ -1057,7 +1088,7 @@ a921953fbc12c1dac1573606e560c5f2
                                                                                       <GHC.Generics.R>_P
                                                                                       <Language.PureScript.AST.SourcePos.SourcePos>_R
                                                                                       <x>_P) } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fNFDataSourcePos ::
     Control.DeepSeq.NFData Language.PureScript.AST.SourcePos.SourcePos
   DFunId
@@ -1068,7 +1099,7 @@ a921953fbc12c1dac1573606e560c5f2
                   `cast`
                 (Sym (Control.DeepSeq.N:NFData[0]
                           <Language.PureScript.AST.SourcePos.SourcePos>_N)) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fNFDataSourcePos_$crnf ::
     Language.PureScript.AST.SourcePos.SourcePos -> ()
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(1*H,1*H)>,
@@ -1077,7 +1108,7 @@ a921953fbc12c1dac1573606e560c5f2
                  case x of wild { Language.PureScript.AST.SourcePos.SourcePos g1 g2 ->
                  case g1 of ds1 { GHC.Types.I# ipv ->
                  case g2 of ds2 { GHC.Types.I# ipv1 -> GHC.Tuple.() } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fNFDataSourceSpan ::
     Control.DeepSeq.NFData Language.PureScript.AST.SourcePos.SourceSpan
   DFunId
@@ -1089,7 +1120,7 @@ a921953fbc12c1dac1573606e560c5f2
                   `cast`
                 (Sym (Control.DeepSeq.N:NFData[0]
                           <Language.PureScript.AST.SourcePos.SourceSpan>_N)) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fNFDataSourceSpan_$crnf ::
     Language.PureScript.AST.SourcePos.SourceSpan -> ()
   {- Arity: 1, HasNoCafRefs,
@@ -1106,10 +1137,10 @@ a921953fbc12c1dac1573606e560c5f2
                  case ww11 of ww13 { GHC.Types.I# ipv3 ->
                  Language.PureScript.AST.SourcePos.$fNFDataSourceSpan_go
                    ww1 } } } } } } }) -}
-7b7d1d57e69fd3407777a9b5075a991a
+8ad1d3ad3b1e5f6ecea8ac7d5325e47d
   $fNFDataSourceSpan_go :: [GHC.Types.Char] -> ()
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos ::
     GHC.Classes.Ord Language.PureScript.AST.SourcePos.SourcePos
   DFunId
@@ -1124,7 +1155,7 @@ a921953fbc12c1dac1573606e560c5f2
                   Language.PureScript.AST.SourcePos.$fOrdSourcePos_$c>=
                   Language.PureScript.AST.SourcePos.$fOrdSourcePos_$cmax
                   Language.PureScript.AST.SourcePos.$fOrdSourcePos_$cmin -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$c< ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Bool
@@ -1139,7 +1170,7 @@ a921953fbc12c1dac1573606e560c5f2
                  case w1 of ww5 { Language.PureScript.AST.SourcePos.SourcePos ww6 ww7 ->
                  case ww6 of ww8 { GHC.Types.I# ww9 ->
                  Language.PureScript.AST.SourcePos.$w$c< ww4 ww2 ww9 ww7 } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$c<= ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Bool
@@ -1158,7 +1189,7 @@ a921953fbc12c1dac1573606e560c5f2
                    ww2
                    ww9
                    ww7 } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$c> ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Bool
@@ -1168,7 +1199,7 @@ a921953fbc12c1dac1573606e560c5f2
                 (\ (a :: Language.PureScript.AST.SourcePos.SourcePos)
                    (b :: Language.PureScript.AST.SourcePos.SourcePos) ->
                  Language.PureScript.AST.SourcePos.$fOrdSourcePos_$c< b a) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$c>= ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Bool
@@ -1187,7 +1218,7 @@ a921953fbc12c1dac1573606e560c5f2
                    ww2
                    ww9
                    ww7 } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$ccompare ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -1207,7 +1238,7 @@ a921953fbc12c1dac1573606e560c5f2
                    ww2
                    ww9
                    ww7 } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$cmax ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -1245,7 +1276,7 @@ a921953fbc12c1dac1573606e560c5f2
                    -> Language.PureScript.AST.SourcePos.SourcePos
                         (GHC.Types.I# ww4)
                         ww2 } } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourcePos_$cmin ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -1283,7 +1314,7 @@ a921953fbc12c1dac1573606e560c5f2
                    -> Language.PureScript.AST.SourcePos.SourcePos
                         (GHC.Types.I# ww9)
                         ww7 } } } } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan ::
     GHC.Classes.Ord Language.PureScript.AST.SourcePos.SourceSpan
   DFunId
@@ -1298,7 +1329,7 @@ a921953fbc12c1dac1573606e560c5f2
                   Language.PureScript.AST.SourcePos.$fOrdSourceSpan_$c>=
                   Language.PureScript.AST.SourcePos.$fOrdSourceSpan_$cmax
                   Language.PureScript.AST.SourcePos.$fOrdSourceSpan_$cmin -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$c< ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Types.Bool
@@ -1317,7 +1348,7 @@ a921953fbc12c1dac1573606e560c5f2
                    ww5
                    ww6
                    ww7 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$c<= ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Types.Bool
@@ -1331,7 +1362,7 @@ a921953fbc12c1dac1573606e560c5f2
                         a of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$c> ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Types.Bool
@@ -1341,7 +1372,7 @@ a921953fbc12c1dac1573606e560c5f2
                 (\ (a :: Language.PureScript.AST.SourcePos.SourceSpan)
                    (b :: Language.PureScript.AST.SourcePos.SourceSpan) ->
                  Language.PureScript.AST.SourcePos.$fOrdSourceSpan_$c< b a) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$c>= ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Types.Bool
@@ -1355,7 +1386,7 @@ a921953fbc12c1dac1573606e560c5f2
                         b of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$ccompare ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan
@@ -1375,7 +1406,7 @@ a921953fbc12c1dac1573606e560c5f2
                    ww5
                    ww6
                    ww7 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$cmax ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan
@@ -1389,7 +1420,7 @@ a921953fbc12c1dac1573606e560c5f2
                         y
                         x of wild {
                    GHC.Types.False -> y GHC.Types.True -> x }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fOrdSourceSpan_$cmin ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourceSpan
@@ -1403,7 +1434,7 @@ a921953fbc12c1dac1573606e560c5f2
                         y
                         x of wild {
                    GHC.Types.False -> x GHC.Types.True -> y }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourcePos ::
     GHC.Show.Show Language.PureScript.AST.SourcePos.SourcePos
   DFunId
@@ -1413,7 +1444,7 @@ a921953fbc12c1dac1573606e560c5f2
                   Language.PureScript.AST.SourcePos.$fShowSourcePos_$cshowsPrec
                   Language.PureScript.AST.SourcePos.$fShowSourcePos_$cshow
                   Language.PureScript.AST.SourcePos.$fShowSourcePos_$cshowList -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourcePos1 ::
     Language.PureScript.AST.SourcePos.SourcePos -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(1*U(U),1*U(U))><L,U>,
@@ -1421,27 +1452,27 @@ a921953fbc12c1dac1573606e560c5f2
                    (w1 :: GHC.Base.String) ->
                  case w of ww { Language.PureScript.AST.SourcePos.SourcePos ww1 ww2 ->
                  Language.PureScript.AST.SourcePos.$w$cshowsPrec 0# ww1 ww2 w1 }) -}
-a4a1b4b26fbcaf62cb349f70a27ca35d
+6a49620f981ce322f97a4da746b67600
   $fShowSourcePos2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("}"#) -}
-52619cde029f489feaea5feedad4cf40
+25b6e2ef516fba62b2cf5ab883619222
   $fShowSourcePos3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("sourcePosColumn = "#) -}
-2563511631d26568c01998e47160f29e
+92826f74d4071657856fd4bbf345ea96
   $fShowSourcePos4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("sourcePosLine = "#) -}
-0fa3526c8818359c42d94a35cc92a23b
+155923f6d1bc5184a72743292c829318
   $fShowSourcePos5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.AST.SourcePos.$fShowSourcePos6) -}
-10090035ec284ce03b60c29a942d3478
+331ab245da8afecc9dedde673d6fe49a
   $fShowSourcePos6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SourcePos {"#) -}
-cc4c3645703e291836ad371c94359179
+319c7f27fe20390e19e9bd5a41aa6e02
   $fShowSourcePos7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Language.PureScript.AST.SourcePos.$fShowSourcePos2) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourcePos_$cshow ::
     Language.PureScript.AST.SourcePos.SourcePos -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U(U),1*U(U))>, Inline: [0],
@@ -1449,7 +1480,7 @@ cc4c3645703e291836ad371c94359179
                 (\ (w :: Language.PureScript.AST.SourcePos.SourcePos) ->
                  case w of ww { Language.PureScript.AST.SourcePos.SourcePos ww1 ww2 ->
                  Language.PureScript.AST.SourcePos.$w$cshow ww1 ww2 }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourcePos_$cshowList ::
     [Language.PureScript.AST.SourcePos.SourcePos] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -1461,7 +1492,7 @@ cc4c3645703e291836ad371c94359179
                    Language.PureScript.AST.SourcePos.$fShowSourcePos1
                    ls
                    s) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourcePos_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.AST.SourcePos.SourcePos -> GHC.Show.ShowS
@@ -1478,7 +1509,7 @@ cc4c3645703e291836ad371c94359179
                    ww3
                    ww4
                    w2 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourceSpan ::
     GHC.Show.Show Language.PureScript.AST.SourcePos.SourceSpan
   DFunId
@@ -1488,7 +1519,7 @@ cc4c3645703e291836ad371c94359179
                   Language.PureScript.AST.SourcePos.$fShowSourceSpan_$cshowsPrec
                   Language.PureScript.AST.SourcePos.$fShowSourceSpan_$cshow
                   Language.PureScript.AST.SourcePos.$fShowSourceSpan_$cshowList -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourceSpan1 ::
     Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Show.ShowS
   {- Arity: 2,
@@ -1502,22 +1533,19 @@ cc4c3645703e291836ad371c94359179
                    ww2
                    ww3
                    w1 }) -}
-47c98a9071555a97fb26d98cd81d9bf3
+3d1698fbf14525695e846dac88af5891
   $fShowSourceSpan2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("spanEnd = "#) -}
-b14027c89f5c63db65310189a800e815
+724cac1a3a8f72449c4fbc2e0685da6f
   $fShowSourceSpan3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("spanStart = "#) -}
-9646b1d45dfd65167f3df9afaa6a9be6
+4f10d5cc86c9dba1702d1626e4c74206
   $fShowSourceSpan4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("spanName = "#) -}
-9f991f39c5922734df5a9f79fd6a182a
+14ff2cd1af3a6a7166195c04004f2c9b
   $fShowSourceSpan5 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SourceSpan {"#) -}
-7fda8960d6e5da200f963566b138be76
-  $fShowSourceSpan6 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourceSpan_$cshow ::
     Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Base.String
   {- Arity: 1,
@@ -1525,10 +1553,10 @@ b14027c89f5c63db65310189a800e815
      Unfolding: InlineRule (1, True, False)
                 (\ (x :: Language.PureScript.AST.SourcePos.SourceSpan) ->
                  Language.PureScript.AST.SourcePos.$fShowSourceSpan_$cshowsPrec
-                   Language.PureScript.AST.SourcePos.$fShowSourceSpan6
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan2
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourceSpan_$cshowList ::
     [Language.PureScript.AST.SourcePos.SourceSpan] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -1540,7 +1568,7 @@ b14027c89f5c63db65310189a800e815
                    Language.PureScript.AST.SourcePos.$fShowSourceSpan1
                    ls
                    s) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fShowSourceSpan_$cshowsPrec ::
     GHC.Types.Int
     -> Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Show.ShowS
@@ -1559,7 +1587,7 @@ b14027c89f5c63db65310189a800e815
                    ww4
                    ww5
                    w2 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourcePos ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.AST.SourcePos.SourcePos
@@ -1571,7 +1599,7 @@ b14027c89f5c63db65310189a800e815
                   Language.PureScript.AST.SourcePos.$fToJSONSourcePos_$ctoEncoding
                   Language.PureScript.AST.SourcePos.$fToJSONSourcePos_$ctoJSONList
                   Language.PureScript.AST.SourcePos.$fToJSONSourcePos_$ctoEncodingList -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourcePos_$ctoEncoding ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -1585,7 +1613,7 @@ b14027c89f5c63db65310189a800e815
                 (<Language.PureScript.AST.SourcePos.SourcePos>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourcePos_$ctoEncodingList ::
     [Language.PureScript.AST.SourcePos.SourcePos]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -1594,7 +1622,7 @@ b14027c89f5c63db65310189a800e815
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.AST.SourcePos.SourcePos
                    Language.PureScript.AST.SourcePos.$fToJSONSourcePos_$ctoEncoding) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourcePos_$ctoJSON ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Data.Aeson.Types.Internal.Value
@@ -1606,7 +1634,7 @@ b14027c89f5c63db65310189a800e815
                         ww1
                         ww2 of ww3 { Unit# ww4 ->
                  Data.Aeson.Types.Internal.Array ww4 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourcePos_$ctoJSONList ::
     [Language.PureScript.AST.SourcePos.SourcePos]
     -> Data.Aeson.Types.Internal.Value
@@ -1644,7 +1672,7 @@ b14027c89f5c63db65310189a800e815
                                      Language.PureScript.AST.SourcePos.$fToJSONSourcePos_$ctoJSON)
                                   n1
                                   x)))))) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourceSpan ::
     Data.Aeson.Types.ToJSON.ToJSON
       Language.PureScript.AST.SourcePos.SourceSpan
@@ -1656,16 +1684,16 @@ b14027c89f5c63db65310189a800e815
                   Language.PureScript.AST.SourcePos.$fToJSONSourceSpan_$ctoEncoding
                   Language.PureScript.AST.SourcePos.$fToJSONSourceSpan_$ctoJSONList
                   Language.PureScript.AST.SourcePos.$fToJSONSourceSpan_$ctoEncodingList -}
-242d92497acae7f563695fb2d58140fc
+787fec9829aefd9981a6f03299ba4326
   $fToJSONSourceSpan1 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("end"#) -}
-9d6fdc3d86dcabe51dc5ef4373b9b65e
+d0128c174887c3220577750614d6b6b6
   $fToJSONSourceSpan2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("start"#) -}
-068c20b8f064f621e0232caf74b31ef0
+2cee0c11133876eca2e7dde3bcde8cb7
   $fToJSONSourceSpan3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("name"#) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourceSpan_$ctoEncoding ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -1680,7 +1708,7 @@ b14027c89f5c63db65310189a800e815
                 (<Language.PureScript.AST.SourcePos.SourceSpan>_R
                  ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                <Data.Aeson.Types.Internal.Value>_P)) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourceSpan_$ctoEncodingList ::
     [Language.PureScript.AST.SourcePos.SourceSpan]
     -> Data.Aeson.Encoding.Internal.Encoding
@@ -1689,7 +1717,7 @@ b14027c89f5c63db65310189a800e815
                 (Data.Aeson.Encoding.Internal.list
                    @ Language.PureScript.AST.SourcePos.SourceSpan
                    Language.PureScript.AST.SourcePos.$fToJSONSourceSpan_$ctoEncoding) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourceSpan_$ctoJSON ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Data.Aeson.Types.Internal.Value
@@ -1704,7 +1732,7 @@ b14027c89f5c63db65310189a800e815
                         ww2
                         ww3 of ww4 { Unit# ww5 ->
                  Data.Aeson.Types.Internal.Object ww5 } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $fToJSONSourceSpan_$ctoJSONList ::
     [Language.PureScript.AST.SourcePos.SourceSpan]
     -> Data.Aeson.Types.Internal.Value
@@ -1742,118 +1770,166 @@ b14027c89f5c63db65310189a800e815
                                      Language.PureScript.AST.SourcePos.$fToJSONSourceSpan_$ctoJSON)
                                   n1
                                   x)))))) -}
-4cbaeb0132dbe49d989ddd9cc3476bfa
+83528616adde15d9fb0006ff8a62b1ca
   $fToJSONSourceSpan_key1 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.AST.SourcePos.$fToJSONSourceSpan2) -}
-d057f3f33e022b9197d2eba5ae04752e
+fd25f89021d6ef5f5a85ebc161ef37e3
   $fToJSONSourceSpan_key2 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.AST.SourcePos.$fToJSONSourceSpan1) -}
-c976c2257dc6b50226e4c6670373a0b8
+7e1dfec7e2db28c6f2b0266c95331355
   $fToJSONSourceSpan_key3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    Language.PureScript.AST.SourcePos.$fToJSONSourceSpan3) -}
-a3aa2ad60e734853a8ee237b279a160c
+ae92d55ade855fa50e41c643cd9e476c
+  $mNullSourceAnn ::
+    forall (rep :: GHC.Types.RuntimeRep) (r :: TYPE rep).
+    Language.PureScript.AST.SourcePos.SourceAnn
+    -> (GHC.Prim.Void# -> r) -> (GHC.Prim.Void# -> r) -> r
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(SLL)L),1*U(1*U(1*U,1*U(1*U(1*U),1*U(1*U)),1*U(1*U(1*U),1*U(1*U))),1*U)><L,1*C1(U)><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ rep :: GHC.Types.RuntimeRep
+                   @ r :: TYPE rep
+                   (w :: Language.PureScript.AST.SourcePos.SourceAnn)
+                   (w1 :: GHC.Prim.Void# -> r)
+                   (w2 :: GHC.Prim.Void# -> r) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { Language.PureScript.AST.SourcePos.SourceSpan ww4 ww5 ww6 ->
+                 Language.PureScript.AST.SourcePos.$w$mNullSourceAnn
+                   @ rep
+                   @ r
+                   ww4
+                   ww5
+                   ww6
+                   ww2
+                   w1
+                   w2 } }) -}
+2ac434ab3ba1e60957a4c0604c903149
+  $mNullSourceSpan ::
+    forall (rep :: GHC.Types.RuntimeRep) (r :: TYPE rep).
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> (GHC.Prim.Void# -> r) -> (GHC.Prim.Void# -> r) -> r
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U,1*U(1*U(1*U),1*U(1*U)),1*U(1*U(1*U),1*U(1*U)))><L,1*C1(U)><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ rep :: GHC.Types.RuntimeRep
+                   @ r :: TYPE rep
+                   (w :: Language.PureScript.AST.SourcePos.SourceSpan)
+                   (w1 :: GHC.Prim.Void# -> r)
+                   (w2 :: GHC.Prim.Void# -> r) ->
+                 case w of ww { Language.PureScript.AST.SourcePos.SourceSpan ww1 ww2 ww3 ->
+                 Language.PureScript.AST.SourcePos.$w$mNullSourceSpan
+                   @ rep
+                   @ r
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w2 }) -}
+7d8a7c83d3a60ccc38a4982c7b1348e5
   $tc'SourcePos :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   7413130661332583604##
-                   3624878506043534419##
+                   8647346627824447078##
+                   15262304922176340362##
                    Language.PureScript.AST.SourcePos.$trModule
                    Language.PureScript.AST.SourcePos.$tc'SourcePos2
                    0#
                    Language.PureScript.AST.SourcePos.$tc'SourcePos1) -}
-3fddda1f546d21fc038e57df19b3806c
+003db7c3ebe5654f72a368f51138daeb
   $tc'SourcePos1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-ecd4fa6c59c7cc43b327753b4000a359
+73feee112c71365e227b82d725abdb73
   $tc'SourcePos2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.SourcePos.$tc'SourcePos3) -}
-6ebfcd8ac12b48afa318ed1177e601a4
+6dc8bbd10c489c1ba66f82e99e9af24c
   $tc'SourcePos3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'SourcePos"#) -}
-d188c8195b7db5be1cda952ea11a9226
+66cc95c3255f62c7f24a4f00fa7832b9
   $tc'SourceSpan :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   3196912184808215402##
-                   16153748636715738374##
+                   9761540701718083234##
+                   1709950798067175434##
                    Language.PureScript.AST.SourcePos.$trModule
                    Language.PureScript.AST.SourcePos.$tc'SourceSpan2
                    0#
                    Language.PureScript.AST.SourcePos.$tc'SourceSpan1) -}
-222f698235d99f90bedb7d3c426473bd
+8d980f1b90d004fa32b783d6d05b97d4
   $tc'SourceSpan1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-986f2260443dc614a8dcbd64bbac2b19
+747bbe6103da270a78950396e723c6bf
   $tc'SourceSpan2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.SourcePos.$tc'SourceSpan3) -}
-3ee83bab3027aa8b20f74db2f0a711af
+73a90be3baa3f1847c68e182bcd4096d
   $tc'SourceSpan3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'SourceSpan"#) -}
-2cb3e62efa7003bbf41892e75c58eb57
+d689394097b7121086c54ffcb1f04ad3
   $tcSourcePos :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   11524622775280473180##
-                   9992313545385506255##
+                   6264185026208528757##
+                   4059916661335238619##
                    Language.PureScript.AST.SourcePos.$trModule
                    Language.PureScript.AST.SourcePos.$tcSourcePos1
                    0#
                    GHC.Types.krep$*) -}
-cdb7137a53609ac547e2214ae86b33bf
+5027a49ebd16579262b022f140475bb7
   $tcSourcePos1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.SourcePos.$tcSourcePos2) -}
-beb2ac224c635528a763b03701480c6b
+56528ba02621e5be4ae3c0bd7466cf16
   $tcSourcePos2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SourcePos"#) -}
-adf62ba41706d3f1e5e426a189586b27
+5ef712e8898c141d0113d7567bd2151b
   $tcSourceSpan :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10919780650531932320##
-                   7088491576290250444##
+                   9651908237998006362##
+                   4394222466373219998##
                    Language.PureScript.AST.SourcePos.$trModule
                    Language.PureScript.AST.SourcePos.$tcSourceSpan1
                    0#
                    GHC.Types.krep$*) -}
-2fc3f4571b1eac04daaae2553a774838
+4fe94a1a60737625745b49fd4a7b9f7a
   $tcSourceSpan1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.SourcePos.$fFromJSONSourceSpan3) -}
-0ee40c999a589814f8010e389b6080e8
+0ddf08ec16c0e60f46caf6e07a3fac4a
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.AST.SourcePos.$trModule3
                    Language.PureScript.AST.SourcePos.$trModule1) -}
-fbaf247a0e8ebf7b015575d450e9659e
+256338627ce9b3aca59f26ecf16d8e74
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.SourcePos.$trModule2) -}
-100a7a593999ec5a5d737dd84ff71c01
+b5a3e0de1bb7d856897bb479f0627423
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.AST.SourcePos"#) -}
-e2216adbdcc3f92cac3d454cedd0fca7
+7d9db7357841e6807610f83a8f674e71
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.AST.SourcePos.$trModule4) -}
-d94ab59146684cf4e2e7e6b96a04a486
+0fe3c6e2f93bca02387c13ddd0c3ef34
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-96e50479e9a7f3913b2128fce308da87
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+b60de92864750f0787de6d3fe7c48e92
   $w$c< ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -1871,7 +1947,7 @@ d94ab59146684cf4e2e7e6b96a04a486
                    -> case GHC.Prim.==# ww ww2 of lwild1 {
                         DEFAULT -> GHC.Types.False 1# -> GHC.Classes.ltInt ww1 ww3 }
                    1# -> GHC.Types.True }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $w$c<1 ::
     GHC.Base.String
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -1914,7 +1990,7 @@ d94ab59146684cf4e2e7e6b96a04a486
                                   1# -> GHC.Types.True } } } }
                         1# -> GHC.Types.True } } } } }
                    GHC.Types.GT -> GHC.Types.False }) -}
-ba02fbf842f821ced2b035b204fd4043
+ed4fa87638c7aa506d8b46b95eee9c8a
   $w$c<= ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -1937,7 +2013,7 @@ ba02fbf842f821ced2b035b204fd4043
                            case GHC.Prim.<# x y of lwild2 {
                              DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } } }
                    1# -> GHC.Types.False }) -}
-f9f456d58181198bfc5f1ea61f044860
+0f8f12bb2650ad0c704fa913fbb1faa1
   $w$c== ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -1952,7 +2028,7 @@ f9f456d58181198bfc5f1ea61f044860
                    (ww3 :: GHC.Types.Int) ->
                  case GHC.Prim.==# ww ww2 of lwild {
                    DEFAULT -> GHC.Types.False 1# -> GHC.Classes.eqInt ww1 ww3 }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $w$c==1 ::
     GHC.Base.String
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -1988,7 +2064,7 @@ f9f456d58181198bfc5f1ea61f044860
                              -> Language.PureScript.AST.SourcePos.$fEqSourcePos_$c==
                                   ww2
                                   ww5 } } } } } } } } }) -}
-fe73ebad34478f90c6355488b2ce81de
+ee91d6f13d997ab6cc32a84c33231c31
   $w$c>= ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -2011,7 +2087,7 @@ fe73ebad34478f90c6355488b2ce81de
                            case GHC.Prim.<# x y of lwild2 {
                              DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } } }
                    1# -> GHC.Types.False }) -}
-bd93075b97d57a10dab5049efc614e1d
+5216509159fe742141f082fce83f3870
   $w$ccompare ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -2029,7 +2105,7 @@ bd93075b97d57a10dab5049efc614e1d
                    -> case GHC.Prim.==# ww ww2 of lwild1 {
                         DEFAULT -> GHC.Types.GT 1# -> GHC.Classes.compareInt ww1 ww3 }
                    1# -> GHC.Types.LT }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $w$ccompare1 ::
     GHC.Base.String
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -2072,7 +2148,7 @@ bd93075b97d57a10dab5049efc614e1d
                                   1# -> GHC.Types.LT } } } }
                         1# -> GHC.Types.LT } } } } }
                    GHC.Types.GT -> GHC.Types.GT }) -}
-52dca6b691c26b79b04d16006f7e5d19
+980ce2dc833002d62062f9d07892ea18
   $w$cshow :: GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String
   {- Arity: 2, Strictness: <L,1*U(U)><L,1*U(U)>, Inline: [0],
      Unfolding: (\ (ww :: GHC.Types.Int) (ww1 :: GHC.Types.Int) ->
@@ -2100,7 +2176,7 @@ bd93075b97d57a10dab5049efc614e1d
                                        ww7
                                        ww8 } }))) of ww4 { (#,#) ww5 ww6 ->
                        GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))) -}
-47cc479f7d6b1b44bc3a76564fd1c83e
+7cafdc985644c4713b844efa6dc1a6ca
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -2174,7 +2250,7 @@ bd93075b97d57a10dab5049efc614e1d
                                                ww8
                                                ww9 } }))) of ww5 { (#,#) ww6 ww7 ->
                                GHC.Types.: @ GHC.Types.Char ww6 ww7 } }))) }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> GHC.Base.String
@@ -2236,7 +2312,7 @@ bd93075b97d57a10dab5049efc614e1d
                         @ GHC.Types.Char
                         GHC.Show.$fShow(,)4
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)) }) -}
-c12b0e8fc27281c9c3e099e2b7288304
+07a604c97af61473e087ae7f163457dc
   $w$ctoJSON ::
     GHC.Types.Int
     -> GHC.Types.Int -> (# Data.Aeson.Types.Internal.Array #)
@@ -2336,7 +2412,7 @@ c12b0e8fc27281c9c3e099e2b7288304
                               ipv7 #) } } } } } } } }) of ds1 { (#,#) ipv1 ipv2 ->
                  case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
                  (# dt #) } }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   $w$ctoJSON1 ::
     GHC.Base.String
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -2399,11 +2475,100 @@ c12b0e8fc27281c9c3e099e2b7288304
                         (Data.Aeson.Types.Internal.Array ww20)
                         z2 of dt1 { DEFAULT ->
                  (# dt1 #) } } } } } } } } } } } }) -}
-29247881ff3dc25f981d621fed3b383f
+af05ebfda7dc335fb8dad888b3d59b11
+  $w$mNullSourceAnn ::
+    forall (rep :: GHC.Types.RuntimeRep) (r :: TYPE rep).
+    GHC.Base.String
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> [Language.PureScript.Comments.Comment]
+    -> (GHC.Prim.Void# -> r)
+    -> (GHC.Prim.Void# -> r)
+    -> r
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(1*U(1*U),1*U(1*U))><L,1*U(1*U(1*U),1*U(1*U))><L,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ rep :: GHC.Types.RuntimeRep
+                   @ r :: TYPE rep
+                   (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.AST.SourcePos.SourcePos)
+                   (ww2 :: Language.PureScript.AST.SourcePos.SourcePos)
+                   (ww3 :: [Language.PureScript.Comments.Comment])
+                   (w :: GHC.Prim.Void# -> r)
+                   (w1 :: GHC.Prim.Void# -> r) ->
+                 case ww of wild {
+                   []
+                   -> case ww1 of wild1 { Language.PureScript.AST.SourcePos.SourcePos ds ds1 ->
+                      case ds of wild2 { GHC.Types.I# ds2 ->
+                      case ds2 of ds3 {
+                        DEFAULT -> w1 GHC.Prim.void#
+                        0#
+                        -> case ds1 of wild3 { GHC.Types.I# ds4 ->
+                           case ds4 of ds5 {
+                             DEFAULT -> w1 GHC.Prim.void#
+                             0#
+                             -> case ww2 of wild4 { Language.PureScript.AST.SourcePos.SourcePos ds6 ds7 ->
+                                case ds6 of wild5 { GHC.Types.I# ds8 ->
+                                case ds8 of ds9 {
+                                  DEFAULT -> w1 GHC.Prim.void#
+                                  0#
+                                  -> case ds7 of wild6 { GHC.Types.I# ds10 ->
+                                     case ds10 of ds11 {
+                                       DEFAULT -> w1 GHC.Prim.void#
+                                       0#
+                                       -> case ww3 of wild7 {
+                                            [] -> w GHC.Prim.void#
+                                            : ipv ipv1 -> w1 GHC.Prim.void# } } } } } } } } } } }
+                   : ipv ipv1 -> w1 GHC.Prim.void# }) -}
+b1ae67f2dd4462ed81865575f2b9a8c7
+  $w$mNullSourceSpan ::
+    forall (rep :: GHC.Types.RuntimeRep) (r :: TYPE rep).
+    GHC.Base.String
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> (GHC.Prim.Void# -> r)
+    -> (GHC.Prim.Void# -> r)
+    -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(1*U(1*U),1*U(1*U))><L,1*U(1*U(1*U),1*U(1*U))><L,1*C1(U)><L,1*C1(U)>,
+     Inline: [0],
+     Unfolding: (\ @ rep :: GHC.Types.RuntimeRep
+                   @ r :: TYPE rep
+                   (ww :: GHC.Base.String)
+                   (ww1 :: Language.PureScript.AST.SourcePos.SourcePos)
+                   (ww2 :: Language.PureScript.AST.SourcePos.SourcePos)
+                   (w :: GHC.Prim.Void# -> r)
+                   (w1 :: GHC.Prim.Void# -> r) ->
+                 case ww of wild {
+                   []
+                   -> case ww1 of wild1 { Language.PureScript.AST.SourcePos.SourcePos ds ds1 ->
+                      case ds of wild2 { GHC.Types.I# ds2 ->
+                      case ds2 of ds3 {
+                        DEFAULT -> w1 GHC.Prim.void#
+                        0#
+                        -> case ds1 of wild3 { GHC.Types.I# ds4 ->
+                           case ds4 of ds5 {
+                             DEFAULT -> w1 GHC.Prim.void#
+                             0#
+                             -> case ww2 of wild4 { Language.PureScript.AST.SourcePos.SourcePos ds6 ds7 ->
+                                case ds6 of wild5 { GHC.Types.I# ds8 ->
+                                case ds8 of ds9 {
+                                  DEFAULT -> w1 GHC.Prim.void#
+                                  0#
+                                  -> case ds7 of wild6 { GHC.Types.I# ds10 ->
+                                     case ds10 of ds11 {
+                                       DEFAULT -> w1 GHC.Prim.void#
+                                       0# -> w GHC.Prim.void# } } } } } } } } } }
+                   : ipv ipv1 -> w1 GHC.Prim.void# }) -}
+9e184c447d8e798d4539ff3758e8d381
   $wdisplaySourcePos ::
     GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
   {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
-c0cec1918e521da0b2ef0b2c52b002b0
+d54f57598ad32b3f8569d4122350e624
+  $wdisplaySourcePosShort ::
+    GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Text.Internal.Text
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+82662e2958168b862a0b54ca79c2f566
   $wdisplaySourceSpan ::
     GHC.IO.FilePath
     -> GHC.Base.String
@@ -2414,7 +2579,7 @@ c0cec1918e521da0b2ef0b2c52b002b0
     -> Data.Text.Internal.Text
   {- Arity: 6, Strictness: <S,U><S,U><S,U><S,U><S,U><S,U>,
      Inline: [0] -}
-971d71f36bed4fbc6c278e0f7b56f92e
+870f8fe30f84ddbd13b7e181399b9c14
   $wdisplayStartEndPos ::
     GHC.Prim.Int#
     -> GHC.Prim.Int#
@@ -2422,7 +2587,15 @@ c0cec1918e521da0b2ef0b2c52b002b0
     -> GHC.Prim.Int#
     -> Data.Text.Internal.Text
   {- Arity: 4, Strictness: <S,U><S,U><S,U><S,U>, Inline: [0] -}
-933eccefeedac4e940941e59b0fa8055
+108412fc18357bb60a74eeb4bd4750e6
+  $wdisplayStartEndPosShort ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+  {- Arity: 4, Strictness: <S,U><S,U><S,U><S,U>, Inline: [0] -}
+ec53ea2aaeb5f2fe93e1b52f228f9c7e
   $wouter ::
     GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
     -> GHC.Prim.Int#
@@ -2433,14 +2606,28 @@ c0cec1918e521da0b2ef0b2c52b002b0
           Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
      Inline: [0] -}
-73c071552214b3f18e94970349d3affc
+9b3ea842d694d15fc4efd4f4eb56686a
+  $wwidenSourceSpan ::
+    GHC.Base.String
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourcePos
+    -> Language.PureScript.AST.SourcePos.SourceSpan
+    -> Language.PureScript.AST.SourcePos.SourceSpan
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,U(U(U),U(U))><L,U(U(U),U(U))><S,1*U(U,U(U(U),U(U)),U(U(U),U(U)))>m,
+     Inline: [0] -}
+5a0bced03127a02790cb165450e72c45
+  pattern Language.PureScript.AST.SourcePos.NullSourceAnn :: Language.PureScript.AST.SourcePos.SourceAnn
+fad53a2b37b7f02c9f2e1151d4bf9347
+  pattern Language.PureScript.AST.SourcePos.NullSourceSpan :: Language.PureScript.AST.SourcePos.SourceSpan
+1e0cf2bd3ea18f97a2ff152297f09219
   axiom Language.PureScript.AST.SourcePos.Rep_SourcePos::
       GHC.Generics.Rep Language.PureScript.AST.SourcePos.SourcePos
         = GHC.Generics.D1
             ('GHC.Generics.MetaData
                "SourcePos"
                "Language.PureScript.AST.SourcePos"
-               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -2459,14 +2646,14 @@ c0cec1918e521da0b2ef0b2c52b002b0
                                       'GHC.Generics.NoSourceStrictness
                                       'GHC.Generics.DecidedLazy)
                                    (GHC.Generics.Rec0 GHC.Types.Int)))
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   axiom Language.PureScript.AST.SourcePos.Rep_SourceSpan::
       GHC.Generics.Rep Language.PureScript.AST.SourcePos.SourceSpan
         = GHC.Generics.D1
             ('GHC.Generics.MetaData
                "SourceSpan"
                "Language.PureScript.AST.SourcePos"
-               "purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+               "purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
                'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
@@ -2493,20 +2680,20 @@ c0cec1918e521da0b2ef0b2c52b002b0
                                                         'GHC.Generics.DecidedLazy)
                                                      (GHC.Generics.Rec0
                                                         Language.PureScript.AST.SourcePos.SourcePos))))
-cab2aecd85882b7f3973d54e49bcad4f
+f5708ed135df009dfa0254486771ef74
   type SourceAnn =
     (Language.PureScript.AST.SourcePos.SourceSpan,
      [Language.PureScript.Comments.Comment])
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   data SourcePos
     = SourcePos {sourcePosLine :: GHC.Types.Int,
                  sourcePosColumn :: GHC.Types.Int}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   data SourceSpan
     = SourceSpan {spanName :: GHC.Base.String,
                   spanStart :: Language.PureScript.AST.SourcePos.SourcePos,
                   spanEnd :: Language.PureScript.AST.SourcePos.SourcePos}
-2b1fba7cce08e66b9db97bd18aed510f
+cf9281da6eff56b2fc110fdaa8187669
   displaySourcePos ::
     Language.PureScript.AST.SourcePos.SourcePos
     -> Data.Text.Internal.Text
@@ -2520,7 +2707,21 @@ cab2aecd85882b7f3973d54e49bcad4f
                  Language.PureScript.AST.SourcePos.$wdisplaySourcePos
                    ww4
                    ww6 } } }) -}
-86fb202939b4257c0979ce3b310133e1
+e883474c4872f3867ae5ba77c85e4e19
+  displaySourcePosShort ::
+    Language.PureScript.AST.SourcePos.SourcePos
+    -> Data.Text.Internal.Text
+  {- Arity: 1, Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.AST.SourcePos.SourcePos) ->
+                 case w of ww { Language.PureScript.AST.SourcePos.SourcePos ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 Language.PureScript.AST.SourcePos.$wdisplaySourcePosShort
+                   ww4
+                   ww6 } } }) -}
+11d4c6c7c27182d917b65dca3e11c4bf
   displaySourceSpan ::
     GHC.IO.FilePath
     -> Language.PureScript.AST.SourcePos.SourceSpan
@@ -2545,7 +2746,7 @@ cab2aecd85882b7f3973d54e49bcad4f
                    ww10
                    ww15
                    ww17 } } } } } } }) -}
-d3293742657e1c673712c890a1911c16
+e5c46604f74bcadb3bc4a400eacda553
   displayStartEndPos ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Data.Text.Internal.Text
@@ -2566,7 +2767,28 @@ d3293742657e1c673712c890a1911c16
                    ww10
                    ww15
                    ww17 } } } } } } }) -}
-5f91a656f056fa441b3ec6940306d87a
+95a3d0cb80b7e85f6ff2d774252c312c
+  displayStartEndPosShort ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> Data.Text.Internal.Text
+  {- Arity: 1,
+     Strictness: <S(LS(S(S)S(S))S(S(S)S(S))),1*U(A,1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 case w of ww { Language.PureScript.AST.SourcePos.SourceSpan ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Language.PureScript.AST.SourcePos.SourcePos ww5 ww6 ->
+                 case ww5 of ww7 { GHC.Types.I# ww8 ->
+                 case ww6 of ww9 { GHC.Types.I# ww10 ->
+                 case ww3 of ww11 { Language.PureScript.AST.SourcePos.SourcePos ww12 ww13 ->
+                 case ww12 of ww14 { GHC.Types.I# ww15 ->
+                 case ww13 of ww16 { GHC.Types.I# ww17 ->
+                 Language.PureScript.AST.SourcePos.$wdisplayStartEndPosShort
+                   ww8
+                   ww10
+                   ww15
+                   ww17 } } } } } } }) -}
+f13de72620ea3980769d3252f1949a4a
   internalModuleSourceSpan ::
     GHC.Base.String -> Language.PureScript.AST.SourcePos.SourceSpan
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
@@ -2574,23 +2796,44 @@ d3293742657e1c673712c890a1911c16
                 (\ (name :: GHC.Base.String) ->
                  Language.PureScript.AST.SourcePos.SourceSpan
                    name
-                   Language.PureScript.AST.SourcePos.internalModuleSourceSpan1
-                   Language.PureScript.AST.SourcePos.internalModuleSourceSpan1) -}
-1466ec697c3c3af871e9df722251642f
-  internalModuleSourceSpan1 ::
-    Language.PureScript.AST.SourcePos.SourcePos
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (Language.PureScript.AST.SourcePos.SourcePos
-                   Language.PureScript.AST.SourcePos.$fShowSourceSpan6
-                   Language.PureScript.AST.SourcePos.$fShowSourceSpan6) -}
-24686a17cbb8e08b60ddb2b502e97316
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan1
+                   Language.PureScript.AST.SourcePos.$bNullSourceSpan1) -}
+232f686ce9eaef22a6239187f1de0ae3
+  nonEmptySpan ::
+    Language.PureScript.AST.SourcePos.SourceAnn
+    -> GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(SLL)L),1*U(1*U(U,U(U(U),U(U)),U(U(U),U(U))),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                           [Language.PureScript.Comments.Comment])) ->
+                 case ds of wild { (,) ds1 ds2 ->
+                 Language.PureScript.AST.SourcePos.$mNullSourceSpan
+                   @ 'GHC.Types.LiftedRep
+                   @ (GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan)
+                   ds1
+                   Language.PureScript.AST.SourcePos.nonEmptySpan1
+                   (\ (void :: GHC.Prim.Void#)[OneShot] ->
+                    GHC.Base.Just
+                      @ Language.PureScript.AST.SourcePos.SourceSpan
+                      ds1) }) -}
+b1c83d9b2405481a42474ae97cdba3c8
+  nonEmptySpan1 ::
+    GHC.Prim.Void#
+    -> GHC.Base.Maybe Language.PureScript.AST.SourcePos.SourceSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (void :: GHC.Prim.Void#) ->
+                 GHC.Base.Nothing @ Language.PureScript.AST.SourcePos.SourceSpan) -}
+f2dcb0c4d24a9cde0192cde9ecb60353
+  nullSourceAnn :: Language.PureScript.AST.SourcePos.SourceAnn
+  {- Strictness: m,
+     Unfolding: (Language.PureScript.AST.SourcePos.$bNullSourceAnn) -}
+d3ce9e45794cd4f5ddfad4b02b318f51
   nullSourceSpan :: Language.PureScript.AST.SourcePos.SourceSpan
-  {- HasNoCafRefs, Strictness: m,
-     Unfolding: (Language.PureScript.AST.SourcePos.SourceSpan
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   Language.PureScript.AST.SourcePos.internalModuleSourceSpan1
-                   Language.PureScript.AST.SourcePos.internalModuleSourceSpan1) -}
-73c071552214b3f18e94970349d3affc
+  {- Strictness: m,
+     Unfolding: (Language.PureScript.AST.SourcePos.$bNullSourceSpan) -}
+1e0cf2bd3ea18f97a2ff152297f09219
   sourcePosColumn ::
     Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Int
   RecSel Left Language.PureScript.AST.SourcePos.SourcePos
@@ -2599,7 +2842,7 @@ d3293742657e1c673712c890a1911c16
                 (\ (ds :: Language.PureScript.AST.SourcePos.SourcePos) ->
                  case ds of wild { Language.PureScript.AST.SourcePos.SourcePos ds1 ds2 ->
                  ds2 }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   sourcePosLine ::
     Language.PureScript.AST.SourcePos.SourcePos -> GHC.Types.Int
   RecSel Left Language.PureScript.AST.SourcePos.SourcePos
@@ -2608,7 +2851,7 @@ d3293742657e1c673712c890a1911c16
                 (\ (ds :: Language.PureScript.AST.SourcePos.SourcePos) ->
                  case ds of wild { Language.PureScript.AST.SourcePos.SourcePos ds1 ds2 ->
                  ds1 }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   spanEnd ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -2618,7 +2861,7 @@ d3293742657e1c673712c890a1911c16
                 (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan) ->
                  case ds of wild { Language.PureScript.AST.SourcePos.SourceSpan ds1 ds2 ds3 ->
                  ds3 }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   spanName ::
     Language.PureScript.AST.SourcePos.SourceSpan -> GHC.Base.String
   RecSel Left Language.PureScript.AST.SourcePos.SourceSpan
@@ -2627,7 +2870,7 @@ d3293742657e1c673712c890a1911c16
                 (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan) ->
                  case ds of wild { Language.PureScript.AST.SourcePos.SourceSpan ds1 ds2 ds3 ->
                  ds1 }) -}
-73c071552214b3f18e94970349d3affc
+1e0cf2bd3ea18f97a2ff152297f09219
   spanStart ::
     Language.PureScript.AST.SourcePos.SourceSpan
     -> Language.PureScript.AST.SourcePos.SourcePos
@@ -2637,6 +2880,39 @@ d3293742657e1c673712c890a1911c16
                 (\ (ds :: Language.PureScript.AST.SourcePos.SourceSpan) ->
                  case ds of wild { Language.PureScript.AST.SourcePos.SourceSpan ds1 ds2 ds3 ->
                  ds2 }) -}
+2e2c7096d7706bbf13b659eb261cbe79
+  widenSourceAnn ::
+    Language.PureScript.AST.SourcePos.SourceAnn
+    -> Language.PureScript.AST.SourcePos.SourceAnn
+    -> Language.PureScript.AST.SourcePos.SourceAnn
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(U,U(U(U),U(U)),U(U(U),U(U))),A)><S,1*U(1*U(U,U(U(U),U(U)),U(U(U),U(U))),A)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                           [Language.PureScript.Comments.Comment]))
+                   (ds1 :: (Language.PureScript.AST.SourcePos.SourceSpan,
+                            [Language.PureScript.Comments.Comment])) ->
+                 case ds of wild { (,) s1 ds2 ->
+                 case ds1 of wild1 { (,) s2 ds3 ->
+                 (Language.PureScript.AST.SourcePos.widenSourceSpan s1 s2,
+                  GHC.Types.[] @ Language.PureScript.Comments.Comment) } }) -}
+4b532ffaa51152e81f9e696cfeb2a4fc
+  widenSourceSpan ::
+    Language.PureScript.AST.SourcePos.SourceSpan
+    -> Language.PureScript.AST.SourcePos.SourceSpan
+    -> Language.PureScript.AST.SourcePos.SourceSpan
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U,U(U(U),U(U)),U(U(U),U(U)))><S,1*U(U,U(U(U),U(U)),U(U(U),U(U)))>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.PureScript.AST.SourcePos.SourceSpan)
+                   (w1 :: Language.PureScript.AST.SourcePos.SourceSpan) ->
+                 case w of ww { Language.PureScript.AST.SourcePos.SourceSpan ww1 ww2 ww3 ->
+                 Language.PureScript.AST.SourcePos.$wwidenSourceSpan
+                   ww1
+                   ww2
+                   ww3
+                   w1 }) -}
 instance GHC.Classes.Eq [Language.PureScript.AST.SourcePos.SourcePos]
   = Language.PureScript.AST.SourcePos.$fEqSourcePos
 instance GHC.Classes.Eq [Language.PureScript.AST.SourcePos.SourceSpan]

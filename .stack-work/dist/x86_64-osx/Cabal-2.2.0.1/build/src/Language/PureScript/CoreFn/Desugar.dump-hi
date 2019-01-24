@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:47:57.957049 UTC
+2019-01-24 14:16:22.814418 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.CoreFn.Desugar 8043
-  interface hash: c1be9dae73a9c3d8046e11692723b336
-  ABI hash: f1c1711a8c1abf8dfa0be853081eedfb
-  export-list hash: 19eeab596817a67e9b42bbb97a199be6
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.CoreFn.Desugar 8043
+  interface hash: 050540c8ca8c111db61ca5f882dd5a4e
+  ABI hash: 3d15a13ed48f0522d8c2edad7c14c2d2
+  export-list hash: 2b755022ebf112f2c6167a8e1de151c1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 354630b2248d720ba62df5ccf315f8dd
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -40,17 +40,18 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.TypeChecker.Monad
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
-                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
-                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
+                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
                       time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
@@ -59,18 +60,21 @@ orphans: colour-2.3.4:Data.Colour syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -89,21 +93,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -135,204 +144,210 @@ import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  protolude-0.2.2:Protolude 2c2d16096c8a60f59f646a3b93b0eb7b
 import  -/  protolude-0.2.2:Protolude.List 3a80368167450d7a4360ebf1ea443345
-import  -/  Language.PureScript.AST 7ed0e74bfed5b6489b8a5eabab5c0241
-  exports: 0d53d92339536cd6d8d7dcfcad8e7c7e
-import  -/  Language.PureScript.AST.Binders 9d60985147b34b89300370e810fed430
-  BinaryNoParensBinder 0a9649b4372c6e05d173870dfa1006fa
-  Binder 50aa153193e190eabd8ac7530e604f9c
-  ConstructorBinder a80ed0550c5d3abdd1e6249cec7ebb29
-  LiteralBinder fb24b5107abb72eda0b4f926a357d676
-  NamedBinder b48e1eb9e717d35392ab81ba6112a0c5
-  NullBinder d74abae0f95c6b96e50712c73008469c
-  OpBinder 8c4232ee53e2707d427c05940eb3b3a1
-  ParensInBinder d5e3e2b30a59f234cee3c52dcb18b9a6
-  PositionedBinder 882f8081b0418fe44d4a7e237a20b9bb
-  TypedBinder f780e44b8446316aee6b532b3afc4341
-  VarBinder 2a223807b33e6f190799aea12e8ed5d7
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  Abs d07c7c6c44b48a3411184d34629a601e
-  Accessor efce1a21efe3a6d2f322942575a5ad70
-  App 60282620a1433a146ffafd0d8773af87
-  BindingGroupDeclaration d3c1d83dc1fbac7412bbc6e3b0fc8e06
-  Case 26360a43049b71a59ced6dc5180ab8d3
-  CaseAlternative 53d0b5fb91e3184ce5b575a7cf70b18d
-  CaseAlternative b31d94d0c7b90700d40f9ba6ec420e41
-  ConditionGuard 2db62e1fae4ae7a464999119c33e7329
-  Constructor bb7c3f03ee8743dfc68d80ee99f8c1e3
-  DataBindingGroupDeclaration 6581515de193582450a8e6e01c902ba4
-  DataDeclaration db5935397ffc86d7f21188808af5170e
-  Declaration b31d94d0c7b90700d40f9ba6ec420e41
-  DeclarationRef 9de74e8b46bfd07e044a72617cc5da5c
-  Expr b31d94d0c7b90700d40f9ba6ec420e41
-  ExternDeclaration 4969f865c6e08f5324b31f68ef85d043
-  FromLet 90dae67e7b749d252ac78837cb39cc5c
-  FromWhere c84b3c6b3ef5e335709e19ad3dacaa71
-  GuardedExpr 27042b32d879f10c681888a144cccbf4
-  GuardedExpr b31d94d0c7b90700d40f9ba6ec420e41
-  IfThenElse 861db5e7c442fcad4ef6b09852058a52
-  ImportDeclaration 0c2bc2f3ca892343473f34859c93a6e3
-  Let 1e154f741d98347f87a436fe079b9677
-  Literal 25fe050a9db328cb74b9c2f7e7994889
-  MkUnguarded b86897bed7e8aa9bc4f5498c0c74ad91
-  Module b9e5d519f3251f7053b581e4ecd9e6bf
-  Module 7cf4b96f7d4b51b446726a099ab87bb6
-  ObjectUpdate 6ecfa64620245159f62232366ffa0b51
-  PositionedValue ce9f35ccf631ea46c29b12e823f5cdda
-  TypeClassDeclaration d4771a111b012cbefca253f911afd776
-  TypeClassDictionaryAccessor d00df144de09556bbac171169b1608a8
-  TypeClassDictionaryConstructorApp e1cd14c07fae64c9cd8679680a21319e
-  TypeClassRef 93a0e32770563d43fa3f04289a54725f
-  TypeFixityDeclaration 442ba50b491e46b095a0fd0218f236ad
-  TypeInstanceDeclaration c99b2ac93a5feb1209c747921a9e548b
-  TypeInstanceRef 850b5eee032f7eade911f65aaca47804
-  TypeRef f23e4bfa1c94ce55e9357e5fb97176c4
-  TypedValue d9e4565826b9abbfd5d9b0aba42f2e58
-  ValueDecl ccaaa682babb730c1361bddf2c5eee25
-  ValueFixityDeclaration eb9c8f0bb082690f8aa4e758b5751212
-  ValueRef 984b564c7d121e5297a91fc424d0970b
-  Var 0202d242cce06e67fa6944b3c05a8982
-  WhereProvenance 65c0e50d69c9739c7a05491cae312524
-import  -/  Language.PureScript.AST.Literals 3440d35205601002007fae6139f2b416
-  exports: a6d23ec6b024fefaa1b9450acf6240d0
-  BooleanLiteral 242415ff3d034091eec7910a2e553d43
-  ObjectLiteral 6a79fd56232b94e65385c3eab269a6a5
-import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
-  exports: cd99f4b22e2d3cec892dcb31686df02f
-  SourceAnn cab2aecd85882b7f3973d54e49bcad4f
-  SourceSpan 73c071552214b3f18e94970349d3affc
-  spanName 73c071552214b3f18e94970349d3affc
-import  -/  Language.PureScript.AST.Traversals a3d1a9b4309f1aa3055f23e3fb101c5e
-  exports: 5f95b86b1ffc20ac260993dc77fff788
-  everythingOnValues c357e31af2a9709a2f6a4005be39c3f1
-import  -/  Language.PureScript.Comments f344ceddf328cf61908be13dd1f90917
-  exports: b1904caad26a3e7c6a77f0a1156c2d62
-  Comment 23fbbb637db19d35ca8339b51dc9ecf5
-import  -/  Language.PureScript.CoreFn.Ann 67adbeeb949d973571e5b91a33c2a9a2
-  exports: 8907ee21fe89fea9e0bc79bfef3a957b
-  Ann 8e0992b34878737a5d5d4b7dd1d0f2bb
-  ssAnn db75d59475f02de3c8120e5a237fe161
-import  -/  Language.PureScript.CoreFn.Binders e205438100975de38a52db38c037abe2
-  exports: 946b814fa48e11d0bef7a72f59ba19db
-  Binder 1fe84739935c12de224bac2b426b559a
-  ConstructorBinder de7d08f67d4b5949eab0859dec085cc5
-  LiteralBinder 04b8eb6c3a78e3b286b4c009ebd58ee9
-  NamedBinder f45a5d9db0c5cc82ee87a5b119819d5c
-  NullBinder cac3a111b70d6b0b70597d185b0d57e0
-  VarBinder b68157a790a8eb7dde589ed325cb7857
-import  -/  Language.PureScript.CoreFn.Expr dc01d65ee85cbeac279960eab91a6089
-  exports: 815f1656fc5389582588e5576378bf42
-  Abs d9e754cc62f157fda7eb9fe38c7bc644
-  Accessor d84c3bf7ad9228fdb00e15aa8c83518b
-  App 77a51951b914dfd3b94e51ddd520ec0e
-  Bind 3a14ce51d583743172851fcd35eb633c
-  Case 51c9c582576807567bb4ffd959c82edb
-  CaseAlternative abfcb1e9a9d76f97c029167f07c293ed
-  CaseAlternative 3a14ce51d583743172851fcd35eb633c
-  Constructor 57018ac6047f1d551d425190e1bcc16e
-  Expr 3a14ce51d583743172851fcd35eb633c
-  Guard 3a14ce51d583743172851fcd35eb633c
-  Let 17825244d8218e85133caa5a595ea0ae
-  Literal b891712fe7581e36b785ba9bd3755b39
-  NonRec b568585b3d08a11780fb3e691b7e4790
-  ObjectUpdate 04b18a0bc044a80321746bf3b253761b
-  Rec f735e1d08a6c429cf77f90fb93c0b23a
-  Var 9aaf662f2ee048ef7264115e98281c8f
-import  -/  Language.PureScript.CoreFn.Meta f9a7ac55ab29a2359120679a28dbcec4
-  exports: 86c925965109c41139b9fcdaeca934b9
-  IsConstructor 7225724689d0238b562a698533e4c48b
-  IsForeign e8218d2f26ba0af72db4461a00b24325
-  IsNewtype 8386074e4b49a62f0f8dbe92b027df41
-  IsTypeClassConstructor d6fc477cec85bb2a9775d6106cca56eb
-  IsWhere 34e23fa0532c7cb7e267ff14edf1ef48
-  Meta 64697b0465a5e56c5f6fda6d38c37f56
-  ProductType b0b96c7ed8575cfc976efe0f7d8e5e97
-  SumType 4b8f8aecf049fe7992793f566ade6c28
-import  -/  Language.PureScript.CoreFn.Module acf6e67de03c5a4b8c92dada86ffff0c
-  exports: 4a9e863d9c4069eb4982aef1f296abb8
-  Module 085b794eb633bbb8ed0396031fa5acc6
-  Module 41104609d8c9d8e7c7b0b779f70dfd27
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.Environment 31667499b7017b19998bb405474fbe93
-  exports: 56b1ef0ac6132b4c113ce26a807dcfb6
-  Data cb40e4d87c0c91534ef77768d4034ea2
-  DataDeclType c291d940fae22a3f1400d8c90f26bdd4
-  Environment c291d940fae22a3f1400d8c90f26bdd4
-  External 4e3a5bb485b87f0aa3cf18c7792f87d1
-  Newtype 1b0bdbba0a24544cb0a1769af0f376e7
-  dataConstructors c291d940fae22a3f1400d8c90f26bdd4
-  lookupConstructor 81f8444b2ec9974e397ee60b1d03a69a
-  lookupValue e819d1e2e9d9d6e2f9b93f0d45945100
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  ConstructorName 9fb88e980342b224c2a4e4b58fa9fe33
-  Ident 0ccd7f2221de64569e50634367691253
-  Ident ab98a56ffa88760dad1380079e8ee35a
-  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
-  ProperName 29f101e190cc99df85623423972e606f
-  Qualified d600a7f01c8203cf5504999de99c923c
-  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
-  TypeName da42c92f73f4f363c63ecaf77b6335b9
-  getQual 878f7f5431a436ba3cc48c8dfb031d4d
-  runIdent bc5cc3d3ba9d105c169eb6038c65d1a8
-  runProperName 29f101e190cc99df85623423972e606f
-import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
-  exports: 41608caf7cc5b51f34de641c9952ab6d
-  mkString 59c5695c0c0978fcb9d0a00f0304b905
-import  -/  Language.PureScript.Sugar.TypeClasses b0b35622778ecfb45d31b2bff35b66f2
-  exports: 4b5cc0bfdd32c6fdb9b54f8636afa4e9
-  superClassDictionaryNames 2e6be420af66cf8e11b714ac00a6f32c
-  typeClassMemberName 262adb4d52205a4e3d11ad6d6495325b
-import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
-  exports: ae97bc75fcebc59f59c970736847a827
-  Constraint 93223f8afa90d0facc05a03f863dc72d
-  Type 93223f8afa90d0facc05a03f863dc72d
-fef14f449df11f00dba8da05b2bdf5c9
+import  -/  Language.PureScript.AST e89b59f8e201961eafd3ff905a683659
+  exports: be73d3bb7d4ebe5df082453f6d572075
+import  -/  Language.PureScript.AST.Binders 482af52ec934a93b1ca6ec424fbe30f2
+  BinaryNoParensBinder fa245b4b20e4d00bda41b59e19ae05a3
+  Binder c96edaac3b5fcb24a174f6f4b3f084d4
+  ConstructorBinder 82c410a4d9e21c325ba3e1527c50daff
+  LiteralBinder 0a5559e7d3aabf0cf9c897b797edff85
+  NamedBinder 0800b3be0f9ce7a64f901e627e87a982
+  NullBinder d9d32ade0d56992460bb4b700e4464a4
+  OpBinder a4e859ef3c8b2681b04a2dfae6eb0fb8
+  ParensInBinder 5997f08e343521a086fe234687cfa21a
+  PositionedBinder a6b770e5a8f88247c6ef23a04722a775
+  TypedBinder 69e3490135b9eb76e3f2c68250002721
+  VarBinder 2e20c3df0430901107dc9b8bd4a6015c
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  Abs dae9a514c0c54a50406a57cd533f800a
+  Accessor 75238d8cd32188d181bffb473f6c4802
+  App ae4e12e545757da5fb62189548835120
+  BindingGroupDeclaration fe3c1705a7a0108b856351d712879737
+  Case dbf8d0b5ac1a603149b8bb1459575de0
+  CaseAlternative 8464f1c9f0c33f15833817399a071704
+  CaseAlternative e92f6ee78a22c0eadc3566d7d1f48d5b
+  ConditionGuard de13c04599b5971ac3f21a1186c6e658
+  Constructor ea2b7d92995197a177f6abf42269c377
+  DataBindingGroupDeclaration dd96274a1938234d4bfdc2a1d4e8e0ff
+  DataDeclaration 2fcba6ad709595ed3c4d0926de54bc2c
+  Declaration e92f6ee78a22c0eadc3566d7d1f48d5b
+  DeclarationRef 1ef988d2f8db98f35f578bde9282f468
+  Expr e92f6ee78a22c0eadc3566d7d1f48d5b
+  ExternDeclaration 180e172298441327dfef1022795a10e0
+  FromLet bc7f79cdfc21eeb3e926d750f1216f83
+  FromWhere 57f175353ef14f2790049c689ea914b0
+  GuardedExpr 811952f37a620b8d78cc4a6176d99a2c
+  GuardedExpr e92f6ee78a22c0eadc3566d7d1f48d5b
+  IfThenElse 8071f8c4795174e5283a3ecdaa8b3c8f
+  ImportDeclaration b98a8b3e9f19a9a91825a99d72954601
+  Let 5843430a3e31a1977aadcfb94efa8312
+  Literal bdcf4b137a448fe7c2ed57fe33a72cd3
+  MkUnguarded d9deae30ea78016a4bdb453d9978bfa3
+  Module 305128e30e200d34d712365aa2d509df
+  Module 3342e00ee072addfd009ee61e87fb865
+  ObjectUpdate 14b4ffe7d1b68ac321d3f2c2a27a17eb
+  PositionedValue b90293950702fd6b659d7cd86d309f72
+  TypeClassDeclaration 19936abcaf3693a6825ccbc13b2590dc
+  TypeClassDictionaryAccessor 69c555dd17e3808e47bbd0baec81a1b6
+  TypeClassDictionaryConstructorApp f15387264e84e75b0e5ed1f08eacb958
+  TypeClassRef 0dfae6fa12be94e312c419132246a1f3
+  TypeFixityDeclaration 5a4e2ba83bf57ee4021fdafe70b4eb9a
+  TypeInstanceDeclaration 46d66658dd5a30ba03e36fc960162f20
+  TypeInstanceRef 1a4ec4636edef4ba31547e9816ff48da
+  TypeRef 7b2aa9fe81ad40f64c659855da835def
+  TypedValue 0acc3ace791a36484dcda3706df33cef
+  ValueDecl 97b38919d86cd9182cb8d86b6f4ae734
+  ValueFixityDeclaration 6da09cca72fc0dd8bafa2b8ed78d033e
+  ValueRef 78dee2d86cdf935e8811ecdd18c169d3
+  Var 5fd1e80d993ab2f76a4e002bbbfc9990
+  WhereProvenance bfce38a8b694557bc33268834d37a7dc
+import  -/  Language.PureScript.AST.Literals da2ec269f063125450b272321f85468a
+  exports: ab5af4e7482c5a8cbf79fdfd52ee94e2
+  BooleanLiteral 98d9c7b89f9a5dcc4796fae1c45898e6
+  ObjectLiteral d17d3a090fe8a89f303c679b0a417ae9
+import  -/  Language.PureScript.AST.SourcePos 63acacac5b7be73d04e5be0047a9a89a
+  exports: a1e32a05596348684f99f9072c553e2b
+  SourceAnn f5708ed135df009dfa0254486771ef74
+  SourceSpan 1e0cf2bd3ea18f97a2ff152297f09219
+  spanName 1e0cf2bd3ea18f97a2ff152297f09219
+import  -/  Language.PureScript.AST.Traversals f5adaf844c5e9d0f0678a8b574a32aa6
+  exports: a3387abb8e15fc740358f1f69c313aad
+  everythingOnValues d1f804aed21f7e21280e0cf1f8ea4257
+import  -/  Language.PureScript.Comments 1a682522a2f855328ca87bb68705794c
+  exports: 9921c985b3279420b3b7a2b7ccc8b32e
+  Comment 2e827a5b834f92cc9beef533348585fa
+import  -/  Language.PureScript.CoreFn.Ann 0cc10e6f1cceeb9ce4110421e8890aeb
+  exports: e4825af3985ea1e411eca0a4a5a7aeff
+  Ann e57ea12399f1ca8b453bd48df393acd5
+  ssAnn edd62b5cd3158b7395b4b409553d0d06
+import  -/  Language.PureScript.CoreFn.Binders e5c76c3a1335bec879bb8abeb15c812b
+  exports: 0044d6c8e85aa325494d3ca89c5568c6
+  Binder 52f739b4003bef459f95e2c6f2571980
+  ConstructorBinder d268adacb3e913f97478e11624c247a5
+  LiteralBinder 67b0f1f7203d6311865d1202410431c3
+  NamedBinder 548b8c55f02c4c5cba66e58baa3c2e2d
+  NullBinder 5f1533c54a778f7ff2a8cafcd1848824
+  VarBinder 7a24840a29c7ebc13fef40c52cb4fd40
+import  -/  Language.PureScript.CoreFn.Expr fc76100f222fb80b0ed958c173fcf851
+  exports: 46aca17cf6e6b6ff6130ffc5fc5adc10
+  Abs 879b7781b01ce75646ed3b7d7fe446c8
+  Accessor aacc319cb87e79500b037bd4015d2999
+  App e7da6186c368c0c53437cc6010ef2046
+  Bind 22c7241ad0e882392beaf38a652acec4
+  Case 82be24c5449b2c0e64cb911b5bb205a8
+  CaseAlternative 3f8677cc5bb8940c990258f0503e9535
+  CaseAlternative 22c7241ad0e882392beaf38a652acec4
+  Constructor 457cdac6ebeb5b0530790d1c57ab5f9c
+  Expr 22c7241ad0e882392beaf38a652acec4
+  Guard 22c7241ad0e882392beaf38a652acec4
+  Let 508ebd624e6ff40e13ed51784aa9f31b
+  Literal a25bc4074e2795aa5298934dd42c147e
+  NonRec a95f5d1c62d025a420679d7c06a4c6a2
+  ObjectUpdate 04495684e93872b2890f68b7a845b4dd
+  Rec 73dafad7971223bee6d30f2190205572
+  Var 3575d73ba62de334246ced44e6486014
+import  -/  Language.PureScript.CoreFn.Meta 933865642c71d3e31c492dedea84a663
+  exports: a20f31392bebf592704891a220a53878
+  IsConstructor 423ec4255c28041cc3a506070a9be9d9
+  IsForeign 1a7fef9a649aabbc92610075e55db31b
+  IsNewtype 96ff436878eb1b9c8f3ae2c0938801fb
+  IsTypeClassConstructor d7278815e996fb83077c83a9e70484bd
+  IsWhere 4bae8ad94c70c6086885598895c5708a
+  Meta 95bc75bf6163743d719720e9124ff00b
+  ProductType 31b3eccb22d39cb0f65d582cfe1eafb4
+  SumType 5a168c86446c62364b917bf4c1a05032
+import  -/  Language.PureScript.CoreFn.Module 9dd7adb25f29cf9fbaca42c3a9ee6567
+  exports: 3d05313c837659e5151156c4645f3ed4
+  Module 454865f9c7e6b8ec365bdc73daab8201
+  Module b29880c812af4e08648f58735ebf94f4
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.Environment 467b25d81b890e1aaabe28d0f09d192d
+  exports: a0cb6cb8c78c56365f58c9f88d1fe000
+  Data 91308ce2b2a3063225e4488a3df159f8
+  DataDeclType 7eb61fe78108d98d82e39145869b2402
+  Environment 7eb61fe78108d98d82e39145869b2402
+  External 8cdfa7f932f8566e563f06b670986495
+  Newtype 429106735f422306de0d5ec4acbf7fb1
+  dataConstructors 7eb61fe78108d98d82e39145869b2402
+  lookupConstructor edaf188339942d07954d4a1ed77165d6
+  lookupValue f92bedc73b28c24eece2a523b0f7fa15
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  ConstructorName 84054a8bbbe827ba2ce7da83056a95ee
+  Ident 71f167265716f619863a793fa311e198
+  Ident bad3562aa6138b6192713ac281080869
+  ModuleName 1b2ddf0c04464d2fa2588925f10c1966
+  ProperName a7268334e0b909381550b9329cb80fcc
+  Qualified b6e1bc9e7244a41d3c6149c9b5c2d6d8
+  Qualified 1b2ddf0c04464d2fa2588925f10c1966
+  TypeName 40ce511c66a72431b4e87351210f7b03
+  getQual fd365f85b7d21d7f6d9822dd71085ff1
+  runIdent f4727e6f001b3b7d933fd4e8122af572
+  runProperName a7268334e0b909381550b9329cb80fcc
+import  -/  Language.PureScript.PSString 482bcd39d274b3e3efbde5749bd9d797
+  exports: dedd5d31dc509736134f041863efd1d4
+  mkString a727d038908a3b0e30ed0d1d71565e4b
+import  -/  Language.PureScript.Sugar.TypeClasses 4999ab08885b30d0b2484ae47e0269ae
+  exports: dad82961b8d926d0b0016e660f4fc1e3
+  superClassDictionaryNames dbf27d758e2b43beda4bf56688c5ddbe
+  typeClassMemberName 5121df5211baa3e9636c46e9448bcbe8
+import  -/  Language.PureScript.Types 80a51f62cb3e6c71f024289b88f07b7f
+  exports: 229bb7528146da886cffbefad5822e19
+  SourceConstraint b73f205dd83ce498c3119d8c9316f0c6
+  SourceType 0ac818517c14fedd280ef5885ae0cdc3
+b5db3d033061581d7e91d1165ae8e00a
   $sinsertWithKey_$s$sgo13 ::
     Data.Map.Internal.Map
       Language.PureScript.Names.ModuleName
       (Language.PureScript.AST.SourcePos.SourceSpan,
        [Language.PureScript.Comments.Comment],
-       GHC.Base.Maybe Language.PureScript.Types.Type,
+       GHC.Base.Maybe
+         (Language.PureScript.Types.Type
+            (Language.PureScript.AST.SourcePos.SourceSpan,
+             [Language.PureScript.Comments.Comment])),
        GHC.Base.Maybe Language.PureScript.CoreFn.Meta.Meta)
     -> (Language.PureScript.AST.SourcePos.SourceSpan,
         [Language.PureScript.Comments.Comment],
-        GHC.Base.Maybe Language.PureScript.Types.Type,
+        GHC.Base.Maybe
+          (Language.PureScript.Types.Type
+             (Language.PureScript.AST.SourcePos.SourceSpan,
+              [Language.PureScript.Comments.Comment])),
         GHC.Base.Maybe Language.PureScript.CoreFn.Meta.Meta)
     -> Language.PureScript.Names.ModuleName
     -> Data.Map.Internal.Map
          Language.PureScript.Names.ModuleName
          (Language.PureScript.AST.SourcePos.SourceSpan,
           [Language.PureScript.Comments.Comment],
-          GHC.Base.Maybe Language.PureScript.Types.Type,
+          GHC.Base.Maybe Language.PureScript.Types.SourceType,
           GHC.Base.Maybe Language.PureScript.CoreFn.Meta.Meta)
   {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
-405779e6ba5e5da78733393dc8d04710
+75c254a30ed9ff4c6da844b3475997da
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.CoreFn.Desugar.$trModule3
                    Language.PureScript.CoreFn.Desugar.$trModule1) -}
-5b13d26cf23e4049a4fdb07c9e0d8cb4
+a4c3e5e3b793aed98e36fc013354be42
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreFn.Desugar.$trModule2) -}
-23c9d970465998c497407a81e8f9679a
+7524728b50f2d5e3b117c96cf4760e1c
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.CoreFn.Desugar"#) -}
-bb60e26a1e1ee5532c26bed7125934c6
+0992732c690e136ae83e0105316af948
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.CoreFn.Desugar.$trModule4) -}
-bf5efdd99a3ffd37156bdb1d2f1ea5aa
+8c69e83c3a3899d1779a809026bbfc89
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-24bca0302f4cc186194ea7cb5d1408fb
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+aacd61b8eaacfe22f52ac3aa04c397ab
   $wmoduleToCoreFn ::
     Language.PureScript.Environment.Environment
     -> Language.PureScript.AST.SourcePos.SourceSpan
@@ -353,7 +368,7 @@ bf5efdd99a3ffd37156bdb1d2f1ea5aa
   {- Arity: 6,
      Strictness: <L,U(U,A,U,A,A,A,A)><L,U(U,U,U)><L,U><L,U><L,U><S,1*U>,
      Inline: [0] -}
-8caaca1fa24985b9572227d969f8b0ea
+90521bf0d1c9a8ffb3723df10d5c9bc5
   moduleToCoreFn ::
     Language.PureScript.Environment.Environment
     -> Language.PureScript.AST.Declarations.Module

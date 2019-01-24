@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:48:49.726306 UTC
+2019-01-24 14:18:17.334541 UTC
 
 interface main:Main 8043
-  interface hash: 8910f94a53560374ddd5f86e8b150e18
-  ABI hash: 6e646a90f11980d901d680125ce2f5e7
-  export-list hash: 34e6ae5cb41d01262b1012a9142c9f9f
+  interface hash: 4a948a69917d175da7af11737be5dc06
+  ABI hash: a4b1a49320237389cad54497e9c50e7a
+  export-list hash: 693bcc769320dc6f5323670f3de6943c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: eb6f0a14a8746a83164dd537b23d507c
+  flag hash: db8279e92ae74012e4b063dac7cfe855
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
   sig of: Nothing
@@ -35,7 +35,7 @@ package dependencies: Cabal-2.2.0.1 Glob-0.9.2 SHA-1.6.4.4
                       deepseq-1.4.3.0 directory-1.3.1.5 dlist-0.8.0.4 easy-file-0.2.2
                       edit-distance-0.2.2.1 entropy-0.4.1.1 exceptions-0.10.0
                       fast-logger-2.4.11 file-embed-0.0.10.1 filepath-1.4.2
-                      fsnotify-0.3.0.1 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      fsnotify-0.3.0.1 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 gitrev-1.3.1
                       hashable-1.2.7.0 haskeline-0.7.4.3 hfsevents-0.1.6 http-date-0.0.7
                       http-types-0.12.1 http2-1.6.3 integer-gmp-1.0.2.0
                       integer-logarithms-1.0.2.1 iproute-1.7.5
@@ -47,7 +47,7 @@ package dependencies: Cabal-2.2.0.1 Glob-0.9.2 SHA-1.6.4.4
                       old-time-1.1.0.3 optparse-applicative-0.14.2.0 parallel-3.2.1.1
                       parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
                       primitive-0.6.3.0 process-1.6.3.0 protolude-0.2.2 psqueues-0.2.7.0
-                      purescript-0.12.1 random-1.1 regex-base-0.93.2 regex-tdfa-1.2.3.1
+                      purescript-0.12.2 random-1.1 regex-base-0.93.2 regex-tdfa-1.2.3.1
                       resourcet-1.2.1 safe-0.3.17 scientific-0.3.6.2
                       simple-sendfile-0.2.27 sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0
                       stm-chans-3.0.0.4 streaming-commons-0.2.1.0 stringsearch-0.3.6.6
@@ -70,9 +70,9 @@ orphans: cheapskate-0.1.1:Cheapskate
          regex-tdfa-1.2.3.1:Text.Regex.TDFA.Sequence
          regex-tdfa-1.2.3.1:Text.Regex.TDFA.String
          regex-base-0.93.2:Text.Regex.Base.Context
-         unix-time-0.3.8:Data.UnixTime.Diff
+         unix-time-0.3.8:Data.UnixTime.Diff syb-0.7:Data.Generics.Instances
          microlens-platform-0.3.10:Lens.Micro.Platform
-         microlens-ghc-0.4.9:Lens.Micro.GHC syb-0.7:Data.Generics.Instances
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
@@ -84,11 +84,11 @@ orphans: cheapskate-0.1.1:Cheapskate
          text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
          text-1.2.3.0:Data.Text.Show
          bytestring-0.10.8.2:Data.ByteString.Builder
-         time-1.8.0.2:Data.Time.Format.Parse
+         colour-2.3.4:Data.Colour time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
-         time-1.8.0.2:Data.Time.Calendar.Gregorian colour-2.3.4:Data.Colour
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: Cabal-2.2.0.1:Distribution.CabalSpecVersion
                          Cabal-2.2.0.1:Distribution.Compat.Semigroup
                          Cabal-2.2.0.1:Distribution.Parsec.Common
@@ -132,22 +132,23 @@ family instance modules: Cabal-2.2.0.1:Distribution.CabalSpecVersion
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1:Control.Monad.Logger
-                         purescript-0.12.1:Language.PureScript.AST.Declarations
-                         purescript-0.12.1:Language.PureScript.AST.Operators
-                         purescript-0.12.1:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1:Language.PureScript.Docs.RenderedCode.Types
-                         purescript-0.12.1:Language.PureScript.Docs.Types
-                         purescript-0.12.1:Language.PureScript.Environment
-                         purescript-0.12.1:Language.PureScript.Ide.Reexports
-                         purescript-0.12.1:Language.PureScript.Ide.Types
-                         purescript-0.12.1:Language.PureScript.Kinds
-                         purescript-0.12.1:Language.PureScript.Label
-                         purescript-0.12.1:Language.PureScript.Make.Monad
-                         purescript-0.12.1:Language.PureScript.Names
-                         purescript-0.12.1:Language.PureScript.PSString
-                         purescript-0.12.1:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1:Language.PureScript.Types
+                         purescript-0.12.2:Control.Monad.Logger
+                         purescript-0.12.2:Language.PureScript.AST.Declarations
+                         purescript-0.12.2:Language.PureScript.AST.Operators
+                         purescript-0.12.2:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2:Language.PureScript.Comments
+                         purescript-0.12.2:Language.PureScript.Docs.RenderedCode.Types
+                         purescript-0.12.2:Language.PureScript.Docs.Types
+                         purescript-0.12.2:Language.PureScript.Environment
+                         purescript-0.12.2:Language.PureScript.Ide.Reexports
+                         purescript-0.12.2:Language.PureScript.Ide.Types
+                         purescript-0.12.2:Language.PureScript.Kinds
+                         purescript-0.12.2:Language.PureScript.Label
+                         purescript-0.12.2:Language.PureScript.Make.Monad
+                         purescript-0.12.2:Language.PureScript.Names
+                         purescript-0.12.2:Language.PureScript.PSString
+                         purescript-0.12.2:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2:Language.PureScript.Types
                          resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
@@ -174,31 +175,31 @@ import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
 import  -/  base-4.11.1.0:System.Environment 052ec29b676ed8efc1decd97140a27e3
 import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  Command.Bundle 786dc382139aed0ff8a3e63f4ddbcdf1
-  exports: f2dbb1e2d82146af37c3ff63964ede36
+import  -/  Command.Bundle 9f40cad022cef8acd30f67612ebfc46f
+  exports: a08246477e4cb19a40433dfb83fdab50
   command 9d872e540af5874c920dc3d60d093620
-import  -/  Command.Compile 29324adfd583043ceddd5b6cc18acb9c
-  exports: e056694a9042d768331707e44122edf2
-  command 010264a6cbd377ebe9b367694c8065fd
-import  -/  Command.Docs e01b2912d543378168ee6f6e862c2586
-  exports: 9dddb413c668bf7ff16f5beec4475449
+import  -/  Command.Compile bf1f2e2e8420f91e1d699c8db639f680
+  exports: e85427b25822a5a1ce71600ea2ca041f
+  command b7f78ae4070761e3685ece434c5a1abd
+import  -/  Command.Docs bb4119e1fcbe2bfd35a83b02b5ad6b74
+  exports: 6399edc4018c2a366c5d83423d34b5e0
   command 3888828cf171934cb34a9ac4337d0e40
   infoModList 340086590d4f125b4b686598747a5730
-import  -/  Command.Hierarchy b41858b5eb32b8b19abb9d5102fa4e01
-  exports: b5c19fd3c0da2dfb9a0f052cad138296
+import  -/  Command.Hierarchy 116e1b199581cd33b6fddc2f1dca8ece
+  exports: 86a3ba7883c6d1370422c76333ce6fb7
   command 326f5879dabb818d5f52d8d8d4286147
-import  -/  Command.Ide e947ee7c45297d00155a3541c0645867
-  exports: e8e9724b3c7465f9fdc869100e998073
-  command 087878e16c596788bf170453098f235e
-import  -/  Command.Publish b0118b03e223c1d85b4bd1eff175c0ba
-  exports: 3d1f5a545546f1320ea5298629b02a55
-  command 7656c3c163bae28687466c550bea561a
-import  -/  Command.REPL f736c2f36529639fa6c65113ea4e9705
-  exports: b6a464b9562bb7685cc9349be5fdd5e0
-  command 1515846a89e14dd4ea32af0e9df83c87
-import  -/  Version 205fea00a01db65586a821f67bb0721e
-  exports: 9173b8f45d2fe9b164fef8a6ae3d10ed
-  versionString 902d0ca5f6b0f62111482446f57f31b5
+import  -/  Command.Ide d6cca3a97691e618549fca8f5ad987f3
+  exports: 4098c6f14be30bbf00b3543391d7bfa0
+  command 525f81c91254f822b3ca254d2de6cd3e
+import  -/  Command.Publish 008e23b298abe98c8e71fb68ea14960b
+  exports: 461fd9a1d51fc14aef4ae58250f696ac
+  command 410da6a2eaa18651d130dd284d7f379a
+import  -/  Command.REPL f840e05c6c26096bb66a3b538f2df6df
+  exports: fc72302de2ae7c7c49e0021c33a87268
+  command d0f1e821d68d3be2f8e907c4f6c55d35
+import  -/  Version bb7aeade5cb4bf91042964a7bb755c1f
+  exports: 19247bb1b4c893a5e72d6a7168213dde
+  versionString 4729cd8bde3caaf9dbabfd7d7e8b9c13
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative d95e0b32490502bba50f41d6948c00e0
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Builder c6546faa9e09bef2ac2df9eff4a77f61
 import  -/  optparse-applicative-0.14.2.0:Options.Applicative.Extra b48c7bfd920b8a9e933e034981589447
@@ -221,12 +222,12 @@ e5875966b74dad2d29772660b8a75e33
 d026be77cb9ced20e35a61514e0458aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-62434d292b4a91ee8c231ed63d40aa29
+a6c24dd99b1aa6c581adb41aaf4dd7bd
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-3fe13939b575bd5aa4057a98b5d2a6fb
+b79eab73406cfde02fdb200d664d567f
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -287,14 +288,14 @@ cfb81a68e452b9a0c342f795adc28e96
   main13 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("The PureScript compiler and tools"#) -}
-a2e9ab8253837595a3515950601530bd
+2a3d5f36be151b61a96383a76c5ab75e
   main14 :: Options.Applicative.Types.Parser (GHC.Types.IO ())
   {- Unfolding: (Options.Applicative.Types.MultP
                    @ (GHC.Types.IO ())
                    @ (GHC.Types.IO ())
                    Main.main55
                    Main.main15) -}
-602c736c5a64c99bb5edb18b5247d4c6
+847d188a980f261a704866323a61acc0
   main15 :: Options.Applicative.Types.Parser (GHC.Types.IO ())
   {- Unfolding: (case Main.main_$s$wgo
                         Main.main51
@@ -313,7 +314,7 @@ a2e9ab8253837595a3515950601530bd
                    @ (GHC.Types.IO ())
                    ww8
                    ww9 } } }) -}
-8e7171325d75616bc0444a4a10287c5a
+422d2a4679b8e57a285997a390a84445
   main16 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.CommandFields
@@ -325,7 +326,7 @@ a2e9ab8253837595a3515950601530bd
                         (GHC.Types.IO ()))
                    Main.main46
                    Main.main17) -}
-e3a62d714f5e91882779aa656631c519
+0938512ab5aec0ab426368c0fb6046c3
   main17 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.CommandFields
@@ -337,7 +338,7 @@ e3a62d714f5e91882779aa656631c519
                         (GHC.Types.IO ()))
                    Main.main42
                    Main.main18) -}
-e3583d45b1fc291ca62913d8ac810ae4
+2fde0c0e40e4adf498cc3a3068c70f93
   main18 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.CommandFields
@@ -349,7 +350,7 @@ e3583d45b1fc291ca62913d8ac810ae4
                         (GHC.Types.IO ()))
                    Main.main37
                    Main.main19) -}
-b881d66dae697a986818900a7ccbbf8b
+275ce6ed47dc99b5d2158fd7e120756d
   main19 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.CommandFields
@@ -361,7 +362,7 @@ b881d66dae697a986818900a7ccbbf8b
                         (GHC.Types.IO ()))
                    Main.main32
                    Main.main20) -}
-b59715a7a7f012632e00b3e4226d765c
+2d1a20281bd4d9ea388437d77ec9d859
   main2 :: Options.Applicative.Types.ParserInfo (GHC.Types.IO ())
   {- Strictness: m,
      Unfolding: (Options.Applicative.Types.ParserInfo
@@ -377,7 +378,7 @@ b59715a7a7f012632e00b3e4226d765c
                    (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
                    Options.Applicative.Builder.info1
                    Options.Applicative.Types.Intersperse) -}
-c7fe84bba6377e97c1ed1124ff0d7729
+43dd54b4dd8f8e77ec6428c6ff301138
   main20 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.CommandFields
@@ -389,7 +390,7 @@ c7fe84bba6377e97c1ed1124ff0d7729
                         (GHC.Types.IO ()))
                    Main.main27
                    Main.main21) -}
-4e3d788503442cfd0d1701e6f8dbe836
+1163ede89b8c236ae3be6aced0a63e87
   main21 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.CommandFields
@@ -404,7 +405,7 @@ c7fe84bba6377e97c1ed1124ff0d7729
                       @ (Options.Applicative.Builder.Internal.Mod
                            Options.Applicative.Builder.Internal.CommandFields
                            (GHC.Types.IO ())))) -}
-f3d519b049f16b1ff50888ae2967a8b5
+d23ebcfbeb82122053aa85a36a5d1310
   main22 ::
     Options.Applicative.Builder.Internal.Mod
       Options.Applicative.Builder.Internal.CommandFields
@@ -417,7 +418,7 @@ f3d519b049f16b1ff50888ae2967a8b5
                    (Options.Applicative.Builder.Internal.$fMonoidDefaultProp_$cmempty
                       @ (GHC.Types.IO ()))
                    (GHC.Base.id @ Options.Applicative.Types.OptProperties)) -}
-ce57cc7afa31b872faf489f892d50dd7
+f9fb612dbca22d5b78006ed589fa615c
   main23 ::
     Options.Applicative.Builder.Internal.CommandFields
       (GHC.Types.IO ())
@@ -448,7 +449,7 @@ ce57cc7afa31b872faf489f892d50dd7
 865deab724f62975682ef0b9474110ca
   main26 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("repl"#) -}
-f519d628054a79192e074c3eb4ecbd2c
+54ac458e49747b7da3a2b630c637658d
   main27 ::
     Options.Applicative.Builder.Internal.Mod
       Options.Applicative.Builder.Internal.CommandFields
@@ -461,7 +462,7 @@ f519d628054a79192e074c3eb4ecbd2c
                    (Options.Applicative.Builder.Internal.$fMonoidDefaultProp_$cmempty
                       @ (GHC.Types.IO ()))
                    (GHC.Base.id @ Options.Applicative.Types.OptProperties)) -}
-15aa7a66826756e3b7c035352a031fae
+b2c4028feea5fa565ebceeb924787a62
   main28 ::
     Options.Applicative.Builder.Internal.CommandFields
       (GHC.Types.IO ())
@@ -485,7 +486,7 @@ f519d628054a79192e074c3eb4ecbd2c
       Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Unfolding: (Options.Applicative.Help.Chunk.paragraph_go
                    (GHC.CString.unpackCString# Main.main30)) -}
-b5d64f19dde761d6b5a92291b148e302
+46f66c9e907ab3c2c1dc899d61022b0d
   main3 :: GHC.Base.Maybe Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Strictness: m2,
      Unfolding: (GHC.Base.Just
@@ -498,7 +499,7 @@ a49a4d87f2f31ef4ce14da3c26007842
 957b4ee2e07a6a4c625c6242f3aaef4c
   main31 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("publish"#) -}
-cdb15ba561837079dc1bfd8a0c04c168
+a8491c8a38dfe309d5ef3873920ca029
   main32 ::
     Options.Applicative.Builder.Internal.Mod
       Options.Applicative.Builder.Internal.CommandFields
@@ -511,7 +512,7 @@ cdb15ba561837079dc1bfd8a0c04c168
                    (Options.Applicative.Builder.Internal.$fMonoidDefaultProp_$cmempty
                       @ (GHC.Types.IO ()))
                    (GHC.Base.id @ Options.Applicative.Types.OptProperties)) -}
-5723b21ef15f0355ec8a6d090466edbb
+c7369c9054ac728e34ac37b99519a028
   main33 ::
     Options.Applicative.Builder.Internal.CommandFields
       (GHC.Types.IO ())
@@ -579,7 +580,7 @@ c4326c1d6edc5e699672ab4c0ab0f76d
       Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Unfolding: (Options.Applicative.Help.Chunk.paragraph_go
                    (GHC.CString.unpackCString# Main.main40)) -}
-7ca6db643eddd57884c338be905a27d7
+f5867ea6e1b418b3a658e334ded6970f
   main4 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Unfolding: (Text.PrettyPrint.ANSI.Leijen.Internal.hcat_go2
                    Main.main5) -}
@@ -628,7 +629,7 @@ d43e78bda4d83ef679fb127a834a5beb
 c30bd424efe6037ae7079dc2a73de872
   main45 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("docs"#) -}
-17da0bc576cc92bf937bfae06da678ae
+58f9dc4bdf2e2b6dc09d1614cd7cde11
   main46 ::
     Options.Applicative.Builder.Internal.Mod
       Options.Applicative.Builder.Internal.CommandFields
@@ -641,7 +642,7 @@ c30bd424efe6037ae7079dc2a73de872
                    (Options.Applicative.Builder.Internal.$fMonoidDefaultProp_$cmempty
                       @ (GHC.Types.IO ()))
                    (GHC.Base.id @ Options.Applicative.Types.OptProperties)) -}
-bb461df8728649c151761262f63f9fab
+d23be8f2bb035b9db617f2823cc3ac96
   main47 ::
     Options.Applicative.Builder.Internal.CommandFields
       (GHC.Types.IO ())
@@ -668,7 +669,7 @@ bb461df8728649c151761262f63f9fab
 500b444902379ab9582b1a156b0a8539
   main49 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Compile PureScript source files"#) -}
-89b866893759d1527b1adc2b6885a267
+578199683d97fd3f3dda3b8f71f9d5b2
   main5 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -709,7 +710,7 @@ bb461df8728649c151761262f63f9fab
 8e9da4a4711c8dc761fba4afba40ce5b
   main54 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("bundle"#) -}
-fb1a280aac8aa9b24a8576bf4b6c9c56
+2658798b9a0bc79d3def3ea629ca7268
   main55 ::
     Options.Applicative.Types.Parser
       (GHC.Types.IO () -> GHC.Types.IO ())
@@ -718,7 +719,7 @@ fb1a280aac8aa9b24a8576bf4b6c9c56
                    @ (GHC.Types.IO () -> GHC.Types.IO ())
                    Main.main56
                    (Options.Applicative.Extra.helper @ (GHC.Types.IO ()))) -}
-fa4e1ac7ddb438758f9dfba1df83d65b
+a9da2e3884a629365d10f20a8625a697
   main56 ::
     Options.Applicative.Types.Parser
       ((GHC.Types.IO () -> GHC.Types.IO ())
@@ -845,7 +846,7 @@ fa4e1ac7ddb438758f9dfba1df83d65b
 5aa690a0334192471f1c186d4905f14e
   main57 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Show the version number"#) -}
-1444d9dc61d00aedeef6397395e6a013
+2fa73de5c87c169931146d125e86e151
   main58 ::
     [GHC.Types.Char]
     -> Data.Either.Either
@@ -857,7 +858,7 @@ fa4e1ac7ddb438758f9dfba1df83d65b
 8dbab932c10c17b5aa28ec79a8192b0f
   main59 :: GHC.Base.String
   {- Unfolding: (GHC.CString.unpackCString# Main.main60) -}
-f05117d3ee2515262323f970420618c4
+4dd8abb50458c70accada2875adeb397
   main6 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -867,7 +868,7 @@ f05117d3ee2515262323f970420618c4
 813bd5e7c724fd096ac108e40eb88c40
   main60 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("version"#) -}
-cedd57f3c38405d234a4fc5d536f93a4
+2be5d2944855b01e18781b2586e405c3
   main61 ::
     [Options.Applicative.Builder.Internal.Mod
        Options.Applicative.Builder.Internal.OptionFields
@@ -882,7 +883,7 @@ cedd57f3c38405d234a4fc5d536f93a4
                    Main.main62
                    (Options.Applicative.Builder.abortOption4
                       @ (GHC.Types.IO () -> GHC.Types.IO ()))) -}
-6397f919ce540487696c4ef0830df2ec
+594336ba8b97428e30ad9dd905682b2f
   main62 ::
     Options.Applicative.Builder.Internal.Mod
       Options.Applicative.Builder.Internal.OptionFields
@@ -898,7 +899,7 @@ cedd57f3c38405d234a4fc5d536f93a4
                       @ ((GHC.Types.IO () -> GHC.Types.IO ())
                          -> GHC.Types.IO () -> GHC.Types.IO ()))
                    (GHC.Base.id @ Options.Applicative.Types.OptProperties)) -}
-6704d67b2ccbe10c2d3e205ca18cbbc2
+d6ef247bf17ba92c22f7f8722e061a82
   main63 ::
     Options.Applicative.Builder.Internal.OptionFields
       ((GHC.Types.IO () -> GHC.Types.IO ())
@@ -917,7 +918,7 @@ cedd57f3c38405d234a4fc5d536f93a4
                    ds
                    ds1
                    Main.main_lvl9 }) -}
-ad6c67bef70bf18a35eec286cc1ff8fb
+57bc1b3626656ade520f345b65a4c565
   main64 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -925,21 +926,21 @@ ad6c67bef70bf18a35eec286cc1ff8fb
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-17bfafccb604f6c06bd72c8a776848c0
+e52712cf9bb6a1fc31c1fc9947301536
   main7 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
                    Text.PrettyPrint.ANSI.Leijen.Internal.Line
                    Main.main8) -}
-9ffd3a1e2d215636b749e6ddb1131c2e
+efb6d8b0485c51bd27820de99be63ea3
   main8 :: [Text.PrettyPrint.ANSI.Leijen.Internal.Doc]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc
                    Main.main9
                    (GHC.Types.[] @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc)) -}
-89db5f5ec26e4676ae37cc8ca2842678
+12bee3129326cba87ef84a89e389c61f
   main9 :: Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Unfolding: (case GHC.CString.unpackAppendCString#
                         Main.main10
@@ -1010,18 +1011,18 @@ efbbb982cf20144d241d6f0ebe9df544
   main_go ::
     [GHC.Types.Char] -> Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Arity: 1, Strictness: <S,1*U> -}
-7d873262f6416de4e0a07e7b94bed46c
+f05ff700f3d5d45c0adc0fe5a4e1843f
   main_lvl ::
     (GHC.Base.String,
      Options.Applicative.Types.ParserInfo (GHC.Types.IO ()))
   {- Strictness: m, Unfolding: ((Main.main_cmd, Main.main_pinfo)) -}
-0e6495c13aa747e187fb87bcd4fe250d
+68adbcdeebc559782958cad4b846170c
   main_lvl1 ::
     (GHC.Base.String,
      Options.Applicative.Types.ParserInfo (GHC.Types.IO ()))
   {- Strictness: m,
      Unfolding: ((Main.main_cmd1, Main.main_pinfo1)) -}
-5c301bf16d1740db2f4ac33541bb76ca
+1eebe823c6e14e8b32fc49a526987ca7
   main_lvl2 ::
     (GHC.Base.String,
      Options.Applicative.Types.ParserInfo (GHC.Types.IO ()))
@@ -1039,7 +1040,7 @@ ac4d9a42bd394da1ee64d2f05947d9a7
      Options.Applicative.Types.ParserInfo (GHC.Types.IO ()))
   {- Strictness: m,
      Unfolding: ((Main.main_cmd4, Main.main_pinfo4)) -}
-625dfb83fc44d2743cf7b3146b888856
+3f61346d9b6cbf1abd9a9c5d3a742657
   main_lvl5 ::
     (GHC.Base.String,
      Options.Applicative.Types.ParserInfo (GHC.Types.IO ()))
@@ -1057,7 +1058,7 @@ ac4d9a42bd394da1ee64d2f05947d9a7
       Text.PrettyPrint.ANSI.Leijen.Internal.Doc
   {- Unfolding: (Options.Applicative.Help.Chunk.paragraph_go
                    (GHC.CString.unpackCString# Main.main57)) -}
-726ee27e6febb980d8bbc00a63984cd4
+e61f96105ec2505bcf9801644b4231df
   main_lvl8 ::
     Data.Either.Either
       Options.Applicative.Types.ParseError
@@ -1069,7 +1070,7 @@ ac4d9a42bd394da1ee64d2f05947d9a7
                    @ ((GHC.Types.IO () -> GHC.Types.IO ())
                       -> GHC.Types.IO () -> GHC.Types.IO ())
                    Main.main_w) -}
-9df0b93812a175261752f2b7aa7ee8d5
+ad9e02a2442a68af300969af4032eb95
   main_lvl9 ::
     GHC.Base.String -> Options.Applicative.Types.ParseError
   {- Arity: 1, Strictness: <L,A>m2,
@@ -1079,7 +1080,7 @@ ac4d9a42bd394da1ee64d2f05947d9a7
   main_n :: Options.Applicative.Types.OptName
   {- Strictness: m2,
      Unfolding: (Options.Applicative.Types.OptLong Main.main59) -}
-afd58ccc24e2af1d885a74751dea46d8
+f250c4e70971c7288c289e68638ab5eb
   main_pinfo ::
     Options.Applicative.Types.ParserInfo (GHC.Types.IO ())
   {- Strictness: m,
@@ -1096,7 +1097,7 @@ afd58ccc24e2af1d885a74751dea46d8
                    (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
                    Options.Applicative.Builder.info1
                    Options.Applicative.Types.Intersperse) -}
-6313ceef3df51db7bc8d4fd3b46e61ea
+57d2b92d3223af5c92879085f946dfc0
   main_pinfo1 ::
     Options.Applicative.Types.ParserInfo (GHC.Types.IO ())
   {- Strictness: m,
@@ -1113,7 +1114,7 @@ afd58ccc24e2af1d885a74751dea46d8
                    (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
                    Options.Applicative.Builder.info1
                    Options.Applicative.Types.Intersperse) -}
-d52006f51f3e6b5b5a413632bc661bcd
+102d04badf654b97f49eaa8cff4bacc7
   main_pinfo2 ::
     Options.Applicative.Types.ParserInfo (GHC.Types.IO ())
   {- Strictness: m,
@@ -1164,7 +1165,7 @@ e9b51e3d52ac34ed77ae704bf84947e9
                    (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
                    Options.Applicative.Builder.info1
                    Options.Applicative.Types.Intersperse) -}
-0ef8bef11e2788a3ad3097fc2a7a1686
+b7b036d628b840adfa6d5ca9d6569c87
   main_pinfo5 ::
     Options.Applicative.Types.ParserInfo (GHC.Types.IO ())
   {- Strictness: m,
@@ -1198,7 +1199,7 @@ a9400b4983a4af4538d01892737dbd5f
                    (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
                    Options.Applicative.Builder.info1
                    Options.Applicative.Types.Intersperse) -}
-32469d06919d2d58559057989b90e221
+d40c76abaf5ddd76d0e84e75e1a77372
   main_w :: Options.Applicative.Types.ParseError
   {- Strictness: m2,
      Unfolding: (Options.Applicative.Types.InfoMsg

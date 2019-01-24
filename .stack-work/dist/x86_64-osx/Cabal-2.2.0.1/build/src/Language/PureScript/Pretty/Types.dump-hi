@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:26:55.301165 UTC
+2019-01-24 14:14:14.592922 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Pretty.Types 8043
-  interface hash: 68a57a1674c44d07072d999d1236f567
-  ABI hash: 55abc63b15198d7c72c92dad86c3e447
-  export-list hash: b40ff76265cae147b2217367d81cb585
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Pretty.Types 8043
+  interface hash: 9c920f06e1271da615cfed5e84f32395
+  ABI hash: 1303ea05006a6ec61edb2f109218248a
+  export-list hash: f7263952ce0ec10cb0b028bbb35f097c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 0ce21d9fbfa84a7ed524d2aad564d4cd
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -14,6 +14,7 @@ interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Pretty.Ty
   used TH splices: False
   where
 exports:
+  Language.PureScript.Pretty.Types.convertPrettyPrintType
   Language.PureScript.Pretty.Types.prettyPrintLabel
   Language.PureScript.Pretty.Types.prettyPrintObjectKey
   Language.PureScript.Pretty.Types.prettyPrintRow
@@ -23,7 +24,11 @@ exports:
   Language.PureScript.Pretty.Types.prettyPrintTypeWithUnicode
   Language.PureScript.Pretty.Types.suggestedTypeAsBox
   Language.PureScript.Pretty.Types.typeAsBox
+  Language.PureScript.Pretty.Types.typeAsBox'
   Language.PureScript.Pretty.Types.typeAtomAsBox
+  Language.PureScript.Pretty.Types.typeAtomAsBox'
+  Language.PureScript.Pretty.Types.PrettyPrintConstraint
+  Language.PureScript.Pretty.Types.PrettyPrintType{Language.PureScript.Pretty.Types.PPBinaryNoParensType Language.PureScript.Pretty.Types.PPConstrainedType Language.PureScript.Pretty.Types.PPForAll Language.PureScript.Pretty.Types.PPFunction Language.PureScript.Pretty.Types.PPKindedType Language.PureScript.Pretty.Types.PPParensInType Language.PureScript.Pretty.Types.PPRCons Language.PureScript.Pretty.Types.PPREmpty Language.PureScript.Pretty.Types.PPRecord Language.PureScript.Pretty.Types.PPSkolem Language.PureScript.Pretty.Types.PPTUnknown Language.PureScript.Pretty.Types.PPTypeApp Language.PureScript.Pretty.Types.PPTypeConstructor Language.PureScript.Pretty.Types.PPTypeLevelString Language.PureScript.Pretty.Types.PPTypeOp Language.PureScript.Pretty.Types.PPTypeVar Language.PureScript.Pretty.Types.PPTypeWildcard}
 module dependencies: Control.Monad.Supply
                      Control.Monad.Supply.Class Language.PureScript.AST
                      Language.PureScript.AST.Binders
@@ -40,22 +45,25 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
-                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
-                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
-                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
-                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
-                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
-                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
-                      unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
-                      vector-0.12.0.1
+package dependencies: aeson-1.3.1.1 array-0.5.2.0 async-2.2.1
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2
+                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      language-javascript-0.6.0.11 microlens-0.4.9.1 microlens-ghc-0.4.9
+                      microlens-mtl-0.1.11.1 microlens-platform-0.3.10
+                      microlens-th-0.4.2.1 mtl-2.2.2 parsec-3.1.13.0 pattern-arrows-0.0.2
+                      pretty-1.1.3.6 primitive-0.6.3.0 protolude-0.2.2 random-1.1
+                      scientific-0.3.6.2 sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0
+                      syb-0.7 tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.0
+                      th-abstraction-0.2.8.0 time-1.8.0.2 time-locale-compat-0.1.1.4
+                      transformers-0.5.5.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.1
 orphans: syb-0.7:Data.Generics.Instances
          stm-2.4.5.0:Control.Monad.STM
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
@@ -88,21 +96,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -117,6 +130,7 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
 import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
 import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
 import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
 import  -/  base-4.11.1.0:Data.OldList 1b35aa3c6805ff7c8887a35a866fe006
 import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
@@ -127,172 +141,572 @@ import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  boxes-0.1.5:Text.PrettyPrint.Boxes 49de0395c02f08dbf50ec04d019c04fb
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
 import  -/  pattern-arrows-0.0.2:Control.PatternArrows 90def053e91ab273d69e02942232cbc5
-import  -/  Language.PureScript.Crash 1bc11bf824676e9581610d0d05d26761
-  exports: 8a971f39d6ef3f27956f413640cb0a24
-  internalError f3db7e23c75878c9d13888d6d114012d
-import  -/  Language.PureScript.Environment 31667499b7017b19998bb405474fbe93
-  exports: 56b1ef0ac6132b4c113ce26a807dcfb6
-  tyFunction 9783ce0b37378c763c53f9a28f7311d6
-  tyRecord fcace11d48da9699cb692901edeeb943
-import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
-  exports: 2c2448e43e622d2466a59b9cd8f4db91
-  Kind 3e1e213eb647453235d33b0d1b36ec59
-import  -/  Language.PureScript.Label ac3bc484eb8b3b2ccf228cc34cdb537c
-  exports: 62e65d694c1e96c81750d9cacc93e898
-  Label 6f46d05ebbc78fa0ba91a5af362adcaf
-  Label 61523a5f4fc28a2f2f6f00cce17ce1bb
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  coerceProperName 9cce674374cd97d7385253445133e737
-  disqualify 3e7b8117c7613f1d74fadc5d62b59f54
-  runOpName 1522672b880b192c6e05e6cf8a45712d
-  runProperName 29f101e190cc99df85623423972e606f
-  showQualified 3c507c3595affc1e0cc61d34a906a736
-import  -/  Language.PureScript.PSString 29492f728997dffadb84d1bf161f2ce4
-  exports: 41608caf7cc5b51f34de641c9952ab6d
-  PSString 0c2d9eac7fc8cff2b3ca27abf6053439
-  decodeString 0c2d9eac7fc8cff2b3ca27abf6053439
-  prettyPrintString ad1edf9d71a4049432f57a83a68437e1
-import  -/  Language.PureScript.Pretty.Common 3b6e69c173d325d7c9be0bb0169f3188
-  exports: 3b669d7e8560d3ed86c28ef1f72a89c4
-  before 3de30d3cfa61e8605407bcad8c583891
-  objectKeyRequiresQuoting ab6a45548ac547f1bf7aef65dc8ae414
-import  -/  Language.PureScript.Pretty.Kinds 61520f24125a18b860156c88cb953ccd
-  exports: 38cc499155a6344cfee087fd8681f3dc
-  prettyPrintKind 7cb5c666396112b6de1d2e646e595fab
-import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
-  exports: ae97bc75fcebc59f59c970736847a827
-  BinaryNoParensType 107160e9c63cdf092e86906dc4d4938e
-  ConstrainedType c2b3670e25b3b510981414df0f340e0f
-  Constraint 07ef72cbe41926551b2da51008274cd5
-  Constraint 93223f8afa90d0facc05a03f863dc72d
-  ForAll 8e5cfabdac15777ed3387d8a0029598b
-  KindedType 0c5178e2942b7d198426b0539b6f6442
-  ParensInType 09530ee2adabb1c21031665aeff3fda2
-  PrettyPrintForAll 253d9a7d7e1ab30ae225f74e951c3657
-  PrettyPrintFunction af21ea6849a6b4a90a77a91f4e0562c7
-  PrettyPrintObject f763acced04eace2d63d0962f67a3c41
-  RCons c8b1a363e575e040360112548c9c1bd6
-  REmpty 7b5d4ca839c026ea0c7f04daad457191
-  Skolem e2f87ac818d8dc245fc6ff263c6e89ee
-  TUnknown 39441d842668db3aca11ba64b9f08b2c
-  Type 93223f8afa90d0facc05a03f863dc72d
-  TypeApp 8aa2c93426facb8054d5caf77ff9d922
-  TypeConstructor 5e1c42d22ac701f08c049fde0171d9ac
-  TypeLevelString b529cbddb07085442fd8755c41cb42eb
-  TypeOp ad0891db755477b54ad0870dc64917cc
-  TypeVar ac604589bba317f51f6e97fef0e84f86
-  TypeWildcard d993619c31ecd71f696448ee686f32f4
-  everywhereOnTypes fa3aa1a1c2e07faf6471b9f2771c8368
-  everywhereOnTypesTopDown 5a4058c411dd2d30405b0333fde0c8b7
+import  -/  Language.PureScript.Crash 3dd739d57f17e8a1e9cd97afd3faf067
+  exports: a9d2725f359c2d113bd38076e88ec681
+  internalError d33c2a09c5cbe8e68c0bc27d1500ba1a
+import  -/  Language.PureScript.Environment 467b25d81b890e1aaabe28d0f09d192d
+  exports: a0cb6cb8c78c56365f58c9f88d1fe000
+  tyFunction 72bada10fd7f408ce623a31c14e8cefb
+  tyRecord 50710499a0d6346d3284449c5e15992d
+import  -/  Language.PureScript.Kinds e26b9cf8211f7e72bb44fdd3faed066e
+  exports: fe71635ad7964c0d620fb0685614a050
+  Kind 5e0361ee324aa435f4976ea2eac1777d
+import  -/  Language.PureScript.Label 366bbe6039761c79dbc09aaf87b5753e
+  exports: 0a72b1b943ee66379d53382d0212ef7e
+  Label 1f1fefa14786357467485814549b59fb
+  Label 1525a534169f6ccc5a25699c70351352
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  ClassName c5d98a635cb261f6a93bf01096d0c6ed
+  OpName 9af301165f72160425c5e0dde6525338
+  ProperName a7268334e0b909381550b9329cb80fcc
+  Qualified 1b2ddf0c04464d2fa2588925f10c1966
+  TypeName 40ce511c66a72431b4e87351210f7b03
+  TypeOpName db73fc39fef75f034a0b4a8074947dd9
+  coerceProperName 441cf2d4ab32b68a0b73ca234d2a628b
+  disqualify bf1cc3b0e6c1ffc0008a6113bf8116c0
+  runOpName 9af301165f72160425c5e0dde6525338
+  runProperName a7268334e0b909381550b9329cb80fcc
+  showQualified 5ab4b15825b0e65e211bc57f19d57784
+import  -/  Language.PureScript.PSString 482bcd39d274b3e3efbde5749bd9d797
+  exports: dedd5d31dc509736134f041863efd1d4
+  PSString 96ffea2472d48cda76cc39d47ab7bb82
+  decodeString 96ffea2472d48cda76cc39d47ab7bb82
+  prettyPrintString b1dfb53e84049d1e3f6bb311f4e41690
+import  -/  Language.PureScript.Pretty.Common 5ad137006c9d22dbc8d348caeed567b2
+  exports: c21a0ba6e9877729208defe8b5d16c9a
+  before 411bd3e965e2e36262e24566a3ef76eb
+  objectKeyRequiresQuoting 9e23b328702b1a9ddb524479909e2948
+import  -/  Language.PureScript.Pretty.Kinds 1231cbf0b1be99cf8261312fb9302146
+  exports: 4fac4abed3fa8b491f4607c0483d6787
+  prettyPrintKind f60a6c7beaabc8993b1df72e46c79d4c
+import  -/  Language.PureScript.Types 80a51f62cb3e6c71f024289b88f07b7f
+  exports: 229bb7528146da886cffbefad5822e19
+  BinaryNoParensType e0f6df16f0ffaf49053e71d305a7063a
+  ConstrainedType 7b7b9fe5fc37a912cec5b01815c7784d
+  Constraint a0b1e737f9fdb5b2f711c97dd5895f69
+  ForAll 0750974c4b3c816f0559c95f8418f903
+  KindedType 7d9c2ac5dbbe89c236f431d3c9412617
+  ParensInType e197aabee5513dc57789571f03a80719
+  RCons baa72184843999f17a8e5f8391aabd36
+  REmpty 55ca0a758aacaf511eb4882e2b81a0fc
+  Skolem aef73915115b060ec7781cdd3859082f
+  TUnknown 9d429c357e98c51eb9f7f00bef0a2346
+  Type d5fc19231e8a71936895da17eade4f5b
+  TypeApp 9dadf19674ff2d747cbba0c42dfad343
+  TypeConstructor c7b7bcec494a17e684a206aeb55ef57b
+  TypeLevelString 8a25ec25c9b44a7602f610ae833b697e
+  TypeOp c293e95b09cf540c33c1d0b1480f5f80
+  TypeVar 9a7c02efa8540e6f48c3a672f3ebc8db
+  TypeWildcard e8def149f21247f8f38af9a4e50f9298
+  eqType d5fc19231e8a71936895da17eade4f5b
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
 import  -/  text-1.2.3.0:Data.Text.Show 3b4b6fb2985a731022d67f636682da2b
-2ec36b678fe4665b7466d178721d5573
+cad2208d2f4b3c880714f19217015572
+  $tc'PPBinaryNoParensType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12837057416432990734##
+                   8387961551456098168##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPBinaryNoParensType2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPBinaryNoParensType1) -}
+cd40e9c6cca44fdce53e3159af46198f
+  $tc'PPBinaryNoParensType1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dd5a5760946810193ac91824962272ea
+  $tc'PPBinaryNoParensType2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPBinaryNoParensType3) -}
+b4d92f96325da160b227fe59712a0700
+  $tc'PPBinaryNoParensType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPBinaryNoParensType"#) -}
+301a4911b520a35878db5d1f55d40ffd
+  $tc'PPConstrainedType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8414455622744295128##
+                   7193184728067651773##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPConstrainedType2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPConstrainedType1) -}
+0f5ae3335d80199f5f3328282c5673d5
+  $tc'PPConstrainedType1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3f081a52ae06524adc80e0863ab36c87
+  $tc'PPConstrainedType2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPConstrainedType3) -}
+d74fd8371793d5b1f251ec83f3e58496
+  $tc'PPConstrainedType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPConstrainedType"#) -}
+592ed5176cc2e8076ad5d8d54bee5e33
+  $tc'PPForAll :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4010879001090025689##
+                   9476200502853389105##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPForAll2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPForAll1) -}
+796ed799975f247f53cf35b297424697
+  $tc'PPForAll1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3f1ca44bed600e3a83870ab3270d1157
+  $tc'PPForAll2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPForAll3) -}
+3b72983e513e7b8d7964c787842d8db6
+  $tc'PPForAll3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPForAll"#) -}
+ec074f09dd5420cdc1c2e4dc24f9e89f
+  $tc'PPFunction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16272840822655461242##
+                   8120490310788160196##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPFunction2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPFunction1) -}
+9f823291e72b1c12273902b94812c481
+  $tc'PPFunction1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+90258cc8192ef05341ef6c2a934480f4
+  $tc'PPFunction2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPFunction3) -}
+4d630c50a8ffd62c70e37e7527f0dfda
+  $tc'PPFunction3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPFunction"#) -}
+a4f8718a1b3dc0abb848d37041a0f5df
+  $tc'PPKindedType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15660021767676181940##
+                   16670238227815826321##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPKindedType2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPKindedType1) -}
+b4f803e9a45e4d627c78b0c3ba0808e7
+  $tc'PPKindedType1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9065a2c15bcd591b45405383e4a971db
+  $tc'PPKindedType2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPKindedType3) -}
+89bce297db68b40e7ca60893e7dd0083
+  $tc'PPKindedType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPKindedType"#) -}
+d6c6e4f039074494a00173e4226d09bc
+  $tc'PPParensInType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6682337325843581439##
+                   9599424451447104784##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPParensInType2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPParensInType1) -}
+6264356ae7b0a009faeeb2eae6d85d65
+  $tc'PPParensInType1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7ad27bae300a414ef9d7f5dac64a0b2b
+  $tc'PPParensInType2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPParensInType3) -}
+8bd205752bd2e8f4a07dacac32cc212c
+  $tc'PPParensInType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPParensInType"#) -}
+9f68446b61f05d9a531c9a75fceb2578
+  $tc'PPRCons :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11809988248133754505##
+                   13479197542093393796##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPRCons2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPRCons1) -}
+7603e61b8a81f53f72966d06acb53a76
+  $tc'PPRCons1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+633e81454de503b839714b8aef0306f9
+  $tc'PPRCons2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPRCons3) -}
+a554cfbb87bffa65564000c1e73b4a63
+  $tc'PPRCons3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPRCons"#) -}
+ba7b3f58d7297fefe17fa0296045812c
+  $tc'PPREmpty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2431684973317952230##
+                   3473683761629864344##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPREmpty2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPREmpty1) -}
+c90c43e52e7f9173cf7f668e01446fcf
+  $tc'PPREmpty1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+42246c41bb27da51efec10e874a583a1
+  $tc'PPREmpty2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPREmpty3) -}
+fc1011d83cb6f2e7de1d87d96b2c5a13
+  $tc'PPREmpty3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPREmpty"#) -}
+f8fa519eb681356a9a1ac762c2122f8d
+  $tc'PPRecord :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10416321629689898720##
+                   2003219469041821006##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPRecord1
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPParensInType1) -}
+56fe3800d0cd6021dea381c196c125d5
+  $tc'PPRecord1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPRecord2) -}
+9d3748eec62f3ef944889ca7640584cb
+  $tc'PPRecord2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPRecord"#) -}
+057c808a569c1611a943af75740579e3
+  $tc'PPSkolem :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15298449316035015295##
+                   5516291872993903252##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPSkolem2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPSkolem1) -}
+2f6ad244a389a262c7f8295fa552966a
+  $tc'PPSkolem1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bfe42c72807ca7c1dc9ec095f2e84ff4
+  $tc'PPSkolem2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPSkolem3) -}
+2556bf7ae5b69f7ac41325595e92e6b8
+  $tc'PPSkolem3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPSkolem"#) -}
+1168f6495b2b4b47277c08e0dadd4180
+  $tc'PPTUnknown :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17042983300991534422##
+                   4750308836471741900##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTUnknown2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPTUnknown1) -}
+2cbbe48cd32fb06b1c41c86fe9d69233
+  $tc'PPTUnknown1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e1fc4b2eab8b3021fb3a9a11f00b1062
+  $tc'PPTUnknown2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTUnknown3) -}
+d74a694c2ef63f88909f1e761b86b9eb
+  $tc'PPTUnknown3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTUnknown"#) -}
+a1859e1cd5125aa9a83f2277728edf36
+  $tc'PPTypeApp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11067054485392642133##
+                   12664809451226349759##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTypeApp1
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPFunction1) -}
+55b4cea8e32732368e92a25166752e31
+  $tc'PPTypeApp1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTypeApp2) -}
+e083c1bdbe1656bff58e54728a669c87
+  $tc'PPTypeApp2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTypeApp"#) -}
+dabd08f6befadb7debe69902d695aadd
+  $tc'PPTypeConstructor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17968429616247691701##
+                   5511677158283474639##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTypeConstructor2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPTypeConstructor1) -}
+099a086b2243befc7276370df3b524af
+  $tc'PPTypeConstructor1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+64d06b66a3d84386cf7b7ceee0add7a9
+  $tc'PPTypeConstructor2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTypeConstructor3) -}
+d840f4af134ff426eaf915233e27beff
+  $tc'PPTypeConstructor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTypeConstructor"#) -}
+f68983a3736862cfa203a0f2539f7568
+  $tc'PPTypeLevelString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6778041525575633365##
+                   8179253078993003199##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTypeLevelString2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPTypeLevelString1) -}
+52e935410c3fe66c513865ac8e721a8e
+  $tc'PPTypeLevelString1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2aa906955aa1107a0832309ae29e75df
+  $tc'PPTypeLevelString2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTypeLevelString3) -}
+48d2f69d3babcd943993368bbabf82ac
+  $tc'PPTypeLevelString3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTypeLevelString"#) -}
+4200359bbf9dab3ca70bc433cbf5a382
+  $tc'PPTypeOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14016220768205522502##
+                   8848135196859757427##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTypeOp2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPTypeOp1) -}
+ced594837c14c3c6e0b35c943bafef6d
+  $tc'PPTypeOp1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+178c0e53ddbe228051bb47ff46b21e23
+  $tc'PPTypeOp2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTypeOp3) -}
+3a967005bcd6df50bab3f4bf2de02a71
+  $tc'PPTypeOp3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTypeOp"#) -}
+ea84f2d63fd0f287dddd859777109af5
+  $tc'PPTypeVar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2869892561096051337##
+                   14535015682698797402##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTypeVar2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPTypeVar1) -}
+e8f47583de789e0180a8cceae4856734
+  $tc'PPTypeVar1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5981189b4c323cc81d422aac54073f7f
+  $tc'PPTypeVar2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTypeVar3) -}
+2e044c22af8c65027b19882014f0e780
+  $tc'PPTypeVar3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTypeVar"#) -}
+7734bf1ad4b52156d9094fc4a4df6614
+  $tc'PPTypeWildcard :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12632959688534682665##
+                   15433696494497957288##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tc'PPTypeWildcard2
+                   0#
+                   Language.PureScript.Pretty.Types.$tc'PPTypeWildcard1) -}
+a5a83f6b249b9b2c8ebcd2b19e8f53cb
+  $tc'PPTypeWildcard1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7f060a7abe9fc7e3b2a0be9938e5c599
+  $tc'PPTypeWildcard2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tc'PPTypeWildcard3) -}
+cd801b783d0e0cee8803ee028d0c17f9
+  $tc'PPTypeWildcard3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PPTypeWildcard"#) -}
+53b1a1347605d6d84d971d00c861223a
   $tc'TypeRenderOptions :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   8344412452467052260##
-                   13690384149374658413##
+                   15095335773356370853##
+                   2787057752143265748##
                    Language.PureScript.Pretty.Types.$trModule
                    Language.PureScript.Pretty.Types.$tc'TypeRenderOptions2
                    0#
                    Language.PureScript.Pretty.Types.$tc'TypeRenderOptions1) -}
-99854eab9ba18d00a8af635d80467475
+c816bb9b9925e88b2bd8a79704f44f05
   $tc'TypeRenderOptions1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-522b592dfbd4d8e46607b26bf5a8e0f5
+684b4a38c659899e79626aa0bc7358e9
   $tc'TypeRenderOptions2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Pretty.Types.$tc'TypeRenderOptions3) -}
-dca6e56b7b49f9fce60d5fee885c4213
+077ed0d1d0544d7ff1cd014ce92795d3
   $tc'TypeRenderOptions3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'TypeRenderOptions"#) -}
-739754c8afa7d1130c83b527e5729426
+4c6097bd929bb337462287ef2ec08e79
+  $tcPrettyPrintType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17540189116497115175##
+                   15504248749049681459##
+                   Language.PureScript.Pretty.Types.$trModule
+                   Language.PureScript.Pretty.Types.$tcPrettyPrintType1
+                   0#
+                   GHC.Types.krep$*) -}
+9faa30c874f02ee8ec7bfe9d8b9ef673
+  $tcPrettyPrintType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.PureScript.Pretty.Types.$tcPrettyPrintType2) -}
+c7990269b6166eb33a1dca8fb320356b
+  $tcPrettyPrintType2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PrettyPrintType"#) -}
+5bed25f6d65f9475f5d14d9add47bc67
   $tcTypeRenderOptions :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   3054108699826739705##
-                   14668869654545858013##
+                   4586838440159022408##
+                   16494758897103851952##
                    Language.PureScript.Pretty.Types.$trModule
                    Language.PureScript.Pretty.Types.$tcTypeRenderOptions1
                    0#
                    GHC.Types.krep$*) -}
-be86a40ceaf3102370d7f9d85ca15802
+cb133be8622f0951474c46396edbbfd3
   $tcTypeRenderOptions1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Pretty.Types.$tcTypeRenderOptions2) -}
-e8b697165d676f0873ba101a37e7c954
+d2d7b5b34e08942433158e0f6db41474
   $tcTypeRenderOptions2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("TypeRenderOptions"#) -}
-0e63571230faeffe90d68ced5f2aedc3
+3d20c0025dd842a2b9fe59d2deb3e330
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Pretty.Types.$trModule3
                    Language.PureScript.Pretty.Types.$trModule1) -}
-35910a815e3d9f63188ce9e685d98190
+c395300656e8f9c56210f9c195688441
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Pretty.Types.$trModule2) -}
-9e45e64119cf90fedc3a87d36924ec76
+97c27d407958d8cccef32e77f4935bb7
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.Pretty.Types"#) -}
-679d083dfe268014dc5a1893ed6bbd28
+499f32c4b1dc9805f1fd1c0d121f2651
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Pretty.Types.$trModule4) -}
-3db2f967ccdd32e4a46174c8ab1781cc
+6fc50e4142bbe8a6fa7ac304998f5c5a
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-46078de878ac8520db1887f82c41f1ae
-  $wgo ::
-    [Data.Text.Internal.Text]
-    -> Language.PureScript.Types.Type
-    -> (# [Data.Text.Internal.Text], Language.PureScript.Types.Type #)
-  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
-8413f21fccf83b37a535ee2d5e20eb19
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+d1526da8906e8df0133edbfcb4333f00
   $wmatchTypeAtom ::
     GHC.Types.Bool
     -> GHC.Types.Bool
     -> Control.PatternArrows.Pattern
-         () Language.PureScript.Types.Type Text.PrettyPrint.Boxes.Box
+         ()
+         Language.PureScript.Pretty.Types.PrettyPrintType
+         Text.PrettyPrint.Boxes.Box
   {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0] -}
-c2c5b189cb21e779fb84b028599c09a3
+be5b96ca6a27eb1cc6a617fe5eeb0be5
+  type PrettyPrintConstraint =
+    (Language.PureScript.Names.Qualified
+       (Language.PureScript.Names.ProperName
+          'Language.PureScript.Names.ClassName),
+     [Language.PureScript.Pretty.Types.PrettyPrintType])
+be5b96ca6a27eb1cc6a617fe5eeb0be5
+  data PrettyPrintType
+    = PPTUnknown GHC.Types.Int
+    | PPTypeVar Data.Text.Internal.Text
+    | PPTypeLevelString Language.PureScript.PSString.PSString
+    | PPTypeWildcard (GHC.Base.Maybe Data.Text.Internal.Text)
+    | PPTypeConstructor (Language.PureScript.Names.Qualified
+                           (Language.PureScript.Names.ProperName
+                              'Language.PureScript.Names.TypeName))
+    | PPTypeOp (Language.PureScript.Names.Qualified
+                  (Language.PureScript.Names.OpName
+                     'Language.PureScript.Names.TypeOpName))
+    | PPSkolem Data.Text.Internal.Text GHC.Types.Int
+    | PPTypeApp Language.PureScript.Pretty.Types.PrettyPrintType
+                Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPConstrainedType Language.PureScript.Pretty.Types.PrettyPrintConstraint
+                        Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPKindedType Language.PureScript.Pretty.Types.PrettyPrintType
+                   (Language.PureScript.Kinds.Kind ())
+    | PPBinaryNoParensType Language.PureScript.Pretty.Types.PrettyPrintType
+                           Language.PureScript.Pretty.Types.PrettyPrintType
+                           Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPParensInType Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPForAll [Data.Text.Internal.Text]
+               Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPFunction Language.PureScript.Pretty.Types.PrettyPrintType
+                 Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPRecord Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPRCons Language.PureScript.Label.Label
+              Language.PureScript.Pretty.Types.PrettyPrintType
+              Language.PureScript.Pretty.Types.PrettyPrintType
+    | PPREmpty
+ab0a87b3f794de450b30c0a90ebdbe1f
   data TypeRenderOptions
     = TypeRenderOptions {troSuggesting :: GHC.Types.Bool,
                          troUnicode :: GHC.Types.Bool}
-b391c5f0b9967cb10ed34e5feb09d862
+bb96aac0adb034b415969311e7320844
+  convertPrettyPrintType ::
+    Language.PureScript.Types.Type a
+    -> Language.PureScript.Pretty.Types.PrettyPrintType
+  {- Arity: 1, Strictness: <S,1*U> -}
+10519d1cd38e3f5b90fc6f18557c9534
   defaultOptions ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (Language.PureScript.Pretty.Types.TypeRenderOptions
                    GHC.Types.False
                    GHC.Types.False) -}
-617e2a96c9c8b9dc1678fb3294e7b667
-  insertPlaceholders ::
-    Language.PureScript.Types.Type -> Language.PureScript.Types.Type
-  {- Arity: 1, Strictness: <L,1*U>,
-     Unfolding: InlineRule (1, True, False)
-                (\ (x :: Language.PureScript.Types.Type) ->
-                 Language.PureScript.Types.everywhereOnTypesTopDown
-                   Language.PureScript.Pretty.Types.prettyPrintSuggestedType_convertForAlls
-                   (Language.PureScript.Types.everywhereOnTypes
-                      Language.PureScript.Pretty.Types.prettyPrintSuggestedType_convert
-                      x)) -}
-ceab02993eea4e1bbd587a73dc0e5e52
+4df0e166519d8e5b8814d1828bc2a793
   matchType ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
     -> Control.PatternArrows.Pattern
-         () Language.PureScript.Types.Type Text.PrettyPrint.Boxes.Box
+         ()
+         Language.PureScript.Pretty.Types.PrettyPrintType
+         Text.PrettyPrint.Boxes.Box
   {- Arity: 1, Strictness: <L,U(U,U)> -}
-71e2d247b7c00b68530ecf063e33557c
+11a28b259161844f1d8d17a50499925b
   prettyPrintLabel ::
     Language.PureScript.Label.Label -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <L,U>,
@@ -303,13 +717,16 @@ ceab02993eea4e1bbd587a73dc0e5e52
                    -> Language.PureScript.PSString.prettyPrintString
                         ds3 `cast` (Language.PureScript.Label.N:Label[0])
                    GHC.Base.Just s'
-                   -> case Language.PureScript.Pretty.Common.objectKeyRequiresQuoting
-                             s' of wild1 {
-                        GHC.Types.False -> s'
-                        GHC.Types.True
+                   -> case s' of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                      case Language.PureScript.Parser.Lexer.$wisUnquotedKey
+                             ww1
+                             ww2
+                             ww3 of wild1 {
+                        GHC.Types.False
                         -> Language.PureScript.PSString.prettyPrintString
-                             ds3 `cast` (Language.PureScript.Label.N:Label[0]) } }) -}
-b4f7948944c82937c1d5c459db68428a
+                             ds3 `cast` (Language.PureScript.Label.N:Label[0])
+                        GHC.Types.True -> ww } } }) -}
+48b27f3dfeaf5bea7d1c877cf0c7928f
   prettyPrintObjectKey ::
     Language.PureScript.PSString.PSString -> Data.Text.Internal.Text
   {- Arity: 1, Strictness: <L,U>,
@@ -318,50 +735,52 @@ b4f7948944c82937c1d5c459db68428a
                   `cast`
                 (Language.PureScript.Label.N:Label[0]
                  ->_R <Data.Text.Internal.Text>_R) -}
-b18421469ed9c0094b271b2bf95eca3a
-  prettyPrintRow :: Language.PureScript.Types.Type -> GHC.Base.String
+2b663fbe04570ace58c8178741418288
+  prettyPrintRow ::
+    Language.PureScript.Pretty.Types.PrettyPrintType -> GHC.Base.String
   {- Arity: 1, Strictness: <L,U>,
-     Unfolding: (\ (x :: Language.PureScript.Types.Type) ->
+     Unfolding: (\ (x :: Language.PureScript.Pretty.Types.PrettyPrintType) ->
                  case Language.PureScript.Pretty.Types.prettyPrintRow_g
                         x of ww { Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 ->
                  Data.OldList.unlines
                    (Text.PrettyPrint.Boxes.$wrenderBox ww1 ww2 ww3) }) -}
-a6aad77ad9c17f7f93ec5d585435f191
+76842e8a117168455f375ce5e70ae0e3
   prettyPrintRow1 :: GHC.Types.Char
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ')'#) -}
-248b5dd51439ce3296111e92ac0dfaba
+e931edd4cec2bf8a2dce0b5a8576f129
   prettyPrintRow2 :: GHC.Types.Char
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '('#) -}
-2de9af7f7e6047e678af43f554b48c7a
+3a3a947eca23a3d0aa2ac40f1b55b963
   prettyPrintRowWith ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
     -> GHC.Types.Char
     -> GHC.Types.Char
-    -> Language.PureScript.Types.Type
+    -> Language.PureScript.Pretty.Types.PrettyPrintType
     -> Text.PrettyPrint.Boxes.Box
   {- Arity: 3, Strictness: <L,1*U(A,1*U)><L,U><L,U> -}
-2ba8f95e24333ecb89795e111f620145
+5374b8e25c67c5574aa491db022dd260
   prettyPrintRow_g ::
-    Language.PureScript.Types.Type -> Text.PrettyPrint.Boxes.Box
+    Language.PureScript.Pretty.Types.PrettyPrintType
+    -> Text.PrettyPrint.Boxes.Box
   {- Unfolding: (Language.PureScript.Pretty.Types.prettyPrintRowWith
                    Language.PureScript.Pretty.Types.defaultOptions
                    Language.PureScript.Pretty.Types.prettyPrintRow2
                    Language.PureScript.Pretty.Types.prettyPrintRow1) -}
-fa7c2411f759337e68ac258ccfd09b39
+b026e64af955b0ed374a3afe7835614b
   prettyPrintSuggestedType ::
-    Language.PureScript.Types.Type -> GHC.Base.String
+    Language.PureScript.Types.Type a -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>,
-     Unfolding: (\ (x :: Language.PureScript.Types.Type) ->
+     Unfolding: (\ @ a (x :: Language.PureScript.Types.Type a) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintSuggestedType_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         (Language.PureScript.Pretty.Types.convertPrettyPrintType @ a x))
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
@@ -375,86 +794,32 @@ fa7c2411f759337e68ac258ccfd09b39
                       case a1 of ww { Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 ->
                       Data.OldList.unlines
                         (Text.PrettyPrint.Boxes.$wrenderBox ww1 ww2 ww3) } } }) -}
-46aefa316ed3dd0b23225c85dbd9ba19
-  prettyPrintSuggestedType_convert ::
-    Language.PureScript.Types.Type -> Language.PureScript.Types.Type
-  {- Arity: 1, Strictness: <S,1*U>,
-     Unfolding: (\ (ds3 :: Language.PureScript.Types.Type) ->
-                 case ds3 of wild {
-                   DEFAULT -> wild
-                   Language.PureScript.Types.TypeApp ds4 ret
-                   -> case ds4 of wild1 {
-                        DEFAULT
-                        -> case Language.PureScript.Types.$fEqType_$c==
-                                  wild1
-                                  Language.PureScript.Environment.tyRecord of wild2 {
-                             GHC.Types.False -> wild
-                             GHC.Types.True -> Language.PureScript.Types.PrettyPrintObject ret }
-                        Language.PureScript.Types.TypeApp f arg
-                        -> case Language.PureScript.Types.$fEqType_$c==
-                                  f
-                                  Language.PureScript.Environment.tyFunction of wild2 {
-                             GHC.Types.False
-                             -> case Language.PureScript.Types.$fEqType_$c==
-                                       wild1
-                                       Language.PureScript.Environment.tyRecord of wild3 {
-                                  GHC.Types.False -> wild
-                                  GHC.Types.True
-                                  -> Language.PureScript.Types.PrettyPrintObject ret }
-                             GHC.Types.True
-                             -> Language.PureScript.Types.PrettyPrintFunction arg ret } } }) -}
-04aa4004b7425e2a44c689b313af200c
-  prettyPrintSuggestedType_convertForAlls ::
-    Language.PureScript.Types.Type -> Language.PureScript.Types.Type
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
-     Unfolding: InlineRule (1, True, False)
-                (\ (ds3 :: Language.PureScript.Types.Type) ->
-                 case ds3 of wild {
-                   DEFAULT -> wild
-                   Language.PureScript.Types.ForAll ident ty ds4
-                   -> Language.PureScript.Pretty.Types.prettyPrintSuggestedType_go
-                        (GHC.Types.:
-                           @ Data.Text.Internal.Text
-                           ident
-                           (GHC.Types.[] @ Data.Text.Internal.Text))
-                        ty }) -}
-78e6734c343871594d703e2b54818b63
+65e36dc70e75b4d397d19dc6d66bb007
   prettyPrintSuggestedType_d :: Text.PrettyPrint.Boxes.Box
   {- Strictness: x -}
-1a8811d2fa753604210fd1dd4346646d
-  prettyPrintSuggestedType_go ::
-    [Data.Text.Internal.Text]
-    -> Language.PureScript.Types.Type -> Language.PureScript.Types.Type
-  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>m16,
-     Inline: [0],
-     Unfolding: InlineRule (2, True, False)
-                (\ (w :: [Data.Text.Internal.Text])
-                   (w1 :: Language.PureScript.Types.Type) ->
-                 case Language.PureScript.Pretty.Types.$wgo
-                        w
-                        w1 of ww { (#,#) ww1 ww2 ->
-                 Language.PureScript.Types.PrettyPrintForAll ww1 ww2 }) -}
-f03e0cd26be4d9eebd374fa1581d4919
+887f8150891a62f566fbc21a7a09580a
   prettyPrintSuggestedType_p ::
     Control.PatternArrows.Pattern
-      () Language.PureScript.Types.Type Text.PrettyPrint.Boxes.Box
+      ()
+      Language.PureScript.Pretty.Types.PrettyPrintType
+      Text.PrettyPrint.Boxes.Box
   {- Unfolding: (Language.PureScript.Pretty.Types.matchType
                    Language.PureScript.Pretty.Types.suggestingOptions) -}
-cc66574a7951d989b0a885f58cf82665
+8c85e68e61e192deeac8b6a436f4802e
   prettyPrintType ::
-    Language.PureScript.Types.Type -> GHC.Base.String
+    Language.PureScript.Types.Type a -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>,
-     Unfolding: (\ (x :: Language.PureScript.Types.Type) ->
+     Unfolding: (\ @ a (x :: Language.PureScript.Types.Type a) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintType_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         (Language.PureScript.Pretty.Types.convertPrettyPrintType @ a x))
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
@@ -468,21 +833,21 @@ cc66574a7951d989b0a885f58cf82665
                       case a1 of ww { Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 ->
                       Data.OldList.unlines
                         (Text.PrettyPrint.Boxes.$wrenderBox ww1 ww2 ww3) } } }) -}
-5ca4902b387d286e29ab3530e5ce1422
+3b838937080d8b088e45658ebe89c533
   prettyPrintTypeAtom ::
-    Language.PureScript.Types.Type -> GHC.Base.String
+    Language.PureScript.Types.Type a -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>,
-     Unfolding: (\ (x :: Language.PureScript.Types.Type) ->
+     Unfolding: (\ @ a (x :: Language.PureScript.Types.Type a) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintTypeAtom_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         (Language.PureScript.Pretty.Types.convertPrettyPrintType @ a x))
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
@@ -496,31 +861,33 @@ cc66574a7951d989b0a885f58cf82665
                       case a1 of ww { Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 ->
                       Data.OldList.unlines
                         (Text.PrettyPrint.Boxes.$wrenderBox ww1 ww2 ww3) } } }) -}
-be849b21c4cb2f9b0812c00a7a127ef8
+123c651c61ade8482f28c5c0ea231ad3
   prettyPrintTypeAtom_d :: Text.PrettyPrint.Boxes.Box
   {- Strictness: x -}
-f78da280bb71b05dfec99b3c154c1e01
+4b1a256cf941df9211841ccbb5200528
   prettyPrintTypeAtom_p ::
     Control.PatternArrows.Pattern
-      () Language.PureScript.Types.Type Text.PrettyPrint.Boxes.Box
+      ()
+      Language.PureScript.Pretty.Types.PrettyPrintType
+      Text.PrettyPrint.Boxes.Box
   {- Unfolding: (Language.PureScript.Pretty.Types.$wmatchTypeAtom
                    GHC.Types.False
                    GHC.Types.False) -}
-463888e14f5071e7540b38defef0c1e3
+f466b66a099fc0f20ff2c59e7d8098b7
   prettyPrintTypeWithUnicode ::
-    Language.PureScript.Types.Type -> GHC.Base.String
+    Language.PureScript.Types.Type a -> GHC.Base.String
   {- Arity: 1, Strictness: <L,1*U>,
-     Unfolding: (\ (x :: Language.PureScript.Types.Type) ->
+     Unfolding: (\ @ a (x :: Language.PureScript.Types.Type a) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintTypeWithUnicode_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         (Language.PureScript.Pretty.Types.convertPrettyPrintType @ a x))
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
@@ -534,41 +901,46 @@ f78da280bb71b05dfec99b3c154c1e01
                       case a1 of ww { Text.PrettyPrint.Boxes.Box ww1 ww2 ww3 ->
                       Data.OldList.unlines
                         (Text.PrettyPrint.Boxes.$wrenderBox ww1 ww2 ww3) } } }) -}
-baad9030d05f19abb4fa408fa4b7cbad
+22a5ebfe55e8dd1ff2893fb3c2efc379
   prettyPrintTypeWithUnicode1 ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (Language.PureScript.Pretty.Types.TypeRenderOptions
                    GHC.Types.False
                    GHC.Types.True) -}
-b45784b6d379ba81aa6a47e237bbfc03
+71a0960068ecb44fd4036d9b6af7407b
   prettyPrintTypeWithUnicode_p ::
     Control.PatternArrows.Pattern
-      () Language.PureScript.Types.Type Text.PrettyPrint.Boxes.Box
+      ()
+      Language.PureScript.Pretty.Types.PrettyPrintType
+      Text.PrettyPrint.Boxes.Box
   {- Unfolding: (Language.PureScript.Pretty.Types.matchType
                    Language.PureScript.Pretty.Types.prettyPrintTypeWithUnicode1) -}
-49a502363230c65d32874405b4badc73
+bebe1eb74c61ed6ed8ac9835c8253c62
   prettyPrintType_p ::
     Control.PatternArrows.Pattern
-      () Language.PureScript.Types.Type Text.PrettyPrint.Boxes.Box
+      ()
+      Language.PureScript.Pretty.Types.PrettyPrintType
+      Text.PrettyPrint.Boxes.Box
   {- Unfolding: (Language.PureScript.Pretty.Types.matchType
                    Language.PureScript.Pretty.Types.defaultOptions) -}
-b656b018f55102a219ae102162964e07
+3c3ed20a32fa1f11ed03131a8d8774bd
   suggestedTypeAsBox ::
-    Language.PureScript.Types.Type -> Text.PrettyPrint.Boxes.Box
-  {- Arity: 1, Strictness: <L,1*U>m,
+    Language.PureScript.Pretty.Types.PrettyPrintType
+    -> Text.PrettyPrint.Boxes.Box
+  {- Arity: 1, Strictness: <L,U>m,
      Unfolding: InlineRule (1, True, False)
-                (\ (x :: Language.PureScript.Types.Type) ->
+                (\ (x :: Language.PureScript.Pretty.Types.PrettyPrintType) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintSuggestedType_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         x)
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
@@ -576,14 +948,14 @@ b656b018f55102a219ae102162964e07
                    GHC.Base.Nothing
                    -> Language.PureScript.Pretty.Types.prettyPrintSuggestedType_d
                    GHC.Base.Just x1 -> case x1 of wild1 { (,) a1 ds3 -> a1 } }) -}
-1384b5906551f1bd6646ece378a2505f
+1de324b236bf0d3b035abc3e778c50fe
   suggestingOptions ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (Language.PureScript.Pretty.Types.TypeRenderOptions
                    GHC.Types.True
                    GHC.Types.False) -}
-c2c5b189cb21e779fb84b028599c09a3
+ab0a87b3f794de450b30c0a90ebdbe1f
   troSuggesting ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
     -> GHC.Types.Bool
@@ -593,7 +965,7 @@ c2c5b189cb21e779fb84b028599c09a3
                 (\ (ds3 :: Language.PureScript.Pretty.Types.TypeRenderOptions) ->
                  case ds3 of wild { Language.PureScript.Pretty.Types.TypeRenderOptions ds4 ds5 ->
                  ds4 }) -}
-c2c5b189cb21e779fb84b028599c09a3
+ab0a87b3f794de450b30c0a90ebdbe1f
   troUnicode ::
     Language.PureScript.Pretty.Types.TypeRenderOptions
     -> GHC.Types.Bool
@@ -603,22 +975,22 @@ c2c5b189cb21e779fb84b028599c09a3
                 (\ (ds3 :: Language.PureScript.Pretty.Types.TypeRenderOptions) ->
                  case ds3 of wild { Language.PureScript.Pretty.Types.TypeRenderOptions ds4 ds5 ->
                  ds5 }) -}
-b9289a1bb3ff026cfc8428a45c50c758
+d61ced402e15c08e6ec6600aad86f871
   typeAsBox ::
-    Language.PureScript.Types.Type -> Text.PrettyPrint.Boxes.Box
+    Language.PureScript.Types.Type a -> Text.PrettyPrint.Boxes.Box
   {- Arity: 1, Strictness: <L,1*U>m,
      Unfolding: InlineRule (1, True, False)
-                (\ (x :: Language.PureScript.Types.Type) ->
+                (\ @ a (x :: Language.PureScript.Types.Type a) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintType_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         (Language.PureScript.Pretty.Types.convertPrettyPrintType @ a x))
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
@@ -626,22 +998,70 @@ b9289a1bb3ff026cfc8428a45c50c758
                    GHC.Base.Nothing
                    -> Language.PureScript.Pretty.Types.prettyPrintSuggestedType_d
                    GHC.Base.Just x1 -> case x1 of wild1 { (,) a1 ds3 -> a1 } }) -}
-090342212fcc8db36f243e485493a995
+a066a805677918bf4d00bd93e31faaaf
+  typeAsBox' ::
+    Language.PureScript.Pretty.Types.PrettyPrintType
+    -> Text.PrettyPrint.Boxes.Box
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Pretty.Types.PrettyPrintType) ->
+                 case (Language.PureScript.Pretty.Types.prettyPrintType_p
+                         `cast`
+                       (Control.PatternArrows.N:Pattern[0]
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         x)
+                        `cast`
+                      (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                           <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
+                        GHC.Tuple.() of wild {
+                   GHC.Base.Nothing
+                   -> Language.PureScript.Pretty.Types.prettyPrintSuggestedType_d
+                   GHC.Base.Just x1 -> case x1 of wild1 { (,) a1 ds3 -> a1 } }) -}
+af4f19fe8aa5ece789b8debdcbf4054f
   typeAtomAsBox ::
-    Language.PureScript.Types.Type -> Text.PrettyPrint.Boxes.Box
+    Language.PureScript.Types.Type a -> Text.PrettyPrint.Boxes.Box
   {- Arity: 1, Strictness: <L,1*U>m,
      Unfolding: InlineRule (1, True, False)
-                (\ (x :: Language.PureScript.Types.Type) ->
+                (\ @ a (x :: Language.PureScript.Types.Type a) ->
                  case (Language.PureScript.Pretty.Types.prettyPrintTypeAtom_p
                          `cast`
                        (Control.PatternArrows.N:Pattern[0]
-                            <()>_N <Language.PureScript.Types.Type>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
-                                                                                                           <Control.Monad.Trans.State.Lazy.StateT
-                                                                                                              ()
-                                                                                                              GHC.Base.Maybe>_R
-                                                                                                           <Language.PureScript.Types.Type>_R
-                                                                                                           <Text.PrettyPrint.Boxes.Box>_N)
-                         (Language.PureScript.Pretty.Types.insertPlaceholders x))
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         (Language.PureScript.Pretty.Types.convertPrettyPrintType @ a x))
+                        `cast`
+                      (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                           <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)
+                        GHC.Tuple.() of wild {
+                   GHC.Base.Nothing
+                   -> Language.PureScript.Pretty.Types.prettyPrintTypeAtom_d
+                   GHC.Base.Just x1 -> case x1 of wild1 { (,) a1 ds3 -> a1 } }) -}
+7ee565d9e013fe38f3deecd81752194c
+  typeAtomAsBox' ::
+    Language.PureScript.Pretty.Types.PrettyPrintType
+    -> Text.PrettyPrint.Boxes.Box
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.PureScript.Pretty.Types.PrettyPrintType) ->
+                 case (Language.PureScript.Pretty.Types.prettyPrintTypeAtom_p
+                         `cast`
+                       (Control.PatternArrows.N:Pattern[0]
+                            <()>_N <Language.PureScript.Pretty.Types.PrettyPrintType>_N <Text.PrettyPrint.Boxes.Box>_N ; Control.Arrow.N:Kleisli[0]
+                                                                                                                             <Control.Monad.Trans.State.Lazy.StateT
+                                                                                                                                ()
+                                                                                                                                GHC.Base.Maybe>_R
+                                                                                                                             <Language.PureScript.Pretty.Types.PrettyPrintType>_R
+                                                                                                                             <Text.PrettyPrint.Boxes.Box>_N)
+                         x)
                         `cast`
                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
                            <()>_N <GHC.Base.Maybe>_R <Text.PrettyPrint.Boxes.Box>_N)

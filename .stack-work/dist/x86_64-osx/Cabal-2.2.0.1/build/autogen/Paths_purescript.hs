@@ -26,14 +26,14 @@ catchIO :: IO a -> (Exception.IOException -> IO a) -> IO a
 catchIO = Exception.catch
 
 version :: Version
-version = Version [0,12,1] []
+version = Version [0,12,2] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/bin"
-libdir     = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/lib/x86_64-osx-ghc-8.4.3/purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"
+libdir     = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/lib/x86_64-osx-ghc-8.4.3/purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"
 dynlibdir  = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/lib/x86_64-osx-ghc-8.4.3"
-datadir    = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/share/x86_64-osx-ghc-8.4.3/purescript-0.12.1"
-libexecdir = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/libexec/x86_64-osx-ghc-8.4.3/purescript-0.12.1"
+datadir    = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/share/x86_64-osx-ghc-8.4.3/purescript-0.12.2"
+libexecdir = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/libexec/x86_64-osx-ghc-8.4.3/purescript-0.12.2"
 sysconfdir = "/Users/aravindmallapureddy/Desktop/code/juspAy/purescript-0.12.1/.stack-work/install/x86_64-osx/lts-12.0/8.4.3/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath

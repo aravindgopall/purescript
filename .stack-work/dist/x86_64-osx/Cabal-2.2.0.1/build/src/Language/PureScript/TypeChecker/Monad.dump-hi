@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 20:47:24.012457 UTC
+2019-01-24 14:15:28.885025 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeChecker.Monad 8043
-  interface hash: 2072fdb6ac4761e2bb89f7bfe45cf761
-  ABI hash: 36a86b5cfef989dae17621bbace19db6
-  export-list hash: 9d9d275b045efb93172c1bb44957da47
-  orphan hash: d38d14f050d03ce8b6704c1517a0570b
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeChecker.Monad 8043
+  interface hash: 107a9dac8455e61a9d72dca3da9393fc
+  ABI hash: 5c6d6cca9d9f5acb98ab527615b54d6d
+  export-list hash: 64079f93a7ca5d81f53055abc7f8ac53
+  orphan hash: 0e69aa4a6fec8795d8226f20783b3f20
   flag hash: 409eb3effb99b666bef22fcf42369757
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -69,17 +69,18 @@ module dependencies: Control.Monad.Supply
                      Language.PureScript.Traversals
                      Language.PureScript.TypeClassDictionaries Language.PureScript.Types
                      Paths_purescript
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      ansi-terminal-0.8.0.4 array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2
-                      base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
-                      blaze-builder-0.4.1.0 boxes-0.1.5 bytestring-0.10.8.2 colour-2.3.4
-                      containers-0.5.11.0 deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
-                      integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
-                      language-javascript-0.6.0.11 mtl-2.2.2 parsec-3.1.13.0
-                      pattern-arrows-0.0.2 pretty-1.1.3.6 primitive-0.6.3.0
-                      protolude-0.2.2 random-1.1 scientific-0.3.6.2 sourcemap-0.1.6
-                      split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
+package dependencies: aeson-1.3.1.1 ansi-terminal-0.8.0.4
+                      array-0.5.2.0 async-2.2.1 attoparsec-0.13.2.2 base-4.11.1.0
+                      base-compat-0.10.4 binary-0.8.5.1 blaze-builder-0.4.1.0 boxes-0.1.5
+                      bytestring-0.10.8.2 colour-2.3.4 containers-0.5.11.0
+                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
+                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.1 language-javascript-0.6.0.11
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pattern-arrows-0.0.2 pretty-1.1.3.6
+                      primitive-0.6.3.0 protolude-0.2.2 random-1.1 scientific-0.3.6.2
+                      sourcemap-0.1.6 split-0.2.3.3 stm-2.4.5.0 syb-0.7 tagged-0.8.5
                       template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
                       time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       unordered-containers-0.2.9.0 utf8-string-1.0.1.1 uuid-types-1.0.3
@@ -88,18 +89,21 @@ orphans: syb-0.7:Data.Generics.Instances colour-2.3.4:Data.Colour
          stm-2.4.5.0:Control.Monad.STM
          attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
-         vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
          time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
          time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
          time-1.8.0.2:Data.Time.Calendar.Gregorian
-         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
-         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
-         bytestring-0.10.8.2:Data.ByteString.Builder
-         text-1.2.3.0:Data.Text.Show
+         microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         hashable-1.2.7.0:Data.Hashable.Generic
+         vector-0.12.0.1:Data.Vector.Unboxed
          vector-0.12.0.1:Data.Vector.Fusion.Bundle
          transformers-0.5.5.0:Control.Monad.Trans.Error
-         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+         text-1.2.3.0:Data.Text.Lazy text-1.2.3.0:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
 family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -118,21 +122,26 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Declarations
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.Operators
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Environment
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Label
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.TypeClassDictionaries
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Types
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Declarations
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.Operators
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Environment
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Label
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.TypeClassDictionaries
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Types
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -148,6 +157,7 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
 import  -/  base-4.11.1.0:Control.Arrow ce43199b5356a11ee2a8317f0ec30aee
 import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
 import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.List.NonEmpty 595ee3baddcadebc4831ea7541427984
 import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
 import  -/  base-4.11.1.0:Data.Type.Equality 9bb29c7615a8eec000fd03d114737416
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
@@ -159,66 +169,66 @@ import  -/  mtl-2.2.2:Control.Monad.Error.Class df146c18e27154b8df4c8637c59fd61b
 import  -/  mtl-2.2.2:Control.Monad.State 1f28325cb5ef11b6b40ffadfe4bc2ca3
 import  -/  mtl-2.2.2:Control.Monad.State.Class acc76e93f44ac4486524db1a327e0a0a
 import  -/  mtl-2.2.2:Control.Monad.Writer.Class 69f540e019eada69892c26d267276458
-import  -/  Language.PureScript.AST.Declarations 568e046fbf27b243bfc96f09017d4782
-  Context c827e63ac539a5076a60fc8c74223610
-  CycleInDeclaration 67af7f72c42808d9f19fc5097d3ab5da
-  ErrorMessageHint b31d94d0c7b90700d40f9ba6ec420e41
-  NameIsUndefined 9d817d271b064b6e392acd388ca5c97f
-  ShadowedTypeVar d4a3c585e98afd60b41ec6774c6409e8
-  UndefinedTypeVariable 618567e3392059402b3fa9282160ade5
-import  -/  Language.PureScript.AST.SourcePos b3f67f807f2dce79528bbb15bd9c7104
-  SourceSpan 73c071552214b3f18e94970349d3affc
-import  -/  Language.PureScript.Environment 31667499b7017b19998bb405474fbe93
-  exports: 56b1ef0ac6132b4c113ce26a807dcfb6
-  Defined d489ca36b83d6a80bdf403858bcc7d71
-  Environment c291d940fae22a3f1400d8c90f26bdd4
-  LocalTypeVariable 7c862a19590b3d920bf3c8dd3a236c66
-  NameKind 90ac7b5e1c331fe4ca4a3a5c9b2afcbd
-  NameVisibility 610613df6c74f57795f9d575591a7472
-  Private 99871aa8de3459034b1625c22dfbd4f2
-  ScopedTypeVar c3daed8f7583b0d789d2273e9a4a226a
-  TypeKind 0a0df18a3a5bbdd9f1dda59baf0fb992
-  Undefined 5cfb1d3c43eabcda9f9dbb8b4c7a389c
-  initEnvironment 7e43632077c77373180c2c3d6aac18ae
-  names c291d940fae22a3f1400d8c90f26bdd4
-  typeClassDictionaries c291d940fae22a3f1400d8c90f26bdd4
-  types c291d940fae22a3f1400d8c90f26bdd4
-import  -/  Language.PureScript.Errors 15d6eb6b2d4d480750061a0585d4e64c
-  exports: 142ea650dec62642d1cff09ef1eee74e
-  MultipleErrors ad1de73a1d5a6b0ccd9657dedebc94f3
-  addHint c2d92e868230119a30631ae026505b5b
-  errorMessage 56e7aa221570d7d0bd9b4d606b8de7f2
-  positionedError d8ca57e35818a7e93c5200eeb190e167
-  rethrow f843b34a93fe990a8e71af5f4eb4be9f
-  warnWithPosition f626dbbef53d3f006a3630d5b23307ee
-import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
-  exports: 2c2448e43e622d2466a59b9cd8f4db91
-  Kind 3e1e213eb647453235d33b0d1b36ec59
-import  -/  Language.PureScript.Names b3bf151840f3e8f2eb61eff186432886
-  exports: f7f3503d20957194bda83c16bb5f1288
-  ClassName e69348bcf8c43a2174540a1d5983bfaa
-  Ident 0ccd7f2221de64569e50634367691253
-  Ident ab98a56ffa88760dad1380079e8ee35a
-  ModuleName 5a70062bbdf29e6dc659ad8bf5326b50
-  ProperName 9eb330c84db102abf2d0f2652fe4a144
-  ProperName 29f101e190cc99df85623423972e606f
-  Qualified d600a7f01c8203cf5504999de99c923c
-  Qualified 5a70062bbdf29e6dc659ad8bf5326b50
-  TypeName da42c92f73f4f363c63ecaf77b6335b9
-  disqualify 3e7b8117c7613f1d74fadc5d62b59f54
-import  -/  Language.PureScript.TypeClassDictionaries 85b2520728908ad345f56b1c2cbe3fca
-  exports: cc9c93841004965313696be0c74a01eb
-  NamedDict 1c7eb5af0357b976dbe077e65975eac8
-  TypeClassDictionaryInScope c1f0a82f8146987fb0ec5a84ba847e8e
-  tcdClassName 6fae3e2d3c76b2d8044da9ff9cec0bdb
-  tcdValue 6fae3e2d3c76b2d8044da9ff9cec0bdb
-import  -/  Language.PureScript.Types 74562e642f5297557b3a23aac7819ad1
-  exports: ae97bc75fcebc59f59c970736847a827
-  Type 93223f8afa90d0facc05a03f863dc72d
+import  -/  Language.PureScript.AST.Declarations 586bc75044e8737d02875208d17d4395
+  Context 44dd7830663f65e1b8791f79a13f4cc0
+  CycleInDeclaration e0dfc89422b1ddae332185ecc0077f4a
+  ErrorMessageHint e92f6ee78a22c0eadc3566d7d1f48d5b
+  NameIsUndefined 95fff85d3aa32709f78982493966418a
+  ShadowedTypeVar 4c52be86526b8358b21559ef04c405da
+  UndefinedTypeVariable 753aa04f581392bbd8dc7e51e2d8b736
+import  -/  Language.PureScript.AST.SourcePos 63acacac5b7be73d04e5be0047a9a89a
+  SourceSpan 1e0cf2bd3ea18f97a2ff152297f09219
+import  -/  Language.PureScript.Environment 467b25d81b890e1aaabe28d0f09d192d
+  exports: a0cb6cb8c78c56365f58c9f88d1fe000
+  Defined 324606166c226f373232031c92abddc6
+  Environment 7eb61fe78108d98d82e39145869b2402
+  LocalTypeVariable e2c76fd80d42fa567d79861fae05116e
+  NameKind 7e23f4ddba2350405f465a39833424c7
+  NameVisibility 22706fecc369659455f7dc5f13f3340f
+  Private fa142db41a2d9e82cee092dfbb31a494
+  ScopedTypeVar 3c76c2f4f1b2cfce95479237b75857ca
+  TypeKind 713362c52c19b15de0cab368ddfda667
+  Undefined 33d3e9c9b0e559f52c77c918db8d0dd4
+  initEnvironment 3ad13bed759e200214c30a8db150a0f5
+  names 7eb61fe78108d98d82e39145869b2402
+  typeClassDictionaries 7eb61fe78108d98d82e39145869b2402
+  types 7eb61fe78108d98d82e39145869b2402
+import  -/  Language.PureScript.Errors 3c1ad933587510f8b20a8c9ec2e86ce9
+  exports: 8e61484c4664eceb943d9fc4820c721b
+  MultipleErrors e1ef6a17348ccfe3ef65185d3c5f9026
+  addHint 4d7c0f041e7397261babf0b1c1669b2a
+  errorMessage 4308e76c0636918842d6acdb173a8e4b
+  positionedError 294ba93655a5845067da4cbeb75d1347
+  rethrow 3f15f6976fa85d5a6c226df5a731c52a
+  warnWithPosition 7ad80b7c006a458b8324a8a9926b1f43
+import  -/  Language.PureScript.Kinds e26b9cf8211f7e72bb44fdd3faed066e
+  exports: fe71635ad7964c0d620fb0685614a050
+  SourceKind 4cdf50d4b2444221832ca704f3a0c468
+import  -/  Language.PureScript.Names 00f694509122478d97b327fbbccae327
+  exports: ad7ae34f85124c68e8ba1c90fb2e732f
+  ClassName c5d98a635cb261f6a93bf01096d0c6ed
+  Ident 71f167265716f619863a793fa311e198
+  Ident bad3562aa6138b6192713ac281080869
+  ModuleName 1b2ddf0c04464d2fa2588925f10c1966
+  ProperName f69d3801241fcb4773f1284cd28f2dee
+  ProperName a7268334e0b909381550b9329cb80fcc
+  Qualified b6e1bc9e7244a41d3c6149c9b5c2d6d8
+  Qualified 1b2ddf0c04464d2fa2588925f10c1966
+  TypeName 40ce511c66a72431b4e87351210f7b03
+  disqualify bf1cc3b0e6c1ffc0008a6113bf8116c0
+import  -/  Language.PureScript.TypeClassDictionaries 7fbd42662a194b8e85db9d2e22a4ea07
+  exports: d83fdf73223cc4030d8649333c7594ad
+  NamedDict 5e215d8e3d225869af57b18c7fc0b693
+  TypeClassDictionaryInScope 83c0c3aa36a88c60dd2bb2e7525bc817
+  tcdClassName d6c50933d00906849633ac7fdfbcd506
+  tcdValue d6c50933d00906849633ac7fdfbcd506
+import  -/  Language.PureScript.Types 80a51f62cb3e6c71f024289b88f07b7f
+  exports: 229bb7528146da886cffbefad5822e19
+  SourceType 0ac818517c14fedd280ef5885ae0cdc3
 import  -/  text-1.2.3.0:Data.Text 7daa7e6c9b39d8cc1679e5ec5c64d2be
 import  -/  text-1.2.3.0:Data.Text.Internal 30a0a123f71f63b26cd34c6b24f23411
 import  -/  transformers-0.5.5.0:Control.Monad.Trans.State.Lazy bb07ba19cd14893d125b163b03c16c98
-e21fd3ef7339ad7b7051951defc2e545
+0bdcc74dcf778c671a2040bdef627268
   $s$fEqMaybe ::
     GHC.Classes.Eq
       (GHC.Base.Maybe Language.PureScript.Names.ModuleName)
@@ -244,7 +254,7 @@ e21fd3ef7339ad7b7051951defc2e545
                                a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } })
                   Language.PureScript.TypeChecker.Monad.$s$fEqMaybe_$s$fEqMaybe_$c/= -}
-129a81622b2373e33223771244b693f2
+c2f4b9491bb1558edf2fa4e88ca07ee9
   $s$fEqMaybe_$s$fEqMaybe_$c/= ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
@@ -272,7 +282,7 @@ e21fd3ef7339ad7b7051951defc2e545
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              GHC.Types.False -> GHC.Types.True
                              GHC.Types.True -> GHC.Types.False } } }) -}
-baafcee01b3487872acd0ccf8e584818
+e11c6beb1deca8b8e245ea1905a7e1a9
   $s$fEqQualified ::
     GHC.Classes.Eq
       (Language.PureScript.Names.Qualified
@@ -289,7 +299,7 @@ baafcee01b3487872acd0ccf8e584818
                      (Language.PureScript.Names.$fEqProperName
                         @ 'Language.PureScript.Names.ClassName))
                   Language.PureScript.TypeChecker.Monad.$s$fEqQualified_$s$fEqQualified_$c/= -}
-49ad3ecd3c5f3018b56609a6980584a6
+973641fbc0528a0906dc726cb847f2b7
   $s$fEqQualified1 ::
     GHC.Classes.Eq
       (Language.PureScript.Names.Qualified
@@ -306,7 +316,7 @@ baafcee01b3487872acd0ccf8e584818
                      (Language.PureScript.Names.$fEqProperName
                         @ 'Language.PureScript.Names.TypeName))
                   Language.PureScript.TypeChecker.Monad.$s$fEqQualified_$s$fEqQualified_$c/=1 -}
-cc9bba85d025ff86aa593700bc60552c
+0201bbed76010a35edd24d8d1adeb517
   $s$fEqQualified2 ::
     GHC.Classes.Eq
       (Language.PureScript.Names.Qualified
@@ -319,7 +329,7 @@ cc9bba85d025ff86aa593700bc60552c
                      @ Language.PureScript.Names.Ident
                      Language.PureScript.Names.$fEqIdent)
                   Language.PureScript.TypeChecker.Monad.$s$fEqQualified_$s$fEqQualified_$c/=2 -}
-d34adb5e384418a2495faa42185ccbc4
+a17da36e36d8f11358e0471418086912
   $s$fEqQualified_$s$fEqQualified_$c/= ::
     Language.PureScript.Names.Qualified
       (Language.PureScript.Names.ProperName
@@ -347,7 +357,7 @@ d34adb5e384418a2495faa42185ccbc4
                         y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-b71359eb8dcf5961be65c9a5fcc7857e
+0d91e322207df7c30edeba510b67bc3a
   $s$fEqQualified_$s$fEqQualified_$c/=1 ::
     Language.PureScript.Names.Qualified
       (Language.PureScript.Names.ProperName
@@ -375,7 +385,7 @@ b71359eb8dcf5961be65c9a5fcc7857e
                         y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-4a19386a929d0c5fa4cddf24f1ddd8d4
+a17bd11be04ffaf77c9e132d1610d0ea
   $s$fEqQualified_$s$fEqQualified_$c/=2 ::
     Language.PureScript.Names.Qualified Language.PureScript.Names.Ident
     -> Language.PureScript.Names.Qualified
@@ -396,7 +406,7 @@ b71359eb8dcf5961be65c9a5fcc7857e
                         y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-8734eb50ce9e5441f0c77895b51a59a5
+7d98682eea8d3e5161a99e3747b4ba06
   $s$fOrdMaybe ::
     GHC.Classes.Ord
       (GHC.Base.Maybe Language.PureScript.Names.ModuleName)
@@ -523,7 +533,7 @@ b71359eb8dcf5961be65c9a5fcc7857e
                                     a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                     b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                                DEFAULT -> wild1 GHC.Types.LT -> wild } } }) -}
-b75ead126f64b4f0087fe23e08d7b7c3
+030851f69ec711932f883856a0f9e752
   $s$fOrdMaybe_$c< ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
@@ -544,7 +554,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                         -> Language.PureScript.Names.$fOrdModuleName6
                              a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
                              b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
-3498c68287afeb7535be7a8eda8a925a
+88214454c2674babd0f30ceeba826bf3
   $s$fOrdMaybe_$ccompare ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
@@ -569,7 +579,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                                 @ 'Language.PureScript.Names.Namespace)
                              a2 `cast` (Language.PureScript.Names.N:ModuleName[0])
                              b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) } }) -}
-24071e6cbd83ded91bacd51a4205f975
+c619f2b887e0947eb2a2674350fcec8e
   $s$fOrdMaybe_$cmax ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
@@ -592,7 +602,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                                   a1 `cast` (Language.PureScript.Names.N:ModuleName[0])
                                   b1 `cast` (Language.PureScript.Names.N:ModuleName[0]) of wild2 {
                              DEFAULT -> wild GHC.Types.LT -> wild1 } } }) -}
-41db271ea08e1c6af4992f1fab18166a
+82feb828d45096b2c279b06cbdbca925
   $s$fOrdQualified ::
     GHC.Classes.Ord
       (Language.PureScript.Names.Qualified
@@ -685,7 +695,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                           y
                           x of wild {
                      GHC.Types.False -> x GHC.Types.True -> y }) -}
-2c7e3db34edc3f249f3bb42f9775a2f0
+ef18323dae6f2e8e312f79df0d2495f8
   $s$fOrdQualified1 ::
     GHC.Classes.Ord
       (Language.PureScript.Names.Qualified
@@ -778,7 +788,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                           y
                           x of wild {
                      GHC.Types.False -> x GHC.Types.True -> y }) -}
-6efa0dad2423acd9745bf67e6bda330e
+f318b593cb454018ede2becff1480918
   $s$fOrdQualified2 ::
     GHC.Classes.Ord
       (Language.PureScript.Names.Qualified
@@ -845,7 +855,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                           y
                           x of wild {
                      GHC.Types.False -> x GHC.Types.True -> y }) -}
-58a5c6f27b1abe4de335c4f29e3c6e4e
+0f6d012f876ac29f586acfc21715f1c7
   $sfromList ::
     [(Language.PureScript.Names.Qualified
         Language.PureScript.Names.Ident,
@@ -855,7 +865,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
             Language.PureScript.Names.Ident)
          a
   {- Arity: 1, Strictness: <S,1*U> -}
-32bf3d2450bfa7181380821402dc5639
+eba2d37bf3920784a3db1a3f6da5d2f7
   $sfromList1 ::
     [(Language.PureScript.Names.Qualified
         (Language.PureScript.Names.ProperName
@@ -867,7 +877,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                'Language.PureScript.Names.TypeName))
          a
   {- Arity: 1, Strictness: <S,1*U> -}
-365ae684870e11a0afb4a339a724930a
+f9f4f8b5f98fd17a8c79ae57650e2852
   $sinsertWithKey_$sgo13 ::
     Data.Map.Internal.Map
       (GHC.Base.Maybe Language.PureScript.Names.ModuleName)
@@ -878,9 +888,10 @@ b75ead126f64b4f0087fe23e08d7b7c3
          (Data.Map.Internal.Map
             (Language.PureScript.Names.Qualified
                Language.PureScript.Names.Ident)
-            (Language.PureScript.TypeClassDictionaries.TypeClassDictionaryInScope
-               (Language.PureScript.Names.Qualified
-                  Language.PureScript.Names.Ident))))
+            (GHC.Base.NonEmpty
+               (Language.PureScript.TypeClassDictionaries.TypeClassDictionaryInScope
+                  (Language.PureScript.Names.Qualified
+                     Language.PureScript.Names.Ident)))))
     -> Data.Map.Internal.Map
          (Language.PureScript.Names.Qualified
             (Language.PureScript.Names.ProperName
@@ -888,9 +899,10 @@ b75ead126f64b4f0087fe23e08d7b7c3
          (Data.Map.Internal.Map
             (Language.PureScript.Names.Qualified
                Language.PureScript.Names.Ident)
-            (Language.PureScript.TypeClassDictionaries.TypeClassDictionaryInScope
-               (Language.PureScript.Names.Qualified
-                  Language.PureScript.Names.Ident)))
+            (GHC.Base.NonEmpty
+               (Language.PureScript.TypeClassDictionaries.TypeClassDictionaryInScope
+                  (Language.PureScript.Names.Qualified
+                     Language.PureScript.Names.Ident))))
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> GHC.Classes.Ord
          (GHC.Base.Maybe Language.PureScript.Names.ModuleName) =>
@@ -903,10 +915,11 @@ b75ead126f64b4f0087fe23e08d7b7c3
             (Data.Map.Internal.Map
                (Language.PureScript.Names.Qualified
                   Language.PureScript.Names.Ident)
-               Language.PureScript.TypeClassDictionaries.NamedDict))
+               (GHC.Base.NonEmpty
+                  Language.PureScript.TypeClassDictionaries.NamedDict)))
   {- Arity: 4,
      Strictness: <S,1*U><L,U><S,1*U><L,U(A,C(C1(U)),A,A,A,A,A,A)> -}
-6ab52f4d583f2da7e7d81c1f03cd745a
+15cdd4fdcf28a79df3d81383a47de1ab
   $slookup7 ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> Data.Map.Internal.Map
@@ -957,7 +970,7 @@ b75ead126f64b4f0087fe23e08d7b7c3
                                        ipv4
                                        a2 } } }
                    Data.Map.Internal.Tip -> GHC.Base.Nothing @ a } }) -}
-d65803df639188d4b4dbb050560dd1c5
+5ef131244b9ac0ed85f98f979d47629f
   $slookup_$s$wpoly_go1 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -965,7 +978,7 @@ d65803df639188d4b4dbb050560dd1c5
       a
     -> Language.PureScript.Names.Ident -> GHC.Base.Maybe a
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
-1c8d5b7818476f195ca1265c7941f602
+2f23ec0955e3ead92140cbfa61a7e6d7
   $slookup_$s$wpoly_go13 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -975,29 +988,33 @@ d65803df639188d4b4dbb050560dd1c5
     -> Language.PureScript.Names.ModuleName
     -> GHC.Base.Maybe a
   {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U> -}
-8d53f2d6ca83ad5c52d1d6de6962f231
+c48ab5492ee67a4bc7cc0f85c6bc9516
   $slookup_$s$wpoly_go2 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
          (Language.PureScript.Names.ProperName
             'Language.PureScript.Names.TypeName))
-      (Language.PureScript.Kinds.Kind,
+      (Language.PureScript.Kinds.Kind
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          [Language.PureScript.Comments.Comment]),
        Language.PureScript.Environment.TypeKind)
     -> Language.PureScript.Names.ProperName
          'Language.PureScript.Names.TypeName
     -> Language.PureScript.Names.ModuleName
     -> GHC.Base.Maybe
-         (Language.PureScript.Kinds.Kind,
+         (Language.PureScript.Kinds.SourceKind,
           Language.PureScript.Environment.TypeKind)
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
-1f2c7f69ae755bd6ceca5c5a7aba3108
+252293f74b66ca89e24cc79ad561b742
   $slookup_$s$wpoly_go3 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
          (Language.PureScript.Names.ProperName
             'Language.PureScript.Names.TypeName))
-      (Language.PureScript.Kinds.Kind,
+      (Language.PureScript.Kinds.Kind
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          [Language.PureScript.Comments.Comment]),
        Language.PureScript.Environment.TypeKind)
     -> GHC.Prim.ByteArray#
     -> GHC.Prim.Int#
@@ -1007,11 +1024,11 @@ d65803df639188d4b4dbb050560dd1c5
                'Language.PureScript.Names.TypeName :: *)) =>
        Language.PureScript.Names.ModuleName
        -> GHC.Base.Maybe
-            (Language.PureScript.Kinds.Kind,
+            (Language.PureScript.Kinds.SourceKind,
              Language.PureScript.Environment.TypeKind)
   {- Arity: 6, HasNoCafRefs,
      Strictness: <S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-0522abd5b0eea4a9149affb1ae13861e
+d63029b08652513e05e4b840e45301c1
   $slookup_$s$wpoly_go5 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -1024,7 +1041,7 @@ d65803df639188d4b4dbb050560dd1c5
     -> GHC.Base.Maybe a
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
-9e32fe7c479930252f425bc48f415802
+547284f7132487273ebf3c3b0ebea697
   $slookup_$s$wpoly_go6 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -1035,7 +1052,7 @@ d65803df639188d4b4dbb050560dd1c5
          'Language.PureScript.Names.ClassName
     -> GHC.Base.Maybe a
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U,U)> -}
-b69e835435b9b0449c27d8203c446f16
+ee802350335ae64fe41474cfd4c55bd0
   $slookup_$s$wpoly_go7 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -1051,25 +1068,27 @@ b69e835435b9b0449c27d8203c446f16
        GHC.Base.Maybe a
   {- Arity: 5, HasNoCafRefs,
      Strictness: <S,1*U><L,U><L,U><L,U><L,U> -}
-2e79a961c1930a6a8e06e5f083d88aad
+404d3711f4cb22ece25b1de0e83bcbdb
   $slookup_$spoly_go1 ::
     Data.Map.Internal.Map
       (GHC.Base.Maybe Language.PureScript.Names.ModuleName) a
     -> GHC.Base.Maybe a
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-dd83fb1b7cd9fec99ec4fe783d79c27f
+998bb87e687eda30933e28e6d54b78f1
   $slookup_$spoly_go13 ::
     Data.Map.Internal.Map
       (GHC.Base.Maybe Language.PureScript.Names.ModuleName) a
     -> Language.PureScript.Names.ModuleName -> GHC.Base.Maybe a
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
-6887dff8d3c1db43a82a15a01d4ac879
+4e561d486fc912725270765649fae7f1
   $smember_$s$wpoly_go1 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
          (Language.PureScript.Names.ProperName
             'Language.PureScript.Names.TypeName))
-      (Language.PureScript.Kinds.Kind,
+      (Language.PureScript.Kinds.Kind
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          [Language.PureScript.Comments.Comment]),
        Language.PureScript.Environment.TypeKind)
     -> GHC.Prim.ByteArray#
     -> GHC.Prim.Int#
@@ -1080,13 +1099,15 @@ dd83fb1b7cd9fec99ec4fe783d79c27f
        Language.PureScript.Names.ModuleName -> GHC.Types.Bool
   {- Arity: 6, HasNoCafRefs,
      Strictness: <S,1*U><L,U><L,U><L,U><L,U><L,U> -}
-82660704df025c9f65f5385733e6c195
+1dfdad4ed213635c51a02faf1cffdc11
   $smember_$s$wpoly_go13 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
          (Language.PureScript.Names.ProperName
             'Language.PureScript.Names.TypeName))
-      (Language.PureScript.Kinds.Kind,
+      (Language.PureScript.Kinds.Kind
+         (Language.PureScript.AST.SourcePos.SourceSpan,
+          [Language.PureScript.Comments.Comment]),
        Language.PureScript.Environment.TypeKind)
     -> Language.PureScript.Names.ProperName
          'Language.PureScript.Names.TypeName
@@ -1094,7 +1115,7 @@ dd83fb1b7cd9fec99ec4fe783d79c27f
     -> GHC.Types.Bool
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S,1*U><L,1*U(U,U,U)><L,U> -}
-3573dde41b0a4e2225ad6d616c0ffcff
+6a151703ede39092e27ba9cc03e5ef6d
   $sunion ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -1112,7 +1133,7 @@ dd83fb1b7cd9fec99ec4fe783d79c27f
                'Language.PureScript.Names.TypeName))
          a
   {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
-ec013e9def75a9bdb18b78f4de5a0c95
+c57d320641e48463e3434b7e5998253f
   $sunion1 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -1127,7 +1148,7 @@ ec013e9def75a9bdb18b78f4de5a0c95
             Language.PureScript.Names.Ident)
          a
   {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
-0b77e2a74e6d9b08e64cdd1f18804ef8
+c719030bd1b6b569361d749e1e859a9d
   $sunionWith ::
     (a -> a -> a)
     -> Data.Map.Internal.Map
@@ -1146,8 +1167,24 @@ ec013e9def75a9bdb18b78f4de5a0c95
                'Language.PureScript.Names.ClassName))
          a
   {- Arity: 3, Strictness: <L,C(C1(U))><S,1*U><S,1*U>, Inline: [~] -}
-2d1b4d1424bf263d0e2712950203a558
+36bcaa3555e04d3e74ee5ff0e2c8dacc
   $sunionWith1 ::
+    (a -> a -> a)
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            Language.PureScript.Names.Ident)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            Language.PureScript.Names.Ident)
+         a
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            Language.PureScript.Names.Ident)
+         a
+  {- Arity: 3, Strictness: <L,C(C1(U))><S,1*U><S,1*U>, Inline: [~] -}
+eb9652de9f051ec50cec4abdcfaa13ad
+  $sunionWith2 ::
     (a -> a -> a)
     -> Data.Map.Internal.Map
          (GHC.Base.Maybe Language.PureScript.Names.ModuleName) a
@@ -1156,109 +1193,109 @@ ec013e9def75a9bdb18b78f4de5a0c95
     -> Data.Map.Internal.Map
          (GHC.Base.Maybe Language.PureScript.Names.ModuleName) a
   {- Arity: 3, Strictness: <L,C(C1(U))><S,1*U><S,1*U>, Inline: [~] -}
-1e86b0d76b322983d33e60c30a7a4fa9
+70845bfa185c48d6375f310485321df9
   $tc'CheckState :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   2047015802681339360##
-                   16272900191377807259##
+                   18355879979369724534##
+                   15599978113964073718##
                    Language.PureScript.TypeChecker.Monad.$trModule
                    Language.PureScript.TypeChecker.Monad.$tc'CheckState2
                    0#
                    Language.PureScript.TypeChecker.Monad.$tc'CheckState1) -}
-a1f065fe6d26a7f992f76cf5d8e9d354
+d2cc81cc4faa95e4a7af49ad8259806e
   $tc'CheckState1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-34cdf153f1140e0c6cba6be9244f5c67
+fee9e4322751ef42e1ffcb65c47381a6
   $tc'CheckState2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Monad.$tc'CheckState3) -}
-e9a4f89a1bf95d4fb42749b8ae5dec22
+526890cc93c67de75a587e8dc1a34852
   $tc'CheckState3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'CheckState"#) -}
-e0aa185b76b2a1fbd057cb32cd91f6f7
+14ca80e7fd5758506911bdc2d30a0247
   $tc'Substitution :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   8941860341908492490##
-                   2457328591282581562##
+                   12468847607280250357##
+                   14882254057156527159##
                    Language.PureScript.TypeChecker.Monad.$trModule
                    Language.PureScript.TypeChecker.Monad.$tc'Substitution2
                    0#
                    Language.PureScript.TypeChecker.Monad.$tc'Substitution1) -}
-aed0700bec945e2ceb8aa0fdfc432f53
+132c9777cf534a8d69be2674f8c30766
   $tc'Substitution1 :: GHC.Types.KindRep
   {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-7442dbc24b98be30e516c4517caf5061
+629972ab56a2487370e642529343dc69
   $tc'Substitution2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Monad.$tc'Substitution3) -}
-2d31a91267ad31a96e0a34af7cfb2e53
+7ca9ed4de4d31b3aa902c227c9d52401
   $tc'Substitution3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'Substitution"#) -}
-7afc78ac0a0f4f87434ce9995693ab04
+5105e7caa43529815daa9bb128f7be4e
   $tcCheckState :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10454089454384318736##
-                   3319910652030743575##
+                   10607928417126862108##
+                   17545318933733252518##
                    Language.PureScript.TypeChecker.Monad.$trModule
                    Language.PureScript.TypeChecker.Monad.$tcCheckState1
                    0#
                    GHC.Types.krep$*) -}
-b9df7e96ee01a39a41e371f372dcdd46
+1c2559fa8c4c7b63f25622ebd8d8cea3
   $tcCheckState1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Monad.$tcCheckState2) -}
-e926ed45097e5021bb8ce87bee912a11
+108486fd885a6f04d284179304464c08
   $tcCheckState2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("CheckState"#) -}
-a54a8c38a32876440ed90dcdb4b79db9
+4d468c5e9c11c0e0e1b3b2a138b69e27
   $tcSubstitution :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   7717565159791385168##
-                   992375852297764107##
+                   14000694807932694739##
+                   17397713771255722725##
                    Language.PureScript.TypeChecker.Monad.$trModule
                    Language.PureScript.TypeChecker.Monad.$tcSubstitution1
                    0#
                    GHC.Types.krep$*) -}
-8869c8f8e04d25eb64a3a24d22263d2d
+172bbd4b7e4d191395550f21e090aca5
   $tcSubstitution1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Monad.$tcSubstitution2) -}
-e780384ba0afa61290586ef0568456d9
+376c9e1b2a55aa7b2c9f8540e6bde742
   $tcSubstitution2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Substitution"#) -}
-545447701bc9de8a059458fd94a1b6de
+99c146338f4b54a44e1b18b603b64984
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.TypeChecker.Monad.$trModule3
                    Language.PureScript.TypeChecker.Monad.$trModule1) -}
-4c2215968edd0fd247baea95dec18b26
+bfdf9f09d6f694609bb1a4899a3ba943
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Monad.$trModule2) -}
-fc8ca067ea29cd172c8acaa63ded54db
+32aa02cabfbde62c0140bbaba64219d4
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.TypeChecker.Monad"#) -}
-5555a1e1aa21714981b69783a4115536
+45e547d9722c68b52e9c03e7e14038d4
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.TypeChecker.Monad.$trModule4) -}
-d9ed3353344a0f6972bb8be912b56bee
+d0fb27b0101edb6c3e54d0d962e2bbc5
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-6d12e5e5fd6508248820c4a8c0768fdb
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+ac3d310170305ff579e2e5d776c410b3
   $wcheckVisibility ::
     ((e :: *)
      Data.Type.Equality.~ (Language.PureScript.Errors.MultipleErrors :: *),
@@ -1341,7 +1378,7 @@ d9ed3353344a0f6972bb8be912b56bee
                     case vis of wild {
                       Language.PureScript.Environment.Undefined -> lvl30
                       Language.PureScript.Environment.Defined -> lvl29 }) }) -}
-31ec5302ec727883821b2d700ba10b8d
+f88793025618ecff4aa4214ca495eb2c
   $wpoly_go13 ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> Language.PureScript.Names.Ident
@@ -1433,7 +1470,7 @@ d9ed3353344a0f6972bb8be912b56bee
                                        ww1
                                        a2 } } } }
                    Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
-56656b7ad7da723e785b1f61c507df5a
+069557df1a09c3288f4be051779ab4a6
   $wpoly_go2 ::
     GHC.Base.Maybe Language.PureScript.Names.ModuleName
     -> Language.PureScript.Names.ProperName
@@ -1561,7 +1598,7 @@ d9ed3353344a0f6972bb8be912b56bee
                                        ww1
                                        a2 } } } }
                    Data.Map.Internal.Tip -> GHC.Base.Nothing @ a }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   data CheckState
     = CheckState {checkEnv :: Language.PureScript.Environment.Environment,
                   checkNextType :: GHC.Types.Int,
@@ -1572,22 +1609,22 @@ d9ed3353344a0f6972bb8be912b56bee
                                           Language.PureScript.Names.ModuleName,
                   checkSubstitution :: Language.PureScript.TypeChecker.Monad.Substitution,
                   checkHints :: [Language.PureScript.AST.Declarations.ErrorMessageHint]}
-f41a5a409aa69b88b3ab5e8061db655f
+6dc37f96b1ad41d81e906d34e56bda73
   data Substitution
     = Substitution {substType :: Data.Map.Internal.Map
-                                   GHC.Types.Int Language.PureScript.Types.Type,
+                                   GHC.Types.Int Language.PureScript.Types.SourceType,
                     substKind :: Data.Map.Internal.Map
-                                   GHC.Types.Int Language.PureScript.Kinds.Kind}
-bd6fa4de6b1e42ac9b0ded766764fcd1
+                                   GHC.Types.Int Language.PureScript.Kinds.SourceKind}
+028897d769a6e3f1725285ae2a682928
   type Unknown = GHC.Types.Int
-2454135d9e4f2ffeeed6c33daff8225e
+4279c05238f284a784d5ffc5c8b120e7
   bindLocalTypeVariables ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
     Language.PureScript.Names.ModuleName
     -> [(Language.PureScript.Names.ProperName
            'Language.PureScript.Names.TypeName,
-         Language.PureScript.Kinds.Kind)]
+         Language.PureScript.Kinds.SourceKind)]
     -> m a
     -> m a
   {- Arity: 3,
@@ -1599,7 +1636,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                    (moduleName :: Language.PureScript.Names.ModuleName)
                    (bindings :: [(Language.PureScript.Names.ProperName
                                     'Language.PureScript.Names.TypeName,
-                                  Language.PureScript.Kinds.Kind)]) ->
+                                  Language.PureScript.Kinds.SourceKind)]) ->
                  Language.PureScript.TypeChecker.Monad.bindTypes
                    @ m
                    @ a
@@ -1609,20 +1646,20 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                       = GHC.Base.Just @ Language.PureScript.Names.ModuleName moduleName
                     } in
                     Language.PureScript.TypeChecker.Monad.$sfromList1
-                      @ (Language.PureScript.Kinds.Kind,
+                      @ (Language.PureScript.Kinds.SourceKind,
                          Language.PureScript.Environment.TypeKind)
                       (GHC.Base.map
                          @ (Language.PureScript.Names.ProperName
                               'Language.PureScript.Names.TypeName,
-                            Language.PureScript.Kinds.Kind)
+                            Language.PureScript.Kinds.SourceKind)
                          @ (Language.PureScript.Names.Qualified
                               (Language.PureScript.Names.ProperName
                                  'Language.PureScript.Names.TypeName),
-                            (Language.PureScript.Kinds.Kind,
+                            (Language.PureScript.Kinds.SourceKind,
                              Language.PureScript.Environment.TypeKind))
                          (\ (ds :: (Language.PureScript.Names.ProperName
                                       'Language.PureScript.Names.TypeName,
-                                    Language.PureScript.Kinds.Kind)) ->
+                                    Language.PureScript.Kinds.SourceKind)) ->
                           case ds of wild { (,) pn kind ->
                           (Language.PureScript.Names.Qualified
                              @ (Language.PureScript.Names.ProperName
@@ -1631,11 +1668,12 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                              pn,
                            (kind, Language.PureScript.Environment.LocalTypeVariable)) })
                          bindings))) -}
-24393a29c2ae2897cd9b6ec8df44ac4d
+d3d61817e30c6d14fa74cb55dc1b127f
   bindLocalVariables ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
-    [(Language.PureScript.Names.Ident, Language.PureScript.Types.Type,
+    [(Language.PureScript.Names.Ident,
+      Language.PureScript.Types.SourceType,
       Language.PureScript.Environment.NameVisibility)]
     -> m a -> m a
   {- Arity: 2,
@@ -1646,60 +1684,63 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                    ($dMonadState :: Control.Monad.State.Class.MonadState
                                       Language.PureScript.TypeChecker.Monad.CheckState m)
                    (bindings :: [(Language.PureScript.Names.Ident,
-                                  Language.PureScript.Types.Type,
+                                  Language.PureScript.Types.SourceType,
                                   Language.PureScript.Environment.NameVisibility)]) ->
                  Language.PureScript.TypeChecker.Monad.bindNames
                    @ m
                    @ a
                    $dMonadState
                    (Language.PureScript.TypeChecker.Monad.$sfromList
-                      @ (Language.PureScript.Types.Type,
+                      @ (Language.PureScript.Types.SourceType,
                          Language.PureScript.Environment.NameKind,
                          Language.PureScript.Environment.NameVisibility)
                       (GHC.Base.build
                          @ (Language.PureScript.Names.Qualified
                               Language.PureScript.Names.Ident,
-                            (Language.PureScript.Types.Type,
+                            (Language.PureScript.Types.SourceType,
                              Language.PureScript.Environment.NameKind,
                              Language.PureScript.Environment.NameVisibility))
                          (\ @ b1
                             (c :: (Language.PureScript.Names.Qualified
                                      Language.PureScript.Names.Ident,
-                                   (Language.PureScript.Types.Type,
+                                   (Language.PureScript.Types.SourceType,
                                     Language.PureScript.Environment.NameKind,
                                     Language.PureScript.Environment.NameVisibility))
                                   -> b1 -> b1)[OneShot]
                             (n :: b1)[OneShot] ->
                           GHC.Base.foldr
-                            @ (Language.PureScript.Names.Ident, Language.PureScript.Types.Type,
+                            @ (Language.PureScript.Names.Ident,
+                               Language.PureScript.Types.SourceType,
                                Language.PureScript.Environment.NameVisibility)
                             @ b1
                             (GHC.Base.mapFB
                                @ (Language.PureScript.Names.Qualified
                                     Language.PureScript.Names.Ident,
-                                  (Language.PureScript.Types.Type,
+                                  (Language.PureScript.Types.SourceType,
                                    Language.PureScript.Environment.NameKind,
                                    Language.PureScript.Environment.NameVisibility))
                                @ b1
-                               @ (Language.PureScript.Names.Ident, Language.PureScript.Types.Type,
+                               @ (Language.PureScript.Names.Ident,
+                                  Language.PureScript.Types.SourceType,
                                   Language.PureScript.Environment.NameVisibility)
                                c
                                Language.PureScript.TypeChecker.Monad.bindLocalVariables1)
                             n
                             bindings)))) -}
-74734e8e7a98a51364f3359daab7fc16
+47f54c8b237b73b5953802063e938750
   bindLocalVariables1 ::
-    (Language.PureScript.Names.Ident, Language.PureScript.Types.Type,
+    (Language.PureScript.Names.Ident,
+     Language.PureScript.Types.SourceType,
      Language.PureScript.Environment.NameVisibility)
     -> (Language.PureScript.Names.Qualified
           Language.PureScript.Names.Ident,
-        (Language.PureScript.Types.Type,
+        (Language.PureScript.Types.SourceType,
          Language.PureScript.Environment.NameKind,
          Language.PureScript.Environment.NameVisibility))
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: (Language.PureScript.Names.Ident,
-                           Language.PureScript.Types.Type,
+                           Language.PureScript.Types.SourceType,
                            Language.PureScript.Environment.NameVisibility)) ->
                  case ds of wild { (,,) name ty visibility ->
                  (Language.PureScript.Names.Qualified
@@ -1707,14 +1748,14 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                     (GHC.Base.Nothing @ Language.PureScript.Names.ModuleName)
                     name,
                   (ty, Language.PureScript.Environment.Private, visibility)) }) -}
-611092944007c226321901b0330bf26f
+cec978aa2d75cee2ffee6b227b8740ed
   bindNames ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
          Language.PureScript.Names.Ident)
-      (Language.PureScript.Types.Type,
+      (Language.PureScript.Types.SourceType,
        Language.PureScript.Environment.NameKind,
        Language.PureScript.Environment.NameVisibility)
     -> m a -> m a
@@ -1727,7 +1768,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                    (eta :: Data.Map.Internal.Map
                              (Language.PureScript.Names.Qualified
                                 Language.PureScript.Names.Ident)
-                             (Language.PureScript.Types.Type,
+                             (Language.PureScript.Types.SourceType,
                               Language.PureScript.Environment.NameKind,
                               Language.PureScript.Environment.NameVisibility))
                    (eta1 :: m a) ->
@@ -1752,7 +1793,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                            (case ds of wild1 { Language.PureScript.Environment.Environment ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
                             Language.PureScript.Environment.Environment
                               (Language.PureScript.TypeChecker.Monad.$sunion1
-                                 @ (Language.PureScript.Types.Type,
+                                 @ (Language.PureScript.Types.SourceType,
                                     Language.PureScript.Environment.NameKind,
                                     Language.PureScript.Environment.NameVisibility)
                                  eta
@@ -1793,7 +1834,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                              lvl31 :: Data.Map.Internal.Map
                                         (Language.PureScript.Names.Qualified
                                            Language.PureScript.Names.Ident)
-                                        (Language.PureScript.Types.Type,
+                                        (Language.PureScript.Types.SourceType,
                                          Language.PureScript.Environment.NameKind,
                                          Language.PureScript.Environment.NameVisibility)
                              = case orig of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
@@ -1840,7 +1881,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                             @ a
                             lvl30
                             (GHC.Base.return @ m $dMonad @ a a1))))) -}
-71c50ede88d0fe5cc1f4708c73303584
+dd91a14f9b244064796c050693047d4f
   bindTypes ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -1848,7 +1889,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
       (Language.PureScript.Names.Qualified
          (Language.PureScript.Names.ProperName
             'Language.PureScript.Names.TypeName))
-      (Language.PureScript.Kinds.Kind,
+      (Language.PureScript.Kinds.SourceKind,
        Language.PureScript.Environment.TypeKind)
     -> m a -> m a
   {- Arity: 3,
@@ -1861,7 +1902,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                              (Language.PureScript.Names.Qualified
                                 (Language.PureScript.Names.ProperName
                                    'Language.PureScript.Names.TypeName))
-                             (Language.PureScript.Kinds.Kind,
+                             (Language.PureScript.Kinds.SourceKind,
                               Language.PureScript.Environment.TypeKind))
                    (eta1 :: m a) ->
                  let {
@@ -1886,7 +1927,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                             Language.PureScript.Environment.Environment
                               ds8
                               (Language.PureScript.TypeChecker.Monad.$sunion
-                                 @ (Language.PureScript.Kinds.Kind,
+                                 @ (Language.PureScript.Kinds.SourceKind,
                                     Language.PureScript.Environment.TypeKind)
                                  eta
                                  ds9)
@@ -1926,7 +1967,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                                         (Language.PureScript.Names.Qualified
                                            (Language.PureScript.Names.ProperName
                                               'Language.PureScript.Names.TypeName))
-                                        (Language.PureScript.Kinds.Kind,
+                                        (Language.PureScript.Kinds.SourceKind,
                                          Language.PureScript.Environment.TypeKind)
                              = case orig of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                                case ds of wild1 { Language.PureScript.Environment.Environment ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
@@ -1972,7 +2013,7 @@ bd6fa4de6b1e42ac9b0ded766764fcd1
                             @ a
                             lvl30
                             (GHC.Base.return @ m $dMonad @ a a1))))) -}
-b16d04cc2b65297001b2199383416e20
+cee45a72eb61672224a0779e05d02a52
   captureSubstitution ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -1992,7 +2033,7 @@ b16d04cc2b65297001b2199383416e20
                    (GHC.Tuple.(,)
                       @ a
                       @ Language.PureScript.TypeChecker.Monad.Substitution)) -}
-bf445387d23817a01093aed8411e11ca
+40acdbe38860b70b451bd591b4f7215f
   capturingSubstitution ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2049,7 +2090,7 @@ bf445387d23817a01093aed8411e11ca
                       lvl29
                       (\ (subst :: Language.PureScript.TypeChecker.Monad.Substitution) ->
                        GHC.Base.return @ m $dMonad @ b (eta a1 subst)))) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkCurrentModule ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> GHC.Base.Maybe Language.PureScript.Names.ModuleName
@@ -2060,7 +2101,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds6 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkEnv ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> Language.PureScript.Environment.Environment
@@ -2071,7 +2112,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds1 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkHints ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> [Language.PureScript.AST.Declarations.ErrorMessageHint]
@@ -2082,7 +2123,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds8 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkNextKind ::
     Language.PureScript.TypeChecker.Monad.CheckState -> GHC.Types.Int
   RecSel Left Language.PureScript.TypeChecker.Monad.CheckState
@@ -2092,7 +2133,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds3 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkNextSkolem ::
     Language.PureScript.TypeChecker.Monad.CheckState -> GHC.Types.Int
   RecSel Left Language.PureScript.TypeChecker.Monad.CheckState
@@ -2102,7 +2143,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds4 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkNextSkolemScope ::
     Language.PureScript.TypeChecker.Monad.CheckState -> GHC.Types.Int
   RecSel Left Language.PureScript.TypeChecker.Monad.CheckState
@@ -2112,7 +2153,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds5 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkNextType ::
     Language.PureScript.TypeChecker.Monad.CheckState -> GHC.Types.Int
   RecSel Left Language.PureScript.TypeChecker.Monad.CheckState
@@ -2122,7 +2163,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds2 }) -}
-5c23016b2e80baec4bdda0c92644cfa1
+9cc3cef00c43c0c2ac24a31e9b521e29
   checkSubstitution ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> Language.PureScript.TypeChecker.Monad.Substitution
@@ -2133,7 +2174,7 @@ bf445387d23817a01093aed8411e11ca
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                  ds7 }) -}
-3c6191a6ebded964db700faa074a7552
+cf16ff61c4446f9bda6bae4524621e38
   checkVisibility ::
     ((e :: *)
      Data.Type.Equality.~ (Language.PureScript.Errors.MultipleErrors :: *),
@@ -2164,7 +2205,7 @@ bf445387d23817a01093aed8411e11ca
                    w2
                    ww1
                    ww2 }) -}
-b22dfcf495287a9495d33db1875afeb2
+702a26b401e2a266972b7fdf9b28e232
   emptyCheckState ::
     Language.PureScript.Environment.Environment
     -> Language.PureScript.TypeChecker.Monad.CheckState
@@ -2181,21 +2222,21 @@ b22dfcf495287a9495d33db1875afeb2
                    Language.PureScript.TypeChecker.Monad.emptySubstitution
                    (GHC.Types.[]
                       @ Language.PureScript.AST.Declarations.ErrorMessageHint)) -}
-e7f1e356adfca76f93dc6b74b68c173a
+e6213dae2ee5dc748e8a7defc5a0ea6a
   emptyCheckState1 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-41d082f8a398bc6abbe358ad0e617efb
+d30b061696cff17c025817e53ed3da58
   emptySubstitution ::
     Language.PureScript.TypeChecker.Monad.Substitution
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (Language.PureScript.TypeChecker.Monad.Substitution
                    (Data.Map.Internal.Tip
                       @ GHC.Types.Int
-                      @ Language.PureScript.Types.Type)
+                      @ Language.PureScript.Types.SourceType)
                    (Data.Map.Internal.Tip
                       @ GHC.Types.Int
-                      @ Language.PureScript.Kinds.Kind)) -}
-dd8f1993ed3dd1855f6ea76a19782028
+                      @ Language.PureScript.Kinds.SourceKind)) -}
+69aa315a68211d8605a99340dd649d82
   getEnv ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2222,7 +2263,7 @@ dd8f1993ed3dd1855f6ea76a19782028
                       @ Language.PureScript.TypeChecker.Monad.CheckState
                       @ m
                       $dMonadState)) -}
-3553d6fedf4a25833cace1aa7ba0c6a9
+bbecaeac63bedc9e4f131a49eb366479
   getHints ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2259,7 +2300,7 @@ dd8f1993ed3dd1855f6ea76a19782028
                          ds7
                          (GHC.Types.[]
                             @ Language.PureScript.AST.Declarations.ErrorMessageHint) }))) -}
-fa3c1ee0d304f6b19e55a6257785e6f4
+223085abf14117e3398e0e666d63e54f
   getLocalContext ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2287,26 +2328,27 @@ fa3c1ee0d304f6b19e55a6257785e6f4
                       @ m
                       $dMonad
                       @ [(Language.PureScript.Names.Ident,
-                          Language.PureScript.Types.Type)]
+                          Language.PureScript.Types.SourceType)]
                       (case env of wild { Language.PureScript.Environment.Environment ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                        Language.PureScript.TypeChecker.Monad.getLocalContext_go13
                          (GHC.Types.[]
                             @ (Language.PureScript.Names.Ident,
-                               Language.PureScript.Types.Type))
+                               Language.PureScript.Types.SourceType))
                          ds1 }))) -}
-af233a169b556df68079467169a9f1d1
+a1a1264e24d6f5f5da0e780548bdd0b7
   getLocalContext_go13 ::
-    [(Language.PureScript.Names.Ident, Language.PureScript.Types.Type)]
+    [(Language.PureScript.Names.Ident,
+      Language.PureScript.Types.SourceType)]
     -> Data.Map.Internal.Map
          (Language.PureScript.Names.Qualified
             Language.PureScript.Names.Ident)
-         (Language.PureScript.Types.Type,
+         (Language.PureScript.Types.SourceType,
           Language.PureScript.Environment.NameKind,
           Language.PureScript.Environment.NameVisibility)
     -> [(Language.PureScript.Names.Ident,
-         Language.PureScript.Types.Type)]
+         Language.PureScript.Types.SourceType)]
   {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
-bc1a001f0bb244cf56f13be7208df516
+299df08a9844c25fa62c56a713d7ba37
   getTypeClassDictionaries ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2319,7 +2361,8 @@ bc1a001f0bb244cf56f13be7208df516
             (Data.Map.Internal.Map
                (Language.PureScript.Names.Qualified
                   Language.PureScript.Names.Ident)
-               Language.PureScript.TypeClassDictionaries.NamedDict)))
+               (GHC.Base.NonEmpty
+                  Language.PureScript.TypeClassDictionaries.NamedDict))))
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LLL),U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),A,A,A,A),1*U,A,A)>,
      Unfolding: (\ @ m :: * -> *
@@ -2345,13 +2388,14 @@ bc1a001f0bb244cf56f13be7208df516
                            (Data.Map.Internal.Map
                               (Language.PureScript.Names.Qualified
                                  Language.PureScript.Names.Ident)
-                              Language.PureScript.TypeClassDictionaries.NamedDict)))
+                              (GHC.Base.NonEmpty
+                                 Language.PureScript.TypeClassDictionaries.NamedDict))))
                    Language.PureScript.TypeChecker.Monad.getTypeClassDictionaries1
                    (Control.Monad.State.Class.get
                       @ Language.PureScript.TypeChecker.Monad.CheckState
                       @ m
                       $dMonadState)) -}
-859bee28d2e1fea7c1d7a4169d00ed09
+2e20316b99808b3986c4f3055e500a6f
   getTypeClassDictionaries1 ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> Data.Map.Internal.Map
@@ -2363,7 +2407,8 @@ bc1a001f0bb244cf56f13be7208df516
             (Data.Map.Internal.Map
                (Language.PureScript.Names.Qualified
                   Language.PureScript.Names.Ident)
-               Language.PureScript.TypeClassDictionaries.NamedDict))
+               (GHC.Base.NonEmpty
+                  Language.PureScript.TypeClassDictionaries.NamedDict)))
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(S(LLLLSLL)LLLLLLL),1*U(1*U(A,A,A,A,1*U,A,A),A,A,A,A,A,A,A)>,
      Unfolding: InlineRule (1, True, False)
@@ -2371,7 +2416,7 @@ bc1a001f0bb244cf56f13be7208df516
                  case x of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                  case ds of wild1 { Language.PureScript.Environment.Environment ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
                  ds12 } }) -}
-5e7aad705ec4c1712d6cba27abb52b9f
+6dbb2b20f7d8dbe1d19534e103e429fc
   getVisibility ::
     ((e :: *)
      Data.Type.Equality.~ (Language.PureScript.Errors.MultipleErrors :: *),
@@ -2442,7 +2487,7 @@ bc1a001f0bb244cf56f13be7208df516
                     case qual of ww { Language.PureScript.Names.Qualified ww1 ww2 ->
                     case env of wild { Language.PureScript.Environment.Environment ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                     case Language.PureScript.TypeChecker.Monad.$wpoly_go13
-                           @ (Language.PureScript.Types.Type,
+                           @ (Language.PureScript.Types.SourceType,
                               Language.PureScript.Environment.NameKind,
                               Language.PureScript.Environment.NameVisibility)
                            ww1
@@ -2456,7 +2501,7 @@ bc1a001f0bb244cf56f13be7208df516
                            $dMonad
                            @ Language.PureScript.Environment.NameVisibility
                            vis } } } }) }) -}
-16a54f43ede4af63e8b1bd5e1cb8169d
+d2b3f12e05a1d4c8c1e59f1c8f3292d4
   guardWith ::
     Control.Monad.Error.Class.MonadError e m =>
     e -> GHC.Types.Bool -> m ()
@@ -2482,7 +2527,7 @@ bc1a001f0bb244cf56f13be7208df516
                         (Control.Monad.Error.Class.$p1MonadError @ e @ m $dMonadError)
                         @ ()
                         GHC.Tuple.() }) -}
-d3866d9195f056bc6b96e4bbf9da92a5
+72f4353405ed3f4fb5489909c051e43c
   lookupTypeClassDictionaries ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2494,7 +2539,8 @@ d3866d9195f056bc6b96e4bbf9da92a5
             (Data.Map.Internal.Map
                (Language.PureScript.Names.Qualified
                   Language.PureScript.Names.Ident)
-               Language.PureScript.TypeClassDictionaries.NamedDict))
+               (GHC.Base.NonEmpty
+                  Language.PureScript.TypeClassDictionaries.NamedDict)))
   {- Arity: 2, HasNoCafRefs,
      Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LLL),U(1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A,A),A,A,A,A),1*U,A,A)><L,U>,
      Unfolding: (\ @ m :: * -> *
@@ -2519,7 +2565,8 @@ d3866d9195f056bc6b96e4bbf9da92a5
                         (Data.Map.Internal.Map
                            (Language.PureScript.Names.Qualified
                               Language.PureScript.Names.Ident)
-                           Language.PureScript.TypeClassDictionaries.NamedDict))
+                           (GHC.Base.NonEmpty
+                              Language.PureScript.TypeClassDictionaries.NamedDict)))
                    (\ (x :: Language.PureScript.TypeChecker.Monad.CheckState) ->
                     case x of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                     case ds of wild1 { Language.PureScript.Environment.Environment ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
@@ -2531,7 +2578,8 @@ d3866d9195f056bc6b96e4bbf9da92a5
                                 (Data.Map.Internal.Map
                                    (Language.PureScript.Names.Qualified
                                       Language.PureScript.Names.Ident)
-                                   Language.PureScript.TypeClassDictionaries.NamedDict))
+                                   (GHC.Base.NonEmpty
+                                      Language.PureScript.TypeClassDictionaries.NamedDict)))
                            eta
                            ds12 of wild2 {
                       GHC.Base.Nothing
@@ -2542,13 +2590,14 @@ d3866d9195f056bc6b96e4bbf9da92a5
                            @ (Data.Map.Internal.Map
                                 (Language.PureScript.Names.Qualified
                                    Language.PureScript.Names.Ident)
-                                Language.PureScript.TypeClassDictionaries.NamedDict)
+                                (GHC.Base.NonEmpty
+                                   Language.PureScript.TypeClassDictionaries.NamedDict))
                       GHC.Base.Just v -> v } } })
                    (Control.Monad.State.Class.get
                       @ Language.PureScript.TypeChecker.Monad.CheckState
                       @ m
                       $dMonadState)) -}
-f7de131697e04d9bd8dfa4ea5ce64eb6
+f828a7aded735803a5224827776bcb64
   lookupTypeClassDictionariesForClass ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2559,7 +2608,8 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
     -> m (Data.Map.Internal.Map
             (Language.PureScript.Names.Qualified
                Language.PureScript.Names.Ident)
-            Language.PureScript.TypeClassDictionaries.NamedDict)
+            (GHC.Base.NonEmpty
+               Language.PureScript.TypeClassDictionaries.NamedDict))
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S(S(S(S(C(C(S))L)LLLLL)LLLL)LLL),U(U(U(U(C(C1(U)),A),A,A,A,A,A),A,A,A,A),U,A,A)><L,U><L,U(U,U(U,U,U))>,
      Unfolding: (\ @ m :: * -> *
@@ -2586,11 +2636,13 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
                         (Data.Map.Internal.Map
                            (Language.PureScript.Names.Qualified
                               Language.PureScript.Names.Ident)
-                           Language.PureScript.TypeClassDictionaries.NamedDict))
+                           (GHC.Base.NonEmpty
+                              Language.PureScript.TypeClassDictionaries.NamedDict)))
                    @ (Data.Map.Internal.Map
                         (Language.PureScript.Names.Qualified
                            Language.PureScript.Names.Ident)
-                        Language.PureScript.TypeClassDictionaries.NamedDict)
+                        (GHC.Base.NonEmpty
+                           Language.PureScript.TypeClassDictionaries.NamedDict))
                    (\ (x :: Data.Map.Internal.Map
                               (Language.PureScript.Names.Qualified
                                  (Language.PureScript.Names.ProperName
@@ -2598,13 +2650,15 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
                               (Data.Map.Internal.Map
                                  (Language.PureScript.Names.Qualified
                                     Language.PureScript.Names.Ident)
-                                 Language.PureScript.TypeClassDictionaries.NamedDict)) ->
+                                 (GHC.Base.NonEmpty
+                                    Language.PureScript.TypeClassDictionaries.NamedDict))) ->
                     case eta1 of ww { Language.PureScript.Names.Qualified ww1 ww2 ->
                     case Language.PureScript.TypeChecker.Monad.$wpoly_go2
                            @ (Data.Map.Internal.Map
                                 (Language.PureScript.Names.Qualified
                                    Language.PureScript.Names.Ident)
-                                Language.PureScript.TypeClassDictionaries.NamedDict)
+                                (GHC.Base.NonEmpty
+                                   Language.PureScript.TypeClassDictionaries.NamedDict))
                            ww1
                            ww2
                            x of wild {
@@ -2612,13 +2666,14 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
                       -> Data.Map.Internal.Tip
                            @ (Language.PureScript.Names.Qualified
                                 Language.PureScript.Names.Ident)
-                           @ Language.PureScript.TypeClassDictionaries.NamedDict
+                           @ (GHC.Base.NonEmpty
+                                Language.PureScript.TypeClassDictionaries.NamedDict)
                       GHC.Base.Just v -> v } })
                    (Language.PureScript.TypeChecker.Monad.lookupTypeClassDictionaries
                       @ m
                       $dMonadState
                       eta)) -}
-1c09258d333965e2bce1d96ed21e1a37
+1a21a6dd4b005eb084941ab698608c7b
   lookupTypeVariable ::
     ((e :: *)
      Data.Type.Equality.~ (Language.PureScript.Errors.MultipleErrors :: *),
@@ -2629,7 +2684,7 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
     -> Language.PureScript.Names.Qualified
          (Language.PureScript.Names.ProperName
             'Language.PureScript.Names.TypeName)
-    -> m Language.PureScript.Kinds.Kind
+    -> m Language.PureScript.Kinds.SourceKind
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S(S),1*U(1*U)><L,U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),A),U,A,A)><L,U(A,C(U),A)>,
      Unfolding: (\ @ e
@@ -2665,14 +2720,14 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
                                'Language.PureScript.Names.TypeName)) ->
                  case ds of wild { Language.PureScript.Names.Qualified moduleName name ->
                  let {
-                   lvl30 :: m Language.PureScript.Kinds.Kind
+                   lvl30 :: m Language.PureScript.Kinds.SourceKind
                    = Control.Monad.Error.Class.throwError
                        @ Language.PureScript.Errors.MultipleErrors
                        @ m
                        $dMonadError
                          `cast`
                        (Control.Monad.Error.Class.MonadError co <m>_N)_R
-                       @ Language.PureScript.Kinds.Kind
+                       @ Language.PureScript.Kinds.SourceKind
                        (GHC.Types.:
                           @ Language.PureScript.AST.Declarations.ErrorMessage
                           (Language.PureScript.AST.Declarations.ErrorMessage
@@ -2692,7 +2747,7 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
                    @ m
                    $dMonad
                    @ Language.PureScript.Environment.Environment
-                   @ Language.PureScript.Kinds.Kind
+                   @ Language.PureScript.Kinds.SourceKind
                    lvl29
                    (\ (env :: Language.PureScript.Environment.Environment) ->
                     case env of wild1 { Language.PureScript.Environment.Environment ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
@@ -2706,9 +2761,9 @@ f7de131697e04d9bd8dfa4ea5ce64eb6
                          GHC.Base.return
                            @ m
                            $dMonad
-                           @ Language.PureScript.Kinds.Kind
+                           @ Language.PureScript.Kinds.SourceKind
                            k } } }) } }) -}
-a8809e49396cc1aa51c1e0e6f1f04b5a
+e5ee90a12677ea7029a891b4e37ff4df
   lookupVariable ::
     ((e :: *)
      Data.Type.Equality.~ (Language.PureScript.Errors.MultipleErrors :: *),
@@ -2716,7 +2771,7 @@ a8809e49396cc1aa51c1e0e6f1f04b5a
        Language.PureScript.TypeChecker.Monad.CheckState m,
      Control.Monad.Error.Class.MonadError e m) =>
     Language.PureScript.Names.Qualified Language.PureScript.Names.Ident
-    -> m Language.PureScript.Types.Type
+    -> m Language.PureScript.Types.SourceType
   {- Arity: 3, HasNoCafRefs,
      Strictness: <S(S),1*U(1*U)><L,U(U(U(U(C(C1(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),A),U,A,A)><L,U(A,C(U),A)>,
      Unfolding: (\ @ e
@@ -2749,14 +2804,14 @@ a8809e49396cc1aa51c1e0e6f1f04b5a
                  \ (qual :: Language.PureScript.Names.Qualified
                               Language.PureScript.Names.Ident) ->
                  let {
-                   lvl30 :: m Language.PureScript.Types.Type
+                   lvl30 :: m Language.PureScript.Types.SourceType
                    = Control.Monad.Error.Class.throwError
                        @ Language.PureScript.Errors.MultipleErrors
                        @ m
                        $dMonadError
                          `cast`
                        (Control.Monad.Error.Class.MonadError co <m>_N)_R
-                       @ Language.PureScript.Types.Type
+                       @ Language.PureScript.Types.SourceType
                        (GHC.Types.:
                           @ Language.PureScript.AST.Declarations.ErrorMessage
                           (Language.PureScript.AST.Declarations.ErrorMessage
@@ -2773,13 +2828,13 @@ a8809e49396cc1aa51c1e0e6f1f04b5a
                    @ m
                    $dMonad
                    @ Language.PureScript.Environment.Environment
-                   @ Language.PureScript.Types.Type
+                   @ Language.PureScript.Types.SourceType
                    lvl29
                    (\ (env :: Language.PureScript.Environment.Environment) ->
                     case qual of ww { Language.PureScript.Names.Qualified ww1 ww2 ->
                     case env of wild { Language.PureScript.Environment.Environment ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                     case Language.PureScript.TypeChecker.Monad.$wpoly_go13
-                           @ (Language.PureScript.Types.Type,
+                           @ (Language.PureScript.Types.SourceType,
                               Language.PureScript.Environment.NameKind,
                               Language.PureScript.Environment.NameVisibility)
                            ww1
@@ -2791,9 +2846,9 @@ a8809e49396cc1aa51c1e0e6f1f04b5a
                          GHC.Base.return
                            @ m
                            $dMonad
-                           @ Language.PureScript.Types.Type
+                           @ Language.PureScript.Types.SourceType
                            ty } } } }) }) -}
-e75c19aaefd6489ed598af88fe7191c6
+f26d7d5148f07c0c19e39dc15bb01669
   makeBindingGroupVisible ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2810,7 +2865,7 @@ e75c19aaefd6489ed598af88fe7191c6
                    $dMonadState
                    @ ()
                    Language.PureScript.TypeChecker.Monad.makeBindingGroupVisible1) -}
-e21f99dddbff80fecb7960f7c1554efd
+b1ccfe177562d48a92f23815c078d823
   makeBindingGroupVisible1 ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> ((), Language.PureScript.TypeChecker.Monad.CheckState)
@@ -2839,22 +2894,22 @@ e21f99dddbff80fecb7960f7c1554efd
                     ds5
                     ds6
                     ds7 })) -}
-f236587794e58d95e8a04e6da4305f23
+1e1344532c3c9e376658f3f7215956e8
   makeBindingGroupVisible_go13 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
          Language.PureScript.Names.Ident)
-      (Language.PureScript.Types.Type,
+      (Language.PureScript.Types.SourceType,
        Language.PureScript.Environment.NameKind,
        Language.PureScript.Environment.NameVisibility)
     -> Data.Map.Internal.Map
          (Language.PureScript.Names.Qualified
             Language.PureScript.Names.Ident)
-         (Language.PureScript.Types.Type,
+         (Language.PureScript.Types.SourceType,
           Language.PureScript.Environment.NameKind,
           Language.PureScript.Environment.NameVisibility)
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-c8bf1bde5aba7ebd111ed1014eb5bced
+afbc6b07aa67ac6d360aae150935b381
   modifyEnv ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2886,7 +2941,7 @@ c8bf1bde5aba7ebd111ed1014eb5bced
                        ds5
                        ds6
                        ds7 }))) -}
-102ecd4e809997e3cbdd86ed4334f805
+e905c80e24a9ffccbb94ce955ddb8398
   preservingNames ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -2911,7 +2966,7 @@ c8bf1bde5aba7ebd111ed1014eb5bced
                    @ (Data.Map.Internal.Map
                         (Language.PureScript.Names.Qualified
                            Language.PureScript.Names.Ident)
-                        (Language.PureScript.Types.Type,
+                        (Language.PureScript.Types.SourceType,
                          Language.PureScript.Environment.NameKind,
                          Language.PureScript.Environment.NameVisibility))
                    @ a
@@ -2922,7 +2977,7 @@ c8bf1bde5aba7ebd111ed1014eb5bced
                       @ (Data.Map.Internal.Map
                            (Language.PureScript.Names.Qualified
                               Language.PureScript.Names.Ident)
-                           (Language.PureScript.Types.Type,
+                           (Language.PureScript.Types.SourceType,
                             Language.PureScript.Environment.NameKind,
                             Language.PureScript.Environment.NameVisibility))
                       (Control.Monad.State.Class.get
@@ -2936,7 +2991,7 @@ c8bf1bde5aba7ebd111ed1014eb5bced
                          @ (Data.Map.Internal.Map
                               (Language.PureScript.Names.Qualified
                                  Language.PureScript.Names.Ident)
-                              (Language.PureScript.Types.Type,
+                              (Language.PureScript.Types.SourceType,
                                Language.PureScript.Environment.NameKind,
                                Language.PureScript.Environment.NameVisibility))
                          (case s1 of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
@@ -2945,7 +3000,7 @@ c8bf1bde5aba7ebd111ed1014eb5bced
                    (\ (orig :: Data.Map.Internal.Map
                                  (Language.PureScript.Names.Qualified
                                     Language.PureScript.Names.Ident)
-                                 (Language.PureScript.Types.Type,
+                                 (Language.PureScript.Types.SourceType,
                                   Language.PureScript.Environment.NameKind,
                                   Language.PureScript.Environment.NameVisibility)) ->
                     let {
@@ -2990,7 +3045,7 @@ c8bf1bde5aba7ebd111ed1014eb5bced
                          @ a
                          lvl29
                          (GHC.Base.return @ m $dMonad @ a a1)))) -}
-cc5d13bc92148c99450053958455a21e
+81e626fdbef8a42017f8f358ebf2913f
   putEnv ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -3019,7 +3074,7 @@ cc5d13bc92148c99450053958455a21e
                        ds5
                        ds6
                        ds7 }))) -}
-07591dd797c4683ca8d514a557775330
+e6322f134367ef65b6658cc8367e1f0c
   rethrowWithPositionTC ::
     (Control.Monad.State.Class.MonadState
        Language.PureScript.TypeChecker.Monad.CheckState m,
@@ -3042,7 +3097,7 @@ cc5d13bc92148c99450053958455a21e
                    $dMonadState
                    $dMonadError
                    (Language.PureScript.Errors.positionedError pos)) -}
-7f3707dcbb6ec2037ef30e630a455984
+af86b60eea198b4ded19ef1fa9b905af
   runCheck ::
     GHC.Base.Functor m =>
     Control.Monad.Trans.State.Lazy.StateT
@@ -3067,7 +3122,7 @@ cc5d13bc92148c99450053958455a21e
                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
                          <Language.PureScript.TypeChecker.Monad.CheckState>_N <m>_R <a>_N)
                       Language.PureScript.TypeChecker.Monad.runCheck1)) -}
-f8873ffc1b9f3cb742376b7e71bf802e
+a85aa9a51f9f809c972072c9aa714394
   runCheck' ::
     GHC.Base.Functor m =>
     Language.PureScript.TypeChecker.Monad.CheckState
@@ -3094,7 +3149,7 @@ f8873ffc1b9f3cb742376b7e71bf802e
                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
                          <Language.PureScript.TypeChecker.Monad.CheckState>_N <m>_R <a>_N)
                       st)) -}
-1c8c28e7fe4184617f444bc19dcee08c
+ef01dcf906e5d8aeb7a8fb54dbd66b8a
   runCheck1 :: Language.PureScript.TypeChecker.Monad.CheckState
   {- Strictness: m,
      Unfolding: (Language.PureScript.TypeChecker.Monad.CheckState
@@ -3107,7 +3162,7 @@ f8873ffc1b9f3cb742376b7e71bf802e
                    Language.PureScript.TypeChecker.Monad.emptySubstitution
                    (GHC.Types.[]
                       @ Language.PureScript.AST.Declarations.ErrorMessageHint)) -}
-c0b66e36bef46369771488ee84439dd1
+54153471f53e26e86098e7cb56b7cc56
   runCheck2 ::
     (a, Language.PureScript.TypeChecker.Monad.CheckState)
     -> (a, Language.PureScript.Environment.Environment)
@@ -3120,29 +3175,29 @@ c0b66e36bef46369771488ee84439dd1
                   case ds of wild { (,) x y ->
                   case y of wild1 { Language.PureScript.TypeChecker.Monad.CheckState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
                   ds1 } })) -}
-f41a5a409aa69b88b3ab5e8061db655f
+6dc37f96b1ad41d81e906d34e56bda73
   substKind ::
     Language.PureScript.TypeChecker.Monad.Substitution
     -> Data.Map.Internal.Map
-         GHC.Types.Int Language.PureScript.Kinds.Kind
+         GHC.Types.Int Language.PureScript.Kinds.SourceKind
   RecSel Left Language.PureScript.TypeChecker.Monad.Substitution
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.Substitution) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.Substitution ds1 ds2 ->
                  ds2 }) -}
-f41a5a409aa69b88b3ab5e8061db655f
+6dc37f96b1ad41d81e906d34e56bda73
   substType ::
     Language.PureScript.TypeChecker.Monad.Substitution
     -> Data.Map.Internal.Map
-         GHC.Types.Int Language.PureScript.Types.Type
+         GHC.Types.Int Language.PureScript.Types.SourceType
   RecSel Left Language.PureScript.TypeChecker.Monad.Substitution
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Language.PureScript.TypeChecker.Monad.Substitution) ->
                  case ds of wild { Language.PureScript.TypeChecker.Monad.Substitution ds1 ds2 ->
                  ds1 }) -}
-9813266f4e64180bfd2528a8cdfa1c86
+52783f0f0cdec5b6ee7f6ff28f5a789f
   warnAndRethrowWithPositionTC ::
     (Control.Monad.State.Class.MonadState
        Language.PureScript.TypeChecker.Monad.CheckState m,
@@ -3152,7 +3207,7 @@ f41a5a409aa69b88b3ab5e8061db655f
        Language.PureScript.Errors.MultipleErrors m) =>
     Language.PureScript.AST.SourcePos.SourceSpan -> m a -> m a
   {- Arity: 5, HasNoCafRefs,
-     Strictness: <S(S(LC(C(S))LLL)LLL),U(U(A,C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U(A,C(U),C(C1(U)))><L,U(A,U(A,C(C1(U)),A,C(U),A),A,A,A,C(U))><L,U><L,U>,
+     Strictness: <S(S(LC(C(S))LLL)LLL),U(U(A,C(C1(U)),C(C1(U)),C(U),A),U,A,C(U))><L,U(A,C(U),C(C1(U)))><L,U(A,U(A,C(C1(U)),A,C(U),A),A,A,A,C(U))><L,U(U,U(U(U),U(U)),U(U(U),U(U)))><L,U>,
      Unfolding: InlineRule (5, True, False)
                 (\ @ m :: * -> *
                    @ a
@@ -3180,7 +3235,7 @@ f41a5a409aa69b88b3ab5e8061db655f
                       $dMonadWriter
                       pos
                       eta)) -}
-31d29b933d666af9ed21bb6939750997
+f838abdb4c649e2bda552b5c91c16743
   withBindingGroupVisible ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -3211,7 +3266,7 @@ f41a5a409aa69b88b3ab5e8061db655f
                          @ ()
                          Language.PureScript.TypeChecker.Monad.makeBindingGroupVisible1)
                       eta)) -}
-2c6ffe4a4583e9fbcf6d82baf0863283
+873c4b1b4503ece5c9a614f4d08067e6
   withErrorMessageHint ::
     (Control.Monad.State.Class.MonadState
        Language.PureScript.TypeChecker.Monad.CheckState m,
@@ -3331,7 +3386,7 @@ f41a5a409aa69b88b3ab5e8061db655f
                             @ a
                             lvl31
                             (GHC.Base.return @ m $dMonad @ a a1))))) -}
-ea0f5e014aed8afacc077d40292d9945
+284ea6d9c874971bc31a265754a070ff
   withFreshSubstitution ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -3414,7 +3469,7 @@ ea0f5e014aed8afacc077d40292d9945
                             @ a
                             lvl30
                             (GHC.Base.return @ m $dMonad @ a a1))))) -}
-5cb3226bf37fcda175b1da71df8b886a
+9350c80bda4fcfb762034801de7c4f01
   withFreshSubstitution1 ::
     Language.PureScript.TypeChecker.Monad.CheckState
     -> ((), Language.PureScript.TypeChecker.Monad.CheckState)
@@ -3432,14 +3487,15 @@ ea0f5e014aed8afacc077d40292d9945
                     ds5
                     Language.PureScript.TypeChecker.Monad.emptySubstitution
                     ds7 })) -}
-423edfeb0b3a7abffe30a99e2bab423c
+a0453ee66ce276d2444e395405e450c4
   withScopedTypeVars ::
     (Control.Monad.State.Class.MonadState
        Language.PureScript.TypeChecker.Monad.CheckState m,
      Control.Monad.Writer.Class.MonadWriter
        Language.PureScript.Errors.MultipleErrors m) =>
     Language.PureScript.Names.ModuleName
-    -> [(Data.Text.Internal.Text, Language.PureScript.Kinds.Kind)]
+    -> [(Data.Text.Internal.Text,
+         Language.PureScript.Kinds.SourceKind)]
     -> m a
     -> m a
   {- Arity: 2,
@@ -3476,7 +3532,8 @@ ea0f5e014aed8afacc077d40292d9945
                        GHC.Tuple.()
                  } in
                  \ (mn :: Language.PureScript.Names.ModuleName)
-                   (ks :: [(Data.Text.Internal.Text, Language.PureScript.Kinds.Kind)])
+                   (ks :: [(Data.Text.Internal.Text,
+                            Language.PureScript.Kinds.SourceKind)])
                    (ma :: m a) ->
                  let {
                    lvl32 :: m a
@@ -3489,17 +3546,17 @@ ea0f5e014aed8afacc077d40292d9945
                           = GHC.Base.Just @ Language.PureScript.Names.ModuleName mn
                         } in
                         Language.PureScript.TypeChecker.Monad.$sfromList1
-                          @ (Language.PureScript.Kinds.Kind,
+                          @ (Language.PureScript.Kinds.SourceKind,
                              Language.PureScript.Environment.TypeKind)
                           (GHC.Base.map
-                             @ (Data.Text.Internal.Text, Language.PureScript.Kinds.Kind)
+                             @ (Data.Text.Internal.Text, Language.PureScript.Kinds.SourceKind)
                              @ (Language.PureScript.Names.Qualified
                                   (Language.PureScript.Names.ProperName
                                      'Language.PureScript.Names.TypeName),
-                                (Language.PureScript.Kinds.Kind,
+                                (Language.PureScript.Kinds.SourceKind,
                                  Language.PureScript.Environment.TypeKind))
                              (\ (ds :: (Data.Text.Internal.Text,
-                                        Language.PureScript.Kinds.Kind)) ->
+                                        Language.PureScript.Kinds.SourceKind)) ->
                               case ds of wild { (,) name k ->
                               (Language.PureScript.Names.Qualified
                                  @ (Language.PureScript.Names.ProperName
@@ -3526,11 +3583,12 @@ ea0f5e014aed8afacc077d40292d9945
                       @ ()
                       @ a
                       (letrec {
-                         go :: [(Data.Text.Internal.Text, Language.PureScript.Kinds.Kind)]
+                         go :: [(Data.Text.Internal.Text,
+                                 Language.PureScript.Kinds.SourceKind)]
                                -> m ()
                            {- Arity: 1, Strictness: <S,1*U> -}
                          = \ (ds :: [(Data.Text.Internal.Text,
-                                      Language.PureScript.Kinds.Kind)]) ->
+                                      Language.PureScript.Kinds.SourceKind)]) ->
                            case ds of wild {
                              [] -> lvl30
                              : y ys
@@ -3570,7 +3628,7 @@ ea0f5e014aed8afacc077d40292d9945
                        } in
                        go ks)
                       lvl32)) -}
-06eff39ea4200a08dad2b632e54d2da8
+a48b8b4088719f7d173311a4d14e9441
   withTypeClassDictionaries ::
     Control.Monad.State.Class.MonadState
       Language.PureScript.TypeChecker.Monad.CheckState m =>
@@ -3602,7 +3660,8 @@ ea0f5e014aed8afacc077d40292d9945
                                         (Data.Map.Internal.Map
                                            (Language.PureScript.Names.Qualified
                                               Language.PureScript.Names.Ident)
-                                           Language.PureScript.TypeClassDictionaries.NamedDict))
+                                           (GHC.Base.NonEmpty
+                                              Language.PureScript.TypeClassDictionaries.NamedDict)))
                        = Language.PureScript.TypeChecker.Monad.withTypeClassDictionaries_go13
                            (Data.Map.Internal.Tip
                               @ (GHC.Base.Maybe Language.PureScript.Names.ModuleName)
@@ -3613,7 +3672,8 @@ ea0f5e014aed8afacc077d40292d9945
                                    (Data.Map.Internal.Map
                                       (Language.PureScript.Names.Qualified
                                          Language.PureScript.Names.Ident)
-                                      Language.PureScript.TypeClassDictionaries.NamedDict)))
+                                      (GHC.Base.NonEmpty
+                                         Language.PureScript.TypeClassDictionaries.NamedDict))))
                            (Language.PureScript.TypeChecker.Monad.withTypeClassDictionaries_go
                               eta)
                      } in
@@ -3632,7 +3692,7 @@ ea0f5e014aed8afacc077d40292d9945
                               ds9
                               ds10
                               ds11
-                              (Language.PureScript.TypeChecker.Monad.$sunionWith1
+                              (Language.PureScript.TypeChecker.Monad.$sunionWith2
                                  @ (Data.Map.Internal.Map
                                       (Language.PureScript.Names.Qualified
                                          (Language.PureScript.Names.ProperName
@@ -3640,7 +3700,8 @@ ea0f5e014aed8afacc077d40292d9945
                                       (Data.Map.Internal.Map
                                          (Language.PureScript.Names.Qualified
                                             Language.PureScript.Names.Ident)
-                                         Language.PureScript.TypeClassDictionaries.NamedDict))
+                                         (GHC.Base.NonEmpty
+                                            Language.PureScript.TypeClassDictionaries.NamedDict)))
                                  Language.PureScript.TypeChecker.Monad.withTypeClassDictionaries1
                                  ds12
                                  mentries)
@@ -3682,7 +3743,8 @@ ea0f5e014aed8afacc077d40292d9945
                                            (Data.Map.Internal.Map
                                               (Language.PureScript.Names.Qualified
                                                  Language.PureScript.Names.Ident)
-                                              Language.PureScript.TypeClassDictionaries.NamedDict))
+                                              (GHC.Base.NonEmpty
+                                                 Language.PureScript.TypeClassDictionaries.NamedDict)))
                              = case orig of wild { Language.PureScript.TypeChecker.Monad.CheckState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
                                case ds of wild1 { Language.PureScript.Environment.Environment ds8 ds9 ds10 ds11 ds12 ds13 ds14 ->
                                ds12 } }
@@ -3727,7 +3789,7 @@ ea0f5e014aed8afacc077d40292d9945
                             @ a
                             lvl30
                             (GHC.Base.return @ m $dMonad @ a a1))))) -}
-15fb677d4e269194de8a328b6fae419e
+74a082730f69d9e2e495ebfe6ca24ea6
   withTypeClassDictionaries1 ::
     Data.Map.Internal.Map
       (Language.PureScript.Names.Qualified
@@ -3736,7 +3798,8 @@ ea0f5e014aed8afacc077d40292d9945
       (Data.Map.Internal.Map
          (Language.PureScript.Names.Qualified
             Language.PureScript.Names.Ident)
-         Language.PureScript.TypeClassDictionaries.NamedDict)
+         (GHC.Base.NonEmpty
+            Language.PureScript.TypeClassDictionaries.NamedDict))
     -> Data.Map.Internal.Map
          (Language.PureScript.Names.Qualified
             (Language.PureScript.Names.ProperName
@@ -3744,7 +3807,8 @@ ea0f5e014aed8afacc077d40292d9945
          (Data.Map.Internal.Map
             (Language.PureScript.Names.Qualified
                Language.PureScript.Names.Ident)
-            Language.PureScript.TypeClassDictionaries.NamedDict)
+            (GHC.Base.NonEmpty
+               Language.PureScript.TypeClassDictionaries.NamedDict))
     -> Data.Map.Internal.Map
          (Language.PureScript.Names.Qualified
             (Language.PureScript.Names.ProperName
@@ -3752,18 +3816,42 @@ ea0f5e014aed8afacc077d40292d9945
          (Data.Map.Internal.Map
             (Language.PureScript.Names.Qualified
                Language.PureScript.Names.Ident)
-            Language.PureScript.TypeClassDictionaries.NamedDict)
+            (GHC.Base.NonEmpty
+               Language.PureScript.TypeClassDictionaries.NamedDict))
   {- Arity: 2,
      Unfolding: (Language.PureScript.TypeChecker.Monad.$sunionWith
                    @ (Data.Map.Internal.Map
                         (Language.PureScript.Names.Qualified
                            Language.PureScript.Names.Ident)
+                        (GHC.Base.NonEmpty
+                           Language.PureScript.TypeClassDictionaries.NamedDict))
+                   Language.PureScript.TypeChecker.Monad.withTypeClassDictionaries2) -}
+7836616107ceb0f064e4988cf457d194
+  withTypeClassDictionaries2 ::
+    Data.Map.Internal.Map
+      (Language.PureScript.Names.Qualified
+         Language.PureScript.Names.Ident)
+      (GHC.Base.NonEmpty
+         Language.PureScript.TypeClassDictionaries.NamedDict)
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            Language.PureScript.Names.Ident)
+         (GHC.Base.NonEmpty
+            Language.PureScript.TypeClassDictionaries.NamedDict)
+    -> Data.Map.Internal.Map
+         (Language.PureScript.Names.Qualified
+            Language.PureScript.Names.Ident)
+         (GHC.Base.NonEmpty
+            Language.PureScript.TypeClassDictionaries.NamedDict)
+  {- Arity: 2,
+     Unfolding: (Language.PureScript.TypeChecker.Monad.$sunionWith1
+                   @ (GHC.Base.NonEmpty
                         Language.PureScript.TypeClassDictionaries.NamedDict)
-                   (Language.PureScript.TypeChecker.Monad.$sunion1
+                   (GHC.Base.$fSemigroupNonEmpty_$c<>
                       @ (Language.PureScript.TypeClassDictionaries.TypeClassDictionaryInScope
                            (Language.PureScript.Names.Qualified
                               Language.PureScript.Names.Ident)))) -}
-82a2e1d11f279ae0fd4f226d2286c972
+ea1949a9a2b1eb30f198b296a60f9fef
   withTypeClassDictionaries_go ::
     [Language.PureScript.TypeClassDictionaries.NamedDict]
     -> [(GHC.Base.Maybe Language.PureScript.Names.ModuleName,
@@ -3774,9 +3862,10 @@ ea0f5e014aed8afacc077d40292d9945
            (Data.Map.Internal.Map
               (Language.PureScript.Names.Qualified
                  Language.PureScript.Names.Ident)
-              Language.PureScript.TypeClassDictionaries.NamedDict))]
+              (GHC.Base.NonEmpty
+                 Language.PureScript.TypeClassDictionaries.NamedDict)))]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-8ce3aaf80a59d87124ef5a8a448d3581
+7cdfa2b684ea6c13261c1cb32aaa733a
   withTypeClassDictionaries_go13 ::
     Data.Map.Internal.Map
       (GHC.Base.Maybe Language.PureScript.Names.ModuleName)
@@ -3787,7 +3876,8 @@ ea0f5e014aed8afacc077d40292d9945
          (Data.Map.Internal.Map
             (Language.PureScript.Names.Qualified
                Language.PureScript.Names.Ident)
-            Language.PureScript.TypeClassDictionaries.NamedDict))
+            (GHC.Base.NonEmpty
+               Language.PureScript.TypeClassDictionaries.NamedDict)))
     -> [(GHC.Base.Maybe Language.PureScript.Names.ModuleName,
          Data.Map.Internal.Map
            (Language.PureScript.Names.Qualified
@@ -3796,7 +3886,8 @@ ea0f5e014aed8afacc077d40292d9945
            (Data.Map.Internal.Map
               (Language.PureScript.Names.Qualified
                  Language.PureScript.Names.Ident)
-              Language.PureScript.TypeClassDictionaries.NamedDict))]
+              (GHC.Base.NonEmpty
+                 Language.PureScript.TypeClassDictionaries.NamedDict)))]
     -> Data.Map.Internal.Map
          (GHC.Base.Maybe Language.PureScript.Names.ModuleName)
          (Data.Map.Internal.Map
@@ -3806,9 +3897,10 @@ ea0f5e014aed8afacc077d40292d9945
             (Data.Map.Internal.Map
                (Language.PureScript.Names.Qualified
                   Language.PureScript.Names.Ident)
-               Language.PureScript.TypeClassDictionaries.NamedDict))
+               (GHC.Base.NonEmpty
+                  Language.PureScript.TypeClassDictionaries.NamedDict)))
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
-ef2db63805601e7a5a6cb5a68d6445cc
+9a25073ac27c6847631231a5b0c65e08
   withoutWarnings ::
     Control.Monad.Writer.Class.MonadWriter w m => m a -> m (a, w)
   {- Arity: 2, HasNoCafRefs,
@@ -4092,7 +4184,7 @@ ef2db63805601e7a5a6cb5a68d6445cc
                                    Language.PureScript.Names.ModuleName)
                               @ a
                               $dOrd
-  = Language.PureScript.TypeChecker.Monad.$sunionWith1 @ a
+  = Language.PureScript.TypeChecker.Monad.$sunionWith2 @ a
 "SPEC/Language.PureScript.TypeChecker.Monad unionWith @ (Qualified
                                                           (ProperName 'ClassName)) _" [orphan] forall @ a
                                                                                                                                                                          ($dOrd :: GHC.Classes.Ord
@@ -4105,6 +4197,16 @@ ef2db63805601e7a5a6cb5a68d6445cc
                               @ a
                               $dOrd
   = Language.PureScript.TypeChecker.Monad.$sunionWith @ a
+"SPEC/Language.PureScript.TypeChecker.Monad unionWith @ (Qualified
+                                                          Ident) _" [orphan] forall @ a
+                                                                                                                                                       ($dOrd :: GHC.Classes.Ord
+                                                                                                                                                                   (Language.PureScript.Names.Qualified
+                                                                                                                                                                      Language.PureScript.Names.Ident))
+  Data.Map.Internal.unionWith @ (Language.PureScript.Names.Qualified
+                                   Language.PureScript.Names.Ident)
+                              @ a
+                              $dOrd
+  = Language.PureScript.TypeChecker.Monad.$sunionWith1 @ a
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

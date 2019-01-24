@@ -1,11 +1,13 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 628bcaed9683521da81533454c6e643bda4bea5445007164d4783767f98f0173
+-- hash: 4bc0c2fd3a356078d6e99c425c376eb2b87802ff36b75a50ceb7fb89282f1570
 
 name:           purescript
-version:        0.12.1
+version:        0.12.2
 synopsis:       PureScript Programming Language Compiler
 description:    A small strongly, statically typed programming language with expressive types, inspired by Haskell and compiling to JavaScript.
 category:       Language
@@ -19,23 +21,22 @@ copyright:      (c) 2013-17 Phil Freeman, (c) 2014-17 Gary Burgess
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
-cabal-version:  >= 1.10
 extra-source-files:
     app/static/index.html
     app/static/index.js
     app/static/normalize.css
     app/static/pursuit.css
     app/static/pursuit.less
-    CONTRIBUTING.md
-    CONTRIBUTORS.md
-    INSTALL.md
-    README.md
-    stack.yaml
-    tests/purs/docs/bower.json
-    tests/purs/docs/bower_components/purescript-prelude/src/Prelude.purs
-    tests/purs/docs/output/ConstrainedArgument/externs.json
     tests/purs/docs/output/ConstrainedArgument/index.js
-    tests/purs/docs/resolutions.json
+    tests/purs/failing/MissingFFIImplementations.js
+    tests/purs/passing/2172.js
+    tests/purs/passing/EffFn.js
+    tests/purs/passing/FunWithFunDeps.js
+    tests/purs/passing/PolyLabels.js
+    tests/purs/passing/RowUnion.js
+    tests/purs/warning/UnnecessaryFFIModule.js
+    tests/purs/warning/UnusedFFIImplementations.js
+    tests/purs/docs/bower_components/purescript-prelude/src/Prelude.purs
     tests/purs/docs/src/ChildDeclOrder.purs
     tests/purs/docs/src/Clash.purs
     tests/purs/docs/src/Clash1.purs
@@ -235,7 +236,6 @@ extra-source-files:
     tests/purs/failing/MissingClassExport.purs
     tests/purs/failing/MissingClassMember.purs
     tests/purs/failing/MissingClassMemberExport.purs
-    tests/purs/failing/MissingFFIImplementations.js
     tests/purs/failing/MissingFFIImplementations.purs
     tests/purs/failing/MissingRecordField.purs
     tests/purs/failing/MixedAssociativityError.purs
@@ -310,6 +310,7 @@ extra-source-files:
     tests/purs/failing/TypedBinders2.purs
     tests/purs/failing/TypedBinders3.purs
     tests/purs/failing/TypedHole.purs
+    tests/purs/failing/TypedHole2.purs
     tests/purs/failing/TypeError.purs
     tests/purs/failing/TypeOperatorAliasNoExport.purs
     tests/purs/failing/TypeSynonyms.purs
@@ -341,7 +342,6 @@ extra-source-files:
     tests/purs/passing/2136.purs
     tests/purs/passing/2138.purs
     tests/purs/passing/2138/Lib.purs
-    tests/purs/passing/2172.js
     tests/purs/passing/2172.purs
     tests/purs/passing/2197-1.purs
     tests/purs/passing/2197-2.purs
@@ -369,6 +369,7 @@ extra-source-files:
     tests/purs/passing/3187-UnusedNameClash.purs
     tests/purs/passing/3388.purs
     tests/purs/passing/3410.purs
+    tests/purs/passing/3481.purs
     tests/purs/passing/652.purs
     tests/purs/passing/810.purs
     tests/purs/passing/862.purs
@@ -415,7 +416,6 @@ extra-source-files:
     tests/purs/passing/Do.purs
     tests/purs/passing/Dollar.purs
     tests/purs/passing/DuplicateProperties.purs
-    tests/purs/passing/EffFn.js
     tests/purs/passing/EffFn.purs
     tests/purs/passing/EmptyDataDecls.purs
     tests/purs/passing/EmptyRow.purs
@@ -444,7 +444,6 @@ extra-source-files:
     tests/purs/passing/Functions.purs
     tests/purs/passing/Functions2.purs
     tests/purs/passing/FunctionScope.purs
-    tests/purs/passing/FunWithFunDeps.js
     tests/purs/passing/FunWithFunDeps.purs
     tests/purs/passing/Generalization1.purs
     tests/purs/passing/GenericsRep.purs
@@ -463,6 +462,7 @@ extra-source-files:
     tests/purs/passing/ImportQualified.purs
     tests/purs/passing/ImportQualified/M1.purs
     tests/purs/passing/InferRecFunWithConstrainedArgument.purs
+    tests/purs/passing/InheritMultipleSuperClasses.purs
     tests/purs/passing/InstanceBeforeClass.purs
     tests/purs/passing/InstanceChain.purs
     tests/purs/passing/InstanceSigs.purs
@@ -549,6 +549,7 @@ extra-source-files:
     tests/purs/passing/ParensInType.purs
     tests/purs/passing/ParensInTypedBinder.purs
     tests/purs/passing/PartialFunction.purs
+    tests/purs/passing/PartialTCO.purs
     tests/purs/passing/Patterns.purs
     tests/purs/passing/PendingConflictingImports.purs
     tests/purs/passing/PendingConflictingImports/A.purs
@@ -556,9 +557,12 @@ extra-source-files:
     tests/purs/passing/PendingConflictingImports2.purs
     tests/purs/passing/PendingConflictingImports2/A.purs
     tests/purs/passing/Person.purs
-    tests/purs/passing/PolyLabels.js
     tests/purs/passing/PolyLabels.purs
     tests/purs/passing/PrimedTypeName.purs
+    tests/purs/passing/QualifiedAdo.purs
+    tests/purs/passing/QualifiedAdo/IxApplicative.purs
+    tests/purs/passing/QualifiedDo.purs
+    tests/purs/passing/QualifiedDo/IxMonad.purs
     tests/purs/passing/QualifiedNames.purs
     tests/purs/passing/QualifiedNames/Either.purs
     tests/purs/passing/QualifiedQualifiedImports.purs
@@ -590,7 +594,6 @@ extra-source-files:
     tests/purs/passing/RowNub.purs
     tests/purs/passing/RowPolyInstanceContext.purs
     tests/purs/passing/RowsInInstanceContext.purs
-    tests/purs/passing/RowUnion.js
     tests/purs/passing/RowUnion.purs
     tests/purs/passing/RunFnInline.purs
     tests/purs/passing/RuntimeScopeIssue.purs
@@ -682,7 +685,6 @@ extra-source-files:
     tests/purs/warning/ShadowedBinderPatternGuard.purs
     tests/purs/warning/ShadowedNameParens.purs
     tests/purs/warning/ShadowedTypeVar.purs
-    tests/purs/warning/UnnecessaryFFIModule.js
     tests/purs/warning/UnnecessaryFFIModule.purs
     tests/purs/warning/UnusedDctorExplicitImport.purs
     tests/purs/warning/UnusedDctorImportAll.purs
@@ -691,16 +693,24 @@ extra-source-files:
     tests/purs/warning/UnusedExplicitImportTypeOp.purs
     tests/purs/warning/UnusedExplicitImportTypeOp/Lib.purs
     tests/purs/warning/UnusedExplicitImportValOp.purs
-    tests/purs/warning/UnusedFFIImplementations.js
     tests/purs/warning/UnusedFFIImplementations.purs
     tests/purs/warning/UnusedImport.purs
     tests/purs/warning/UnusedTypeVar.purs
     tests/purs/warning/WildcardInferredType.purs
+    tests/purs/warning/WildcardInferredType2.purs
+    tests/purs/docs/bower.json
+    tests/purs/docs/output/ConstrainedArgument/externs.json
+    tests/purs/docs/resolutions.json
+    tests/json-compat/v0.11.3/generics-4.0.0.json
+    tests/json-compat/v0.11.3/symbols-3.0.0.json
+    tests/json-compat/v0.12.1/typelevel-prelude-3.0.0.json
     tests/support/bower.json
     tests/support/package.json
     tests/support/prelude-resolutions.json
-    tests/support/psci/Reload.edit
+    tests/support/setup-win.cmd
+    tests/support/psci/InteractivePrint.purs
     tests/support/psci/Reload.purs
+    tests/support/psci/Reload.edit
     tests/support/pscide/src/CompletionSpecDocs.purs
     tests/support/pscide/src/FindUsage.purs
     tests/support/pscide/src/FindUsage/Definition.purs
@@ -711,14 +721,18 @@ extra-source-files:
     tests/support/pscide/src/ImportsSpec1.purs
     tests/support/pscide/src/MatcherSpec.purs
     tests/support/pscide/src/RebuildSpecDep.purs
-    tests/support/pscide/src/RebuildSpecSingleModule.fail
     tests/support/pscide/src/RebuildSpecSingleModule.purs
     tests/support/pscide/src/RebuildSpecWithDeps.purs
-    tests/support/pscide/src/RebuildSpecWithForeign.js
     tests/support/pscide/src/RebuildSpecWithForeign.purs
     tests/support/pscide/src/RebuildSpecWithHiddenIdent.purs
+    tests/support/pscide/src/RebuildSpecWithForeign.js
+    tests/support/pscide/src/RebuildSpecSingleModule.fail
     tests/support/pscide/src/RebuildSpecWithMissingForeign.fail
-    tests/support/setup-win.cmd
+    stack.yaml
+    README.md
+    INSTALL.md
+    CONTRIBUTORS.md
+    CONTRIBUTING.md
 
 source-repository head
   type: git

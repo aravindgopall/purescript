@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-30 19:26:23.174715 UTC
+2019-01-24 14:13:42.419928 UTC
 
-interface purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Parser.Kinds 8043
-  interface hash: 21cc598a1c63ee58a9dda80b3cbc4559
-  ABI hash: 2fcc087f8cc2cd5e46d0be39dad8d447
-  export-list hash: ba6aa7a1497db23f7cfdff00d0cc23c1
+interface purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Parser.Kinds 8043
+  interface hash: 6c68d5ee5820754dc1ee9e57df229dc6
+  ABI hash: b635ea75e7ff86a085a7ead0c499a648
+  export-list hash: 60a7198377e8b96092dd1c3f0ccdca52
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: af801e39deabea4814ba66209bc490c9
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -17,21 +17,25 @@ exports:
   Language.PureScript.Parser.Kinds.parseKind
 module dependencies: Control.Monad.Supply
                      Control.Monad.Supply.Class Language.PureScript.AST.SourcePos
-                     Language.PureScript.Comments Language.PureScript.Constants
-                     Language.PureScript.Kinds Language.PureScript.Names
-                     Language.PureScript.PSString Language.PureScript.Parser.Common
-                     Language.PureScript.Parser.Lexer Language.PureScript.Parser.State
-package dependencies: aeson-1.3.1.1 aeson-better-errors-0.9.1.0
-                      array-0.5.2.0 attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4
-                      binary-0.8.5.1 bytestring-0.10.8.2 containers-0.5.11.0
-                      deepseq-1.4.3.0 dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3
-                      ghc-prim-0.5.2.0 hashable-1.2.7.0 integer-gmp-1.0.2.0
-                      integer-logarithms-1.0.2.1 mtl-2.2.2 parsec-3.1.13.0 pretty-1.1.3.6
-                      primitive-0.6.3.0 random-1.1 scientific-0.3.6.2 tagged-0.8.5
-                      template-haskell-2.13.0.0 text-1.2.3.0 th-abstraction-0.2.8.0
-                      time-1.8.0.2 time-locale-compat-0.1.1.4 transformers-0.5.5.0
+                     Language.PureScript.Comments Language.PureScript.Kinds
+                     Language.PureScript.Names Language.PureScript.PSString
+                     Language.PureScript.Parser.Common Language.PureScript.Parser.Lexer
+                     Language.PureScript.Parser.State
+package dependencies: aeson-1.3.1.1 array-0.5.2.0
+                      attoparsec-0.13.2.2 base-4.11.1.0 base-compat-0.10.4 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 deepseq-1.4.3.0
+                      dlist-0.8.0.4 filepath-1.4.2 ghc-boot-th-8.4.3 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+                      microlens-0.4.9.1 microlens-ghc-0.4.9 microlens-mtl-0.1.11.1
+                      microlens-platform-0.3.10 microlens-th-0.4.2.1 mtl-2.2.2
+                      parsec-3.1.13.0 pretty-1.1.3.6 primitive-0.6.3.0 random-1.1
+                      scientific-0.3.6.2 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.0 th-abstraction-0.2.8.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.5.0
                       unordered-containers-0.2.9.0 uuid-types-1.0.3 vector-0.12.0.1
-orphans: attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+orphans: microlens-platform-0.3.10:Lens.Micro.Platform
+         microlens-ghc-0.4.9:Lens.Micro.GHC
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
          vector-0.12.0.1:Data.Vector.Unboxed
          time-1.8.0.2:Data.Time.Format.Parse
@@ -63,15 +67,20 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
                          dlist-0.8.0.4:Data.DList ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
                          ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         microlens-0.4.9.1:Lens.Micro.Internal
+                         microlens-ghc-0.4.9:Lens.Micro.GHC
+                         microlens-mtl-0.1.11.1:Lens.Micro.Mtl.Internal
+                         microlens-platform-0.3.10:Lens.Micro.Platform
                          pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
                          primitive-0.6.3.0:Control.Monad.Primitive
                          primitive-0.6.3.0:Data.Primitive.Array
                          primitive-0.6.3.0:Data.Primitive.ByteArray
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.AST.SourcePos
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Kinds
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.Names
-                         purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7:Language.PureScript.PSString
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.AST.SourcePos
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Comments
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Kinds
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.Names
+                         purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F:Language.PureScript.PSString
                          tagged-0.8.5:Data.Tagged
                          template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
                          text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
@@ -84,58 +93,58 @@ family instance modules: aeson-1.3.1.1:Data.Aeson.Types.Internal
                          vector-0.12.0.1:Data.Vector.Storable
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
-import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-compat-0.10.4:Prelude.Compat bb6796186ed35a1d09dc34362a3fc27e
 import  -/  parsec-3.1.13.0:Text.Parsec 963cbe7b4116cef91451434dc005a011
 import  -/  parsec-3.1.13.0:Text.Parsec.Combinator 86d872425bd48a2d67c0d1ce1a8ccc8b
 import  -/  parsec-3.1.13.0:Text.Parsec.Expr 6898ea405cda9f4ced72197883fcde5c
 import  -/  parsec-3.1.13.0:Text.Parsec.Prim 4e0ad30f54008188b8c54f509e1a8ed9
-import  -/  Language.PureScript.Kinds bf1fc2fd18b06658330fcf93fe50e737
-  exports: 2c2448e43e622d2466a59b9cd8f4db91
-  FunKind beae73ee9677be9920dc1399ab9ff2dc
-  Kind 3e1e213eb647453235d33b0d1b36ec59
-  NamedKind 536943c580461ebe2091622f07457ca3
-  Row d8dbf332ec637cbe742053215d12b58e
-import  -/  Language.PureScript.Parser.Common cd9daf83419acf425eed3583730b480a
-  exports: 46bd02a8c6d64be727c6d765fa3bb721
-  indented bc6c10485ef3bfbad029ca5a263a854b
-  kindName 85c59bdb688906d737599621e944754c
-  parseQualified ac9710478dd7246a70e7f3c6aa1c0eda
-import  -/  Language.PureScript.Parser.Lexer db153cafc807e1fa539fece18593da12
-  exports: 698a81285a16040f24e674c5083daf63
-  TokenParser 187b24d9915c74f6cd19336cd3ce961b
-  parens cf084ae74dc27c8c9070bf462d824e6e
-  rarrow 6ff8539bff2e21d2fc59f86fe8f0d442
-  symbol' d1fd86a62b72396f3e5973cba6978c34
-79aac0aa6c354eaa3a2b48bea12bd4e3
+import  -/  Language.PureScript.Kinds e26b9cf8211f7e72bb44fdd3faed066e
+  exports: fe71635ad7964c0d620fb0685614a050
+  FunKind 0560a3ce54d445316be516294eb33990
+  NamedKind b009a23b35083771c6f52aa92ab5803a
+  Row 4c775745b04b676c03977288680c928b
+  SourceKind 4cdf50d4b2444221832ca704f3a0c468
+import  -/  Language.PureScript.Parser.Common d20a7af8a890a4e56d3068b2fdbe8def
+  exports: d3c94bc3b21495d0d5e265869136cfdc
+  indented 220f6fa1c62819e97598e6353a4b65e1
+  kindName bbed90a701b4e22259fa4ef795a896a3
+  parseQualified b47db6f48fd0bee3e9e160f31046eb17
+  withSourceAnnF 40307b0e4ea19d81c349792c48a8f907
+import  -/  Language.PureScript.Parser.Lexer ea857194274ee8b3812ad62bbb2c9ed1
+  exports: ca7efc854dfe3379de291b0f8c8d7ea0
+  TokenParser 6e8d7b68c7546ba407a16e8526c7556f
+  parens 537455fc7f82a6049320a8434f7b3d11
+  rarrow b1890175eb712a279e1082f12de6600e
+  symbol' df4ff0c7873c69ba6cef310524845e94
+87b73fea64f446dac7672cbb8e3157fb
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Language.PureScript.Parser.Kinds.$trModule3
                    Language.PureScript.Parser.Kinds.$trModule1) -}
-27c9e31563e4df8fa49c4ba11073963e
+15f8c091ddfdcd9c4a2b473c69493700
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Parser.Kinds.$trModule2) -}
-a7469fbb9cc18ae90d9d81a3342a3ad9
+8bc3516368a3a594db11da7df2229408
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Language.PureScript.Parser.Kinds"#) -}
-23d2dde129f6a489ba2df0410e80ba18
+25f98429d87b918234962524040053ae
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    Language.PureScript.Parser.Kinds.$trModule4) -}
-19a9049db71570adea9bd361bd63b7c0
+2386a98f3d159614d679a8ecea62a63a
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("purescript-0.12.1-Hd7ka7pmldWKPBJH6hcve7"#) -}
-9c499990453aee5e8555ac7989adf1fb
+     Unfolding: ("purescript-0.12.2-1jEEKvd7Qrz8R80uEP8O5F"#) -}
+285d5ef86de850b9cc8389a55b3214f8
   parseKind ::
     Language.PureScript.Parser.Lexer.TokenParser
-      Language.PureScript.Kinds.Kind
+      Language.PureScript.Kinds.SourceKind
   {- Arity: 5, Strictness: <L,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
      Unfolding: InlineRule (0, True, True)
                 Language.PureScript.Parser.Kinds.parseKind1
@@ -144,13 +153,15 @@ a7469fbb9cc18ae90d9d81a3342a3ad9
                           <[Language.PureScript.Parser.Lexer.PositionedToken]>_R
                           <Language.PureScript.Parser.State.ParseState>_R
                           <Data.Functor.Identity.Identity>_R
-                          <Language.PureScript.Kinds.Kind>_R)) -}
-9c11b1167766d6218866298559f35999
+                          <Language.PureScript.Kinds.Kind
+                             Language.PureScript.AST.SourcePos.SourceAnn>_R)) -}
+9f762419ddee79b58c639efcf0692437
   parseKind1 ::
     Text.Parsec.Prim.State
       [Language.PureScript.Parser.Lexer.PositionedToken]
       Language.PureScript.Parser.State.ParseState
     -> (Language.PureScript.Kinds.Kind
+          Language.PureScript.AST.SourcePos.SourceAnn
         -> Text.Parsec.Prim.State
              [Language.PureScript.Parser.Lexer.PositionedToken]
              Language.PureScript.Parser.State.ParseState
@@ -159,6 +170,7 @@ a7469fbb9cc18ae90d9d81a3342a3ad9
     -> (Text.Parsec.Error.ParseError
         -> Data.Functor.Identity.Identity b)
     -> (Language.PureScript.Kinds.Kind
+          Language.PureScript.AST.SourcePos.SourceAnn
         -> Text.Parsec.Prim.State
              [Language.PureScript.Parser.Lexer.PositionedToken]
              Language.PureScript.Parser.State.ParseState
