@@ -210,7 +210,7 @@ getManifestRepositoryInfo pkgMeta =
                   (const (return Nothing))
       userError (BadRepositoryField (RepositoryFieldMissing (giturl >>= extractGithub >>= return . format)))
     Just Repository{..} -> do
-      unless (repositoryType == "git")
+      unless (repositoryType == "git" || repositoryType ==  "bitbucket")
         (userError (BadRepositoryField (BadRepositoryType repositoryType)))
       maybe (userError (BadRepositoryField NotOnGithub)) return (extractGithub repositoryUrl)
 
@@ -252,6 +252,7 @@ extractGithub = stripGitHubPrefixes
   stripGitHubPrefixes = stripPrefixes [ "git://github.com/"
                                       , "https://github.com/"
                                       , "git@github.com:"
+                                      , "https://bitbucket.org/"
                                       ]
 
   stripPrefixes :: [Text] -> Text -> Maybe Text
