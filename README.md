@@ -1,24 +1,15 @@
 [![PureScript](logo.png)](http://purescript.org)
 
-A small strongly typed programming language with expressive types that compiles to JavaScript, written in and inspired by Haskell.
 
-[![Hackage](https://img.shields.io/hackage/v/purescript.svg)](http://hackage.haskell.org/package/purescript) [![Build Status](https://api.travis-ci.org/purescript/purescript.svg?branch=master)](http://travis-ci.org/purescript/purescript)
+This is an fork of original github repo of purescript, working on adding some more support for purescript and repl
 
-## Language info
 
-- [PureScript home](http://purescript.org)
-- [Releases & changelog](https://github.com/purescript/purescript/releases)
-- [Contributing to PureScript](https://github.com/purescript/purescript/blob/master/CONTRIBUTING.md)
+# Those want to use this
 
-## Resources
+1) Clone this repo
+2) cd repo
+3) stack build 
+4) stack install # This will copy the purs executable to $HOME/.local/bin which you need to add to the $PATH env variable
 
-- [PureScript book](https://leanpub.com/purescript/read)
-- [Documentation](https://github.com/purescript/documentation)
-- [Try PureScript](http://try.purescript.org)
-- [Pursuit Package Index](http://pursuit.purescript.org/)
 
-## Help!
-
-- [#purescript @ FP Slack](https://functionalprogramming.slack.com/)
-- [PureScript Language Forum](https://discourse.purescript.org/)
-- [PureScript on StackOverflow](http://stackoverflow.com/questions/tagged/purescript)
+- Please use nvm and get another version and install only pulp and add this executable to $PATH variable 

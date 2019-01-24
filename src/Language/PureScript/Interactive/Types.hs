@@ -17,6 +17,7 @@ module Language.PureScript.Interactive.Types
   , initialInteractivePrint
   , psciImportedModuleNames
   , updateImportedModules
+  , updateImportExports
   , updateLoadedExterns
   , updateLets
   , setInteractivePrint
